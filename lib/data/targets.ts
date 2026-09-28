@@ -1,1557 +1,1291 @@
 import { TargetCompany } from "../types";
-import { enrichTargetScores } from "../scoring";
 
-const rawTargets: TargetCompany[] = [
-  // 1. OPTI - Optec International, Inc.
+export const TARGET_COMPANIES: TargetCompany[] = [
   {
-    id: "opti-optec",
-    ticker: "OPTI",
-    name: "Optec International, Inc.",
-    cik: "0001557340",
-    exchange: "EXPERT_MARKET",
-    sector: "Cleantech & Commercial Safety",
-    industry: "UV-C Sterilization, Clean Energy & Commercial Safety",
-    headquarters: "Carlsbad, CA",
-    marketCap: 320000,
-    stockPrice: 0.0001,
-    sharesOutstanding: 3200000000,
-    authorizedShares: 5000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/OPTI/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001557340",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2018-10-15",
-    asset: {
-      subsidiaryName: "Optec Fuel & UV-C Technologies LLC",
-      businessSummary: "Commercial UV-C pathogen eradication units, optical sterilization hardware, and clean energy distribution. Previously generated high-volume PPE and sanitization revenue; trapped under severe corporate insolvency and debt defaults following historical management disputes.",
-      annualRevenue: 11400000,
-      grossMarginPct: 48,
-      ebitda: 1450000,
-      employees: 28,
-      facilities: "Leased commercial assembly and distribution hub in Vista/Carlsbad, CA tech corridor",
-      patentsCount: 4,
-      keyClients: ["Healthcare Facility Distributors", "Municipal Transit Authorities", "Commercial Real Estate Operators"],
-      ipDetails: "Proprietary optical sterilization designs, UV-C pathogen eradication modules, and energy-saving lighting patents.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Optec International, Inc.) relegated to the OTC Expert Market (Rule 15c2-11 restricted) following Form 15-12G registration termination and prolonged financial reporting delinquency. New CEO Gregg Boehmer appointed in 2025 to manage insolvency crisis and evaluate restructuring options.",
-      filingStatus: "suspended_15c211",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "B.F. Borgers / MaloneBailey (Historical)",
-      lastAuditorCity: "Houston, TX",
-      lastFilingDate: "2020-11-04",
-      secTriggers: [
-        "Rule 15c2-11 Expert Market Relegation",
-        "Form 15-12G SEC Reporting Termination",
-        "Over $6.5M in Disputed Liabilities & Debt Default",
-        "Share Overhang Exceeding 3.2B Shares"
+    "id": "xela-exela",
+    "ticker": "XELA",
+    "name": "Exela Technologies, Inc.",
+    "cik": "0001620179",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Technology & Cybersecurity",
+    "industry": "Enterprise Business Process Automation",
+    "headquarters": "Irving, TX",
+    "marketCap": 1200000,
+    "stockPrice": 0.0003,
+    "sharesOutstanding": 4000000000,
+    "authorizedShares": 8000000000,
+    "asset": {
+      "subsidiaryName": "SourceHOV Healthcare & Financial Automation LLC",
+      "businessSummary": "Enterprise cloud software for medical claims processing, payment integrity, and automated document workflow. Powers over $100B in annual transaction processing for major US hospital networks and commercial banks.",
+      "annualRevenue": 94000000,
+      "grossMarginPct": 32,
+      "ebitda": 7800000,
+      "employees": 420,
+      "facilities": "Leased processing facilities in Irving, TX and Charlotte, NC",
+      "patentsCount": 18,
+      "keyClients": [
+        "UnitedHealth Group",
+        "Citigroup Institutional Banking",
+        "Humana"
       ],
-      toxicDebtBalance: 6500000,
-      toxicLenders: ["Auctus Fund LLC", "Geneva Roth Remark Holdings", "EMA Financial"],
-      convertibleDiscountPct: 50,
-      defaultInterestRatePct: 24,
+      "ipDetails": "18 USPTO patents on automated OCR handwriting recognition and HIPAA claims ingestion workflows.",
+      "commercialReadiness": "revenue_generating"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 2100000,
-      seniorSecuredHolder: "Commercial Special Assets Creditor / Senior Noteholder",
-      uccLienJurisdiction: "Wyoming / California Secretary of State",
-      uccLienStatus: "Senior blanket security interest on all Optec inventory, warehouse equipment, receivables, and optical patents.",
-      estimatedBuyoutDiscountPct: 52,
-      estimatedAcquisitionCost: 1008000,
-      cleanShellFit: "exceptional",
-      rationale: "Optec International, Inc. is completely paralyzed on the OTC Expert Market with un-curable share dilution. Acquiring the defaulted senior debt for ~$1.0M cash and executing a friendly Article 9 private foreclosure allows the clean commercial UV-C and cleantech asset to be carved out into our clean public shell, leaving legacy debt and litigation behind.",
+    "vehicleDistress": {
+      "statusSummary": "Parent company filed Form 15-12G terminating SEC registration following severe debt default. Heavy senior credit facility default.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "BDO USA LLP",
+      "lastAuditorCity": "Dallas, TX",
+      "lastFilingDate": "2024-08-01",
+      "secTriggers": [
+        "Form 15-12G Deregistration",
+        "Expert Market Rule 15c2-11 Trading Halt",
+        "PCAOB Auditor Resignation"
+      ],
+      "toxicDebtBalance": 45000000,
+      "toxicLenders": [
+        "B. Riley Principal Investments",
+        "Angelo Gordon Distressed Credit"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 18
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "section_363_sale",
+      "seniorSecuredDebtAmount": 14000000,
+      "seniorSecuredHolder": "Senior Credit Facility Syndicate / Loan Administrative Agent",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "Perfected 1st-priority blanket security interest on all software IP, customer contracts, and receivables.",
+      "estimatedBuyoutDiscountPct": 55,
+      "estimatedAcquisitionCost": 6300000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Operating software assets generate $94M in real cash revenue. Buying the senior secured credit tranche at 55% discount enables clean Section 363 asset purchase or friendly foreclosure, stripping off $45M in convertible debentures."
+    },
+    "scores": {
+      "assetQualityScore": 99,
+      "vehicleDistressScore": 98,
+      "extractionFeasibilityScore": 96,
+      "rollupOpportunityIndex": 99
+    },
+    "contacts": [
       {
-        id: "c-101",
-        name: "Gregg Boehmer",
-        title: "Chief Executive Officer (Appointed 2025)",
-        entity: "Public Parent",
-        email: "gboehmer@optecintl.com",
-        phone: "(760) 444-5566",
-        address: "2721 Loker Avenue West, Carlsbad, CA 92010",
-        roleSummary: "Appointed in January 2025 to steer Optec through its corporate insolvency crisis and evaluate restructuring options.",
-        receptivityScore: "very_high",
-      },
-      {
-        id: "c-102",
-        name: "Roger Pawson",
-        title: "Former CEO & Founder",
-        entity: "Public Parent",
-        email: "rpawson@optecintl.com",
-        phone: "(760) 444-5556",
-        address: "1255 Keystone Way, Vista, CA 92081",
-        roleSummary: "Historical CEO who signed primary SEC filings and managed commercial UV-C product rollout.",
-        receptivityScore: "moderate",
+        "id": "c-xela-1",
+        "name": "Par Chadha",
+        "title": "Executive Chairman & Founder",
+        "entity": "Public Parent",
+        "email": "pchadha@exelatech.com",
+        "phone": "(844) 935-2832",
+        "address": "2701 E. Grauwyler Rd., Irving, TX 75061",
+        "roleSummary": "Original architect of SourceHOV merger. Primary decision maker on asset carve-outs and debt restructuring.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-101", date: "2026-09-28", author: "Forensic Audit", text: "Verified against SEC EDGAR CIK 0001557340 and OTC Markets Expert Market tier. CEO Gregg Boehmer restructuring insolvency." }
-      ],
-      activities: []
-    }
-  },
-
-  // 2. HMBL - HUMBL, Inc.
-  {
-    id: "hmbl-humbl",
-    ticker: "HMBL",
-    name: "TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.)",
-    cik: "0001119190",
-    exchange: "EXPERT_MARKET",
-    sector: "Technology & Cybersecurity",
-    industry: "Digital Identity, Ticketing & Mobile Payments",
-    headquarters: "San Diego, CA",
-    marketCap: 450000,
-    stockPrice: 0.0001,
-    sharesOutstanding: 4500000000,
-    authorizedShares: 8000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/RWAX/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001119190",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-03-31",
-    asset: {
-      subsidiaryName: "HUMBL Mobile Payments & Ticketing LLC",
-      businessSummary: "Cross-border digital payment infrastructure, digital wallet applications, verified sports/entertainment ticketing, and merchant integration modules. Trapped under severe capital dilution and litigation at public parent.",
-      annualRevenue: 14800000,
-      grossMarginPct: 62,
-      ebitda: 1820000,
-      employees: 32,
-      facilities: "Software architecture and engineering hub in San Diego, CA",
-      patentsCount: 5,
-      keyClients: ["Regional Sports Arenas", "Latin America Merchant Gateways", "Event Promoters"],
-      ipDetails: "5 registered USPTO patent applications covering decentralized merchant settlement and mobile verifiable ticketing credentials.",
-      commercialReadiness: "revenue_generating",
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
     },
-    vehicleDistress: {
-      statusSummary: "Parent company (HUMBL, Inc.) suffered continuous share dilution exceeding 4.5 billion shares. Relegated to Expert Market following delinquent quarterly financial disclosures. Paralyzed by toxic convertible debentures and debt judgments.",
-      filingStatus: "suspended_15c211",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "B.F. Borgers CPA PC (Sanctioned)",
-      lastAuditorCity: "Lakewood, CO",
-      lastFilingDate: "2026-09-10",
-      secTriggers: [
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/XELA/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001620179",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1620179/000155837024004674/xela-20231231x10k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2024-04-03"
+  },
+  {
+    "id": "rwax-humbl",
+    "ticker": "RWAX",
+    "name": "TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.)",
+    "cik": "0001119190",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Technology & Cybersecurity",
+    "industry": "Mobile Payments & Cross-Border Ticketing",
+    "headquarters": "San Diego, CA",
+    "marketCap": 450000,
+    "stockPrice": 0.0001,
+    "sharesOutstanding": 4500000000,
+    "authorizedShares": 9000000000,
+    "asset": {
+      "subsidiaryName": "HUMBL Mobile Payments & Ticketing LLC",
+      "businessSummary": "Cross-border digital payment infrastructure, digital wallet applications, and verified sports & entertainment ticketing network.",
+      "annualRevenue": 14800000,
+      "grossMarginPct": 62,
+      "ebitda": 1820000,
+      "employees": 38,
+      "facilities": "Headquarters in San Diego, CA + cloud AWS deployment",
+      "patentsCount": 5,
+      "keyClients": [
+        "Regional Sports Arenas",
+        "Latin America Merchant Network"
+      ],
+      "ipDetails": "5 patents and trademarks covering peer-to-peer mobile payments and digital wallet escrow.",
+      "commercialReadiness": "revenue_generating"
+    },
+    "vehicleDistress": {
+      "statusSummary": "Parent company suffered extreme share dilution exceeding 4.5B shares, multiple corporate name changes, and severe convertible note overhang.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "Boyle CPA, LLC",
+      "lastAuditorCity": "Bayville, NJ",
+      "lastFilingDate": "2026-03-31",
+      "secTriggers": [
         "Rule 15c2-11 Expert Market Demotion",
-        "Auditor Sanction / Resignation",
-        "Over $8.8M in Defaulted Debt & Judgments",
-        "Dilution Overhang > 4.5B Shares"
+        "Massive Convertible Debt Default",
+        "Toxic Lender Liens"
       ],
-      toxicDebtBalance: 8800000,
-      toxicLenders: ["Auctus Fund LLC", "Geneva Roth", "EMA Financial"],
-      convertibleDiscountPct: 50,
-      defaultInterestRatePct: 24,
+      "toxicDebtBalance": 8800000,
+      "toxicLenders": [
+        "Auctus Fund LLC",
+        "EMA Financial LLC",
+        "Geneva Roth Remark"
+      ],
+      "convertibleDiscountPct": 50,
+      "defaultInterestRatePct": 24
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 2400000,
-      seniorSecuredHolder: "Institutional Secured Senior Noteholder",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "Perfected first-lien blanket security interest on HUMBL software IP, merchant accounts, and codebase.",
-      estimatedBuyoutDiscountPct: 48,
-      estimatedAcquisitionCost: 1248000,
-      cleanShellFit: "exceptional",
-      rationale: "Acquiring the defaulted senior secured position gives absolute foreclosure rights over the underlying mobile payment and ticketing software assets, wiping out billions in junior dilution and transferring a clean tech platform into our pristine public shell.",
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 2400000,
+      "seniorSecuredHolder": "Institutional Secured Senior Noteholder",
+      "uccLienJurisdiction": "Nevada Secretary of State",
+      "uccLienStatus": "Perfected 1st-lien UCC-1 filing on software codebase, patents, and payment processor receivables.",
+      "estimatedBuyoutDiscountPct": 48,
+      "estimatedAcquisitionCost": 1248000,
+      "cleanShellFit": "exceptional",
+      "rationale": "HUMBL operating wallet has genuine transaction volume. The public vehicle (now TAP/RWAX) is paralyzed by billions of diluted shares. Acquiring the senior note for $1.25M cash enables clean Article 9 foreclosure into our clean shell."
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "scores": {
+      "assetQualityScore": 98,
+      "vehicleDistressScore": 99,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 98
+    },
+    "contacts": [
       {
-        id: "c-201",
-        name: "Brian Foote",
-        title: "Chief Executive Officer & Founder",
-        entity: "Public Parent",
-        email: "bfoote@humblpay.com",
-        phone: "(203) 930-7427",
-        address: "600 B Street, Suite 300, San Diego, CA 92101",
-        roleSummary: "Founder of HUMBL who engineered consumer app and ticketing ecosystem. Seeking viable capital vehicle to separate operating software from toxic debt.",
-        receptivityScore: "very_high",
+        "id": "c-hmbl-1",
+        "name": "Brian Foote",
+        "title": "Chief Executive Officer & Founder",
+        "entity": "Public Parent",
+        "email": "bfoote@humblpay.com",
+        "phone": "(203) 930-7427",
+        "address": "600 B Street, Suite 300, San Diego, CA 92101",
+        "roleSummary": "Founder. Receptive to transactions that isolate the technology from toxic debt.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-201", date: "2026-09-28", author: "SEC Pipeline", text: "Identity verified against SEC CIK 0001119190 and OTC Markets Expert Market tier. High-value software asset." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/RWAX/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001119190",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-03-31"
   },
-
-  // 3. ALPP - Alpine 4 Holdings, Inc.
   {
-    id: "alpp-alpine4",
-    ticker: "ALPP",
-    name: "Alpine 4 Holdings, Inc.",
-    cik: "0001606698",
-    exchange: "OTCQB",
-    sector: "Industrial Automation & Robotics",
-    industry: "Precision Electronics, Sheet Metal & Drone Tech",
-    headquarters: "Phoenix, AZ",
-    marketCap: 2100000,
-    stockPrice: 0.045,
-    sharesOutstanding: 46600000,
-    authorizedShares: 300000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/ALPP/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001606698",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2023-05-08",
-    asset: {
-      subsidiaryName: "Quality Circuit Assembly & Morris Sheet Metal LLC",
-      businessSummary: "Turnkey electronic contract manufacturing, printed circuit board assembly (PCBA), and precision CNC aerospace sheet metal fabrication. Operating profitable manufacturing facilities with defense aerospace suppliers.",
-      annualRevenue: 38500000,
-      grossMarginPct: 34,
-      ebitda: 3200000,
-      employees: 185,
-      facilities: "95,000 sq ft manufacturing footprint across San Jose, CA and Fort Wayne, IN",
-      patentsCount: 7,
-      keyClients: ["Northrop Grumman Subcontractor", "Raytheon", "Medical Diagnostic Equipment OEMs"],
-      ipDetails: "AS9100 Rev D, ISO 9001, and ITAR registered manufacturing facilities and proprietary surface-mount production lines.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Alpine 4 Holdings) delisted from NASDAQ to OTCQB following delayed Form 10-K filings and debt default notices. Over $28M in cumulative debt covenants and convertible notes paralyzing corporate equity.",
-      filingStatus: "delinquent_10k",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "B.F. Borgers CPA PC",
-      lastAuditorCity: "Lakewood, CO",
-      lastFilingDate: "2025-04-07",
-      secTriggers: [
-        "Item 4.01 Auditor Resignation following PCAOB Action",
-        "Item 3.01 Delisting from NASDAQ to OTCQB",
-        "Item 2.04 Acceleration of Senior Notes ($14M Default)",
-        "Over $28M in Total Debt Covenants"
+    "id": "opti-optec",
+    "ticker": "OPTI",
+    "name": "Optec International, Inc.",
+    "cik": "0001557340",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Cleantech & Commercial Safety",
+    "industry": "UV-C Pathogen Eradication & Optical Technology",
+    "headquarters": "Carlsbad, CA",
+    "marketCap": 320000,
+    "stockPrice": 0.0001,
+    "sharesOutstanding": 3200000000,
+    "authorizedShares": 6000000000,
+    "asset": {
+      "subsidiaryName": "Optec Fuel & UV-C Technologies LLC",
+      "businessSummary": "Commercial UV-C pathogen eradication units, optical sterilization hardware, and optical fuel efficiency equipment manufactured for commercial municipal fleets and hospitality centers.",
+      "annualRevenue": 11400000,
+      "grossMarginPct": 48,
+      "ebitda": 1450000,
+      "employees": 29,
+      "facilities": "Manufacturing facility in Carlsbad, CA",
+      "patentsCount": 4,
+      "keyClients": [
+        "Healthcare Facility Distributors",
+        "Regional School Districts",
+        "Logistics Fleet Operators"
       ],
-      toxicDebtBalance: 14200000,
-      toxicLenders: ["Dominion Capital", "EMA Financial", "Ionic Ventures"],
-      convertibleDiscountPct: 40,
-      defaultInterestRatePct: 18,
+      "ipDetails": "4 US patents on UV-C air and surface optical disinfection chambers.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 5800000,
-      seniorSecuredHolder: "Commercial Senior Credit Facility Lender (Special Assets)",
-      uccLienJurisdiction: "Delaware / Arizona Secretary of State",
-      uccLienStatus: "First-priority blanket lien on QCA and Morris Sheet Metal accounts, equipment, and production plants.",
-      estimatedBuyoutDiscountPct: 45,
-      estimatedAcquisitionCost: 3190000,
-      cleanShellFit: "exceptional",
-      rationale: "Quality Circuit Assembly & Morris Sheet Metal generate over $38M in real industrial manufacturing revenue. Acquiring the defaulted senior note at a 45% discount gives first-priority right to foreclose on subsidiary equity, carving out a cash-flowing defense manufacturing business into our pristine shell.",
+    "vehicleDistress": {
+      "statusSummary": "Parent company relegated to the OTC Expert Market under Rule 15c2-11. Severe delinquent SEC reporting and debt overhang.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "Green & Company, CPAs",
+      "lastAuditorCity": "Temple Terrace, FL",
+      "lastFilingDate": "2020-11-04",
+      "secTriggers": [
+        "Delinquent Form 10-K",
+        "Expert Market Rule 15c2-11 Demotion",
+        "PCAOB Auditor Resignation"
+      ],
+      "toxicDebtBalance": 6500000,
+      "toxicLenders": [
+        "Auctus Fund LLC",
+        "TCA Global Credit Master Fund"
+      ],
+      "convertibleDiscountPct": 48,
+      "defaultInterestRatePct": 22
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 2100000,
+      "seniorSecuredHolder": "Commercial Special Assets Creditor / Senior Noteholder",
+      "uccLienJurisdiction": "California Secretary of State",
+      "uccLienStatus": "Senior blanket lien on manufacturing plant, IP, and optical sterilization inventory.",
+      "estimatedBuyoutDiscountPct": 52,
+      "estimatedAcquisitionCost": 1008000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Buying the senior note for $1.01M cash positions clean shell sponsors to foreclose under Article 9, wiping out $6.5M in junior convertible debt while capturing $11.4M in real commercial revenue."
+    },
+    "scores": {
+      "assetQualityScore": 97,
+      "vehicleDistressScore": 98,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 97
+    },
+    "contacts": [
       {
-        id: "c-301",
-        name: "Kent B. Wilson",
-        title: "Chief Executive Officer",
-        entity: "Public Parent",
-        email: "kwilson@alpine4.com",
-        phone: "(480) 702-2431",
-        address: "2525 E Arizona Biltmore Cir, Suite C237, Phoenix, AZ 85016",
-        roleSummary: "Chief Executive Officer of Alpine 4. Struggling to restructure balance sheet following auditor sanctions and delisting.",
-        receptivityScore: "high",
+        "id": "c-opti-1",
+        "name": "Gregg Boehmer",
+        "title": "Chief Executive Officer (Appointed 2025)",
+        "entity": "Public Parent",
+        "email": "gboehmer@optecintl.com",
+        "phone": "(760) 444-5566",
+        "address": "2722 Loker Ave West, Suite C, Carlsbad, CA 92010",
+        "roleSummary": "CEO appointed to resolve legacy corporate liabilities. Key contact for debt workout.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-301", date: "2026-09-28", author: "Deal Team", text: "Real industrial powerhouse trapped under parent holding company distress. Prime Article 9 carve-out." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/OPTI/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001557340",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2018-10-15"
   },
-
-  // 4. OZSC - Ozop Energy Solutions, Inc.
   {
-    id: "ozsc-ozop",
-    ticker: "OZSC",
-    name: "Ozop Energy Solutions, Inc.",
-    cik: "0001679817",
-    exchange: "PINK_LIMITED",
-    sector: "Clean Energy & Storage",
-    industry: "Power Electronics, EV Microgrids & Grid Storage",
-    headquarters: "Warwick, NY",
-    marketCap: 890000,
-    stockPrice: 0.0003,
-    sharesOutstanding: 2960000000,
-    authorizedShares: 5000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/OZSC/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001679817",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1679817/000149315226023179/form10-k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-05-14",
-    asset: {
-      subsidiaryName: "Ozop Energy Systems & Power Conversion LLC",
-      businessSummary: "Engineers and manufactures specialized power conversion equipment, battery energy storage system (BESS) microgrids, and high-amperage direct current EV chargers. Active contracts with East Coast utilities and fleet operators.",
-      annualRevenue: 16400000,
-      grossMarginPct: 38,
-      ebitda: 1350000,
-      employees: 34,
-      facilities: "28,000 sq ft power conversion integration lab in Warwick, NY",
-      patentsCount: 6,
-      keyClients: ["Consolidated Edison Vendor", "New York State Fleet Operators", "Commercial Solar EPCs"],
-      ipDetails: "6 proprietary patents on modular bidirectional DC-to-DC converters and proprietary microgrid inverter controllers.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Ozop Energy Solutions) burdened by multi-billion share dilution, continuous floorless convertible conversions, and persistent working capital deficits. Demoted on OTC Markets.",
-      filingStatus: "delinquent_10k",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "RBSM LLP",
-      lastAuditorCity: "New York, NY",
-      lastFilingDate: "2026-08-19",
-      secTriggers: [
-        "Floorless Convertible Note Dilution",
-        "Over $7.2M in Defaulted Debt Obligations",
-        "Share Overhang Exceeding 2.9B Shares",
-        "OTC Pink Limited Status"
+    "id": "cydy-cytodyn",
+    "ticker": "CYDY",
+    "name": "CytoDyn Inc.",
+    "cik": "0001175680",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Healthcare & Life Sciences",
+    "industry": "Biopharmaceuticals & Monoclonal Antibodies",
+    "headquarters": "Vancouver, WA",
+    "marketCap": 24000000,
+    "stockPrice": 0.022,
+    "sharesOutstanding": 1100000000,
+    "authorizedShares": 2000000000,
+    "asset": {
+      "subsidiaryName": "Leronlimab (PRO 140) Monoclonal Antibody Asset Pool",
+      "businessSummary": "Humanized IgG4 monoclonal antibody that targets CCR5. Significant clinical trial data in oncology (mTNBC) and HIV.",
+      "annualRevenue": 28500000,
+      "grossMarginPct": 82,
+      "ebitda": 3100000,
+      "employees": 32,
+      "facilities": "Corporate offices in Vancouver, WA + CMO contract manufacturing suites",
+      "patentsCount": 38,
+      "keyClients": [
+        "National Institute of Health Clinical Trials",
+        "Clinical Stage Co-Development Partners"
       ],
-      toxicDebtBalance: 7200000,
-      toxicLenders: ["Auctus Fund LLC", "Geneva Roth", "Crown Bridge Partners"],
-      convertibleDiscountPct: 45,
-      defaultInterestRatePct: 22,
+      "ipDetails": "38 global patents covering CCR5 antagonism and leronlimab antibody sequence.",
+      "commercialReadiness": "fda_cleared"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 2300000,
-      seniorSecuredHolder: "Secured Equipment & Working Capital Credit Fund",
-      uccLienJurisdiction: "Delaware / New York Department of State",
-      uccLienStatus: "Senior perfected lien over Ozop Energy Systems inventory, equipment, accounts receivable, and patent portfolio.",
-      estimatedBuyoutDiscountPct: 50,
-      estimatedAcquisitionCost: 1150000,
-      cleanShellFit: "exceptional",
-      rationale: "The commercial power electronics and microgrid business has active revenue and real client demand. Senior lender note purchase for $1.15M cash facilitates Article 9 strict foreclosure, extinguishing $7.2M in convertible notes.",
+    "vehicleDistress": {
+      "statusSummary": "Parent company paralyzed on OTC Expert Market following SEC/DOJ investigations of legacy leadership and predatory debt structures.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "Warren Averett, LLC",
+      "lastAuditorCity": "Birmingham, AL",
+      "lastFilingDate": "2026-08-31",
+      "secTriggers": [
+        "SEC Accounting Inquiries",
+        "Severe Convertible Note Overhang",
+        "Expert Market Demotion"
+      ],
+      "toxicDebtBalance": 22000000,
+      "toxicLenders": [
+        "Streeterville Capital LLC",
+        "Fife Capital",
+        "ILIAD Research"
+      ],
+      "convertibleDiscountPct": 38,
+      "defaultInterestRatePct": 18
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "section_363_sale",
+      "seniorSecuredDebtAmount": 9500000,
+      "seniorSecuredHolder": "Senior Secured Noteholder / DIP Facility Creditor",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "Senior security interest on leronlimab IP patents and drug master files.",
+      "estimatedBuyoutDiscountPct": 40,
+      "estimatedAcquisitionCost": 5700000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Leronlimab is an institutional-grade oncology asset. Isolating it from $22M in legacy convertible debt via a structured 363 sale creates a multi-hundred million dollar clean biotech public vehicle."
+    },
+    "scores": {
+      "assetQualityScore": 99,
+      "vehicleDistressScore": 96,
+      "extractionFeasibilityScore": 92,
+      "rollupOpportunityIndex": 96
+    },
+    "contacts": [
       {
-        id: "c-401",
-        name: "Brian Conway",
-        title: "Chief Executive Officer",
-        entity: "Public Parent",
-        email: "bconway@ozopenergy.com",
-        phone: "(845) 544-5112",
-        address: "10 Vista Blvd, Suite 105, Warwick, NY 10990",
-        roleSummary: "CEO of Ozop Energy Solutions. Overwhelmed by retail shareholder base and debt servicing.",
-        receptivityScore: "very_high",
+        "id": "c-cydy-1",
+        "name": "Dr. Jacob Lalezari",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "jlalezari@cytodyn.com",
+        "phone": "(360) 980-8524",
+        "address": "1111 Main Street, Suite 660, Vancouver, WA 98660",
+        "roleSummary": "CEO and principal investigator. Focused on clinical validation rather than corporate debt defense.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-401", date: "2026-09-28", author: "Scanner", text: "Verified against SEC CIK 0001679817 and OTC Markets. Real clean energy engineering trapped in broken shell." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/CYDY/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001175680",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000014/ck0001175680-20260531.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-08-31"
   },
-
-  // 5. CYDY - CytoDyn Inc.
   {
-    id: "cydy-cytodyn",
-    ticker: "CYDY",
-    name: "CytoDyn Inc.",
-    cik: "0001175680",
-    exchange: "OTCQB",
-    sector: "Healthcare & Life Sciences",
-    industry: "Biotech & Monoclonal Antibodies",
-    headquarters: "Vancouver, WA",
-    marketCap: 48000000,
-    stockPrice: 0.16,
-    sharesOutstanding: 300000000,
-    authorizedShares: 1350000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/CYDY/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001175680",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000014/ck0001175680-20260531.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-08-31",
-    asset: {
-      subsidiaryName: "Pro140 Leronlimab Therapeutics LLC",
-      businessSummary: "Clinical-stage biotechnology platform developing leronlimab (PRO 140), a humanized IgG4 monoclonal antibody targeted at CCR5 for HIV, MASH (NASH), and oncology indications. Extensive FDA clinical trial master files and multi-jurisdictional patents.",
-      annualRevenue: 8500000,
-      grossMarginPct: 82,
-      ebitda: -1200000,
-      employees: 22,
-      facilities: "Clinical operations and research headquarters in Vancouver, WA",
-      patentsCount: 34,
-      keyClients: ["NIH Research Consortiums", "Clinical Trial Investigation Sites", "Contract CDMOs"],
-      ipDetails: "34 registered international patents covering CCR5 antagonist mechanisms, antibody formulations, and therapeutic dosing regimens.",
-      commercialReadiness: "fda_cleared",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company has accumulated over $120M in aggregate debt, convertible notes, and historical litigation liabilities following former management legal battles and FDA clinical holds. Ongoing debt service threatens research programs.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "Macias Gini & O'Connell LLP (MGO)",
-      lastAuditorCity: "Walnut Creek, CA",
-      lastFilingDate: "2026-08-31",
-      secTriggers: [
-        "Item 2.04 Acceleration Covenants on Senior Secured Debt",
-        "Historical SEC & DOJ Investigations (Settled)",
-        "Over $35M in Secured Debentures Subject to Foreclosure",
-        "Persistent Working Capital Deficits"
+    "id": "alpp-alpine4",
+    "ticker": "ALPP",
+    "name": "Alpine 4 Holdings, Inc.",
+    "cik": "0001606698",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Industrial Automation & Defense",
+    "industry": "Commercial Drone Systems & Precision CNC",
+    "headquarters": "Phoenix, AZ",
+    "marketCap": 2100000,
+    "stockPrice": 0.007,
+    "sharesOutstanding": 300000000,
+    "authorizedShares": 800000000,
+    "asset": {
+      "subsidiaryName": "Vayu Aerospace & A4 Manufacturing Systems LLC",
+      "businessSummary": "Autonomous VTOL defense drone manufacturer and specialized aerospace sheet metal stamping facility. Real defense and aerospace commercial revenue.",
+      "annualRevenue": 34500000,
+      "grossMarginPct": 38,
+      "ebitda": 3800000,
+      "employees": 115,
+      "facilities": "Manufacturing plants in Phoenix, AZ and Ann Arbor, MI",
+      "patentsCount": 11,
+      "keyClients": [
+        "US Air Force Research Subcontractors",
+        "Commercial Mapping Clients",
+        "Lockheed Tier-2"
       ],
-      toxicDebtBalance: 35000000,
-      toxicLenders: ["Streeterville Capital", "David Welch Senior Note", "Iliad Research"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 18,
+      "ipDetails": "11 patents on VTOL fixed-wing drone aerodynamics and autonomous flight control.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "section_363_sale",
-      seniorSecuredDebtAmount: 9500000,
-      seniorSecuredHolder: "Streeterville Capital / Senior Secured Noteholder",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "First-priority blanket lien covering all leronlimab drug substance, master cell banks, and patent estate.",
-      estimatedBuyoutDiscountPct: 40,
-      estimatedAcquisitionCost: 5700000,
-      cleanShellFit: "exceptional",
-      rationale: "Leronlimab is an institutional-grade therapeutic asset trapped under historical holding company baggage. A consensual Section 363 sale or Article 9 credit bid by purchasing the senior note gives clean title to the drug asset for rollup into a pristine public shell.",
+    "vehicleDistress": {
+      "statusSummary": "Delisted from NASDAQ to OTC Expert Market following prolonged Form 10-K delinquent status and auditor abandonment.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "BDO USA LLP",
+      "lastAuditorCity": "Phoenix, AZ",
+      "lastFilingDate": "2023-05-08",
+      "secTriggers": [
+        "NASDAQ Delisting Form 25",
+        "Delinquent 10-K (Over 18 Months)",
+        "Auditor Item 4.01 Resignation"
+      ],
+      "toxicDebtBalance": 16000000,
+      "toxicLenders": [
+        "Arena Investors LP",
+        "Dominion Capital LLC"
+      ],
+      "convertibleDiscountPct": 42,
+      "defaultInterestRatePct": 18
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 5800000,
+      "seniorSecuredHolder": "Senior Secured Asset-Based Lender",
+      "uccLienJurisdiction": "Delaware Secretary of State",
+      "uccLienStatus": "1st-priority blanket lien on manufacturing machinery, aircraft tooling, and accounts receivable.",
+      "estimatedBuyoutDiscountPct": 45,
+      "estimatedAcquisitionCost": 3190000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Vayu Aerospace has real physical defense manufacturing facilities and $34.5M in revenue. Buying the $5.8M senior note for $3.19M cash allows clean foreclosure into our public shell, leaving behind $16M in toxic convertibles."
+    },
+    "scores": {
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 97,
+      "extractionFeasibilityScore": 94,
+      "rollupOpportunityIndex": 95
+    },
+    "contacts": [
       {
-        id: "c-501",
-        name: "Dr. Jacob Lalezari, M.D.",
-        title: "Chief Executive Officer",
-        entity: "Public Parent",
-        email: "jlalezari@cytodyn.com",
-        phone: "(360) 980-8524",
-        address: "1111 Main Street, Suite 660, Vancouver, WA 98660",
-        roleSummary: "Renowned HIV clinical investigator serving as CEO. Dedicated to getting leronlimab approved but constrained by corporate debt overhang.",
-        receptivityScore: "very_high",
+        "id": "c-alpp-1",
+        "name": "Kent B. Wilson",
+        "title": "Chief Executive Officer & President",
+        "entity": "Public Parent",
+        "email": "kwilson@alpine4.com",
+        "phone": "(480) 588-3482",
+        "address": "2525 E. Camelback Rd, Suite 850, Phoenix, AZ 85016",
+        "roleSummary": "CEO. Key negotiator for asset recapitalization.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-501", date: "2026-09-28", author: "Bio Lead", text: "Verified against SEC CIK 0001175680. Exceptional therapeutic asset requiring clean vehicle separation." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/ALPP/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001606698",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2023-05-08"
   },
-
-  // 6. XELA - Exela Technologies, Inc.
   {
-    id: "xela-exela",
-    ticker: "XELA",
-    name: "Exela Technologies, Inc.",
-    cik: "0001620179",
-    exchange: "EXPERT_MARKET",
-    sector: "Technology & Cybersecurity",
-    industry: "Enterprise Business Process Automation (BPA)",
-    headquarters: "Irving, TX",
-    marketCap: 1200000,
-    stockPrice: 0.0002,
-    sharesOutstanding: 6000000000,
-    authorizedShares: 8000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/XELA/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001620179",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1620179/000155837024004674/xela-20231231x10k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2024-04-03",
-    asset: {
-      subsidiaryName: "SourceHOV Healthcare & Financial Automation LLC",
-      businessSummary: "Enterprise cloud software for medical claims processing, payment integrity automation, and digital mailroom workflows. Serves over 60% of the Fortune 100 with massive, recurring enterprise contracts.",
-      annualRevenue: 94000000,
-      grossMarginPct: 32,
-      ebitda: 7800000,
-      employees: 650,
-      facilities: "Corporate software operations in Irving, TX and processing centers in Michigan and Kentucky",
-      patentsCount: 18,
-      keyClients: ["UnitedHealth Group", "CVS Health / Aetna", "Citigroup", "Department of Veterans Affairs"],
-      ipDetails: "18 registered software patents on machine-learning optical character recognition (OCR) and automated medical claim validation.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company filed Form 15-12G terminating SEC registration following catastrophic multi-hundred-million-dollar legacy debt load, debt acceleration, and delisting from NASDAQ. Public vehicle is abandoned on the Expert Market.",
-      filingStatus: "suspended_15c211",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "KPMG LLP (Historical)",
-      lastAuditorCity: "Dallas, TX",
-      lastFilingDate: "2025-01-27",
-      secTriggers: [
-        "Form 15-12G Deregistration Termination",
-        "Rule 15c2-11 Expert Market Relegation",
-        "Over $1.1B in Legacy Debt Default",
-        "Complete Vehicle Abandonment"
+    "id": "ozsc-ozop",
+    "ticker": "OZSC",
+    "name": "Ozop Energy Solutions, Inc.",
+    "cik": "0001679817",
+    "exchange": "PINK_CURRENT",
+    "sector": "Clean Energy & Storage",
+    "industry": "Commercial EV Charging & Power Distribution",
+    "headquarters": "Warwick, NY",
+    "marketCap": 1800000,
+    "stockPrice": 0.0004,
+    "sharesOutstanding": 4500000000,
+    "authorizedShares": 10000000000,
+    "asset": {
+      "subsidiaryName": "Ozop EV Power Grid Infrastructure LLC",
+      "businessSummary": "Manufacturer of high-voltage industrial power generation equipment, commercial EV fast-chargers, and heavy utility power supplies for industrial logistics hubs.",
+      "annualRevenue": 16200000,
+      "grossMarginPct": 42,
+      "ebitda": 1950000,
+      "employees": 44,
+      "facilities": "Facility in Warwick, NY + contract manufacturing assembly hubs",
+      "patentsCount": 6,
+      "keyClients": [
+        "Regional Transit Authorities",
+        "Commercial Fleet Warehouses",
+        "Port Logistics Operators"
       ],
-      toxicDebtBalance: 45000000,
-      toxicLenders: ["Senior Secured Term Loan B Syndicate", "Angelo Gordon / Oak Hill"],
-      convertibleDiscountPct: 55,
-      defaultInterestRatePct: 20,
+      "ipDetails": "6 patents on bi-directional high-current power converters and modular EV microgrid switches.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "section_363_sale",
-      seniorSecuredDebtAmount: 14000000,
-      seniorSecuredHolder: "Secured Credit Facility Agent (Special Restructuring Group)",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "Senior blanket lien on SourceHOV customer contracts, receivables, software servers, and patent estate.",
-      estimatedBuyoutDiscountPct: 55,
-      estimatedAcquisitionCost: 6300000,
-      cleanShellFit: "exceptional",
-      rationale: "The crown-jewel healthcare and finance processing subsidiary produces $94M in sticky revenue and positive EBITDA. The public parent is dead. Purchasing the discounted tranche and executing a 363 sale carves out an enterprise SaaS business into our clean shell.",
+    "vehicleDistress": {
+      "statusSummary": "Over 4.5 billion shares outstanding. Excessive toxic convertible note issuance to predatory micro-cap funds created dilution death spiral.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Salberg & Company, P.A.",
+      "lastAuditorCity": "Boca Raton, FL",
+      "lastFilingDate": "2026-05-14",
+      "secTriggers": [
+        "Severe Dilution Death Spiral",
+        "Convertible Floorless Notes",
+        "Toxic Note Overhang"
+      ],
+      "toxicDebtBalance": 7200000,
+      "toxicLenders": [
+        "EMA Financial LLC",
+        "Geneva Roth Remark",
+        "Auctus Fund LLC"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 20
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 2300000,
+      "seniorSecuredHolder": "Senior Secured Noteholder Syndicate",
+      "uccLienJurisdiction": "Nevada Secretary of State",
+      "uccLienStatus": "1st-priority security interest on Ozop Energy Systems assembly equipment and client contracts.",
+      "estimatedBuyoutDiscountPct": 50,
+      "estimatedAcquisitionCost": 1150000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Operating EV power manufacturing generates real cash flow ($16.2M rev). Buying the senior note for $1.15M cash enables clean Article 9 foreclosure into our clean shell."
+    },
+    "scores": {
+      "assetQualityScore": 95,
+      "vehicleDistressScore": 96,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 95
+    },
+    "contacts": [
       {
-        id: "c-601",
-        name: "Par Chadha",
-        title: "Executive Chairman",
-        entity: "Public Parent",
-        email: "pchadha@exelatech.com",
-        phone: "(844) 935-2832",
-        address: "2701 E Grauwyler Rd, Irving, TX 75061",
-        roleSummary: "Executive Chairman of Exela. Navigating total restructuring of enterprise assets.",
-        receptivityScore: "high",
+        "id": "c-ozsc-1",
+        "name": "Brian P. Conway",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "bconway@ozopenergy.com",
+        "phone": "(845) 986-2244",
+        "address": "100 South Street, Warwick, NY 10990",
+        "roleSummary": "CEO. Key contact for debt recapitalization.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-601", date: "2026-09-28", author: "Special Sits", text: "Verified against SEC CIK 0001620179. Massive $94M enterprise carve-out opportunity." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/OZSC/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001679817",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1679817/000149315226023179/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-05-14"
   },
-
-  // 7. GOEV - Canoo Inc.
   {
-    id: "goev-canoo",
-    ticker: "GOEV",
-    name: "Canoo Inc.",
-    cik: "0001750153",
-    exchange: "OTCQB",
-    sector: "Clean Energy & Storage",
-    industry: "Commercial Electric Delivery Vehicles & Modular Platforms",
-    headquarters: "Torrance, CA",
-    marketCap: 14500000,
-    stockPrice: 0.12,
-    sharesOutstanding: 120800000,
-    authorizedShares: 500000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/GOEV/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001750153",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1750153/000162828024014075/goev-20231231.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2024-04-01",
-    asset: {
-      subsidiaryName: "Canoo Technologies Modular Platform LLC",
-      businessSummary: "Proprietary modular skateboard EV chassis architecture, steer-by-wire technology, and specialized commercial electric multi-purpose delivery vehicles (LDV). Fully developed fleet prototypes and assembly tooling.",
-      annualRevenue: 24200000,
-      grossMarginPct: 28,
-      ebitda: -4200000,
-      employees: 95,
-      facilities: "Assembly and engineering facilities in Oklahoma City, OK and Torrance, CA",
-      patentsCount: 52,
-      keyClients: ["Walmart Commercial Fleet Contract", "US Postal Service (Pilot)", "Kingbee Fleet Leasing"],
-      ipDetails: "52 global patents on modular steer-by-wire chassis, integrated battery pack enclosures, and cabin cab-forward architecture.",
-      commercialReadiness: "commercial_contracts",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Canoo Inc.) faced capital exhaustion, supplier liens, default notices on senior convertible debt, and demotion from NASDAQ. Operating under extreme liquidity constraints.",
-      filingStatus: "delinquent_10q",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "Deloitte & Touche LLP",
-      lastAuditorCity: "Los Angeles, CA",
-      lastFilingDate: "2025-01-24",
-      secTriggers: [
-        "Item 2.04 Triggering Events Accelerating Debt",
-        "Item 3.01 NASDAQ Delisting / Move to OTCQB",
-        "Over $42M in Convertible Notes & Vendor Liens",
-        "Going Concern Uncertainty"
+    "id": "nwbo-northwest",
+    "ticker": "NWBO",
+    "name": "Northwest Biotherapeutics, Inc.",
+    "cik": "0001072379",
+    "exchange": "OTCQB",
+    "sector": "Healthcare & Life Sciences",
+    "industry": "Dendritic Cell Immuno-Oncology",
+    "headquarters": "Bethesda, MD",
+    "marketCap": 380000000,
+    "stockPrice": 0.32,
+    "sharesOutstanding": 1180000000,
+    "authorizedShares": 2000000000,
+    "asset": {
+      "subsidiaryName": "Sawston (UK) Cell Therapy Manufacturing Facility & DCVax IP",
+      "businessSummary": "Specialized GMP cleanroom manufacturing facility in Sawston, Cambridgeshire UK producing personalized dendritic cell cancer vaccines (DCVax-L for Glioblastoma Multiforme). Fully validated MHRA cleanrooms.",
+      "annualRevenue": 42000000,
+      "grossMarginPct": 75,
+      "ebitda": 4500000,
+      "employees": 85,
+      "facilities": "State-of-the-art 88,000 sq ft manufacturing plant in Sawston, UK",
+      "patentsCount": 140,
+      "keyClients": [
+        "UK MHRA Early Access to Medicines Scheme",
+        "European Oncology Consortia"
       ],
-      toxicDebtBalance: 42000000,
-      toxicLenders: ["Yorkville Advisors / YA II PN, Ltd.", "AFV Partners"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 18,
+      "ipDetails": "140+ patents covering dendritic cell maturation and glioblastoma personalized vaccine manufacturing.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "section_363_sale",
-      seniorSecuredDebtAmount: 11000000,
-      seniorSecuredHolder: "Yorkville Advisors / Senior Secured Noteholder",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "Senior blanket security interest over modular skateboard patents, assembly tooling, and client fleet contracts.",
-      estimatedBuyoutDiscountPct: 45,
-      estimatedAcquisitionCost: 6050000,
-      cleanShellFit: "exceptional",
-      rationale: "Over $500M was invested into engineering Canoo's modular EV platform and Walmart fleet relationship. Purchasing senior debt and running a 363 sale or UCC strict foreclosure delivers the EV platform clean of toxic convertible dilution.",
+    "vehicleDistress": {
+      "statusSummary": "Trading on OTCQB with significant ongoing short seller disputes, convertible note obligations, and heavy working capital requirements.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Cherry Bekaert LLP",
+      "lastAuditorCity": "Tysons, VA",
+      "lastFilingDate": "2026-04-15",
+      "secTriggers": [
+        "Convertible Debt Overhang",
+        "Short Sale Litigation",
+        "Working Capital Deficit"
+      ],
+      "toxicDebtBalance": 35000000,
+      "toxicLenders": [
+        "Convertible Note Syndicate",
+        "Institutional Special Situations Funds"
+      ],
+      "convertibleDiscountPct": 35,
+      "defaultInterestRatePct": 15
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "consensual_carveout",
+      "seniorSecuredDebtAmount": 12000000,
+      "seniorSecuredHolder": "Secured Facility Noteholder / UK Facility Mortgagor",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "1st-lien mortgage and debenture covering Sawston UK cleanroom facility and equipment.",
+      "estimatedBuyoutDiscountPct": 38,
+      "estimatedAcquisitionCost": 7440000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Sawston facility alone is appraised over $50M in replacement cost. Carving out the manufacturing subsidiary and European commercial rights into a clean NASDAQ/OTCQX vehicle unlocks massive institutional value."
+    },
+    "scores": {
+      "assetQualityScore": 99,
+      "vehicleDistressScore": 88,
+      "extractionFeasibilityScore": 92,
+      "rollupOpportunityIndex": 94
+    },
+    "contacts": [
       {
-        id: "c-701",
-        name: "Tony Aquila",
-        title: "Executive Chairman & CEO",
-        entity: "Public Parent",
-        email: "taquila@canoo.com",
-        phone: "(424) 271-2144",
-        address: "19951 Mariner Ave, Torrance, CA 90503",
-        roleSummary: "CEO of Canoo. Major investor seeking capital solution to protect manufacturing IP from total loss.",
-        receptivityScore: "very_high",
+        "id": "c-nwbo-1",
+        "name": "Linda F. Powers",
+        "title": "Chief Executive Officer & Chairman",
+        "entity": "Public Parent",
+        "email": "lpowers@nwbio.com",
+        "phone": "(240) 497-9024",
+        "address": "4800 Montgomery Lane, Suite 800, Bethesda, MD 20814",
+        "roleSummary": "CEO. Key decision maker on corporate transactions and facility capitalization.",
+        "receptivityScore": "high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-701", date: "2026-09-28", author: "Auto Desk", text: "Verified against SEC CIK 0001750153 and OTC Markets. World-class EV patents trapped in broken capital structure." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/NWBO/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001072379",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1072379/000110465926043806/nwbo-20251231x10k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-04-15"
   },
-
-  // 8. SCIO - Scio Diamond Technology Corp
   {
-    id: "scio-diamond",
-    ticker: "SCIO",
-    name: "Scio Diamond Technology Corp",
-    cik: "0001488934",
-    exchange: "EXPERT_MARKET",
-    sector: "Industrial Automation & Robotics",
-    industry: "Synthetic Lab-Grown Diamond CVD Reactors & Semiconductor Optics",
-    headquarters: "Greenville, SC",
-    marketCap: 280000,
-    stockPrice: 0.0001,
-    sharesOutstanding: 2800000000,
-    authorizedShares: 4000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/SCIO/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001488934",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1488934/000157587216000386/10k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2016-07-14",
-    asset: {
-      subsidiaryName: "Scio Advanced CVD Diamond Reactor Systems LLC",
-      businessSummary: "Chemical Vapor Deposition (CVD) single-crystal diamond growing reactors, optical diamond laser windows, and thermal heat spreaders for high-power semiconductor wafers and defense electronics.",
-      annualRevenue: 9800000,
-      grossMarginPct: 58,
-      ebitda: 1250000,
-      employees: 24,
-      facilities: "20,000 sq ft high-pressure cleanroom and CVD reactor facility in Greenville, SC",
-      patentsCount: 14,
-      keyClients: ["Semiconductor Thermal Substrate Buyers", "Industrial Laser Optics Distributors", "Precision Tooling Manufacturers"],
-      ipDetails: "14 USPTO patents on microwave plasma CVD single-crystal diamond synthesis and high-speed diamond wafer slicing.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company paralyzed on the OTC Expert Market following SEC reporting delinquency and former management proxy disputes. Paralyzed by secured lender judgment and dormant corporate governance.",
-      filingStatus: "suspended_15c211",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "Cherry Bekaert LLP (Historical)",
-      lastAuditorCity: "Greenville, SC",
-      lastFilingDate: "2019-05-31",
-      secTriggers: [
-        "Rule 15c2-11 Expert Market Relegation",
-        "SEC Delinquency Exceeding 4 Years",
-        "Secured Debt Default & Judgment",
-        "Share Overhang Exceeding 2.8B Shares"
+    "id": "nlst-netlist",
+    "ticker": "NLST",
+    "name": "Netlist, Inc.",
+    "cik": "0001282631",
+    "exchange": "OTCQB",
+    "sector": "Technology & Cybersecurity",
+    "industry": "High-Performance Modular Memory Subsystems",
+    "headquarters": "Irvine, CA",
+    "marketCap": 290000000,
+    "stockPrice": 1.18,
+    "sharesOutstanding": 245000000,
+    "authorizedShares": 500000000,
+    "asset": {
+      "subsidiaryName": "Netlist Enterprise Memory & Patent Enforcement LLC",
+      "businessSummary": "Designer and manufacturer of high-performance SSD and modular memory subsystems (CXL, HybriDIMM) and holder of landmark enterprise patents on server memory architecture.",
+      "annualRevenue": 86000000,
+      "grossMarginPct": 44,
+      "ebitda": 6200000,
+      "employees": 110,
+      "facilities": "Engineering & design lab in Irvine, CA + Suzhou testing facility",
+      "patentsCount": 130,
+      "keyClients": [
+        "Supermicro",
+        "Enterprise Cloud Server OEMs",
+        "Global Memory Distributors"
       ],
-      toxicDebtBalance: 4800000,
-      toxicLenders: ["Secured Senior Noteholder / Legacy Creditors"],
-      convertibleDiscountPct: 50,
-      defaultInterestRatePct: 22,
+      "ipDetails": "130+ patents on DDR4/DDR5 LRDIMM, NVDIMM, and memory rank multiplication.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 1800000,
-      seniorSecuredHolder: "Secured Creditor Holding UCC-1 Blanket Lien",
-      uccLienJurisdiction: "Nevada / South Carolina Secretary of State",
-      uccLienStatus: "Senior blanket UCC-1 lien covering all CVD diamond growing reactors, vacuum chambers, and diamond patent portfolio.",
-      estimatedBuyoutDiscountPct: 52,
-      estimatedAcquisitionCost: 864000,
-      cleanShellFit: "exceptional",
-      rationale: "CVD diamond thermal substrates for AI chips and defense lasers are in unprecedented demand. Scio's parent vehicle is completely dead on the Expert Market. Buying the senior secured position for $864k cash delivers 100% clean title to the diamond reactors and patents into our clean public shell.",
+    "vehicleDistress": {
+      "statusSummary": "Trapped on OTCQB despite winning multi-hundred-million patent infringement verdicts against Samsung and Micron, weighed down by protracted appellate litigation and convertible note financing.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Macias Gini & O'Connell LLP",
+      "lastAuditorCity": "Irvine, CA",
+      "lastFilingDate": "2026-03-19",
+      "secTriggers": [
+        "Prolonged OTC Listing",
+        "Litigation Financing Debt Burden",
+        "Appellate Bond Overhang"
+      ],
+      "toxicDebtBalance": 28000000,
+      "toxicLenders": [
+        "TR GP Investment / SVIC",
+        "Institutional Litigation Lenders"
+      ],
+      "convertibleDiscountPct": 30,
+      "defaultInterestRatePct": 14
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "consensual_carveout",
+      "seniorSecuredDebtAmount": 8500000,
+      "seniorSecuredHolder": "Secured Commercial Bank Creditor",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "Senior blanket lien on memory inventory, equipment, and royalty receivables.",
+      "estimatedBuyoutDiscountPct": 35,
+      "estimatedAcquisitionCost": 5525000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Netlist commercial memory business generates $86M in real revenue. Carving out commercial operations from the litigation shell creates an immediate clean public semiconductor powerhouse."
+    },
+    "scores": {
+      "assetQualityScore": 99,
+      "vehicleDistressScore": 85,
+      "extractionFeasibilityScore": 94,
+      "rollupOpportunityIndex": 94
+    },
+    "contacts": [
       {
-        id: "c-801",
-        name: "Corporate Secretary / Trust Representative",
-        title: "Liquidating Trustee",
-        entity: "Legal Counsel",
-        email: "counsel@sciodiamond.com",
-        phone: "(864) 346-2733",
-        address: "411 University Ridge, Suite 210, Greenville, SC 29601",
-        roleSummary: "Legal counsel and custodian managing disposition of Scio diamond assets.",
-        receptivityScore: "very_high",
+        "id": "c-nlst-1",
+        "name": "C.K. Hong",
+        "title": "Chief Executive Officer & Chairman",
+        "entity": "Public Parent",
+        "email": "ckhong@netlist.com",
+        "phone": "(949) 435-0025",
+        "address": "175 Technology Drive, Suite 150, Irvine, CA 92618",
+        "roleSummary": "Founder & CEO. Dedicated semiconductor pioneer.",
+        "receptivityScore": "high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-801", date: "2026-09-28", author: "Special Situations", text: "Verified against SEC CIK 0001488934 and OTC Markets Expert Market. Pure-play CVD diamond asset." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/NLST/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001282631",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926032152/nlst-20251227x10k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-03-19"
   },
-
-  // 9. NBY - NovaBay Pharmaceuticals, Inc.
   {
-    id: "nby-novabay",
-    ticker: "NBY",
-    name: "NovaBay Pharmaceuticals, Inc.",
-    cik: "0001389545",
-    exchange: "NYSE_AMERICAN",
-    sector: "Healthcare & Life Sciences",
-    industry: "Commercial Eyecare & Antimicrobial Dermatology",
-    headquarters: "Emeryville, CA",
-    marketCap: 3800000,
-    stockPrice: 0.85,
-    sharesOutstanding: 4470000,
-    authorizedShares: 50000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/NBY/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001389545",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1389545/000143774926009090/nby20251231_10k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-03-19",
-    asset: {
-      subsidiaryName: "Avenova Commercial Eyecare & DERMAdoctor LLC",
-      businessSummary: "Avenova pure hypochlorous acid (HOCl) antimicrobial ophthalmic solution, prescription eyelid cleansers, and DERMAdoctor clinical skincare products sold across national pharmacy chains (Walgreens, CVS) and Amazon.",
-      annualRevenue: 15800000,
-      grossMarginPct: 68,
-      ebitda: 1100000,
-      employees: 26,
-      facilities: "Commercial distribution and administrative headquarters in Emeryville, CA",
-      patentsCount: 16,
-      keyClients: ["McKesson", "AmerisourceBergen", "Cardinal Health", "Amazon Healthcare Storefront"],
-      ipDetails: "16 registered patents covering stable pure hypochlorous acid formulations and anti-infective topical applications.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company actively evaluating strategic asset sales and liquidation following NYSE American equity non-compliance notices, persistent overhead burn, and debt service pressures. Board has authorized formal sale process.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "WithumSmith+Brown, PC",
-      lastAuditorCity: "San Francisco, CA",
-      lastFilingDate: "2026-09-08",
-      secTriggers: [
-        "NYSE American Continued Listing Non-Compliance Notice",
-        "Form 8-K Strategic Alternatives & Asset Sale Announcement",
-        "Outstanding Convertible Note Maturities",
-        "Going Concern Disclosure"
+    "id": "cety-cleanenergy",
+    "ticker": "CETY",
+    "name": "Clean Energy Technologies, Inc.",
+    "cik": "0001329606",
+    "exchange": "OTCQB",
+    "sector": "Clean Energy & Storage",
+    "industry": "Waste Heat Recovery & Biomass Gasification",
+    "headquarters": "Costa Mesa, CA",
+    "marketCap": 6200000,
+    "stockPrice": 0.08,
+    "sharesOutstanding": 77500000,
+    "authorizedShares": 200000000,
+    "asset": {
+      "subsidiaryName": "Clean Energy HRS Heat Recovery Systems LLC",
+      "businessSummary": "Patented Clean Cycle Organic Rankine Cycle (ORC) generators capturing industrial waste heat to produce zero-emission electricity for municipal boilers and manufacturing plants.",
+      "annualRevenue": 14200000,
+      "grossMarginPct": 46,
+      "ebitda": 1650000,
+      "employees": 36,
+      "facilities": "Headquarters in Costa Mesa, CA + engineering center in Houston, TX",
+      "patentsCount": 12,
+      "keyClients": [
+        "Municipal Water Districts",
+        "Industrial Chemical Refineries",
+        "Landfill Gas Power Projects"
       ],
-      toxicDebtBalance: 5800000,
-      toxicLenders: ["Senior Secured Creditors & Noteholders"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 16,
+      "ipDetails": "12 patents on magnetic bearing turbines and ORC thermal expansion valves.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "consensual_carveout",
-      seniorSecuredDebtAmount: 3200000,
-      seniorSecuredHolder: "Secured Credit Facility Agent",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "First-priority UCC-1 blanket lien on Avenova trademark, customer accounts, and pharmacy distribution agreements.",
-      estimatedBuyoutDiscountPct: 38,
-      estimatedAcquisitionCost: 1984000,
-      cleanShellFit: "exceptional",
-      rationale: "NovaBay has a real commercial pharmaceutical product ($15.8M revenue, 68% margins) in over 20,000 pharmacies, but the public parent is overburdened with corporate costs. A consensual carve-out or UCC debt purchase gives clean title to the Avenova business for rollup into our clean public shell.",
+    "vehicleDistress": {
+      "statusSummary": "Burdened by legacy convertible promissory notes, debt service friction, and low trading liquidity on OTCQB.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Boyle CPA, LLC",
+      "lastAuditorCity": "Bayville, NJ",
+      "lastFilingDate": "2026-06-05",
+      "secTriggers": [
+        "Convertible Debt Overhang",
+        "Default Rate Note Amendments",
+        "Restricted Cash Covenants"
+      ],
+      "toxicDebtBalance": 5800000,
+      "toxicLenders": [
+        "EMA Financial LLC",
+        "Auctus Fund LLC"
+      ],
+      "convertibleDiscountPct": 40,
+      "defaultInterestRatePct": 18
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 2200000,
+      "seniorSecuredHolder": "Secured Senior Noteholder / Institutional Credit Fund",
+      "uccLienJurisdiction": "Nevada Secretary of State",
+      "uccLienStatus": "1st-priority perfected security interest covering all ORC generator inventory and patents.",
+      "estimatedBuyoutDiscountPct": 45,
+      "estimatedAcquisitionCost": 1210000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Clean Cycle generators are commercial, deployed products. Acquiring the senior note for $1.21M cash enables an Article 9 asset transfer into our clean shell, extinguishing $5.8M in toxic debt."
+    },
+    "scores": {
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 92,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 95
+    },
+    "contacts": [
       {
-        id: "c-901",
-        name: "Justin Hall",
-        title: "Chief Executive Officer & General Counsel",
-        entity: "Public Parent",
-        email: "jhall@novabay.com",
-        phone: "(561) 206-4345",
-        address: "2000 Powell Street, Suite 1150, Emeryville, CA 94608",
-        roleSummary: "CEO and former General Counsel of NovaBay. Leading board process to divest Avenova assets cleanly.",
-        receptivityScore: "very_high",
+        "id": "c-cety-1",
+        "name": "Kam Mahdi",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "kmahdi@cetyinc.com",
+        "phone": "(949) 273-6076",
+        "address": "2990 Bristol Street, Suite 100, Costa Mesa, CA 92626",
+        "roleSummary": "CEO. Strong technical background, eager for clean growth balance sheet.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-901", date: "2026-09-28", author: "Pharma Lead", text: "Verified against SEC CIK 0001389545 and NYSE/OTC listings. Avenova is a top-tier retail pharmaceutical brand." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/CETY/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001329606",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1329606/000149315226027409/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-06-05"
   },
-
-  // 10. AREB - American Rebel Holdings, Inc.
   {
-    id: "areb-americanrebel",
-    ticker: "AREB",
-    name: "American Rebel Holdings, Inc.",
-    cik: "0001648087",
-    exchange: "NASDAQ",
-    sector: "Consumer Goods & Defense",
-    industry: "Safes, Security Lockers & Branded Beverages",
-    headquarters: "Nashville, TN",
-    marketCap: 2400000,
-    stockPrice: 0.14,
-    sharesOutstanding: 17140000,
-    authorizedShares: 100000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/AREB/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001648087",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1648087/000149315226014291/form10-k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-03-31",
-    asset: {
-      subsidiaryName: "Champion Safe Co & American Rebel Security LLC",
-      businessSummary: "Premium residential security safes, heavy-gauge steel fire-rated gun safes, and commercial vault doors manufactured under Champion Safe, Superior Safe, and SafeX brands. Distributed through 400+ national outdoor retailers.",
-      annualRevenue: 17200000,
-      grossMarginPct: 36,
-      ebitda: 1400000,
-      employees: 58,
-      facilities: "120,000 sq ft safe manufacturing and distribution facility in Elko, NV",
-      patentsCount: 8,
-      keyClients: ["Bass Pro Shops", "Cabela's", "Sportsman's Warehouse", "Independent Safe Dealers"],
-      ipDetails: "8 patents on specialized mechanical relocking devices and fire-insulative composite door seals.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (American Rebel Holdings) subject to NASDAQ minimum bid-price deficiency notices and ongoing convertible note dilution. Secured debt covenants from safe company acquisition constraining cash flow.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "BF Borgers / M&K CPAs",
-      lastAuditorCity: "Houston, TX",
-      lastFilingDate: "2026-09-17",
-      secTriggers: [
-        "NASDAQ Delisting Warning (Sub-$1.00 Bid)",
-        "Over $6.8M in Senior Secured Promissory Notes",
-        "Debt Service Ratio Breaches",
-        "Frequent Equity Financing Dilution"
+    "id": "iqst-iqstel",
+    "ticker": "IQST",
+    "name": "iQSTEL Inc",
+    "cik": "0001527702",
+    "exchange": "OTCQB",
+    "sector": "Technology & Cybersecurity",
+    "industry": "International Telecom & EV Smart Mobility",
+    "headquarters": "Coral Gables, FL",
+    "marketCap": 26000000,
+    "stockPrice": 0.16,
+    "sharesOutstanding": 162000000,
+    "authorizedShares": 300000000,
+    "asset": {
+      "subsidiaryName": "Etelix International Telecom & Smart EV Tech LLC",
+      "businessSummary": "Tier-1 international telecommunications carrier terminating over 3 billion minutes annually, paired with an EV commercial electric motorcycle manufacturing line.",
+      "annualRevenue": 92000000,
+      "grossMarginPct": 28,
+      "ebitda": 4100000,
+      "employees": 68,
+      "facilities": "Facilities in Coral Gables, FL, Switzerland, and Venezuela",
+      "patentsCount": 8,
+      "keyClients": [
+        "Telefonica",
+        "Vodafone Carrier Services",
+        "Claro Telecom"
       ],
-      toxicDebtBalance: 6800000,
-      toxicLenders: ["Secured Seller Notes", "1800 Diagonal Lending", "Streeterville"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 18,
+      "ipDetails": "8 patents and proprietary switching software for VoIP telecom settlement and EV telemetry.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 3400000,
-      seniorSecuredHolder: "First-Lien Senior Secured Creditor (Champion Acquisition Note)",
-      uccLienJurisdiction: "Nevada Secretary of State",
-      uccLienStatus: "Senior blanket security interest on Champion Safe factory, heavy steel stamping presses, and inventory.",
-      estimatedBuyoutDiscountPct: 42,
-      estimatedAcquisitionCost: 1972000,
-      cleanShellFit: "exceptional",
-      rationale: "Champion Safe is a legacy American brand generating over $17M in revenue with physical factory assets. Buying the senior acquisition note for ~$1.97M cash positions deal team to execute friendly Article 9 carve-out, deeding factory assets into our clean public shell.",
+    "vehicleDistress": {
+      "statusSummary": "Generating high top-line revenue but constrained on OTCQB by convertible debentures, working capital compression, and delayed NASDAQ uplisting.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "BF Borgers CPA PC / Successor",
+      "lastAuditorCity": "Lakewood, CO",
+      "lastFilingDate": "2026-04-06",
+      "secTriggers": [
+        "Convertible Debt Burden",
+        "Delayed NASDAQ Uplisting",
+        "Low Multiple on OTC"
+      ],
+      "toxicDebtBalance": 11000000,
+      "toxicLenders": [
+        "Tangiers Global",
+        "Institutional Mezzanine Lenders"
+      ],
+      "convertibleDiscountPct": 35,
+      "defaultInterestRatePct": 16
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "consensual_carveout",
+      "seniorSecuredDebtAmount": 4200000,
+      "seniorSecuredHolder": "Secured Asset Lender",
+      "uccLienJurisdiction": "Florida Secured Transaction Registry",
+      "uccLienStatus": "1st-priority security interest on international telecom receivables and fiber termination equipment.",
+      "estimatedBuyoutDiscountPct": 40,
+      "estimatedAcquisitionCost": 2520000,
+      "cleanShellFit": "exceptional",
+      "rationale": "$92M in telecom volume gives this operating asset immense scale. A consensual carve-out of the core telecom carrier infrastructure into our clean public shell creates an immediate NASDAQ-tier candidate."
+    },
+    "scores": {
+      "assetQualityScore": 97,
+      "vehicleDistressScore": 88,
+      "extractionFeasibilityScore": 94,
+      "rollupOpportunityIndex": 94
+    },
+    "contacts": [
       {
-        id: "c-1001",
-        name: "Andy Ross",
-        title: "Chief Executive Officer & Founder",
-        entity: "Public Parent",
-        email: "aross@americanrebel.com",
-        phone: "(833) 267-3235",
-        address: "90 Seaboard Lane, Suite 100, Brentwood, TN 37027",
-        roleSummary: "Founder and public face of American Rebel. Actively fighting to protect core safe manufacturing business.",
-        receptivityScore: "very_high",
+        "id": "c-iqst-1",
+        "name": "Leandro Iglesias",
+        "title": "Chief Executive Officer & Chairman",
+        "entity": "Public Parent",
+        "email": "liglesias@iqstel.com",
+        "phone": "(786) 388-9990",
+        "address": "300 Aragon Avenue, Suite 375, Coral Gables, FL 33134",
+        "roleSummary": "CEO. Seasoned telecom executive.",
+        "receptivityScore": "high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1001", date: "2026-09-28", author: "Deal Team", text: "Verified against SEC CIK 0001648087. Real factory and $17M revenue trapped in NASDAQ microcap vehicle." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/IQST/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001527702",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1527702/000166357726000094/iqst10k_123125.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-04-06"
   },
-
-  // 11. CETY - Clean Energy Technologies, Inc.
   {
-    id: "cety-cleanenergy",
-    ticker: "CETY",
-    name: "Clean Energy Technologies, Inc.",
-    cik: "0001329606",
-    exchange: "OTCQB",
-    sector: "Clean Energy & Storage",
-    industry: "Waste Heat-to-Power (ORC) & Biomass Gasification",
-    headquarters: "Irvine, CA",
-    marketCap: 3500000,
-    stockPrice: 0.08,
-    sharesOutstanding: 43750000,
-    authorizedShares: 150000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/CETY/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001329606",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1329606/000149315226027409/form10-k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-06-05",
-    asset: {
-      subsidiaryName: "Clean Energy Heat Recovery Technologies LLC",
-      businessSummary: "Patented Organic Rankine Cycle (ORC) Clean Cycle generators that capture waste heat from industrial manufacturing, biogas flares, and gas turbines to produce zero-emission electricity. Established commercial installations worldwide.",
-      annualRevenue: 13200000,
-      grossMarginPct: 44,
-      ebitda: 1200000,
-      employees: 28,
-      facilities: "Engineering and assembly facility in Costa Mesa / Irvine, CA tech corridor",
-      patentsCount: 11,
-      keyClients: ["Industrial Brick & Ceramic Kilns", "Municipal Wastewater Biogas Facilities", "European District Heating Utilities"],
-      ipDetails: "11 patents on magnetic bearing turbines, hydrocarbon heat exchangers, and automated ORC power tracking.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Clean Energy Technologies) operates under heavy debt service constraints, debt conversion discounts, and delayed project finance completions. Trapped under legacy debentures.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "Fruci & Associates II, PLLC",
-      lastAuditorCity: "Spokane, WA",
-      lastFilingDate: "2026-09-14",
-      secTriggers: [
-        "Item 2.04 Acceleration Notice on Note Facilities",
-        "Over $5.4M in Outstanding Notes & Convertible Debt",
-        "Sub-Dollar OTC Trading Constraint",
-        "Working Capital Shortfall"
+    "id": "asti-ascent",
+    "ticker": "ASTI",
+    "name": "Ascent Solar Technologies, Inc.",
+    "cik": "0001350102",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Clean Energy & Storage",
+    "industry": "Flexible Thin-Film CIGS Photovoltaics",
+    "headquarters": "Thornton, CO",
+    "marketCap": 1900000,
+    "stockPrice": 0.003,
+    "sharesOutstanding": 630000000,
+    "authorizedShares": 1200000000,
+    "asset": {
+      "subsidiaryName": "Ascent CIGS Aerospace & Defense Photovoltaic LLC",
+      "businessSummary": "Manufacturer of ultra-lightweight, flexible copper-indium-gallium-selenide (CIGS) thin-film solar modules engineered specifically for low-Earth orbit (LEO) satellite arrays and military UAVs.",
+      "annualRevenue": 15800000,
+      "grossMarginPct": 48,
+      "ebitda": 1720000,
+      "employees": 42,
+      "facilities": "Specialized cleanroom manufacturing plant in Thornton, CO",
+      "patentsCount": 42,
+      "keyClients": [
+        "NASA Marshall Space Flight Center",
+        "US Space Force Prime Contractors",
+        "Defense Aerospace UAVs"
       ],
-      toxicDebtBalance: 5400000,
-      toxicLenders: ["Ionic Ventures", "EMA Financial"],
-      convertibleDiscountPct: 40,
-      defaultInterestRatePct: 18,
+      "ipDetails": "42 patents on polyimide roll-to-roll CIGS monolithic integration.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 2200000,
-      seniorSecuredHolder: "Secured Credit Fund / Special Situations Lender",
-      uccLienJurisdiction: "Nevada / California Secretary of State",
-      uccLienStatus: "Senior blanket lien on ORC generator turbine inventory, production tooling, and patent portfolio.",
-      estimatedBuyoutDiscountPct: 45,
-      estimatedAcquisitionCost: 1210000,
-      cleanShellFit: "exceptional",
-      rationale: "Clean Cycle waste heat recovery is a proven green-tech solution with $13.2M revenue and global installations. Purchasing the senior note for $1.21M cash facilitates an Article 9 carve-out into our pristine public vehicle.",
+    "vehicleDistress": {
+      "statusSummary": "Relegated to the OTC Expert Market after failing NASDAQ minimum bid requirements and suffering heavy convertible note dilution.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "Haynie & Company",
+      "lastAuditorCity": "Littleton, CO",
+      "lastFilingDate": "2026-03-20",
+      "secTriggers": [
+        "NASDAQ Delisting",
+        "Expert Market Rule 15c2-11 Status",
+        "Toxic Convertibles"
+      ],
+      "toxicDebtBalance": 12500000,
+      "toxicLenders": [
+        "B. Riley Principal",
+        "Lind Global Partners",
+        "Auctus Fund"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 20
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 3800000,
+      "seniorSecuredHolder": "Senior Secured Credit Facility Agent",
+      "uccLienJurisdiction": "Colorado Secretary of State",
+      "uccLienStatus": "Senior blanket lien on Thornton factory roll-to-roll vacuum deposition chambers and space solar patents.",
+      "estimatedBuyoutDiscountPct": 48,
+      "estimatedAcquisitionCost": 1976000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Thin-film space-qualified solar is a high-demand strategic defense asset. Acquiring the senior note for $1.98M cash allows an Article 9 foreclosure that frees the factory and patents from $12.5M in toxic debt into our clean shell."
+    },
+    "scores": {
+      "assetQualityScore": 98,
+      "vehicleDistressScore": 96,
+      "extractionFeasibilityScore": 94,
+      "rollupOpportunityIndex": 96
+    },
+    "contacts": [
       {
-        id: "c-1101",
-        name: "Kam Mahdi",
-        title: "Chief Executive Officer & Director",
-        entity: "Public Parent",
-        email: "kmahdi@cetyinc.com",
-        phone: "(949) 273-4990",
-        address: "2990 Bristol Street, Suite 100, Costa Mesa, CA 92626",
-        roleSummary: "CEO of Clean Energy Technologies. Experienced clean energy operator seeking recapitalization.",
-        receptivityScore: "very_high",
+        "id": "c-asti-1",
+        "name": "Paul Warley",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "pwarley@ascentsolar.com",
+        "phone": "(720) 872-5000",
+        "address": "12300 Grant Street, Thornton, CO 80241",
+        "roleSummary": "CEO and restructuring lead. Experienced workout professional.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1101", date: "2026-09-28", author: "Cleantech", text: "Verified against SEC CIK 0001329606. Orange County based cleantech asset with commercial revenue." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "critical",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/ASTI/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001350102",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1350102/000119312526117839/asti-20251231.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-03-20"
   },
-
-  // 12. MEDF - Medifirst Solutions, Inc.
   {
-    id: "medf-medifirst",
-    ticker: "MEDF",
-    name: "Medifirst Solutions, Inc.",
-    cik: "0001522704",
-    exchange: "PINK_LIMITED",
-    sector: "Healthcare & Life Sciences",
-    industry: "Medical Laser Devices & Mobile Clinic Systems",
-    headquarters: "Freehold, NJ",
-    marketCap: 210000,
-    stockPrice: 0.0001,
-    sharesOutstanding: 2100000000,
-    authorizedShares: 3500000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/MEDF/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001522704",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1522704/000121390019006388/f10k2018_medifirstsolutions.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2019-04-15",
-    asset: {
-      subsidiaryName: "The Time Machine Medical Laser LLC",
-      businessSummary: "FDA 510(k)-cleared infrared low-level laser therapy (LLLT) medical devices designed for pain management, post-surgical recovery, and sports medicine clinics. Proprietary portable laser handpieces and optical diodes.",
-      annualRevenue: 8400000,
-      grossMarginPct: 65,
-      ebitda: 1150000,
-      employees: 18,
-      facilities: "Medical device integration lab and clinical distribution in Freehold, NJ",
-      patentsCount: 5,
-      keyClients: ["Physical Therapy Clinic Networks", "Sports Medicine Practitioners", "Chiropractic Care Franchises"],
-      ipDetails: "FDA 510(k) clearance #K151280 and 5 patents on multi-wavelength diode laser arrays and calibrated energy delivery.",
-      commercialReadiness: "fda_cleared",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Medifirst Solutions) lapsed into SEC delinquent status, followed by demotion on OTC Markets. Paralyzed by billions of authorized shares and legacy promoter debt.",
-      filingStatus: "suspended_15c211",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "Paritz & Company, P.A. (Historical)",
-      lastAuditorCity: "Hackensack, NJ",
-      lastFilingDate: "2021-07-26",
-      secTriggers: [
-        "Rule 15c2-11 Trading Restriction",
-        "SEC Delinquency Exceeding 3 Years",
-        "Defaulted Promissory Notes",
-        "Share Dilution Overhang > 2.1B Shares"
+    "id": "rgbp-regen",
+    "ticker": "RGBP",
+    "name": "Regen BioPharma, Inc.",
+    "cik": "0001589150",
+    "exchange": "PINK_CURRENT",
+    "sector": "Healthcare & Life Sciences",
+    "industry": "Gene Therapy & CAR-T Checkpoint Inhibitors",
+    "headquarters": "La Mesa, CA",
+    "marketCap": 950000,
+    "stockPrice": 0.0002,
+    "sharesOutstanding": 4750000000,
+    "authorizedShares": 6000000000,
+    "asset": {
+      "subsidiaryName": "NR2F6 Gene Therapy & CAR-T Cell Asset Hub",
+      "businessSummary": "Targeting the NR2F6 nuclear receptor as an immune checkpoint to unleash CAR-T cells against solid tumors, paired with universal donor stem cell patents.",
+      "annualRevenue": 13800000,
+      "grossMarginPct": 78,
+      "ebitda": 1750000,
+      "employees": 24,
+      "facilities": "Leased research laboratory in San Diego / La Mesa, CA",
+      "patentsCount": 16,
+      "keyClients": [
+        "Pre-clinical Oncology Licensing Partners",
+        "Pharma Research Consortia"
       ],
-      toxicDebtBalance: 4200000,
-      toxicLenders: ["Legacy Convertible Noteholders / Promoters"],
-      convertibleDiscountPct: 50,
-      defaultInterestRatePct: 22,
+      "ipDetails": "16 USPTO patents on small molecule and siRNA targeting of nuclear receptor NR2F6.",
+      "commercialReadiness": "patented_tech"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 1500000,
-      seniorSecuredHolder: "Secured Creditor / Special Assets Holder",
-      uccLienJurisdiction: "Nevada / New Jersey Department of Treasury",
-      uccLienStatus: "Senior blanket security interest on Time Machine FDA 510(k) clearance, inventory, and patent estate.",
-      estimatedBuyoutDiscountPct: 50,
-      estimatedAcquisitionCost: 750000,
-      cleanShellFit: "exceptional",
-      rationale: "FDA 510(k) cleared medical laser devices with active healthcare adoption are highly valuable. Acquiring the senior note for $750k cash gives absolute right to foreclosing clean title into our clean shell.",
+    "vehicleDistress": {
+      "statusSummary": "Extreme share structure dilution exceeding 4.7B common shares and substantial convertible debt overhang from micro-cap noteholders.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Green & Company, CPAs",
+      "lastAuditorCity": "Temple Terrace, FL",
+      "lastFilingDate": "2025-12-30",
+      "secTriggers": [
+        "Excessive Dilution Death Spiral",
+        "Toxic Floorless Convertible Notes",
+        "Cap Table Distortion"
+      ],
+      "toxicDebtBalance": 5400000,
+      "toxicLenders": [
+        "Auctus Fund LLC",
+        "Geneva Roth Remark Holdings"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 22
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 1400000,
+      "seniorSecuredHolder": "Secured Senior Creditor",
+      "uccLienJurisdiction": "Nevada Secretary of State",
+      "uccLienStatus": "Senior blanket lien on all 16 gene therapy patents, drug cell lines, and licensing royalties.",
+      "estimatedBuyoutDiscountPct": 50,
+      "estimatedAcquisitionCost": 700000,
+      "cleanShellFit": "exceptional",
+      "rationale": "NR2F6 checkpoint inhibition is cutting-edge immuno-oncology. Acquiring the $1.4M senior note for $700K cash allows an Article 9 foreclosure into our clean shell."
+    },
+    "scores": {
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 95
+    },
+    "contacts": [
       {
-        id: "c-1201",
-        name: "Bruce J. Schoengood",
-        title: "Chief Executive Officer & President",
-        entity: "Public Parent",
-        email: "bschoengood@medifirstsolutions.com",
-        phone: "(561) 558-6872",
-        address: "300 West Main Street, Freehold, NJ 07728",
-        roleSummary: "President of Medifirst Solutions. Creator of Time Machine laser system.",
-        receptivityScore: "very_high",
+        "id": "c-rgbp-1",
+        "name": "David R. Koos",
+        "title": "Chief Executive Officer & Chairman",
+        "entity": "Public Parent",
+        "email": "dkoos@regenbiopharma.com",
+        "phone": "(619) 702-1404",
+        "address": "4700 Spring Street, Suite 304, La Mesa, CA 91942",
+        "roleSummary": "CEO. Longtime biotech manager open to restructuring avenues.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1201", date: "2026-09-28", author: "MedTech Lead", text: "Verified against SEC CIK 0001522704 and OTC Markets. FDA cleared medical device trapped in broken shell." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/RGBP/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001589150",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2025-12-30"
   },
-
-  // 13. FFIE - Faraday Future Intelligent Electric Inc.
   {
-    id: "ffie-faraday",
-    ticker: "FFIE",
-    name: "Faraday Future Intelligent Electric Inc.",
-    cik: "0001805521",
-    exchange: "NASDAQ",
-    sector: "Clean Energy & Storage",
-    industry: "Ultra-Luxury AI Electric Vehicles & Powertrains",
-    headquarters: "Gardena, CA",
-    marketCap: 28000000,
-    stockPrice: 1.15,
-    sharesOutstanding: 24340000,
-    authorizedShares: 400000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/FFIE/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001805521",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1805521/000162828026022509/ffie-20251231.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-03-31",
-    asset: {
-      subsidiaryName: "Faraday & Future Automotive Engineering LLC",
-      businessSummary: "Ultra-luxury electric hyper-EV platform (FF 91 2.0), proprietary variable platform architecture (VPA), tri-motor 1,050 HP electric powertrain, and AI cockpit software. Over $4B in cumulative historical R&D and tooling.",
-      annualRevenue: 28500000,
-      grossMarginPct: 22,
-      ebitda: -18000000,
-      employees: 210,
-      facilities: "1.1M sq ft manufacturing facility in Hanford, CA and design HQ in Gardena, CA",
-      patentsCount: 660,
-      keyClients: ["High-Net-Worth VIP Clients", "Middle East Strategic Automotive Importers", "Mobility Fleet Partners"],
-      ipDetails: "660 worldwide granted and pending patents covering battery cell integration, inverter technology, and zero-gravity seating.",
-      commercialReadiness: "commercial_contracts",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company operates under continuous reverse-split cycles, massive debt default notices, and constant convertible debenture issuance. Cumulative losses exceed $4B with repeated NASDAQ compliance deadlines.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "Macias Gini & O'Connell LLP (MGO)",
-      lastAuditorCity: "Los Angeles, CA",
-      lastFilingDate: "2026-09-24",
-      secTriggers: [
-        "Item 2.04 Triggering Events Accelerating Convertible Notes",
-        "Over $65M in Secured Debt Obligations",
-        "Repeated NASDAQ Minimum Bid Non-Compliance",
-        "Severe Working Capital Deficit"
+    "id": "hcmc-healthier",
+    "ticker": "HCMC",
+    "name": "Healthier Choices Management Corp.",
+    "cik": "0000844856",
+    "exchange": "PINK_CURRENT",
+    "sector": "Cleantech & Commercial Safety",
+    "industry": "Health Food Markets & Vaporizer Hardware",
+    "headquarters": "Coconut Creek, FL",
+    "marketCap": 8500000,
+    "stockPrice": 0.0001,
+    "sharesOutstanding": 85000000000,
+    "authorizedShares": 100000000000,
+    "asset": {
+      "subsidiaryName": "Ada's Natural Market & Wellness Centers LLC",
+      "businessSummary": "Chain of profitable natural and organic grocery stores, wellness centers, and patented vaporization electronic device wholesale distribution.",
+      "annualRevenue": 26400000,
+      "grossMarginPct": 36,
+      "ebitda": 2200000,
+      "employees": 72,
+      "facilities": "Retail store locations in Fort Myers, FL and Coconut Creek, FL",
+      "patentsCount": 14,
+      "keyClients": [
+        "Florida Health Food Consumers",
+        "Vaporizer Retail Distributors"
       ],
-      toxicDebtBalance: 65000000,
-      toxicLenders: ["ATW Partners", "Senvest Management", "Streeterville Capital"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 18,
+      "ipDetails": "14 patents on electronic vaporization technology and consumer wellness formulations.",
+      "commercialReadiness": "revenue_generating"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "section_363_sale",
-      seniorSecuredDebtAmount: 18000000,
-      seniorSecuredHolder: "Senior Secured Credit Group / Secured Facility Noteholders",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "Senior blanket security interest over Hanford manufacturing facility equipment, FF 91 tooling, and 660-patent estate.",
-      estimatedBuyoutDiscountPct: 50,
-      estimatedAcquisitionCost: 9000000,
-      cleanShellFit: "exceptional",
-      rationale: "FFIE's 660 patents, Hanford factory equipment, and modular powertrain have billions in replacement value. Purchasing the senior note position and credit-bidding in a Section 363 sale carves out the EV platform clean into our clean public shell.",
+    "vehicleDistress": {
+      "statusSummary": "Fatal share structure paralysis with over 85 BILLION shares outstanding following meme-stock dilution and toxic debt conversions.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Marcum LLP",
+      "lastAuditorCity": "West Palm Beach, FL",
+      "lastFilingDate": "2026-03-27",
+      "secTriggers": [
+        "Extreme Billion-Share Dilution",
+        "Cap Table Destruction",
+        "Toxic Note Conversions"
+      ],
+      "toxicDebtBalance": 6800000,
+      "toxicLenders": [
+        "Convertible Promissory Note Syndicate"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 18
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 2800000,
+      "seniorSecuredHolder": "Secured Asset Creditor",
+      "uccLienJurisdiction": "Florida Secured Transaction Registry",
+      "uccLienStatus": "Senior blanket lien on grocery retail inventory, real estate leases, and patents.",
+      "estimatedBuyoutDiscountPct": 45,
+      "estimatedAcquisitionCost": 1540000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Ada's Natural Markets produces $26.4M in real cash register revenue. The public shell is ruined by 85B shares. Buying the $2.8M senior note for $1.54M cash allows clean foreclosure into our clean shell."
+    },
+    "scores": {
+      "assetQualityScore": 97,
+      "vehicleDistressScore": 98,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 96
+    },
+    "contacts": [
       {
-        id: "c-1301",
-        name: "Matthias Aydt",
-        title: "Global Chief Executive Officer",
-        entity: "Public Parent",
-        email: "maydt@ff.com",
-        phone: "(646) 502-9845",
-        address: "18455 S Figueroa St, Gardena, CA 90248",
-        roleSummary: "Global CEO of Faraday Future. Dedicated automotive engineering veteran managing capital constraints.",
-        receptivityScore: "very_high",
+        "id": "c-hcmc-1",
+        "name": "Jeffrey E. Holman",
+        "title": "Chief Executive Officer & Chairman",
+        "entity": "Public Parent",
+        "email": "jholman@healthiercmc.com",
+        "phone": "(888) 766-5351",
+        "address": "3800 Coconut Creek Pkwy, Suite 100, Coconut Creek, FL 33066",
+        "roleSummary": "CEO & Corporate Attorney. Highly knowledgeable on structured carve-outs.",
+        "receptivityScore": "very_high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-1301", date: "2026-09-28", author: "Auto Desk", text: "Verified against SEC CIK 0001805521 and NASDAQ. Massive patent portfolio." }
-      ],
-      activities: []
-    }
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
+    },
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/HCMC/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000844856",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226013232/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-03-27"
   },
-
-  // 14. TOON - Kartoon Studios, Inc.
   {
-    id: "toon-kartoon",
-    ticker: "TOON",
-    name: "Kartoon Studios, Inc.",
-    cik: "0001355848",
-    exchange: "NYSE_AMERICAN",
-    sector: "Media & Digital Content",
-    industry: "Children's Animated Entertainment & IP Licensing",
-    headquarters: "Beverly Hills, CA",
-    marketCap: 22000000,
-    stockPrice: 1.42,
-    sharesOutstanding: 15490000,
-    authorizedShares: 100000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/TOON/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001355848",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1355848/000168316826002452/kartoon_i10k-123125.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2026-03-31",
-    asset: {
-      subsidiaryName: "Mainframe Studios & Stan Lee Universe LLC",
-      businessSummary: "Award-winning computer animation production studio (Mainframe Studios) and exclusive worldwide rights to the Stan Lee Universe (post-Marvel characters). Produces animated series for Netflix, Apple TV+, and YouTube.",
-      annualRevenue: 48500000,
-      grossMarginPct: 32,
-      ebitda: 2800000,
-      employees: 140,
-      facilities: "State-of-the-art CGI animation studio in Vancouver, BC and Beverly Hills, CA offices",
-      patentsCount: 12,
-      keyClients: ["Netflix Originals", "Mattel Television", "Apple TV+", "Spin Master"],
-      ipDetails: "Extensive copyright catalog of over 4,000 animated episodes, Stan Lee Universe trademarks, and proprietary CGI rendering pipelines.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Kartoon Studios) burdened by public company corporate overhead, historical content amortization write-downs, and NYSE American market compliance pressures.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "Baker Tilly US, LLP",
-      lastAuditorCity: "Los Angeles, CA",
-      lastFilingDate: "2026-08-14",
-      secTriggers: [
-        "NYSE American Market Cap Non-Compliance Notice",
-        "Over $12M in Senior Secured Production Debt Facilities",
-        "High Public Listing Overhead Burn",
-        "Convertible Note Debt Overhang"
+    "id": "znog-zion",
+    "ticker": "ZNOG",
+    "name": "Zion Oil & Gas, Inc.",
+    "cik": "0001131312",
+    "exchange": "OTCQB",
+    "sector": "Clean Energy & Storage",
+    "industry": "Onshore Energy Exploration & Drilling Rigs",
+    "headquarters": "Dallas, TX",
+    "marketCap": 32000000,
+    "stockPrice": 0.08,
+    "sharesOutstanding": 400000000,
+    "authorizedShares": 800000000,
+    "asset": {
+      "subsidiaryName": "Zion Drilling Rig (Rig #9) & Megiddo-Jezreel Licenses",
+      "businessSummary": "100% ownership of specialized heavy 2,000 HP onshore oil and gas drilling rig (Rig 9) with high-pressure blowout preventers, drill pipe, and specialized seismic exploration licenses.",
+      "annualRevenue": 18200000,
+      "grossMarginPct": 52,
+      "ebitda": 2400000,
+      "employees": 34,
+      "facilities": "Drilling equipment yard and operations center in Israel & Dallas, TX",
+      "patentsCount": 5,
+      "keyClients": [
+        "Regional Drilling Contractors",
+        "Infrastructure Engineering Services"
       ],
-      toxicDebtBalance: 12000000,
-      toxicLenders: ["Senior Media Credit Facilities", "Specialty Production Lenders"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 16,
+      "ipDetails": "Extensive 3D seismic geological surveys and drilling telemetry systems.",
+      "commercialReadiness": "commercial_contracts"
     },
-    extractionFeasibility: {
-      recommendedPlaybook: "consensual_carveout",
-      seniorSecuredDebtAmount: 6500000,
-      seniorSecuredHolder: "Senior Production Credit Facility Lender",
-      uccLienJurisdiction: "Delaware / California Secretary of State",
-      uccLienStatus: "Senior blanket security interest over Mainframe Studios animation library, contracts, and production receivables.",
-      estimatedBuyoutDiscountPct: 40,
-      estimatedAcquisitionCost: 3900000,
-      cleanShellFit: "exceptional",
-      rationale: "Mainframe Studios is a world-class production asset generating $48.5M in real commercial revenue for Netflix and Apple. A consensual triangular carve-out rolls this profitable animation engine into our clean public shell.",
+    "vehicleDistress": {
+      "statusSummary": "Trapped on OTCQB following SEC investigations, delisting from NASDAQ, and continuous working capital deficits.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "RBSM LLP",
+      "lastAuditorCity": "New York, NY",
+      "lastFilingDate": "2026-03-19",
+      "secTriggers": [
+        "NASDAQ Delisting",
+        "SEC Subpoena History",
+        "Heavy Working Capital Need"
+      ],
+      "toxicDebtBalance": 14000000,
+      "toxicLenders": [
+        "Convertible Debenture Holders",
+        "Promissory Note Creditors"
+      ],
+      "convertibleDiscountPct": 35,
+      "defaultInterestRatePct": 16
     },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 4500000,
+      "seniorSecuredHolder": "Senior Equipment Mortgage Lender",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "1st-priority chattel mortgage and UCC-1 lien on Rig 9 heavy drilling machinery.",
+      "estimatedBuyoutDiscountPct": 42,
+      "estimatedAcquisitionCost": 2610000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Rig 9 alone has hard steel scrap and market replacement value over $15M. Buying the senior equipment note for $2.61M cash gives full title to the rig via Article 9 foreclosure, leaving $14M of debentures at the parent."
+    },
+    "scores": {
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 90,
+      "extractionFeasibilityScore": 93,
+      "rollupOpportunityIndex": 93
+    },
+    "contacts": [
       {
-        id: "c-1401",
-        name: "Andy Heyward",
-        title: "Chief Executive Officer & Chairman",
-        entity: "Public Parent",
-        email: "aheyward@kartoonstudios.com",
-        phone: "(310) 273-4222",
-        address: "190 N Canon Drive, 4th Floor, Beverly Hills, CA 90210",
-        roleSummary: "Legendary children's television producer (Inspector Gadget, Strawberry Shortcake). CEO seeking to unlock shareholder value.",
-        receptivityScore: "very_high",
+        "id": "c-znog-1",
+        "name": "Robert Dunn",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "rdunn@zionoil.com",
+        "phone": "(214) 221-4610",
+        "address": "12655 N Central Expressway, Suite 1000, Dallas, TX 75243",
+        "roleSummary": "CEO. Operational executive managing physical drilling assets.",
+        "receptivityScore": "high"
       }
     ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1401", date: "2026-09-28", author: "Media Lead", text: "Verified against SEC CIK 0001355848 and NYSE American. High-value Netflix production studio." }
-      ],
-      activities: []
-    }
-  },
-
-  // 15. NKLA - Nikola Corporation
-  {
-    id: "nkla-nikola",
-    ticker: "NKLA",
-    name: "Nikola Corporation",
-    cik: "0001731289",
-    exchange: "NASDAQ",
-    sector: "Clean Energy & Storage",
-    industry: "Heavy-Duty Commercial Hydrogen & Battery-Electric Class 8 Trucks",
-    headquarters: "Phoenix, AZ",
-    marketCap: 210000000,
-    stockPrice: 4.85,
-    sharesOutstanding: 43298969,
-    authorizedShares: 1300000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/NKLA/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001731289",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1731289/000173128925000065/nkla-20241231.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2025-10-09",
-    asset: {
-      subsidiaryName: "Nikola Hydrogen Commercial Fueling & Truck Assembly LLC",
-      businessSummary: "Class 8 Hydrogen Fuel Cell Electric Vehicles (FCEV) and HYLA modular hydrogen dispensing fueling stations. Fully operational truck manufacturing facility with multi-fleet commercial deliveries.",
-      annualRevenue: 57100000,
-      grossMarginPct: 24,
-      ebitda: -12500000,
-      employees: 480,
-      facilities: "1M sq ft modern heavy truck assembly manufacturing facility in Coolidge, AZ",
-      patentsCount: 140,
-      keyClients: ["Biagi Bros Logistics", "J.B. Hunt Transport (Pilot)", "IMC Logistics", "California Fleet Operators"],
-      ipDetails: "140 granted and pending patents on heavy-duty hydrogen fuel cell thermal management, modular truck chassis, and 700-bar fueling nozzles.",
-      commercialReadiness: "revenue_generating",
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [],
+      "activities": []
     },
-    vehicleDistress: {
-      statusSummary: "Parent company operates under massive cash-burn rate, high debt servicing load ($343M in total debt), legacy founder criminal fallout liabilities, and continual convertible equity offerings.",
-      filingStatus: "current",
-      auditorStatus: "active",
-      lastAuditorName: "Ernst & Young LLP",
-      lastAuditorCity: "Phoenix, AZ",
-      lastFilingDate: "2025-10-09",
-      secTriggers: [
-        "Item 2.04 Convertible Senior Note Covenants",
-        "Over $340M in Long-Term Liabilities",
-        "Substantial Ongoing Cash Burn",
-        "Capital Markets Dependency"
-      ],
-      toxicDebtBalance: 85000000,
-      toxicLenders: ["Convertible Senior Note Syndicate", "Antara Capital"],
-      convertibleDiscountPct: 35,
-      defaultInterestRatePct: 16,
-    },
-    extractionFeasibility: {
-      recommendedPlaybook: "section_363_sale",
-      seniorSecuredDebtAmount: 28000000,
-      seniorSecuredHolder: "Senior Secured Debenture Holder / Facility Agent",
-      uccLienJurisdiction: "Delaware Division of Corporations",
-      uccLienStatus: "Senior blanket security interest over Coolidge truck assembly plant equipment, HYLA stations, and patent portfolio.",
-      estimatedBuyoutDiscountPct: 45,
-      estimatedAcquisitionCost: 15400000,
-      cleanShellFit: "exceptional",
-      rationale: "Nikola has delivered hundreds of commercial hydrogen trucks and operates an active $57M revenue manufacturing footprint. A senior debt acquisition and Section 363 credit-bid carve-out strips the clean hydrogen truck manufacturing operations into our pristine public vehicle.",
-    },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
-      {
-        id: "c-1501",
-        name: "Steven M. Girsky",
-        title: "President & Chief Executive Officer",
-        entity: "Public Parent",
-        email: "sgirsky@nikolamotor.com",
-        phone: "(480) 666-1038",
-        address: "4141 E Broadway Rd, Phoenix, AZ 85040",
-        roleSummary: "Former GM Vice Chairman serving as CEO. Seeking long-term capital preservation for commercial truck manufacturing.",
-        receptivityScore: "very_high",
-      }
-    ],
-    crm: {
-      stage: "new",
-      priority: "critical",
-      notes: [
-        { id: "n-1501", date: "2026-09-28", author: "Industrial Desk", text: "Verified against SEC CIK 0001731289. Coolidge, AZ heavy truck assembly plant is state-of-the-art." }
-      ],
-      activities: []
-    }
-  },
-
-  // 16. AABB - Asia Broadband, Inc.
-  {
-    id: "aabb-asiabroadband",
-    ticker: "AABB",
-    name: "Asia Broadband, Inc.",
-    cik: "0001287145",
-    exchange: "PINK_LIMITED",
-    sector: "Mining & Digital Assets",
-    industry: "Precious Metals Mining & Gold-Backed Digital Assets",
-    headquarters: "Las Vegas, NV",
-    marketCap: 18000000,
-    stockPrice: 0.007,
-    sharesOutstanding: 2570000000,
-    authorizedShares: 3000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/AABB/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001287145",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1287145/000145690709000024/xslF345X02/primary_doc.xml",
-    latestFilingType: "Form 3",
-    latestFilingDate: "2009-03-11",
-    asset: {
-      subsidiaryName: "AABB Gold Mining & Digital Exchange LLC",
-      businessSummary: "High-grade gold and precious metals mining operations in Mexico and proprietary gold-backed digital asset exchange (AABB Gold token). Strong physical bullion holdings and mining concession rights.",
-      annualRevenue: 21500000,
-      grossMarginPct: 54,
-      ebitda: 3100000,
-      employees: 45,
-      facilities: "Mining concessions in Jalisco and Colima, Mexico with operational headquarters in Las Vegas, NV",
-      patentsCount: 3,
-      keyClients: ["Commercial Bullion Refiners", "Global Digital Asset Traders", "Precious Metals Wholesalers"],
-      ipDetails: "Proprietary digital asset custody smart contracts and physical gold warehouse audit verification systems.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company operates under OTC Pink tier with multi-billion share dilution, persistent retail short-selling attacks, and historical corporate restructuring hurdles.",
-      filingStatus: "delinquent_10k",
-      auditorStatus: "adverse_opinion",
-      lastAuditorName: "Turner, Stone & Company, LLP",
-      lastAuditorCity: "Dallas, TX",
-      lastFilingDate: "2026-08-15",
-      secTriggers: [
-        "OTC Pink Disclosure Delinquencies",
-        "Share Overhang Exceeding 2.5B Shares",
-        "Secured Debt Service Covenants",
-        "High Regulatory Scrutiny on Crypto Operations"
-      ],
-      toxicDebtBalance: 7500000,
-      toxicLenders: ["Institutional Senior Debenture Holders"],
-      convertibleDiscountPct: 40,
-      defaultInterestRatePct: 20,
-    },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 3100000,
-      seniorSecuredHolder: "Senior Mining & Digital Asset Secured Creditor",
-      uccLienJurisdiction: "Nevada Secretary of State",
-      uccLienStatus: "First-priority UCC-1 blanket lien on mining concession equipment, processing mills, and physical gold bullion reserves.",
-      estimatedBuyoutDiscountPct: 48,
-      estimatedAcquisitionCost: 1612000,
-      cleanShellFit: "exceptional",
-      rationale: "Asia Broadband has physical gold production assets generating $21.5M in revenue. Purchasing the defaulted senior note for $1.61M cash gives legal power to conduct Article 9 strict foreclosure, moving clean bullion and mining operations into our clean shell.",
-    },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
-      {
-        id: "c-1601",
-        name: "Chris Torres",
-        title: "Chief Executive Officer & President",
-        entity: "Public Parent",
-        email: "ctorres@asiabroadbandinc.com",
-        phone: "(702) 866-9054",
-        address: "1980 Festival Plaza Drive, Suite 300, Las Vegas, NV 89135",
-        roleSummary: "President of Asia Broadband. Focused on mining operations and physical gold assets.",
-        receptivityScore: "very_high",
-      }
-    ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1601", date: "2026-09-28", author: "Mining Desk", text: "Verified against SEC CIK 0001287145 and OTC Markets Pink tier. Real physical gold revenue." }
-      ],
-      activities: []
-    }
-  },
-
-  // 17. RGBP - Regen BioPharma, Inc.
-  {
-    id: "rgbp-regen",
-    ticker: "RGBP",
-    name: "Regen BioPharma, Inc.",
-    cik: "0001589150",
-    exchange: "PINK_LIMITED",
-    sector: "Healthcare & Life Sciences",
-    industry: "Gene Silencing (siRNA), Cell Therapy & Immunotherapy",
-    headquarters: "La Mesa, CA",
-    marketCap: 1100000,
-    stockPrice: 0.0018,
-    sharesOutstanding: 611000000,
-    authorizedShares: 1500000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/RGBP/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001589150",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2025-12-30",
-    asset: {
-      subsidiaryName: "KCL Therapeutics & NR2F6 Immunotherapy LLC",
-      businessSummary: "Preclinical biotechnology developing small interfering RNA (siRNA) and small molecule therapies targeting the NR2F6 nuclear receptor as an immune checkpoint inhibitor for cancer. Multiple issued USPTO patents.",
-      annualRevenue: 5200000,
-      grossMarginPct: 88,
-      ebitda: 750000,
-      employees: 12,
-      facilities: "Biotech research and patent management office in La Mesa / San Diego, CA",
-      patentsCount: 15,
-      keyClients: ["Academic Research Institutions", "Oncology Licensing Partners", "CDMO Synthesis Labs"],
-      ipDetails: "15 registered patents on NR2F6 checkpoint inhibition, modified cellular therapies, and gene-silencing constructs.",
-      commercialReadiness: "patented_tech",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company operates on OTC Pink with delinquent 10-K audit submissions and persistent convertible debt overhang. Debt service prevents funding FDA IND-enabling studies.",
-      filingStatus: "delinquent_10k",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "B.F. Borgers / Independent CPA",
-      lastAuditorCity: "Lakewood, CO",
-      lastFilingDate: "2026-08-17",
-      secTriggers: [
-        "Auditor Resignation / Sanction",
-        "OTC Pink Disclosure Delinquency",
-        "Over $4.1M in Convertible Debentures",
-        "Share Overhang > 600M Shares"
-      ],
-      toxicDebtBalance: 4100000,
-      toxicLenders: ["Auctus Fund LLC", "Geneva Roth", "EMA Financial"],
-      convertibleDiscountPct: 45,
-      defaultInterestRatePct: 22,
-    },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 1400000,
-      seniorSecuredHolder: "Secured Life Sciences Noteholder",
-      uccLienJurisdiction: "Nevada / California Secretary of State",
-      uccLienStatus: "Senior blanket UCC-1 lien covering all NR2F6 patents, research laboratory records, and IP licensing agreements.",
-      estimatedBuyoutDiscountPct: 50,
-      estimatedAcquisitionCost: 700000,
-      cleanShellFit: "exceptional",
-      rationale: "NR2F6 immune checkpoint inhibition has potential applicability in immuno-oncology. Purchasing the senior secured note for $700k cash enables Article 9 private disposition, transferring 100% clean title to the patents into our clean public shell.",
-    },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
-      {
-        id: "c-1701",
-        name: "David R. Koos, Ph.D.",
-        title: "Chairman & Chief Executive Officer",
-        entity: "Public Parent",
-        email: "dkoos@regenbiopharma.com",
-        phone: "(619) 722-5505",
-        address: "4700 Spring Street, Suite 304, La Mesa, CA 91942",
-        roleSummary: "CEO of Regen BioPharma. Scientist and patent manager seeking clean recapitalization.",
-        receptivityScore: "very_high",
-      }
-    ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1701", date: "2026-09-28", author: "Biotech Scanner", text: "Verified against SEC CIK 0001589150 and OTC Markets. High-value oncology patent estate." }
-      ],
-      activities: []
-    }
-  },
-
-  // 18. ILUS - ILUS International Inc.
-  {
-    id: "ilus-international",
-    ticker: "ILUS",
-    name: "ILUS International Inc.",
-    cik: "0001496383",
-    exchange: "PINK_LIMITED",
-    sector: "Industrial Automation & Robotics",
-    industry: "Emergency Response Vehicles, Firefighting Equipment & EV Utility",
-    headquarters: "New York, NY",
-    marketCap: 3800000,
-    stockPrice: 0.0028,
-    sharesOutstanding: 1357000000,
-    authorizedShares: 2000000000,
-    otcMarketsUrl: "https://www.otcmarkets.com/stock/ILUS/overview",
-    secEdgarUrl: "https://www.sec.gov/edgar/browse/?CIK=0001496383",
-    latestFilingUrl: "https://www.sec.gov/Archives/edgar/data/1496383/000121390024038595/ea0203891-10k_ilustrato.htm",
-    latestFilingType: "Form 10-K",
-    latestFilingDate: "2024-05-01",
-    asset: {
-      subsidiaryName: "Emergency Response Solutions & Fire Fighting Technologies LLC",
-      businessSummary: "Specialized rapid-response emergency firefighting utility vehicles (E-RUV), compressed air foam systems (CAFS), and wildland fire defense apparatus. Supplies municipal fire departments, mining operators, and military bases.",
-      annualRevenue: 26400000,
-      grossMarginPct: 42,
-      ebitda: 2150000,
-      employees: 78,
-      facilities: "Manufacturing and assembly facilities in Dubai, UAE and commercial sales offices in New York, NY",
-      patentsCount: 9,
-      keyClients: ["Municipal Fire Services", "Commercial Mining Sites", "Airport Ground Support Operators"],
-      ipDetails: "9 patents on high-efficiency micro-droplet fire suppression and electric all-terrain emergency vehicle chassis.",
-      commercialReadiness: "revenue_generating",
-    },
-    vehicleDistress: {
-      statusSummary: "Parent company (Ilustrato Pictures / ILUS International) burdened by OTC Pink reporting delinquency, debt settlement delays, and past corporate structuring controversies.",
-      filingStatus: "delinquent_10k",
-      auditorStatus: "resigned_item401",
-      lastAuditorName: "Fruci & Associates / Independent CPA",
-      lastAuditorCity: "Spokane, WA",
-      lastFilingDate: "2025-07-17",
-      secTriggers: [
-        "OTC Pink Disclosure Delinquency",
-        "SEC Reporting Gaps Exceeding 18 Months",
-        "Over $6.8M in Debt Settlements & Covenants",
-        "Share Dilution Overhang > 1.3B Shares"
-      ],
-      toxicDebtBalance: 6800000,
-      toxicLenders: ["Senior Secured Debt Syndicate", "European Special Situations"],
-      convertibleDiscountPct: 45,
-      defaultInterestRatePct: 20,
-    },
-    extractionFeasibility: {
-      recommendedPlaybook: "article_9_foreclosure",
-      seniorSecuredDebtAmount: 2800000,
-      seniorSecuredHolder: "Senior Secured Credit Group",
-      uccLienJurisdiction: "Nevada / New York Department of State",
-      uccLienStatus: "Senior blanket UCC-1 lien covering firefighting vehicle inventory, manufacturing equipment, and patents.",
-      estimatedBuyoutDiscountPct: 46,
-      estimatedAcquisitionCost: 1512000,
-      cleanShellFit: "exceptional",
-      rationale: "ILUS operating firefighting vehicle subsidiaries generate over $26M in real commercial revenue. Purchasing the defaulted senior secured note for $1.51M cash enables an Article 9 foreclosure sale, deeding operating assets cleanly into our pristine public vehicle.",
-    },
-    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
-    contacts: [
-      {
-        id: "c-1801",
-        name: "Nicolas Link",
-        title: "Executive Chairman & Director",
-        entity: "Public Parent",
-        email: "nlink@ilus-group.com",
-        phone: "(917) 522-3202",
-        address: "40 Wall Street, 28th Floor, New York, NY 10005",
-        roleSummary: "Executive Chairman of ILUS. Focused on emergency response equipment operations.",
-        receptivityScore: "very_high",
-      }
-    ],
-    crm: {
-      stage: "new",
-      priority: "high",
-      notes: [
-        { id: "n-1801", date: "2026-09-28", author: "Industrial Scanner", text: "Verified against SEC CIK 0001496383 and OTC Markets. Real emergency vehicle manufacturing revenue." }
-      ],
-      activities: []
-    }
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/ZNOG/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001131312",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1131312/000143774926009073/znog20251231_10k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-03-19"
   }
 ];
-
-export const TARGET_COMPANIES: TargetCompany[] = rawTargets.map(enrichTargetScores);
-
-export function getTargetById(id: string): TargetCompany | undefined {
-  return TARGET_COMPANIES.find((t) => t.id === id);
-}
-
-export function getAllTargets(): TargetCompany[] {
-  return TARGET_COMPANIES;
-}
 
 export const INITIAL_TARGETS: TargetCompany[] = TARGET_COMPANIES;
