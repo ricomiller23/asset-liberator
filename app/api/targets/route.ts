@@ -10,6 +10,7 @@ export async function GET(req: NextRequest) {
   const playbook = searchParams.get("playbook");
   const exchange = searchParams.get("exchange");
   const filingStatus = searchParams.get("filingStatus");
+  const revenueTier = searchParams.get("revenueTier");
   const minRevenue = searchParams.get("minRevenue") ? parseFloat(searchParams.get("minRevenue")!) : undefined;
   const maxSeniorDebt = searchParams.get("maxSeniorDebt") ? parseFloat(searchParams.get("maxSeniorDebt")!) : undefined;
   const minRoi = searchParams.get("minRoi") ? parseInt(searchParams.get("minRoi")!, 10) : undefined;
@@ -42,6 +43,12 @@ export async function GET(req: NextRequest) {
 
   if (filingStatus && filingStatus !== "all") {
     results = results.filter((t) => t.vehicleDistress.filingStatus === filingStatus);
+  }
+
+  if (revenueTier === "commercial") {
+    results = results.filter((t) => t.asset.annualRevenue > 0);
+  } else if (revenueTier === "pre_revenue_ip") {
+    results = results.filter((t) => t.asset.annualRevenue === 0);
   }
 
   if (minRevenue !== undefined) {

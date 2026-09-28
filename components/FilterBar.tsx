@@ -33,6 +33,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
       exchange: "all",
       filingStatus: "all",
       minRevenue: undefined,
+      revenueTier: "all",
       sortBy: "roi",
     });
   };
@@ -81,6 +82,31 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             <RefreshCcw className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
           </button>
         </div>
+      </div>
+
+      {/* Revenue Profile Quick Chips - Expand down to $0 Revenue */}
+      <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 pt-2.5 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
+        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0">REVENUE TIER:</span>
+        {[
+          { id: "all", label: "All Opportunities ($0 - $140M+)" },
+          { id: "commercial", label: "Tier A: Commercial ($1M+)" },
+          { id: "pre_revenue_ip", label: "Tier B: Pre-Revenue IP ($0)" },
+        ].map((item) => {
+          const isSelected = (filters.revenueTier || "all") === item.id;
+          return (
+            <button
+              key={item.id}
+              onClick={() => onFilterChange({ ...filters, revenueTier: item.id as any })}
+              className={`rounded-lg px-2.5 py-1 text-[11px] sm:text-xs transition font-medium shrink-0 ${
+                isSelected
+                  ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-semibold"
+                  : "bg-stone-950 text-stone-400 hover:text-stone-200 border border-stone-850"
+              }`}
+            >
+              {item.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Playbook Quick Chips - Horizontal Scrollable on Mobile */}

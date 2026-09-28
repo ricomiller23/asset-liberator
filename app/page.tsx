@@ -55,6 +55,7 @@ function AssetLiberatorMain() {
       if (filters.playbook && filters.playbook !== "all") params.set("playbook", filters.playbook);
       if (filters.exchange && filters.exchange !== "all") params.set("exchange", filters.exchange);
       if (filters.filingStatus && filters.filingStatus !== "all") params.set("filingStatus", filters.filingStatus);
+      if (filters.revenueTier && filters.revenueTier !== "all") params.set("revenueTier", filters.revenueTier);
       if (filters.sortBy) params.set("sortBy", filters.sortBy);
 
       const res = await fetch(`/api/targets?${params.toString()}`);

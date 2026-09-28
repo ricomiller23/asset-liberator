@@ -1,7 +1,8 @@
+export type RevenueTier = "all" | "commercial" | "pre_revenue_ip";
 export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQX" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "OTCID_BASIC" | "EXPERT_MARKET";
 export type FilingStatus = "current" | "delinquent_10k" | "delinquent_10q" | "suspended_15c211";
 export type AuditorStatus = "active" | "resigned_item401" | "unpaid" | "adverse_opinion";
-export type CommercialReadiness = "revenue_generating" | "commercial_contracts" | "fda_cleared" | "patented_tech";
+export type CommercialReadiness = "revenue_generating" | "commercial_contracts" | "fda_cleared" | "patented_tech" | "pre_clinical_r_and_d";
 export type PlaybookType = "article_9_foreclosure" | "section_363_sale" | "abc_receivership" | "consensual_carveout";
 export type CrmStage = "new" | "outreach_sent" | "in_dialogue" | "nda_signed" | "diligence" | "term_sheet" | "foreclosure_pending" | "closed" | "passed";
 export type PriorityLevel = "critical" | "high" | "medium" | "low";
@@ -125,6 +126,7 @@ export interface SearchFilters {
   playbook?: PlaybookType | "all";
   exchange?: ExchangeType | "all";
   filingStatus?: FilingStatus | "all";
+  revenueTier?: RevenueTier;
   minRevenue?: number;
   maxSeniorDebt?: number;
   minRoi?: number;

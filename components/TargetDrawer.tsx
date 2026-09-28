@@ -194,13 +194,13 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
                   <div className="text-[10px] text-stone-500">ANNUAL REVENUE</div>
                   <div className="text-sm font-bold text-emerald-400">
-                    ${(target.asset.annualRevenue / 1000000).toFixed(2)}M
+                    {target.asset.annualRevenue === 0 ? "$0 (Pre-Revenue)" : `$${(target.asset.annualRevenue / 1000000).toFixed(2)}M`}
                   </div>
                 </div>
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
                   <div className="text-[10px] text-stone-500">GROSS MARGIN</div>
                   <div className="text-sm font-bold text-emerald-300">
-                    {target.asset.grossMarginPct}%
+                    {target.asset.annualRevenue === 0 ? "R&D Pipeline" : `${target.asset.grossMarginPct}%`}
                   </div>
                 </div>
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">

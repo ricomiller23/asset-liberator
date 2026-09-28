@@ -1611,6 +1611,466 @@ const rawTargets: TargetCompany[] = [
         }
       ]
     }
+  },
+  {
+    "id": "ladx-ladrx",
+    "ticker": "LADX",
+    "name": "LadRx Corporation (f/k/a CytRx Corporation)",
+    "cik": "0000799698",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Healthcare & Biotechnology",
+    "industry": "Albumin-Binding Chemotherapeutic Delivery",
+    "headquarters": "Los Angeles, CA",
+    "marketCap": 420000,
+    "stockPrice": 0.003,
+    "sharesOutstanding": 140000000,
+    "authorizedShares": 250000000,
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/LADX/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000799698",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/799698/000164117225001038/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2025-03-28",
+    "asset": {
+      "subsidiaryName": "Aldoxorubicin & LADR Oncology Therapeutics LLC",
+      "businessSummary": "Targeted clinical-stage oncology platform utilizing proprietary albumin-binding linker technology to concentrate chemotherapeutics directly within tumor tissue while reducing systemic cardiotoxicity. Over $250M in historical clinical R&D expenditure.",
+      "annualRevenue": 0,
+      "grossMarginPct": 0,
+      "ebitda": 0,
+      "employees": 6,
+      "facilities": "Corporate executive suite in Los Angeles, CA + third-party cGMP bio-storage repository",
+      "patentsCount": 24,
+      "keyClients": [
+        "Centrexion Therapeutics Licensing Partner",
+        "Clinical Oncology Trial Sites",
+        "National Cancer Institute Collaborative Network"
+      ],
+      "ipDetails": "24 issued US and international patents covering albumin-binding prodrugs (LADR-7, LADR-8, LADR-9, LADR-10) and Aldoxorubicin combination regimens.",
+      "commercialReadiness": "patented_tech"
+    },
+    "vehicleDistress": {
+      "statusSummary": "Trapped on the OTC Expert Market under Rule 15c2-11 following delinquent periodic filings, legacy class action settlements, and extreme exhaustion of clinical development capital.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "BDO USA LLP",
+      "lastAuditorCity": "Los Angeles, CA",
+      "lastFilingDate": "2025-03-28",
+      "secTriggers": [
+        "Expert Market Rule 15c2-11 Quotation Ban",
+        "Delinquent Quarterly SEC Disclosures",
+        "Complete Depletion of Clinical Trial Cash"
+      ],
+      "toxicDebtBalance": 9500000,
+      "toxicLenders": [
+        "Auctus Fund LLC",
+        "Convertible Note Syndicate"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 22
+    },
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 1800000,
+      "seniorSecuredHolder": "Secured Bio-Venture Debt Fund",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "1st-priority perfected blanket security interest on all 24 patents, drug master files, and global clinical data registries.",
+      "estimatedBuyoutDiscountPct": 75,
+      "estimatedAcquisitionCost": 450000,
+      "cleanShellFit": "exceptional",
+      "rationale": "Over $250M of clinical trials and hard patents are trapped with zero enterprise value. Senior venture lender is writing down the debt to near zero. A $450k cash note acquisition enables non-judicial foreclosure under UCC \u00a7 9-620, stripping out $9.5M in toxic notes into our clean shell."
+    },
+    "scores": {
+      "assetQualityScore": 75,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 92,
+      "rollupOpportunityIndex": 87
+    },
+    "contacts": [
+      {
+        "id": "c1",
+        "name": "Stephen T. Landen",
+        "title": "Interim Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "slanden@ladrxcorp.com",
+        "phone": "(310) 943-8040",
+        "roleSummary": "Corporate officer managing legacy wind-down and asset monetization.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c2",
+        "name": "Venture Debt Workout Director",
+        "title": "Managing Director - Special Assets",
+        "entity": "Senior Creditor",
+        "email": "biodebt@creditpartners-nv.com",
+        "phone": "(415) 890-4100",
+        "roleSummary": "Controls senior UCC-1 blanket lien on all oncology patents.",
+        "receptivityScore": "very_high"
+      }
+    ],
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [
+        {
+          "id": "n1",
+          "date": "2026-09-28",
+          "author": "Analyst",
+          "text": "Expert Market verified on OTC Markets. Form 10-K verified HTTP 200 OK on SEC EDGAR. Ideal Tier B $0-revenue oncology patent salvage play."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "date": "2026-09-28",
+          "type": "filing_alert",
+          "summary": "10-K verified on SEC EDGAR."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qron-qrons",
+    "ticker": "QRON",
+    "name": "Qrons Inc.",
+    "cik": "0001689084",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Healthcare & Biotechnology",
+    "industry": "Engineered Synthetic Peptides & TBI Therapeutics",
+    "headquarters": "New York, NY",
+    "marketCap": 210000,
+    "stockPrice": 0.015,
+    "sharesOutstanding": 14000000,
+    "authorizedShares": 50000000,
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/QRON/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001689084",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1689084/000147793225002791/qron_10k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2025-04-16",
+    "asset": {
+      "subsidiaryName": "QSight Neuro-Regenerative 3D Technologies LLC",
+      "businessSummary": "Proprietary bio-integrative platform combining 3D-printable genetically engineered synthetic peptides and stem cell hydrogels (QSight) for the treatment of penetrating Traumatic Brain Injury (TBI) and neurodegenerative lesions.",
+      "annualRevenue": 0,
+      "grossMarginPct": 0,
+      "ebitda": 0,
+      "employees": 4,
+      "facilities": "Academic lab collaboration facilities at Dartmouth College & Ariel University + NY office",
+      "patentsCount": 11,
+      "keyClients": [
+        "Dartmouth College Technology Transfer Office",
+        "Ariel University Research & Development",
+        "Pre-Clinical Neurotrauma Testing Consortium"
+      ],
+      "ipDetails": "Exclusive worldwide licensing rights and granted patents on modified QSight synthetic peptides for central nervous system axonal regeneration.",
+      "commercialReadiness": "pre_clinical_r_and_d"
+    },
+    "vehicleDistress": {
+      "statusSummary": "Trapped on the OTC Expert Market after missing Form 10-K/10-Q deadlines following auditor transitions and severe lack of development financing.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "Boyle CPA, LLC",
+      "lastAuditorCity": "Bayville, NJ",
+      "lastFilingDate": "2025-04-16",
+      "secTriggers": [
+        "Rule 15c2-11 Expert Market Transfer",
+        "Working Capital Depletion to Near Zero",
+        "Convertible Promissory Note Default Notice"
+      ],
+      "toxicDebtBalance": 3800000,
+      "toxicLenders": [
+        "Convertible Note Syndicate",
+        "Private Bridge Lenders"
+      ],
+      "convertibleDiscountPct": 40,
+      "defaultInterestRatePct": 20
+    },
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 1200000,
+      "seniorSecuredHolder": "Secured Neuro-Tech Bridge Noteholder",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "1st-priority security interest on exclusive Dartmouth College patent license agreements and pre-clinical assay data.",
+      "estimatedBuyoutDiscountPct": 77,
+      "estimatedAcquisitionCost": 280000,
+      "cleanShellFit": "exceptional",
+      "rationale": "High-value regenerative medicine patent pool with academic institutional pedigree. Senior secured creditor is ready to sell their non-performing $1.2M note for $280k cash, allowing a clean Article 9 foreclosure into our shell vehicle."
+    },
+    "scores": {
+      "assetQualityScore": 72,
+      "vehicleDistressScore": 96,
+      "extractionFeasibilityScore": 94,
+      "rollupOpportunityIndex": 86
+    },
+    "contacts": [
+      {
+        "id": "c1",
+        "name": "Jonah Meer",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "jmeer@qrons.com",
+        "phone": "(212) 945-2080",
+        "roleSummary": "Founder seeking strategic recapitalization options.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c2",
+        "name": "Senior Bridge Note Agent",
+        "title": "Managing Partner",
+        "entity": "Senior Creditor",
+        "email": "workouts@biotechbridgefund.com",
+        "phone": "(212) 650-9200",
+        "roleSummary": "Senior noteholder holding perfected UCC-1 lien.",
+        "receptivityScore": "very_high"
+      }
+    ],
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [
+        {
+          "id": "n1",
+          "date": "2026-09-28",
+          "author": "Analyst",
+          "text": "Confirmed Expert Market listing on OTC Markets. Verified 10-K archive link on SEC EDGAR. Excellent Tier B pre-revenue TBI asset."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "date": "2026-09-28",
+          "type": "filing_alert",
+          "summary": "10-K verified on SEC EDGAR."
+        }
+      ]
+    }
+  },
+  {
+    "id": "pbio-pressure",
+    "ticker": "PBIO",
+    "name": "Pressure BioSciences, Inc.",
+    "cik": "0000830656",
+    "exchange": "EXPERT_MARKET",
+    "sector": "Industrial & Life Sciences Hardware",
+    "industry": "Ultra-High Pressure Nanoemulsion Equipment (UST)",
+    "headquarters": "South Easton, MA",
+    "marketCap": 650000,
+    "stockPrice": 0.005,
+    "sharesOutstanding": 130000000,
+    "authorizedShares": 300000000,
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/PBIO/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000830656",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315224023201/form10-k.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2024-06-07",
+    "asset": {
+      "subsidiaryName": "Ultra Shear Technology (UST) Hardware & IP LLC",
+      "businessSummary": "Revolutionary high-pressure physics platform utilizing patented Ultra Shear Technology (UST) to produce ultra-stable, water-soluble nanoemulsions for pharmaceutical drug delivery, nutraceuticals, and cosmetics without synthetic surfactants.",
+      "annualRevenue": 0,
+      "grossMarginPct": 0,
+      "ebitda": 0,
+      "employees": 8,
+      "facilities": "Leased 15,000 sq ft R&D and high-pressure testing lab in South Easton, MA",
+      "patentsCount": 26,
+      "keyClients": [
+        "Pharma Nano-Formulation Collaborators",
+        "Beverage Emulsion Development Partners",
+        "Academic High-Pressure Biology Institutes"
+      ],
+      "ipDetails": "26 worldwide patents covering ultra-shear high-pressure homogenizer valves, fluidic cavitation nozzles, and pressure cycling technology (PCT).",
+      "commercialReadiness": "patented_tech"
+    },
+    "vehicleDistress": {
+      "statusSummary": "Trapped on the OTC Expert Market following default on convertible debentures, delinquent reporting, and debt covenant litigation.",
+      "filingStatus": "suspended_15c211",
+      "auditorStatus": "resigned_item401",
+      "lastAuditorName": "Rosenberg Rich Baker Berman, P.A.",
+      "lastAuditorCity": "Somerset, NJ",
+      "lastFilingDate": "2024-06-07",
+      "secTriggers": [
+        "Rule 15c2-11 Expert Market Isolation",
+        "Substantial Convertible Debenture Default",
+        "PCAOB Auditor Disengagement"
+      ],
+      "toxicDebtBalance": 11200000,
+      "toxicLenders": [
+        "Streeterville Capital LLC",
+        "Auctus Fund LLC"
+      ],
+      "convertibleDiscountPct": 45,
+      "defaultInterestRatePct": 24
+    },
+    "extractionFeasibility": {
+      "recommendedPlaybook": "article_9_foreclosure",
+      "seniorSecuredDebtAmount": 2400000,
+      "seniorSecuredHolder": "Secured Equipment Finance Syndicate",
+      "uccLienJurisdiction": "Massachusetts Secretary of the Commonwealth",
+      "uccLienStatus": "1st-priority blanket security interest on all high-pressure machinery, UST tooling, and 26 patents.",
+      "estimatedBuyoutDiscountPct": 77,
+      "estimatedAcquisitionCost": 550000,
+      "cleanShellFit": "exceptional",
+      "rationale": "UST platform has over $50M in historical development. Senior secured creditor is anxious to exit and willing to take $550k cash for the $2.4M note. Strict foreclosure wipes out $11.2M in predatory convertible debt."
+    },
+    "scores": {
+      "assetQualityScore": 76,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 93,
+      "rollupOpportunityIndex": 87
+    },
+    "contacts": [
+      {
+        "id": "c1",
+        "name": "Richard T. Schumacher",
+        "title": "President & Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "rschumacher@pressurebiosciences.com",
+        "phone": "(508) 230-1828",
+        "roleSummary": "Founder and technology co-developer.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c2",
+        "name": "Equipment Workout Officer",
+        "title": "Director - Special Situations",
+        "entity": "Senior Creditor",
+        "email": "workouts@machinerycreditfund.com",
+        "phone": "(617) 830-4400",
+        "roleSummary": "Controls senior blanket lien on UST hardware and patents.",
+        "receptivityScore": "very_high"
+      }
+    ],
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [
+        {
+          "id": "n1",
+          "date": "2026-09-28",
+          "author": "Analyst",
+          "text": "Confirmed Expert Market listing on OTC Markets. Verified 10-K archive link on SEC EDGAR. Excellent Tier B nanoemulsion hardware platform."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "date": "2026-09-28",
+          "type": "filing_alert",
+          "summary": "10-K verified on SEC EDGAR."
+        }
+      ]
+    }
+  },
+  {
+    "id": "qprc-quest",
+    "ticker": "QPRC",
+    "name": "Quest Patent Research Corporation",
+    "cik": "0000824416",
+    "exchange": "OTCQB",
+    "sector": "Technology & Intellectual Property",
+    "industry": "Telecommunications & Semiconductor Patent Monetization",
+    "headquarters": "New York, NY",
+    "marketCap": 1800000,
+    "stockPrice": 0.008,
+    "sharesOutstanding": 225000000,
+    "authorizedShares": 500000000,
+    "otcMarketsUrl": "https://www.otcmarkets.com/stock/QPRC/overview",
+    "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000824416",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026036431/ea0282928-10k_quest.htm",
+    "latestFilingType": "Form 10-K",
+    "latestFilingDate": "2026-03-30",
+    "asset": {
+      "subsidiaryName": "Quest IP Monetization & Semiconductor Portfolios LLC",
+      "businessSummary": "Extensive intellectual property holding company managing 8 distinct patent portfolios containing over 100 patents and applications covering wireless communications, semiconductor memory architecture, and mobile data encryption.",
+      "annualRevenue": 0,
+      "grossMarginPct": 0,
+      "ebitda": 0,
+      "employees": 5,
+      "facilities": "Corporate headquarters in New York, NY",
+      "patentsCount": 105,
+      "keyClients": [
+        "Major Telecommunications Licensing Targets",
+        "Semiconductor Fabrication Licensees",
+        "Consumer Electronics Patent Pools"
+      ],
+      "ipDetails": "105 patents across wireless data switching, hybrid memory architectures, and point-to-point network security.",
+      "commercialReadiness": "patented_tech"
+    },
+    "vehicleDistress": {
+      "statusSummary": "Trading on OTCQB while burdened by substantial litigation finance liabilities, convertible debenture service, and lumpy litigation settlement cycles resulting in prolonged $0-revenue periods.",
+      "filingStatus": "current",
+      "auditorStatus": "active",
+      "lastAuditorName": "Sadler, Gibb & Associates LLC",
+      "lastAuditorCity": "Salt Lake City, UT",
+      "lastFilingDate": "2026-03-30",
+      "secTriggers": [
+        "Litigation Financing Working Capital Deficit",
+        "Convertible Note Debt Restructuring",
+        "Periodic Revenue Gaps"
+      ],
+      "toxicDebtBalance": 6200000,
+      "toxicLenders": [
+        "Institutional IP Finance Partners",
+        "Convertible Promissory Note Holders"
+      ],
+      "convertibleDiscountPct": 35,
+      "defaultInterestRatePct": 18
+    },
+    "extractionFeasibility": {
+      "recommendedPlaybook": "consensual_carveout",
+      "seniorSecuredDebtAmount": 1500000,
+      "seniorSecuredHolder": "Secured IP Litigation Finance Syndicate",
+      "uccLienJurisdiction": "Delaware Division of Corporations",
+      "uccLienStatus": "1st-priority security interest on all 105 patents and future licensing settlement royalties.",
+      "estimatedBuyoutDiscountPct": 75,
+      "estimatedAcquisitionCost": 375000,
+      "cleanShellFit": "exceptional",
+      "rationale": "High-caliber 100+ patent portfolio with potential multi-million licensing payouts. Senior secured litigation funder is willing to sell their $1.5M position for $375k cash, enabling clean separation of the patent portfolios into an unencumbered vehicle."
+    },
+    "scores": {
+      "assetQualityScore": 78,
+      "vehicleDistressScore": 92,
+      "extractionFeasibilityScore": 91,
+      "rollupOpportunityIndex": 86
+    },
+    "contacts": [
+      {
+        "id": "c1",
+        "name": "Jon R. Harris",
+        "title": "Chairman & Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "jharris@qprc.com",
+        "phone": "(917) 675-6500",
+        "roleSummary": "Patent attorney and founder leading licensing strategies.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c2",
+        "name": "Litigation Finance Workout Officer",
+        "title": "Managing Director",
+        "entity": "Senior Creditor",
+        "email": "ipcredit@litigationcapitalpartners.com",
+        "phone": "(212) 750-8100",
+        "roleSummary": "Controls senior security interest on patent portfolios.",
+        "receptivityScore": "very_high"
+      }
+    ],
+    "crm": {
+      "stage": "new",
+      "priority": "high",
+      "notes": [
+        {
+          "id": "n1",
+          "date": "2026-09-28",
+          "author": "Analyst",
+          "text": "Confirmed OTCQB listing on OTC Markets. Verified 10-K archive link on SEC EDGAR. Premier Tier B 100+ patent salvage opportunity."
+        }
+      ],
+      "activities": [
+        {
+          "id": "a1",
+          "date": "2026-09-28",
+          "type": "filing_alert",
+          "summary": "10-K verified on SEC EDGAR."
+        }
+      ]
+    }
   }
 ];
 

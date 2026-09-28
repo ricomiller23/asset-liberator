@@ -141,8 +141,12 @@ export const TargetCard: React.FC<TargetCardProps> = ({
                 <Building2 className="h-3.5 w-3.5 shrink-0" />
                 <span className="truncate">{target.asset.subsidiaryName}</span>
               </div>
-              <span className="rounded bg-emerald-500/20 px-1.5 py-0.2 text-[9px] font-mono font-bold text-emerald-300 border border-emerald-500/30 shrink-0">
-                THE ASSET
+              <span className={`rounded px-1.5 py-0.2 text-[9px] font-mono font-bold border shrink-0 ${
+                target.asset.annualRevenue === 0 
+                  ? "bg-cyan-500/20 text-cyan-300 border-cyan-500/30" 
+                  : "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
+              }`}>
+                {target.asset.annualRevenue === 0 ? "PRE-REV IP" : "THE ASSET"}
               </span>
             </div>
 
@@ -155,19 +159,19 @@ export const TargetCard: React.FC<TargetCardProps> = ({
               <div className="rounded-lg bg-stone-900/80 p-1.5 border border-stone-800">
                 <div className="text-[9px] sm:text-[10px] text-stone-400">ANNUAL REV</div>
                 <div className="text-xs sm:text-sm font-bold text-emerald-400">
-                  ${(target.asset.annualRevenue / 1000000).toFixed(1)}M
+                  {target.asset.annualRevenue === 0 ? "$0 (Pre-Rev)" : `$${(target.asset.annualRevenue / 1000000).toFixed(1)}M`}
                 </div>
               </div>
               <div className="rounded-lg bg-stone-900/80 p-1.5 border border-stone-800">
                 <div className="text-[9px] sm:text-[10px] text-stone-400">GROSS MARGIN</div>
                 <div className="text-xs sm:text-sm font-bold text-stone-200">
-                  {target.asset.grossMarginPct}%
+                  {target.asset.annualRevenue === 0 ? "R&D Stage" : `${target.asset.grossMarginPct}%`}
                 </div>
               </div>
               <div className="rounded-lg bg-stone-900/80 p-1.5 border border-stone-800">
                 <div className="text-[9px] sm:text-[10px] text-stone-400">EBITDA</div>
                 <div className="text-xs sm:text-sm font-bold text-cyan-400">
-                  {formatCurrency(target.asset.ebitda)}
+                  {target.asset.annualRevenue === 0 ? "Pre-Commercial" : formatCurrency(target.asset.ebitda)}
                 </div>
               </div>
             </div>
