@@ -1,5 +1,6 @@
 import React from "react";
 import { TargetCompany } from "@/lib/types";
+import { formatCurrency } from "@/lib/utils";
 import { 
   Building2, 
   AlertTriangle, 
@@ -71,7 +72,7 @@ export const TargetCard: React.FC<TargetCardProps> = ({
               <span className="hidden sm:inline text-stone-600">•</span>
               <span className="text-stone-400 truncate">{target.sector}</span>
               <span className="hidden sm:inline text-stone-600">•</span>
-              <span className="font-mono text-stone-400">Cap: ${(target.marketCap / 1000).toFixed(0)}k</span>
+              <span className="font-mono text-stone-400">Cap: {formatCurrency(target.marketCap)}</span>
             </div>
 
             {/* Direct Verified Regulatory & Exchange Links */}
@@ -162,7 +163,7 @@ export const TargetCard: React.FC<TargetCardProps> = ({
               <div className="rounded-lg bg-stone-900/80 p-1.5 border border-stone-800">
                 <div className="text-[9px] sm:text-[10px] text-stone-400">EBITDA</div>
                 <div className="text-xs sm:text-sm font-bold text-cyan-400">
-                  ${(target.asset.ebitda / 1000).toFixed(0)}k
+                  {formatCurrency(target.asset.ebitda)}
                 </div>
               </div>
             </div>
@@ -241,7 +242,7 @@ export const TargetCard: React.FC<TargetCardProps> = ({
             </div>
             <span className="text-stone-600 hidden sm:inline">|</span>
             <div className="text-stone-400 font-mono text-[10px] sm:text-[11px]">
-              Est. Cash Buyout: <strong className="text-cyan-300">${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k</strong> ({target.extractionFeasibility.estimatedBuyoutDiscountPct}% off ${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(1)}M note)
+              Est. Cash Buyout: <strong className="text-cyan-300">{formatCurrency(target.extractionFeasibility.estimatedAcquisitionCost)}</strong> ({target.extractionFeasibility.estimatedBuyoutDiscountPct}% off {formatCurrency(target.extractionFeasibility.seniorSecuredDebtAmount)} note)
             </div>
           </div>
 

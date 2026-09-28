@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TargetCompany } from "@/lib/types";
+import { formatCurrency, formatCurrencyExact } from "@/lib/utils";
 import { X, Scale, FileText, Check, Copy, ArrowRight, ShieldCheck, DollarSign } from "lucide-react";
 
 interface DealPlaybookModalProps {
@@ -31,7 +32,7 @@ DATE: ${new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", 
 2. SENIOR SECURED DEBT ACQUISITION:
    - Senior Creditor: ${target.extractionFeasibility.seniorSecuredHolder}
    - Face Value: ${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M
-   - Cash Purchase Price: ${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)},000 (Approx. ${100 - target.extractionFeasibility.estimatedBuyoutDiscountPct}% of Face)
+   - Cash Purchase Price: ${formatCurrency(target.extractionFeasibility.estimatedAcquisitionCost)} (${formatCurrencyExact(target.extractionFeasibility.estimatedAcquisitionCost)}) (Approx. ${100 - target.extractionFeasibility.estimatedBuyoutDiscountPct}% of Face)
    - Collateral Assigned: First priority perfected UCC-1 blanket security interest covering all machinery, accounts receivable, and patents of ${target.asset.subsidiaryName}.
 
 3. TOXIC DEBT EXTINGUISHMENT:
@@ -86,7 +87,7 @@ CONFIDENTIAL & NON-BINDING`;
               <span>STEP 1: SENIOR NOTE ASSIGNMENT & LIEN LOCK</span>
             </div>
             <p className="text-stone-300 leading-relaxed">
-              Execute absolute assignment agreement with <strong>{target.extractionFeasibility.seniorSecuredHolder}</strong>. Pay <strong>${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k cash</strong> to take over the first-priority UCC-1 lien recorded with {target.extractionFeasibility.uccLienJurisdiction}.
+              Execute absolute assignment agreement with <strong>{target.extractionFeasibility.seniorSecuredHolder}</strong>. Pay <strong>{formatCurrency(target.extractionFeasibility.estimatedAcquisitionCost)} cash</strong> to take over the first-priority UCC-1 lien recorded with {target.extractionFeasibility.uccLienJurisdiction}.
             </p>
           </div>
 

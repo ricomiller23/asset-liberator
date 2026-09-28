@@ -1,3 +1,4 @@
+import { formatCurrency } from "@/lib/utils";
 import React, { useState } from "react";
 import { TargetCompany, CrmStage, PriorityLevel } from "@/lib/types";
 import { 
@@ -88,7 +89,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 </span>
               </div>
               <p className="text-xs text-stone-400 mt-1">
-                {target.sector} • CIK {target.cik} • HQ: {target.headquarters} • Market Cap: ${(target.marketCap / 1000).toFixed(0)}k
+                {target.sector} • CIK {target.cik} • HQ: {target.headquarters} • Market Cap: {formatCurrency(target.marketCap)}
               </p>
 
               {/* Verified Regulatory & Primary Source Links */}
@@ -202,7 +203,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
                   <div className="text-[10px] text-stone-500">EBITDA</div>
                   <div className="text-sm font-bold text-stone-200">
-                    ${(target.asset.ebitda / 1000).toFixed(0)}k
+                    {formatCurrency(target.asset.ebitda)}
                   </div>
                 </div>
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
@@ -329,7 +330,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div>
                   <span className="text-stone-500 text-[10px]">EST. CASH BUYOUT COST</span>
                   <div className="text-xs font-bold text-emerald-400">
-                    ${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k Cash
+                    {formatCurrency(target.extractionFeasibility.estimatedAcquisitionCost)} Cash
                   </div>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { TargetCompany, CrmStage } from "@/lib/types";
+import { formatCurrency } from "@/lib/utils";
 import { 
   Building2, 
   Users, 
@@ -176,7 +177,7 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
                         <div className="rounded bg-stone-950/80 p-1.5 border border-stone-850">
                           <span className="text-stone-500 block text-[9px]">SR BUYOUT</span>
                           <span className="text-cyan-400 font-bold">
-                            ${(t.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k Cash
+                            {formatCurrency(t.extractionFeasibility.estimatedAcquisitionCost)} Cash
                           </span>
                         </div>
                       </div>
