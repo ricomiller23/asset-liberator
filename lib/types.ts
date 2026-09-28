@@ -1,4 +1,4 @@
-export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "EXPERT_MARKET";
+export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQX" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "OTCID_BASIC" | "EXPERT_MARKET";
 export type FilingStatus = "current" | "delinquent_10k" | "delinquent_10q" | "suspended_15c211";
 export type AuditorStatus = "active" | "resigned_item401" | "unpaid" | "adverse_opinion";
 export type CommercialReadiness = "revenue_generating" | "commercial_contracts" | "fda_cleared" | "patented_tech";

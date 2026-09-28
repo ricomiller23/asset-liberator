@@ -84,6 +84,9 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                   {target.ticker}
                 </span>
                 <h2 className="text-lg font-bold text-white">{target.name}</h2>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded border font-semibold bg-stone-800 text-stone-300 border-stone-700">
+                  {target.exchange.replace(/_/g, ' ')}
+                </span>
                 <span className="rounded bg-emerald-500/10 px-2 py-0.5 text-xs font-mono font-bold text-emerald-400 border border-emerald-500/20">
                   ROI {target.scores.rollupOpportunityIndex}/100
                 </span>
