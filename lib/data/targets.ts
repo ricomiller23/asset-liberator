@@ -57,12 +57,7 @@ const rawTargets: TargetCompany[] = [
       cleanShellFit: "exceptional",
       rationale: "Bank has placed $1.8M senior note in non-accrual workout status. Purchasing the bank note for $950k gives first-priority right to conduct a private Article 9 foreclosure sale, wiping out $6.8M toxic convertibles and deeding 100% of subsidiary equity into our clean public shell.",
     },
-    scores: {
-      assetQualityScore: 0,
-      vehicleDistressScore: 0,
-      extractionFeasibilityScore: 0,
-      rollupOpportunityIndex: 0,
-    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
     contacts: [
       {
         id: "c-101",
@@ -78,17 +73,6 @@ const rawTargets: TargetCompany[] = [
       },
       {
         id: "c-102",
-        name: "Arthur Pendelton",
-        title: "CEO & Chairman",
-        entity: "Public Parent",
-        email: "apendelton@aerovation-corp.com",
-        phone: "(212) 890-4100",
-        address: "590 Madison Ave, 21st Fl, New York, NY 10022",
-        roleSummary: "Public shell promoter facing personal director liability and toxic lender lawsuits. Eager to settle and walk away from public carcass.",
-        receptivityScore: "high",
-      },
-      {
-        id: "c-103",
         name: "Gregory Vance",
         title: "VP, Special Assets & Workouts",
         entity: "Senior Creditor",
@@ -99,14 +83,14 @@ const rawTargets: TargetCompany[] = [
         receptivityScore: "very_high",
       },
       {
-        id: "c-104",
-        name: "David S. Garfinkel, Esq.",
-        title: "Restructuring Counsel",
-        entity: "Legal Counsel",
-        email: "dgarfinkel@fl-restructurelaw.com",
-        phone: "(305) 579-0500",
-        address: "Miami, FL",
-        roleSummary: "Represented Precision Flight Avionics in previous senior debt facility; confirmed UCC-1 perfection and Article 9 carve-out feasibility.",
+        id: "c-103",
+        name: "Arthur Pendelton",
+        title: "CEO & Chairman",
+        entity: "Public Parent",
+        email: "apendelton@aerovation-corp.com",
+        phone: "(212) 890-4100",
+        address: "New York, NY",
+        roleSummary: "Public shell promoter facing personal director liability and toxic lender lawsuits.",
         receptivityScore: "high",
       }
     ],
@@ -116,32 +100,10 @@ const rawTargets: TargetCompany[] = [
       lastContactDate: "2026-09-24",
       nextFollowUpDate: "2026-09-29",
       notes: [
-        {
-          id: "n-1",
-          date: "2026-09-24",
-          author: "Investment Committee",
-          text: "Initial call with Founder Mick Sterling. He confirmed Textron and General Dynamics contracts are intact ($14.2M TTM rev). He hates the parent company and is willing to roll his 15% equity into our clean public shell immediately upon Article 9 closing."
-        },
-        {
-          id: "n-2",
-          date: "2026-09-22",
-          author: "Acquisitions Lead",
-          text: "Spoke informally with Gregory Vance at First Regional Bank. Indicated they would entertain an all-cash discounted payoff of $950,000 for the $1.8M note with full assignment of UCC-1 position."
-        }
+        { id: "n-1", date: "2026-09-24", author: "Deal Team", text: "Founder Mick Sterling confirmed Textron & GD contracts are solid ($14.2M rev). He is eager to roll into our clean public shell." }
       ],
       activities: [
-        {
-          id: "a-1",
-          date: "2026-09-24",
-          type: "call",
-          summary: "45-min Zoom with Mick Sterling (Founder) reviewing AS9100 customer roster and backlog."
-        },
-        {
-          id: "a-2",
-          date: "2026-09-22",
-          type: "call",
-          summary: "Preliminary workout note pricing inquiry with First Regional Bank Special Assets."
-        }
+        { id: "a-1", date: "2026-09-24", type: "call", summary: "45-min Zoom with Mick Sterling reviewing backlog." }
       ]
     }
   },
@@ -200,12 +162,7 @@ const rawTargets: TargetCompany[] = [
       cleanShellFit: "exceptional",
       rationale: "TheraPulse operating assets can be acquired via pre-arranged Section 363 sale or consensual foreclosure through Horizon Technology Credit. Parent board has already authorized exploring strategic divestiture to avoid full corporate liquidation.",
     },
-    scores: {
-      assetQualityScore: 0,
-      vehicleDistressScore: 0,
-      extractionFeasibilityScore: 0,
-      rollupOpportunityIndex: 0,
-    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
     contacts: [
       {
         id: "c-201",
@@ -221,17 +178,6 @@ const rawTargets: TargetCompany[] = [
       },
       {
         id: "c-202",
-        name: "Bradford Cole",
-        title: "Interim CEO & Restructuring Officer",
-        entity: "Public Parent",
-        email: "bcole@medixen-corp.com",
-        phone: "(858) 552-1900",
-        address: "San Diego, CA",
-        roleSummary: "Retained by board to unwind oncology liabilities and monetize TheraPulse subsidiary to satisfy creditors.",
-        receptivityScore: "high",
-      },
-      {
-        id: "c-203",
         name: "Eileen Gallagher",
         title: "Managing Director, Special Credits",
         entity: "Senior Creditor",
@@ -248,20 +194,10 @@ const rawTargets: TargetCompany[] = [
       lastContactDate: "2026-09-25",
       nextFollowUpDate: "2026-09-30",
       notes: [
-        {
-          id: "n-201",
-          date: "2026-09-25",
-          author: "M&A Counsel",
-          text: "Executed bilateral NDA with TheraPulse management and Interim CEO Bradford Cole. Received electronic data room access to FDA 510(k) regulatory correspondence and recurring cartridge sales ledger."
-        }
+        { id: "n-201", date: "2026-09-25", author: "M&A Counsel", text: "Executed NDA with TheraPulse management. Data room access granted." }
       ],
       activities: [
-        {
-          id: "a-201",
-          date: "2026-09-25",
-          type: "meeting",
-          summary: "Data room access granted; review of customer contracts and 2026 forecast."
-        }
+        { id: "a-201", date: "2026-09-25", type: "meeting", summary: "Data room review of recurring cartridge revenues." }
       ]
     }
   },
@@ -320,12 +256,7 @@ const rawTargets: TargetCompany[] = [
       cleanShellFit: "exceptional",
       rationale: "IronKey Network Security LLC is ring-fenced as a distinct Delaware LLC. Crestline holds a direct pledge of 100% of the LLC membership interest. Acquiring Crestlines defaulted position for $1.5M allows immediate strict foreclosure under UCC 9-620, extinguishing all $8.5M in toxic parent debt and delivering 100% unencumbered software business into our clean public shell.",
     },
-    scores: {
-      assetQualityScore: 0,
-      vehicleDistressScore: 0,
-      extractionFeasibilityScore: 0,
-      rollupOpportunityIndex: 0,
-    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
     contacts: [
       {
         id: "c-301",
@@ -341,17 +272,6 @@ const rawTargets: TargetCompany[] = [
       },
       {
         id: "c-302",
-        name: "Charles Montclair",
-        title: "Court-Appointed Custodian / Receiver",
-        entity: "Public Parent",
-        email: "cmontclair@delaware-fiduciary.com",
-        phone: "(302) 658-4400",
-        address: "Wilmington, DE",
-        roleSummary: "Appointed by Delaware Court of Chancery to oversee corporate asset disposition; desires quick resolution with court-approved asset sale.",
-        receptivityScore: "very_high",
-      },
-      {
-        id: "c-303",
         name: "Jason Bradley",
         title: "Managing Director, Distressed Credit",
         entity: "Senior Creditor",
@@ -368,20 +288,10 @@ const rawTargets: TargetCompany[] = [
       lastContactDate: "2026-09-26",
       nextFollowUpDate: "2026-10-01",
       notes: [
-        {
-          id: "n-301",
-          date: "2026-09-26",
-          author: "Lead Deal Partner",
-          text: "Confirmed with Receiver Charles Montclair in Delaware: Chancery Court will approve private Article 9 foreclosure sale on 10 days notice without opposition from parent shell creditors."
-        }
+        { id: "n-301", date: "2026-09-26", author: "Deal Partner", text: "Confirmed with Delaware receiver: Court will approve private Article 9 sale on 10 days notice." }
       ],
       activities: [
-        {
-          id: "a-301",
-          date: "2026-09-26",
-          type: "call",
-          summary: "Conference call with Crestline Special Credit team regarding assignment of membership interest pledge."
-        }
+        { id: "a-301", date: "2026-09-26", type: "call", summary: "Call with Crestline Special Credit regarding assignment." }
       ]
     }
   },
@@ -440,12 +350,7 @@ const rawTargets: TargetCompany[] = [
       cleanShellFit: "high",
       rationale: "Management and board recognize public parent is un-financeable. Consensual triangular asset purchase agreement: Western Alliance loan assumed/paid off at $910k cash; parent board receives 5% non-voting equity in clean shell to distribute to common shareholders, leaving all toxic notes behind in GVOL.",
     },
-    scores: {
-      assetQualityScore: 0,
-      vehicleDistressScore: 0,
-      extractionFeasibilityScore: 0,
-      rollupOpportunityIndex: 0,
-    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
     contacts: [
       {
         id: "c-401",
@@ -461,17 +366,6 @@ const rawTargets: TargetCompany[] = [
       },
       {
         id: "c-402",
-        name: "Harrison Brooks",
-        title: "Chief Executive Officer",
-        entity: "Public Parent",
-        email: "hbrooks@greenvolt-corp.com",
-        phone: "(312) 670-4200",
-        address: "Chicago, IL",
-        roleSummary: "Former investment banker who took company public via SPAC. Under intense fiduciary pressure from institutional founders to carve out operating asset before foreclosure.",
-        receptivityScore: "high",
-      },
-      {
-        id: "c-403",
         name: "Megan O’Reilly",
         title: "Director of Workout & Asset Recovery",
         entity: "Senior Creditor",
@@ -488,20 +382,10 @@ const rawTargets: TargetCompany[] = [
       lastContactDate: "2026-09-27",
       nextFollowUpDate: "2026-09-30",
       notes: [
-        {
-          id: "n-401",
-          date: "2026-09-27",
-          author: "Investment Committee",
-          text: "Submitted non-binding Term Sheet to Parent CEO Harrison Brooks and AmpCore Founder David Keller: $910,000 cash payoff to Western Alliance Bank + $500,000 growth working capital line injected into AmpCore upon closing into clean public shell."
-        }
+        { id: "n-401", date: "2026-09-27", author: "Deal Lead", text: "Submitted non-binding Term Sheet to David Keller: $910k cash payoff to Western Alliance Bank + $500k working capital line into clean public shell." }
       ],
       activities: [
-        {
-          id: "a-401",
-          date: "2026-09-27",
-          type: "term_sheet",
-          summary: "Formal non-binding Letter of Intent issued to GreenVolt Board of Directors."
-        }
+        { id: "a-401", date: "2026-09-27", type: "term_sheet", summary: "Term sheet delivered to AmpCore & Western Alliance." }
       ]
     }
   },
@@ -560,12 +444,7 @@ const rawTargets: TargetCompany[] = [
       cleanShellFit: "exceptional",
       rationale: "Keystone holds undisputed senior security interest. By purchasing Keystones senior position for $1.3M, our clean shell entity can notice an Article 9 UCC foreclosure sale on 10 days statutory notice, wiping out all junior toxic judgments and taking 100% of Vanguard clean of parent liabilities.",
     },
-    scores: {
-      assetQualityScore: 0,
-      vehicleDistressScore: 0,
-      extractionFeasibilityScore: 0,
-      rollupOpportunityIndex: 0,
-    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
     contacts: [
       {
         id: "c-501",
@@ -589,17 +468,6 @@ const rawTargets: TargetCompany[] = [
         address: "Chicago, IL",
         roleSummary: "Manages Keystone Capital senior loan. Confirmed willingness to execute an absolute assignment of note and UCC security position for $1.3M cash.",
         receptivityScore: "very_high",
-      },
-      {
-        id: "c-503",
-        name: "Vincent Moretti, Esq.",
-        title: "Securities & Insolvency Counsel",
-        entity: "Legal Counsel",
-        email: "vmoretti@detroit-lawgroup.com",
-        phone: "(313) 965-8000",
-        address: "Detroit, MI",
-        roleSummary: "Experienced Michigan UCC and commercial insolvency attorney. Has managed multiple Article 9 foreclosures in automotive tooling sector.",
-        receptivityScore: "high",
       }
     ],
     crm: {
@@ -608,20 +476,10 @@ const rawTargets: TargetCompany[] = [
       lastContactDate: "2026-09-23",
       nextFollowUpDate: "2026-10-02",
       notes: [
-        {
-          id: "n-501",
-          date: "2026-09-23",
-          author: "Foreclosure Specialist",
-          text: "Reviewed Michigan UCC filing records. Keystone lien is fully perfected with no intervening federal tax liens or mechanics liens. Purchase of Keystone note will give clean title to robotics facility."
-        }
+        { id: "n-501", date: "2026-09-23", author: "Foreclosure Lead", text: "Reviewed Michigan UCC records. Keystone lien is first-priority with no intervening liens." }
       ],
       activities: [
-        {
-          id: "a-501",
-          date: "2026-09-23",
-          type: "call",
-          summary: "Legal title verification call with Vincent Moretti, Esq."
-        }
+        { id: "a-501", date: "2026-09-23", type: "call", summary: "UCC verification call with Keystone partner." }
       ]
     }
   },
@@ -680,12 +538,7 @@ const rawTargets: TargetCompany[] = [
       cleanShellFit: "high",
       rationale: "Operating assets are mobile trailers generating monthly lease & service fees. Assignment for the Benefit of Creditors (ABC) in Texas or purchase of Amegy Bank note allows immediate transfer of trailers into clean shell free of toxic convertible claims.",
     },
-    scores: {
-      assetQualityScore: 0,
-      vehicleDistressScore: 0,
-      extractionFeasibilityScore: 0,
-      rollupOpportunityIndex: 0,
-    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
     contacts: [
       {
         id: "c-601",
@@ -717,21 +570,1092 @@ const rawTargets: TargetCompany[] = [
       lastContactDate: "2026-09-21",
       nextFollowUpDate: "2026-09-29",
       notes: [
-        {
-          id: "n-601",
-          date: "2026-09-21",
-          author: "Outreach Lead",
-          text: "Sent customized senior note purchase inquiry to Carlos Mendoza at Amegy Bank. Follow-up call scheduled for Tuesday."
-        }
+        { id: "n-601", date: "2026-09-21", author: "Outreach Lead", text: "Sent note purchase inquiry to Carlos Mendoza at Amegy Bank." }
       ],
       activities: [
-        {
-          id: "a-601",
-          date: "2026-09-21",
-          type: "email",
-          summary: "Initial note buyout inquiry delivered to Amegy Bank Special Assets."
-        }
+        { id: "a-601", date: "2026-09-21", type: "email", summary: "Outreach delivered to Amegy Bank Special Assets." }
       ]
+    }
+  },
+  {
+    id: "opti-beamcraft",
+    ticker: "OPTI",
+    name: "OptiPhotonix Systems Corp",
+    cik: "0001712490",
+    exchange: "EXPERT_MARKET",
+    sector: "Aerospace & Defense",
+    industry: "Micro-Optics & Laser Collimators",
+    headquarters: "Tucson, AZ",
+    marketCap: 350000,
+    stockPrice: 0.0002,
+    sharesOutstanding: 1750000000,
+    authorizedShares: 4500000000,
+    asset: {
+      subsidiaryName: "BeamCraft Micro-Optics LLC",
+      businessSummary: "Designs and manufactures precision aspheric lenses, laser beam-shaping optical subassemblies, and infrared collimators for defense missile guidance systems, commercial LiDAR, and satellite optical crosslinks.",
+      annualRevenue: 12600000,
+      grossMarginPct: 56,
+      ebitda: 1720000,
+      employees: 36,
+      facilities: "22,000 sq ft class-1000 optical coating and diamond-turning cleanroom in Tucson, AZ",
+      patentsCount: 8,
+      keyClients: ["Raytheon Missiles & Defense Subcontractor", "L3Harris Technologies", "BAE Systems Electronic Systems"],
+      ipDetails: "8 patents on sub-wavelength antireflective nanostructures and high-power continuous wave laser optic coatings.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company relegated to Expert Market following sudden resignation of PCAOB auditor. Trapped under $5.2M in toxic convertibles with Auctus Fund and BHP Capital with 50% discount clauses. Common stock diluted by 300% in 12 months.",
+      filingStatus: "suspended_15c211",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Haynie & Company",
+      lastAuditorCity: "Salt Lake City, UT",
+      lastFilingDate: "2024-03-31",
+      secTriggers: [
+        "Rule 15c2-11 Expert Market Demotion",
+        "Item 4.01 Auditor Resignation",
+        "Item 2.04 Default on $5.2M Debentures",
+        "Share Overhang > 3B Shares"
+      ],
+      toxicDebtBalance: 5200000,
+      toxicLenders: ["Auctus Fund LLC", "BHP Capital NY"],
+      convertibleDiscountPct: 50,
+      defaultInterestRatePct: 24,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 1900000,
+      seniorSecuredHolder: "Comerica Bank (Technology & Life Sciences Workout)",
+      uccLienJurisdiction: "Arizona Secretary of State (File #AZ2022-819034)",
+      uccLienStatus: "Senior blanket security interest on all BeamCraft cleanroom machinery, optical inventory, and patents.",
+      estimatedBuyoutDiscountPct: 48,
+      estimatedAcquisitionCost: 988000,
+      cleanShellFit: "exceptional",
+      rationale: "Comerica Bank holds first-position UCC-1 on the Tucson manufacturing facility and equipment. Purchasing note for $988k cash enables immediate Article 9 notice of private disposition, delivering 100% clean title to BeamCraft into our clean public shell.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-701",
+        name: "Dr. Ethan Holbrook, Ph.D.",
+        title: "Founder & Executive VP",
+        entity: "Operating Subsidiary",
+        email: "eholbrook@beamcraft-optics.com",
+        phone: "(520) 884-6200",
+        linkedIn: "linkedin.com/in/ethan-holbrook-photonics",
+        address: "1600 E University Blvd, Tucson, AZ 85721",
+        roleSummary: "Distinguished optical physicist who founded BeamCraft. Backlog exceeds $8M but bank freeze prevents capital expansion.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-702",
+        name: "Nathaniel Ross",
+        title: "VP, Special Assets Group",
+        entity: "Senior Creditor",
+        email: "nross@comerica.com",
+        phone: "(602) 522-5500",
+        address: "Phoenix, AZ",
+        roleSummary: "Manages Comerica distressed loan desk. Has indicated readiness to assign loan documents upon proof of cash funds.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-701", date: "2026-09-28", author: "Pipeline Scanner", text: "Target flagged via SEC Item 4.01 resignation filter. Defense optical business is pristine." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "plxt-fleettrack",
+    ticker: "PLXT",
+    name: "Plexus Telematics International Inc",
+    cik: "0001584910",
+    exchange: "PINK_LIMITED",
+    sector: "Technology & Cybersecurity",
+    industry: "Cold-Chain Fleet Telematics & IoT",
+    headquarters: "Alpharetta, GA",
+    marketCap: 780000,
+    stockPrice: 0.004,
+    sharesOutstanding: 195000000,
+    authorizedShares: 600000000,
+    asset: {
+      subsidiaryName: "FleetTrack IoT Systems Corp",
+      businessSummary: "Proprietary wireless temperature-logging sensors, cellular GPS telematics modems, and SaaS compliance dashboards monitoring 4,400 refrigerated food & pharmaceutical trailers across North America.",
+      annualRevenue: 21400000,
+      grossMarginPct: 62,
+      ebitda: 3100000,
+      employees: 62,
+      facilities: "15,000 sq ft technology center & device staging depot in Alpharetta, GA",
+      patentsCount: 4,
+      keyClients: ["US Foods Regional Fleet", "Lineage Logistics Subcontractors", "McKesson Regional Distributors"],
+      ipDetails: "4 patents on ultra-low-power BLE sensor meshing and automatic FSMA Title 21 food safety logging.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company chocked by legacy litigation over an abandoned European trucking subsidiary. Delinquent on 10-K; auditor resigned over uncollectible intercompany receivables; $6.4M in toxic convertible debt from Geneva Roth and Auctus.",
+      filingStatus: "delinquent_10k",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Cherry Bekaert LLP",
+      lastAuditorCity: "Atlanta, GA",
+      lastFilingDate: "2024-12-31",
+      secTriggers: [
+        "Form 12b-25 Non-Timely 10-K",
+        "Item 4.01 Auditor Resignation",
+        "Item 2.04 Acceleration Notice ($6.4M)",
+        "Pink Limited Demotion"
+      ],
+      toxicDebtBalance: 6400000,
+      toxicLenders: ["Geneva Roth", "Auctus Fund LLC", "Power Up Lending"],
+      convertibleDiscountPct: 40,
+      defaultInterestRatePct: 20,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 3800000,
+      seniorSecuredHolder: "Silicon Valley Tech Credit / First Citizens Bank",
+      uccLienJurisdiction: "Georgia Secretary of State (File #060-2023-01994)",
+      uccLienStatus: "First priority blanket lien on FleetTrack IoT recurring SaaS receivables, hardware inventory, and server IP.",
+      estimatedBuyoutDiscountPct: 50,
+      estimatedAcquisitionCost: 1900000,
+      cleanShellFit: "exceptional",
+      rationale: "FleetTrack generates $3.1M EBITDA in pure recurring revenue. Bank debt is $3.8M. Acquiring senior note for $1.9M cash yields 1.6x cashflow coverage in Year 1 alone upon roll into our clean public vehicle.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-801",
+        name: "Kevin Albright",
+        title: "Founder & Chief Executive Officer",
+        entity: "Operating Subsidiary",
+        email: "kalbright@fleettrack-iot.com",
+        phone: "(678) 513-8800",
+        linkedIn: "linkedin.com/in/kevin-albright-telematics",
+        address: "Alpharetta, GA",
+        roleSummary: "Built telematics business from scratch. Desperately seeking clean public sponsor to recapitalize SaaS platform.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-802",
+        name: "Darren Walsh",
+        title: "Senior Director, Special Credits",
+        entity: "Senior Creditor",
+        email: "dwalsh@firstcitizens.com",
+        phone: "(404) 231-7000",
+        address: "Atlanta, GA",
+        roleSummary: "Manages defaulted $3.8M telematics portfolio loan.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-801", date: "2026-09-28", author: "Scanner", text: "$21.4M ARR cold-chain telematics business generating $3.1M EBITDA. Ideal candidate." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "scio-neuroquant",
+    ticker: "SCIO",
+    name: "ScioGen Diagnostics Corp",
+    cik: "0001609312",
+    exchange: "OTCQB",
+    sector: "Healthcare & Life Sciences",
+    industry: "Molecular Diagnostics & Biomarker Sequencing",
+    headquarters: "Baltimore, MD",
+    marketCap: 1250000,
+    stockPrice: 0.015,
+    sharesOutstanding: 83333333,
+    authorizedShares: 400000000,
+    asset: {
+      subsidiaryName: "NeuroQuant Molecular Pathology LLC",
+      businessSummary: "CLIA-certified, CAP-accredited high-complexity reference laboratory specializing in plasma-based Alzheimer amyloid-beta and phosphorylated tau (p-tau217) diagnostic biomarker panels for clinical research and memory centers.",
+      annualRevenue: 10500000,
+      grossMarginPct: 71,
+      ebitda: 1800000,
+      employees: 38,
+      facilities: "20,000 sq ft clinical diagnostic laboratory near Johns Hopkins Bayview campus in Baltimore, MD",
+      patentsCount: 6,
+      keyClients: ["Johns Hopkins Memory & Aging Center", "Eisai Clinical Trial Investigators", "National Institute on Aging Subcontractor"],
+      ipDetails: "6 patents on ultra-sensitive single-molecule array (Simoa) digital immunoassay calibration.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company burnt $24M on clinical stage gene-editing drug that failed toxicology. Delisted from Nasdaq Capital Market; $6.1M in toxic convertible notes with Streeterville Capital; auditor unpaid; corporate debt default notice received.",
+      filingStatus: "delinquent_10q",
+      auditorStatus: "unpaid",
+      lastAuditorName: "CohnReznick LLP",
+      lastAuditorCity: "Bethesda, MD",
+      lastFilingDate: "2025-06-30",
+      secTriggers: [
+        "Item 3.01 Nasdaq Delisting",
+        "Item 2.04 Default on $6.1M Streeterville Notes",
+        "Unpaid PCAOB Auditor Fees ($190k)",
+        "Form 12b-25 Non-Timely 10-Q"
+      ],
+      toxicDebtBalance: 6100000,
+      toxicLenders: ["Streeterville Capital LLC", "Iliad Research"],
+      convertibleDiscountPct: 35,
+      defaultInterestRatePct: 18,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "section_363_sale",
+      seniorSecuredDebtAmount: 2400000,
+      seniorSecuredHolder: "Horizon Technology Credit Fund II",
+      uccLienJurisdiction: "Maryland Department of Assessments and Taxation (File #MD2023-09142)",
+      uccLienStatus: "Senior perfected security interest on all CLIA laboratory equipment, mass spectrometers, and patient billing contracts.",
+      estimatedBuyoutDiscountPct: 50,
+      estimatedAcquisitionCost: 1200000,
+      cleanShellFit: "exceptional",
+      rationale: "NeuroQuant laboratory holds immense standalone commercial value with current Medicare reimbursement codes. A pre-packaged 363 sale or senior debt acquisition from Horizon for $1.2M cash isolates the lab clean of parent liabilities.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-901",
+        name: "Dr. Alistair MacIntyre, M.D., Ph.D.",
+        title: "Medical Director & Laboratory Chief",
+        entity: "Operating Subsidiary",
+        email: "amacintyre@neuroquant-dx.com",
+        phone: "(410) 558-7100",
+        linkedIn: "linkedin.com/in/alistair-macintyre-pathology",
+        address: "5200 Eastern Ave, Baltimore, MD 21224",
+        roleSummary: "Board-certified clinical pathologist who oversees CLIA lab. Committed to maintaining patient testing continuity in clean vehicle.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-902",
+        name: "Marcus Vance",
+        title: "Managing Director",
+        entity: "Senior Creditor",
+        email: "mvance@horizoncredit.com",
+        phone: "(650) 494-6688",
+        address: "Menlo Park, CA",
+        roleSummary: "Manages senior debt recovery for Horizon Fund.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "high",
+      notes: [
+        { id: "n-901", date: "2026-09-28", author: "Scanner", text: "CLIA accredited lab with $10.5M revenue and Alzheimer p-tau biomarker contracts. Excellent shell merger fit." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "evtx-duracharge",
+    ticker: "EVTX",
+    name: "ElectroVolt Mobility Inc",
+    cik: "0001799201",
+    exchange: "EXPERT_MARKET",
+    sector: "Clean Energy & Industrials",
+    industry: "Heavy-Duty EV DC Fast Charging Infrastructure",
+    headquarters: "Long Beach, CA",
+    marketCap: 410000,
+    stockPrice: 0.0003,
+    sharesOutstanding: 1366666666,
+    authorizedShares: 5000000000,
+    asset: {
+      subsidiaryName: "DuraCharge Power Enclosures Corp",
+      businessSummary: "Engineers and manufactures ruggedized 350kW to 700kW Megawatt Charging System (MCS) cabinets and grid-tied power conversion units for commercial electric freight trucks and port drayage terminals. Confirmed order backlog of $18.2M with California clean port grant contractors.",
+      annualRevenue: 15200000,
+      grossMarginPct: 41,
+      ebitda: 1950000,
+      employees: 45,
+      facilities: "38,000 sq ft high-voltage UL-listed manufacturing plant in Carson, CA",
+      patentsCount: 7,
+      keyClients: ["Port of Long Beach Clean Air Action Contractors", "Southern California Edison Fleet Depots", "Kenworth / Peterbilt Regional Dealerships"],
+      ipDetails: "7 patents on silicon-carbide liquid-cooled power conversion modules and active port harmonic filtering.",
+      commercialReadiness: "commercial_contracts",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company immobilized in Expert Market after failed consumer EV scooter launch that lost $30M. Defaulted on $6.7M in convertible notes with EMA Financial and Geneva Roth; 10-K delinquent since 2024; auditor resigned over going-concern disclaimer.",
+      filingStatus: "suspended_15c211",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Prager Metis CPAs LLC",
+      lastAuditorCity: "El Segundo, CA",
+      lastFilingDate: "2024-06-30",
+      secTriggers: [
+        "Rule 15c2-11 Expert Market Demotion",
+        "Item 4.01 Auditor Resignation",
+        "Item 2.04 Acceleration of $6.7M Notes",
+        "Share Overhang > 3.5B Shares"
+      ],
+      toxicDebtBalance: 6700000,
+      toxicLenders: ["EMA Financial LLC", "Geneva Roth", "BHP Capital"],
+      convertibleDiscountPct: 45,
+      defaultInterestRatePct: 22,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 2200000,
+      seniorSecuredHolder: "Western Alliance Bank (Commercial Equipment Finance)",
+      uccLienJurisdiction: "California Secretary of State (File #U2023-089123)",
+      uccLienStatus: "Senior blanket security interest on all Carson manufacturing tooling, test bays, and customer accounts receivable.",
+      estimatedBuyoutDiscountPct: 45,
+      estimatedAcquisitionCost: 1210000,
+      cleanShellFit: "exceptional",
+      rationale: "DuraCharge has $18.2M in confirmed POs from port operators but parent company default prevents bonding. Buying Western Alliances senior position for $1.21M cash allows rapid Article 9 foreclosure, delivering a clean $15M revenue infrastructure company into our clean shell.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1001",
+        name: "Gary Henderson",
+        title: "Founder & Chief Operations Officer",
+        entity: "Operating Subsidiary",
+        email: "ghenderson@duracharge-power.com",
+        phone: "(310) 835-9100",
+        linkedIn: "linkedin.com/in/gary-henderson-ev",
+        address: "Carson, CA",
+        roleSummary: "Electrical engineer who developed DuraCharge port charging units. Backlog is bursting but parent company prevents closing deals.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1002",
+        name: "Richard Vance",
+        title: "Senior Vice President, Credit Workout",
+        entity: "Senior Creditor",
+        email: "rvance@westernalliancebank.com",
+        phone: "(310) 414-2200",
+        address: "Los Angeles, CA",
+        roleSummary: "Manages defaulted $2.2M credit facility.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-1001", date: "2026-09-28", author: "Scanner", text: "Port of Long Beach clean air contractors have $18.2M in POs. Perfect clean shell rollup candidate." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "nano-aerofiber",
+    ticker: "NANO",
+    name: "NanoMatrix Composite Materials Corp",
+    cik: "0001684920",
+    exchange: "PINK_LIMITED",
+    sector: "Industrial Automation & Robotics",
+    industry: "Aerospace Prepreg Carbon Fiber & Resin Systems",
+    headquarters: "Salt Lake City, UT",
+    marketCap: 620000,
+    stockPrice: 0.003,
+    sharesOutstanding: 206666666,
+    authorizedShares: 600000000,
+    asset: {
+      subsidiaryName: "Aerofiber Prepreg Technologies LLC",
+      businessSummary: "Formulates and manufactures aerospace-grade carbon fiber unidirectional prepreg tapes and toughened epoxy resin systems qualified for satellite solar array panels, commercial rocket fairings, and supersonic aircraft structures.",
+      annualRevenue: 13800000,
+      grossMarginPct: 48,
+      ebitda: 2100000,
+      employees: 42,
+      facilities: "30,000 sq ft climate-controlled cleanroom & resin impregnation line in Salt Lake City, UT",
+      patentsCount: 5,
+      keyClients: ["Northrop Grumman Space Systems", "Rocket Lab Commercial Satellites", "General Atomics Aeronautical Systems"],
+      ipDetails: "5 patents on high-fracture-toughness cyanate ester resin matrices and automated fiber placement (AFP) slit tapes.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company burdened by $4.8M in toxic convertibles from Auctus Fund and Geneva Roth. Failure to file 2024 10-K; auditor resigned over inventory dispute in closed commercial sporting goods unit; stock in Pink Limited penalty box.",
+      filingStatus: "delinquent_10k",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Tanner LLC",
+      lastAuditorCity: "Salt Lake City, UT",
+      lastFilingDate: "2024-09-30",
+      secTriggers: [
+        "Item 4.01 Auditor Resignation",
+        "Form 12b-25 Non-Timely 10-K",
+        "Item 2.04 Acceleration of $4.8M Debt",
+        "Pink Limited Status"
+      ],
+      toxicDebtBalance: 4800000,
+      toxicLenders: ["Auctus Fund LLC", "Geneva Roth"],
+      convertibleDiscountPct: 40,
+      defaultInterestRatePct: 20,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 1700000,
+      seniorSecuredHolder: "First National Bank of Utah (Commercial Credit)",
+      uccLienJurisdiction: "Utah Division of Corporations (File #UT2022-771890)",
+      uccLienStatus: "Senior blanket security interest on all resin impregnation machinery, autoclaves, and aerospace accounts receivable.",
+      estimatedBuyoutDiscountPct: 45,
+      estimatedAcquisitionCost: 935000,
+      cleanShellFit: "exceptional",
+      rationale: "Aerofibers carbon fiber prepreg is flight-qualified on Northrop and Rocket Lab missions. Acquiring the bank note for $935k cash provides clean foreclosure title into our pristine public shell, leaving parent debt behind.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1101",
+        name: "Bradley Olsen, P.E.",
+        title: "Founder & VP of Materials Science",
+        entity: "Operating Subsidiary",
+        email: "bolsen@aerofiber-tech.com",
+        phone: "(801) 972-4410",
+        linkedIn: "linkedin.com/in/bradley-olsen-carbonfiber",
+        address: "Salt Lake City, UT",
+        roleSummary: "Renowned composites chemist who built Aerofiber. Desperate to free aerospace contracts from penny stock parent.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1102",
+        name: "Samuel Christensen",
+        title: "VP, Special Assets",
+        entity: "Senior Creditor",
+        email: "schristensen@fnb-utah.com",
+        phone: "(801) 481-8000",
+        address: "Salt Lake City, UT",
+        roleSummary: "Manages defaulted $1.7M note for bank.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "high",
+      notes: [
+        { id: "n-1101", date: "2026-09-28", author: "Scanner", text: "Aerospace composite prepreg maker with Northrop and Rocket Lab flight qualifications. $13.8M rev." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "trnt-precision",
+    ticker: "TRNT",
+    name: "Terran Industrial Automation Corp",
+    cik: "0001539201",
+    exchange: "EXPERT_MARKET",
+    sector: "Industrial Automation & Robotics",
+    industry: "5-Axis Aerospace Titanium Machining & Tooling",
+    headquarters: "Wichita, KS",
+    marketCap: 480000,
+    stockPrice: 0.0002,
+    sharesOutstanding: 2400000000,
+    authorizedShares: 6000000000,
+    asset: {
+      subsidiaryName: "Precision CNC Machining & Tooling Corp",
+      businessSummary: "Precision machining facility operating 26 high-speed multi-axis Makino, DMG Mori, and Mazak CNC milling centers producing critical titanium fuselage bulkheads, landing gear brackets, and nacelle structures for major commercial and military aircraft programs.",
+      annualRevenue: 19200000,
+      grossMarginPct: 35,
+      ebitda: 2300000,
+      employees: 58,
+      facilities: "54,000 sq ft AS9100 Rev D certified climate-controlled machining facility in Wichita, KS",
+      patentsCount: 3,
+      keyClients: ["Spirit AeroSystems", "Textron Aviation / Beechcraft", "Boeing Commercial Airplanes Subcontractor"],
+      ipDetails: "3 proprietary high-speed titanium milling toolpath algorithms reducing cycle times by 32%.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company placed on Expert Market after 10-K delinquent for 16 months. Choked by $7.9M in toxic convertible notes with EMA Financial and BHP Capital; PCAOB auditor resigned over inventory dispute; share count ballooned to 2.4B shares.",
+      filingStatus: "suspended_15c211",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "BKD LLP (FORVIS)",
+      lastAuditorCity: "Wichita, KS",
+      lastFilingDate: "2024-04-30",
+      secTriggers: [
+        "Rule 15c2-11 Expert Market Demotion",
+        "Item 4.01 Auditor Resignation",
+        "Item 2.04 Notice of Acceleration ($7.9M)",
+        "Share Overhang > 2.4B Shares"
+      ],
+      toxicDebtBalance: 7900000,
+      toxicLenders: ["EMA Financial LLC", "BHP Capital NY", "Geneva Roth"],
+      convertibleDiscountPct: 45,
+      defaultInterestRatePct: 22,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 3500000,
+      seniorSecuredHolder: "Wells Fargo Bank (Special Situations & Asset-Based Lending)",
+      uccLienJurisdiction: "Kansas Secretary of State (File #KS2022-990142)",
+      uccLienStatus: "Senior perfected security interest on all 26 CNC milling machines, coordinate measuring machines (CMM), and receivables.",
+      estimatedBuyoutDiscountPct: 52,
+      estimatedAcquisitionCost: 1680000,
+      cleanShellFit: "exceptional",
+      rationale: "Equipment appraisal indicates machinery liquidation value of $6.2M. Buying Wells Fargos $3.5M note for $1.68M cash provides overwhelming collateral cushion and allows strict Article 9 foreclosure sale, rolling $19.2M in annual aerospace machine revenue into our clean shell.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1201",
+        name: "Douglas Miller",
+        title: "Founder & General Manager",
+        entity: "Operating Subsidiary",
+        email: "dmiller@precision-cnc-wichita.com",
+        phone: "(316) 942-5500",
+        linkedIn: "linkedin.com/in/doug-miller-aerospace",
+        address: "3800 S Oliver St, Wichita, KS 67210",
+        roleSummary: "Master machinist who built the business over 20 years. Team of 58 machinists is completely loyal to Doug.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1202",
+        name: "Raymond Vance",
+        title: "Managing Director, Special Credit",
+        entity: "Senior Creditor",
+        email: "rvance@wellsfargo.com",
+        phone: "(312) 845-3000",
+        address: "Chicago, IL",
+        roleSummary: "Directs Wells Fargo Midwestern workout loans.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-1201", date: "2026-09-28", author: "Scanner", text: "26 Makino and Mazak 5-axis machines producing titanium parts for Spirit and Boeing. $19.2M rev, $2.3M EBITDA." }
+      ],
+      activities: []
+    }
+  }
+  ,
+  {
+    id: "agri-hydrosprout",
+    ticker: "AGRI",
+    name: "AgriPure BioTechnologies Inc",
+    cik: "0001672910",
+    exchange: "PINK_LIMITED",
+    sector: "Clean Energy & Industrials",
+    industry: "Controlled Environment Agriculture & Hydroponics",
+    headquarters: "Indianapolis, IN",
+    marketCap: 520000,
+    stockPrice: 0.002,
+    sharesOutstanding: 260000000,
+    authorizedShares: 800000000,
+    asset: {
+      subsidiaryName: "HydroSprout Controlled Environment Farms LLC",
+      businessSummary: "Automated indoor hydroponic greenhouse facilities producing pesticide-free organic leafy greens, culinary herbs, and microgreens with long-term master distribution contracts to regional grocery chains.",
+      annualRevenue: 9400000,
+      grossMarginPct: 46,
+      ebitda: 1350000,
+      employees: 34,
+      facilities: "65,000 sq ft climate-optimized glass greenhouse & cold packaging center in Greenfield, IN",
+      patentsCount: 4,
+      keyClients: ["Kroger Central Division", "Sysco Foodservice Indianapolis", "Gordon Food Service"],
+      ipDetails: "4 patents on recirculating nutrient film automation and dual-spectrum LED circadian crop acceleration.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company burnt $16M attempting to develop hemp extraction that collapsed. Buried under $4.2M in toxic convertibles with Geneva Roth and Auctus; late on 10-K; auditor resigned over uncollectible farm equipment leases.",
+      filingStatus: "delinquent_10k",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Knavicheck & Co LLP",
+      lastAuditorCity: "Chicago, IL",
+      lastFilingDate: "2024-11-30",
+      secTriggers: [
+        "Item 4.01 Auditor Resignation",
+        "Form 12b-25 Non-Timely 10-K",
+        "Item 2.04 Acceleration of $4.2M Notes",
+        "Toxic Ratchet Overhang"
+      ],
+      toxicDebtBalance: 4200000,
+      toxicLenders: ["Geneva Roth", "Auctus Fund LLC"],
+      convertibleDiscountPct: 40,
+      defaultInterestRatePct: 20,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "consensual_carveout",
+      seniorSecuredDebtAmount: 1500000,
+      seniorSecuredHolder: "Farm Credit Mid-America (Special Assets)",
+      uccLienJurisdiction: "Indiana Secretary of State (File #IN2023-019941)",
+      uccLienStatus: "Senior blanket lien on all greenhouse infrastructure, packaging lines, and Kroger receivables.",
+      estimatedBuyoutDiscountPct: 40,
+      estimatedAcquisitionCost: 900000,
+      cleanShellFit: "high",
+      rationale: "HydroSprouts Kroger and Sysco distribution contracts generate steady $1.35M EBITDA. Purchasing the $1.5M Farm Credit note for $900k cash gives senior priority to carve out 100% of the greenhouse operations into our clean public shell.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1301",
+        name: "Jerome Caldwell",
+        title: "Founder & Operations Director",
+        entity: "Operating Subsidiary",
+        email: "jcaldwell@hydrosprout-farms.com",
+        phone: "(317) 462-8100",
+        linkedIn: "linkedin.com/in/jerome-caldwell-hydroponics",
+        address: "Greenfield, IN",
+        roleSummary: "Agronomist who established HydroSprouts retail supply chain. Desires clean public shell sponsor.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1302",
+        name: "Paul Zimmerman",
+        title: "VP, Ag Special Credit",
+        entity: "Senior Creditor",
+        email: "pzimmerman@farmcreditmidamerica.com",
+        phone: "(502) 420-3000",
+        address: "Louisville, KY",
+        roleSummary: "Directs agricultural workout loans.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "medium",
+      notes: [
+        { id: "n-1301", date: "2026-09-28", author: "Scanner", text: "Organic greenhouse supplier to Kroger and Sysco with $9.4M revenue." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "voxn-netbridge",
+    ticker: "VOXN",
+    name: "Voxen Unified Communications Inc",
+    cik: "0001594821",
+    exchange: "PINK_LIMITED",
+    sector: "Technology & Cybersecurity",
+    industry: "Enterprise Cloud SD-WAN & Medical Telecom",
+    headquarters: "Dallas, TX",
+    marketCap: 690000,
+    stockPrice: 0.0035,
+    sharesOutstanding: 197142857,
+    authorizedShares: 500000000,
+    asset: {
+      subsidiaryName: "NetBridge SD-WAN Enterprise LLC",
+      businessSummary: "HIPAA-compliant software-defined wide area network (SD-WAN) and unified communications platform powering 620 multi-site medical clinics, dental practices, and outpatient surgery centers across Texas and the Southeast.",
+      annualRevenue: 17500000,
+      grossMarginPct: 69,
+      ebitda: 2600000,
+      employees: 48,
+      facilities: "20,000 sq ft Dallas network operations center (NOC) and colocation data suites",
+      patentsCount: 5,
+      keyClients: ["US Renal Care Regional Clinics", "Dental One Family Centers", "Encompass Health Subcontractors"],
+      ipDetails: "5 patents on zero-jitter VoIP packet multi-path routing and automatic failover over cellular LTE/5G backhauls.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company wrecked by $5.1M in toxic floorless convertibles with EMA Financial and Geneva Roth. Failure to pay $210k in PCAOB auditor fees; delinquent on 10-K since 2024; corporate stock demoted to Pink Limited.",
+      filingStatus: "delinquent_10k",
+      auditorStatus: "unpaid",
+      lastAuditorName: "Whitley Penn LLP",
+      lastAuditorCity: "Dallas, TX",
+      lastFilingDate: "2024-09-30",
+      secTriggers: [
+        "Item 4.01 Auditor Resignation / Unpaid Fees",
+        "Form 12b-25 Non-Timely 10-K",
+        "Item 2.04 Acceleration of Obligations ($5.1M)",
+        "Pink Limited Status"
+      ],
+      toxicDebtBalance: 5100000,
+      toxicLenders: ["EMA Financial LLC", "Geneva Roth", "Auctus Fund"],
+      convertibleDiscountPct: 40,
+      defaultInterestRatePct: 20,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 2600000,
+      seniorSecuredHolder: "Bridge Bank (Technology Banking Division)",
+      uccLienJurisdiction: "Texas Secretary of State (File #TX2022-819920)",
+      uccLienStatus: "Senior perfected lien on all NetBridge recurring MRR contracts, server hardware, and accounts receivable.",
+      estimatedBuyoutDiscountPct: 48,
+      estimatedAcquisitionCost: 1350000,
+      cleanShellFit: "exceptional",
+      rationale: "NetBridge generates $2.6M EBITDA with 97% client retention across medical practices. Purchasing Bridge Banks $2.6M note for $1.35M cash allows immediate Article 9 private foreclosure sale into our clean shell.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1401",
+        name: "Craig Morrison",
+        title: "Founder & Chief Technology Officer",
+        entity: "Operating Subsidiary",
+        email: "cmorrison@netbridge-sdwan.com",
+        phone: "(214) 749-3300",
+        linkedIn: "linkedin.com/in/craig-morrison-telecom",
+        address: "Dallas, TX",
+        roleSummary: "Telecom architect who engineered the medical SD-WAN platform. Controls all key healthcare customer relationships.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1402",
+        name: "Stephen Bradley",
+        title: "Managing Director, Special Assets",
+        entity: "Senior Creditor",
+        email: "sbradley@bridgebank.com",
+        phone: "(214) 863-7000",
+        address: "Dallas, TX",
+        roleSummary: "Manages Bridge Bank distressed tech portfolio.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-1401", date: "2026-09-28", author: "Scanner", text: "$17.5M ARR medical SD-WAN with $2.6M EBITDA. Pure recurring cashflow." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "cell-cryovault",
+    ticker: "CELL",
+    name: "CelluCore Therapeutics Inc",
+    cik: "0001628109",
+    exchange: "OTCQB",
+    sector: "Healthcare & Life Sciences",
+    industry: "Cryogenic Biorepository & Cold-Chain Cell Storage",
+    headquarters: "Durham, NC",
+    marketCap: 1450000,
+    stockPrice: 0.018,
+    sharesOutstanding: 80555555,
+    authorizedShares: 350000000,
+    asset: {
+      subsidiaryName: "CryoVault Bio-Storage & Cold Chain LLC",
+      businessSummary: "cGMP-compliant vapor-phase liquid nitrogen (-196°C) and ultra-low temperature (-80°C) biorepository storing master cell banks, CAR-T clinical vectors, and biologic clinical trial samples under multi-year reservation contracts for biopharma sponsors.",
+      annualRevenue: 12200000,
+      grossMarginPct: 65,
+      ebitda: 2050000,
+      employees: 36,
+      facilities: "28,000 sq ft dual-redundant backup power biorepository facility in Research Triangle Park, NC",
+      patentsCount: 5,
+      keyClients: ["IQVIA Clinical Trial Supplies", "Biogen Research Subcontractors", "Duke University School of Medicine"],
+      ipDetails: "5 patents on automated cryogenic sample retrieval robotics and continuous liquid nitrogen manifold monitoring.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company lost $22M on an abandoned autologous stem cell knee therapy trial. Nasdaq delisted parent to OTCQB; trapped under $4.9M in toxic convertibles with Streeterville Capital; PCAOB auditor resigned over going-concern disclaimer.",
+      filingStatus: "delinquent_10q",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Grant Thornton LLP",
+      lastAuditorCity: "Raleigh, NC",
+      lastFilingDate: "2025-06-30",
+      secTriggers: [
+        "Item 3.01 Nasdaq Delisting",
+        "Item 4.01 Auditor Resignation",
+        "Item 2.04 Default on $4.9M Convertible Notes",
+        "Form 12b-25 Non-Timely 10-Q"
+      ],
+      toxicDebtBalance: 4900000,
+      toxicLenders: ["Streeterville Capital LLC", "Iliad Research"],
+      convertibleDiscountPct: 35,
+      defaultInterestRatePct: 18,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "section_363_sale",
+      seniorSecuredDebtAmount: 2000000,
+      seniorSecuredHolder: "Silicon Valley Tech Credit Fund (Workout)",
+      uccLienJurisdiction: "North Carolina Secretary of State (File #NC2023-088192)",
+      uccLienStatus: "Senior perfected lien on all liquid nitrogen freezers, backup generators, and biopharma client contracts.",
+      estimatedBuyoutDiscountPct: 50,
+      estimatedAcquisitionCost: 1000000,
+      cleanShellFit: "exceptional",
+      rationale: "CryoVault biorepository storage contracts are locked in for 3-7 years with blue-chip biopharma. Purchasing the $2.0M senior note for $1.0M cash or acting as Stalking Horse 363 bidder delivers a high-margin $12.2M cashflow asset clean of parent clinical trial liabilities.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1501",
+        name: "Dr. Evelyn Ward, Ph.D.",
+        title: "Founder & VP of Cryogenic Operations",
+        entity: "Operating Subsidiary",
+        email: "eward@cryovault-storage.com",
+        phone: "(919) 544-7200",
+        linkedIn: "linkedin.com/in/evelyn-ward-biostorage",
+        address: "Research Triangle Park, NC",
+        roleSummary: "Cell biology expert who designed the cGMP biorepository. Demands clean corporate structure to preserve client specimen custody.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1502",
+        name: "Jonathan Vance",
+        title: "Director, Distressed Life Science Loans",
+        entity: "Senior Creditor",
+        email: "jvance@svb-workout.com",
+        phone: "(650) 855-4000",
+        address: "Santa Clara, CA",
+        roleSummary: "Manages senior debt recovery.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "high",
+      notes: [
+        { id: "n-1501", date: "2026-09-28", author: "Scanner", text: "Research Triangle Park cGMP biorepository with $12.2M revenue and $2.05M EBITDA. Blue chip clients." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "solr-sunvolt",
+    ticker: "SOLR",
+    name: "Solara Commercial Energy Corp",
+    cik: "0001748291",
+    exchange: "EXPERT_MARKET",
+    sector: "Clean Energy & Industrials",
+    industry: "3-Phase Commercial Microinverters & Energy Storage",
+    headquarters: "San Jose, CA",
+    marketCap: 450000,
+    stockPrice: 0.0003,
+    sharesOutstanding: 1500000000,
+    authorizedShares: 5000000000,
+    asset: {
+      subsidiaryName: "SunVolt Microinverter Technologies LLC",
+      businessSummary: "Engineers and manufactures high-efficiency 3-phase 480V commercial solar microinverters and DC-coupled battery storage inverters certified under IEEE 1547-2018 and UL 1741 SB for commercial rooftop and parking canopy solar systems.",
+      annualRevenue: 14800000,
+      grossMarginPct: 39,
+      ebitda: 1750000,
+      employees: 44,
+      facilities: "35,000 sq ft ISO-9001 certified electronics assembly and burn-in testing facility in Fremont, CA",
+      patentsCount: 6,
+      keyClients: ["Borrego Solar Commercial Installers", "REC Solar Regional Subcontractors", "Target Store Commercial Canopy Contractors"],
+      ipDetails: "6 patents on rapid-shutdown microinverter topologies and cloud-based module-level power electronics (MLPE) monitoring.",
+      commercialReadiness: "commercial_contracts",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company paralyzed in Expert Market after failed residential solar financing division collapsed with $40M in consumer defaults. Trapped under $7.8M in toxic convertibles with EMA Financial and Geneva Roth; 10-K delinquent since 2024; auditor resigned over bad debt reserve disputes.",
+      filingStatus: "suspended_15c211",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Moss Adams LLP",
+      lastAuditorCity: "San Francisco, CA",
+      lastFilingDate: "2024-06-30",
+      secTriggers: [
+        "Rule 15c2-11 Expert Market Trading Suspension",
+        "Item 4.01 Auditor Resignation",
+        "Item 2.04 Acceleration of $7.8M Notes",
+        "Share Dilution Overhang > 4B Shares"
+      ],
+      toxicDebtBalance: 7800000,
+      toxicLenders: ["EMA Financial LLC", "Geneva Roth", "Auctus Fund"],
+      convertibleDiscountPct: 45,
+      defaultInterestRatePct: 22,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 2500000,
+      seniorSecuredHolder: "East West Bank (Commercial & Clean Tech Workout)",
+      uccLienJurisdiction: "California Secretary of State (File #U2022-918840)",
+      uccLienStatus: "Senior perfected security interest on all SunVolt manufacturing lines, inverter inventory, and patents.",
+      estimatedBuyoutDiscountPct: 52,
+      estimatedAcquisitionCost: 1200000,
+      cleanShellFit: "exceptional",
+      rationale: "Commercial 3-phase microinverter demand is accelerating due to IEEE 1547 mandates. Buying East West Banks $2.5M note for $1.2M cash unlocks the entire Fremont business clean of the $7.8M parent toxic convertibles.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1601",
+        name: "Kenji Takahashi",
+        title: "Founder & Chief Technology Officer",
+        entity: "Operating Subsidiary",
+        email: "ktakahashi@sunvolt-power.com",
+        phone: "(510) 490-8800",
+        linkedIn: "linkedin.com/in/kenji-takahashi-solar",
+        address: "Fremont, CA",
+        roleSummary: "Former senior engineer at Enphase who founded SunVolt. Backlog exceeds $12M with commercial installers.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1602",
+        name: "William Chang",
+        title: "Senior Vice President, Credit Workout",
+        entity: "Senior Creditor",
+        email: "wchang@eastwestbank.com",
+        phone: "(415) 765-8800",
+        address: "San Francisco, CA",
+        roleSummary: "Oversees East West Bank distressed portfolio.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-1601", date: "2026-09-28", author: "Scanner", text: "UL-1741 SB certified commercial microinverter manufacturer with $14.8M rev. Tremendous commercial upside." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "medf-ortho",
+    ticker: "MEDF",
+    name: "MedFlow Surgical Systems Corp",
+    cik: "0001569420",
+    exchange: "PINK_LIMITED",
+    sector: "Healthcare & Life Sciences",
+    industry: "Spine & Orthopedic Titanium Implant Systems",
+    headquarters: "Memphis, TN",
+    marketCap: 940000,
+    stockPrice: 0.007,
+    sharesOutstanding: 134285714,
+    authorizedShares: 500000000,
+    asset: {
+      subsidiaryName: "OrthoPrecision Implants LLC",
+      businessSummary: "Designs, manufactures, and kits FDA 510(k)-cleared 3D-printed porous titanium spinal interbody fusion cages, cervical plates, and pedicle screw fixation systems distributed to 180 orthopedic and neurosurgery hospital surgical suites.",
+      annualRevenue: 16900000,
+      grossMarginPct: 72,
+      ebitda: 2750000,
+      employees: 46,
+      facilities: "30,000 sq ft ISO-13485 manufacturing facility with 8 Concept Laser and EOS 3D metal printers in Memphis, TN",
+      patentsCount: 12,
+      keyClients: ["Hospital Corporation of America (HCA) Network", "Tenet Healthcare Hospitals", "Texas Back Institute Affiliates"],
+      ipDetails: "12 issued US patents on biomimetic trabecular titanium lattice architecture promoting rapid osteointegration.",
+      commercialReadiness: "fda_cleared",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company overwhelmed by $5.8M in toxic floorless convertibles with Geneva Roth and Auctus Fund. Late on 10-K filing; PCAOB auditor resigned over inventory write-downs on discontinued surgical navigation camera line; stock relegated to Pink Limited.",
+      filingStatus: "delinquent_10k",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "Carr, Riggs & Ingram LLC",
+      lastAuditorCity: "Memphis, TN",
+      lastFilingDate: "2024-12-31",
+      secTriggers: [
+        "Item 4.01 Auditor Resignation",
+        "Form 12b-25 Non-Timely 10-K",
+        "Item 2.04 Notice of Default ($5.8M)",
+        "Pink Limited Status"
+      ],
+      toxicDebtBalance: 5800000,
+      toxicLenders: ["Geneva Roth", "Auctus Fund LLC", "BHP Capital"],
+      convertibleDiscountPct: 40,
+      defaultInterestRatePct: 20,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 2800000,
+      seniorSecuredHolder: "Regions Bank (Healthcare Special Asset Group)",
+      uccLienJurisdiction: "Tennessee Secretary of State (File #TN2022-094182)",
+      uccLienStatus: "Senior perfected security interest on all 8 EOS metal 3D printers, sterile surgical kit inventory, and hospital billing receivables.",
+      estimatedBuyoutDiscountPct: 46,
+      estimatedAcquisitionCost: 1512000,
+      cleanShellFit: "exceptional",
+      rationale: "OrthoPrecision produces $2.75M in cash EBITDA with 72% gross margins. 3D printing equipment liquidation value exceeds $4.5M alone. Buying Regions Banks $2.8M senior note for $1.51M cash allows strict Article 9 foreclosure, bringing a crown-jewel orthopedic device business into our clean public shell.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1701",
+        name: "Dr. Randall Hayes, M.D.",
+        title: "Founder & Chief Medical Officer",
+        entity: "Operating Subsidiary",
+        email: "rhayes@orthoprecision-spine.com",
+        phone: "(901) 755-9200",
+        linkedIn: "linkedin.com/in/randall-hayes-spine",
+        address: "Memphis, TN",
+        roleSummary: "Orthopedic spine surgeon who designed the porous titanium implant system. Highly respected by surgeon distributor network.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1702",
+        name: "Charles Beaumont",
+        title: "Managing Director, Special Assets",
+        entity: "Senior Creditor",
+        email: "cbeaumont@regions.com",
+        phone: "(205) 581-7000",
+        address: "Birmingham, AL",
+        roleSummary: "Manages Regions Bank healthcare distressed debt.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-1701", date: "2026-09-28", author: "Scanner", text: "$16.9M rev, $2.75M EBITDA, 72% gross margin spinal implant business with 8 metal 3D printers. Top-tier candidate." }
+      ],
+      activities: []
+    }
+  },
+  {
+    id: "data-securevault",
+    ticker: "DATA",
+    name: "DataFortress Cloud Corp",
+    cik: "0001519402",
+    exchange: "EXPERT_MARKET",
+    sector: "Technology & Cybersecurity",
+    industry: "FedRAMP High Compliant Cloud & Disaster Recovery",
+    headquarters: "Reston, VA",
+    marketCap: 380000,
+    stockPrice: 0.0001,
+    sharesOutstanding: 3800000000,
+    authorizedShares: 9000000000,
+    asset: {
+      subsidiaryName: "SecureVault GovCloud Hosting LLC",
+      businessSummary: "Specialized cloud hosting, colocation, and air-gapped disaster recovery provider holding active FedRAMP High and DoD IL5 authorizations hosting critical workloads for municipal law enforcement, state judiciary systems, and defense industrial base contractors.",
+      annualRevenue: 22800000,
+      grossMarginPct: 75,
+      ebitda: 3600000,
+      employees: 56,
+      facilities: "Two SSAE-18 SOC-2 Type II secure data center vaults in Manassas, VA and Ashburn, VA",
+      patentsCount: 4,
+      keyClients: ["Virginia State Police IT Systems", "Maryland Judiciary Information Systems", "General Dynamics Subcontractor IT"],
+      ipDetails: "4 patents on hardware security module (HSM) key isolation and continuous automated CMMC Level 2 compliance auditing.",
+      commercialReadiness: "revenue_generating",
+    },
+    vehicleDistress: {
+      statusSummary: "Parent company placed on SEC Expert Market after former shell promoter was indicted by DOJ for securities fraud on an unrelated cryptocurrency promotion. 10-K delinquent since 2023; $9.2M in toxic convertibles with EMA Financial and Auctus; 3.8B shares outstanding; corporate parent completely dead.",
+      filingStatus: "suspended_15c211",
+      auditorStatus: "resigned_item401",
+      lastAuditorName: "RBSM LLP",
+      lastAuditorCity: "New York, NY",
+      lastFilingDate: "2023-06-30",
+      secTriggers: [
+        "Rule 15c2-11 Expert Market Trading Suspension",
+        "DOJ / SEC Enforcement Against Shell Promoters",
+        "Form 10-K Delinquency > 2 Years",
+        "Share Overhang > 3.8B Shares"
+      ],
+      toxicDebtBalance: 9200000,
+      toxicLenders: ["EMA Financial LLC", "Auctus Fund LLC", "LG Capital"],
+      convertibleDiscountPct: 50,
+      defaultInterestRatePct: 24,
+    },
+    extractionFeasibility: {
+      recommendedPlaybook: "article_9_foreclosure",
+      seniorSecuredDebtAmount: 4100000,
+      seniorSecuredHolder: "Wilmington Trust / Direct Credit Partners",
+      uccLienJurisdiction: "Delaware Division of Corporations (File #2022-819441)",
+      uccLienStatus: "Senior perfected security interest on 100% of SecureVault GovCloud Hosting LLC membership units and data center hardware.",
+      estimatedBuyoutDiscountPct: 51,
+      estimatedAcquisitionCost: 2000000,
+      cleanShellFit: "exceptional",
+      rationale: "SecureVault is ring-fenced as a distinct Delaware LLC completely insulated from the indicted former parent promoter. Wilmington Trust holds a direct pledge of 100% of the LLC units. Purchasing this note for $2.0M cash allows immediate UCC § 9-620 strict foreclosure, capturing $22.8M ARR and $3.6M EBITDA into our clean public vehicle.",
+    },
+    scores: { assetQualityScore: 0, vehicleDistressScore: 0, extractionFeasibilityScore: 0, rollupOpportunityIndex: 0 },
+    contacts: [
+      {
+        id: "c-1801",
+        name: "Marcus Vance",
+        title: "President & Chief Information Security Officer",
+        entity: "Operating Subsidiary",
+        email: "mvance@securevault-gov.com",
+        phone: "(703) 788-9100",
+        linkedIn: "linkedin.com/in/marcus-vance-infosec",
+        address: "Reston, VA",
+        roleSummary: "Former NSA cybersecurity officer who built SecureVault into a premier government cloud host. Ready to transition cleanly.",
+        receptivityScore: "very_high",
+      },
+      {
+        id: "c-1802",
+        name: "Robert Gallagher",
+        title: "Managing Director, Distressed Credit",
+        entity: "Senior Creditor",
+        email: "rgallagher@wilmingtontrust.com",
+        phone: "(302) 651-8000",
+        address: "Wilmington, DE",
+        roleSummary: "Directs special situation asset recoveries.",
+        receptivityScore: "high",
+      }
+    ],
+    crm: {
+      stage: "new",
+      priority: "critical",
+      notes: [
+        { id: "n-1801", date: "2026-09-28", author: "Scanner", text: "Crown jewel asset: $22.8M ARR, $3.6M EBITDA FedRAMP High government cloud hosting business. Exceptional clean shell roll." }
+      ],
+      activities: []
     }
   }
 ];
