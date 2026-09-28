@@ -8,7 +8,8 @@ import {
   ArrowRight, 
   DollarSign, 
   ShieldCheck, 
-  UserCheck, 
+  UserCheck,
+  ExternalLink, 
   FileCode2, 
   Send,
   Scale
@@ -71,6 +72,45 @@ export const TargetCard: React.FC<TargetCardProps> = ({
               <span className="text-stone-400 truncate">{target.sector}</span>
               <span className="hidden sm:inline text-stone-600">•</span>
               <span className="font-mono text-stone-400">Cap: ${(target.marketCap / 1000).toFixed(0)}k</span>
+            </div>
+
+            {/* Direct Verified Regulatory & Exchange Links */}
+            <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+              <a
+                href={target.otcMarketsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center space-x-1 rounded bg-cyan-950/40 px-2 py-0.5 text-[9px] sm:text-[10px] font-mono text-cyan-300 hover:text-cyan-200 border border-cyan-800/50 hover:border-cyan-500 transition shadow-xs"
+                title={`Open official ${target.ticker} profile on otcmarkets.com`}
+              >
+                <span>otcmarkets.com</span>
+                <ExternalLink className="h-2.5 w-2.5 ml-0.5" />
+              </a>
+
+              <a
+                href={target.secEdgarUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center space-x-1 rounded bg-emerald-950/40 px-2 py-0.5 text-[9px] sm:text-[10px] font-mono text-emerald-300 hover:text-emerald-200 border border-emerald-800/50 hover:border-emerald-500 transition shadow-xs"
+                title={`Open SEC EDGAR filings for CIK ${target.cik}`}
+              >
+                <span>SEC CIK:{target.cik}</span>
+                <ExternalLink className="h-2.5 w-2.5 ml-0.5" />
+              </a>
+
+              <a
+                href={target.latestFilingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center space-x-1 rounded bg-amber-950/40 px-2 py-0.5 text-[9px] sm:text-[10px] font-mono text-amber-300 hover:text-amber-200 border border-amber-800/50 hover:border-amber-500 transition shadow-xs"
+                title={`Open primary filing document ${target.latestFilingType} filed on ${target.latestFilingDate}`}
+              >
+                <span>{target.latestFilingType}</span>
+                <ExternalLink className="h-2.5 w-2.5 ml-0.5" />
+              </a>
             </div>
           </div>
         </div>

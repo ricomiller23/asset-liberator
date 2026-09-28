@@ -46,6 +46,12 @@ DATE: ${new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", 
    - 30-Day exclusive confirmatory due diligence period.
    - Target closing within 21 business days of UCC-1 notice of sale expiration.
 
+REGULATORY & DISCLOSURE AUDIT TRAIL:
+   - OTC Markets Profile: ${target.otcMarketsUrl}
+   - SEC EDGAR Dossier: ${target.secEdgarUrl} (CIK: ${target.cik})
+   - Verified Filing Reference: Form ${target.latestFilingType} (${target.latestFilingDate})
+     Link: ${target.latestFilingUrl}
+
 CONFIDENTIAL & NON-BINDING`;
   };
 

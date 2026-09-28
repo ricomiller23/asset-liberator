@@ -47,6 +47,13 @@ export interface TargetCompany {
   sharesOutstanding: number;
   authorizedShares: number;
   
+  // Verified Primary Source & Regulatory Links
+  otcMarketsUrl: string;
+  secEdgarUrl: string;
+  latestFilingUrl: string;
+  latestFilingType: string;
+  latestFilingDate: string;
+  
   // The Asset (The Gold)
   asset: {
     subsidiaryName: string;

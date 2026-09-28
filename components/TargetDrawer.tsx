@@ -90,6 +90,37 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
               <p className="text-xs text-stone-400 mt-1">
                 {target.sector} • CIK {target.cik} • HQ: {target.headquarters} • Market Cap: ${(target.marketCap / 1000).toFixed(0)}k
               </p>
+
+              {/* Verified Regulatory & Primary Source Links */}
+              <div className="flex flex-wrap items-center gap-1.5 mt-2">
+                <a
+                  href={target.otcMarketsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1 rounded-lg bg-cyan-950/60 px-2 py-0.5 text-[11px] font-mono text-cyan-300 hover:text-cyan-100 border border-cyan-700/60 hover:border-cyan-400 transition shadow-xs"
+                >
+                  <span>otcmarkets.com</span>
+                  <ExternalLink className="h-3 w-3 ml-0.5" />
+                </a>
+                <a
+                  href={target.secEdgarUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1 rounded-lg bg-emerald-950/60 px-2 py-0.5 text-[11px] font-mono text-emerald-300 hover:text-emerald-100 border border-emerald-700/60 hover:border-emerald-400 transition shadow-xs"
+                >
+                  <span>SEC EDGAR CIK:{target.cik}</span>
+                  <ExternalLink className="h-3 w-3 ml-0.5" />
+                </a>
+                <a
+                  href={target.latestFilingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1 rounded-lg bg-amber-950/60 px-2 py-0.5 text-[11px] font-mono text-amber-300 hover:text-amber-100 border border-amber-700/60 hover:border-amber-400 transition shadow-xs"
+                >
+                  <span>{target.latestFilingType} ({target.latestFilingDate})</span>
+                  <ExternalLink className="h-3 w-3 ml-0.5" />
+                </a>
+              </div>
             </div>
 
             <button
