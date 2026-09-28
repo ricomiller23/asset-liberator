@@ -135,10 +135,10 @@ function AssetLiberatorMain() {
       />
 
       {/* Main Container */}
-      <main className="flex-1 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 w-full space-y-6">
+      <main className="flex-1 mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 py-4 sm:py-6 w-full space-y-6">
         
         {/* Hero Strategy Briefing Banner */}
-        <div className="rounded-3xl border border-stone-800 bg-gradient-to-r from-stone-900/90 via-stone-900/70 to-emerald-950/20 p-5 sm:p-6 shadow-xl backdrop-blur-md">
+        <div className="rounded-3xl border border-stone-800 bg-gradient-to-r from-stone-900/90 via-stone-900/70 to-emerald-950/20 p-4 sm:p-6 shadow-xl backdrop-blur-md">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
             <div className="space-y-1.5 max-w-3xl">
               <div className="flex items-center space-x-2 text-xs font-mono font-bold text-emerald-400">
@@ -154,7 +154,7 @@ function AssetLiberatorMain() {
             </div>
 
             {/* Quick Playbook Pillars */}
-            <div className="grid grid-cols-2 gap-2 text-xs font-mono shrink-0">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 text-xs font-mono shrink-0">
               <div className="rounded-xl border border-stone-800 bg-stone-950/80 p-2.5">
                 <span className="text-emerald-400 font-bold">ARTICLE 9 UCC</span>
                 <p className="text-[10px] text-stone-400 mt-0.5">Senior debt purchase & clean foreclosure</p>

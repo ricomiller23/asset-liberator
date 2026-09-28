@@ -30,12 +30,12 @@ DATE: ${new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", 
 
 2. SENIOR SECURED DEBT ACQUISITION:
    - Senior Creditor: ${target.extractionFeasibility.seniorSecuredHolder}
-   - Face Value: $${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M
-   - Cash Purchase Price: $${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)},000 (Approx. ${100 - target.extractionFeasibility.estimatedBuyoutDiscountPct}% of Face)
+   - Face Value: ${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M
+   - Cash Purchase Price: ${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)},000 (Approx. ${100 - target.extractionFeasibility.estimatedBuyoutDiscountPct}% of Face)
    - Collateral Assigned: First priority perfected UCC-1 blanket security interest covering all machinery, accounts receivable, and patents of ${target.asset.subsidiaryName}.
 
 3. TOXIC DEBT EXTINGUISHMENT:
-   Upon execution of the secured foreclosure, all junior unsecured debt, convertible debentures ($${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M total, including claims by ${target.vehicleDistress.toxicLenders.join(", ")}), and legacy parent obligations are extinguished as against ${target.asset.subsidiaryName}.
+   Upon execution of the secured foreclosure, all junior unsecured debt, convertible debentures (${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M total, including claims by ${target.vehicleDistress.toxicLenders.join(", ")}), and legacy parent obligations are extinguished as against ${target.asset.subsidiaryName}.
 
 4. CLEAN PUBLIC SHELL ROLLUP:
    - ${target.asset.subsidiaryName} will be merged into a fully reporting, clean public shell entity controlled by Purchaser.
@@ -57,7 +57,7 @@ CONFIDENTIAL & NON-BINDING`;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs overflow-y-auto">
-      <div className="w-full max-w-2xl rounded-2xl border border-stone-800 bg-stone-950 p-6 shadow-2xl text-stone-200 my-8">
+      <div className="w-full max-w-2xl rounded-2xl border border-stone-800 bg-stone-950 p-3.5 sm:p-6 shadow-2xl text-stone-200 my-auto sm:my-8 max-h-[92vh] flex flex-col">
         
         {/* Header */}
         <div className="flex items-center justify-between border-b border-stone-800 pb-3 mb-4">
@@ -80,7 +80,7 @@ CONFIDENTIAL & NON-BINDING`;
               <span>STEP 1: SENIOR NOTE ASSIGNMENT & LIEN LOCK</span>
             </div>
             <p className="text-stone-300 leading-relaxed">
-              Execute absolute assignment agreement with <strong>{target.extractionFeasibility.seniorSecuredHolder}</strong>. Pay <strong>$${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k cash</strong> to take over the first-priority UCC-1 lien recorded with {target.extractionFeasibility.uccLienJurisdiction}.
+              Execute absolute assignment agreement with <strong>{target.extractionFeasibility.seniorSecuredHolder}</strong>. Pay <strong>${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k cash</strong> to take over the first-priority UCC-1 lien recorded with {target.extractionFeasibility.uccLienJurisdiction}.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ CONFIDENTIAL & NON-BINDING`;
               <span>STEP 2: ARTICLE 9 FORECLOSURE OR 363 SALE ORDER</span>
             </div>
             <p className="text-stone-300 leading-relaxed">
-              Serve 10-day statutory UCC notice of disposition to parent company and junior toxic lenders (wiping out <strong>$${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M</strong> in convertible debt from {target.vehicleDistress.toxicLenders.join(", ")}). Take clean title to 100% of <strong>{target.asset.subsidiaryName}</strong>.
+              Serve 10-day statutory UCC notice of disposition to parent company and junior toxic lenders (wiping out <strong>${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M</strong> in convertible debt from {target.vehicleDistress.toxicLenders.join(", ")}). Take clean title to 100% of <strong>{target.asset.subsidiaryName}</strong>.
             </p>
           </div>
 

@@ -72,8 +72,8 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 overflow-hidden bg-black/60 backdrop-blur-xs">
-      <div className="absolute inset-y-0 right-0 flex max-w-full pl-10">
-        <div className="w-screen max-w-3xl border-l border-stone-800 bg-stone-950 p-6 shadow-2xl flex flex-col h-full overflow-hidden text-stone-200">
+      <div className="absolute inset-y-0 right-0 flex max-w-full pl-0 sm:pl-8">
+        <div className="w-full sm:w-screen max-w-3xl border-l border-stone-800 bg-stone-950 p-3.5 sm:p-6 shadow-2xl flex flex-col h-full overflow-hidden text-stone-200">
           
           {/* Header */}
           <div className="flex items-start justify-between border-b border-stone-800 pb-4">
@@ -88,7 +88,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 </span>
               </div>
               <p className="text-xs text-stone-400 mt-1">
-                {target.sector} • CIK {target.cik} • HQ: {target.headquarters} • Market Cap: $${(target.marketCap / 1000).toFixed(0)}k
+                {target.sector} • CIK {target.cik} • HQ: {target.headquarters} • Market Cap: ${(target.marketCap / 1000).toFixed(0)}k
               </p>
             </div>
 
@@ -159,7 +159,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
                   <div className="text-[10px] text-stone-500">ANNUAL REVENUE</div>
                   <div className="text-sm font-bold text-emerald-400">
-                    $${(target.asset.annualRevenue / 1000000).toFixed(2)}M
+                    ${(target.asset.annualRevenue / 1000000).toFixed(2)}M
                   </div>
                 </div>
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
@@ -171,7 +171,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
                   <div className="text-[10px] text-stone-500">EBITDA</div>
                   <div className="text-sm font-bold text-stone-200">
-                    $${(target.asset.ebitda / 1000).toFixed(0)}k
+                    ${(target.asset.ebitda / 1000).toFixed(0)}k
                   </div>
                 </div>
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
@@ -220,7 +220,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
                   <div className="text-[10px] text-stone-500">TOXIC DEBT OVERHANG</div>
                   <div className="text-sm font-bold text-rose-400">
-                    $${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(2)}M
+                    ${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(2)}M
                   </div>
                 </div>
                 <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
@@ -286,7 +286,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div>
                   <span className="text-stone-500 text-[10px]">SENIOR NOTE FACE VALUE</span>
                   <div className="text-xs font-bold text-stone-200">
-                    $${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M
+                    ${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M
                   </div>
                 </div>
                 <div>
@@ -298,7 +298,7 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 <div>
                   <span className="text-stone-500 text-[10px]">EST. CASH BUYOUT COST</span>
                   <div className="text-xs font-bold text-emerald-400">
-                    $${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k Cash
+                    ${(target.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k Cash
                   </div>
                 </div>
               </div>

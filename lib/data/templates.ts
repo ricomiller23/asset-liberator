@@ -18,7 +18,7 @@ export const OUTREACH_TEMPLATES: OutreachTemplate[] = [
 
 I am reaching out confidentially regarding ${target.asset.subsidiaryName}. Our investment group specializes in special situations recapitalizations and public company corporate restructurings.
 
-We have closely analyzed ${target.name} (${target.ticker}) and its current public vehicle distress (including the ${target.vehicleDistress.filingStatus.replace("_", " ")} filing status and the ${target.vehicleDistress.secTriggers[0] || "toxic convertible debt load"}). It is obvious to any sophisticated observer that while your underlying operating business is robust (generating over $${(target.asset.annualRevenue / 1000000).toFixed(1)}M in real commercial revenue), the public parent company vehicle is fatally broken and unable to finance your growth.
+We have closely analyzed ${target.name} (${target.ticker}) and its current public vehicle distress (including the ${target.vehicleDistress.filingStatus.replace("_", " ")} filing status and the ${target.vehicleDistress.secTriggers[0] || "toxic convertible debt load"}). It is obvious to any sophisticated observer that while your underlying operating business is robust (generating over ${(target.asset.annualRevenue / 1000000).toFixed(1)}M in real commercial revenue), the public parent company vehicle is fatally broken and unable to finance your growth.
 
 We control pristine, unencumbered public shells (clean cap tables, DTC/FAST eligible, zero debt, zero litigation, current PCAOB auditors). We are prepared to:
 
@@ -43,12 +43,12 @@ Direct: (949) 555-0190 | Confidential M&A Desk`
 
 I am writing to submit an expression of interest to acquire the first-lien senior secured debt position held by ${contact.entity === "Senior Creditor" ? contact.name : target.extractionFeasibility.seniorSecuredHolder} with respect to ${target.asset.subsidiaryName} / ${target.name} (${target.ticker}).
 
-We understand this credit facility is currently in special assets / workout status with an outstanding balance of approximately $${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M, secured by a first-priority UCC-1 lien on the operating assets, inventory, and IP of ${target.asset.subsidiaryName}.
+We understand this credit facility is currently in special assets / workout status with an outstanding balance of approximately ${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M, secured by a first-priority UCC-1 lien on the operating assets, inventory, and IP of ${target.asset.subsidiaryName}.
 
-Given the extensive junior toxic debt overhang ($${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M) and SEC filing paralysis at the parent level, recovery via conventional operational turnaround is mathematically improbable.
+Given the extensive junior toxic debt overhang (${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M) and SEC filing paralysis at the parent level, recovery via conventional operational turnaround is mathematically improbable.
 
 Our group has completed initial underwriting and is prepared to offer:
-- An immediate, all-cash purchase and assignment of the senior note and underlying UCC collateral at an agreed discounted valuation ($${(target.extractionFeasibility.estimatedAcquisitionCost / 1000000).toFixed(2)}M cash at closing).
+- An immediate, all-cash purchase and assignment of the senior note and underlying UCC collateral at an agreed discounted valuation (${(target.extractionFeasibility.estimatedAcquisitionCost / 1000000).toFixed(2)}M cash at closing).
 - Expedited due diligence (7 business days) with standard institutional loan assignment documentation.
 - Elimination of ongoing workout legal expenses and provisioning requirements for your institution.
 
@@ -69,7 +69,7 @@ Direct: (949) 555-0190`
 
 We are writing to propose a consensual transaction structure that resolves the pressing balance sheet liabilities of ${target.name} (${target.ticker}) while unlocking value for your stakeholders.
 
-Currently, ${target.name} faces substantial operational and regulatory friction, including $${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M in convertible note obligations and delinquent SEC filings. Continued delay risks involuntary creditor foreclosure or total liquidation.
+Currently, ${target.name} faces substantial operational and regulatory friction, including ${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(1)}M in convertible note obligations and delinquent SEC filings. Continued delay risks involuntary creditor foreclosure or total liquidation.
 
 We propose a consensual carve-out transaction wherein our entity:
 1. Assumes or satisfies the senior secured obligations held by ${target.extractionFeasibility.seniorSecuredHolder}, extinguishing default liability.

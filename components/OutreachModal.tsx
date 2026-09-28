@@ -83,7 +83,7 @@ export const OutreachModal: React.FC<OutreachModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs overflow-y-auto">
-      <div className="w-full max-w-2xl rounded-2xl border border-stone-800 bg-stone-950 p-6 shadow-2xl text-stone-200 my-8">
+      <div className="w-full max-w-2xl rounded-2xl border border-stone-800 bg-stone-950 p-3.5 sm:p-6 shadow-2xl text-stone-200 my-auto sm:my-8 max-h-[92vh] flex flex-col">
         
         {/* Header */}
         <div className="flex items-center justify-between border-b border-stone-800 pb-3 mb-4">

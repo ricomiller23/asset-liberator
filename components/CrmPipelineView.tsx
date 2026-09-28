@@ -31,6 +31,7 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
 }) => {
   const [quickNoteTargetId, setQuickNoteTargetId] = useState<string | null>(null);
   const [quickNoteText, setQuickNoteText] = useState("");
+  const [selectedMobileStage, setSelectedMobileStage] = useState<CrmStage | "all">("all");
 
   const stages: { id: CrmStage; title: string; color: string }[] = [
     { id: "new", title: "New Opportunities", color: "border-stone-700 text-stone-300" },
@@ -49,42 +50,76 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
     setQuickNoteTargetId(null);
   };
 
+  const visibleStages = selectedMobileStage === "all" 
+    ? stages 
+    : stages.filter((s) => s.id === selectedMobileStage);
+
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-4 sm:space-y-6">
       {/* CRM Telemetry Top Banner */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 font-mono">
-          <div className="text-[11px] text-stone-500">ACTIVE PIPELINE TARGETS</div>
-          <div className="text-xl font-bold text-white mt-1">{targets.length} Companies</div>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
+        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-3 sm:p-4 font-mono">
+          <div className="text-[10px] sm:text-[11px] text-stone-500">ACTIVE PIPELINE TARGETS</div>
+          <div className="text-base sm:text-xl font-bold text-white mt-1">{targets.length} Companies</div>
         </div>
-        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 font-mono">
-          <div className="text-[11px] text-stone-500">SUBSIDIARY REV IN PLAY</div>
-          <div className="text-xl font-bold text-emerald-400 mt-1">
-            $${(targets.reduce((acc, t) => acc + t.asset.annualRevenue, 0) / 1000000).toFixed(1)}M
+        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-3 sm:p-4 font-mono">
+          <div className="text-[10px] sm:text-[11px] text-stone-500">SUBSIDIARY REV IN PLAY</div>
+          <div className="text-base sm:text-xl font-bold text-emerald-400 mt-1">
+            ${(targets.reduce((acc, t) => acc + t.asset.annualRevenue, 0) / 1000000).toFixed(1)}M
           </div>
         </div>
-        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 font-mono">
-          <div className="text-[11px] text-stone-500">SENIOR DEBT RECOVERY</div>
-          <div className="text-xl font-bold text-cyan-400 mt-1">
-            $${(targets.reduce((acc, t) => acc + t.extractionFeasibility.seniorSecuredDebtAmount, 0) / 1000000).toFixed(1)}M
+        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-3 sm:p-4 font-mono">
+          <div className="text-[10px] sm:text-[11px] text-stone-500">SENIOR DEBT RECOVERY</div>
+          <div className="text-base sm:text-xl font-bold text-cyan-400 mt-1">
+            ${(targets.reduce((acc, t) => acc + t.extractionFeasibility.seniorSecuredDebtAmount, 0) / 1000000).toFixed(1)}M
           </div>
         </div>
-        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 font-mono">
-          <div className="text-[11px] text-stone-500">EXECUTIVE CONTACTS</div>
-          <div className="text-xl font-bold text-amber-400 mt-1">
+        <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-3 sm:p-4 font-mono">
+          <div className="text-[10px] sm:text-[11px] text-stone-500">EXECUTIVE CONTACTS</div>
+          <div className="text-base sm:text-xl font-bold text-amber-400 mt-1">
             {targets.reduce((acc, t) => acc + t.contacts.length, 0)} Decision Makers
           </div>
         </div>
       </div>
 
-      {/* Horizontal Kanban Board */}
-      <div className="flex space-x-4 overflow-x-auto pb-6">
+      {/* Mobile Stage Selector Tabs (visible on small screens for fast 1-tap navigation) */}
+      <div className="flex md:hidden items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none -mx-1 px-1">
+        <button
+          onClick={() => setSelectedMobileStage("all")}
+          className={`rounded-lg px-2.5 py-1 text-[11px] font-mono shrink-0 transition ${
+            selectedMobileStage === "all"
+              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold"
+              : "bg-stone-900 text-stone-400 border border-stone-800"
+          }`}
+        >
+          All Stages ({targets.length})
+        </button>
         {stages.map((stage) => {
+          const count = targets.filter((t) => t.crm.stage === stage.id).length;
+          return (
+            <button
+              key={stage.id}
+              onClick={() => setSelectedMobileStage(stage.id)}
+              className={`rounded-lg px-2.5 py-1 text-[11px] font-mono shrink-0 transition ${
+                selectedMobileStage === stage.id
+                  ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold"
+                  : "bg-stone-900 text-stone-400 border border-stone-800"
+              }`}
+            >
+              {stage.title.split(" ")[0]} ({count})
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Kanban Board with Smooth Touch Snap Scroll */}
+      <div className="flex space-x-3 sm:space-x-4 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-thin">
+        {visibleStages.map((stage) => {
           const stageTargets = targets.filter((t) => t.crm.stage === stage.id);
           return (
             <div
               key={stage.id}
-              className="w-80 shrink-0 flex flex-col rounded-2xl border border-stone-850 bg-stone-950/70 p-3 shadow-md"
+              className="w-[85vw] sm:w-80 shrink-0 snap-start flex flex-col rounded-2xl border border-stone-850 bg-stone-950/70 p-3 sm:p-3.5 shadow-md"
             >
               {/* Column Header */}
               <div className="flex items-center justify-between border-b border-stone-800/80 pb-2.5 mb-3 px-1">
@@ -97,7 +132,7 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
               </div>
 
               {/* Cards list */}
-              <div className="flex-1 space-y-3 overflow-y-auto max-h-[calc(100vh-20rem)] pr-1">
+              <div className="flex-1 space-y-3 overflow-y-auto max-h-[calc(100vh-18rem)] pr-1">
                 {stageTargets.length === 0 ? (
                   <div className="rounded-xl border border-dashed border-stone-850 py-8 text-center text-[11px] text-stone-600 font-mono">
                     No deals in this stage
@@ -110,42 +145,51 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
                     >
                       {/* Top line */}
                       <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2">
-                          <span className="font-mono font-bold text-white bg-stone-850 px-1.5 py-0.5 rounded text-[11px] border border-stone-750">
+                        <div className="flex items-center space-x-2 min-w-0">
+                          <span className="font-mono font-bold text-white bg-stone-850 px-1.5 py-0.5 rounded text-[11px] border border-stone-750 shrink-0">
                             {t.ticker}
                           </span>
-                          <span className="font-bold text-stone-200 truncate max-w-[120px]" title={t.name}>
-                            {t.name}
+                          <span 
+                            onClick={() => onOpenDrawer(t)}
+                            className="font-bold text-stone-200 hover:text-emerald-400 transition cursor-pointer truncate"
+                          >
+                            {t.asset.subsidiaryName}
                           </span>
                         </div>
-                        <span className="font-mono text-[10px] text-emerald-400 font-bold">
-                          $${(t.asset.annualRevenue / 1000000).toFixed(1)}M Rev
+                        <span className="font-mono text-[10px] text-emerald-400 shrink-0 ml-1">
+                          ROI {t.scores.rollupOpportunityIndex}
                         </span>
                       </div>
 
-                      {/* Subsidiary Name */}
-                      <div className="mt-1.5 text-[11px] text-emerald-400 font-medium truncate flex items-center space-x-1">
-                        <Building2 className="h-3 w-3 shrink-0" />
-                        <span>{t.asset.subsidiaryName}</span>
+                      {/* Parent & Financial Highlights */}
+                      <div className="mt-2 text-[11px] text-stone-400">
+                        <span className="text-stone-500">Parent:</span> {t.name}
                       </div>
 
-                      {/* Key Contact */}
-                      <div className="mt-2 pt-2 border-t border-stone-850 flex items-center justify-between text-[11px] text-stone-400">
-                        <span className="truncate max-w-[140px] font-medium text-stone-300">
-                          {t.contacts[0]?.name}
-                        </span>
-                        <a
-                          href={`tel:${t.contacts[0]?.phone}`}
-                          className="text-stone-400 hover:text-emerald-400 font-mono text-[10px]"
-                        >
-                          {t.contacts[0]?.phone}
-                        </a>
+                      <div className="mt-2 grid grid-cols-2 gap-1.5 font-mono text-[10px]">
+                        <div className="rounded bg-stone-950/80 p-1.5 border border-stone-850">
+                          <span className="text-stone-500 block text-[9px]">REVENUE</span>
+                          <span className="text-emerald-400 font-bold">
+                            ${(t.asset.annualRevenue / 1000000).toFixed(1)}M Rev
+                          </span>
+                        </div>
+                        <div className="rounded bg-stone-950/80 p-1.5 border border-stone-850">
+                          <span className="text-stone-500 block text-[9px]">SR BUYOUT</span>
+                          <span className="text-cyan-400 font-bold">
+                            ${(t.extractionFeasibility.estimatedAcquisitionCost / 1000).toFixed(0)}k Cash
+                          </span>
+                        </div>
                       </div>
 
-                      {/* Last note snippet */}
-                      {t.crm.notes.length > 0 && (
-                        <div className="mt-2 rounded bg-stone-950 p-1.5 text-[10px] text-stone-400 line-clamp-2 italic border border-stone-850">
-                          "{t.crm.notes[0].text}"
+                      {/* Contact highlight */}
+                      {t.contacts[0] && (
+                        <div className="mt-2.5 pt-2 border-t border-stone-850/80 flex items-center justify-between text-[10px] text-stone-400">
+                          <span className="truncate">
+                            {t.contacts[0].name} ({t.contacts[0].entity})
+                          </span>
+                          <span className="text-stone-500 shrink-0 ml-1">
+                            {t.contacts[0].phone}
+                          </span>
                         </div>
                       )}
 
@@ -154,7 +198,7 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
                         <select
                           value={t.crm.stage}
                           onChange={(e) => onUpdateStage(t.id, e.target.value as CrmStage)}
-                          className="rounded bg-stone-950 px-2 py-1 text-[10px] font-mono text-cyan-300 border border-stone-800 focus:outline-none"
+                          className="rounded bg-stone-950 px-2 py-1 text-[10px] font-mono text-cyan-300 border border-stone-800 focus:outline-none max-w-[130px] sm:max-w-none truncate"
                         >
                           {stages.map((s) => (
                             <option key={s.id} value={s.id}>
@@ -167,14 +211,14 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
                           <button
                             onClick={() => onOpenOutreach(t)}
                             title="Generate Outreach"
-                            className="rounded bg-emerald-500/20 p-1 text-emerald-300 hover:bg-emerald-500/30 transition"
+                            className="rounded bg-emerald-500/20 p-1.5 text-emerald-300 hover:bg-emerald-500/30 transition"
                           >
                             <Send className="h-3 w-3" />
                           </button>
                           <button
                             onClick={() => onOpenDrawer(t)}
                             title="Open Dossier"
-                            className="rounded bg-stone-800 p-1 text-stone-300 hover:text-white transition"
+                            className="rounded bg-stone-800 p-1.5 text-stone-300 hover:text-white transition"
                           >
                             <FileText className="h-3 w-3" />
                           </button>
