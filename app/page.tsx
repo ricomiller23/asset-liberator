@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { TargetCompany, SearchFilters, CrmStage, PriorityLevel } from "@/lib/types";
 import { getStoredTargets, saveStoredTargets, updateTargetCrmStage, addTargetCrmNote, logTargetActivity } from "@/lib/crm";
@@ -30,12 +31,16 @@ function AssetLiberatorMain() {
   const [activePlaybookTarget, setActivePlaybookTarget] = useState<TargetCompany | null>(null);
   const [activeOutreachTarget, setActiveOutreachTarget] = useState<TargetCompany | null>(null);
 
+  const searchParams = useSearchParams();
+  const initialTier = (searchParams.get("revenueTier") as SearchFilters["revenueTier"]) || "all";
+
   const [filters, setFilters] = useState<SearchFilters>({
     query: "",
     sector: "all",
     playbook: "all",
     exchange: "all",
     filingStatus: "all",
+    revenueTier: initialTier,
     sortBy: "roi",
   });
 
