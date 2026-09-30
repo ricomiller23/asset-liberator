@@ -50,8 +50,8 @@ DATE: ${new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", 
 REGULATORY & DISCLOSURE AUDIT TRAIL:
    - OTC Markets Profile: ${target.otcMarketsUrl}
    - SEC EDGAR Dossier: ${target.secEdgarUrl} (CIK: ${target.cik})
-   - Verified Filing Reference: Form ${target.latestFilingType} (${target.latestFilingDate})
-     Link: ${target.latestFilingUrl}
+   - Most Recent Filing: Form ${target.latestFilingType} (${target.latestFilingDate})
+     Link: ${target.latestFilingUrl}${target.baseline10KFilingUrl && target.baseline10KFilingUrl !== target.latestFilingUrl ? `\n   - Baseline 10-K Report: Form ${target.baseline10KFilingType || '10-K'} (${target.baseline10KFilingDate})\n     Link: ${target.baseline10KFilingUrl}` : ''}
 
 CONFIDENTIAL & NON-BINDING`;
   };

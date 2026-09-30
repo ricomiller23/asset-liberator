@@ -1,6 +1,20 @@
 import { TargetCompany } from "../types";
 import { enrichTargetScores } from "../scoring";
 
+/**
+ * AUDIT-RECONCILED TARGETS DATA — 2026-09-30
+ * Fully reconciled with findings in asset_liberator_link_audit.xlsx
+ * 
+ * - Dual Filing Links: Retains BOTH the Baseline 10-K filing AND the Actual Most Recent SEC Filing
+ * - Filing Dates: Corrected 6 document date discrepancies (XELA, HCMC, RGBP, NLST, ZNOG, CYDY)
+ * - Filing & Auditor Status: Corrected 8 false distress classifications to active filer status
+ * - Contacts: Removed all 18 synthetic creditor contacts (NXDOMAIN) + non-resolving LADX domain
+ * - Financials: Reconciled RWAX ($0 rev, $4.51M net loss) and NLST ($439M annualized rev)
+ * - Quotes: Updated prices for NLST, OPTI, PBIO, QPRC with verified market sources
+ * - Exchange: Updated IQST to NASDAQ per SEC registrant records
+ * - Disclaimers: Added explicit analyst estimate provenance on subsidiary financials & UCC liens
+ */
+
 const rawTargets: TargetCompany[] = [
   {
     "id": "xela-exela",
@@ -8,8 +22,8 @@ const rawTargets: TargetCompany[] = [
     "name": "Exela Technologies, Inc.",
     "cik": "0001620179",
     "exchange": "EXPERT_MARKET",
-    "sector": "Technology & Cybersecurity",
-    "industry": "Enterprise Business Process Automation",
+    "sector": "Business Process Services",
+    "industry": "Enterprise Business Process Automation (SIC 7389)",
     "headquarters": "Irving, TX",
     "marketCap": 1200000,
     "stockPrice": 0.0003,
@@ -17,9 +31,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 8000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/XELA/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001620179",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1620179/000155837024004674/xela-20231231x10k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2024-04-09",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1620179/000199937125010715/xslF345X02/excela_form3.xml",
+    "latestFilingType": "Form 3",
+    "latestFilingDate": "2025-08-06",
     "asset": {
       "subsidiaryName": "SourceHOV Healthcare & Financial Automation LLC",
       "businessSummary": "Enterprise cloud software for medical claims processing, payment integrity, and automated document workflow. Powers over $100B in annual transaction processing for major US hospital networks and commercial banks.",
@@ -66,7 +80,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 55,
       "estimatedAcquisitionCost": 6300000,
       "cleanShellFit": "exceptional",
-      "rationale": "Operating software assets generate $94M in real cash revenue. Buying the senior secured credit tranche at 55% discount enables clean Section 363 asset purchase or friendly foreclosure, stripping off $45M in convertible debentures."
+      "rationale": "Operating software assets generate $94M in real cash revenue. Buying the senior secured credit tranche at 55% discount enables clean Section 363 asset purchase or friendly foreclosure, stripping off $45M in convertible debentures.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -84,16 +99,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(844) 935-2832",
         "roleSummary": "Key decision-maker on debt workout and corporate restructuring.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Special Situations Credit Desk",
-        "title": "Senior Secured Credit Agent",
-        "entity": "Senior Creditor",
-        "email": "workouts@creditagency-llc.com",
-        "phone": "(212) 850-7000",
-        "roleSummary": "Holds 1st-priority lien on operating software assets.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -115,7 +120,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR; OTC Expert Market tier confirmed."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1620179/000155837024004674/xela-20231231x10k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2024-04-03",
+    "priceSource": "Audit check: Expert market unverified quote",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1620179/000155837024004674/xela-20231231x10k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2024-04-03",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 3 (2025-08-06)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "rwax-tap-humbl",
@@ -132,15 +147,15 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 10000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/RWAX/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001119190",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-04-14",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226042091/form8-k.htm",
+    "latestFilingType": "Form 8-K",
+    "latestFilingDate": "2026-09-10",
     "asset": {
       "subsidiaryName": "HUMBL Mobile Payments & Ticketing LLC",
       "businessSummary": "Cross-border digital payment infrastructure, digital wallet applications, and verified sports & entertainment ticketing network.",
-      "annualRevenue": 14800000,
+      "annualRevenue": 0,
       "grossMarginPct": 62,
-      "ebitda": 1820000,
+      "ebitda": -4512266,
       "employees": 42,
       "facilities": "Leased software development hub in San Diego, CA",
       "patentsCount": 5,
@@ -150,12 +165,12 @@ const rawTargets: TargetCompany[] = [
         "Independent Event Promoters"
       ],
       "ipDetails": "5 patents and trademarks covering peer-to-peer mobile payments and digital wallet escrow.",
-      "commercialReadiness": "commercial_contracts"
+      "commercialReadiness": "pre_clinical_r_and_d"
     },
     "vehicleDistress": {
       "statusSummary": "Parent company suffered extreme share dilution exceeding 4.5B shares, multiple toxic variable notes, and corporate rebranding on OTCID / Basic Market.",
-      "filingStatus": "suspended_15c211",
-      "auditorStatus": "resigned_item401",
+      "filingStatus": "current",
+      "auditorStatus": "active",
       "lastAuditorName": "BF Borgers CPA PC (Revoked)",
       "lastAuditorCity": "Lakewood, CO",
       "lastFilingDate": "2026-04-14",
@@ -181,7 +196,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 48,
       "estimatedAcquisitionCost": 1250000,
       "cleanShellFit": "exceptional",
-      "rationale": "Software stack has active user accounts and generates $14.8M gross transaction volume. Foreclosing on the $2.4M senior note wipes out $8.8M in floorless convertible notes."
+      "rationale": "Software stack has active user accounts and generates $14.8M gross transaction volume. Foreclosing on the $2.4M senior note wipes out $8.8M in floorless convertible notes.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -199,16 +215,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(203) 930-7427",
         "roleSummary": "Founder facing massive capitalization gridlock.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Workout Officer",
-        "title": "Managing Director",
-        "entity": "Senior Creditor",
-        "email": "portfolio@securedtrust-cap.com",
-        "phone": "(312) 445-8820",
-        "roleSummary": "Direct point of contact for purchasing senior secured debt position.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -230,7 +236,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "EDGAR Form 10-K archive verified 200 OK."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-04-14",
+    "priceSource": "Audit check: OTCID Basic active filer",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-04-14",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 8-K (2026-09-10)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "opti-optec",
@@ -238,18 +254,18 @@ const rawTargets: TargetCompany[] = [
     "name": "Optec International, Inc.",
     "cik": "0001557340",
     "exchange": "EXPERT_MARKET",
-    "sector": "Cleantech & Commercial Safety",
-    "industry": "Optical UV-C Sterilization & Fuel Optimization",
+    "sector": "Pharmaceutical Preparations",
+    "industry": "Clean-Tech & Bio-Optics (SIC 2834)",
     "headquarters": "Carlsbad, CA",
     "marketCap": 320000,
-    "stockPrice": 0.0001,
+    "stockPrice": 0.0018,
     "sharesOutstanding": 3200000000,
     "authorizedShares": 6000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/OPTI/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001557340",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2018-10-15",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997320000919/optec_8k.htm",
+    "latestFilingType": "Form 8-K",
+    "latestFilingDate": "2020-11-04",
     "asset": {
       "subsidiaryName": "Optec Fuel & UV-C Technologies LLC",
       "businessSummary": "Commercial UV-C pathogen eradication units, optical sterilization hardware, and proprietary fuel optimization tech.",
@@ -296,7 +312,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 44,
       "estimatedAcquisitionCost": 1010000,
       "cleanShellFit": "exceptional",
-      "rationale": "Hardware business has real physical inventory and purchase orders. Carving out the operating unit via senior note foreclosure leaves behind millions of toxic debt."
+      "rationale": "Hardware business has real physical inventory and purchase orders. Carving out the operating unit via senior note foreclosure leaves behind millions of toxic debt.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -314,16 +331,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(760) 444-5566",
         "roleSummary": "Former CEO navigating legacy debts.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Senior Noteholder Representative",
-        "title": "Managing Partner",
-        "entity": "Senior Creditor",
-        "email": "settlements@pacificcreditholdings.com",
-        "phone": "(949) 718-2200",
-        "roleSummary": "Controls senior UCC-1 lien covering equipment and trademarks.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -345,7 +352,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2018-10-15",
+    "priceSource": "Audit check: $0.0018 (MarketBeat 2026-09-30)",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2018-10-15",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 8-K (2020-11-04)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "alpp-alpine4",
@@ -353,8 +370,8 @@ const rawTargets: TargetCompany[] = [
     "name": "Alpine 4 Holdings, Inc.",
     "cik": "0001606698",
     "exchange": "EXPERT_MARKET",
-    "sector": "Aerospace & Defense",
-    "industry": "Commercial Drone Logistics & Precision Sheet Metal",
+    "sector": "Communications Equipment",
+    "industry": "Aerospace & Drone Defense (SIC 3669)",
     "headquarters": "Phoenix, AZ",
     "marketCap": 2800000,
     "stockPrice": 0.012,
@@ -362,9 +379,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 500000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/ALPP/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001606698",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2023-05-08",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000135445725000380/xslF25X02/primary_doc.xml",
+    "latestFilingType": "Form 25-NSE",
+    "latestFilingDate": "2025-05-06",
     "asset": {
       "subsidiaryName": "Vayu Aerospace & Quality Circuit Assembly LLC",
       "businessSummary": "Long-range autonomous VTOL cargo delivery drones and precision surface-mount printed circuit board assembly facilities serving commercial aviation and medical defense.",
@@ -411,7 +428,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 47,
       "estimatedAcquisitionCost": 2910000,
       "cleanShellFit": "exceptional",
-      "rationale": "Vayu Aerospace and QCA are real revenue machines generating $34.5M top line. Acquiring the $5.5M senior bank note at 47% discount provides complete leverage to foreclose the operating assets into our clean shell."
+      "rationale": "Vayu Aerospace and QCA are real revenue machines generating $34.5M top line. Acquiring the $5.5M senior bank note at 47% discount provides complete leverage to foreclose the operating assets into our clean shell.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -429,16 +447,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(480) 585-7776",
         "roleSummary": "Founder facing immense litigation from convertible debenture holders.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Senior Loan Workout Officer",
-        "title": "Vice President - Special Assets",
-        "entity": "Senior Creditor",
-        "email": "specialassets@commercialbank-west.com",
-        "phone": "(602) 285-6000",
-        "roleSummary": "Managing delinquent senior credit facility; highly motivated to exit.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -460,7 +468,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2023-05-08",
+    "priceSource": "Audit check: Expert market post-25-NSE delisting",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2023-05-08",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 25-NSE (2025-05-06)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "sing-singlepoint",
@@ -526,7 +544,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 50,
       "estimatedAcquisitionCost": 2400000,
       "cleanShellFit": "exceptional",
-      "rationale": "Boston Solar is an established 10-year contractor generating $22.4M revenue in New England. Buying the $4.8M senior secured note at 50% discount enables clean Article 9 foreclosure into our debt-free shell, stripping out $12.5M in toxic convertibles."
+      "rationale": "Boston Solar is an established 10-year contractor generating $22.4M revenue in New England. Buying the $4.8M senior secured note at 50% discount enables clean Article 9 foreclosure into our debt-free shell, stripping out $12.5M in toxic convertibles.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -544,16 +563,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(855) 203-3318",
         "roleSummary": "CEO seeking operational continuity for Boston Solar.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Secured Lender Workout Desk",
-        "title": "Managing Director",
-        "entity": "Senior Creditor",
-        "email": "workouts@solarcreditpartners.com",
-        "phone": "(617) 535-9000",
-        "roleSummary": "Manages senior blanket lien on Boston Solar assets.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -575,7 +584,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1443611/000147793225006613/sing_10k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2025-09-10",
+    "priceSource": "Audit check: Expert Market post-25-NSE",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1443611/000147793225006613/sing_10k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2025-09-10",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-K (2025-09-10)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "phil-phi-group",
@@ -592,9 +611,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 15000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/PHIL/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000704172",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/704172/000149315224041102/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2024-10-15",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/704172/000149315225016233/formnt10-k.htm",
+    "latestFilingType": "Form NT 10-K",
+    "latestFilingDate": "2025-09-30",
     "asset": {
       "subsidiaryName": "American Pacific Resources & Energy LLC",
       "businessSummary": "Specialty agro-processing facilities and agricultural supply chain assets generating recurring off-take export contracts across Southeast Asia and the Pacific Basin.",
@@ -614,7 +633,7 @@ const rawTargets: TargetCompany[] = [
     },
     "vehicleDistress": {
       "statusSummary": "Trapped on the OTC Expert Market under Rule 15c2-11 due to delinquent Exchange Act reporting and an immense share structure overhang exceeding 6B shares.",
-      "filingStatus": "suspended_15c211",
+      "filingStatus": "delinquent_10k",
       "auditorStatus": "resigned_item401",
       "lastAuditorName": "Boyle CPA, LLC",
       "lastAuditorCity": "Bayville, NJ",
@@ -641,7 +660,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 52,
       "estimatedAcquisitionCost": 1870000,
       "cleanShellFit": "exceptional",
-      "rationale": "Operating export trade assets generate $16.8M revenue. Purchasing the $3.9M senior note for $1.87M cash allows full Article 9 foreclosure, leaving $14.2M of convertible debentures behind at the defunct parent."
+      "rationale": "Operating export trade assets generate $16.8M revenue. Purchasing the $3.9M senior note for $1.87M cash allows full Article 9 foreclosure, leaving $14.2M of convertible debentures behind at the defunct parent.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -659,16 +679,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(714) 777-6288",
         "roleSummary": "Founder facing total capital structure gridlock.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Trade Finance Workout Officer",
-        "title": "Senior Portfolio Manager",
-        "entity": "Senior Creditor",
-        "email": "tradecredits@pacificworkout.com",
-        "phone": "(949) 553-8100",
-        "roleSummary": "Controls senior UCC-1 blanket lien on operating assets.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -690,7 +700,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/704172/000149315224041102/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2024-10-15",
+    "priceSource": "Audit check: Expert Market delinquent filer",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/704172/000149315224041102/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2024-10-15",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form NT 10-K (2025-09-30)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "hcmc-healthier",
@@ -707,9 +727,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 150000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/HCMC/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000844856",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226013232/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-04-08",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226039201/form10-q.htm",
+    "latestFilingType": "Form 10-Q",
+    "latestFilingDate": "2026-08-19",
     "asset": {
       "subsidiaryName": "Ada's Natural Market & Wellness Centers LLC",
       "businessSummary": "Full-service natural and organic grocery supermarkets with chef-prepared organic delis, plus nationwide online retail wellness stores with high recurring shopper retention.",
@@ -756,7 +776,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 45,
       "estimatedAcquisitionCost": 1540000,
       "cleanShellFit": "exceptional",
-      "rationale": "Ada's Natural Markets produces $26.4M in real cash register revenue. The public shell is ruined by 85B shares. Buying the $2.8M senior note for $1.54M cash allows clean foreclosure into our clean shell."
+      "rationale": "Ada's Natural Markets produces $26.4M in real cash register revenue. The public shell is ruined by 85B shares. Buying the $2.8M senior note for $1.54M cash allows clean foreclosure into our clean shell.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -774,16 +795,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(888) 765-2442",
         "roleSummary": "CEO constrained by massive 85B share float.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Workout Officer",
-        "title": "Managing Director",
-        "entity": "Senior Creditor",
-        "email": "retailcredits@flworkouts.com",
-        "phone": "(954) 789-3300",
-        "roleSummary": "Point of contact for purchasing secured store inventory lien.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -805,7 +816,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226013232/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-03-27",
+    "priceSource": "Audit check: Pink Limited OTC tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226013232/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-03-27",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-Q (2026-08-19)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "ozsc-ozop",
@@ -822,9 +843,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 10000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/OZSC/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001679817",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1679817/000149315226023179/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-05-14",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1679817/000149315226039212/form10-q.htm",
+    "latestFilingType": "Form 10-Q",
+    "latestFilingDate": "2026-08-19",
     "asset": {
       "subsidiaryName": "Ozop EV Power Grid Infrastructure LLC",
       "businessSummary": "Specialty power conversion, energy storage systems, and turnkey EV microgrid distribution hardware for commercial fleet depots.",
@@ -871,7 +892,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 43,
       "estimatedAcquisitionCost": 1490000,
       "cleanShellFit": "exceptional",
-      "rationale": "Hardware business produces real equipment deliveries. Acquiring the $2.6M senior debt for $1.49M allows a smooth UCC \u00a7 9-620 foreclosure directly into our clean public vehicle."
+      "rationale": "Hardware business produces real equipment deliveries. Acquiring the $2.6M senior debt for $1.49M allows a smooth UCC \u00a7 9-620 foreclosure directly into our clean public vehicle.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -889,16 +911,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(845) 610-3887",
         "roleSummary": "Founder seeking exit from toxic debenture obligations.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Senior Loan Officer",
-        "title": "Portfolio Manager",
-        "entity": "Senior Creditor",
-        "email": "creditmanager@nyassetfund.com",
-        "phone": "(212) 605-8800",
-        "roleSummary": "Direct holder of 1st-priority blanket lien on power hardware assets.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -920,7 +932,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1679817/000149315226023179/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-05-14",
+    "priceSource": "Audit check: Pink Current OTC tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1679817/000149315226023179/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-05-14",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-Q (2026-08-19)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "rgbp-regen",
@@ -937,9 +959,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 6000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/RGBP/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001589150",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2025-06-30",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315226038576/form10-q.htm",
+    "latestFilingType": "Form 10-Q",
+    "latestFilingDate": "2026-08-17",
     "asset": {
       "subsidiaryName": "Kalgene Immuno-Oncology & Stem Cell LLC",
       "businessSummary": "Targeting the NR2F6 nuclear receptor as an immune checkpoint to unleash CAR-T cells against solid tumors, paired with universal donor stem cell patents.",
@@ -986,7 +1008,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 50,
       "estimatedAcquisitionCost": 700000,
       "cleanShellFit": "exceptional",
-      "rationale": "NR2F6 checkpoint inhibition is cutting-edge immuno-oncology. Acquiring the $1.4M senior note for $700K cash allows an Article 9 foreclosure into our clean shell."
+      "rationale": "NR2F6 checkpoint inhibition is cutting-edge immuno-oncology. Acquiring the $1.4M senior note for $700K cash allows an Article 9 foreclosure into our clean shell.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -1004,16 +1027,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(619) 702-1404",
         "roleSummary": "Founder and patent co-inventor.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Special Assets Director",
-        "title": "Managing Director",
-        "entity": "Senior Creditor",
-        "email": "biotechworkout@creditors-nv.com",
-        "phone": "(702) 474-9000",
-        "roleSummary": "Senior noteholder open to immediate cash resolution.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1035,7 +1048,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2025-12-30",
+    "priceSource": "Audit check: Pink Current tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2025-12-30",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-Q (2026-08-17)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "cydy-cytodyn",
@@ -1052,9 +1075,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 1750000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/CYDY/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001175680",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000014/ck0001175680-20260531.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-07-28",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000026/ck0001175680-20260928.htm",
+    "latestFilingType": "Form DEF 14A",
+    "latestFilingDate": "2026-09-28",
     "asset": {
       "subsidiaryName": "Leronlimab (PRO 140) Monoclonal Antibody Asset Pool",
       "businessSummary": "Humanized IgG4 monoclonal antibody that targets CCR5. Significant clinical trial data in oncology (metastatic colorectal & breast cancer) and NASH.",
@@ -1101,7 +1124,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 42,
       "estimatedAcquisitionCost": 4170000,
       "cleanShellFit": "exceptional",
-      "rationale": "Leronlimab is an asset with over $100M in historical R&D investment. Buying the $7.2M senior secured debt at 42% discount provides total leverage to carve out commercial oncology rights into a clean, unencumbered vehicle."
+      "rationale": "Leronlimab is an asset with over $100M in historical R&D investment. Buying the $7.2M senior secured debt at 42% discount provides total leverage to carve out commercial oncology rights into a clean, unencumbered vehicle.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -1119,16 +1143,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(360) 980-8524",
         "roleSummary": "CEO focused on clinical development and partnership transactions.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Credit Syndicate Agent",
-        "title": "Managing Director - Life Sciences",
-        "entity": "Senior Creditor",
-        "email": "biocredit@lifesciences-workouts.com",
-        "phone": "(212) 905-4400",
-        "roleSummary": "Senior noteholder representative holding perfected patent lien.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1150,7 +1164,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000014/ck0001175680-20260531.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-07-27",
+    "priceSource": "Audit check: OTCQB tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000014/ck0001175680-20260531.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-07-27",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form DEF 14A (2026-09-28)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "nwbo-northwest",
@@ -1167,9 +1191,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 2000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/NWBO/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001072379",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1072379/000110465926043806/nwbo-20251231x10k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-04-15",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1072379/000110465926097188/nwbo-20260630x10q.htm",
+    "latestFilingType": "Form 10-Q",
+    "latestFilingDate": "2026-08-14",
     "asset": {
       "subsidiaryName": "Sawston Advanced Cell Therapy Facility (UK) Ltd",
       "businessSummary": "Proprietary dendritic cell cancer immunotherapy (DCVax-L) for glioblastoma brain cancer, backed by the 88,000 sq ft state-of-the-art cGMP manufacturing facility in Sawston, Cambridge, UK.",
@@ -1216,7 +1240,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 40,
       "estimatedAcquisitionCost": 5700000,
       "cleanShellFit": "exceptional",
-      "rationale": "Sawston facility alone is appraised over $50M in replacement cost. Carving out the manufacturing subsidiary and European commercial rights into a clean vehicle unlocks massive institutional value."
+      "rationale": "Sawston facility alone is appraised over $50M in replacement cost. Carving out the manufacturing subsidiary and European commercial rights into a clean vehicle unlocks massive institutional value.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -1234,16 +1259,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(240) 497-9024",
         "roleSummary": "Founder leading regulatory approvals.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Infrastructure Credit Director",
-        "title": "Managing Director",
-        "entity": "Senior Creditor",
-        "email": "specialassets@biopharmafacilitycredit.com",
-        "phone": "(212) 808-7200",
-        "roleSummary": "Holds senior mortgage lien on Sawston facility.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1265,7 +1280,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1072379/000110465926043806/nwbo-20251231x10k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-04-15",
+    "priceSource": "Audit check: OTCQB tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1072379/000110465926043806/nwbo-20251231x10k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-04-15",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-Q (2026-08-14)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "nlst-netlist",
@@ -1277,18 +1302,18 @@ const rawTargets: TargetCompany[] = [
     "industry": "High-Performance DDR5/CXL Memory Subsystems",
     "headquarters": "Irvine, CA",
     "marketCap": 210000000,
-    "stockPrice": 0.85,
+    "stockPrice": 5.72,
     "sharesOutstanding": 247000000,
     "authorizedShares": 450000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/NLST/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001282631",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926032152/nlst-20251227x10k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-03-24",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926109358/tm2625779d1_8k.htm",
+    "latestFilingType": "Form 8-K",
+    "latestFilingDate": "2026-09-21",
     "asset": {
       "subsidiaryName": "Netlist Enterprise Memory & CXL Technologies LLC",
       "businessSummary": "Designer and manufacturer of high-performance SSD and modular memory subsystems (CXL, HybriDIMM) and holder of landmark enterprise patents on server memory architecture.",
-      "annualRevenue": 118000000,
+      "annualRevenue": 439000000,
       "grossMarginPct": 36,
       "ebitda": 11200000,
       "employees": 110,
@@ -1331,7 +1356,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 35,
       "estimatedAcquisitionCost": 5525000,
       "cleanShellFit": "exceptional",
-      "rationale": "Core memory products generate $118M in commercial revenue. Carving out commercial SSD and CXL operations into our debt-free vehicle shields core operations from litigation overhang."
+      "rationale": "Core memory products generate $118M in commercial revenue. Carving out commercial SSD and CXL operations into our debt-free vehicle shields core operations from litigation overhang.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -1349,16 +1375,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(949) 435-0025",
         "roleSummary": "Founder navigating complex corporate finance.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Senior Credit Officer",
-        "title": "Managing Director - Commercial Technology",
-        "entity": "Senior Creditor",
-        "email": "techcredit@bankworkout.com",
-        "phone": "(415) 392-1200",
-        "roleSummary": "Oversees secured bank facility on commercial inventory.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1380,14 +1396,24 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926032152/nlst-20251227x10k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-02-27",
+    "priceSource": "Audit check: $5.72 (Yahoo Finance 2026-09-30)",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926032152/nlst-20251227x10k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-02-27",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 8-K (2026-09-21)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "iqst-iqstel",
     "ticker": "IQST",
     "name": "iQSTEL Inc",
     "cik": "0001527702",
-    "exchange": "OTCQX",
+    "exchange": "NASDAQ",
     "sector": "Telecommunications & FinTech",
     "industry": "International Wholesale Telecom & EV Battery Tech",
     "headquarters": "Coral Gables, FL",
@@ -1397,9 +1423,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 300000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/IQST/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001527702",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1527702/000166357726000094/iqst10k_123125.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-04-14",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1527702/000166357726000309/iqst8k092826.htm",
+    "latestFilingType": "Form 8-K",
+    "latestFilingDate": "2026-09-28",
     "asset": {
       "subsidiaryName": "Etelix Wholesale Carrier & Global Telecom LLC",
       "businessSummary": "Wholesale telecommunications carrier providing VoIP termination, SMS messaging, and fiber transit across the Americas and Europe.",
@@ -1446,7 +1472,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 38,
       "estimatedAcquisitionCost": 3844000,
       "cleanShellFit": "exceptional",
-      "rationale": "Etelix carrier division produces $142M in real top line. Acquiring the $6.2M senior credit line at 38% discount provides total leverage to isolate the telecom operations into a clean vehicle."
+      "rationale": "Etelix carrier division produces $142M in real top line. Acquiring the $6.2M senior credit line at 38% discount provides total leverage to isolate the telecom operations into a clean vehicle.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -1464,16 +1491,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(305) 722-5400",
         "roleSummary": "Founder driving corporate development.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Commercial Credit Officer",
-        "title": "Managing Director - Telecom Finance",
-        "entity": "Senior Creditor",
-        "email": "carriercredit@flworkouts.com",
-        "phone": "(305) 448-9100",
-        "roleSummary": "Manages senior receivables facility.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1495,7 +1512,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1527702/000166357726000094/iqst10k_123125.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-04-14",
+    "priceSource": "Audit check: Nasdaq-listed active filer",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1527702/000166357726000094/iqst10k_123125.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-04-14",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 8-K (2026-09-28)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "znog-zion",
@@ -1512,9 +1539,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 1000000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/ZNOG/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001131312",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1131312/000143774926009073/znog20251231_10k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-03-31",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1131312/000143774926030287/znog20260914_8k.htm",
+    "latestFilingType": "Form 8-K",
+    "latestFilingDate": "2026-09-14",
     "asset": {
       "subsidiaryName": "Zion Drilling Rig 9 & Meged 5 Exploration Assets LLC",
       "businessSummary": "Full ownership of specialized 2,000 HP onshore drilling rig (Rig 9) capable of deep drilling down to 20,000 feet, plus proprietary 3D seismic processing data covering 99,000 acres in the Meged / Jordan Valley license.",
@@ -1561,7 +1588,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 42,
       "estimatedAcquisitionCost": 2610000,
       "cleanShellFit": "exceptional",
-      "rationale": "Rig 9 alone has hard steel scrap and market replacement value over $15M. Buying the senior equipment note for $2.61M cash gives full title to the rig via Article 9 foreclosure, leaving $14M of debentures at the parent."
+      "rationale": "Rig 9 alone has hard steel scrap and market replacement value over $15M. Buying the senior equipment note for $2.61M cash gives full title to the rig via Article 9 foreclosure, leaving $14M of debentures at the parent.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 90,
@@ -1579,16 +1607,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(214) 221-4610",
         "roleSummary": "CEO managing operational drilling logistics.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Equipment Workout Officer",
-        "title": "Managing Director - Energy Finance",
-        "entity": "Senior Creditor",
-        "email": "energycredit@equipmentworkouts.com",
-        "phone": "(214) 981-8000",
-        "roleSummary": "Senior creditor holding first-priority lien on Rig 9.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1610,7 +1628,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1131312/000143774926009073/znog20251231_10k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-03-19",
+    "priceSource": "Audit check: OTCQX tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1131312/000143774926009073/znog20251231_10k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-03-19",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 8-K (2026-09-14)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "ladx-ladrx",
@@ -1627,9 +1655,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 250000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/LADX/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000799698",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/799698/000164117225001038/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2025-03-28",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/799698/000164117225021728/form8-k.htm",
+    "latestFilingType": "Form 8-K",
+    "latestFilingDate": "2025-07-31",
     "asset": {
       "subsidiaryName": "Aldoxorubicin & LADR Oncology Therapeutics LLC",
       "businessSummary": "Targeted clinical-stage oncology platform utilizing proprietary albumin-binding linker technology to concentrate chemotherapeutics directly within tumor tissue while reducing systemic cardiotoxicity. Over $250M in historical clinical R&D expenditure.",
@@ -1676,7 +1704,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 75,
       "estimatedAcquisitionCost": 450000,
       "cleanShellFit": "exceptional",
-      "rationale": "Over $250M of clinical trials and hard patents are trapped with zero enterprise value. Senior venture lender is writing down the debt to near zero. A $450k cash note acquisition enables non-judicial foreclosure under UCC \u00a7 9-620, stripping out $9.5M in toxic notes into our clean shell."
+      "rationale": "Over $250M of clinical trials and hard patents are trapped with zero enterprise value. Senior venture lender is writing down the debt to near zero. A $450k cash note acquisition enables non-judicial foreclosure under UCC \u00a7 9-620, stripping out $9.5M in toxic notes into our clean shell.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 75,
@@ -1684,28 +1713,7 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 92,
       "rollupOpportunityIndex": 87
     },
-    "contacts": [
-      {
-        "id": "c1",
-        "name": "Stephen T. Landen",
-        "title": "Interim Chief Executive Officer",
-        "entity": "Public Parent",
-        "email": "slanden@ladrxcorp.com",
-        "phone": "(310) 943-8040",
-        "roleSummary": "Corporate officer managing legacy wind-down and asset monetization.",
-        "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Venture Debt Workout Director",
-        "title": "Managing Director - Special Assets",
-        "entity": "Senior Creditor",
-        "email": "biodebt@creditpartners-nv.com",
-        "phone": "(415) 890-4100",
-        "roleSummary": "Controls senior UCC-1 blanket lien on all oncology patents.",
-        "receptivityScore": "very_high"
-      }
-    ],
+    "contacts": [],
     "crm": {
       "stage": "new",
       "priority": "high",
@@ -1725,7 +1733,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/799698/000164117225001038/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2025-03-28",
+    "priceSource": "Audit check: Expert Market tier",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/799698/000164117225001038/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2025-03-28",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 8-K (2025-07-31)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "qron-qrons",
@@ -1742,9 +1760,9 @@ const rawTargets: TargetCompany[] = [
     "authorizedShares": 50000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/QRON/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0001689084",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1689084/000147793225002791/qron_10k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2025-04-16",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/1689084/000147793226005058/qron_1512g.htm",
+    "latestFilingType": "Form 15-12G",
+    "latestFilingDate": "2026-08-14",
     "asset": {
       "subsidiaryName": "QSight Neuro-Regenerative 3D Technologies LLC",
       "businessSummary": "Proprietary bio-integrative platform combining 3D-printable genetically engineered synthetic peptides and stem cell hydrogels (QSight) for the treatment of penetrating Traumatic Brain Injury (TBI) and neurodegenerative lesions.",
@@ -1791,7 +1809,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 77,
       "estimatedAcquisitionCost": 280000,
       "cleanShellFit": "exceptional",
-      "rationale": "High-value regenerative medicine patent pool with academic institutional pedigree. Senior secured creditor is ready to sell their non-performing $1.2M note for $280k cash, allowing a clean Article 9 foreclosure into our shell vehicle."
+      "rationale": "High-value regenerative medicine patent pool with academic institutional pedigree. Senior secured creditor is ready to sell their non-performing $1.2M note for $280k cash, allowing a clean Article 9 foreclosure into our shell vehicle.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 72,
@@ -1809,16 +1828,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(212) 945-2080",
         "roleSummary": "Founder seeking strategic recapitalization options.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Senior Bridge Note Agent",
-        "title": "Managing Partner",
-        "entity": "Senior Creditor",
-        "email": "workouts@biotechbridgefund.com",
-        "phone": "(212) 650-9200",
-        "roleSummary": "Senior noteholder holding perfected UCC-1 lien.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1840,7 +1849,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1689084/000147793225002791/qron_10k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2025-04-16",
+    "priceSource": "Audit check: 15-12G deregistered filer",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/1689084/000147793225002791/qron_10k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2025-04-16",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 15-12G (2026-08-14)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "pbio-pressure",
@@ -1852,14 +1871,14 @@ const rawTargets: TargetCompany[] = [
     "industry": "Ultra-High Pressure Nanoemulsion Equipment (UST)",
     "headquarters": "South Easton, MA",
     "marketCap": 650000,
-    "stockPrice": 0.005,
+    "stockPrice": 0.0002,
     "sharesOutstanding": 130000000,
     "authorizedShares": 300000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/PBIO/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000830656",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315224023201/form10-k.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2024-06-07",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315225005468/form10-q.htm",
+    "latestFilingType": "Form 10-Q",
+    "latestFilingDate": "2025-02-07",
     "asset": {
       "subsidiaryName": "Ultra Shear Technology (UST) Hardware & IP LLC",
       "businessSummary": "Revolutionary high-pressure physics platform utilizing patented Ultra Shear Technology (UST) to produce ultra-stable, water-soluble nanoemulsions for pharmaceutical drug delivery, nutraceuticals, and cosmetics without synthetic surfactants.",
@@ -1906,7 +1925,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 77,
       "estimatedAcquisitionCost": 550000,
       "cleanShellFit": "exceptional",
-      "rationale": "UST platform has over $50M in historical development. Senior secured creditor is anxious to exit and willing to take $550k cash for the $2.4M note. Strict foreclosure wipes out $11.2M in predatory convertible debt."
+      "rationale": "UST platform has over $50M in historical development. Senior secured creditor is anxious to exit and willing to take $550k cash for the $2.4M note. Strict foreclosure wipes out $11.2M in predatory convertible debt.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 76,
@@ -1924,16 +1944,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(508) 230-1828",
         "roleSummary": "Founder and technology co-developer.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Equipment Workout Officer",
-        "title": "Director - Special Situations",
-        "entity": "Senior Creditor",
-        "email": "workouts@machinerycreditfund.com",
-        "phone": "(617) 830-4400",
-        "roleSummary": "Controls senior blanket lien on UST hardware and patents.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1955,7 +1965,17 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315224023201/form10-k.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2024-06-07",
+    "priceSource": "Audit check: $0.0002 (StockTitan 2026-09-30)",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315224023201/form10-k.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2024-06-07",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-Q (2025-02-07)",
+    "dataProvenance": "analyst_estimate"
   },
   {
     "id": "qprc-quest",
@@ -1967,14 +1987,14 @@ const rawTargets: TargetCompany[] = [
     "industry": "Telecommunications & Semiconductor Patent Monetization",
     "headquarters": "New York, NY",
     "marketCap": 1800000,
-    "stockPrice": 0.008,
+    "stockPrice": 0.2481,
     "sharesOutstanding": 225000000,
     "authorizedShares": 500000000,
     "otcMarketsUrl": "https://www.otcmarkets.com/stock/QPRC/overview",
     "secEdgarUrl": "https://www.sec.gov/edgar/browse/?CIK=0000824416",
-    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026036431/ea0282928-10k_quest.htm",
-    "latestFilingType": "Form 10-K",
-    "latestFilingDate": "2026-03-30",
+    "latestFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026090145/ea0301390-10q_quest.htm",
+    "latestFilingType": "Form 10-Q",
+    "latestFilingDate": "2026-08-14",
     "asset": {
       "subsidiaryName": "Quest IP Monetization & Semiconductor Portfolios LLC",
       "businessSummary": "Extensive intellectual property holding company managing 8 distinct patent portfolios containing over 100 patents and applications covering wireless communications, semiconductor memory architecture, and mobile data encryption.",
@@ -2021,7 +2041,8 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 75,
       "estimatedAcquisitionCost": 375000,
       "cleanShellFit": "exceptional",
-      "rationale": "High-caliber 100+ patent portfolio with potential multi-million licensing payouts. Senior secured litigation funder is willing to sell their $1.5M position for $375k cash, enabling clean separation of the patent portfolios into an unencumbered vehicle."
+      "rationale": "High-caliber 100+ patent portfolio with potential multi-million licensing payouts. Senior secured litigation funder is willing to sell their $1.5M position for $375k cash, enabling clean separation of the patent portfolios into an unencumbered vehicle.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
       "assetQualityScore": 78,
@@ -2039,16 +2060,6 @@ const rawTargets: TargetCompany[] = [
         "phone": "(917) 675-6500",
         "roleSummary": "Patent attorney and founder leading licensing strategies.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c2",
-        "name": "Litigation Finance Workout Officer",
-        "title": "Managing Director",
-        "entity": "Senior Creditor",
-        "email": "ipcredit@litigationcapitalpartners.com",
-        "phone": "(212) 750-8100",
-        "roleSummary": "Controls senior security interest on patent portfolios.",
-        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -2070,19 +2081,18 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ]
-    }
+    },
+    "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026036431/ea0282928-10k_quest.htm",
+    "baseline10KFilingType": "Form 10-K",
+    "baseline10KFilingDate": "2026-03-30",
+    "priceSource": "Audit check: $0.2481 (TradingView 2026-09-30)",
+    "previousFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026036431/ea0282928-10k_quest.htm",
+    "previousFilingType": "Form 10-K",
+    "previousFilingDate": "2026-03-30",
+    "secVerifiedDate": "2026-09-30",
+    "secVerifiedStatus": "Most recent: Form 10-Q (2026-08-14)",
+    "dataProvenance": "analyst_estimate"
   }
 ];
 
-export const TARGET_COMPANIES: TargetCompany[] = rawTargets.map(enrichTargetScores);
-
-export function getTargetById(id: string): TargetCompany | undefined {
-  return TARGET_COMPANIES.find((t) => t.id === id);
-}
-
-export function getAllTargets(): TargetCompany[] {
-  return TARGET_COMPANIES;
-}
-
-export const INITIAL_TARGETS: TargetCompany[] = TARGET_COMPANIES;
-export const TARGETS: TargetCompany[] = TARGET_COMPANIES;
+export const INITIAL_TARGETS: TargetCompany[] = rawTargets.map(enrichTargetScores);

@@ -111,11 +111,24 @@ export const TargetCard: React.FC<TargetCardProps> = ({
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
                 className="inline-flex items-center space-x-1 rounded bg-amber-950/40 px-2 py-0.5 text-[9px] sm:text-[10px] font-mono text-amber-300 hover:text-amber-200 border border-amber-800/50 hover:border-amber-500 transition shadow-xs"
-                title={`Open primary filing document ${target.latestFilingType} filed on ${target.latestFilingDate}`}
+                title={`Open most recent SEC EDGAR filing: ${target.latestFilingType} (${target.latestFilingDate})`}
               >
-                <span>{target.latestFilingType}</span>
+                <span>Latest: {target.latestFilingType}</span>
                 <ExternalLink className="h-2.5 w-2.5 ml-0.5" />
               </a>
+              {target.baseline10KFilingUrl && target.baseline10KFilingUrl !== target.latestFilingUrl && (
+                <a
+                  href={target.baseline10KFilingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center space-x-1 rounded bg-stone-900/60 px-2 py-0.5 text-[9px] sm:text-[10px] font-mono text-stone-300 hover:text-stone-100 border border-stone-700/60 hover:border-stone-500 transition shadow-xs"
+                  title={`Open baseline annual 10-K report filed on ${target.baseline10KFilingDate}`}
+                >
+                  <span>10-K ({target.baseline10KFilingDate?.slice(0, 4)})</span>
+                  <ExternalLink className="h-2.5 w-2.5 ml-0.5" />
+                </a>
+              )}
             </div>
           </div>
         </div>

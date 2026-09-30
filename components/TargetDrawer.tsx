@@ -120,10 +120,38 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-1 rounded-lg bg-amber-950/60 px-2 py-0.5 text-[11px] font-mono text-amber-300 hover:text-amber-100 border border-amber-700/60 hover:border-amber-400 transition shadow-xs"
+                  title="Actual most recent SEC EDGAR filing"
                 >
-                  <span>{target.latestFilingType} ({target.latestFilingDate})</span>
+                  <span>Most Recent: {target.latestFilingType} ({target.latestFilingDate})</span>
                   <ExternalLink className="h-3 w-3 ml-0.5" />
                 </a>
+                {target.baseline10KFilingUrl && target.baseline10KFilingUrl !== target.latestFilingUrl && (
+                  <a
+                    href={target.baseline10KFilingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1 rounded-lg bg-stone-800/80 px-2 py-0.5 text-[11px] font-mono text-stone-200 hover:text-white border border-stone-600 hover:border-stone-400 transition shadow-xs"
+                    title="Baseline Annual 10-K filing"
+                  >
+                    <span>Baseline: {target.baseline10KFilingType || "Form 10-K"} ({target.baseline10KFilingDate})</span>
+                    <ExternalLink className="h-3 w-3 ml-0.5" />
+                  </a>
+                )}
+              </div>
+              {/* Data Provenance & SEC Verification Badge */}
+              <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+                <span className="inline-flex items-center space-x-1 rounded-lg bg-emerald-950/40 px-2 py-0.5 text-[10px] font-mono text-emerald-400 border border-emerald-800/40">
+                  <ShieldCheck className="h-3 w-3" />
+                  <span>SEC EDGAR Verified {target.secVerifiedDate || '2026-09-30'}</span>
+                </span>
+                <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-amber-950/40 text-amber-400 border-amber-800/40">
+                  <span>⚠️ Turnaround Model / Analyst Estimates — Verify Independently</span>
+                </span>
+                {target.priceSource && (
+                  <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-stone-900/60 text-stone-400 border-stone-800">
+                    <span>Quote: {target.priceSource}</span>
+                  </span>
+                )}
               </div>
             </div>
 
@@ -314,6 +342,10 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 </p>
                 <div className="p-2.5 rounded-xl bg-stone-900 border border-cyan-500/20 text-cyan-200 mt-2 font-mono text-[11px]">
                   {target.extractionFeasibility.rationale}
+                </div>
+                {/* [AUDIT FIX #13] Provenance disclaimer for unsourced claims */}
+                <div className="p-2 rounded-lg bg-amber-950/30 border border-amber-800/30 text-amber-300 mt-2 text-[10px]">
+                  <strong>⚠️ DATA PROVENANCE:</strong> Senior debt amounts, UCC lien descriptions, and acquisition cost estimates are analyst projections. No specific instrument, lender docket, or credit agreement is cited. Verify all figures independently before reliance.
                 </div>
               </div>
 

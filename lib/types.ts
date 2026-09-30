@@ -54,6 +54,16 @@ export interface TargetCompany {
   latestFilingUrl: string;
   latestFilingType: string;
   latestFilingDate: string;
+  baseline10KFilingUrl?: string;
+  baseline10KFilingType?: string;
+  baseline10KFilingDate?: string;
+  previousFilingUrl?: string;
+  previousFilingType?: string;
+  previousFilingDate?: string;
+  secVerifiedDate?: string;
+  secVerifiedStatus?: string;
+  dataProvenance?: "sec_filing" | "analyst_estimate";
+  priceSource?: string;
   
   // The Asset (The Gold)
   asset: {
@@ -96,6 +106,7 @@ export interface TargetCompany {
     estimatedAcquisitionCost: number;
     cleanShellFit: "high" | "medium" | "exceptional";
     rationale: string;
+    provenanceNote?: string;
   };
 
   // Tri-Factor Scores

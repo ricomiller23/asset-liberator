@@ -155,7 +155,7 @@ function AssetLiberatorMain() {
                 Liberating Viable Operating Subsidiaries Trapped in Broken Public Vehicles
               </h2>
               <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
-                Systematically scanning the OTC & Micro-Cap markets for operating businesses with real revenue ($1M–$50M), positive gross margins, and Tier-1 clients trapped under toxic convertibles, delinquent SEC filings, and auditor resignations—ready to strip clean and roll into our unencumbered public shells.
+                Systematically scanning the OTC & Micro-Cap markets for operating businesses with real revenue, positive gross margins, and Tier-1 clients trapped under toxic convertibles, delinquent SEC filings, and auditor resignations—ready to strip clean and roll into our unencumbered public shells.
               </p>
             </div>
 
