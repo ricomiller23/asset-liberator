@@ -6,6 +6,8 @@ import {
   logServerCallActivity, 
   updateServerStage, 
   addServerNote,
+  logServerActivity,
+  logServerOutreach,
   getServerTargets
 } from "@/lib/serverStore";
 
@@ -42,6 +44,14 @@ export async function POST(req: NextRequest) {
       const { noteText, author } = body;
       if (!targetId || !noteText) throw new Error("Missing targetId or noteText");
       updatedTargets = addServerNote(targetId, noteText, author);
+    } else if (action === "log_activity") {
+      const { type, summary } = body;
+      if (!targetId || !summary) throw new Error("Missing targetId or summary");
+      updatedTargets = logServerActivity(targetId, type || "call", summary);
+    } else if (action === "log_outreach") {
+      const { contactName, summary } = body;
+      if (!targetId || !summary) throw new Error("Missing targetId or summary");
+      updatedTargets = logServerOutreach(targetId, contactName || "", summary);
     }
 
     return NextResponse.json({

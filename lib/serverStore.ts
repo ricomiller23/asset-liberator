@@ -270,3 +270,68 @@ export function addServerNote(targetId: string, noteText: string, author: string
   saveServerTargets(updated);
   return updated;
 }
+
+export function logServerActivity(
+  targetId: string,
+  type: CrmActivity["type"],
+  summary: string
+): TargetCompany[] {
+  const targets = getServerTargets();
+  const now = new Date().toISOString().split("T")[0];
+
+  const updated = targets.map((t) => {
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
+      const activity: CrmActivity = {
+        id: "act-" + Date.now(),
+        date: now,
+        type,
+        summary,
+      };
+      return {
+        ...t,
+        crm: {
+          ...t.crm,
+          lastContactDate: now,
+          activities: [activity, ...t.crm.activities],
+        },
+      };
+    }
+    return t;
+  });
+
+  saveServerTargets(updated);
+  return updated;
+}
+
+export function logServerOutreach(
+  targetId: string,
+  contactName: string,
+  summary: string
+): TargetCompany[] {
+  const targets = getServerTargets();
+  const now = new Date().toISOString().split("T")[0];
+
+  const updated = targets.map((t) => {
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
+      const activity: CrmActivity = {
+        id: "act-" + Date.now(),
+        date: now,
+        type: "email",
+        summary,
+      };
+      return {
+        ...t,
+        crm: {
+          ...t.crm,
+          stage: "outreach_sent" as const,
+          lastContactDate: now,
+          activities: [activity, ...t.crm.activities],
+        },
+      };
+    }
+    return t;
+  });
+
+  saveServerTargets(updated);
+  return updated;
+}

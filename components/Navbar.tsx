@@ -1,10 +1,11 @@
 import React from "react";
-import { ShieldAlert, Database, Layers, Users, Download, Search, Command } from "lucide-react";
+import { ShieldAlert, Database, Layers, Users, Download, Search, Command, BarChart3 } from "lucide-react";
 
 interface NavbarProps {
   activeTab: "screener" | "crm";
   onTabChange: (tab: "screener" | "crm") => void;
   onOpenGlobalSearch: () => void;
+  onOpenReport?: () => void;
   stats?: {
     totalSubsidiaryRevenue: number;
     totalSeniorDebt: number;
@@ -18,6 +19,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   activeTab,
   onTabChange,
   onOpenGlobalSearch,
+  onOpenReport,
   stats,
 }) => {
   return (
@@ -127,6 +129,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               )}
             </button>
           </div>
+
+          {onOpenReport && (
+            <button
+              onClick={onOpenReport}
+              className="inline-flex items-center space-x-1.5 rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-2.5 sm:px-3 py-1.5 text-xs font-semibold text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-500/50 transition shadow-xs"
+            >
+              <BarChart3 className="h-3.5 w-3.5 text-cyan-400" />
+              <span className="hidden sm:inline">CRM Report</span>
+              <span className="sm:hidden">Report</span>
+            </button>
+          )}
 
           <a
             href="/api/export?format=csv"

@@ -1,7 +1,7 @@
 import { TargetCompany, CrmStage, CrmNote, CrmActivity, PriorityLevel, ExecutiveContact } from "./types";
 import { INITIAL_TARGETS } from "./data/targets";
 
-const STORAGE_KEY = "asset_liberator_targets_v2";
+const STORAGE_KEY = "asset_liberator_targets_v3";
 
 export function getStoredTargets(): TargetCompany[] {
   if (typeof window === "undefined") {
@@ -146,6 +146,44 @@ export function logTargetActivity(
   });
 
   saveStoredTargets(updated);
+  syncToServer({ action: "log_activity", targetId, type, summary });
+  return updated;
+}
+
+/**
+ * Log outreach email sent and advance stage to outreach_sent
+ */
+export function logOutreachActivity(
+  targetId: string,
+  contactName: string,
+  summary: string
+): TargetCompany[] {
+  const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
+  const updated = current.map((t) => {
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
+      const activity: CrmActivity = {
+        id: "act-" + Date.now(),
+        date: now,
+        type: "email",
+        summary,
+      };
+      return {
+        ...t,
+        crm: {
+          ...t.crm,
+          stage: "outreach_sent" as const,
+          lastContactDate: now,
+          activities: [activity, ...t.crm.activities],
+        },
+      };
+    }
+    return t;
+  });
+
+  saveStoredTargets(updated);
+  syncToServer({ action: "log_outreach", targetId, contactName, summary });
   return updated;
 }
 

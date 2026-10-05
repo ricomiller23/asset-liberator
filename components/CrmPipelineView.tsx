@@ -14,6 +14,7 @@ import {
   PhoneCall,
   Pencil,
   Kanban,
+  BarChart3,
   Table as TableIcon,
   Search,
   Star,
@@ -30,6 +31,7 @@ interface CrmPipelineViewProps {
   onOpenEditContact: (target: TargetCompany, contact: ExecutiveContact | null) => void;
   onOpenLogCall: (target: TargetCompany, contact: ExecutiveContact | null) => void;
   onSetPrimaryContact?: (targetId: string, contactId: string) => void;
+  onOpenReport?: () => void;
 }
 
 export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
@@ -41,6 +43,7 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
   onOpenEditContact,
   onOpenLogCall,
   onSetPrimaryContact,
+  onOpenReport,
 }) => {
   const [viewMode, setViewMode] = useState<"kanban" | "table">("kanban");
   const [crmSearchQuery, setCrmSearchQuery] = useState("");
@@ -141,8 +144,17 @@ export const CrmPipelineView: React.FC<CrmPipelineViewProps> = ({
           )}
         </div>
 
-        {/* View Toggle (Kanban vs Table) */}
+        {/* Activity Report & View Toggle */}
         <div className="flex items-center space-x-2 shrink-0 self-end sm:self-auto">
+          {onOpenReport && (
+            <button
+              onClick={onOpenReport}
+              className="flex items-center space-x-1.5 rounded-xl border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs font-semibold text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-500/50 transition shadow-xs"
+            >
+              <BarChart3 className="h-3.5 w-3.5 text-cyan-400" />
+              <span>CRM Report</span>
+            </button>
+          )}
           <span className="text-[11px] font-mono text-stone-400 hidden md:inline">VIEW:</span>
           <div className="flex rounded-xl bg-stone-950 p-1 border border-stone-800 text-xs">
             <button

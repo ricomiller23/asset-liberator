@@ -81,13 +81,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 6300000,
       "cleanShellFit": "exceptional",
       "rationale": "Operating software assets generate $94M in real cash revenue. Buying the senior secured credit tranche at 55% discount enables clean Section 363 asset purchase or friendly foreclosure, stripping off $45M in convertible debentures.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 97
     },
     "contacts": [
       {
@@ -102,9 +102,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-xela-morning-1",
+          "date": "2026-10-05",
+          "author": "Deal Desk",
+          "text": "Sent confidential carve-out proposal to Par Chadha <pchadha@exelatech.com> regarding SourceHOV Healthcare & Financial Automation LLC this morning."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -114,12 +120,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-xela-morning-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Outreach email sent this morning to Par Chadha (Executive Chairman & Founder) proposing consensual carve-out of SourceHOV Healthcare & Financial Automation LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR; OTC Expert Market tier confirmed."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1620179/000155837024004674/xela-20231231x10k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -197,13 +210,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 1250000,
       "cleanShellFit": "exceptional",
       "rationale": "Software stack has active user accounts and generates $14.8M gross transaction volume. Foreclosing on the $2.4M senior note wipes out $8.8M in floorless convertible notes.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 80,
+      "vehicleDistressScore": 60,
+      "extractionFeasibilityScore": 75,
+      "rollupOpportunityIndex": 72
     },
     "contacts": [
       {
@@ -218,9 +231,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-rwax-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Brian Foote <bfoote@humblpay.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -230,12 +249,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-rwax-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Brian Foote (Chief Executive Officer) regarding HUMBL Mobile Payments & Ticketing LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "EDGAR Form 10-K archive verified 200 OK."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -313,13 +339,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 1010000,
       "cleanShellFit": "exceptional",
       "rationale": "Hardware business has real physical inventory and purchase orders. Carving out the operating unit via senior note foreclosure leaves behind millions of toxic debt.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 94
     },
     "contacts": [
       {
@@ -334,9 +360,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-opti-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Roger Pawson <rpawson@optecintl.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -346,12 +378,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-opti-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Roger Pawson (Chief Executive Officer) regarding Optec Fuel & UV-C Technologies LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -429,13 +468,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 2910000,
       "cleanShellFit": "exceptional",
       "rationale": "Vayu Aerospace and QCA are real revenue machines generating $34.5M top line. Acquiring the $5.5M senior bank note at 47% discount provides complete leverage to foreclose the operating assets into our clean shell.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 96
     },
     "contacts": [
       {
@@ -450,9 +489,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-alpp-morning-1",
+          "date": "2026-10-05",
+          "author": "Deal Desk",
+          "text": "Sent confidential carve-out proposal to Jeff Nail <jnail@alpine4.com> regarding Vayu Aerospace & Quality Circuit Assembly LLC this morning."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -462,12 +507,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-alpp-morning-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Outreach email sent this morning to Jeff Nail (Chief Executive Officer) proposing consensual carve-out of Vayu Aerospace & Quality Circuit Assembly LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -545,13 +597,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 2400000,
       "cleanShellFit": "exceptional",
       "rationale": "Boston Solar is an established 10-year contractor generating $22.4M revenue in New England. Buying the $4.8M senior secured note at 50% discount enables clean Article 9 foreclosure into our debt-free shell, stripping out $12.5M in toxic convertibles.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 95,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 94
     },
     "contacts": [
       {
@@ -566,9 +618,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-sing-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Wil Ralston <wralston@singlepoint.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -578,12 +636,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-sing-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Wil Ralston (Chief Executive Officer) regarding The Boston Solar Company LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1443611/000147793225006613/sing_10k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -661,12 +726,12 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 1870000,
       "cleanShellFit": "exceptional",
       "rationale": "Operating export trade assets generate $16.8M revenue. Purchasing the $3.9M senior note for $1.87M cash allows full Article 9 foreclosure, leaving $14.2M of convertible debentures behind at the defunct parent.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
+      "assetQualityScore": 88,
+      "vehicleDistressScore": 91,
+      "extractionFeasibilityScore": 90,
       "rollupOpportunityIndex": 90
     },
     "contacts": [
@@ -682,9 +747,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-phil-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Henry Fahman <hfahman@phiglobal.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -694,12 +765,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-phil-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Henry Fahman (Chairman & CEO) regarding American Pacific Resources & Energy LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/704172/000149315224041102/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -777,13 +855,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 1540000,
       "cleanShellFit": "exceptional",
       "rationale": "Ada's Natural Markets produces $26.4M in real cash register revenue. The public shell is ruined by 85B shares. Buying the $2.8M senior note for $1.54M cash allows clean foreclosure into our clean shell.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 72,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 88
     },
     "contacts": [
       {
@@ -798,9 +876,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-hcmc-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Jeffrey Holman <jholman@healthiercmc.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -810,12 +894,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-hcmc-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Jeffrey Holman (Chief Executive Officer & Chairman) regarding Ada's Natural Market & Wellness Centers LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226013232/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -892,14 +983,14 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 43,
       "estimatedAcquisitionCost": 1490000,
       "cleanShellFit": "exceptional",
-      "rationale": "Hardware business produces real equipment deliveries. Acquiring the $2.6M senior debt for $1.49M allows a smooth UCC \u00a7 9-620 foreclosure directly into our clean public vehicle.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "rationale": "Hardware business produces real equipment deliveries. Acquiring the $2.6M senior debt for $1.49M allows a smooth UCC § 9-620 foreclosure directly into our clean public vehicle.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 91,
+      "vehicleDistressScore": 60,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 80
     },
     "contacts": [
       {
@@ -914,9 +1005,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-ozsc-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Brian Conway <bconway@ozopenergy.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -926,12 +1023,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-ozsc-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Brian Conway (Chief Executive Officer) regarding Ozop EV Power Grid Infrastructure LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1679817/000149315226023179/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1009,13 +1113,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 700000,
       "cleanShellFit": "exceptional",
       "rationale": "NR2F6 checkpoint inhibition is cutting-edge immuno-oncology. Acquiring the $1.4M senior note for $700K cash allows an Article 9 foreclosure into our clean shell.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 72,
+      "extractionFeasibilityScore": 95,
+      "rollupOpportunityIndex": 89
     },
     "contacts": [
       {
@@ -1030,9 +1134,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-rgbp-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to David Koos <dkoos@regenbiopharma.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1042,12 +1152,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-rgbp-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to David Koos (Chairman & Chief Executive Officer) regarding Kalgene Immuno-Oncology & Stem Cell LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1125,13 +1242,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 4170000,
       "cleanShellFit": "exceptional",
       "rationale": "Leronlimab is an asset with over $100M in historical R&D investment. Buying the $7.2M senior secured debt at 42% discount provides total leverage to carve out commercial oncology rights into a clean, unencumbered vehicle.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 60,
       "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "rollupOpportunityIndex": 82
     },
     "contacts": [
       {
@@ -1146,9 +1263,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-cydy-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Dr. Jacob Lalezari <jlalezari@cytodyn.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1158,12 +1281,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-cydy-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Dr. Jacob Lalezari (Chief Executive Officer) regarding Leronlimab (PRO 140) Monoclonal Antibody Asset Pool."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1175680/000117568026000014/ck0001175680-20260531.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1241,13 +1371,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 5700000,
       "cleanShellFit": "exceptional",
       "rationale": "Sawston facility alone is appraised over $50M in replacement cost. Carving out the manufacturing subsidiary and European commercial rights into a clean vehicle unlocks massive institutional value.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 60,
       "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "rollupOpportunityIndex": 82
     },
     "contacts": [
       {
@@ -1262,9 +1392,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-nwbo-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Linda Powers <lpowers@nwbio.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1274,12 +1410,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-nwbo-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Linda Powers (Chief Executive Officer) regarding Sawston Advanced Cell Therapy Facility (UK) Ltd."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1072379/000110465926043806/nwbo-20251231x10k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1357,13 +1500,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 5525000,
       "cleanShellFit": "exceptional",
       "rationale": "Core memory products generate $118M in commercial revenue. Carving out commercial SSD and CXL operations into our debt-free vehicle shields core operations from litigation overhang.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 100,
+      "vehicleDistressScore": 60,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 84
     },
     "contacts": [
       {
@@ -1378,9 +1521,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-nlst-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to C.K. Hong <ckhong@netlist.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1390,12 +1539,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-nlst-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to C.K. Hong (Chief Executive Officer & Chairman) regarding Netlist Enterprise Memory & CXL Technologies LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1282631/000110465926032152/nlst-20251227x10k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1473,13 +1629,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 3844000,
       "cleanShellFit": "exceptional",
       "rationale": "Etelix carrier division produces $142M in real top line. Acquiring the $6.2M senior credit line at 38% discount provides total leverage to isolate the telecom operations into a clean vehicle.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
-      "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "assetQualityScore": 91,
+      "vehicleDistressScore": 60,
+      "extractionFeasibilityScore": 90,
+      "rollupOpportunityIndex": 80
     },
     "contacts": [
       {
@@ -1494,9 +1650,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-iqst-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Leandro Iglesias <liglesias@iqstel.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1506,12 +1668,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-iqst-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Leandro Iglesias (Chief Executive Officer) regarding Etelix Wholesale Carrier & Global Telecom LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1527702/000166357726000094/iqst10k_123125.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1589,13 +1758,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 2610000,
       "cleanShellFit": "exceptional",
       "rationale": "Rig 9 alone has hard steel scrap and market replacement value over $15M. Buying the senior equipment note for $2.61M cash gives full title to the rig via Article 9 foreclosure, leaving $14M of debentures at the parent.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 90,
-      "vehicleDistressScore": 90,
+      "assetQualityScore": 96,
+      "vehicleDistressScore": 60,
       "extractionFeasibilityScore": 85,
-      "rollupOpportunityIndex": 90
+      "rollupOpportunityIndex": 81
     },
     "contacts": [
       {
@@ -1610,9 +1779,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+        {
+          "id": "note-znog-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Roby Nettles <rnettles@zionoil.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1622,12 +1797,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-znog-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Roby Nettles (Chief Executive Officer) regarding Zion Drilling Rig 9 & Meged 5 Exploration Assets LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1131312/000143774926009073/znog20251231_10k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1704,14 +1886,14 @@ const rawTargets: TargetCompany[] = [
       "estimatedBuyoutDiscountPct": 75,
       "estimatedAcquisitionCost": 450000,
       "cleanShellFit": "exceptional",
-      "rationale": "Over $250M of clinical trials and hard patents are trapped with zero enterprise value. Senior venture lender is writing down the debt to near zero. A $450k cash note acquisition enables non-judicial foreclosure under UCC \u00a7 9-620, stripping out $9.5M in toxic notes into our clean shell.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "rationale": "Over $250M of clinical trials and hard patents are trapped with zero enterprise value. Senior venture lender is writing down the debt to near zero. A $450k cash note acquisition enables non-judicial foreclosure under UCC § 9-620, stripping out $9.5M in toxic notes into our clean shell.",
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 75,
+      "assetQualityScore": 74,
       "vehicleDistressScore": 95,
-      "extractionFeasibilityScore": 92,
-      "rollupOpportunityIndex": 87
+      "extractionFeasibilityScore": 85,
+      "rollupOpportunityIndex": 84
     },
     "contacts": [
       {
@@ -1736,9 +1918,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+        {
+          "id": "note-ladx-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Stephen Snowdy <ssnowdy@cytrx.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1748,12 +1936,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-ladx-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Stephen Snowdy (Chief Executive Officer) regarding Aldoxorubicin & LADR Oncology Therapeutics LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/799698/000164117225001038/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1831,13 +2026,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 280000,
       "cleanShellFit": "exceptional",
       "rationale": "High-value regenerative medicine patent pool with academic institutional pedigree. Senior secured creditor is ready to sell their non-performing $1.2M note for $280k cash, allowing a clean Article 9 foreclosure into our shell vehicle.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 72,
-      "vehicleDistressScore": 96,
-      "extractionFeasibilityScore": 94,
-      "rollupOpportunityIndex": 86
+      "assetQualityScore": 74,
+      "vehicleDistressScore": 92,
+      "extractionFeasibilityScore": 85,
+      "rollupOpportunityIndex": 83
     },
     "contacts": [
       {
@@ -1852,9 +2047,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+        {
+          "id": "note-qron-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Jonah Meer <jmeer@qrons.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1864,12 +2065,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-qron-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Jonah Meer (Chief Executive Officer) regarding QSight Neuro-Regenerative 3D Technologies LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1689084/000147793225002791/qron_10k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1947,13 +2155,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 550000,
       "cleanShellFit": "exceptional",
       "rationale": "UST platform has over $50M in historical development. Senior secured creditor is anxious to exit and willing to take $550k cash for the $2.4M note. Strict foreclosure wipes out $11.2M in predatory convertible debt.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 76,
+      "assetQualityScore": 74,
       "vehicleDistressScore": 95,
-      "extractionFeasibilityScore": 93,
-      "rollupOpportunityIndex": 87
+      "extractionFeasibilityScore": 85,
+      "rollupOpportunityIndex": 84
     },
     "contacts": [
       {
@@ -1968,9 +2176,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+        {
+          "id": "note-pbio-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Richard T. Schumacher <rschumacher@pressurebiosciences.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -1980,12 +2194,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-pbio-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Richard T. Schumacher (President & Chief Executive Officer) regarding Ultra Shear Technology (UST) Hardware & IP LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315224023201/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -2063,13 +2284,13 @@ const rawTargets: TargetCompany[] = [
       "estimatedAcquisitionCost": 375000,
       "cleanShellFit": "exceptional",
       "rationale": "High-caliber 100+ patent portfolio with potential multi-million licensing payouts. Senior secured litigation funder is willing to sell their $1.5M position for $375k cash, enabling clean separation of the patent portfolios into an unencumbered vehicle.",
-      "provenanceNote": "ANALYST RESTRUCTURING MODEL \u2014 Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
+      "provenanceNote": "ANALYST RESTRUCTURING MODEL — Senior debt amount, UCC lien status, and buyout costs represent analyst workout models and are not sourced from public docket instruments."
     },
     "scores": {
-      "assetQualityScore": 78,
-      "vehicleDistressScore": 92,
-      "extractionFeasibilityScore": 91,
-      "rollupOpportunityIndex": 86
+      "assetQualityScore": 74,
+      "vehicleDistressScore": 60,
+      "extractionFeasibilityScore": 85,
+      "rollupOpportunityIndex": 72
     },
     "contacts": [
       {
@@ -2084,9 +2305,15 @@ const rawTargets: TargetCompany[] = [
       }
     ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+        {
+          "id": "note-qprc-today-1",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Dispatched customized carve-out proposal email to Jon R. Harris <jharris@qprc.com> with senior debt resolution and clean shell rollup terms."
+        },
         {
           "id": "n1",
           "date": "2026-09-28",
@@ -2096,12 +2323,19 @@ const rawTargets: TargetCompany[] = [
       ],
       "activities": [
         {
+          "id": "act-qprc-today-1",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Personalized carve-out proposal email dispatched to Jon R. Harris (Chairman & Chief Executive Officer) regarding Quest IP Monetization & Semiconductor Portfolios LLC."
+        },
+        {
           "id": "a1",
           "date": "2026-09-28",
           "type": "filing_alert",
           "summary": "10-K verified on SEC EDGAR."
         }
-      ]
+      ],
+      "lastContactDate": "2026-10-05"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026036431/ea0282928-10k_quest.htm",
     "baseline10KFilingType": "Form 10-K",

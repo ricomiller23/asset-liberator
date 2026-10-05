@@ -26,6 +26,7 @@ import { CrmPipelineView } from "@/components/CrmPipelineView";
 import { EditContactModal } from "@/components/EditContactModal";
 import { LogCallModal } from "@/components/LogCallModal";
 import { GlobalSearchModal } from "@/components/GlobalSearchModal";
+import { CrmReportModal } from "@/components/CrmReportModal";
 import { 
   ShieldAlert, 
   Sparkles, 
@@ -63,6 +64,7 @@ function AssetLiberatorMain() {
   const [isLogCallOpen, setIsLogCallOpen] = useState(false);
 
   const [isGlobalSearchOpen, setIsGlobalSearchOpen] = useState(false);
+  const [isCrmReportOpen, setIsCrmReportOpen] = useState(false);
 
   const [localTargets, setLocalTargets] = useState<TargetCompany[]>([]);
   const [filters, setFilters] = useState<SearchFilters>({
@@ -257,6 +259,7 @@ function AssetLiberatorMain() {
         activeTab={activeTab}
         onTabChange={setActiveTab}
         onOpenGlobalSearch={() => setIsGlobalSearchOpen(true)}
+        onOpenReport={() => setIsCrmReportOpen(true)}
         stats={stats}
       />
 
@@ -433,6 +436,15 @@ function AssetLiberatorMain() {
         onOpenEditContact={handleOpenEditContact}
         onOpenLogCall={handleOpenLogCall}
         onNavigateToCrm={() => setActiveTab("crm")}
+      />
+      {/* CRM Activity & Audit Performance Report Modal */}
+      <CrmReportModal
+        isOpen={isCrmReportOpen}
+        onClose={() => setIsCrmReportOpen(false)}
+        targets={displayedTargets}
+        onOpenDrawer={(t) => setActiveDrawerTarget(t)}
+        onOpenLogCall={handleOpenLogCall}
+        onOpenOutreach={(t) => setActiveOutreachTarget(t)}
       />
     </div>
   );
