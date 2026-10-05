@@ -125,4 +125,16 @@ describe("CRM Pipeline State Management Suite", () => {
     const searchPhone = searchTargetsAndContacts("702-2431", targets);
     expect(searchPhone.contacts.some((c) => c.target.ticker === "ALPP")).toBe(true);
   });
+
+  it("verifies the 5 bounced targets have delivery failure notes recorded", () => {
+    const targets = getStoredTargets();
+    const bounceTickers = ["PHIL", "ZNOG", "LADX", "QPRC", "IQST"];
+
+    bounceTickers.forEach((ticker) => {
+      const target = targets.find((t) => t.ticker === ticker);
+      expect(target).toBeDefined();
+      const hasBounceNote = target?.crm.notes.some((n) => n.text.includes("[BOUNCE / UNDELIVERED]"));
+      expect(hasBounceNote).toBe(true);
+    });
+  });
 });

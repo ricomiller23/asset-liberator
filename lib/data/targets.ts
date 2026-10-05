@@ -751,6 +751,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "critical",
       "notes": [
         {
+          "id": "note-bounce-phil-1",
+          "date": "2026-10-05",
+          "author": "Mail Delivery Subsystem",
+          "text": "[BOUNCE / UNDELIVERED]: Outbound proposal to Henry Fahman <hfahman@phiglobal.com> returned undelivered at 9:49 AM. Reason: SMTP 550 No Such User Here (mail.phiglobal.com). Recommend phone outreach via verified direct line (714) 777-6288."
+        },
+        {
           "id": "note-phil-today-1",
           "date": "2026-10-05",
           "author": "Special Situations Desk",
@@ -764,6 +770,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bounce-phil-1",
+          "date": "2026-10-05",
+          "type": "filing_alert",
+          "summary": "[EMAIL BOUNCE] Proposal to Henry Fahman <hfahman@phiglobal.com> undelivered (SMTP 550 No Such User Here (mail.phiglobal.com)). Direct phone line on file: (714) 777-6288."
+        },
         {
           "id": "act-phil-today-1",
           "date": "2026-10-05",
@@ -1654,6 +1666,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "critical",
       "notes": [
         {
+          "id": "note-bounce-iqst-1",
+          "date": "2026-10-05",
+          "author": "Mail Delivery Subsystem",
+          "text": "[BOUNCE / UNDELIVERED]: Outbound proposal to Leandro Iglesias <liglesias@iqstel.com> returned undelivered at 10:01 AM. Reason: SMTP 550 5.1.1 Recipient address rejected: User unknown in virtual mailbox table (antispam.iqstelecom.com / ScrolloutF1). Recommend phone outreach via verified direct line (305) 722-5400."
+        },
+        {
           "id": "note-iqst-today-1",
           "date": "2026-10-05",
           "author": "Special Situations Desk",
@@ -1667,6 +1685,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bounce-iqst-1",
+          "date": "2026-10-05",
+          "type": "filing_alert",
+          "summary": "[EMAIL BOUNCE] Proposal to Leandro Iglesias <liglesias@iqstel.com> undelivered (SMTP 550 5.1.1 Recipient address rejected: User unknown in virtual mailbox table (antispam.iqstelecom.com / ScrolloutF1)). Direct phone line on file: (305) 722-5400."
+        },
         {
           "id": "act-iqst-today-1",
           "date": "2026-10-05",
@@ -1783,6 +1807,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "critical",
       "notes": [
         {
+          "id": "note-bounce-znog-1",
+          "date": "2026-10-05",
+          "author": "Mail Delivery Subsystem",
+          "text": "[BOUNCE / UNDELIVERED]: Outbound proposal to Roby Nettles <rnettles@zionoil.com> returned undelivered at 9:55 AM. Reason: SMTP 550 5.4.1 Recipient address rejected: Access denied (zionoil-com-1.fortimailcloud.com / outlook.com). Recommend phone outreach via verified direct line (214) 221-4610."
+        },
+        {
           "id": "note-znog-today-1",
           "date": "2026-10-05",
           "author": "Special Situations Desk",
@@ -1796,6 +1826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bounce-znog-1",
+          "date": "2026-10-05",
+          "type": "filing_alert",
+          "summary": "[EMAIL BOUNCE] Proposal to Roby Nettles <rnettles@zionoil.com> undelivered (SMTP 550 5.4.1 Recipient address rejected: Access denied (zionoil-com-1.fortimailcloud.com / outlook.com)). Direct phone line on file: (214) 221-4610."
+        },
         {
           "id": "act-znog-today-1",
           "date": "2026-10-05",
@@ -1922,6 +1958,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "high",
       "notes": [
         {
+          "id": "note-bounce-ladx-1",
+          "date": "2026-10-05",
+          "author": "Mail Delivery Subsystem",
+          "text": "[BOUNCE / UNDELIVERED]: Outbound proposal to Stephen Snowdy <ssnowdy@cytrx.com> returned undelivered at 9:55 AM. Reason: SMTP 550 5.1.1 Recipient address rejected: User unknown in relay recipient table (west.smtp.mx.exch082.serverdata.net). Recommend phone outreach via verified direct line (310) 826-5648."
+        },
+        {
           "id": "note-ladx-today-1",
           "date": "2026-10-05",
           "author": "Special Situations Desk",
@@ -1935,6 +1977,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bounce-ladx-1",
+          "date": "2026-10-05",
+          "type": "filing_alert",
+          "summary": "[EMAIL BOUNCE] Proposal to Stephen Snowdy <ssnowdy@cytrx.com> undelivered (SMTP 550 5.1.1 Recipient address rejected: User unknown in relay recipient table (west.smtp.mx.exch082.serverdata.net)). Direct phone line on file: (310) 826-5648."
+        },
         {
           "id": "act-ladx-today-1",
           "date": "2026-10-05",
@@ -2309,6 +2357,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "high",
       "notes": [
         {
+          "id": "note-bounce-qprc-1",
+          "date": "2026-10-05",
+          "author": "Mail Delivery Subsystem",
+          "text": "[BOUNCE / UNDELIVERED]: Outbound proposal to Jon R. Harris <jharris@qprc.com> returned undelivered at 9:55 AM. Reason: SMTP 550 5.4.1 Recipient address rejected: Access denied (qprc-com.mail.protection.outlook.com). Recommend phone outreach via verified direct line (917) 675-6500."
+        },
+        {
           "id": "note-qprc-today-1",
           "date": "2026-10-05",
           "author": "Special Situations Desk",
@@ -2322,6 +2376,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bounce-qprc-1",
+          "date": "2026-10-05",
+          "type": "filing_alert",
+          "summary": "[EMAIL BOUNCE] Proposal to Jon R. Harris <jharris@qprc.com> undelivered (SMTP 550 5.4.1 Recipient address rejected: Access denied (qprc-com.mail.protection.outlook.com)). Direct phone line on file: (917) 675-6500."
+        },
         {
           "id": "act-qprc-today-1",
           "date": "2026-10-05",
