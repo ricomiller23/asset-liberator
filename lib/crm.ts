@@ -1,7 +1,7 @@
 import { TargetCompany, CrmStage, CrmNote, CrmActivity, PriorityLevel, ExecutiveContact } from "./types";
 import { INITIAL_TARGETS } from "./data/targets";
 
-const STORAGE_KEY = "asset_liberator_targets_v1";
+const STORAGE_KEY = "asset_liberator_targets_v2";
 
 export function getStoredTargets(): TargetCompany[] {
   if (typeof window === "undefined") {
@@ -14,13 +14,25 @@ export function getStoredTargets(): TargetCompany[] {
       return INITIAL_TARGETS;
     }
     const parsed: TargetCompany[] = JSON.parse(raw);
-    
-    // Safety fallback: if stored array is empty or corrupt, reset to INITIAL_TARGETS
     if (!Array.isArray(parsed) || parsed.length === 0) {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_TARGETS));
       return INITIAL_TARGETS;
     }
-    return parsed;
+
+    // Merge baseline targets with local user overrides so updates to INITIAL_TARGETS are reflected
+    const merged = INITIAL_TARGETS.map((base) => {
+      const match = parsed.find((p) => p.id === base.id || p.ticker.toUpperCase() === base.ticker.toUpperCase());
+      if (match) {
+        return {
+          ...base,
+          contacts: match.contacts && match.contacts.length > 0 ? match.contacts : base.contacts,
+          crm: match.crm || base.crm,
+        };
+      }
+      return base;
+    });
+
+    return merged;
   } catch (err) {
     console.error("Failed to load targets from localStorage", err);
     return INITIAL_TARGETS;
@@ -36,11 +48,22 @@ export function saveStoredTargets(targets: TargetCompany[]): void {
   }
 }
 
+// Background sync to server API
+function syncToServer(payload: any) {
+  if (typeof window === "undefined") return;
+  fetch("/api/crm", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  }).catch((err) => console.warn("CRM background server sync non-blocking error:", err));
+}
+
 export function updateTargetCrmStage(targetId: string, stage: CrmStage, priority?: PriorityLevel): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
-      const now = new Date().toISOString().split("T")[0];
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const activity: CrmActivity = {
         id: "act-" + Date.now(),
         date: now,
@@ -60,15 +83,18 @@ export function updateTargetCrmStage(targetId: string, stage: CrmStage, priority
     }
     return t;
   });
+
   saveStoredTargets(updated);
+  syncToServer({ action: "update_stage", targetId, stage, priority });
   return updated;
 }
 
 export function addTargetCrmNote(targetId: string, noteText: string, author: string = "Deal Desk"): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
-      const now = new Date().toISOString().split("T")[0];
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const note: CrmNote = {
         id: "note-" + Date.now(),
         date: now,
@@ -85,7 +111,9 @@ export function addTargetCrmNote(targetId: string, noteText: string, author: str
     }
     return t;
   });
+
   saveStoredTargets(updated);
+  syncToServer({ action: "add_note", targetId, noteText, author });
   return updated;
 }
 
@@ -95,9 +123,10 @@ export function logTargetActivity(
   summary: string
 ): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
-      const now = new Date().toISOString().split("T")[0];
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const activity: CrmActivity = {
         id: "act-" + Date.now(),
         date: now,
@@ -115,6 +144,7 @@ export function logTargetActivity(
     }
     return t;
   });
+
   saveStoredTargets(updated);
   return updated;
 }
@@ -124,11 +154,20 @@ export function logTargetActivity(
  */
 export function updateTargetContact(targetId: string, updatedContact: ExecutiveContact): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
-      const now = new Date().toISOString().split("T")[0];
-      const updatedContacts = t.contacts.map((c) => (c.id === updatedContact.id ? updatedContact : c));
-      
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
+      const exists = t.contacts.some((c) => c.id === updatedContact.id);
+      let updatedContacts: ExecutiveContact[];
+
+      if (exists) {
+        updatedContacts = t.contacts.map((c) => (c.id === updatedContact.id ? updatedContact : c));
+      } else {
+        // Fallback: replace primary contact or prepend
+        updatedContacts = [updatedContact, ...t.contacts.slice(1)];
+      }
+
       const activity: CrmActivity = {
         id: "act-" + Date.now(),
         date: now,
@@ -148,7 +187,9 @@ export function updateTargetContact(targetId: string, updatedContact: ExecutiveC
     }
     return t;
   });
+
   saveStoredTargets(updated);
+  syncToServer({ action: "update_contact", targetId, contact: updatedContact });
   return updated;
 }
 
@@ -161,14 +202,15 @@ export function addTargetContact(
   setAsPrimary: boolean = false
 ): TargetCompany[] {
   const current = getStoredTargets();
-  const updated = current.map((t) => {
-    if (t.id === targetId) {
-      const now = new Date().toISOString().split("T")[0];
-      const contactWithId: ExecutiveContact = {
-        ...newContact,
-        id: "contact-" + Date.now(),
-      };
+  const now = new Date().toISOString().split("T")[0];
 
+  const contactWithId: ExecutiveContact = {
+    ...newContact,
+    id: "contact-" + Date.now(),
+  };
+
+  const updated = current.map((t) => {
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const updatedContacts = setAsPrimary
         ? [contactWithId, ...t.contacts]
         : [...t.contacts, contactWithId];
@@ -192,7 +234,9 @@ export function addTargetContact(
     }
     return t;
   });
+
   saveStoredTargets(updated);
+  syncToServer({ action: "add_contact", targetId, contact: newContact, setAsPrimary });
   return updated;
 }
 
@@ -201,14 +245,15 @@ export function addTargetContact(
  */
 export function setPrimaryContact(targetId: string, contactId: string): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const contact = t.contacts.find((c) => c.id === contactId);
       if (!contact) return t;
 
       const remaining = t.contacts.filter((c) => c.id !== contactId);
       const updatedContacts = [contact, ...remaining];
-      const now = new Date().toISOString().split("T")[0];
 
       const activity: CrmActivity = {
         id: "act-" + Date.now(),
@@ -228,7 +273,9 @@ export function setPrimaryContact(targetId: string, contactId: string): TargetCo
     }
     return t;
   });
+
   saveStoredTargets(updated);
+  syncToServer({ action: "set_primary_contact", targetId, contactId });
   return updated;
 }
 
@@ -237,11 +284,12 @@ export function setPrimaryContact(targetId: string, contactId: string): TargetCo
  */
 export function deleteTargetContact(targetId: string, contactId: string): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const targetContact = t.contacts.find((c) => c.id === contactId);
       const updatedContacts = t.contacts.filter((c) => c.id !== contactId);
-      const now = new Date().toISOString().split("T")[0];
 
       const activity: CrmActivity = {
         id: "act-" + Date.now(),
@@ -261,6 +309,7 @@ export function deleteTargetContact(targetId: string, contactId: string): Target
     }
     return t;
   });
+
   saveStoredTargets(updated);
   return updated;
 }
@@ -279,9 +328,10 @@ export function logCallActivity(
   }
 ): TargetCompany[] {
   const current = getStoredTargets();
+  const now = new Date().toISOString().split("T")[0];
+
   const updated = current.map((t) => {
-    if (t.id === targetId) {
-      const now = new Date().toISOString().split("T")[0];
+    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
       const activitySummary = `[CALL LOGGED] Spoke with ${callDetails.contactName} | Outcome: ${callDetails.outcome} | Notes: ${callDetails.notes}${
         callDetails.nextFollowUpDate ? ` | Next follow-up: ${callDetails.nextFollowUpDate}` : ""
       }`;
@@ -314,7 +364,9 @@ export function logCallActivity(
     }
     return t;
   });
+
   saveStoredTargets(updated);
+  syncToServer({ action: "log_call", targetId, callDetails });
   return updated;
 }
 

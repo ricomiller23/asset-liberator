@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { INITIAL_TARGETS } from "@/lib/data/targets";
+import { getServerTargets } from "@/lib/serverStore";
 import { TargetCompany, SearchFilters } from "@/lib/types";
+
+export const dynamic = "force-dynamic";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -17,7 +19,8 @@ export async function GET(req: NextRequest) {
   const crmStage = searchParams.get("crmStage");
   const sortBy = searchParams.get("sortBy") || "roi";
 
-  let results: TargetCompany[] = [...INITIAL_TARGETS];
+  const allTargets = getServerTargets();
+  let results: TargetCompany[] = [...allTargets];
 
   if (query) {
     const cleanDigits = query.replace(/[^0-9]/g, "");

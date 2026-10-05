@@ -440,13 +440,13 @@ const rawTargets: TargetCompany[] = [
     "contacts": [
       {
         "id": "c1",
-        "name": "Kent Wilson",
+        "name": "Jeff Nail",
         "title": "Chief Executive Officer",
         "entity": "Public Parent",
-        "email": "kwilson@alpine4.com",
-        "phone": "(480) 585-7776",
-        "roleSummary": "Founder facing immense litigation from convertible debenture holders.",
-        "receptivityScore": "high"
+        "email": "jnail@alpine4.com",
+        "phone": "(480) 702-2431",
+        "roleSummary": "Chief Executive Officer leading corporate operations and restructuring for Alpine 4 Holdings.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {

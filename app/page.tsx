@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { TargetCompany, SearchFilters, CrmStage, PriorityLevel, ExecutiveContact } from "@/lib/types";
 import { 
   getStoredTargets, 
@@ -41,6 +41,7 @@ import {
 } from "lucide-react";
 
 function AssetLiberatorMain() {
+  const queryClient = useQueryClient();
   const searchParams = useSearchParams();
   const initialTierParam = searchParams.get("revenueTier");
   const initialTier = (initialTierParam === "commercial" || initialTierParam === "pre_revenue_ip") 
@@ -52,7 +53,7 @@ function AssetLiberatorMain() {
   const [activePlaybookTarget, setActivePlaybookTarget] = useState<TargetCompany | null>(null);
   const [activeOutreachTarget, setActiveOutreachTarget] = useState<TargetCompany | null>(null);
   
-  // New CRM & Contact Management Modals
+  // Contact & Call Modals
   const [editContactTarget, setEditContactTarget] = useState<TargetCompany | null>(null);
   const [contactToEdit, setContactToEdit] = useState<ExecutiveContact | null>(null);
   const [isEditContactOpen, setIsEditContactOpen] = useState(false);
@@ -74,13 +75,13 @@ function AssetLiberatorMain() {
     sortBy: "roi",
   });
 
-  // Load from local storage or initialize
+  // Load initial targets on client mount
   useEffect(() => {
     const data = getStoredTargets();
     setLocalTargets(data);
   }, []);
 
-  // Fetch targets via API (and merge local CRM state)
+  // Fetch targets via API
   const { data: apiData, isLoading, refetch } = useQuery({
     queryKey: ["targets", filters],
     queryFn: async () => {
@@ -95,37 +96,46 @@ function AssetLiberatorMain() {
 
       const res = await fetch(`/api/targets?${params.toString()}`);
       if (!res.ok) throw new Error("Failed to fetch targets");
-      return res.json();
+      const json = await res.json();
+      return json;
     },
   });
 
-  // Sync API data with locally stored CRM modifications & custom contacts
+  // Sync API response into local state when fresh server targets arrive
+  useEffect(() => {
+    if (apiData?.targets && Array.isArray(apiData.targets)) {
+      setLocalTargets((prev) => {
+        if (prev.length === 0) return apiData.targets;
+
+        // Merge server targets with any local modifications
+        return apiData.targets.map((serverT: TargetCompany) => {
+          const localMatch = prev.find((p) => p.id === serverT.id || p.ticker === serverT.ticker);
+          if (localMatch) {
+            return {
+              ...serverT,
+              contacts: localMatch.contacts && localMatch.contacts.length > 0 ? localMatch.contacts : serverT.contacts,
+              crm: localMatch.crm || serverT.crm,
+            };
+          }
+          return serverT;
+        });
+      });
+    }
+  }, [apiData]);
+
+  // Displayed targets are directly derived from localTargets
   const displayedTargets: TargetCompany[] = useMemo(() => {
-    const rawList: TargetCompany[] = apiData?.targets || localTargets;
-    if (localTargets.length === 0) return rawList;
+    const baseList: TargetCompany[] = localTargets.length > 0 ? localTargets : (apiData?.targets || []);
 
-    let merged = rawList.map((target) => {
-      const match = localTargets.find((lt) => lt.id === target.id);
-      if (match) {
-        return {
-          ...target,
-          crm: match.crm,
-          contacts: match.contacts && match.contacts.length > 0 ? match.contacts : target.contacts,
-        };
-      }
-      return target;
-    });
-
-    // Local query filter fallback so search finds updated people immediately
     if (filters.query) {
       const q = filters.query.toLowerCase().trim();
       const digits = q.replace(/[^0-9]/g, "");
-      merged = merged.filter((t) =>
+      return baseList.filter((t: TargetCompany) =>
         t.ticker.toLowerCase().includes(q) ||
         t.name.toLowerCase().includes(q) ||
         t.asset.subsidiaryName.toLowerCase().includes(q) ||
         t.sector.toLowerCase().includes(q) ||
-        t.contacts.some((c) =>
+        t.contacts.some((c: ExecutiveContact) =>
           c.name.toLowerCase().includes(q) ||
           c.title.toLowerCase().includes(q) ||
           c.email.toLowerCase().includes(q) ||
@@ -134,8 +144,8 @@ function AssetLiberatorMain() {
       );
     }
 
-    return merged;
-  }, [apiData, localTargets, filters.query]);
+    return baseList;
+  }, [localTargets, apiData, filters.query]);
 
   // Aggregated Stats
   const stats = useMemo(() => {
@@ -156,8 +166,8 @@ function AssetLiberatorMain() {
 
   // Sync drawer target with latest local modifications
   const syncActiveDrawer = (updatedList: TargetCompany[], targetId: string) => {
-    if (activeDrawerTarget && activeDrawerTarget.id === targetId) {
-      const match = updatedList.find((t) => t.id === targetId);
+    if (activeDrawerTarget && (activeDrawerTarget.id === targetId || activeDrawerTarget.ticker.toUpperCase() === targetId.toUpperCase())) {
+      const match = updatedList.find((t) => t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase());
       if (match) setActiveDrawerTarget(match);
     }
   };

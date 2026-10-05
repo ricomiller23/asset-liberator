@@ -110,4 +110,19 @@ describe("CRM Pipeline State Management Suite", () => {
     const phoneSearch = searchTargetsAndContacts(phoneSample, targets);
     expect(phoneSearch.contacts.length).toBeGreaterThan(0);
   });
+
+  it("verifies Alpine 4 Holdings (ALPP) contact is Jeff Nail and searchable", () => {
+    const targets = getStoredTargets();
+    const alpp = targets.find((t) => t.ticker === "ALPP");
+    expect(alpp).toBeDefined();
+    expect(alpp?.contacts[0].name).toBe("Jeff Nail");
+    expect(alpp?.contacts[0].phone).toBe("(480) 702-2431");
+    expect(alpp?.contacts[0].email).toBe("jnail@alpine4.com");
+
+    const searchNail = searchTargetsAndContacts("Jeff Nail", targets);
+    expect(searchNail.contacts.some((c) => c.target.ticker === "ALPP")).toBe(true);
+
+    const searchPhone = searchTargetsAndContacts("702-2431", targets);
+    expect(searchPhone.contacts.some((c) => c.target.ticker === "ALPP")).toBe(true);
+  });
 });
