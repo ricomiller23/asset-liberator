@@ -1866,13 +1866,13 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c-znog-aboudi",
-        "name": "David Aboudi, Esq.",
-        "title": "Securities Counsel (The Crone Law Group, P.C.)",
+        "id": "c-znog-lubin",
+        "name": "David Lubin",
+        "title": "Senior Legal Support Director (The Crone Law Group, P.C.)",
         "entity": "Legal Counsel",
-        "email": "daboudi@cronelawgroup.com",
-        "phone": "(646) 861-7891",
-        "roleSummary": "Designated outside securities and corporate legal counsel of record on SEC Form S-3 and Form 8-K registration statements for Zion Oil & Gas, Inc.",
+        "email": "dlubin@cronelawgroup.com",
+        "phone": "+1 (203) 666-2331",
+        "roleSummary": "Senior Legal Support Director at The Crone Law Group, P.C. handling legal inquiries and board communications for Zion Oil & Gas matters following transition from David Aboudi. Longstanding decade-plus firm relationship with founder Mark Crone noted.",
         "receptivityScore": "high"
       },
       {
@@ -1911,6 +1911,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "critical",
       "notes": [
         {
+          "id": "note-znog-lubin-1791234397907",
+          "date": "2026-10-05",
+          "author": "Special Situations Desk",
+          "text": "Transition notice received from The Crone Law Group, P.C. indicating David Aboudi has departed the firm; official replacement for legal inquiries is David Lubin (Senior Legal Support Director, dlubin@cronelawgroup.com, +1 (203) 666-2331 / Israel: +972 55-500-3481). Revised Rig 9 & Meged exploration carve-out proposal dispatched to David Lubin referencing Eric Miller's decade-plus professional relationship with firm founder Mark Crone for executive board transmission to CEO Robert Dunn and General Counsel William Avery."
+        },
+        {
           "id": "note-znog-legal-1791228499719",
           "date": "2026-10-05",
           "author": "Legal & Outbound Audit Desk",
@@ -1942,6 +1948,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-znog-lubin-1791234397907",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Dispatched revised carve-out proposal to David Lubin (Senior Legal Support Director, The Crone Law Group, P.C., dlubin@cronelawgroup.com) referencing decade-plus relationship with Mark Crone for transmission to Zion Board."
+        },
         {
           "id": "act-znog-legal-1791228499719",
           "date": "2026-10-05",
