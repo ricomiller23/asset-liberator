@@ -20,12 +20,19 @@ export async function GET(req: NextRequest) {
   let results: TargetCompany[] = [...INITIAL_TARGETS];
 
   if (query) {
+    const cleanDigits = query.replace(/[^0-9]/g, "");
     results = results.filter((t) =>
       t.ticker.toLowerCase().includes(query) ||
       t.name.toLowerCase().includes(query) ||
       t.asset.subsidiaryName.toLowerCase().includes(query) ||
       t.sector.toLowerCase().includes(query) ||
-      t.asset.businessSummary.toLowerCase().includes(query)
+      t.asset.businessSummary.toLowerCase().includes(query) ||
+      t.contacts.some((c) =>
+        c.name.toLowerCase().includes(query) ||
+        c.title.toLowerCase().includes(query) ||
+        c.email.toLowerCase().includes(query) ||
+        (cleanDigits.length >= 3 && c.phone.replace(/[^0-9]/g, "").includes(cleanDigits))
+      )
     );
   }
 

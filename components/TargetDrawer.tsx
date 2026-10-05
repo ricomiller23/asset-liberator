@@ -1,6 +1,6 @@
 import { formatCurrency } from "@/lib/utils";
 import React, { useState } from "react";
-import { TargetCompany, CrmStage, PriorityLevel } from "@/lib/types";
+import { TargetCompany, CrmStage, PriorityLevel, ExecutiveContact } from "@/lib/types";
 import { 
   X, 
   Building2, 
@@ -19,7 +19,10 @@ import {
   MapPin, 
   Globe, 
   Copy,
-  Check
+  Check,
+  PhoneCall,
+  Pencil,
+  Star
 } from "lucide-react";
 
 interface TargetDrawerProps {
@@ -30,6 +33,9 @@ interface TargetDrawerProps {
   onAddNote: (targetId: string, text: string) => void;
   onOpenPlaybook: (target: TargetCompany) => void;
   onOpenOutreach: (target: TargetCompany) => void;
+  onOpenEditContact: (target: TargetCompany, contact: ExecutiveContact | null) => void;
+  onOpenLogCall: (target: TargetCompany, contact: ExecutiveContact | null) => void;
+  onSetPrimaryContact?: (targetId: string, contactId: string) => void;
 }
 
 export const TargetDrawer: React.FC<TargetDrawerProps> = ({
@@ -40,6 +46,9 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
   onAddNote,
   onOpenPlaybook,
   onOpenOutreach,
+  onOpenEditContact,
+  onOpenLogCall,
+  onSetPrimaryContact,
 }) => {
   const [newNote, setNewNote] = useState("");
   const [copiedText, setCopiedText] = useState<string | null>(null);
@@ -60,146 +69,164 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
   };
 
   const stages: { id: CrmStage; label: string }[] = [
-    { id: "new", label: "New Lead" },
+    { id: "new", label: "New Opportunity" },
     { id: "outreach_sent", label: "Outreach Sent" },
-    { id: "in_dialogue", label: "In Dialogue" },
-    { id: "nda_signed", label: "NDA Signed" },
-    { id: "diligence", label: "Due Diligence" },
+    { id: "in_dialogue", label: "Active Dialogue" },
+    { id: "nda_signed", label: "NDA Executed" },
+    { id: "diligence", label: "In Diligence" },
     { id: "term_sheet", label: "Term Sheet Issued" },
-    { id: "foreclosure_pending", label: "Foreclosure Scheduled" },
-    { id: "closed", label: "Closed / Rolled Into Shell" },
+    { id: "foreclosure_pending", label: "Foreclosure / Closing" },
+    { id: "closed", label: "Closed / Carved Out" },
     { id: "passed", label: "Passed / Dead" },
   ];
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden bg-black/60 backdrop-blur-xs">
-      <div className="absolute inset-y-0 right-0 flex max-w-full pl-0 sm:pl-8">
-        <div className="w-full sm:w-screen max-w-3xl border-l border-stone-800 bg-stone-950 p-3.5 sm:p-6 shadow-2xl flex flex-col h-full overflow-hidden text-stone-200">
+    <div className="fixed inset-0 z-50 overflow-hidden">
+      {/* Backdrop */}
+      <div 
+        className="absolute inset-0 bg-stone-950/70 backdrop-blur-sm transition-opacity"
+        onClick={onClose}
+      />
+
+      <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
+        <div className="w-screen max-w-2xl bg-stone-900 border-l border-stone-800 shadow-2xl flex flex-col">
           
           {/* Header */}
-          <div className="flex items-start justify-between border-b border-stone-800 pb-4">
-            <div>
-              <div className="flex items-center space-x-2.5">
-                <span className="font-mono text-lg font-bold text-white bg-stone-850 px-2.5 py-1 rounded-lg border border-stone-750">
-                  {target.ticker}
-                </span>
-                <h2 className="text-lg font-bold text-white">{target.name}</h2>
-                <span className="text-[10px] font-mono px-2 py-0.5 rounded border font-semibold bg-stone-800 text-stone-300 border-stone-700">
-                  {target.exchange.replace(/_/g, ' ')}
-                </span>
-                <span className="rounded bg-emerald-500/10 px-2 py-0.5 text-xs font-mono font-bold text-emerald-400 border border-emerald-500/20">
-                  ROI {target.scores.rollupOpportunityIndex}/100
-                </span>
-              </div>
-              <p className="text-xs text-stone-400 mt-1">
-                {target.sector} • CIK {target.cik} • HQ: {target.headquarters} • Market Cap: {formatCurrency(target.marketCap)}
-              </p>
-
-              {/* Verified Regulatory & Primary Source Links */}
-              <div className="flex flex-wrap items-center gap-1.5 mt-2">
-                <a
-                  href={target.otcMarketsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 rounded-lg bg-cyan-950/60 px-2 py-0.5 text-[11px] font-mono text-cyan-300 hover:text-cyan-100 border border-cyan-700/60 hover:border-cyan-400 transition shadow-xs"
-                >
-                  <span>otcmarkets.com</span>
-                  <ExternalLink className="h-3 w-3 ml-0.5" />
-                </a>
-                <a
-                  href={target.secEdgarUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 rounded-lg bg-emerald-950/60 px-2 py-0.5 text-[11px] font-mono text-emerald-300 hover:text-emerald-100 border border-emerald-700/60 hover:border-emerald-400 transition shadow-xs"
-                >
-                  <span>SEC EDGAR CIK:{target.cik}</span>
-                  <ExternalLink className="h-3 w-3 ml-0.5" />
-                </a>
-                <a
-                  href={target.latestFilingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 rounded-lg bg-amber-950/60 px-2 py-0.5 text-[11px] font-mono text-amber-300 hover:text-amber-100 border border-amber-700/60 hover:border-amber-400 transition shadow-xs"
-                  title="Actual most recent SEC EDGAR filing"
-                >
-                  <span>Most Recent: {target.latestFilingType} ({target.latestFilingDate})</span>
-                  <ExternalLink className="h-3 w-3 ml-0.5" />
-                </a>
-                {target.baseline10KFilingUrl && target.baseline10KFilingUrl !== target.latestFilingUrl && (
+          <div className="p-4 sm:p-6 border-b border-stone-800 bg-stone-950/80">
+            <div className="flex items-start justify-between">
+              <div>
+                <div className="flex items-center space-x-2">
+                  <span className="rounded bg-emerald-500/10 px-2 py-0.5 text-xs font-mono font-bold text-emerald-400 border border-emerald-500/20">
+                    {target.ticker}
+                  </span>
+                  <span className="text-xs text-stone-400 font-mono">
+                    {target.exchange}
+                  </span>
+                  <span className="text-stone-600">•</span>
+                  <span className="text-xs text-stone-400 flex items-center space-x-1">
+                    <MapPin className="h-3 w-3 text-stone-500" />
+                    <span>{target.headquarters}</span>
+                  </span>
+                </div>
+                <h2 className="text-lg sm:text-xl font-bold text-white mt-1">
+                  {target.name}
+                </h2>
+                <p className="text-xs text-stone-400">
+                  Sector: {target.sector} • Industry: {target.industry}
+                </p>
+                {/* Regulatory & SEC Edgar Links */}
+                <div className="flex flex-wrap items-center gap-1.5 mt-2">
                   <a
-                    href={target.baseline10KFilingUrl}
+                    href={target.otcMarketsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center space-x-1 rounded-lg bg-stone-800/80 px-2 py-0.5 text-[11px] font-mono text-stone-200 hover:text-white border border-stone-600 hover:border-stone-400 transition shadow-xs"
-                    title="Baseline Annual 10-K filing"
+                    className="inline-flex items-center space-x-1 rounded-lg bg-cyan-950/60 px-2 py-0.5 text-[11px] font-mono text-cyan-300 hover:text-cyan-100 border border-cyan-700/60 hover:border-cyan-400 transition shadow-xs"
                   >
-                    <span>Baseline: {target.baseline10KFilingType || "Form 10-K"} ({target.baseline10KFilingDate})</span>
+                    <span>otcmarkets.com</span>
                     <ExternalLink className="h-3 w-3 ml-0.5" />
                   </a>
-                )}
-              </div>
-              {/* Data Provenance & SEC Verification Badge */}
-              <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
-                <span className="inline-flex items-center space-x-1 rounded-lg bg-emerald-950/40 px-2 py-0.5 text-[10px] font-mono text-emerald-400 border border-emerald-800/40">
-                  <ShieldCheck className="h-3 w-3" />
-                  <span>SEC EDGAR Verified {target.secVerifiedDate || '2026-09-30'}</span>
-                </span>
-                <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-amber-950/40 text-amber-400 border-amber-800/40">
-                  <span>⚠️ Turnaround Model / Analyst Estimates — Verify Independently</span>
-                </span>
-                {target.priceSource && (
-                  <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-stone-900/60 text-stone-400 border-stone-800">
-                    <span>Quote: {target.priceSource}</span>
+                  <a
+                    href={target.secEdgarUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1 rounded-lg bg-emerald-950/60 px-2 py-0.5 text-[11px] font-mono text-emerald-300 hover:text-emerald-100 border border-emerald-700/60 hover:border-emerald-400 transition shadow-xs"
+                  >
+                    <span>SEC EDGAR CIK:{target.cik}</span>
+                    <ExternalLink className="h-3 w-3 ml-0.5" />
+                  </a>
+                  <a
+                    href={target.latestFilingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-1 rounded-lg bg-amber-950/60 px-2 py-0.5 text-[11px] font-mono text-amber-300 hover:text-amber-100 border border-amber-700/60 hover:border-amber-400 transition shadow-xs"
+                    title="Actual most recent SEC EDGAR filing"
+                  >
+                    <span>Most Recent: {target.latestFilingType} ({target.latestFilingDate})</span>
+                    <ExternalLink className="h-3 w-3 ml-0.5" />
+                  </a>
+                  {target.baseline10KFilingUrl && target.baseline10KFilingUrl !== target.latestFilingUrl && (
+                    <a
+                      href={target.baseline10KFilingUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-1 rounded-lg bg-stone-800/80 px-2 py-0.5 text-[11px] font-mono text-stone-200 hover:text-white border border-stone-600 hover:border-stone-400 transition shadow-xs"
+                      title="Baseline Annual 10-K filing"
+                    >
+                      <span>Baseline: {target.baseline10KFilingType || "Form 10-K"} ({target.baseline10KFilingDate})</span>
+                      <ExternalLink className="h-3 w-3 ml-0.5" />
+                    </a>
+                  )}
+                </div>
+                {/* Data Provenance & SEC Verification Badge */}
+                <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
+                  <span className="inline-flex items-center space-x-1 rounded-lg bg-emerald-950/40 px-2 py-0.5 text-[10px] font-mono text-emerald-400 border border-emerald-800/40">
+                    <ShieldCheck className="h-3 w-3" />
+                    <span>SEC EDGAR Verified {target.secVerifiedDate || '2026-09-30'}</span>
                   </span>
-                )}
+                  <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-amber-950/40 text-amber-400 border-amber-800/40">
+                    <span>⚠️ Turnaround Model / Analyst Estimates — Verify Independently</span>
+                  </span>
+                  {target.priceSource && (
+                    <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-stone-900/60 text-stone-400 border-stone-800">
+                      <span>Quote: {target.priceSource}</span>
+                    </span>
+                  )}
+                </div>
               </div>
+
+              <button
+                onClick={onClose}
+                className="rounded-xl border border-stone-800 bg-stone-900 p-2 text-stone-400 hover:text-white hover:bg-stone-800 transition"
+              >
+                <X className="h-5 w-5" />
+              </button>
             </div>
 
-            <button
-              onClick={onClose}
-              className="rounded-xl border border-stone-800 bg-stone-900 p-2 text-stone-400 hover:text-white hover:bg-stone-800 transition"
-            >
-              <X className="h-5 w-5" />
-            </button>
-          </div>
+            {/* Quick Action Top Bar */}
+            <div className="flex flex-wrap items-center justify-between gap-3 py-3 mt-3 border-t border-stone-850 text-xs">
+              {/* Stage Selector */}
+              <div className="flex items-center space-x-2">
+                <span className="text-stone-400 font-mono text-[11px]">CRM STAGE:</span>
+                <select
+                  value={target.crm.stage}
+                  onChange={(e) => onUpdateStage(target.id, e.target.value as CrmStage)}
+                  className="rounded-lg border border-stone-750 bg-stone-900 px-3 py-1.5 text-xs font-semibold text-emerald-400 focus:border-emerald-500 focus:outline-none"
+                >
+                  {stages.map((s) => (
+                    <option key={s.id} value={s.id}>
+                      {s.label}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-          {/* Quick Action Top Bar */}
-          <div className="flex flex-wrap items-center justify-between gap-3 py-3 border-b border-stone-850 text-xs">
-            {/* Stage Selector */}
-            <div className="flex items-center space-x-2">
-              <span className="text-stone-400 font-mono text-[11px]">CRM STAGE:</span>
-              <select
-                value={target.crm.stage}
-                onChange={(e) => onUpdateStage(target.id, e.target.value as CrmStage)}
-                className="rounded-lg border border-stone-750 bg-stone-900 px-3 py-1.5 text-xs font-semibold text-emerald-400 focus:border-emerald-500 focus:outline-none"
-              >
-                {stages.map((s) => (
-                  <option key={s.id} value={s.id}>
-                    {s.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="flex items-center space-x-2">
-              <button
-                onClick={() => onOpenPlaybook(target)}
-                className="rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-3 py-1.5 font-semibold text-cyan-300 hover:bg-cyan-500/20 transition"
-              >
-                Deal Playbook & LOI
-              </button>
-              <button
-                onClick={() => onOpenOutreach(target)}
-                className="inline-flex items-center space-x-1.5 rounded-lg bg-emerald-500 px-3 py-1.5 font-bold text-stone-950 hover:bg-emerald-400 transition"
-              >
-                <Send className="h-3 w-3" />
-                <span>Launch Outreach</span>
-              </button>
+              <div className="flex items-center space-x-2">
+                <button
+                  onClick={() => onOpenLogCall(target, target.contacts[0] || null)}
+                  className="inline-flex items-center space-x-1.5 rounded-lg border border-cyan-500/40 bg-cyan-500/10 px-3 py-1.5 font-bold text-cyan-300 hover:bg-cyan-500/20 transition"
+                >
+                  <PhoneCall className="h-3 w-3" />
+                  <span>Log Call</span>
+                </button>
+                <button
+                  onClick={() => onOpenPlaybook(target)}
+                  className="rounded-lg border border-stone-750 bg-stone-850 px-3 py-1.5 font-semibold text-stone-200 hover:bg-stone-800 transition"
+                >
+                  Deal Playbook
+                </button>
+                <button
+                  onClick={() => onOpenOutreach(target)}
+                  className="inline-flex items-center space-x-1.5 rounded-lg bg-emerald-500 px-3 py-1.5 font-bold text-stone-950 hover:bg-emerald-400 transition"
+                >
+                  <Send className="h-3 w-3" />
+                  <span>Outreach</span>
+                </button>
+              </div>
             </div>
           </div>
 
           {/* Scrollable Body */}
-          <div className="flex-1 overflow-y-auto pr-1 py-4 space-y-6 text-xs">
+          <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 text-xs">
             
             {/* 1. The Operating Asset (The Gold) */}
             <div className="rounded-2xl border border-emerald-500/30 bg-emerald-950/10 p-4">
@@ -218,59 +245,61 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
               </p>
 
               {/* Financial Metrics */}
-              <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-2.5 font-mono text-center">
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">ANNUAL REVENUE</div>
-                  <div className="text-sm font-bold text-emerald-400">
-                    {target.asset.annualRevenue === 0 ? "$0 (Pre-Revenue)" : `$${(target.asset.annualRevenue / 1000000).toFixed(2)}M`}
-                  </div>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mt-4 font-mono">
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-emerald-500/10">
+                  <span className="text-stone-500 block text-[10px]">ANNUAL REVENUE</span>
+                  <span className="text-sm font-bold text-emerald-400">
+                    ${(target.asset.annualRevenue / 1000000).toFixed(2)}M
+                  </span>
                 </div>
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">GROSS MARGIN</div>
-                  <div className="text-sm font-bold text-emerald-300">
-                    {target.asset.annualRevenue === 0 ? "R&D Pipeline" : `${target.asset.grossMarginPct}%`}
-                  </div>
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-emerald-500/10">
+                  <span className="text-stone-500 block text-[10px]">GROSS MARGIN</span>
+                  <span className="text-sm font-bold text-white">
+                    {target.asset.grossMarginPct}%
+                  </span>
                 </div>
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">EBITDA</div>
-                  <div className="text-sm font-bold text-stone-200">
-                    {formatCurrency(target.asset.ebitda)}
-                  </div>
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-emerald-500/10">
+                  <span className="text-stone-500 block text-[10px]">OPERATING EBITDA</span>
+                  <span className={`text-sm font-bold ${target.asset.ebitda >= 0 ? "text-emerald-400" : "text-amber-400"}`}>
+                    ${(target.asset.ebitda / 1000000).toFixed(2)}M
+                  </span>
                 </div>
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">HEADCOUNT</div>
-                  <div className="text-sm font-bold text-stone-200">
-                    {target.asset.employees} Engineers/Staff
-                  </div>
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-emerald-500/10">
+                  <span className="text-stone-500 block text-[10px]">EMPLOYEES</span>
+                  <span className="text-sm font-bold text-white">
+                    {target.asset.employees} Full-Time
+                  </span>
                 </div>
               </div>
 
-              {/* Commercial Validation & Facilities */}
-              <div className="mt-3 space-y-2 border-t border-emerald-500/15 pt-2.5 text-stone-300">
+              {/* IP & Key Clients */}
+              <div className="mt-3 pt-3 border-t border-emerald-500/10 text-stone-300 space-y-2">
                 <div>
-                  <strong className="text-emerald-400 font-mono text-[11px]">KEY CLIENT CONTRACTS: </strong>
-                  <span>{target.asset.keyClients.join(", ")}</span>
+                  <span className="text-stone-500 font-mono text-[10px] block">PATENTS & INTELLECTUAL PROPERTY:</span>
+                  <span className="text-emerald-300 font-medium">{target.asset.ipDetails}</span>
                 </div>
                 <div>
-                  <strong className="text-emerald-400 font-mono text-[11px]">FACILITY & FOOTPRINT: </strong>
-                  <span>{target.asset.facilities}</span>
-                </div>
-                <div>
-                  <strong className="text-emerald-400 font-mono text-[11px]">INTELLECTUAL PROPERTY ({target.asset.patentsCount} PATENTS): </strong>
-                  <span>{target.asset.ipDetails}</span>
+                  <span className="text-stone-500 font-mono text-[10px] block">COMMERCIAL CUSTOMERS:</span>
+                  <div className="flex flex-wrap gap-1.5 mt-1">
+                    {target.asset.keyClients.map((client, idx) => (
+                      <span key={idx} className="rounded bg-stone-950 px-2 py-0.5 text-[10px] font-mono text-stone-300 border border-stone-800">
+                        {client}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* 2. Public Vehicle Failure Mode & Toxic Debt */}
+            {/* 2. The Vehicle Distress (The Grave) */}
             <div className="rounded-2xl border border-rose-500/30 bg-rose-950/10 p-4">
               <div className="flex items-center justify-between border-b border-rose-500/20 pb-2 mb-3">
                 <div className="flex items-center space-x-2 text-rose-400 font-bold text-sm">
                   <AlertTriangle className="h-4 w-4" />
-                  <span>Public Vehicle Failure Mode & Toxic Debt Forensics</span>
+                  <span>The Public Shell Distress: {target.ticker}</span>
                 </div>
                 <span className="rounded bg-rose-500/20 px-2 py-0.5 text-[10px] font-mono text-rose-300 font-bold uppercase">
-                  PARALYSIS LEVEL: CRITICAL
+                  {target.vehicleDistress.filingStatus.replace("_", " ")}
                 </span>
               </div>
 
@@ -278,92 +307,60 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                 {target.vehicleDistress.statusSummary}
               </p>
 
-              {/* Forensic Details */}
-              <div className="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2.5 font-mono text-center">
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">TOXIC DEBT OVERHANG</div>
-                  <div className="text-sm font-bold text-rose-400">
-                    ${(target.vehicleDistress.toxicDebtBalance / 1000000).toFixed(2)}M
-                  </div>
+              {/* Debt & Auditor Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mt-4 font-mono">
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-rose-500/10">
+                  <span className="text-stone-500 block text-[10px]">TOXIC DEBT BALANCE</span>
+                  <span className="text-sm font-bold text-rose-400">
+                    {formatCurrency(target.vehicleDistress.toxicDebtBalance)}
+                  </span>
                 </div>
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">AUDITOR STATUS</div>
-                  <div className="text-xs font-bold text-amber-400 mt-0.5">
-                    {target.vehicleDistress.lastAuditorName}
-                  </div>
-                  <div className="text-[9px] text-stone-500">({target.vehicleDistress.auditorStatus.replace("_", " ")})</div>
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-rose-500/10">
+                  <span className="text-stone-500 block text-[10px]">LAST AUDITOR STATUS</span>
+                  <span className="text-sm font-bold text-amber-400">
+                    {target.vehicleDistress.auditorStatus.replace("_", " ").toUpperCase()}
+                  </span>
                 </div>
-                <div className="rounded-xl border border-stone-800 bg-stone-900/90 p-2.5">
-                  <div className="text-[10px] text-stone-500">CONVERTIBLE RATINGS</div>
-                  <div className="text-xs font-bold text-rose-300 mt-0.5">
-                    {target.vehicleDistress.convertibleDiscountPct}% Disc. / {target.vehicleDistress.defaultInterestRatePct}% Int.
-                  </div>
-                </div>
-              </div>
-
-              {/* SEC Triggers */}
-              <div className="mt-3 pt-2.5 border-t border-rose-500/15">
-                <span className="text-[11px] font-mono text-rose-300 font-bold">SEC & REGULATORY TRIGGERS:</span>
-                <ul className="mt-1.5 list-disc list-inside space-y-1 text-stone-300">
-                  {target.vehicleDistress.secTriggers.map((t, idx) => (
-                    <li key={idx} className="font-mono text-[11px]">{t}</li>
-                  ))}
-                </ul>
-                <div className="mt-2 text-[11px] text-stone-400 font-mono">
-                  Identified Toxic Noteholders: <span className="text-stone-300">{target.vehicleDistress.toxicLenders.join(", ")}</span>
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-rose-500/10">
+                  <span className="text-stone-500 block text-[10px]">CONVERTIBLE DISCOUNT</span>
+                  <span className="text-sm font-bold text-rose-300">
+                    {target.vehicleDistress.convertibleDiscountPct}% vs Market
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* 3. Extraction & Clean Shell Rollup Strategy */}
+            {/* 3. Extraction Feasibility & Mechanics */}
             <div className="rounded-2xl border border-cyan-500/30 bg-cyan-950/10 p-4">
               <div className="flex items-center justify-between border-b border-cyan-500/20 pb-2 mb-3">
                 <div className="flex items-center space-x-2 text-cyan-400 font-bold text-sm">
                   <Scale className="h-4 w-4" />
-                  <span>Carve-Out Mechanics & UCC Lien Records</span>
+                  <span>Forensic Extraction: {target.extractionFeasibility.recommendedPlaybook.replace(/_/g, " ").toUpperCase()}</span>
                 </div>
                 <span className="rounded bg-cyan-500/20 px-2 py-0.5 text-[10px] font-mono text-cyan-300 font-bold uppercase">
                   {target.extractionFeasibility.cleanShellFit} SHELL FIT
                 </span>
               </div>
 
-              <div className="space-y-2 text-stone-300 text-xs">
-                <p>
-                  <strong className="text-cyan-400 font-mono">RECOMMENDED PLAYBOOK: </strong>
-                  <span className="capitalize">{target.extractionFeasibility.recommendedPlaybook.replace(/_/g, " ")}</span>
-                </p>
-                <p>
-                  <strong className="text-cyan-400 font-mono">SENIOR SECURED HOLDER: </strong>
-                  <span>{target.extractionFeasibility.seniorSecuredHolder}</span>
-                </p>
-                <p>
-                  <strong className="text-cyan-400 font-mono">UCC-1 LIEN RECORD: </strong>
-                  <span className="font-mono text-stone-300">{target.extractionFeasibility.uccLienJurisdiction} ({target.extractionFeasibility.uccLienStatus})</span>
-                </p>
-                <div className="p-2.5 rounded-xl bg-stone-900 border border-cyan-500/20 text-cyan-200 mt-2 font-mono text-[11px]">
-                  {target.extractionFeasibility.rationale}
-                </div>
-                {/* [AUDIT FIX #13] Provenance disclaimer for unsourced claims */}
-                <div className="p-2 rounded-lg bg-amber-950/30 border border-amber-800/30 text-amber-300 mt-2 text-[10px]">
-                  <strong>⚠️ DATA PROVENANCE:</strong> Senior debt amounts, UCC lien descriptions, and acquisition cost estimates are analyst projections. No specific instrument, lender docket, or credit agreement is cited. Verify all figures independently before reliance.
-                </div>
-              </div>
+              <p className="text-stone-300 leading-relaxed text-xs">
+                {target.extractionFeasibility.rationale}
+              </p>
 
-              <div className="mt-3 flex items-center justify-between font-mono bg-stone-950 p-3 rounded-xl border border-stone-850">
-                <div>
-                  <span className="text-stone-500 text-[10px]">SENIOR NOTE FACE VALUE</span>
-                  <div className="text-xs font-bold text-stone-200">
-                    ${(target.extractionFeasibility.seniorSecuredDebtAmount / 1000000).toFixed(2)}M
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mt-4 font-mono">
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-cyan-500/10">
+                  <span className="text-stone-500 block text-[10px]">SENIOR DEBT RECOVERY</span>
+                  <div className="text-xs font-bold text-white">
+                    {formatCurrency(target.extractionFeasibility.seniorSecuredDebtAmount)}
                   </div>
                 </div>
-                <div>
-                  <span className="text-stone-500 text-[10px]">DISCOUNT POTENTIAL</span>
-                  <div className="text-xs font-bold text-cyan-400">
-                    {target.extractionFeasibility.estimatedBuyoutDiscountPct}% Off
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-cyan-500/10">
+                  <span className="text-stone-500 block text-[10px]">EST. BUYOUT DISCOUNT</span>
+                  <div className="text-xs font-bold text-cyan-300">
+                    {target.extractionFeasibility.estimatedBuyoutDiscountPct}% Off Face
                   </div>
                 </div>
-                <div>
-                  <span className="text-stone-500 text-[10px]">EST. CASH BUYOUT COST</span>
+                <div className="rounded-xl bg-stone-950/60 p-2.5 border border-cyan-500/10">
+                  <span className="text-stone-500 block text-[10px]">TOTAL ACQUISITION CASH</span>
                   <div className="text-xs font-bold text-emerald-400">
                     {formatCurrency(target.extractionFeasibility.estimatedAcquisitionCost)} Cash
                   </div>
@@ -374,57 +371,100 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
             {/* 4. Complete Contacts Directory */}
             <div className="rounded-2xl border border-stone-800 bg-stone-900/60 p-4">
               <div className="flex items-center justify-between border-b border-stone-800 pb-2 mb-3">
-                <span className="font-bold text-white text-sm">Key Management & Creditor Dossier ({target.contacts.length})</span>
-                <span className="text-[10px] text-stone-500 font-mono">DIRECT OUTREACH TARGETS</span>
+                <div>
+                  <span className="font-bold text-white text-sm">Key Management & Creditor Dossier ({target.contacts.length})</span>
+                  <span className="text-[10px] text-stone-500 font-mono block">DIRECT OUTREACH & PHONE LINES</span>
+                </div>
+                <button
+                  onClick={() => onOpenEditContact(target, null)}
+                  className="flex items-center space-x-1 rounded-xl border border-emerald-500/40 bg-emerald-500/10 px-2.5 py-1 text-xs font-mono font-semibold text-emerald-300 hover:bg-emerald-500/20 transition shadow-xs"
+                >
+                  <Plus className="h-3.5 w-3.5" />
+                  <span>+ Add Decision Maker</span>
+                </button>
               </div>
 
               <div className="space-y-3">
-                {target.contacts.map((c) => (
-                  <div key={c.id} className="rounded-xl border border-stone-800 bg-stone-950 p-3.5 flex flex-col justify-between space-y-2">
+                {target.contacts.map((c, index) => (
+                  <div key={c.id} className="rounded-xl border border-stone-800 bg-stone-950 p-3.5 flex flex-col justify-between space-y-2.5">
                     <div className="flex items-start justify-between">
                       <div>
                         <div className="flex items-center space-x-2">
-                          <span className="font-bold text-white text-xs">{c.name}</span>
+                          <span className="font-bold text-white text-xs sm:text-sm">{c.name}</span>
                           <span className="rounded bg-stone-850 px-1.5 py-0.2 text-[9px] font-mono text-stone-400 border border-stone-750">
                             {c.entity}
                           </span>
+                          {index === 0 ? (
+                            <span className="rounded bg-amber-500/10 px-1.5 py-0.2 text-[9px] font-mono font-bold text-amber-300 border border-amber-500/20 flex items-center space-x-0.5">
+                              <Star className="h-2.5 w-2.5 fill-amber-400 text-amber-400" />
+                              <span>PRIMARY</span>
+                            </span>
+                          ) : (
+                            <button
+                              onClick={() => onSetPrimaryContact && onSetPrimaryContact(target.id, c.id)}
+                              className="text-[9px] font-mono text-stone-500 hover:text-amber-400 flex items-center space-x-0.5 transition"
+                              title="Set as primary decision maker"
+                            >
+                              <Star className="h-2.5 w-2.5" />
+                              <span>Set Primary</span>
+                            </button>
+                          )}
                         </div>
                         <p className="text-[11px] text-emerald-400 font-medium">{c.title}</p>
                       </div>
 
-                      <span className={`rounded px-2 py-0.5 text-[9px] font-mono font-bold ${
-                        c.receptivityScore === "very_high"
-                          ? "bg-emerald-500/20 text-emerald-300"
-                          : "bg-cyan-500/20 text-cyan-300"
-                      }`}>
-                        {c.receptivityScore.replace("_", " ").toUpperCase()} RECEPTIVITY
-                      </span>
+                      <div className="flex items-center space-x-1.5">
+                        <span className={`rounded px-2 py-0.5 text-[9px] font-mono font-bold ${
+                          c.receptivityScore === "very_high"
+                            ? "bg-emerald-500/20 text-emerald-300"
+                            : "bg-cyan-500/20 text-cyan-300"
+                        }`}>
+                          {c.receptivityScore.replace("_", " ").toUpperCase()} RECEPTIVITY
+                        </span>
+                        <button
+                          onClick={() => onOpenEditContact(target, c)}
+                          title="Edit Contact Person"
+                          className="rounded-lg border border-stone-800 bg-stone-900 p-1 text-stone-400 hover:text-white hover:bg-stone-800 transition"
+                        >
+                          <Pencil className="h-3 w-3" />
+                        </button>
+                      </div>
                     </div>
 
                     <p className="text-[11px] text-stone-400 leading-snug">
                       {c.roleSummary}
                     </p>
 
-                    <div className="flex flex-wrap items-center gap-3 pt-2 border-t border-stone-850 text-[11px] font-mono text-stone-300">
-                      <div className="flex items-center space-x-1.5">
-                        <Mail className="h-3 w-3 text-stone-500" />
-                        <a href={`mailto:${c.email}`} className="hover:text-emerald-400 underline">{c.email}</a>
-                        <button onClick={() => handleCopy(c.email, c.id + "-email")} className="text-stone-500 hover:text-stone-300">
-                          {copiedText === c.id + "-email" ? <Check className="h-3 w-3 text-emerald-400" /> : <Copy className="h-3 w-3" />}
-                        </button>
-                      </div>
-
-                      <div className="flex items-center space-x-1.5">
-                        <Phone className="h-3 w-3 text-stone-500" />
-                        <a href={`tel:${c.phone.replace(/[^0-9]/g, "")}`} className="hover:text-emerald-400">{c.phone}</a>
-                      </div>
-
-                      {c.linkedIn && (
-                        <div className="flex items-center space-x-1 text-cyan-400">
-                          <Globe className="h-3 w-3" />
-                          <span className="truncate max-w-[140px]">{c.linkedIn}</span>
+                    <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-stone-850 text-[11px] font-mono text-stone-300">
+                      <div className="flex flex-wrap items-center gap-3">
+                        <div className="flex items-center space-x-1.5">
+                          <Mail className="h-3 w-3 text-stone-500" />
+                          <a href={`mailto:${c.email}`} className="hover:text-emerald-400 underline">{c.email}</a>
+                          <button onClick={() => handleCopy(c.email, c.id + "-email")} className="text-stone-500 hover:text-stone-300">
+                            {copiedText === c.id + "-email" ? <Check className="h-3 w-3 text-emerald-400" /> : <Copy className="h-3 w-3" />}
+                          </button>
                         </div>
-                      )}
+
+                        <div className="flex items-center space-x-1.5">
+                          <Phone className="h-3 w-3 text-stone-500" />
+                          <a href={`tel:${c.phone.replace(/[^0-9]/g, "")}`} className="hover:text-emerald-400 font-bold text-emerald-400">{c.phone}</a>
+                        </div>
+
+                        {c.linkedIn && (
+                          <div className="flex items-center space-x-1 text-cyan-400">
+                            <Globe className="h-3 w-3" />
+                            <span className="truncate max-w-[140px]">{c.linkedIn}</span>
+                          </div>
+                        )}
+                      </div>
+
+                      <button
+                        onClick={() => onOpenLogCall(target, c)}
+                        className="flex items-center space-x-1 rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-2 py-0.5 text-[10px] text-cyan-300 hover:bg-cyan-500/20 transition"
+                      >
+                        <PhoneCall className="h-2.5 w-2.5" />
+                        <span>Log Call</span>
+                      </button>
                     </div>
                   </div>
                 ))}

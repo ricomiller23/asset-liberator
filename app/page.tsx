@@ -3,8 +3,19 @@
 import React, { useState, useEffect, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
-import { TargetCompany, SearchFilters, CrmStage, PriorityLevel } from "@/lib/types";
-import { getStoredTargets, saveStoredTargets, updateTargetCrmStage, addTargetCrmNote, logTargetActivity } from "@/lib/crm";
+import { TargetCompany, SearchFilters, CrmStage, PriorityLevel, ExecutiveContact } from "@/lib/types";
+import { 
+  getStoredTargets, 
+  saveStoredTargets, 
+  updateTargetCrmStage, 
+  addTargetCrmNote, 
+  logTargetActivity,
+  updateTargetContact,
+  addTargetContact,
+  setPrimaryContact,
+  deleteTargetContact,
+  logCallActivity
+} from "@/lib/crm";
 import { Navbar } from "@/components/Navbar";
 import { FilterBar } from "@/components/FilterBar";
 import { TargetCard } from "@/components/TargetCard";
@@ -12,28 +23,47 @@ import { TargetDrawer } from "@/components/TargetDrawer";
 import { DealPlaybookModal } from "@/components/DealPlaybookModal";
 import { OutreachModal } from "@/components/OutreachModal";
 import { CrmPipelineView } from "@/components/CrmPipelineView";
+import { EditContactModal } from "@/components/EditContactModal";
+import { LogCallModal } from "@/components/LogCallModal";
+import { GlobalSearchModal } from "@/components/GlobalSearchModal";
 import { 
   ShieldAlert, 
   Sparkles, 
+  Flame, 
   Scale, 
   Layers, 
-  RefreshCcw, 
-  CheckCircle2, 
-  FileText, 
-  TrendingUp, 
-  DollarSign 
+  Users, 
+  Download, 
+  RefreshCcw,
+  CheckCircle2,
+  FileCheck2,
+  PhoneCall
 } from "lucide-react";
 
 function AssetLiberatorMain() {
+  const searchParams = useSearchParams();
+  const initialTierParam = searchParams.get("revenueTier");
+  const initialTier = (initialTierParam === "commercial" || initialTierParam === "pre_revenue_ip") 
+    ? initialTierParam 
+    : "all";
+
   const [activeTab, setActiveTab] = useState<"screener" | "crm">("screener");
-  const [localTargets, setLocalTargets] = useState<TargetCompany[]>([]);
   const [activeDrawerTarget, setActiveDrawerTarget] = useState<TargetCompany | null>(null);
   const [activePlaybookTarget, setActivePlaybookTarget] = useState<TargetCompany | null>(null);
   const [activeOutreachTarget, setActiveOutreachTarget] = useState<TargetCompany | null>(null);
+  
+  // New CRM & Contact Management Modals
+  const [editContactTarget, setEditContactTarget] = useState<TargetCompany | null>(null);
+  const [contactToEdit, setContactToEdit] = useState<ExecutiveContact | null>(null);
+  const [isEditContactOpen, setIsEditContactOpen] = useState(false);
 
-  const searchParams = useSearchParams();
-  const initialTier = (searchParams.get("revenueTier") as SearchFilters["revenueTier"]) || "all";
+  const [logCallTarget, setLogCallTarget] = useState<TargetCompany | null>(null);
+  const [logCallContact, setLogCallContact] = useState<ExecutiveContact | null>(null);
+  const [isLogCallOpen, setIsLogCallOpen] = useState(false);
 
+  const [isGlobalSearchOpen, setIsGlobalSearchOpen] = useState(false);
+
+  const [localTargets, setLocalTargets] = useState<TargetCompany[]>([]);
   const [filters, setFilters] = useState<SearchFilters>({
     query: "",
     sector: "all",
@@ -69,22 +99,43 @@ function AssetLiberatorMain() {
     },
   });
 
-  // Sync API data with locally stored CRM modifications
+  // Sync API data with locally stored CRM modifications & custom contacts
   const displayedTargets: TargetCompany[] = useMemo(() => {
     const rawList: TargetCompany[] = apiData?.targets || localTargets;
     if (localTargets.length === 0) return rawList;
 
-    return rawList.map((target) => {
+    let merged = rawList.map((target) => {
       const match = localTargets.find((lt) => lt.id === target.id);
       if (match) {
         return {
           ...target,
           crm: match.crm,
+          contacts: match.contacts && match.contacts.length > 0 ? match.contacts : target.contacts,
         };
       }
       return target;
     });
-  }, [apiData, localTargets]);
+
+    // Local query filter fallback so search finds updated people immediately
+    if (filters.query) {
+      const q = filters.query.toLowerCase().trim();
+      const digits = q.replace(/[^0-9]/g, "");
+      merged = merged.filter((t) =>
+        t.ticker.toLowerCase().includes(q) ||
+        t.name.toLowerCase().includes(q) ||
+        t.asset.subsidiaryName.toLowerCase().includes(q) ||
+        t.sector.toLowerCase().includes(q) ||
+        t.contacts.some((c) =>
+          c.name.toLowerCase().includes(q) ||
+          c.title.toLowerCase().includes(q) ||
+          c.email.toLowerCase().includes(q) ||
+          (digits.length >= 3 && c.phone.replace(/[^0-9]/g, "").includes(digits))
+        )
+      );
+    }
+
+    return merged;
+  }, [apiData, localTargets, filters.query]);
 
   // Aggregated Stats
   const stats = useMemo(() => {
@@ -103,33 +154,91 @@ function AssetLiberatorMain() {
     };
   }, [displayedTargets]);
 
+  // Sync drawer target with latest local modifications
+  const syncActiveDrawer = (updatedList: TargetCompany[], targetId: string) => {
+    if (activeDrawerTarget && activeDrawerTarget.id === targetId) {
+      const match = updatedList.find((t) => t.id === targetId);
+      if (match) setActiveDrawerTarget(match);
+    }
+  };
+
   // CRM Handlers
   const handleUpdateStage = (targetId: string, stage: CrmStage, priority?: PriorityLevel) => {
     const updated = updateTargetCrmStage(targetId, stage, priority);
     setLocalTargets(updated);
-    if (activeDrawerTarget && activeDrawerTarget.id === targetId) {
-      const targetMatch = updated.find((t) => t.id === targetId);
-      if (targetMatch) setActiveDrawerTarget(targetMatch);
-    }
+    syncActiveDrawer(updated, targetId);
   };
 
   const handleAddNote = (targetId: string, text: string) => {
     const updated = addTargetCrmNote(targetId, text, "Special Situations Desk");
     setLocalTargets(updated);
-    if (activeDrawerTarget && activeDrawerTarget.id === targetId) {
-      const targetMatch = updated.find((t) => t.id === targetId);
-      if (targetMatch) setActiveDrawerTarget(targetMatch);
-    }
+    syncActiveDrawer(updated, targetId);
   };
 
   const handleLogOutreach = (targetId: string, contactName: string, summary: string) => {
     let updated = updateTargetCrmStage(targetId, "outreach_sent");
     updated = logTargetActivity(targetId, "email", summary);
     setLocalTargets(updated);
-    if (activeDrawerTarget && activeDrawerTarget.id === targetId) {
-      const targetMatch = updated.find((t) => t.id === targetId);
-      if (targetMatch) setActiveDrawerTarget(targetMatch);
+    syncActiveDrawer(updated, targetId);
+  };
+
+  // Contact Handlers
+  const handleSaveContact = (
+    targetId: string,
+    contactData: ExecutiveContact,
+    isNew: boolean,
+    setAsPrimary: boolean
+  ) => {
+    let updated: TargetCompany[];
+    if (isNew) {
+      updated = addTargetContact(targetId, contactData, setAsPrimary);
+    } else {
+      updated = updateTargetContact(targetId, contactData);
+      if (setAsPrimary) {
+        updated = setPrimaryContact(targetId, contactData.id);
+      }
     }
+    setLocalTargets(updated);
+    syncActiveDrawer(updated, targetId);
+  };
+
+  const handleDeleteContact = (targetId: string, contactId: string) => {
+    const updated = deleteTargetContact(targetId, contactId);
+    setLocalTargets(updated);
+    syncActiveDrawer(updated, targetId);
+  };
+
+  const handleSetPrimaryContact = (targetId: string, contactId: string) => {
+    const updated = setPrimaryContact(targetId, contactId);
+    setLocalTargets(updated);
+    syncActiveDrawer(updated, targetId);
+  };
+
+  const handleLogCall = (
+    targetId: string,
+    callDetails: {
+      contactName: string;
+      outcome: string;
+      notes: string;
+      nextFollowUpDate?: string;
+      suggestedStage?: CrmStage;
+    }
+  ) => {
+    const updated = logCallActivity(targetId, callDetails);
+    setLocalTargets(updated);
+    syncActiveDrawer(updated, targetId);
+  };
+
+  const handleOpenEditContact = (target: TargetCompany, contact: ExecutiveContact | null) => {
+    setEditContactTarget(target);
+    setContactToEdit(contact);
+    setIsEditContactOpen(true);
+  };
+
+  const handleOpenLogCall = (target: TargetCompany, contact: ExecutiveContact | null) => {
+    setLogCallTarget(target);
+    setLogCallContact(contact);
+    setIsLogCallOpen(true);
   };
 
   return (
@@ -137,6 +246,7 @@ function AssetLiberatorMain() {
       <Navbar
         activeTab={activeTab}
         onTabChange={setActiveTab}
+        onOpenGlobalSearch={() => setIsGlobalSearchOpen(true)}
         stats={stats}
       />
 
@@ -219,6 +329,8 @@ function AssetLiberatorMain() {
                     onOpenDrawer={(t) => setActiveDrawerTarget(t)}
                     onOpenPlaybook={(t) => setActivePlaybookTarget(t)}
                     onOpenOutreach={(t) => setActiveOutreachTarget(t)}
+                    onOpenEditContact={handleOpenEditContact}
+                    onOpenLogCall={handleOpenLogCall}
                   />
                 ))}
               </div>
@@ -231,6 +343,9 @@ function AssetLiberatorMain() {
             onOpenOutreach={(t) => setActiveOutreachTarget(t)}
             onUpdateStage={handleUpdateStage}
             onAddNote={handleAddNote}
+            onOpenEditContact={handleOpenEditContact}
+            onOpenLogCall={handleOpenLogCall}
+            onSetPrimaryContact={handleSetPrimaryContact}
           />
         )}
 
@@ -251,6 +366,9 @@ function AssetLiberatorMain() {
           setActiveDrawerTarget(null);
           setActiveOutreachTarget(t);
         }}
+        onOpenEditContact={handleOpenEditContact}
+        onOpenLogCall={handleOpenLogCall}
+        onSetPrimaryContact={handleSetPrimaryContact}
       />
 
       {/* Statutory Deal Playbook & Term Sheet Modal */}
@@ -266,6 +384,45 @@ function AssetLiberatorMain() {
         isOpen={!!activeOutreachTarget}
         onClose={() => setActiveOutreachTarget(null)}
         onLogOutreach={handleLogOutreach}
+      />
+
+      {/* Edit Decision Maker / Contact Modal */}
+      <EditContactModal
+        isOpen={isEditContactOpen}
+        onClose={() => {
+          setIsEditContactOpen(false);
+          setEditContactTarget(null);
+          setContactToEdit(null);
+        }}
+        target={editContactTarget}
+        contactToEdit={contactToEdit}
+        onSaveContact={handleSaveContact}
+        onDeleteContact={handleDeleteContact}
+      />
+
+      {/* Log Executive Call Modal */}
+      <LogCallModal
+        isOpen={isLogCallOpen}
+        onClose={() => {
+          setIsLogCallOpen(false);
+          setLogCallTarget(null);
+          setLogCallContact(null);
+        }}
+        target={logCallTarget}
+        initialContact={logCallContact}
+        onLogCall={handleLogCall}
+        onOpenEditContact={handleOpenEditContact}
+      />
+
+      {/* Global Search Omnibar Modal (Cmd+K / Search Any Entity) */}
+      <GlobalSearchModal
+        isOpen={isGlobalSearchOpen}
+        onClose={() => setIsGlobalSearchOpen(false)}
+        targets={displayedTargets}
+        onOpenDrawer={(t) => setActiveDrawerTarget(t)}
+        onOpenEditContact={handleOpenEditContact}
+        onOpenLogCall={handleOpenLogCall}
+        onNavigateToCrm={() => setActiveTab("crm")}
       />
     </div>
   );

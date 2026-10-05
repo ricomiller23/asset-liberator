@@ -1,10 +1,10 @@
 import React from "react";
-import Link from "next/link";
-import { ShieldAlert, Database, Layers, Users, Download, ArrowUpRight, Activity } from "lucide-react";
+import { ShieldAlert, Database, Layers, Users, Download, Search, Command } from "lucide-react";
 
 interface NavbarProps {
   activeTab: "screener" | "crm";
   onTabChange: (tab: "screener" | "crm") => void;
+  onOpenGlobalSearch: () => void;
   stats?: {
     totalSubsidiaryRevenue: number;
     totalSeniorDebt: number;
@@ -14,7 +14,12 @@ interface NavbarProps {
   };
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, stats }) => {
+export const Navbar: React.FC<NavbarProps> = ({
+  activeTab,
+  onTabChange,
+  onOpenGlobalSearch,
+  stats,
+}) => {
   return (
     <header className="sticky top-0 z-40 border-b border-stone-800 bg-stone-950/95 backdrop-blur-md">
       {/* Top Telemetry Bar */}
@@ -50,8 +55,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, stats })
       </div>
 
       {/* Main Navigation */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-2.5 sm:px-6 sm:py-3">
-        <div className="flex items-center space-x-2.5 sm:space-x-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-2.5 sm:px-6 sm:py-3 gap-3">
+        <div className="flex items-center space-x-2.5 sm:space-x-3 shrink-0">
           <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500/20 via-cyan-500/20 to-amber-500/10 border border-emerald-500/30 text-emerald-400">
             <ShieldAlert className="h-5 w-5" />
           </div>
@@ -64,13 +69,34 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, stats })
                 SPECIAL SITUATIONS
               </span>
             </div>
-            <h1 className="text-xs sm:text-sm font-semibold tracking-tight text-stone-300 truncate">
+            <h1 className="text-xs sm:text-sm font-semibold tracking-tight text-stone-300 truncate hidden xs:block">
               Public Carve-Out & Clean Shell Rollup Engine
             </h1>
           </div>
         </div>
 
-        {/* View Switcher & Actions */}
+        {/* Global Search Bar (Center / Omnibar Trigger) */}
+        <div className="flex-1 max-w-md mx-2">
+          <button
+            onClick={onOpenGlobalSearch}
+            className="w-full flex items-center justify-between rounded-xl border border-stone-800 bg-stone-900/90 px-3 py-1.5 sm:py-2 text-xs text-stone-400 hover:border-emerald-500/50 hover:text-stone-200 transition group shadow-inner"
+          >
+            <div className="flex items-center space-x-2 truncate">
+              <Search className="h-3.5 w-3.5 text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" />
+              <span className="truncate text-stone-400 group-hover:text-stone-200">
+                <span className="hidden sm:inline">Search people, companies, tickers...</span>
+                <span className="sm:hidden">Search people & tickers...</span>
+              </span>
+            </div>
+            <div className="flex items-center space-x-1 shrink-0 ml-2">
+              <kbd className="hidden md:inline-flex items-center rounded border border-stone-800 bg-stone-950 px-1.5 py-0.5 text-[9px] font-mono text-stone-400 font-semibold">
+                ⌘K
+              </kbd>
+            </div>
+          </button>
+        </div>
+
+        {/* View Switcher & Export */}
         <div className="flex items-center space-x-1.5 sm:space-x-3 shrink-0">
           <div className="flex rounded-xl bg-stone-900 p-0.5 sm:p-1 border border-stone-800 text-xs">
             <button
@@ -105,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeTab, onTabChange, stats })
           <a
             href="/api/export?format=csv"
             download
-            className="hidden md:inline-flex items-center space-x-1.5 rounded-xl border border-stone-750 bg-stone-900 px-3 py-1.5 text-xs font-semibold text-stone-300 hover:bg-stone-850 hover:text-white transition shadow-xs"
+            className="hidden lg:inline-flex items-center space-x-1.5 rounded-xl border border-stone-750 bg-stone-900 px-3 py-1.5 text-xs font-semibold text-stone-300 hover:bg-stone-850 hover:text-white transition shadow-xs"
           >
             <Download className="h-3.5 w-3.5 text-stone-400" />
             <span>Export CSV</span>

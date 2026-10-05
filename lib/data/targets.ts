@@ -1713,7 +1713,28 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 92,
       "rollupOpportunityIndex": 87
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ladx-1",
+        "name": "Stephen Snowdy",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "ssnowdy@cytrx.com",
+        "phone": "(310) 826-5648",
+        "roleSummary": "Chief Executive Officer overseeing corporate operations and strategic restructuring.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ladx-2",
+        "name": "Stephen Caloz",
+        "title": "Chief Financial Officer",
+        "entity": "Public Parent",
+        "email": "scaloz@cytrx.com",
+        "phone": "(310) 826-5648",
+        "roleSummary": "Chief Financial Officer signatory on SEC Form 8-K managing corporate debt and treasury.",
+        "receptivityScore": "high"
+      }
+    ],
     "crm": {
       "stage": "new",
       "priority": "high",
