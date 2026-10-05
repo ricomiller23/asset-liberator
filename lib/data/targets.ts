@@ -1866,6 +1866,16 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
+        "id": "c-znog-aboudi",
+        "name": "David Aboudi, Esq.",
+        "title": "Securities Counsel (The Crone Law Group, P.C.)",
+        "entity": "Legal Counsel",
+        "email": "daboudi@cronelawgroup.com",
+        "phone": "(646) 861-7891",
+        "roleSummary": "Designated outside securities and corporate legal counsel of record on SEC Form S-3 and Form 8-K registration statements for Zion Oil & Gas, Inc.",
+        "receptivityScore": "high"
+      },
+      {
         "id": "c-znog-dunn",
         "name": "Robert Dunn",
         "title": "Chief Executive Officer & Chairman of the Board",
@@ -1901,6 +1911,12 @@ const rawTargets: TargetCompany[] = [
       "priority": "critical",
       "notes": [
         {
+          "id": "note-znog-legal-1791228499719",
+          "date": "2026-10-05",
+          "author": "Legal & Outbound Audit Desk",
+          "text": "1-Hour audit on ricomiller@icloud.com confirmed PHIL, LADX, QPRC, and IQST delivered without bounce. ZNOG corporate address rejected dallas@zionoil.com (SMTP 550 5.7.133 SenderNotAuthenticatedForGroup). Per protocol, routed formal carve-out proposal to designated outside securities legal counsel: David Aboudi, Esq. at The Crone Law Group, P.C. (daboudi@cronelawgroup.com, (646) 861-7891). Dispatched via Apple Mail from ricomiller@icloud.com at 12:27 PM."
+        },
+        {
           "id": "note-next-znog-2",
           "date": "2026-10-05",
           "author": "Special Situations Research",
@@ -1926,6 +1942,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-znog-legal-1791228499719",
+          "date": "2026-10-05",
+          "type": "email",
+          "summary": "Dispatched formal Rig 9 & Meged exploration carve-out proposal to outside securities legal counsel David Aboudi, Esq. (The Crone Law Group, P.C., daboudi@cronelawgroup.com) for transmission to Board."
+        },
         {
           "id": "act-next-znog-2",
           "date": "2026-10-05",
