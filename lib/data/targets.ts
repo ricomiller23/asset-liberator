@@ -2,7 +2,7 @@ import { TargetCompany } from "../types";
 import { enrichTargetScores } from "../scoring";
 
 /**
- * AUDIT-RECONCILED TARGETS DATA — 2026-10-06
+ * AUDIT-RECONCILED TARGETS DATA — 2026-10-07
  * Fully reconciled with verified C-Suite Management, Legal Departments & Outside Securities Counsel
  * 
  * - Executive Phones: Verified direct corporate lines and executive office direct numbers
@@ -10,6 +10,7 @@ import { enrichTargetScores } from "../scoring";
  * - Verified Receipts: Counsel from Loeb & Loeb, Cleary Gottlieb, Cozen O'Connor, McGuireWoods, Kirton McConkie,
  *   Brunson Chandler & Jones, Ellenoff Grossman & Schole, Lucosky Brookman, The Crone Law Group, and BMC Group liquidator
  * - Dual Filing Links: Retains BOTH the Baseline 10-K filing AND the Actual Most Recent SEC Filing
+ * - Bounce-Resolved Routing: Verified active MX domains and re-routed to lead executive & securities counsel
  */
 
 const rawTargets: TargetCompany[] = [
@@ -124,12 +125,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-xela-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized carve-out proposals to outside securities counsel Erik Mengwall (Loeb & Loeb) and restructuring counsel Sean O'Neal (Cleary Gottlieb) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-xela-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized carve-out proposals to outside securities counsel Erik Mengwall (Loeb & Loeb) and restructuring counsel Sean O'Neal (Cleary Gottlieb) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-xela-legal-2026",
           "date": "2026-10-06",
@@ -255,7 +256,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Hopkins",
         "title": "Chief Executive Officer (Appointed Sept 2026)",
         "entity": "Public Parent",
-        "email": "ghopkins@taptechnologies.io",
+        "email": "ghopkins@taprealestate.com",
         "phone": "(203) 930-7427",
         "roleSummary": "Appointed CEO per Form 8-K dated September 10, 2026, succeeding founder Brian Foote.",
         "receptivityScore": "high"
@@ -276,7 +277,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gayle Coleman, Esq.",
         "title": "In-House Legal Counsel",
         "entity": "Public Parent",
-        "email": "gcoleman@taptechnologies.io",
+        "email": "gcoleman@taprealestate.com",
         "phone": "(203) 930-7427",
         "roleSummary": "Internal legal counsel managing regulatory and corporate legal affairs.",
         "receptivityScore": "high"
@@ -286,12 +287,18 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-rwax-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized carve-out proposals to CEO Gregory Hopkins, securities counsel James Meadows (CM Law), and in-house counsel Gayle Coleman via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-rwax-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Dispatched institutional proposals to CEO Gregory Hopkins (ghopkins@taprealestate.com) and in-house counsel Gayle Coleman (gcoleman@taprealestate.com) at verified active Google Workspace corporate domain taprealestate.com."
+        },
+        {
+          "id": "note-rwax-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized carve-out proposals to CEO Gregory Hopkins, securities counsel James Meadows (CM Law), and in-house counsel Gayle Coleman via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-rwax-legal-2026",
           "date": "2026-10-06",
@@ -325,7 +332,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "EDGAR Form 10-K archive verified 200 OK."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1119190/000149315226013966/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -435,9 +442,9 @@ const rawTargets: TargetCompany[] = [
       {
         "id": "c-opti-whitley",
         "name": "Samuel E. Whitley, Esq.",
-        "title": "Securities Counsel (Whitley LLP Attorneys at Law)",
+        "title": "Outside Securities Counsel (Whitley Law Group)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleyllp.com",
+        "email": "swhitley@whitleylawgroup.com",
         "phone": "(281) 206-0433",
         "address": "24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494",
         "roleSummary": "Securities attorney providing legal opinions and SEC regulatory compliance.",
@@ -448,12 +455,18 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-opti-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized carve-out proposals to CEO Gregg Boehmer, founder Roger Pawson, and outside counsel Samuel Whitley (Whitley LLP) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-opti-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Dispatched carve-out and noteholder settlement proposal to outside securities counsel Samuel E. Whitley at verified firm domain swhitley@whitleylawgroup.com."
+        },
+        {
+          "id": "note-opti-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized carve-out proposals to CEO Gregg Boehmer, founder Roger Pawson, and outside counsel Samuel Whitley (Whitley LLP) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-opti-legal-2026",
           "date": "2026-10-06",
@@ -487,7 +500,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1557340/000107997318000551/optec_10k-063018.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -604,18 +617,35 @@ const rawTargets: TargetCompany[] = [
         "phone": "(480) 702-2431",
         "roleSummary": "Founder and Executive Chairman holding voting authority and operational oversight.",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-alpp-kmc-plloyd",
+        "name": "C. Parkinson Lloyd, Esq.",
+        "title": "Partner & Lead SEC Counsel (Kirton McConkie)",
+        "entity": "Legal Counsel",
+        "email": "plloyd@kmclaw.com",
+        "phone": "(801) 328-3600",
+        "address": "50 S Main St, Suite 1600, Salt Lake City, UT 84144",
+        "roleSummary": "Lead SEC and corporate securities partner at Kirton McConkie representing Alpine 4 Holdings in periodic filings and capital restructurings.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-alpp-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched outside securities counsel inquiry to David Aboudi (Kirton McConkie) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-alpp-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Replaced departed counsel with Kirton McConkie Lead SEC Partner C. Parkinson Lloyd, Esq. (plloyd@kmclaw.com, (801) 328-3600). Dispatched subsidiary carve-out & debt restructuring proposal."
+        },
+        {
+          "id": "note-alpp-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched outside securities counsel inquiry to David Aboudi (Kirton McConkie) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-alpp-legal-2026",
           "date": "2026-10-06",
@@ -649,7 +679,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1606698/000162828023016240/alpp-20221231.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -772,12 +802,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-sing-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized carve-out proposals to CEO Wil Ralston, securities counsel Stephen Older (McGuireWoods), and VP Corey Lambrecht via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-sing-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized carve-out proposals to CEO Wil Ralston, securities counsel Stephen Older (McGuireWoods), and VP Corey Lambrecht via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-sing-legal-2026",
           "date": "2026-10-06",
@@ -934,12 +964,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-phil-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposal to outside securities counsel Christopher Dieterich (Dieterich & Associates) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-phil-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposal to outside securities counsel Christopher Dieterich (Dieterich & Associates) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-phil-legal-2026",
           "date": "2026-10-06",
@@ -1100,7 +1130,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey E. Holman, Esq.",
         "title": "Chief Executive Officer & Chairman",
         "entity": "Public Parent",
-        "email": "jholman@healthiercmc.com",
+        "email": "jholman@hcmc1.com",
         "phone": "(305) 600-5004",
         "roleSummary": "CEO, Chairman, and practicing Florida attorney overseeing patent monetization and grocery subsidiaries.",
         "receptivityScore": "high"
@@ -1115,18 +1145,35 @@ const rawTargets: TargetCompany[] = [
         "address": "1200 19th Street NW, Washington, DC 20036",
         "roleSummary": "Lead IP litigation partner at Cozen O'Connor spearheading HCMC's patent enforcement and licensing campaigns.",
         "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-hcmc-santi",
+        "name": "Christopher Santi",
+        "title": "President & Chief Operating Officer",
+        "entity": "Public Parent",
+        "email": "csanti@hcmc1.com",
+        "phone": "(305) 600-5004",
+        "address": "3800 North 28th Way, Suite 1, Hollywood, FL 33020",
+        "roleSummary": "President and COO overseeing retail natural grocery footprint and corporate operations.",
+        "receptivityScore": "high"
       }
     ],
     "crm": {
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-hcmc-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to CEO Jeffrey Holman, corporate counsel Martin Schrier (Cozen O'Connor), and IP litigation counsel Barry Golob (Cozen O'Connor) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-hcmc-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Dispatched grocery subsidiary carve-out and non-dilutive liquidity proposals directly to CEO Jeffrey Holman (jholman@hcmc1.com) and COO Christopher Santi (csanti@hcmc1.com) at active corporate domain hcmc1.com."
+        },
+        {
+          "id": "note-hcmc-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to CEO Jeffrey Holman, corporate counsel Martin Schrier (Cozen O'Connor), and IP litigation counsel Barry Golob (Cozen O'Connor) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-hcmc-legal-2026",
           "date": "2026-10-06",
@@ -1160,7 +1207,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/844856/000149315226013232/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1273,12 +1320,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-ozsc-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to CEO Brian Conway and outside securities counsel Lance Brunson (Brunson Chandler & Jones) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-ozsc-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to CEO Brian Conway and outside securities counsel Lance Brunson (Brunson Chandler & Jones) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-ozsc-legal-2026",
           "date": "2026-10-06",
@@ -1404,7 +1451,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Branden T. Burningham, Esq.",
         "title": "Outside Securities Counsel (Burningham Law Group)",
         "entity": "Legal Counsel",
-        "email": "bburningham@burninghamlawgroup.com",
+        "email": "btb@burninglaw.com",
         "phone": "(385) 355-5189",
         "address": "455 E. 500 S., Suite 205, Salt Lake City, UT 84111",
         "roleSummary": "Securities counsel responsible for preparing regulatory opinion letters and OTCQB periodic compliance.",
@@ -1425,12 +1472,18 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-rgbp-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to CEO David Koos and outside securities counsel Branden Burningham (Burningham Law Group) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-rgbp-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Dispatched tailored oncology patent estate monetization & senior debt compromise proposal to outside securities counsel Branden T. Burningham at verified firm domain btb@burninglaw.com."
+        },
+        {
+          "id": "note-rgbp-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to CEO David Koos and outside securities counsel Branden Burningham (Burningham Law Group) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-rgbp-legal-2026",
           "date": "2026-10-06",
@@ -1464,7 +1517,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/1589150/000149315225029526/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -1587,12 +1640,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-cydy-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to Chief Legal Officer Tyler Blok and CEO Dr. Jacob Lalezari via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-cydy-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to Chief Legal Officer Tyler Blok and CEO Dr. Jacob Lalezari via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-cydy-legal-2026",
           "date": "2026-10-06",
@@ -1750,12 +1803,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-nwbo-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to CEO Linda Powers and litigation counsel Daniel Sommers (Cohen Milstein) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-nwbo-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to CEO Linda Powers and litigation counsel Daniel Sommers (Cohen Milstein) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-nwbo-legal-2026",
           "date": "2026-10-06",
@@ -1913,12 +1966,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-nlst-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to CEO C.K. Hong and lead trial counsel Jason Sheasby (Irell & Manella) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-nlst-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to CEO C.K. Hong and lead trial counsel Jason Sheasby (Irell & Manella) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-nlst-legal-2026",
           "date": "2026-10-06",
@@ -2085,12 +2138,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
-      {
-        "id": "note-iqst-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposal to outside securities counsel Scott Doney (The Doney Law Firm) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-iqst-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposal to outside securities counsel Scott Doney (The Doney Law Firm) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-iqst-legal-2026",
           "date": "2026-10-06",
@@ -2646,12 +2699,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "high",
       "notes": [
-      {
-        "id": "note-qron-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposal to CEO & Corporate Counsel Jonah Martin Meer via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-qron-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposal to CEO & Corporate Counsel Jonah Martin Meer via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-qron-legal-2026",
           "date": "2026-10-06",
@@ -2802,18 +2855,46 @@ const rawTargets: TargetCompany[] = [
         "phone": "(508) 230-1828",
         "roleSummary": "Board director with securities attorney and M&A background (former Sidley Austin LLP attorney, Wharton / Vanderbilt JD/MBA).",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-pbio-lucbro-jlucosky",
+        "name": "Joseph Lucosky, Esq.",
+        "title": "Managing Partner & Lead SEC Counsel (Lucosky Brookman LLP)",
+        "entity": "Legal Counsel",
+        "email": "jlucosky@lucbro.com",
+        "phone": "(732) 395-4400",
+        "address": "101 Wood Avenue South, 5th Floor, Woodbridge, NJ 08830",
+        "roleSummary": "Managing partner representing PBIO across corporate financings and SEC filings.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-pbio-lucbro-sbrookman",
+        "name": "Seth Brookman, Esq.",
+        "title": "Founding Partner & Head of Banking/Finance (Lucosky Brookman LLP)",
+        "entity": "Legal Counsel",
+        "email": "sbrookman@lucbro.com",
+        "phone": "(732) 395-4400",
+        "address": "101 Wood Avenue South, 5th Floor, Woodbridge, NJ 08830",
+        "roleSummary": "Founding partner leading debt and structured banking practice group for capital transactions.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
       "stage": "outreach_sent",
       "priority": "high",
       "notes": [
-      {
-        "id": "note-pbio-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to CEO Richard Schumacher and outside counsel John O'Leary (Lucosky Brookman) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-pbio-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Dispatched UltraShear commercial carve-out & senior debt compromise proposals to Lucosky Brookman managing partner Joseph Lucosky (jlucosky@lucbro.com) and banking partner Seth Brookman (sbrookman@lucbro.com)."
+        },
+        {
+          "id": "note-pbio-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to CEO Richard Schumacher and outside counsel John O'Leary (Lucosky Brookman) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-pbio-legal-2026",
           "date": "2026-10-06",
@@ -2847,7 +2928,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/830656/000149315224023201/form10-k.htm",
     "baseline10KFilingType": "Form 10-K",
@@ -2948,9 +3029,9 @@ const rawTargets: TargetCompany[] = [
       {
         "id": "c-qprc-fabricant",
         "name": "Peter Fabricant, Esq.",
-        "title": "Outside Patent Litigation & Escrow Counsel (Fabricant LLP)",
+        "title": "Outside Patent Litigation & Escrow Counsel (Fabricant Rubino Lambrianakos LLP)",
         "entity": "Legal Counsel",
-        "email": "pfabricant@fabricantllp.com",
+        "email": "pfabricant@frlip.com",
         "phone": "(212) 257-5797",
         "address": "411 Theodore Fremd Ave, Rye, NY 10580",
         "roleSummary": "Lead patent litigation counsel managing escrow and patent monetization suits.",
@@ -2976,18 +3057,35 @@ const rawTargets: TargetCompany[] = [
         "phone": "(888) 743-7577",
         "roleSummary": "Chief Technology Officer directing patent evaluation and technical litigation support.",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-qprc-fabricant-alfred",
+        "name": "Alfred R. Fabricant, Esq.",
+        "title": "Founding Trial Partner (Fabricant Rubino Lambrianakos LLP)",
+        "entity": "Legal Counsel",
+        "email": "afabricant@frlip.com",
+        "phone": "(212) 257-5797",
+        "address": "411 Theodore Fremd Ave, Rye, NY 10580",
+        "roleSummary": "Founding partner and lead patent trial attorney prosecuting patent assertion campaigns and managing litigation escrow.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
       "stage": "outreach_sent",
       "priority": "high",
       "notes": [
-      {
-        "id": "note-qprc-outbound-20261007",
-        "date": "2026-10-07",
-        "author": "Eric Miller (Outbound Dispatch)",
-        "text": "Dispatched personalized proposals to outside securities counsel Asher Levitsky (Ellenoff Grossman & Schole) and litigation counsel Peter Fabricant (Fabricant LLP) via Apple Mail from ricomiller@icloud.com."
-      },
+        {
+          "id": "note-qprc-bounce-res-2026-10-07",
+          "date": "2026-10-07",
+          "author": "Special Situations Desk",
+          "text": "Resolved bounce: Dispatched litigation finance & note compromise proposals to patent trial team leaders Peter Fabricant (pfabricant@frlip.com) and Alfred Fabricant (afabricant@frlip.com) at rebranded firm domain frlip.com."
+        },
+        {
+          "id": "note-qprc-outbound-20261007",
+          "date": "2026-10-07",
+          "author": "Eric Miller (Outbound Dispatch)",
+          "text": "Dispatched personalized proposals to outside securities counsel Asher Levitsky (Ellenoff Grossman & Schole) and litigation counsel Peter Fabricant (Fabricant LLP) via Apple Mail from ricomiller@icloud.com."
+        },
         {
           "id": "note-qprc-legal-2026",
           "date": "2026-10-06",
@@ -3045,7 +3143,7 @@ const rawTargets: TargetCompany[] = [
           "summary": "10-K verified on SEC EDGAR."
         }
       ],
-      "lastContactDate": "2026-10-06"
+      "lastContactDate": "2026-10-07"
     },
     "baseline10KFilingUrl": "https://www.sec.gov/Archives/edgar/data/824416/000121390026036431/ea0282928-10k_quest.htm",
     "baseline10KFilingType": "Form 10-K",
