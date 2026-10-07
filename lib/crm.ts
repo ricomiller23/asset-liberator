@@ -1,7 +1,7 @@
 import { TargetCompany, CrmStage, CrmNote, CrmActivity, PriorityLevel, ExecutiveContact } from "./types";
 import { INITIAL_TARGETS } from "./data/targets";
 
-const STORAGE_KEY = "asset_liberator_targets_v4";
+const STORAGE_KEY = "asset_liberator_targets_v5";
 
 export function getStoredTargets(): TargetCompany[] {
   if (typeof window === "undefined") {

@@ -137,4 +137,43 @@ describe("CRM Pipeline State Management Suite", () => {
       expect(hasBounceNote).toBe(true);
     });
   });
+  it("verifies outside securities counsel or legal departments are registered for all key targets", () => {
+    const targets = getStoredTargets();
+    
+    // Check XELA Loeb & Loeb
+    const xela = targets.find((t) => t.ticker === "XELA");
+    expect(xela?.contacts.some((c) => c.name.includes("Erik Mengwall") && c.phone === "(212) 407-4050")).toBe(true);
+
+    // Check HCMC Cozen O'Connor
+    const hcmc = targets.find((t) => t.ticker === "HCMC");
+    expect(hcmc?.contacts.some((c) => c.name.includes("Martin T. Schrier") && c.phone === "(305) 704-5954")).toBe(true);
+
+    // Check SING McGuireWoods
+    const sing = targets.find((t) => t.ticker === "SING");
+    expect(sing?.contacts.some((c) => c.name.includes("Stephen E. Older") && c.phone === "(212) 548-2122")).toBe(true);
+
+    // Check QPRC Ellenoff Grossman
+    const qprc = targets.find((t) => t.ticker === "QPRC");
+    expect(qprc?.contacts.some((c) => c.name.includes("Asher S. Levitsky") && c.phone === "(212) 370-1300")).toBe(true);
+
+    // Check PBIO Lucosky Brookman
+    const pbio = targets.find((t) => t.ticker === "PBIO");
+    expect(pbio?.contacts.some((c) => c.name.includes("John O'Leary") && c.phone === "(732) 395-4400")).toBe(true);
+
+    // Check OZSC Brunson Chandler
+    const ozsc = targets.find((t) => t.ticker === "OZSC");
+    expect(ozsc?.contacts.some((c) => c.name.includes("Lance Brunson") && c.phone === "(801) 303-5730")).toBe(true);
+
+    // Check RGBP Burningham Law Group
+    const rgbp = targets.find((t) => t.ticker === "RGBP");
+    expect(rgbp?.contacts.some((c) => c.name.includes("Branden T. Burningham") && c.phone === "(385) 355-5189")).toBe(true);
+
+    // Check RWAX CM Law PLLC
+    const rwax = targets.find((t) => t.ticker === "RWAX");
+    expect(rwax?.contacts.some((c) => c.name.includes("James Meadows") && c.phone === "(202) 580-6500")).toBe(true);
+
+    // Check ALPP Kirton McConkie
+    const alpp = targets.find((t) => t.ticker === "ALPP");
+    expect(alpp?.contacts.some((c) => c.name.includes("David Aboudi") && c.phone === "(801) 328-3600")).toBe(true);
+  });
 });
