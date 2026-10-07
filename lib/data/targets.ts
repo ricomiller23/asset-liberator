@@ -124,6 +124,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-xela-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized carve-out proposals to outside securities counsel Erik Mengwall (Loeb & Loeb) and restructuring counsel Sean O'Neal (Cleary Gottlieb) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-xela-legal-2026",
           "date": "2026-10-06",
@@ -280,6 +286,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-rwax-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized carve-out proposals to CEO Gregory Hopkins, securities counsel James Meadows (CM Law), and in-house counsel Gayle Coleman via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-rwax-legal-2026",
           "date": "2026-10-06",
@@ -436,6 +448,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-opti-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized carve-out proposals to CEO Gregg Boehmer, founder Roger Pawson, and outside counsel Samuel Whitley (Whitley LLP) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-opti-legal-2026",
           "date": "2026-10-06",
@@ -592,6 +610,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-alpp-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched outside securities counsel inquiry to David Aboudi (Kirton McConkie) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-alpp-legal-2026",
           "date": "2026-10-06",
@@ -748,6 +772,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-sing-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized carve-out proposals to CEO Wil Ralston, securities counsel Stephen Older (McGuireWoods), and VP Corey Lambrecht via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-sing-legal-2026",
           "date": "2026-10-06",
@@ -904,6 +934,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-phil-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposal to outside securities counsel Christopher Dieterich (Dieterich & Associates) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-phil-legal-2026",
           "date": "2026-10-06",
@@ -1085,6 +1121,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-hcmc-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to CEO Jeffrey Holman, corporate counsel Martin Schrier (Cozen O'Connor), and IP litigation counsel Barry Golob (Cozen O'Connor) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-hcmc-legal-2026",
           "date": "2026-10-06",
@@ -1231,6 +1273,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-ozsc-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to CEO Brian Conway and outside securities counsel Lance Brunson (Brunson Chandler & Jones) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-ozsc-legal-2026",
           "date": "2026-10-06",
@@ -1377,6 +1425,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-rgbp-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to CEO David Koos and outside securities counsel Branden Burningham (Burningham Law Group) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-rgbp-legal-2026",
           "date": "2026-10-06",
@@ -1533,6 +1587,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-cydy-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to Chief Legal Officer Tyler Blok and CEO Dr. Jacob Lalezari via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-cydy-legal-2026",
           "date": "2026-10-06",
@@ -1690,6 +1750,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-nwbo-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to CEO Linda Powers and litigation counsel Daniel Sommers (Cohen Milstein) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-nwbo-legal-2026",
           "date": "2026-10-06",
@@ -1847,6 +1913,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-nlst-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to CEO C.K. Hong and lead trial counsel Jason Sheasby (Irell & Manella) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-nlst-legal-2026",
           "date": "2026-10-06",
@@ -2013,6 +2085,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "critical",
       "notes": [
+      {
+        "id": "note-iqst-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposal to outside securities counsel Scott Doney (The Doney Law Firm) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-iqst-legal-2026",
           "date": "2026-10-06",
@@ -2568,6 +2646,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+      {
+        "id": "note-qron-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposal to CEO & Corporate Counsel Jonah Martin Meer via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-qron-legal-2026",
           "date": "2026-10-06",
@@ -2724,6 +2808,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+      {
+        "id": "note-pbio-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to CEO Richard Schumacher and outside counsel John O'Leary (Lucosky Brookman) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-pbio-legal-2026",
           "date": "2026-10-06",
@@ -2892,6 +2982,12 @@ const rawTargets: TargetCompany[] = [
       "stage": "outreach_sent",
       "priority": "high",
       "notes": [
+      {
+        "id": "note-qprc-outbound-20261007",
+        "date": "2026-10-07",
+        "author": "Eric Miller (Outbound Dispatch)",
+        "text": "Dispatched personalized proposals to outside securities counsel Asher Levitsky (Ellenoff Grossman & Schole) and litigation counsel Peter Fabricant (Fabricant LLP) via Apple Mail from ricomiller@icloud.com."
+      },
         {
           "id": "note-qprc-legal-2026",
           "date": "2026-10-06",
