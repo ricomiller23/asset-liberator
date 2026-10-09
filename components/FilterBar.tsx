@@ -1,17 +1,24 @@
 import React from "react";
-import { Search, Filter, SlidersHorizontal, RefreshCcw, Sparkles } from "lucide-react";
-import { SearchFilters, PlaybookType, ExchangeType, FilingStatus } from "@/lib/types";
+import { Search, Filter, SlidersHorizontal, RefreshCcw, Sparkles, Clock, ShieldCheck, Layers } from "lucide-react";
+import { SearchFilters, PlaybookType, TargetTier, TargetVertical } from "@/lib/types";
 
 interface FilterBarProps {
   filters: SearchFilters;
   onFilterChange: (filters: SearchFilters) => void;
   resultCount: number;
+  tierCounts?: {
+    verified: number;
+    screened: number;
+    radar: number;
+    disqualified: number;
+  };
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
   filters,
   onFilterChange,
   resultCount,
+  tierCounts,
 }) => {
   const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onFilterChange({ ...filters, query: e.target.value });
@@ -34,19 +41,23 @@ export const FilterBar: React.FC<FilterBarProps> = ({
       filingStatus: "all",
       minRevenue: undefined,
       revenueTier: "all",
+      tier: "all",
+      vertical: "all",
+      leadTime: "all",
       sortBy: "roi",
     });
   };
 
   return (
-    <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-3 sm:p-4 shadow-sm backdrop-blur-md">
+    <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-3 sm:p-4 shadow-sm backdrop-blur-md space-y-3">
+      {/* Top Bar: Search + Sort */}
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
         {/* Search Input */}
         <div className="relative flex-1">
           <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-stone-500" />
           <input
             type="text"
-            placeholder="Search Ticker, Name, Subsidiary, IP (e.g. AERO, Precision, Avionics, 510(k))..."
+            placeholder="Search Ticker, Name, Subsidiary, EX-21 Entity, Lender (e.g. Streeterville, SourceHOV)..."
             value={filters.query || ""}
             onChange={handleQueryChange}
             className="w-full rounded-xl border border-stone-800 bg-stone-950 py-2 pl-9 sm:pl-10 pr-3 sm:pr-4 text-xs sm:text-sm text-white placeholder-stone-500 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
@@ -68,9 +79,10 @@ export const FilterBar: React.FC<FilterBarProps> = ({
               className="w-full sm:w-auto rounded-xl border border-stone-800 bg-stone-950 px-2.5 py-1.5 sm:px-3 sm:py-2 text-[11px] sm:text-xs font-medium text-stone-200 focus:border-emerald-500 focus:outline-none"
             >
               <option value="roi">Highest Rollup ROI</option>
+              <option value="catalyst_asc">⏱ Imminent Catalyst Clock (Days)</option>
               <option value="revenue">Highest Sub Revenue</option>
               <option value="distress">Vehicle Distress</option>
-              <option value="debt_asc">Lowest Debt Buyout</option>
+              <option value="debt_asc">Lowest Senior Debt Buyout</option>
             </select>
           </div>
 
@@ -84,22 +96,31 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         </div>
       </div>
 
-      {/* Revenue Profile Quick Chips - Expand down to $0 Revenue */}
-      <div className="mt-2.5 sm:mt-3 flex items-center gap-1.5 pt-2.5 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
-        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0">REVENUE TIER:</span>
+      {/* Row 1: Funnel Tiers (Verified, Screened, Radar, Excluded) */}
+      <div className="flex items-center gap-1.5 pt-2 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
+        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0 flex items-center gap-1">
+          <ShieldCheck className="h-3 w-3 text-emerald-400" />
+          FUNNEL TIERS:
+        </span>
         {[
-          { id: "all", label: "All Opportunities ($0 - $140M+)" },
-          { id: "commercial", label: "Tier A: Commercial ($1M+)" },
-          { id: "pre_revenue_ip", label: "Tier B: Pre-Revenue IP ($0)" },
+          { id: "all", label: "All Qualified (14)" },
+          { id: "verified", label: `Tier 1 Sourced (${tierCounts?.verified ?? 3} of 18) • Passed 3 Gates` },
+          { id: "screened", label: `Tier 2 Screened (${tierCounts?.screened ?? 5} of 18) • Mismatch Sourced` },
+          { id: "radar", label: `Tier 3 Radar (${tierCounts?.radar ?? 6} of 18) • Catalysts >90d` },
+          { id: "disqualified", label: `Excluded Filers (${tierCounts?.disqualified ?? 4} of 18) • NLST/NWBO/CYDY` },
         ].map((item) => {
-          const isSelected = (filters.revenueTier || "all") === item.id;
+          const isSelected = (filters.tier || "all") === item.id;
           return (
             <button
               key={item.id}
-              onClick={() => onFilterChange({ ...filters, revenueTier: item.id as any })}
+              onClick={() => onFilterChange({ ...filters, tier: item.id as any })}
               className={`rounded-lg px-2.5 py-1 text-[11px] sm:text-xs transition font-medium shrink-0 ${
                 isSelected
-                  ? "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-semibold"
+                  ? item.id === "disqualified"
+                    ? "bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold"
+                    : item.id === "verified"
+                    ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold"
+                    : "bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-semibold"
                   : "bg-stone-950 text-stone-400 hover:text-stone-200 border border-stone-850"
               }`}
             >
@@ -109,14 +130,72 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         })}
       </div>
 
-      {/* Playbook Quick Chips - Horizontal Scrollable on Mobile */}
-      <div className="mt-2.5 sm:mt-3.5 flex items-center gap-1.5 pt-2.5 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
-        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0">Playbook:</span>
+      {/* Row 2: Coherent Industry Verticals */}
+      <div className="flex items-center gap-1.5 pt-2 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
+        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0 flex items-center gap-1">
+          <Layers className="h-3 w-3 text-cyan-400" />
+          VERTICAL:
+        </span>
+        {[
+          { id: "all", label: "All Verticals" },
+          { id: "b2b_software", label: "B2B Software & Enterprise Services" },
+          { id: "specialty_manufacturing", label: "Specialty Industrial Manufacturing" },
+          { id: "solar_energy", label: "Solar & Energy Transition" },
+          { id: "pre_revenue_ip", label: "Pre-Revenue IP (Separate Product)" },
+        ].map((item) => {
+          const isSelected = (filters.vertical || "all") === item.id;
+          return (
+            <button
+              key={item.id}
+              onClick={() => onFilterChange({ ...filters, vertical: item.id as any })}
+              className={`rounded-lg px-2.5 py-1 text-[11px] sm:text-xs transition font-medium shrink-0 ${
+                isSelected
+                  ? "bg-purple-500/20 text-purple-300 border border-purple-500/40 font-semibold"
+                  : "bg-stone-950 text-stone-400 hover:text-stone-200 border border-stone-850"
+              }`}
+            >
+              {item.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Row 3: Catalyst Clock (Inside 90d vs Outside 90d) */}
+      <div className="flex items-center gap-1.5 pt-2 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
+        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0 flex items-center gap-1">
+          <Clock className="h-3 w-3 text-amber-400" />
+          CATALYST CLOCK:
+        </span>
+        {[
+          { id: "all", label: "All Clocks" },
+          { id: "inside_90d", label: "Active: Inside 90-Day Catalyst Window (Maturity / Forbearance)" },
+          { id: "outside_90d", label: "Radar: > 90 Days (Monitored)" },
+        ].map((item) => {
+          const isSelected = (filters.leadTime || "all") === item.id;
+          return (
+            <button
+              key={item.id}
+              onClick={() => onFilterChange({ ...filters, leadTime: item.id as any })}
+              className={`rounded-lg px-2.5 py-1 text-[11px] sm:text-xs transition font-medium shrink-0 ${
+                isSelected
+                  ? "bg-amber-500/20 text-amber-300 border border-amber-500/40 font-semibold"
+                  : "bg-stone-950 text-stone-400 hover:text-stone-200 border border-stone-850"
+              }`}
+            >
+              {item.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Row 4: Playbook Quick Chips */}
+      <div className="flex items-center gap-1.5 pt-2 border-t border-stone-800/80 text-xs overflow-x-auto scrollbar-none -mx-1 px-1 sm:mx-0 sm:px-0 sm:flex-wrap">
+        <span className="text-[10px] sm:text-[11px] font-mono text-stone-500 mr-1 uppercase tracking-wider shrink-0">PLAYBOOK:</span>
         {[
           { id: "all", label: "All Playbooks" },
           { id: "article_9_foreclosure", label: "Article 9 UCC Foreclosure" },
           { id: "section_363_sale", label: "Section 363 Stalking Horse" },
-          { id: "consensual_carveout", label: "Consensual Triangular Carve-Out" },
+          { id: "consensual_carveout", label: "Consensual Carve-Out" },
           { id: "abc_receivership", label: "ABC / State Receivership" },
         ].map((item) => {
           const isSelected = (filters.playbook || "all") === item.id;

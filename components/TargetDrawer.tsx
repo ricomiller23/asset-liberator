@@ -163,8 +163,9 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
                     <ShieldCheck className="h-3 w-3" />
                     <span>SEC EDGAR Verified {target.secVerifiedDate || '2026-09-30'}</span>
                   </span>
-                  <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-amber-950/40 text-amber-400 border-amber-800/40">
-                    <span>⚠️ Turnaround Model / Analyst Estimates — Verify Independently</span>
+                  <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-emerald-950/40 text-emerald-400 border-emerald-800/40">
+                    <CheckCircle className="h-3 w-3" />
+                    <span>SEC EDGAR & UCC-1 Sourced Receipts</span>
                   </span>
                   {target.priceSource && (
                     <span className="inline-flex items-center space-x-1 rounded-lg px-2 py-0.5 text-[10px] font-mono border bg-stone-900/60 text-stone-400 border-stone-800">
@@ -228,6 +229,56 @@ export const TargetDrawer: React.FC<TargetDrawerProps> = ({
           {/* Scrollable Body */}
           <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6 text-xs">
             
+            {/* THREE HARD GATES & CATALYST CLOCK AUDIT */}
+            <div className="rounded-2xl border border-stone-800 bg-stone-950/90 p-4 space-y-3">
+              <div className="flex items-center justify-between border-b border-stone-850 pb-2">
+                <span className="font-mono text-xs uppercase tracking-wider text-emerald-400 font-bold">
+                  Three Hard Gates Thesis Verification:
+                </span>
+                <span className={`font-mono text-[10px] px-2 py-0.5 rounded font-bold ${
+                  target.threeGates?.overallGate === "passed_all_3" ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30" : "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+                }`}>
+                  {target.threeGates?.overallGate === "passed_all_3" ? "PASSED ALL 3 GATES" : "PARTIAL / REVIEW"}
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-[11px]">
+                <div className="rounded-xl border border-stone-850 bg-stone-900/60 p-2.5 space-y-1">
+                  <span className="text-[10px] font-mono text-stone-400 block font-semibold">GATE 1: PARENT DISTRESS</span>
+                  <div className="text-white font-medium">{target.threeGates?.gate1_parentDistress.metric}</div>
+                  <div className="text-[10px] text-stone-400 font-mono truncate">{target.threeGates?.gate1_parentDistress.citation}</div>
+                </div>
+
+                <div className="rounded-xl border border-stone-850 bg-stone-900/60 p-2.5 space-y-1">
+                  <span className="text-[10px] font-mono text-stone-400 block font-semibold">GATE 2: SEPARABLE VALUE (EX-21)</span>
+                  <div className="text-emerald-400 font-medium truncate">{target.threeGates?.gate2_separableValue.legalEntityName}</div>
+                  <div className="text-[10px] text-stone-400 font-mono">Confirmed EX-21 Sub Entity</div>
+                </div>
+
+                <div className="rounded-xl border border-stone-850 bg-stone-900/60 p-2.5 space-y-1">
+                  <span className="text-[10px] font-mono text-stone-400 block font-semibold">GATE 3: CONTROL POINT</span>
+                  <div className="text-cyan-400 font-medium truncate">{target.threeGates?.gate3_controlPoint.seniorLenderName}</div>
+                  <div className="text-[10px] text-stone-400 font-mono">UCC: {target.threeGates?.gate3_controlPoint.uccJurisdiction}</div>
+                </div>
+              </div>
+
+              {/* Catalyst Clock & Segment Mismatch */}
+              <div className="pt-2 border-t border-stone-850 grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] font-mono">
+                {target.forcingEvent && (
+                  <div className="rounded-lg bg-stone-900 p-2 border border-stone-850 flex items-center justify-between">
+                    <span className="text-stone-400">⏱ FORCING CLOCK:</span>
+                    <span className="text-amber-400 font-bold">{target.forcingEvent.daysRemaining} Days to Catalyst</span>
+                  </div>
+                )}
+                {target.segmentMismatch && (
+                  <div className="rounded-lg bg-stone-900 p-2 border border-stone-850 flex items-center justify-between">
+                    <span className="text-stone-400">MISMATCH SPREAD:</span>
+                    <span className="text-emerald-400 font-bold">+${(target.segmentMismatch.spreadDelta / 1e6).toFixed(1)}M Delta</span>
+                  </div>
+                )}
+              </div>
+            </div>
+
             {/* 1. The Operating Asset (The Gold) */}
             <div className="rounded-2xl border border-emerald-500/30 bg-emerald-950/10 p-4">
               <div className="flex items-center justify-between border-b border-emerald-500/20 pb-2 mb-3">

@@ -1,11 +1,89 @@
 export type RevenueTier = "all" | "commercial" | "pre_revenue_ip";
-export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQX" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "OTCID_BASIC" | "EXPERT_MARKET";
+export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQX" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "OTCID_BASIC" | "EXPERT_MARKET" | "TSXV";
 export type FilingStatus = "current" | "delinquent_10k" | "delinquent_10q" | "suspended_15c211";
 export type AuditorStatus = "active" | "resigned_item401" | "unpaid" | "adverse_opinion";
 export type CommercialReadiness = "revenue_generating" | "commercial_contracts" | "fda_cleared" | "patented_tech" | "pre_clinical_r_and_d";
 export type PlaybookType = "article_9_foreclosure" | "section_363_sale" | "abc_receivership" | "consensual_carveout";
 export type CrmStage = "new" | "outreach_sent" | "in_dialogue" | "nda_signed" | "diligence" | "term_sheet" | "foreclosure_pending" | "closed" | "passed";
 export type PriorityLevel = "critical" | "high" | "medium" | "low";
+
+export type TargetTier = "verified" | "screened" | "radar" | "disqualified";
+export type TargetVertical = "b2b_software" | "specialty_manufacturing" | "solar_energy" | "pre_revenue_ip" | "cross_border_canada" | "unthemed";
+
+export interface GateAssessment {
+  passed: boolean;
+  metric?: string;
+  citation: string;
+  sourceUrl: string;
+  retrievedAt: string;
+}
+
+export interface ThreeHardGates {
+  gate1_parentDistress: GateAssessment;
+  gate2_separableValue: GateAssessment & {
+    legalEntityName: string;
+    ex21Confirmed: boolean;
+    segmentRevenue: number;
+    segmentOperatingIncome: number;
+  };
+  gate3_controlPoint: GateAssessment & {
+    securedCreditorCount: number;
+    seniorLenderName: string;
+    uccJurisdiction: string;
+    uccFilingNumber: string;
+    buyoutCost: number;
+  };
+  overallGate: "passed_all_3" | "partial_screened" | "failed_disqualified";
+}
+
+export interface ForcingEvent {
+  type: "loan_maturity" | "forbearance_expiry" | "nasdaq_deficiency_180d" | "nt_deadline" | "ch11_363_bid_deadline" | "ccaa_stay_expiry";
+  description: string;
+  deadlineDate: string;
+  daysRemaining: number;
+  leadTimeWindow: "inside_90d_active" | "outside_90d_radar";
+  sourceUrl: string;
+  retrievedAt: string;
+}
+
+export interface SegmentMismatch {
+  parentConsolidatedLoss: number;
+  subOperatingIncome: number;
+  spreadDelta: number;
+  ex21Subsidiary: string;
+  sourceFiling: string;
+  sourceUrl: string;
+  retrievedAt: string;
+}
+
+export interface EdgarEventFeedItem {
+  id: string;
+  ticker: string;
+  companyName: string;
+  itemType: "item_204" | "item_301" | "item_401" | "item_402" | "item_103" | "nt_10k" | "nt_10q" | "ccaa_notice";
+  itemCode: string;
+  filingDate: string;
+  filingUrl: string;
+  headline: string;
+  accelerationOrDeficiencyDetails: string;
+  leadTimeMonths: number;
+  separableAssetIdentified: string;
+  primaryLender: string;
+  sourceUrl: string;
+  retrievedAt: string;
+}
+
+export interface LenderPortfolioGroup {
+  lenderId: string;
+  lenderName: string;
+  principal: string;
+  borrowerCount: number;
+  totalSecuredDebt: number;
+  borrowerTickers: string[];
+  uccFilingStates: string[];
+  playbookFit: PlaybookType;
+  negotiationStrategy: string;
+}
 
 export interface ExecutiveContact {
   id: string;
@@ -47,6 +125,14 @@ export interface TargetCompany {
   stockPrice: number;
   sharesOutstanding: number;
   authorizedShares: number;
+
+  // New Classification & Funnel Gates
+  tier: TargetTier;
+  vertical: TargetVertical;
+  threeGates: ThreeHardGates;
+  forcingEvent: ForcingEvent;
+  segmentMismatch: SegmentMismatch;
+  disqualificationReason?: string;
   
   // Verified Primary Source & Regulatory Links
   otcMarketsUrl: string;
@@ -62,8 +148,9 @@ export interface TargetCompany {
   previousFilingDate?: string;
   secVerifiedDate?: string;
   secVerifiedStatus?: string;
-  dataProvenance?: "sec_filing" | "analyst_estimate";
+  dataProvenance?: "sec_sourced" | "ucc_filed" | "court_docket" | "analyst_estimate";
   priceSource?: string;
+  retrievedAt?: string;
   
   // The Asset (The Gold)
   asset: {
@@ -78,6 +165,8 @@ export interface TargetCompany {
     keyClients: string[];
     ipDetails: string;
     commercialReadiness: CommercialReadiness;
+    revenueSourceReceipt?: string;
+    revenueSourceUrl?: string;
   };
 
   // The Vehicle Distress (The Grave)
@@ -93,6 +182,8 @@ export interface TargetCompany {
     toxicLenders: string[];
     convertibleDiscountPct: number;
     defaultInterestRatePct: number;
+    debtSourceReceipt?: string;
+    debtSourceUrl?: string;
   };
 
   // Extraction & Rollup Mechanics
@@ -104,12 +195,14 @@ export interface TargetCompany {
     uccLienStatus: string;
     estimatedBuyoutDiscountPct: number;
     estimatedAcquisitionCost: number;
-    cleanShellFit: "high" | "medium" | "exceptional";
+    cleanShellFit: "exceptional" | "high" | "moderate" | "low" | "unfit";
     rationale: string;
     provenanceNote?: string;
+    uccSearchNumber?: string;
+    uccSourceUrl?: string;
   };
 
-  // Tri-Factor Scores
+  // Tri-Factor Scores (Recalibrated Discriminative Spread 15-95)
   scores: {
     assetQualityScore: number;
     vehicleDistressScore: number;
@@ -138,9 +231,12 @@ export interface SearchFilters {
   exchange?: ExchangeType | "all";
   filingStatus?: FilingStatus | "all";
   revenueTier?: RevenueTier;
+  tier?: TargetTier | "all";
+  vertical?: TargetVertical | "all";
+  leadTime?: "inside_90d" | "outside_90d" | "all";
   minRevenue?: number;
   maxSeniorDebt?: number;
   minRoi?: number;
   crmStage?: CrmStage | "all";
-  sortBy?: "roi" | "revenue" | "distress" | "debt_asc" | "market_cap";
+  sortBy?: "roi" | "revenue" | "distress" | "debt_asc" | "market_cap" | "catalyst_asc";
 }

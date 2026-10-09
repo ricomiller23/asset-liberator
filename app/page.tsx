@@ -17,6 +17,10 @@ import {
   logCallActivity
 } from "@/lib/crm";
 import { Navbar } from "@/components/Navbar";
+import { EventFeedView } from "@/components/EventFeedView";
+import { LenderIndexView } from "@/components/LenderIndexView";
+import { NavTabType } from "@/components/Navbar";
+
 import { FilterBar } from "@/components/FilterBar";
 import { TargetCard } from "@/components/TargetCard";
 import { TargetDrawer } from "@/components/TargetDrawer";
@@ -49,7 +53,7 @@ function AssetLiberatorMain() {
     ? initialTierParam 
     : "all";
 
-  const [activeTab, setActiveTab] = useState<"screener" | "crm">("screener");
+  const [activeTab, setActiveTab] = useState<NavTabType>("screener");
   const [activeDrawerTarget, setActiveDrawerTarget] = useState<TargetCompany | null>(null);
   const [activePlaybookTarget, setActivePlaybookTarget] = useState<TargetCompany | null>(null);
   const [activeOutreachTarget, setActiveOutreachTarget] = useState<TargetCompany | null>(null);
@@ -94,6 +98,9 @@ function AssetLiberatorMain() {
       if (filters.exchange && filters.exchange !== "all") params.set("exchange", filters.exchange);
       if (filters.filingStatus && filters.filingStatus !== "all") params.set("filingStatus", filters.filingStatus);
       if (filters.revenueTier && filters.revenueTier !== "all") params.set("revenueTier", filters.revenueTier);
+      if (filters.tier && filters.tier !== "all") params.set("tier", filters.tier);
+      if (filters.vertical && filters.vertical !== "all") params.set("vertical", filters.vertical);
+      if (filters.leadTime && filters.leadTime !== "all") params.set("leadTime", filters.leadTime);
       if (filters.sortBy) params.set("sortBy", filters.sortBy);
 
       const res = await fetch(`/api/targets?${params.toString()}`);
@@ -296,7 +303,7 @@ function AssetLiberatorMain() {
           </div>
         </div>
 
-        {/* View Routing: Deal Screener vs CRM Pipeline */}
+        {/* View Routing: Deal Screener vs 8-K Events vs Lenders vs CRM Pipeline */}
         {activeTab === "screener" ? (
           <div className="space-y-6">
             {/* Filter Bar */}
@@ -304,6 +311,7 @@ function AssetLiberatorMain() {
               filters={filters}
               onFilterChange={setFilters}
               resultCount={displayedTargets.length}
+              tierCounts={apiData?.meta?.tiers}
             />
 
             {/* Target Cards Grid */}
@@ -322,11 +330,11 @@ function AssetLiberatorMain() {
                 <ShieldAlert className="mx-auto h-12 w-12 text-stone-600 mb-3" />
                 <h3 className="text-base font-bold text-white">No targets matching filter criteria</h3>
                 <p className="mt-1 text-xs text-stone-400 max-w-sm mx-auto">
-                  Try clearing the search query or selecting "All Playbooks" to view all live special situations candidates.
+                  Try clearing the search query or selecting "All Qualified" to view all live special situations candidates.
                 </p>
                 <div className="mt-5">
                   <button
-                    onClick={() => setFilters({ query: "", sector: "all", playbook: "all", exchange: "all", filingStatus: "all", sortBy: "roi" })}
+                    onClick={() => setFilters({ query: "", sector: "all", playbook: "all", exchange: "all", filingStatus: "all", tier: "all", sortBy: "roi" })}
                     className="rounded-xl bg-emerald-500 px-4 py-2 text-xs font-bold text-stone-950 hover:bg-emerald-400 transition"
                   >
                     Reset Filter View
@@ -349,6 +357,20 @@ function AssetLiberatorMain() {
               </div>
             )}
           </div>
+        ) : activeTab === "events" ? (
+          <EventFeedView
+            onSelectTarget={(ticker) => {
+              setFilters((prev) => ({ ...prev, query: ticker, tier: "all" }));
+              setActiveTab("screener");
+            }}
+          />
+        ) : activeTab === "lenders" ? (
+          <LenderIndexView
+            onSelectTicker={(ticker) => {
+              setFilters((prev) => ({ ...prev, query: ticker, tier: "all" }));
+              setActiveTab("screener");
+            }}
+          />
         ) : (
           <CrmPipelineView
             targets={displayedTargets}

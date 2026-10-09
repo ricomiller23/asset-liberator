@@ -1,6 +1,6 @@
 /**
- * Automated Prebuild Parity & Verification Guard
- * Enforces data accuracy, dual filing existence, and synthetic contact elimination.
+ * Automated Prebuild Parity & Thesis Verification Guard
+ * Enforces thesis gates, sourced provenance, ZNOG/NLST corrections, and score discrimination.
  */
 
 const fs = require('fs');
@@ -17,11 +17,11 @@ if (!jsonMatch) {
 const targets = JSON.parse(jsonMatch[1]);
 
 if (targets.length !== 18) {
-  console.error(`FATAL [prebuild]: Expected exactly 18 targets, found ${targets.length}`);
+  console.error(`FATAL [prebuild]: Expected 18 targets, found ${targets.length}`);
   process.exit(1);
 }
 
-// Check dual filing availability
+// 1. Dual filing availability & Sourced Provenance (No analyst_estimate)
 for (const t of targets) {
   if (!t.latestFilingUrl || !t.latestFilingType || !t.latestFilingDate) {
     console.error(`FATAL [prebuild]: Missing latest filing on ${t.ticker}`);
@@ -31,9 +31,37 @@ for (const t of targets) {
     console.error(`FATAL [prebuild]: Missing baseline 10-K filing on ${t.ticker}`);
     process.exit(1);
   }
+  if (t.dataProvenance === 'analyst_estimate') {
+    console.error(`FATAL [prebuild]: Unverified dataProvenance 'analyst_estimate' detected on ${t.ticker}. Sourced receipts required.`);
+    process.exit(1);
+  }
 }
 
-// Check contact validity
+// 2. Three Hard Gates Verification
+for (const t of targets) {
+  if (!t.threeGates || !t.threeGates.gate1_parentDistress || !t.threeGates.gate2_separableValue || !t.threeGates.gate3_controlPoint) {
+    console.error(`FATAL [prebuild]: Missing Three Hard Gates evaluation on ${t.ticker}`);
+    process.exit(1);
+  }
+  if (t.tier === 'verified' && t.threeGates.overallGate !== 'passed_all_3') {
+    console.error(`FATAL [prebuild]: Verified tier target ${t.ticker} did not pass all 3 hard gates`);
+    process.exit(1);
+  }
+}
+
+// 3. Forcing Event / Catalyst Clock Verification
+for (const t of targets) {
+  if (!t.forcingEvent || typeof t.forcingEvent.daysRemaining !== 'number') {
+    console.error(`FATAL [prebuild]: Missing forcing event catalyst clock on ${t.ticker}`);
+    process.exit(1);
+  }
+  if (t.tier === 'verified' && t.forcingEvent.daysRemaining > 90) {
+    console.error(`FATAL [prebuild]: Verified target ${t.ticker} has catalyst clock > 90d (must be inside 90d active window)`);
+    process.exit(1);
+  }
+}
+
+// 4. Contact validity
 const BANNED_DOMAINS = [
   'creditagency-llc.com', 'securedtrust-cap.com', 'solarcreditpartners.com',
   'commercialbank-west.com', 'apexdistressed.com', 'bio-restructuring.com',
@@ -56,17 +84,36 @@ for (const t of targets) {
   }
 }
 
-// Financial assertions
-const rwax = targets.find(t => t.ticker === 'RWAX');
-if (!rwax || rwax.asset.annualRevenue !== 0) {
-  console.error('FATAL [prebuild]: RWAX revenue assertion failed');
+// 5. Zion Oil & Gas (ZNOG) Sourced Pre-Revenue Assertion
+const znog = targets.find(t => t.ticker === 'ZNOG');
+if (!znog || znog.asset.annualRevenue !== 0) {
+  console.error(`FATAL [prebuild]: ZNOG revenue assertion failed (expected $0 pre-revenue explorer, found $${znog?.asset.annualRevenue})`);
   process.exit(1);
 }
 
-const nlst = targets.find(t => t.ticker === 'NLST');
-if (!nlst || nlst.asset.annualRevenue < 400000000 || nlst.stockPrice < 5.0) {
-  console.error('FATAL [prebuild]: NLST annualized revenue/price assertion failed');
+// 6. Current Filers Reclassification & Disqualification Assertion
+const currentFilerTickers = ['NLST', 'NWBO', 'CYDY', 'IQST'];
+for (const ticker of currentFilerTickers) {
+  const t = targets.find(item => item.ticker === ticker);
+  if (!t || t.tier !== 'disqualified' || !t.disqualificationReason) {
+    console.error(`FATAL [prebuild]: Current filer ${ticker} must be reclassified to tier 'disqualified' with clear reason`);
+    process.exit(1);
+  }
+}
+
+// 7. Score Discrimination Assertion (Wide Spread, not flat 72-97)
+const rois = targets.map(t => t.scores.rollupOpportunityIndex);
+const minRoi = Math.min(...rois);
+const maxRoi = Math.max(...rois);
+const spread = maxRoi - minRoi;
+
+if (spread < 50) {
+  console.error(`FATAL [prebuild]: Scoring failed to discriminate. Spread is only ${spread} points (expected >= 50 spread).`);
   process.exit(1);
 }
 
-console.log('✓ [prebuild]: Parity & accuracy assertion passed for all 18 targets.');
+console.log(`✓ [prebuild]: Thesis, Gates & Recalibrated Parity assertions passed.`);
+console.log(`  - Targets: ${targets.length}`);
+console.log(`  - Score Spread: Min ${minRoi} to Max ${maxRoi} (Spread: ${spread} pts)`);
+console.log(`  - Disqualified Current Filers: ${currentFilerTickers.join(', ')}`);
+console.log(`  - ZNOG Pre-Revenue Verified: $${znog.asset.annualRevenue}`);

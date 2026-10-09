@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerTargets } from "@/lib/serverStore";
-import { TargetCompany, SearchFilters } from "@/lib/types";
+import { TargetCompany } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +13,10 @@ export async function GET(req: NextRequest) {
   const exchange = searchParams.get("exchange");
   const filingStatus = searchParams.get("filingStatus");
   const revenueTier = searchParams.get("revenueTier");
+  const tier = searchParams.get("tier");
+  const vertical = searchParams.get("vertical");
+  const leadTime = searchParams.get("leadTime");
+  const gateStatus = searchParams.get("gateStatus");
   const minRevenue = searchParams.get("minRevenue") ? parseFloat(searchParams.get("minRevenue")!) : undefined;
   const maxSeniorDebt = searchParams.get("maxSeniorDebt") ? parseFloat(searchParams.get("maxSeniorDebt")!) : undefined;
   const minRoi = searchParams.get("minRoi") ? parseInt(searchParams.get("minRoi")!, 10) : undefined;
@@ -22,6 +26,28 @@ export async function GET(req: NextRequest) {
   const allTargets = getServerTargets();
   let results: TargetCompany[] = [...allTargets];
 
+  // Default behavior: unless specifically requesting 'disqualified' or 'all', hide disqualified filers from active screener
+  if (tier && tier !== "all") {
+    results = results.filter((t) => t.tier === tier);
+  } else if (!tier) {
+    // By default, exclude disqualified current filers from core screener unless filter is set to all
+    results = results.filter((t) => t.tier !== "disqualified");
+  }
+
+  if (vertical && vertical !== "all") {
+    results = results.filter((t) => t.vertical === vertical);
+  }
+
+  if (leadTime === "inside_90d") {
+    results = results.filter((t) => t.forcingEvent?.leadTimeWindow === "inside_90d_active");
+  } else if (leadTime === "outside_90d") {
+    results = results.filter((t) => t.forcingEvent?.leadTimeWindow === "outside_90d_radar");
+  }
+
+  if (gateStatus === "passed_all_3") {
+    results = results.filter((t) => t.threeGates?.overallGate === "passed_all_3");
+  }
+
   if (query) {
     const cleanDigits = query.replace(/[^0-9]/g, "");
     results = results.filter((t) =>
@@ -30,6 +56,7 @@ export async function GET(req: NextRequest) {
       t.asset.subsidiaryName.toLowerCase().includes(query) ||
       t.sector.toLowerCase().includes(query) ||
       t.asset.businessSummary.toLowerCase().includes(query) ||
+      (t.vertical && t.vertical.toLowerCase().includes(query)) ||
       t.contacts.some((c) =>
         c.name.toLowerCase().includes(query) ||
         c.title.toLowerCase().includes(query) ||
@@ -84,6 +111,7 @@ export async function GET(req: NextRequest) {
     if (sortBy === "distress") return b.scores.vehicleDistressScore - a.scores.vehicleDistressScore;
     if (sortBy === "debt_asc") return a.extractionFeasibility.seniorSecuredDebtAmount - b.extractionFeasibility.seniorSecuredDebtAmount;
     if (sortBy === "market_cap") return a.marketCap - b.marketCap;
+    if (sortBy === "catalyst_asc") return (a.forcingEvent?.daysRemaining || 999) - (b.forcingEvent?.daysRemaining || 999);
     return 0;
   });
 
@@ -93,10 +121,23 @@ export async function GET(req: NextRequest) {
   const totalToxicDebtExtinguished = results.reduce((acc, t) => acc + t.vehicleDistress.toxicDebtBalance, 0);
   const totalContacts = results.reduce((acc, t) => acc + t.contacts.length, 0);
 
+  // Funnel Gate statistics across all targets
+  const allVerifiedCount = allTargets.filter((t) => t.tier === "verified").length;
+  const allScreenedCount = allTargets.filter((t) => t.tier === "screened").length;
+  const allRadarCount = allTargets.filter((t) => t.tier === "radar").length;
+  const allDisqualifiedCount = allTargets.filter((t) => t.tier === "disqualified").length;
+
   return NextResponse.json({
     targets: results,
     meta: {
       total: results.length,
+      allTotal: allTargets.length,
+      tiers: {
+        verified: allVerifiedCount,
+        screened: allScreenedCount,
+        radar: allRadarCount,
+        disqualified: allDisqualifiedCount,
+      },
       timestamp: new Date().toISOString(),
       stats: {
         totalSubsidiaryRevenue,
