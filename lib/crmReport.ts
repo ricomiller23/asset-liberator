@@ -94,13 +94,13 @@ export function isDateInPeriod(dateStr: string, period: ReportPeriod, referenceD
   const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 
   if (period === "today") {
-    return dateStr === referenceDateStr || diffDays <= 0;
+    return dateStr === referenceDateStr;
   }
   if (period === "week") {
-    return diffDays <= 7;
+    return diffDays >= 0 && diffDays <= 7;
   }
   if (period === "month") {
-    return diffDays <= 30;
+    return diffDays >= 0 && diffDays <= 30;
   }
   return true;
 }

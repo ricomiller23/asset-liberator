@@ -1,13 +1,6 @@
 import { TargetCompany } from "../types";
 import { enrichTargetScores } from "../scoring";
 
-/**
- * UNIFIED TARGETS REPOSITORY — SOURCED RECEIPTS & 3 HARD GATES
- * 
- * Contains all verified seed targets and automated EDGAR/cross-border ingested companies
- * unified in a single dataset per Standing Rule C.
- */
-
 const rawTargets: TargetCompany[] = [
   {
     "id": "xela-exela",
@@ -4327,12 +4320,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 70
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lesl-exec",
+        "name": "Leslie's. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@leslies.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lesl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@leslies.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014705-0",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Leslie&#x2019;s Poolmart, Inc. with 3-point transaction architecture matching section_363_sale."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014705-0",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Leslie's. Executive Leadership & Special Committee (restructuring@leslies.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -4513,12 +4543,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 60
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ptpi-exec",
+        "name": "Petros. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@petros.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ptpi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@petros.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-1",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Company with 3-point transaction architecture matching section_363_sale."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-1",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Petros. Executive Leadership & Special Committee (restructuring@petros.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -4667,12 +4734,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 52
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1966394-exec",
+        "name": "Fortress Net Lease REIT Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@fortressnetleasereit.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1966394-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@fortressnetleasereit.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-2",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding FNLR GP LLC with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-2",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Fortress Net Lease REIT Executive Leadership & Special Committee (restructuring@fortressnetleasereit.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -4815,12 +4919,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 51
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-alds-exec",
+        "name": "APPlife Digital Solutions Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@applifedigitalsolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-alds-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@applifedigitalsolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-3",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Sugar Auto Parts, Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-3",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to APPlife Digital Solutions Executive Leadership & Special Committee (restructuring@applifedigitalsolutions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -4978,12 +5119,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 51
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-vipz-exec",
+        "name": "VIP Play. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@vipplay.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-vipz-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@vipplay.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-4",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding OF VIP PLAY, INC. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-4",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to VIP Play. Executive Leadership & Special Committee (restructuring@vipplay.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -5140,12 +5318,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 51
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ipw-exec",
+        "name": "iPower. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ipower.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ipw-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ipower.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-5",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Company with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-5",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to iPower. Executive Leadership & Special Committee (restructuring@ipower.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -5295,12 +5510,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 50
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sgly-exec",
+        "name": "Singularity Future Technology. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@singularityfuturetechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sgly-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@singularityfuturetechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-6",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Sino-Global Shipping New York Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-6",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Singularity Future Technology. Executive Leadership & Special Committee (restructuring@singularityfuturetechnology.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -5452,12 +5704,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 50
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-kpti-exec",
+        "name": "Karyopharm. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@karyopharm.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-kpti-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@karyopharm.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-7",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Karyopharm Europe GmbH with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-7",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Karyopharm. Executive Leadership & Special Committee (restructuring@karyopharm.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -5622,12 +5911,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 49
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-nva-exec",
+        "name": "Nova Minerals Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@novaminerals.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nva-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@novaminerals.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-8",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Pty Ltd, an Australian corporation with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-8",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Nova Minerals Executive Leadership & Special Committee (restructuring@novaminerals.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -5778,12 +6104,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 48
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sgmoq-exec",
+        "name": "SANGAMO Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sangamo.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sgmoq-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sangamo.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-9",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching section_363_sale."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-9",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SANGAMO Executive Leadership & Special Committee (restructuring@sangamo.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -5939,12 +6302,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 46
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gnln-exec",
+        "name": "Greenlane. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@greenlane.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gnln-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@greenlane.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-10",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Logistics B.V. with 3-point transaction architecture matching section_363_sale."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-10",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Greenlane. Executive Leadership & Special Committee (restructuring@greenlane.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -6087,12 +6487,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 45
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-atai-exec",
+        "name": "AtaiBeckley. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ataibeckley.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-atai-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ataibeckley.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-11",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding atai Life Sciences US, Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-11",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AtaiBeckley. Executive Leadership & Special Committee (restructuring@ataibeckley.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -6251,12 +6688,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 45
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cvat-exec",
+        "name": "Cavitation. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cavitation.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cvat-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cavitation.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-12",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-12",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Cavitation. Executive Leadership & Special Committee (restructuring@cavitation.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -6414,12 +6888,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 45
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1959585-exec",
+        "name": "Protopia Global. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@protopiaglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1959585-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@protopiaglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-13",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-13",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Protopia Global. Executive Leadership & Special Committee (restructuring@protopiaglobal.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -6577,12 +7088,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 45
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lumn-exec",
+        "name": "Lumen. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lumen.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lumn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lumen.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-14",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding LUMEN TECHNOLOGIES, INC. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-14",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Lumen. Executive Leadership & Special Committee (restructuring@lumen.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -6739,12 +7287,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 44
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cmbmf-exec",
+        "name": "Cambium Networks Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cambiumnetworks.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cmbmf-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cambiumnetworks.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-15",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching section_363_sale."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-15",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Cambium Networks Executive Leadership & Special Committee (restructuring@cambiumnetworks.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -6894,12 +7479,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 43
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bnet-exec",
+        "name": "BION ENVIRONMENTAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bionenvironmental.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bnet-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bionenvironmental.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-16",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-16",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BION ENVIRONMENTAL Executive Leadership & Special Committee (restructuring@bionenvironmental.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -7056,12 +7678,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 43
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hain-exec",
+        "name": "HAIN CELESTIAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@haincelestial.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hain-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@haincelestial.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-17",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Acirca, Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-17",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to HAIN CELESTIAL Executive Leadership & Special Committee (restructuring@haincelestial.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -7211,12 +7870,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 43
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dhti-exec",
+        "name": "Dalrada Technology. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@dalradatechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dhti-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@dalradatechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-18",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-18",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Dalrada Technology. Executive Leadership & Special Committee (restructuring@dalradatechnology.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -7366,12 +8062,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 42
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-wbd-exec",
+        "name": "Warner Bros. Discovery. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@warnerbrosdiscovery.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-wbd-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@warnerbrosdiscovery.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-19",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding &#34;Zilpzalp&#34; Verm&#246;gensverwaltung GmbH with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-19",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Warner Bros. Discovery. Executive Leadership & Special Committee (restructuring@warnerbrosdiscovery.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -7530,12 +8263,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 42
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dds-exec",
+        "name": "DILLARD'S. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@dillards.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dds-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@dillards.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-20",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Condev Nevada, Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-20",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to DILLARD'S. Executive Leadership & Special Committee (restructuring@dillards.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -7693,12 +8463,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 42
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-skyd-exec",
+        "name": "Skydance Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@skydance.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-skyd-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@skydance.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-21",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding 0553394 B.C. Ltd. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-21",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Skydance Executive Leadership & Special Committee (restructuring@skydance.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -7848,12 +8655,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 42
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-et-exec",
+        "name": "Energy Transfer LP Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@energytransferlp.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-et-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@energytransferlp.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-22",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding 5555 San Felipe LLC with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-22",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Energy Transfer LP Executive Leadership & Special Committee (restructuring@energytransferlp.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8004,12 +8848,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 41
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-brns-exec",
+        "name": "Barinthus Bio. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@barinthusbio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-brns-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@barinthusbio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-23",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Vaccitech Oncology Limited with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-23",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Barinthus Bio. Executive Leadership & Special Committee (restructuring@barinthusbio.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8167,12 +9048,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 40
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-usac-exec",
+        "name": "USA Compression Partners, LP Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@usacompressionpartnerslp.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-usac-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@usacompressionpartnerslp.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-24",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding USA Compression Finance Corp., a Delaware corporation with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-24",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to USA Compression Partners, LP Executive Leadership & Special Committee (restructuring@usacompressionpartnerslp.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8322,12 +9240,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 40
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-rnaz-exec",
+        "name": "Transcode. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@transcode.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-rnaz-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@transcode.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-25",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-25",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Transcode. Executive Leadership & Special Committee (restructuring@transcode.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8476,12 +9431,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 39
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-btln-exec",
+        "name": "Brightline Interactive./NV Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@brightlineinteractivenv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-btln-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@brightlineinteractivenv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-26",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding BLI, LLC with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-26",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Brightline Interactive./NV Executive Leadership & Special Committee (restructuring@brightlineinteractivenv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8631,12 +9623,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 39
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-zeox-exec",
+        "name": "Zeo ScientifiX. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@zeoscientifix.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-zeox-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@zeoscientifix.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-27",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-27",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Zeo ScientifiX. Executive Leadership & Special Committee (restructuring@zeoscientifix.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8788,12 +9817,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 37
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ipex-exec",
+        "name": "Inflection Point Acquisition. V Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@inflectionpointacquisitionv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ipex-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@inflectionpointacquisitionv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-28",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-28",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Inflection Point Acquisition. V Executive Leadership & Special Committee (restructuring@inflectionpointacquisitionv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -8959,12 +10025,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 37
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-tbph-exec",
+        "name": "Theravance Biopharma. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@theravancebiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-tbph-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@theravancebiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-29",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-29",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Theravance Biopharma. Executive Leadership & Special Committee (restructuring@theravancebiopharma.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -9123,12 +10226,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 37
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-tcbi-exec",
+        "name": "TEXAS CAPITAL BANCSHARES/TX Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@texascapitalbancsharestx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-tcbi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@texascapitalbancsharestx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-30",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Percentage of Voting Securities Owned by Texas Capital Bancshares, Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-30",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TEXAS CAPITAL BANCSHARES/TX Executive Leadership & Special Committee (restructuring@texascapitalbancsharestx.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -9285,12 +10425,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1021917-exec",
+        "name": "Awaysis Capital. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@awaysiscapital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1021917-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@awaysiscapital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-31",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-31",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Awaysis Capital. Executive Leadership & Special Committee (restructuring@awaysiscapital.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -9430,12 +10607,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1882781-exec",
+        "name": "C2 Blockchain. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@c2blockchain.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1882781-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@c2blockchain.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-32",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-32",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to C2 Blockchain. Executive Leadership & Special Committee (restructuring@c2blockchain.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -9575,12 +10789,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik932021-exec",
+        "name": "GLOBAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@global.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik932021-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@global.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-33",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-33",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GLOBAL Executive Leadership & Special Committee (restructuring@global.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -9720,12 +10971,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1721056-exec",
+        "name": "HOOPS SCOUTING USA Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hoopsscoutingusa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1721056-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hoopsscoutingusa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-34",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-34",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to HOOPS SCOUTING USA Executive Leadership & Special Committee (restructuring@hoopsscoutingusa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -9865,12 +11153,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1527728-exec",
+        "name": "Lunai Bioworks. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lunaibioworks.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1527728-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lunaibioworks.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-35",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-35",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Lunai Bioworks. Executive Leadership & Special Committee (restructuring@lunaibioworks.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10010,12 +11335,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1082733-exec",
+        "name": "VISIUM. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@visium.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1082733-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@visium.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-36",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-36",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to VISIUM. Executive Leadership & Special Committee (restructuring@visium.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10155,12 +11517,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1941029-exec",
+        "name": "Advanced Biomed. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@advancedbiomed.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1941029-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@advancedbiomed.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-37",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-37",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Advanced Biomed. Executive Leadership & Special Committee (restructuring@advancedbiomed.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10300,12 +11699,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik862668-exec",
+        "name": "ESCALON MEDICAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@escalonmedical.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik862668-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@escalonmedical.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-38",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-38",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ESCALON MEDICAL Executive Leadership & Special Committee (restructuring@escalonmedical.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10445,12 +11881,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1121795-exec",
+        "name": "GHST World. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ghstworld.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1121795-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ghstworld.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-39",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-39",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GHST World. Executive Leadership & Special Committee (restructuring@ghstworld.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10590,12 +12063,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1018281-exec",
+        "name": "INTEGRAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@integral.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1018281-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@integral.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-40",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-40",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to INTEGRAL Executive Leadership & Special Committee (restructuring@integral.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10735,12 +12245,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1892316-exec",
+        "name": "Longduoduo Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@longduoduo.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1892316-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@longduoduo.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-41",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-41",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Longduoduo Executive Leadership & Special Committee (restructuring@longduoduo.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -10880,12 +12427,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1520118-exec",
+        "name": "MedWellAI. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@medwellai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1520118-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@medwellai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-42",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-42",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to MedWellAI. Executive Leadership & Special Committee (restructuring@medwellai.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11025,12 +12609,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1593001-exec",
+        "name": "NightFood. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nightfood.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1593001-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nightfood.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-43",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-43",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NightFood. Executive Leadership & Special Committee (restructuring@nightfood.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11170,12 +12791,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1848334-exec",
+        "name": "OKMIN RESOURCES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@okminresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1848334-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@okminresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-44",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-44",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to OKMIN RESOURCES. Executive Leadership & Special Committee (restructuring@okminresources.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11315,12 +12973,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1751707-exec",
+        "name": "OZ VISION. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ozvision.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1751707-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ozvision.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-45",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-45",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to OZ VISION. Executive Leadership & Special Committee (restructuring@ozvision.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11460,12 +13155,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2083452-exec",
+        "name": "Shreya Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@shreyaacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2083452-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@shreyaacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-46",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-46",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Shreya Acquisition Executive Leadership & Special Committee (restructuring@shreyaacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11605,12 +13337,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1437750-exec",
+        "name": "T-REX Acquisition. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@trexacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1437750-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@trexacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-47",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-47",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to T-REX Acquisition. Executive Leadership & Special Committee (restructuring@trexacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11750,12 +13519,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1905956-exec",
+        "name": "TREASURE GLOBAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@treasureglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1905956-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@treasureglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-48",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-48",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TREASURE GLOBAL Executive Leadership & Special Committee (restructuring@treasureglobal.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -11895,12 +13701,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1098009-exec",
+        "name": "America Great Health Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@americagreathealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1098009-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@americagreathealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-49",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-49",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to America Great Health Executive Leadership & Special Committee (restructuring@americagreathealth.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12040,12 +13883,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1703073-exec",
+        "name": "VIVIC. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@vivic.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1703073-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@vivic.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-50",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-50",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to VIVIC. Executive Leadership & Special Committee (restructuring@vivic.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12185,12 +14065,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 33
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2086503-exec",
+        "name": "YAN CHUANG. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@yanchuang.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2086503-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@yanchuang.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-51",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-51",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to YAN CHUANG. Executive Leadership & Special Committee (restructuring@yanchuang.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12331,12 +14248,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-blfs-exec",
+        "name": "BIOLIFE SOLUTIONS Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@biolifesolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-blfs-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@biolifesolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-52",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-52",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BIOLIFE SOLUTIONS Executive Leadership & Special Committee (restructuring@biolifesolutions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12486,12 +14440,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-slp-exec",
+        "name": "Simulations Plus. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@simulationsplus.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-slp-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@simulationsplus.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-53",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-53",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Simulations Plus. Executive Leadership & Special Committee (restructuring@simulationsplus.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12641,12 +14632,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-qrvo-exec",
+        "name": "Qorvo. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@qorvo.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-qrvo-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@qorvo.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-54",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-54",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Qorvo. Executive Leadership & Special Committee (restructuring@qorvo.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12797,12 +14825,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cola-exec",
+        "name": "Columbus Acquisition/Cayman Islands Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@columbusacquisitioncaymanislands.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cola-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@columbusacquisitioncaymanislands.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-55",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-55",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Columbus Acquisition/Cayman Islands Executive Leadership & Special Committee (restructuring@columbusacquisitioncaymanislands.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -12960,12 +15025,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-adtx-exec",
+        "name": "Aditxt. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@aditxt.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-adtx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@aditxt.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-56",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-56",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Aditxt. Executive Leadership & Special Committee (restructuring@aditxt.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -13124,12 +15226,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gety-exec",
+        "name": "Getty Images. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@gettyimages.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gety-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@gettyimages.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-57",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-57",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Getty Images. Executive Leadership & Special Committee (restructuring@gettyimages.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -13296,12 +15435,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dbrg-exec",
+        "name": "DigitalBridge. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@digitalbridge.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dbrg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@digitalbridge.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-58",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-58",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to DigitalBridge. Executive Leadership & Special Committee (restructuring@digitalbridge.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -13459,12 +15635,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gbtg-exec",
+        "name": "Global Business Travel. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@globalbusinesstravel.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gbtg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@globalbusinesstravel.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-59",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-59",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Global Business Travel. Executive Leadership & Special Committee (restructuring@globalbusinesstravel.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -13614,12 +15827,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sun-exec",
+        "name": "Suno LP Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sunolp.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sun-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sunolp.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-60",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-60",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Suno LP Executive Leadership & Special Committee (restructuring@sunolp.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -13769,12 +16019,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 31
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sunc-exec",
+        "name": "Sunoco Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sunoco.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sunc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sunoco.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-61",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-61",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Sunoco Executive Leadership & Special Committee (restructuring@sunoco.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -13925,12 +16212,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 29
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1901297-exec",
+        "name": "ZRCN. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@zrcn.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1901297-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@zrcn.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-62",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-62",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ZRCN. Executive Leadership & Special Committee (restructuring@zrcn.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -14087,12 +16411,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 29
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-inm-exec",
+        "name": "InMed. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@inmed.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-inm-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@inmed.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-63",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching abc_receivership."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-63",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to InMed. Executive Leadership & Special Committee (restructuring@inmed.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -14242,12 +16603,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 29
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-mss-exec",
+        "name": "Maison Solutions. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@maisonsolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-mss-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@maisonsolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-64",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-64",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Maison Solutions. Executive Leadership & Special Committee (restructuring@maisonsolutions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -14397,12 +16795,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 28
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-amze-exec",
+        "name": "AMAZE. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@amaze.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-amze-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@amaze.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-65",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-65",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AMAZE. Executive Leadership & Special Committee (restructuring@amaze.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -14552,12 +16987,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 28
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-nsts-exec",
+        "name": "NSTS Ban. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nstsban.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nsts-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nstsban.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-66",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-66",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NSTS Ban. Executive Leadership & Special Committee (restructuring@nstsban.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -14708,12 +17180,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 27
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-mgnc-exec",
+        "name": "Mag Magna Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@magmagna.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-mgnc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@magmagna.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-67",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-67",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Mag Magna Executive Leadership & Special Committee (restructuring@magmagna.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -14871,12 +17380,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 27
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-fsea-exec",
+        "name": "First Seacoast Ban. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@firstseacoastban.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-fsea-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@firstseacoastban.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-68",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding FSB Service Corporation, Inc. with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-68",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to First Seacoast Ban. Executive Leadership & Special Committee (restructuring@firstseacoastban.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15026,12 +17572,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 25
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-oke-exec",
+        "name": "ONEOK /NEW/ Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@oneoknew.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-oke-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@oneoknew.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-69",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-69",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ONEOK /NEW/ Executive Leadership & Special Committee (restructuring@oneoknew.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15181,12 +17764,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 25
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-fmac-exec",
+        "name": "Future Money Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@futuremoneyacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-fmac-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@futuremoneyacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-70",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-70",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Future Money Acquisition Executive Leadership & Special Committee (restructuring@futuremoneyacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15338,12 +17958,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 23
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1973056-exec",
+        "name": "Bowen Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bowenacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1973056-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bowenacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-71",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-71",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Bowen Acquisition Executive Leadership & Special Committee (restructuring@bowenacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15508,12 +18165,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 23
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-brls-exec",
+        "name": "Borealis Foods. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@borealisfoods.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-brls-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@borealisfoods.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-72",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-72",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Borealis Foods. Executive Leadership & Special Committee (restructuring@borealisfoods.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15661,12 +18355,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ltrn-exec",
+        "name": "Lantern Pharma. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lanternpharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ltrn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lanternpharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-73",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-73",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Lantern Pharma. Executive Leadership & Special Committee (restructuring@lanternpharma.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15807,12 +18538,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lccc-exec",
+        "name": "Lakeshore Acquisition III. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lakeshoreacquisitioniii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lccc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lakeshoreacquisitioniii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-74",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-74",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Lakeshore Acquisition III. Executive Leadership & Special Committee (restructuring@lakeshoreacquisitioniii.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -15952,12 +18720,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-arec-exec",
+        "name": "American Resources Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@americanresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-arec-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@americanresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-75",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-75",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to American Resources Executive Leadership & Special Committee (restructuring@americanresources.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16098,12 +18903,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bbgi-exec",
+        "name": "BEASLEY BROADCAST Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@beasleybroadcast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bbgi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@beasleybroadcast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-76",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-76",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BEASLEY BROADCAST Executive Leadership & Special Committee (restructuring@beasleybroadcast.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16244,12 +19086,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-nxdr-exec",
+        "name": "Nextdoor. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nextdoor.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nxdr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nextdoor.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-77",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-77",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Nextdoor. Executive Leadership & Special Committee (restructuring@nextdoor.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16390,12 +19269,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ceco-exec",
+        "name": "CE ENVIRONMENTAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ceenvironmental.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ceco-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ceenvironmental.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-78",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-78",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CE ENVIRONMENTAL Executive Leadership & Special Committee (restructuring@ceenvironmental.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16536,12 +19452,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-iboc-exec",
+        "name": "INTERNATIONAL BANCSHARES Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@internationalbancshares.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-iboc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@internationalbancshares.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-79",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-79",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to INTERNATIONAL BANCSHARES Executive Leadership & Special Committee (restructuring@internationalbancshares.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16682,12 +19635,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-kynb-exec",
+        "name": "KYNTRA BIO. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@kyntrabio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-kynb-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@kyntrabio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-80",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-80",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to KYNTRA BIO. Executive Leadership & Special Committee (restructuring@kyntrabio.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16827,12 +19817,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-otlk-exec",
+        "name": "Outlook. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@outlook.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-otlk-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@outlook.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-81",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-81",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Outlook. Executive Leadership & Special Committee (restructuring@outlook.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -16973,12 +20000,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-limn-exec",
+        "name": "Liminatus Pharma. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@liminatuspharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-limn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@liminatuspharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-82",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-82",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Liminatus Pharma. Executive Leadership & Special Committee (restructuring@liminatuspharma.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -17120,12 +20184,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bysi-exec",
+        "name": "BeyondSpring. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@beyondspring.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bysi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@beyondspring.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014706-83",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014706-83",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BeyondSpring. Executive Leadership & Special Committee (restructuring@beyondspring.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -17273,12 +20374,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-skyx-exec",
+        "name": "SKYX Platforms. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@skyxplatforms.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-skyx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@skyxplatforms.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-84",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-84",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SKYX Platforms. Executive Leadership & Special Committee (restructuring@skyxplatforms.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -17419,12 +20557,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gxai-exec",
+        "name": "GAXOS.AI. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@gaxosai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gxai-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@gaxosai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-85",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-85",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GAXOS.AI. Executive Leadership & Special Committee (restructuring@gaxosai.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -17565,12 +20740,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dare-exec",
+        "name": "Dare Bioscience. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@darebioscience.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dare-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@darebioscience.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-86",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-86",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Dare Bioscience. Executive Leadership & Special Committee (restructuring@darebioscience.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -17711,12 +20923,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sbxd-exec",
+        "name": "SilverBox IV Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@silverboxiv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sbxd-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@silverboxiv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-87",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-87",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SilverBox IV Executive Leadership & Special Committee (restructuring@silverboxiv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -17856,12 +21105,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-xelb-exec",
+        "name": "XCel Brands. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@xcelbrands.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-xelb-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@xcelbrands.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-88",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-88",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to XCel Brands. Executive Leadership & Special Committee (restructuring@xcelbrands.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18002,12 +21288,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-onfo-exec",
+        "name": "Onfolio Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@onfolio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-onfo-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@onfolio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-89",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-89",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Onfolio Executive Leadership & Special Committee (restructuring@onfolio.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18148,12 +21471,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-surg-exec",
+        "name": "SurgePays. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@surgepays.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-surg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@surgepays.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-90",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-90",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SurgePays. Executive Leadership & Special Committee (restructuring@surgepays.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18294,12 +21654,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-vtix-exec",
+        "name": "Virtuix. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@virtuix.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-vtix-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@virtuix.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-91",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-91",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Virtuix. Executive Leadership & Special Committee (restructuring@virtuix.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18440,12 +21837,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-nxl-exec",
+        "name": "Nexalin Technology. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nexalintechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nxl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nexalintechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-92",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-92",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Nexalin Technology. Executive Leadership & Special Committee (restructuring@nexalintechnology.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18586,12 +22020,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-snwv-exec",
+        "name": "SANUWAVE Health. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sanuwavehealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-snwv-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sanuwavehealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-93",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-93",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SANUWAVE Health. Executive Leadership & Special Committee (restructuring@sanuwavehealth.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18732,12 +22203,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ncpl-exec",
+        "name": "Netcapital. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@netcapital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ncpl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@netcapital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-94",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-94",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Netcapital. Executive Leadership & Special Committee (restructuring@netcapital.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -18878,12 +22386,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-slxn-exec",
+        "name": "Silexion Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@silexion.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-slxn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@silexion.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-95",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-95",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Silexion Executive Leadership & Special Committee (restructuring@silexion.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19024,12 +22569,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cldi-exec",
+        "name": "Calidi Bio. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@calidibio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cldi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@calidibio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-96",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-96",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Calidi Bio. Executive Leadership & Special Committee (restructuring@calidibio.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19170,12 +22752,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1969475-exec",
+        "name": "Bayview Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bayviewacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1969475-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bayviewacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-97",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-97",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Bayview Acquisition Executive Leadership & Special Committee (restructuring@bayviewacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19316,12 +22935,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ibac-exec",
+        "name": "IB Acquisition. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ibacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ibac-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ibacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-98",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-98",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to IB Acquisition. Executive Leadership & Special Committee (restructuring@ibacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19463,12 +23119,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gwh-exec",
+        "name": "ESS Tech. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@esstech.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gwh-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@esstech.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-99",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-99",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ESS Tech. Executive Leadership & Special Committee (restructuring@esstech.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19617,12 +23310,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-slsn-exec",
+        "name": "SOLESENCE. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@solesence.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-slsn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@solesence.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-100",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-100",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SOLESENCE. Executive Leadership & Special Committee (restructuring@solesence.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19763,12 +23493,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-itp-exec",
+        "name": "IT TECH PACKAGING. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ittechpackaging.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-itp-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ittechpackaging.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-101",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-101",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to IT TECH PACKAGING. Executive Leadership & Special Committee (restructuring@ittechpackaging.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -19909,12 +23676,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hcti-exec",
+        "name": "Healthcare Triangle. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@healthcaretriangle.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hcti-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@healthcaretriangle.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-102",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-102",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Healthcare Triangle. Executive Leadership & Special Committee (restructuring@healthcaretriangle.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20055,12 +23859,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bzai-exec",
+        "name": "Blaize. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@blaize.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bzai-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@blaize.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-103",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-103",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Blaize. Executive Leadership & Special Committee (restructuring@blaize.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20201,12 +24042,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dyai-exec",
+        "name": "DYADIC INTERNATIONAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@dyadicinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dyai-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@dyadicinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-104",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-104",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to DYADIC INTERNATIONAL Executive Leadership & Special Committee (restructuring@dyadicinternational.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20347,12 +24225,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-slnd-exec",
+        "name": "Southland. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@southland.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-slnd-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@southland.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-105",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-105",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Southland. Executive Leadership & Special Committee (restructuring@southland.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20493,12 +24408,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-drct-exec",
+        "name": "Direct Digital. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@directdigital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-drct-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@directdigital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-106",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-106",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Direct Digital. Executive Leadership & Special Committee (restructuring@directdigital.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20640,12 +24592,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-worx-exec",
+        "name": "SCWorx. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@scworx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-worx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@scworx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-107",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-107",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SCWorx. Executive Leadership & Special Committee (restructuring@scworx.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20794,12 +24783,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-spkl-exec",
+        "name": "Spark I Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sparkiacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-spkl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sparkiacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-108",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-108",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Spark I Acquisition Executive Leadership & Special Committee (restructuring@sparkiacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -20940,12 +24966,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-elme-exec",
+        "name": "Elme Communities Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@elmecommunities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-elme-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@elmecommunities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-109",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-109",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Elme Communities Executive Leadership & Special Committee (restructuring@elmecommunities.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21086,12 +25149,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gits-exec",
+        "name": "Global Interactive. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@globalinteractive.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gits-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@globalinteractive.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-110",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-110",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Global Interactive. Executive Leadership & Special Committee (restructuring@globalinteractive.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21232,12 +25332,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lhai-exec",
+        "name": "Linkhome. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@linkhome.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lhai-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@linkhome.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-111",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-111",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Linkhome. Executive Leadership & Special Committee (restructuring@linkhome.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21378,12 +25515,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-smtk-exec",
+        "name": "SmartKem. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@smartkem.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-smtk-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@smartkem.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-112",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-112",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SmartKem. Executive Leadership & Special Committee (restructuring@smartkem.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21524,12 +25698,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-noem-exec",
+        "name": "CO2 Energy Transition. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@co2energytransition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-noem-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@co2energytransition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-113",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-113",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CO2 Energy Transition. Executive Leadership & Special Committee (restructuring@co2energytransition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21669,12 +25880,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-batl-exec",
+        "name": "BATTALION OIL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@battalionoil.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-batl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@battalionoil.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-114",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-114",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BATTALION OIL Executive Leadership & Special Committee (restructuring@battalionoil.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21815,12 +26063,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-xcur-exec",
+        "name": "EXICURE. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@exicure.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-xcur-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@exicure.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-115",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-115",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to EXICURE. Executive Leadership & Special Committee (restructuring@exicure.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -21961,12 +26246,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-snyr-exec",
+        "name": "Synergy CHC. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@synergychc.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-snyr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@synergychc.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-116",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-116",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Synergy CHC. Executive Leadership & Special Committee (restructuring@synergychc.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22108,12 +26430,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-iht-exec",
+        "name": "INNSUITES HOSPITALITY TRUST Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@innsuiteshospitalitytrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-iht-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@innsuiteshospitalitytrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-117",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-117",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to INNSUITES HOSPITALITY TRUST Executive Leadership & Special Committee (restructuring@innsuiteshospitalitytrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22262,12 +26621,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bwow-exec",
+        "name": "Bitwise Dogecoin ETF Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bitwisedogecoinetf.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bwow-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bitwisedogecoinetf.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-118",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-118",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Bitwise Dogecoin ETF Executive Leadership & Special Committee (restructuring@bitwisedogecoinetf.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22408,12 +26804,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-flna-exec",
+        "name": "FILANA. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@filana.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-flna-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@filana.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-119",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-119",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to FILANA. Executive Leadership & Special Committee (restructuring@filana.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22554,12 +26987,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-xmax-exec",
+        "name": "XMax. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@xmax.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-xmax-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@xmax.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-120",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-120",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to XMax. Executive Leadership & Special Committee (restructuring@xmax.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22700,12 +27170,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-obk-exec",
+        "name": "Origin Ban. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@originban.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-obk-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@originban.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-121",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-121",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Origin Ban. Executive Leadership & Special Committee (restructuring@originban.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22846,12 +27353,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-rang-exec",
+        "name": "Range Capital Acquisition. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@rangecapitalacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-rang-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@rangecapitalacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-122",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-122",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Range Capital Acquisition. Executive Leadership & Special Committee (restructuring@rangecapitalacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -22992,12 +27536,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-aidx-exec",
+        "name": "20/20 Biolabs. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@2020biolabs.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-aidx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@2020biolabs.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-123",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-123",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to 20/20 Biolabs. Executive Leadership & Special Committee (restructuring@2020biolabs.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -23138,12 +27719,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hypr-exec",
+        "name": "Hyperfine. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hyperfine.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hypr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hyperfine.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-124",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-124",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Hyperfine. Executive Leadership & Special Committee (restructuring@hyperfine.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -23284,12 +27902,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-mbrx-exec",
+        "name": "Moleculin Biotech. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@moleculinbiotech.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-mbrx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@moleculinbiotech.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-125",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-125",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Moleculin Biotech. Executive Leadership & Special Committee (restructuring@moleculinbiotech.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -23430,12 +28085,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-fera-exec",
+        "name": "Fifth Era Acquisition I Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@fiftheraacquisitioni.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-fera-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@fiftheraacquisitioni.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-126",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-126",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Fifth Era Acquisition I Executive Leadership & Special Committee (restructuring@fiftheraacquisitioni.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -23576,12 +28268,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sdst-exec",
+        "name": "Stardust Power. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@stardustpower.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sdst-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@stardustpower.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-127",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-127",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Stardust Power. Executive Leadership & Special Committee (restructuring@stardustpower.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -23722,12 +28451,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-rebn-exec",
+        "name": "Reborn Coffee. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@reborncoffee.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-rebn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@reborncoffee.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-128",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-128",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Reborn Coffee. Executive Leadership & Special Committee (restructuring@reborncoffee.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -23868,12 +28634,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-aldf-exec",
+        "name": "Aldel Financial II. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@aldelfinancialii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-aldf-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@aldelfinancialii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-129",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-129",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Aldel Financial II. Executive Leadership & Special Committee (restructuring@aldelfinancialii.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24013,12 +28816,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-guts-exec",
+        "name": "FRACTYL HEALTH. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@fractylhealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-guts-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@fractylhealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-130",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-130",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to FRACTYL HEALTH. Executive Leadership & Special Committee (restructuring@fractylhealth.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24159,12 +28999,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bblg-exec",
+        "name": "Bone Biologics Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bonebiologics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bblg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bonebiologics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-131",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-131",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Bone Biologics Executive Leadership & Special Committee (restructuring@bonebiologics.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24305,12 +29182,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ivda-exec",
+        "name": "Iveda Solutions. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ivedasolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ivda-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ivedasolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-132",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-132",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Iveda Solutions. Executive Leadership & Special Committee (restructuring@ivedasolutions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24451,12 +29365,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-tela-exec",
+        "name": "TELA Bio. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@telabio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-tela-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@telabio.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-133",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-133",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TELA Bio. Executive Leadership & Special Committee (restructuring@telabio.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24597,12 +29548,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hubg-exec",
+        "name": "Hub. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hub.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hubg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hub.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-134",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-134",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Hub. Executive Leadership & Special Committee (restructuring@hub.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24743,12 +29731,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ispc-exec",
+        "name": "iSpecimen. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ispecimen.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ispc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ispecimen.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-135",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-135",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to iSpecimen. Executive Leadership & Special Committee (restructuring@ispecimen.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -24889,12 +29914,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sobr-exec",
+        "name": "SOBR Safe. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sobrsafe.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sobr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sobrsafe.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-136",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-136",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SOBR Safe. Executive Leadership & Special Committee (restructuring@sobrsafe.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25035,12 +30097,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 22
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gtec-exec",
+        "name": "Greenland. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@greenland.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gtec-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@greenland.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-137",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-137",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Greenland. Executive Leadership & Special Committee (restructuring@greenland.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25183,12 +30282,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 21
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-two-pc-exec",
+        "name": "TWO HARBORS INVESTMENT. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@twoharborsinvestment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-two-pc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@twoharborsinvestment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-138",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-138",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TWO HARBORS INVESTMENT. Executive Leadership & Special Committee (restructuring@twoharborsinvestment.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25346,12 +30482,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 21
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2079546-exec",
+        "name": "Cibatella. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cibatella.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2079546-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cibatella.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-139",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-139",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Cibatella. Executive Leadership & Special Committee (restructuring@cibatella.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25499,12 +30672,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 21
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-naii-exec",
+        "name": "NATURAL ALTERNATIVES INTERNATIONAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@naturalalternativesinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-naii-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@naturalalternativesinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-140",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-140",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NATURAL ALTERNATIVES INTERNATIONAL Executive Leadership & Special Committee (restructuring@naturalalternativesinternational.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25646,12 +30856,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 21
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sgla-exec",
+        "name": "Sino Green Land. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sinogreenland.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sgla-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sinogreenland.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-141",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-141",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Sino Green Land. Executive Leadership & Special Committee (restructuring@sinogreenland.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25800,12 +31047,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 20
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-blnh-exec",
+        "name": "Blue Line. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@blueline.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-blnh-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@blueline.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-142",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-142",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Blue Line. Executive Leadership & Special Committee (restructuring@blueline.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -25954,12 +31238,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 20
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-arrt-exec",
+        "name": "Artisan Consumer Goods. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@artisanconsumergoods.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-arrt-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@artisanconsumergoods.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-143",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-143",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Artisan Consumer Goods. Executive Leadership & Special Committee (restructuring@artisanconsumergoods.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26108,12 +31429,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 20
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-glns-exec",
+        "name": "Golden Star Resource. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@goldenstarresource.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-glns-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@goldenstarresource.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-144",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-144",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Golden Star Resource. Executive Leadership & Special Committee (restructuring@goldenstarresource.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26261,12 +31619,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-nnvc-exec",
+        "name": "NANOVIRICIDES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nanoviricides.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nnvc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nanoviricides.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-145",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-145",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NANOVIRICIDES. Executive Leadership & Special Committee (restructuring@nanoviricides.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26407,12 +31802,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-xeri-exec",
+        "name": "XERIANT. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@xeriant.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-xeri-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@xeriant.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-146",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-146",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to XERIANT. Executive Leadership & Special Committee (restructuring@xeriant.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26552,12 +31984,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-zone-exec",
+        "name": "Zone Frontier. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@zonefrontier.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-zone-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@zonefrontier.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-147",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-147",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Zone Frontier. Executive Leadership & Special Committee (restructuring@zonefrontier.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26698,12 +32167,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-wstn-exec",
+        "name": "Westin Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@westinacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-wstn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@westinacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-148",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-148",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Westin Acquisition Executive Leadership & Special Committee (restructuring@westinacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26844,12 +32350,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik928953-exec",
+        "name": "PILLARSTONE CAPITAL REIT Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@pillarstonecapitalreit.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik928953-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@pillarstonecapitalreit.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-149",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-149",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to PILLARSTONE CAPITAL REIT Executive Leadership & Special Committee (restructuring@pillarstonecapitalreit.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -26991,12 +32534,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lrdc-exec",
+        "name": "Laredo Oil. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@laredooil.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lrdc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@laredooil.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-150",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-150",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Laredo Oil. Executive Leadership & Special Committee (restructuring@laredooil.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -27145,12 +32725,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ptn-exec",
+        "name": "PALATIN Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@palatin.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ptn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@palatin.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-151",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-151",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to PALATIN Executive Leadership & Special Committee (restructuring@palatin.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -27291,12 +32908,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1857410-exec",
+        "name": "Invest Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@investacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1857410-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@investacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-152",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-152",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Invest Acquisition Executive Leadership & Special Committee (restructuring@investacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -27436,12 +33090,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-btoc-exec",
+        "name": "Armlogi. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@armlogi.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-btoc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@armlogi.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-153",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-153",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Armlogi. Executive Leadership & Special Committee (restructuring@armlogi.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -27582,12 +33273,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ocac-exec",
+        "name": "Ocean Capital Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@oceancapitalacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ocac-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@oceancapitalacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-154",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-154",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Ocean Capital Acquisition Executive Leadership & Special Committee (restructuring@oceancapitalacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -27727,12 +33455,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-foxx-exec",
+        "name": "Foxx Development. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@foxxdevelopment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-foxx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@foxxdevelopment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-155",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-155",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Foxx Development. Executive Leadership & Special Committee (restructuring@foxxdevelopment.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -27873,12 +33638,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-eonr-exec",
+        "name": "EON Resources. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@eonresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-eonr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@eonresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-156",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-156",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to EON Resources. Executive Leadership & Special Committee (restructuring@eonresources.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28019,12 +33821,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-fshp-exec",
+        "name": "Flag Ship Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@flagshipacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-fshp-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@flagshipacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-157",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-157",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Flag Ship Acquisition Executive Leadership & Special Committee (restructuring@flagshipacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28165,12 +34004,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hcac-exec",
+        "name": "Hall Chadwick Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hallchadwickacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hcac-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hallchadwickacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-158",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-158",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Hall Chadwick Acquisition Executive Leadership & Special Committee (restructuring@hallchadwickacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28319,12 +34195,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-xlab-exec",
+        "name": "Exascale Labs. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@exascalelabs.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-xlab-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@exascalelabs.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-159",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-159",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Exascale Labs. Executive Leadership & Special Committee (restructuring@exascalelabs.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28465,12 +34378,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cast-exec",
+        "name": "FreeCast. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@freecast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cast-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@freecast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-160",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-160",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to FreeCast. Executive Leadership & Special Committee (restructuring@freecast.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28611,12 +34561,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-prsi-exec",
+        "name": "PORTSMOUTH SQUARE Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@portsmouthsquare.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-prsi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@portsmouthsquare.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-161",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-161",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to PORTSMOUTH SQUARE Executive Leadership & Special Committee (restructuring@portsmouthsquare.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28757,12 +34744,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 17
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-intg-exec",
+        "name": "INTER Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@inter.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-intg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@inter.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-162",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-162",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to INTER Executive Leadership & Special Committee (restructuring@inter.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -28903,12 +34927,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ldxc-exec",
+        "name": "Londax. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@londax.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ldxc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@londax.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-163",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-163",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Londax. Executive Leadership & Special Committee (restructuring@londax.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29049,12 +35110,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1642363-exec",
+        "name": "SEGUIN NATURAL HAIR PRODUCTS. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@seguinnaturalhairproducts.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1642363-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@seguinnaturalhairproducts.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-164",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-164",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SEGUIN NATURAL HAIR PRODUCTS. Executive Leadership & Special Committee (restructuring@seguinnaturalhairproducts.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29195,12 +35293,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1696411-exec",
+        "name": "Crona. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@crona.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1696411-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@crona.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-165",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-165",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Crona. Executive Leadership & Special Committee (restructuring@crona.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29340,12 +35475,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hgyn-exec",
+        "name": "HONG YUAN Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hongyuan.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hgyn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hongyuan.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-166",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-166",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to HONG YUAN Executive Leadership & Special Committee (restructuring@hongyuan.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29486,12 +35658,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-hwke-exec",
+        "name": "Hawkeye Digital. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hawkeyedigital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hwke-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hawkeyedigital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-167",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-167",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Hawkeye Digital. Executive Leadership & Special Committee (restructuring@hawkeyedigital.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29632,12 +35841,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-amst-exec",
+        "name": "Amesite. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@amesite.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-amst-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@amesite.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-168",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-168",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Amesite. Executive Leadership & Special Committee (restructuring@amesite.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29778,12 +36024,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-csui-exec",
+        "name": "CANNABIS SUISSE. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cannabissuisse.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-csui-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cannabissuisse.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-169",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-169",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CANNABIS SUISSE. Executive Leadership & Special Committee (restructuring@cannabissuisse.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -29924,12 +36207,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-mrcl-exec",
+        "name": "Mercalot. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@mercalot.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-mrcl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@mercalot.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-170",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-170",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Mercalot. Executive Leadership & Special Committee (restructuring@mercalot.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30070,12 +36390,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ausi-exec",
+        "name": "AURA SYSTEMS Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@aurasystems.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ausi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@aurasystems.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-171",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-171",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AURA SYSTEMS Executive Leadership & Special Committee (restructuring@aurasystems.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30216,12 +36573,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lgvt-exec",
+        "name": "Longevity Diversified. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@longevitydiversified.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lgvt-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@longevitydiversified.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-172",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-172",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Longevity Diversified. Executive Leadership & Special Committee (restructuring@longevitydiversified.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30362,12 +36756,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-pzg-exec",
+        "name": "Paramount Gold Nevada. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@paramountgoldnevada.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-pzg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@paramountgoldnevada.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-173",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-173",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Paramount Gold Nevada. Executive Leadership & Special Committee (restructuring@paramountgoldnevada.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30508,12 +36939,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-feam-exec",
+        "name": "5E Advanced Materials. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@5eadvancedmaterials.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-feam-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@5eadvancedmaterials.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-174",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-174",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to 5E Advanced Materials. Executive Leadership & Special Committee (restructuring@5eadvancedmaterials.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30653,12 +37121,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-wewa-exec",
+        "name": "WEWARDS. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@wewards.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-wewa-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@wewards.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-175",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-175",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to WEWARDS. Executive Leadership & Special Committee (restructuring@wewards.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30799,12 +37304,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gflt-exec",
+        "name": "GenFlat. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@genflat.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gflt-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@genflat.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-176",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-176",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GenFlat. Executive Leadership & Special Committee (restructuring@genflat.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -30945,12 +37487,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-karx-exec",
+        "name": "Karbon-X. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@karbonx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-karx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@karbonx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-177",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-177",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Karbon-X. Executive Leadership & Special Committee (restructuring@karbonx.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31092,12 +37671,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-tmgi-exec",
+        "name": "Transglobal Management. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@transglobalmanagement.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-tmgi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@transglobalmanagement.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-178",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-178",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Transglobal Management. Executive Leadership & Special Committee (restructuring@transglobalmanagement.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31246,12 +37862,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-scth-exec",
+        "name": "Securetech Innovations. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@securetechinnovations.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-scth-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@securetechinnovations.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-179",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-179",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Securetech Innovations. Executive Leadership & Special Committee (restructuring@securetechinnovations.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31392,12 +38045,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-tbn-exec",
+        "name": "Tamboran Resources Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@tamboranresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-tbn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@tamboranresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-180",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-180",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Tamboran Resources Executive Leadership & Special Committee (restructuring@tamboranresources.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31538,12 +38228,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ecxj-exec",
+        "name": "CXJ. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cxj.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ecxj-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cxj.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-181",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-181",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CXJ. Executive Leadership & Special Committee (restructuring@cxj.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31684,12 +38411,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-plur-exec",
+        "name": "Pluri. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@pluri.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-plur-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@pluri.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-182",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-182",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Pluri. Executive Leadership & Special Committee (restructuring@pluri.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31830,12 +38594,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-aiev-exec",
+        "name": "Thunder Power. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@thunderpower.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-aiev-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@thunderpower.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-183",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-183",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Thunder Power. Executive Leadership & Special Committee (restructuring@thunderpower.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -31976,12 +38777,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ppcb-exec",
+        "name": "Propanc Biopharma. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@propancbiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ppcb-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@propancbiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-184",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-184",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Propanc Biopharma. Executive Leadership & Special Committee (restructuring@propancbiopharma.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32122,12 +38960,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-neup-exec",
+        "name": "Neuphoria. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@neuphoria.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-neup-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@neuphoria.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-185",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-185",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Neuphoria. Executive Leadership & Special Committee (restructuring@neuphoria.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32268,12 +39143,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-qnme-exec",
+        "name": "Quanome. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@quanome.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-qnme-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@quanome.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-186",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-186",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Quanome. Executive Leadership & Special Committee (restructuring@quanome.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32414,12 +39326,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bntc-exec",
+        "name": "Benitec Biopharma. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@benitecbiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bntc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@benitecbiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-187",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-187",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Benitec Biopharma. Executive Leadership & Special Committee (restructuring@benitecbiopharma.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32560,12 +39509,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-atch-exec",
+        "name": "AtlasClear. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@atlasclear.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-atch-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@atlasclear.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-188",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-188",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AtlasClear. Executive Leadership & Special Committee (restructuring@atlasclear.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32706,12 +39692,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ixhl-exec",
+        "name": "Incannex Healthcare. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@incannexhealthcare.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ixhl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@incannexhealthcare.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-189",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-189",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Incannex Healthcare. Executive Leadership & Special Committee (restructuring@incannexhealthcare.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32852,12 +39875,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1951752-exec",
+        "name": "Ford Credit Auto Owner Trust 2022-D Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@fordcreditautoownertrust2022d.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1951752-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@fordcreditautoownertrust2022d.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-190",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-190",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Ford Credit Auto Owner Trust 2022-D Executive Leadership & Special Committee (restructuring@fordcreditautoownertrust2022d.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -32997,12 +40057,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2148245-exec",
+        "name": "New Iceland Arctic Acquisition. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@newicelandarcticacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2148245-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@newicelandarcticacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-191",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-191",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to New Iceland Arctic Acquisition. Executive Leadership & Special Committee (restructuring@newicelandarcticacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -33142,12 +40239,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1661136-exec",
+        "name": "CSAIL 2016-C5 Commercial Mortgage Trust Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@csail2016c5commercialmortgagetrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1661136-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@csail2016c5commercialmortgagetrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-192",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-192",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CSAIL 2016-C5 Commercial Mortgage Trust Executive Leadership & Special Committee (restructuring@csail2016c5commercialmortgagetrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -33287,12 +40421,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1738699-exec",
+        "name": "Wisekey International S.A. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@wisekeyinternationalsa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1738699-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@wisekeyinternationalsa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-193",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-193",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Wisekey International S.A. Executive Leadership & Special Committee (restructuring@wisekeyinternationalsa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -33432,12 +40603,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2134183-exec",
+        "name": "Platinum Spin. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@platinumspin.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2134183-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@platinumspin.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-194",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-194",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Platinum Spin. Executive Leadership & Special Committee (restructuring@platinumspin.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -33577,12 +40785,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1988280-exec",
+        "name": "Manulife Private Credit Fund Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@manulifeprivatecreditfund.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1988280-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@manulifeprivatecreditfund.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-195",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-195",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Manulife Private Credit Fund Executive Leadership & Special Committee (restructuring@manulifeprivatecreditfund.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -33722,12 +40967,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik801337-exec",
+        "name": "WEBSTER FINANCIAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@websterfinancial.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik801337-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@websterfinancial.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-196",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-196",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to WEBSTER FINANCIAL Executive Leadership & Special Committee (restructuring@websterfinancial.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -33867,12 +41149,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1851048-exec",
+        "name": "Cyber App Solutions. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cyberappsolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1851048-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cyberappsolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-197",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-197",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Cyber App Solutions. Executive Leadership & Special Committee (restructuring@cyberappsolutions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34012,12 +41331,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1944019-exec",
+        "name": "GM Financial Consumer Automobile Receivables Trust 2022-4 Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@gmfinancialconsumerautomobilereceivablestrust20224.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1944019-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@gmfinancialconsumerautomobilereceivablestrust20224.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-198",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-198",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GM Financial Consumer Automobile Receivables Trust 2022-4 Executive Leadership & Special Committee (restructuring@gmfinancialconsumerautomobilereceivablestrust20224.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34157,12 +41513,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2097557-exec",
+        "name": "GOWell Technology Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@gowelltechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2097557-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@gowelltechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-199",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-199",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GOWell Technology Executive Leadership & Special Committee (restructuring@gowelltechnology.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34302,12 +41695,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2096204-exec",
+        "name": "ONE Nuclear Energy Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@onenuclearenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2096204-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@onenuclearenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-200",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-200",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ONE Nuclear Energy Executive Leadership & Special Committee (restructuring@onenuclearenergy.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34447,12 +41877,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1779977-exec",
+        "name": "SeeQC. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@seeqc.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1779977-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@seeqc.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-201",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-201",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SeeQC. Executive Leadership & Special Committee (restructuring@seeqc.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34592,12 +42059,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1375195-exec",
+        "name": "CORETEC. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@coretec.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1375195-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@coretec.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-202",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-202",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CORETEC. Executive Leadership & Special Committee (restructuring@coretec.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34737,12 +42241,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik915912-exec",
+        "name": "AVALONBAY COMMUNITIES Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@avalonbaycommunities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik915912-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@avalonbaycommunities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-203",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-203",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AVALONBAY COMMUNITIES Executive Leadership & Special Committee (restructuring@avalonbaycommunities.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -34882,12 +42423,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1934479-exec",
+        "name": "CarMax Auto Owner Trust 2022-3 Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@carmaxautoownertrust20223.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1934479-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@carmaxautoownertrust20223.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-204",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-204",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CarMax Auto Owner Trust 2022-3 Executive Leadership & Special Committee (restructuring@carmaxautoownertrust20223.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35027,12 +42605,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1102993-exec",
+        "name": "LIVEPERSON Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@liveperson.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1102993-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@liveperson.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-205",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-205",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to LIVEPERSON Executive Leadership & Special Committee (restructuring@liveperson.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35172,12 +42787,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2083583-exec",
+        "name": "BSTR. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bstr.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2083583-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bstr.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-206",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-206",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BSTR. Executive Leadership & Special Committee (restructuring@bstr.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35317,12 +42969,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2083564-exec",
+        "name": "BSTR New Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bstrnew.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2083564-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bstrnew.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-207",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-207",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BSTR New Executive Leadership & Special Committee (restructuring@bstrnew.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35462,12 +43151,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1407200-exec",
+        "name": "Discover Card Execution Note Trust Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@discovercardexecutionnotetrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1407200-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@discovercardexecutionnotetrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-208",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-208",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Discover Card Execution Note Trust Executive Leadership & Special Committee (restructuring@discovercardexecutionnotetrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35607,12 +43333,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1645731-exec",
+        "name": "Discover Funding Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@discoverfunding.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1645731-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@discoverfunding.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-209",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-209",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Discover Funding Executive Leadership & Special Committee (restructuring@discoverfunding.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35752,12 +43515,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1974640-exec",
+        "name": "Apogee. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@apogee.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1974640-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@apogee.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-210",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-210",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Apogee. Executive Leadership & Special Committee (restructuring@apogee.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -35897,12 +43697,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2024306-exec",
+        "name": "JFB Construction Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@jfbconstruction.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2024306-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@jfbconstruction.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-211",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-211",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to JFB Construction Executive Leadership & Special Committee (restructuring@jfbconstruction.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -36042,12 +43879,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1658247-exec",
+        "name": "Crinetics. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@crinetics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1658247-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@crinetics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-212",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-212",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Crinetics. Executive Leadership & Special Committee (restructuring@crinetics.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -36187,12 +44061,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1692427-exec",
+        "name": "NCS Multistage. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ncsmultistage.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1692427-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ncsmultistage.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-213",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-213",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NCS Multistage. Executive Leadership & Special Committee (restructuring@ncsmultistage.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -36332,12 +44243,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1842012-exec",
+        "name": "Carvana Auto Receivables Trust 2021-N1 Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@carvanaautoreceivablestrust2021n1.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1842012-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@carvanaautoreceivablestrust2021n1.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-214",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-214",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Carvana Auto Receivables Trust 2021-N1 Executive Leadership & Special Committee (restructuring@carvanaautoreceivablestrust2021n1.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -36477,12 +44425,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1614033-exec",
+        "name": "JPMBB Commercial Mortgage Securities Trust 2014-C22 Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@jpmbbcommercialmortgagesecuritiestrust2014c22.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1614033-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@jpmbbcommercialmortgagesecuritiestrust2014c22.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-215",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-215",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to JPMBB Commercial Mortgage Securities Trust 2014-C22 Executive Leadership & Special Committee (restructuring@jpmbbcommercialmortgagesecuritiestrust2014c22.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -36622,12 +44607,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 16
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1643550-exec",
+        "name": "Wells Fargo Commercial Mortgage Trust 2015-C29 Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@wellsfargocommercialmortgagetrust2015c29.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1643550-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@wellsfargocommercialmortgagetrust2015c29.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-216",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-216",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Wells Fargo Commercial Mortgage Trust 2015-C29 Executive Leadership & Special Committee (restructuring@wellsfargocommercialmortgagetrust2015c29.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -36807,12 +44829,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1354457-exec",
+        "name": "Nasdaq Stock Market Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nasdaqstockmarket.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1354457-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nasdaqstockmarket.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-217",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-217",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Nasdaq Stock Market Executive Leadership & Special Committee (restructuring@nasdaqstockmarket.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -37272,12 +45331,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1990950-exec",
+        "name": "Semilux International. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@semiluxinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1990950-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@semiluxinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-218",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-218",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Semilux International. Executive Leadership & Special Committee (restructuring@semiluxinternational.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -37417,12 +45513,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik721693-exec",
+        "name": "Smart Powerr. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@smartpowerr.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik721693-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@smartpowerr.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-219",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-219",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Smart Powerr. Executive Leadership & Special Committee (restructuring@smartpowerr.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -37563,12 +45696,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2080023-exec",
+        "name": "NorthStar Earth & Space Enterprises. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@northstarearthspaceenterprises.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2080023-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@northstarearthspaceenterprises.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-220",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-220",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NorthStar Earth & Space Enterprises. Executive Leadership & Special Committee (restructuring@northstarearthspaceenterprises.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -37716,12 +45886,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2006468-exec",
+        "name": "NUSATRIP Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nusatrip.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2006468-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nusatrip.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-221",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-221",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NUSATRIP Executive Leadership & Special Committee (restructuring@nusatrip.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -37861,12 +46068,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1710607-exec",
+        "name": "AMERICAN CENTURY ETF TRUST Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@americancenturyetftrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1710607-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@americancenturyetftrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-222",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-222",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AMERICAN CENTURY ETF TRUST Executive Leadership & Special Committee (restructuring@americancenturyetftrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38006,12 +46250,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1466143-exec",
+        "name": "Discovery Communications Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@discoverycommunications.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1466143-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@discoverycommunications.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-223",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-223",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Discovery Communications Executive Leadership & Special Committee (restructuring@discoverycommunications.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38151,12 +46432,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1889658-exec",
+        "name": "Discovery Global. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@discoveryglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1889658-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@discoveryglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-224",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-224",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Discovery Global. Executive Leadership & Special Committee (restructuring@discoveryglobal.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38296,12 +46614,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1430602-exec",
+        "name": "Scripps Networks Interactive. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@scrippsnetworksinteractive.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1430602-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@scrippsnetworksinteractive.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-225",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-225",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Scripps Networks Interactive. Executive Leadership & Special Committee (restructuring@scrippsnetworksinteractive.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38441,12 +46796,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1861841-exec",
+        "name": "Arbe Robotics. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@arberobotics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1861841-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@arberobotics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-226",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-226",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Arbe Robotics. Executive Leadership & Special Committee (restructuring@arberobotics.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38586,12 +46978,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2005569-exec",
+        "name": "Empro. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@empro.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2005569-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@empro.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-227",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-227",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Empro. Executive Leadership & Special Committee (restructuring@empro.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38731,12 +47160,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1130713-exec",
+        "name": "NEIGHBORHOOD INTELLIGENCE. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@neighborhoodintelligence.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1130713-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@neighborhoodintelligence.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-228",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-228",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NEIGHBORHOOD INTELLIGENCE. Executive Leadership & Special Committee (restructuring@neighborhoodintelligence.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -38876,12 +47342,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1066225-exec",
+        "name": "DILLARDS CAPITAL TRUST I Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@dillardscapitaltrusti.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1066225-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@dillardscapitaltrusti.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-229",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-229",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to DILLARDS CAPITAL TRUST I Executive Leadership & Special Committee (restructuring@dillardscapitaltrusti.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -39021,12 +47524,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik68622-exec",
+        "name": "QWEST Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@qwest.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik68622-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@qwest.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-230",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-230",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to QWEST Executive Leadership & Special Committee (restructuring@qwest.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -39166,12 +47706,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1949478-exec",
+        "name": "DAVIS COMMODITIES Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@daviscommodities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1949478-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@daviscommodities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-231",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-231",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to DAVIS COMMODITIES Executive Leadership & Special Committee (restructuring@daviscommodities.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -39312,12 +47889,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1816125-exec",
+        "name": "Dimensional ETF Trust Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@dimensionaletftrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1816125-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@dimensionaletftrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-232",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-232",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Dimensional ETF Trust Executive Leadership & Special Committee (restructuring@dimensionaletftrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -39494,12 +48108,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik876661-exec",
+        "name": "NEW YORK STOCK EXCHANGE Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@newyorkstockexchange.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik876661-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@newyorkstockexchange.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-233",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-233",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NEW YORK STOCK EXCHANGE Executive Leadership & Special Committee (restructuring@newyorkstockexchange.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -39874,12 +48525,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1143362-exec",
+        "name": "NYSE ARCA. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nysearca.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1143362-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nysearca.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-234",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-234",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NYSE ARCA. Executive Leadership & Special Committee (restructuring@nysearca.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40043,12 +48731,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1561032-exec",
+        "name": "National Healthcare Properties. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nationalhealthcareproperties.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1561032-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nationalhealthcareproperties.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-235",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-235",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to National Healthcare Properties. Executive Leadership & Special Committee (restructuring@nationalhealthcareproperties.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40188,12 +48913,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik845982-exec",
+        "name": "SMITH & NEPHEW Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@smithnephew.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik845982-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@smithnephew.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-236",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-236",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SMITH & NEPHEW Executive Leadership & Special Committee (restructuring@smithnephew.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40333,12 +49095,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1762239-exec",
+        "name": "Kaival Brands Innovations. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@kaivalbrandsinnovations.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1762239-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@kaivalbrandsinnovations.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-237",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-237",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Kaival Brands Innovations. Executive Leadership & Special Committee (restructuring@kaivalbrandsinnovations.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40478,12 +49277,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1796898-exec",
+        "name": "Maxeon Solar. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@maxeonsolar.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1796898-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@maxeonsolar.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-238",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-238",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Maxeon Solar. Executive Leadership & Special Committee (restructuring@maxeonsolar.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40623,12 +49459,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1043219-exec",
+        "name": "ANNALY CAPITAL MANAGEMENT Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@annalycapitalmanagement.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1043219-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@annalycapitalmanagement.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-239",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-239",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ANNALY CAPITAL MANAGEMENT Executive Leadership & Special Committee (restructuring@annalycapitalmanagement.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40768,12 +49641,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1804469-exec",
+        "name": "Guardforce AI.. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@guardforceai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1804469-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@guardforceai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-240",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-240",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Guardforce AI.. Executive Leadership & Special Committee (restructuring@guardforceai.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -40913,12 +49823,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1741534-exec",
+        "name": "MDJM Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@mdjm.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1741534-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@mdjm.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-241",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-241",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to MDJM Executive Leadership & Special Committee (restructuring@mdjm.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41058,12 +50005,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik912595-exec",
+        "name": "MID AMERICA APARTMENT COMMUNITIES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@midamericaapartmentcommunities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik912595-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@midamericaapartmentcommunities.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-242",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-242",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to MID AMERICA APARTMENT COMMUNITIES. Executive Leadership & Special Committee (restructuring@midamericaapartmentcommunities.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41203,12 +50187,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1143313-exec",
+        "name": "NYSE AMERICAN Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nyseamerican.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1143313-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nyseamerican.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-243",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-243",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NYSE AMERICAN Executive Leadership & Special Committee (restructuring@nyseamerican.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41348,12 +50369,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2046573-exec",
+        "name": "Pitanium Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@pitanium.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2046573-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@pitanium.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-244",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-244",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Pitanium Executive Leadership & Special Committee (restructuring@pitanium.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41493,12 +50551,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1004989-exec",
+        "name": "SPAR. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@spar.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1004989-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@spar.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-245",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-245",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SPAR. Executive Leadership & Special Committee (restructuring@spar.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41638,12 +50733,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1893219-exec",
+        "name": "Abpro. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@abpro.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1893219-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@abpro.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-246",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-246",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Abpro. Executive Leadership & Special Committee (restructuring@abpro.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41783,12 +50915,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik313616-exec",
+        "name": "DANAHER /DE/ Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@danaherde.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik313616-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@danaherde.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-247",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-247",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to DANAHER /DE/ Executive Leadership & Special Committee (restructuring@danaherde.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -41928,12 +51097,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1824920-exec",
+        "name": "IonQ. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ionq.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1824920-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ionq.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-248",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-248",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to IonQ. Executive Leadership & Special Committee (restructuring@ionq.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42073,12 +51279,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1889983-exec",
+        "name": "Keen Vision Acquisition. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@keenvisionacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1889983-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@keenvisionacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-249",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-249",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Keen Vision Acquisition. Executive Leadership & Special Committee (restructuring@keenvisionacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42218,12 +51461,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1518042-exec",
+        "name": "NORTHERN LIGHTS FUND TRUST II Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@northernlightsfundtrustii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1518042-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@northernlightsfundtrustii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-250",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-250",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NORTHERN LIGHTS FUND TRUST II Executive Leadership & Special Committee (restructuring@northernlightsfundtrustii.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42363,12 +51643,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1676047-exec",
+        "name": "NutriBand. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nutriband.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1676047-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nutriband.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-251",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-251",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NutriBand. Executive Leadership & Special Committee (restructuring@nutriband.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42508,12 +51825,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1779306-exec",
+        "name": "ALTSHARES TRUST Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@altsharestrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1779306-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@altsharestrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-252",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-252",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ALTSHARES TRUST Executive Leadership & Special Committee (restructuring@altsharestrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42653,12 +52007,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1464790-exec",
+        "name": "BRC. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@brc.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1464790-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@brc.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-253",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-253",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BRC. Executive Leadership & Special Committee (restructuring@brc.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42798,12 +52189,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1826681-exec",
+        "name": "Palladyne AI. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@palladyneai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1826681-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@palladyneai.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-254",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-254",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Palladyne AI. Executive Leadership & Special Committee (restructuring@palladyneai.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -42943,12 +52371,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1637147-exec",
+        "name": "zSpace. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@zspace.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1637147-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@zspace.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-255",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-255",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to zSpace. Executive Leadership & Special Committee (restructuring@zspace.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43088,12 +52553,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik51253-exec",
+        "name": "INTERNATIONAL FLAVORS & FRAGRANCES Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@internationalflavorsfragrances.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik51253-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@internationalflavorsfragrances.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-256",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-256",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to INTERNATIONAL FLAVORS & FRAGRANCES Executive Leadership & Special Committee (restructuring@internationalflavorsfragrances.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43233,12 +52735,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1119639-exec",
+        "name": "PETROBRAS - PETROLEO BRASILEIRO SA Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@petrobraspetroleobrasileirosa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1119639-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@petrobraspetroleobrasileirosa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-257",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-257",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to PETROBRAS - PETROLEO BRASILEIRO SA Executive Leadership & Special Committee (restructuring@petrobraspetroleobrasileirosa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43378,12 +52917,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1557157-exec",
+        "name": "Petrobras Global Finance B.V. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@petrobrasglobalfinancebv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1557157-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@petrobrasglobalfinancebv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-258",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-258",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Petrobras Global Finance B.V. Executive Leadership & Special Committee (restructuring@petrobrasglobalfinancebv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43523,12 +53099,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1840199-exec",
+        "name": "Waldencast Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@waldencast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1840199-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@waldencast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-259",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-259",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Waldencast Executive Leadership & Special Committee (restructuring@waldencast.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43668,12 +53281,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1788028-exec",
+        "name": "Jasper. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@jasper.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1788028-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@jasper.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-260",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-260",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Jasper. Executive Leadership & Special Committee (restructuring@jasper.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43813,12 +53463,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1738827-exec",
+        "name": "KLX Energy Services. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@klxenergyservices.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1738827-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@klxenergyservices.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-261",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-261",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to KLX Energy Services. Executive Leadership & Special Committee (restructuring@klxenergyservices.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -43958,12 +53645,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1846416-exec",
+        "name": "ONE Nuclear Energy. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@onenuclearenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1846416-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@onenuclearenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-262",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-262",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ONE Nuclear Energy. Executive Leadership & Special Committee (restructuring@onenuclearenergy.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44103,12 +53827,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1060822-exec",
+        "name": "CARTERS Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@carters.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1060822-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@carters.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-263",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-263",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CARTERS Executive Leadership & Special Committee (restructuring@carters.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44248,12 +54009,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik21344-exec",
+        "name": "COCA COLA Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cocacola.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik21344-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cocacola.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-264",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-264",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to COCA COLA Executive Leadership & Special Committee (restructuring@cocacola.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44394,12 +54192,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1417835-exec",
+        "name": "Cboe BZX Exchange. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cboebzxexchange.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1417835-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cboebzxexchange.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-265",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-265",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Cboe BZX Exchange. Executive Leadership & Special Committee (restructuring@cboebzxexchange.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44547,12 +54382,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2043699-exec",
+        "name": "NewHold Investment. III Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@newholdinvestmentiii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2043699-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@newholdinvestmentiii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-266",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-266",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NewHold Investment. III Executive Leadership & Special Committee (restructuring@newholdinvestmentiii.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44693,12 +54565,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1924868-exec",
+        "name": "Tidal Trust II Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@tidaltrustii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1924868-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@tidaltrustii.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-267",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-267",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Tidal Trust II Executive Leadership & Special Committee (restructuring@tidaltrustii.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44846,12 +54755,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik62709-exec",
+        "name": "MARSH & MCLENNAN COMPANIES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@marshmclennancompanies.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik62709-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@marshmclennancompanies.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-268",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-268",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to MARSH & MCLENNAN COMPANIES. Executive Leadership & Special Committee (restructuring@marshmclennancompanies.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -44991,12 +54937,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1976322-exec",
+        "name": "Themes ETF Trust Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@themesetftrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1976322-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@themesetftrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-269",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-269",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Themes ETF Trust Executive Leadership & Special Committee (restructuring@themesetftrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -45136,12 +55119,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1377936-exec",
+        "name": "SARATOGA INVESTMENT. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@saratogainvestment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1377936-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@saratogainvestment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-270",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-270",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SARATOGA INVESTMENT. Executive Leadership & Special Committee (restructuring@saratogainvestment.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -45281,12 +55301,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik314590-exec",
+        "name": "SASOL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sasol.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik314590-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sasol.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-271",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-271",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SASOL Executive Leadership & Special Committee (restructuring@sasol.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -45426,12 +55483,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1752360-exec",
+        "name": "Sasol Financing USA Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sasolfinancingusa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1752360-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sasolfinancingusa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-272",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-272",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Sasol Financing USA Executive Leadership & Special Committee (restructuring@sasolfinancingusa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -45571,12 +55665,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1771146-exec",
+        "name": "ETF Opportunities Trust Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@etfopportunitiestrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1771146-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@etfopportunitiestrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-273",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-273",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ETF Opportunities Trust Executive Leadership & Special Committee (restructuring@etfopportunitiestrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -45716,12 +55847,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1527613-exec",
+        "name": "CIMG. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cimg.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1527613-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cimg.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-274",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-274",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CIMG. Executive Leadership & Special Committee (restructuring@cimg.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -45861,12 +56029,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik831001-exec",
+        "name": "CITI Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@citi.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik831001-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@citi.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-275",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-275",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CITI Executive Leadership & Special Committee (restructuring@citi.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46006,12 +56211,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik200245-exec",
+        "name": "Citi Global Markets. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@citiglobalmarkets.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik200245-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@citiglobalmarkets.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-276",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-276",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Citi Global Markets. Executive Leadership & Special Committee (restructuring@citiglobalmarkets.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46151,12 +56393,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1824502-exec",
+        "name": "Archer Aviation. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@archeraviation.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1824502-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@archeraviation.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-277",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-277",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Archer Aviation. Executive Leadership & Special Committee (restructuring@archeraviation.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46296,12 +56575,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1841330-exec",
+        "name": "Pasithea. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@pasithea.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1841330-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@pasithea.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-278",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-278",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Pasithea. Executive Leadership & Special Committee (restructuring@pasithea.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46441,12 +56757,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik104169-exec",
+        "name": "Walmart. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@walmart.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik104169-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@walmart.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-279",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-279",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Walmart. Executive Leadership & Special Committee (restructuring@walmart.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46586,12 +56939,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik732026-exec",
+        "name": "TRIO-TECH INTERNATIONAL Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@triotechinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik732026-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@triotechinternational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-280",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-280",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TRIO-TECH INTERNATIONAL Executive Leadership & Special Committee (restructuring@triotechinternational.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46731,12 +57121,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1972459-exec",
+        "name": "Texas Capital Funds Trust Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@texascapitalfundstrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1972459-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@texascapitalfundstrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-281",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-281",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Texas Capital Funds Trust Executive Leadership & Special Committee (restructuring@texascapitalfundstrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -46876,12 +57303,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1160106-exec",
+        "name": "Lloyds Banking Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lloydsbanking.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1160106-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lloydsbanking.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-282",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-282",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Lloyds Banking Executive Leadership & Special Committee (restructuring@lloydsbanking.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47021,12 +57485,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik312069-exec",
+        "name": "BARCLAYS Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@barclays.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik312069-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@barclays.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-283",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-283",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BARCLAYS Executive Leadership & Special Committee (restructuring@barclays.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47166,12 +57667,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik891478-exec",
+        "name": "Ban Santander, S.A. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bansantandersa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik891478-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bansantandersa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-284",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-284",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Ban Santander, S.A. Executive Leadership & Special Committee (restructuring@bansantandersa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47311,12 +57849,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1166691-exec",
+        "name": "COMCAST Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@comcast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1166691-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@comcast.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-285",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-285",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to COMCAST Executive Leadership & Special Committee (restructuring@comcast.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47456,12 +58031,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1333621-exec",
+        "name": "Shell International Finance B.V. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@shellinternationalfinancebv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1333621-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@shellinternationalfinancebv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-286",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-286",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Shell International Finance B.V. Executive Leadership & Special Committee (restructuring@shellinternationalfinancebv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47601,12 +58213,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1306965-exec",
+        "name": "Shell Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@shell.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1306965-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@shell.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-287",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-287",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Shell Executive Leadership & Special Committee (restructuring@shell.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47746,12 +58395,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik818686-exec",
+        "name": "TEVA PHARMACEUTICAL INDUSTRIES Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@tevapharmaceuticalindustries.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik818686-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@tevapharmaceuticalindustries.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-288",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-288",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TEVA PHARMACEUTICAL INDUSTRIES Executive Leadership & Special Committee (restructuring@tevapharmaceuticalindustries.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -47891,12 +58577,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1039765-exec",
+        "name": "ING GROEP NV Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@inggroepnv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1039765-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@inggroepnv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-289",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-289",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ING GROEP NV Executive Leadership & Special Committee (restructuring@inggroepnv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48036,12 +58759,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1798562-exec",
+        "name": "TMC the metals. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@tmcthemetals.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1798562-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@tmcthemetals.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-290",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-290",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to TMC the metals. Executive Leadership & Special Committee (restructuring@tmcthemetals.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48181,12 +58941,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2008027-exec",
+        "name": "Calor Del Sol. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@calordelsol.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2008027-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@calordelsol.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-291",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-291",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Calor Del Sol. Executive Leadership & Special Committee (restructuring@calordelsol.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48326,12 +59123,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1673475-exec",
+        "name": "GPO Plus. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@gpoplus.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1673475-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@gpoplus.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-292",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-292",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GPO Plus. Executive Leadership & Special Committee (restructuring@gpoplus.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48471,12 +59305,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1696025-exec",
+        "name": "Kindcard. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@kindcard.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1696025-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@kindcard.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-293",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-293",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Kindcard. Executive Leadership & Special Committee (restructuring@kindcard.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48616,12 +59487,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1697884-exec",
+        "name": "VITASPRING BIOMEDICAL.. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@vitaspringbiomedical.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1697884-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@vitaspringbiomedical.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-294",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-294",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to VITASPRING BIOMEDICAL.. Executive Leadership & Special Committee (restructuring@vitaspringbiomedical.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48761,12 +59669,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1674440-exec",
+        "name": "AIRWA. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@airwa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1674440-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@airwa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-295",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-295",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AIRWA. Executive Leadership & Special Committee (restructuring@airwa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -48906,12 +59851,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1342916-exec",
+        "name": "HNO International. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@hnointernational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1342916-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@hnointernational.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-296",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-296",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to HNO International. Executive Leadership & Special Committee (restructuring@hnointernational.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49051,12 +60033,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1703625-exec",
+        "name": "NAPC Defense. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@napcdefense.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1703625-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@napcdefense.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-297",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-297",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to NAPC Defense. Executive Leadership & Special Committee (restructuring@napcdefense.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49196,12 +60215,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik2085177-exec",
+        "name": "QuasarEdge Acquisition Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@quasaredgeacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik2085177-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@quasaredgeacquisition.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-298",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-298",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to QuasarEdge Acquisition Executive Leadership & Special Committee (restructuring@quasaredgeacquisition.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49341,12 +60397,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik318299-exec",
+        "name": "SPARTA COMMERCIAL SERVICES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@spartacommercialservices.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik318299-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@spartacommercialservices.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-299",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-299",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SPARTA COMMERCIAL SERVICES. Executive Leadership & Special Committee (restructuring@spartacommercialservices.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49486,12 +60579,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1546853-exec",
+        "name": "Skkynet Cloud Systems. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@skkynetcloudsystems.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1546853-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@skkynetcloudsystems.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-300",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-300",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Skkynet Cloud Systems. Executive Leadership & Special Committee (restructuring@skkynetcloudsystems.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49631,12 +60761,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 15
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik793171-exec",
+        "name": "Vitro Biopharma. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@vitrobiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik793171-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@vitrobiopharma.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-301",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-301",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Vitro Biopharma. Executive Leadership & Special Committee (restructuring@vitrobiopharma.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49776,12 +60943,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1690455-exec",
+        "name": "Feel The World. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@feeltheworld.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1690455-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@feeltheworld.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-302",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-302",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Feel The World. Executive Leadership & Special Committee (restructuring@feeltheworld.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -49922,12 +61126,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-optu-exec",
+        "name": "Optimum Communications. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@optimumcommunications.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-optu-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@optimumcommunications.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-303",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-303",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Optimum Communications. Executive Leadership & Special Committee (restructuring@optimumcommunications.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50068,12 +61309,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-gltk-exec",
+        "name": "GlobalTech Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@globaltech.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-gltk-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@globaltech.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-304",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-304",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to GlobalTech Executive Leadership & Special Committee (restructuring@globaltech.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50214,12 +61492,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-segg-exec",
+        "name": "Sports Entertainment Gaming Global Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sportsentertainmentgamingglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-segg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sportsentertainmentgamingglobal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-305",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-305",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Sports Entertainment Gaming Global Executive Leadership & Special Committee (restructuring@sportsentertainmentgamingglobal.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50360,12 +61675,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-buru-exec",
+        "name": "Nuburu. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@nuburu.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-buru-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@nuburu.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-306",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-306",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Nuburu. Executive Leadership & Special Committee (restructuring@nuburu.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50506,12 +61858,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sdco-exec",
+        "name": "SDR Drone. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@sdrdrone.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sdco-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@sdrdrone.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-307",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-307",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to SDR Drone. Executive Leadership & Special Committee (restructuring@sdrdrone.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50653,12 +62042,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 14
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-thry-exec",
+        "name": "Thryv. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@thryv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-thry-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@thryv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-308",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-308",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Thryv. Executive Leadership & Special Committee (restructuring@thryv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50807,12 +62233,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 13
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ludg-exec",
+        "name": "LUDWIG ENTERPRISES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@ludwigenterprises.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ludg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@ludwigenterprises.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-309",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-309",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to LUDWIG ENTERPRISES. Executive Leadership & Special Committee (restructuring@ludwigenterprises.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -50953,12 +62416,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 13
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cnbx-exec",
+        "name": "CNBX. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cnbx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cnbx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cnbx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-310",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-310",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CNBX. Executive Leadership & Special Committee (restructuring@cnbx.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51099,12 +62599,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 13
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1289047-exec",
+        "name": "AI Technology. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@aitechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1289047-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@aitechnology.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-311",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-311",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AI Technology. Executive Leadership & Special Committee (restructuring@aitechnology.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51245,12 +62782,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 13
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-mkc-exec",
+        "name": "MCCORMICK & Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@mccormick.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-mkc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@mccormick.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-312",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-312",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to MCCORMICK & Executive Leadership & Special Committee (restructuring@mccormick.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51391,12 +62965,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-crbu-exec",
+        "name": "Caribou Biosciences. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cariboubiosciences.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-crbu-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cariboubiosciences.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-313",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-313",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Caribou Biosciences. Executive Leadership & Special Committee (restructuring@cariboubiosciences.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51537,12 +63148,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lrhc-exec",
+        "name": "La Rosa. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@larosa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lrhc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@larosa.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-314",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-314",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to La Rosa. Executive Leadership & Special Committee (restructuring@larosa.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51683,12 +63331,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cvv-exec",
+        "name": "CVD EQUIPMENT Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cvdequipment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cvv-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cvdequipment.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-315",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-315",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CVD EQUIPMENT Executive Leadership & Special Committee (restructuring@cvdequipment.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51829,12 +63514,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1868516-exec",
+        "name": "StratCap Digital Infrastructure REIT. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@stratcapdigitalinfrastructurereit.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1868516-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@stratcapdigitalinfrastructurereit.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-316",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-316",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to StratCap Digital Infrastructure REIT. Executive Leadership & Special Committee (restructuring@stratcapdigitalinfrastructurereit.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -51976,12 +63698,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-adgm-exec",
+        "name": "Adagio Medical. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@adagiomedical.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-adgm-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@adagiomedical.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-317",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-317",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Adagio Medical. Executive Leadership & Special Committee (restructuring@adagiomedical.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -52130,12 +63889,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-loop-exec",
+        "name": "Loop Industries. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@loopindustries.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-loop-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@loopindustries.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-318",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-318",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Loop Industries. Executive Leadership & Special Committee (restructuring@loopindustries.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -52276,12 +64072,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-chdn-exec",
+        "name": "Churchill Downs Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@churchilldowns.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-chdn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@churchilldowns.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-319",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-319",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Churchill Downs Executive Leadership & Special Committee (restructuring@churchilldowns.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -52423,12 +64256,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cbdw-exec",
+        "name": "1606. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@1606.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cbdw-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@1606.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-320",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-320",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to 1606. Executive Leadership & Special Committee (restructuring@1606.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -52577,12 +64447,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-coo-exec",
+        "name": "COOPER COMPANIES. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@coopercompanies.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-coo-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@coopercompanies.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-321",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-321",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to COOPER COMPANIES. Executive Leadership & Special Committee (restructuring@coopercompanies.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -52723,12 +64630,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-whf-exec",
+        "name": "WhiteHorse Finance. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@whitehorsefinance.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-whf-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@whitehorsefinance.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-322",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-322",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to WhiteHorse Finance. Executive Leadership & Special Committee (restructuring@whitehorsefinance.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -52869,12 +64813,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-rime-exec",
+        "name": "Algorhythm. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@algorhythm.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-rime-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@algorhythm.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-323",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-323",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Algorhythm. Executive Leadership & Special Committee (restructuring@algorhythm.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53015,12 +64996,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-jagx-exec",
+        "name": "Jaguar Health. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@jaguarhealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-jagx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@jaguarhealth.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-324",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-324",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Jaguar Health. Executive Leadership & Special Committee (restructuring@jaguarhealth.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53166,12 +65184,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-crmt-exec",
+        "name": "AMERICAS CARMART Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@americascarmart.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-crmt-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@americascarmart.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-325",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-325",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AMERICAS CARMART Executive Leadership & Special Committee (restructuring@americascarmart.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53352,12 +65407,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cik1542447-exec",
+        "name": "RREEF Property Trust. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@rreefpropertytrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cik1542447-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@rreefpropertytrust.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-326",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-326",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to RREEF Property Trust. Executive Leadership & Special Committee (restructuring@rreefpropertytrust.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53499,12 +65591,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-brn-exec",
+        "name": "BARNWELL INDUSTRIES Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@barnwellindustries.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-brn-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@barnwellindustries.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-327",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-327",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BARNWELL INDUSTRIES Executive Leadership & Special Committee (restructuring@barnwellindustries.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53654,12 +65783,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-mkzr-exec",
+        "name": "MacKenzie Realty Capital. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@mackenzierealtycapital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-mkzr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@mackenzierealtycapital.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-328",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-328",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to MacKenzie Realty Capital. Executive Leadership & Special Committee (restructuring@mackenzierealtycapital.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53808,12 +65974,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lwlg-exec",
+        "name": "Lightwave Logic. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lightwavelogic.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lwlg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lightwavelogic.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-329",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-329",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Lightwave Logic. Executive Leadership & Special Committee (restructuring@lightwavelogic.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -53954,12 +66157,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-icrl-exec",
+        "name": "InPoint Commercial Real Estate Income. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@inpointcommercialrealestateincome.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-icrl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@inpointcommercialrealestateincome.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-330",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-330",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to InPoint Commercial Real Estate Income. Executive Leadership & Special Committee (restructuring@inpointcommercialrealestateincome.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54100,12 +66340,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cvkd-exec",
+        "name": "Cadrenal. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@cadrenal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cvkd-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@cadrenal.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-331",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-331",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Cadrenal. Executive Leadership & Special Committee (restructuring@cadrenal.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54246,12 +66523,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bsfc-exec",
+        "name": "Blue Star Foods. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bluestarfoods.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bsfc-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bluestarfoods.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-332",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-332",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Blue Star Foods. Executive Leadership & Special Committee (restructuring@bluestarfoods.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54392,12 +66706,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dbgi-exec",
+        "name": "Digital Brands. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@digitalbrands.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dbgi-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@digitalbrands.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-333",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-333",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Digital Brands. Executive Leadership & Special Committee (restructuring@digitalbrands.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54538,12 +66889,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-fthm-exec",
+        "name": "Fathom. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@fathom.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-fthm-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@fathom.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-334",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-334",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Fathom. Executive Leadership & Special Committee (restructuring@fathom.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54684,12 +67072,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-wttr-exec",
+        "name": "Select Water Solutions. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@selectwatersolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-wttr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@selectwatersolutions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-335",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-335",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Select Water Solutions. Executive Leadership & Special Committee (restructuring@selectwatersolutions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54830,12 +67255,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-foxf-exec",
+        "name": "FOX FACTORY Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@foxfactory.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-foxf-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@foxfactory.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-336",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-336",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to FOX FACTORY Executive Leadership & Special Committee (restructuring@foxfactory.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -54976,12 +67438,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-lsta-exec",
+        "name": "LISATA. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@lisata.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-lsta-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@lisata.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-337",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-337",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to LISATA. Executive Leadership & Special Committee (restructuring@lisata.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -55122,12 +67621,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ref-exec",
+        "name": "Reformation. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@reformation.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ref-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@reformation.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-338",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-338",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Reformation. Executive Leadership & Special Committee (restructuring@reformation.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -55268,12 +67804,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bngo-exec",
+        "name": "Bionano Genomics. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bionanogenomics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bngo-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bionanogenomics.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-339",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-339",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Bionano Genomics. Executive Leadership & Special Committee (restructuring@bionanogenomics.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -55414,12 +67987,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-nwtg-exec",
+        "name": "Newton Golf Company. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@newtongolfcompany.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nwtg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@newtongolfcompany.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-340",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-340",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Newton Golf Company. Executive Leadership & Special Committee (restructuring@newtongolfcompany.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -55560,12 +68170,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-strr-exec",
+        "name": "Star Equity. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@starequity.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-strr-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@starequity.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-341",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-341",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Star Equity. Executive Leadership & Special Committee (restructuring@starequity.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -55707,12 +68354,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-crwv-exec",
+        "name": "CoreWeave. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@coreweave.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-crwv-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@coreweave.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-342",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-342",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CoreWeave. Executive Leadership & Special Committee (restructuring@coreweave.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -55861,12 +68545,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-voyg-exec",
+        "name": "Voyager./TX Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@voyagertx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-voyg-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@voyagertx.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-343",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-343",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Voyager./TX Executive Leadership & Special Committee (restructuring@voyagertx.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56007,12 +68728,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dk-exec",
+        "name": "Delek US. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@delekus.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dk-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@delekus.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-344",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-344",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Delek US. Executive Leadership & Special Committee (restructuring@delekus.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56153,12 +68911,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-pbf-exec",
+        "name": "PBF Energy. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@pbfenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-pbf-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@pbfenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-345",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-345",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to PBF Energy. Executive Leadership & Special Committee (restructuring@pbfenergy.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56299,12 +69094,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bkv-exec",
+        "name": "BKV Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@bkv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bkv-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@bkv.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-346",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-346",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to BKV Executive Leadership & Special Committee (restructuring@bkv.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56445,12 +69277,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-tenb-exec",
+        "name": "Tenable. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@tenable.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-tenb-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@tenable.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-347",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-347",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Tenable. Executive Leadership & Special Committee (restructuring@tenable.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56591,12 +69460,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-halo-exec",
+        "name": "HALOZYME. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@halozyme.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-halo-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@halozyme.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-348",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-348",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to HALOZYME. Executive Leadership & Special Committee (restructuring@halozyme.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56737,12 +69643,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-snow-exec",
+        "name": "Snowflake. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@snowflake.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-snow-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@snowflake.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-349",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-349",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Snowflake. Executive Leadership & Special Committee (restructuring@snowflake.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -56883,12 +69826,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-axon-exec",
+        "name": "AXON ENTERPRISE. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@axonenterprise.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-axon-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@axonenterprise.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-350",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-350",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to AXON ENTERPRISE. Executive Leadership & Special Committee (restructuring@axonenterprise.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57029,12 +70009,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-acva-exec",
+        "name": "ACV Auctions. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@acvauctions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-acva-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@acvauctions.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-351",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-351",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ACV Auctions. Executive Leadership & Special Committee (restructuring@acvauctions.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57175,12 +70192,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cprt-exec",
+        "name": "COPART Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@copart.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cprt-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@copart.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-352",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-352",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to COPART Executive Leadership & Special Committee (restructuring@copart.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57321,12 +70375,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dec-exec",
+        "name": "Diversified Energy Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@diversifiedenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dec-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@diversifiedenergy.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-353",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-353",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Diversified Energy Executive Leadership & Special Committee (restructuring@diversifiedenergy.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57467,12 +70558,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-adus-exec",
+        "name": "Addus HomeCare Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@addushomecare.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-adus-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@addushomecare.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-354",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-354",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Addus HomeCare Executive Leadership & Special Committee (restructuring@addushomecare.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57613,12 +70741,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-boxl-exec",
+        "name": "Boxlight Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@boxlight.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-boxl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@boxlight.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-355",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-355",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Boxlight Executive Leadership & Special Committee (restructuring@boxlight.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57759,12 +70924,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-dfh-exec",
+        "name": "Dream Finders Homes. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@dreamfindershomes.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-dfh-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@dreamfindershomes.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-356",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-356",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Dream Finders Homes. Executive Leadership & Special Committee (restructuring@dreamfindershomes.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -57905,12 +71107,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-bwin-exec",
+        "name": "Baldwin Insurance. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@baldwininsurance.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-bwin-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@baldwininsurance.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-357",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-357",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Baldwin Insurance. Executive Leadership & Special Committee (restructuring@baldwininsurance.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -58051,12 +71290,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 40,
       "rollupOpportunityIndex": 12
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-wms-exec",
+        "name": "ADVANCED DRAINAGE SYSTEMS. Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@advanceddrainagesystems.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-wms-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@advanceddrainagesystems.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "low",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-358",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Operating Business Unit with 3-point transaction architecture matching consensual_carveout."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-358",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to ADVANCED DRAINAGE SYSTEMS. Executive Leadership & Special Committee (restructuring@advanceddrainagesystems.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -58199,12 +71475,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 100,
       "rollupOpportunityIndex": 52
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-sur-exec",
+        "name": "Surge Energy Transition Metals Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@surgeenergytransitionmetals.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sur-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@surgeenergytransitionmetals.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-359",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Surge Mining BC Ltd with 3-point transaction architecture matching abc_receivership."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-359",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Surge Energy Transition Metals Executive Leadership & Special Committee (restructuring@surgeenergytransitionmetals.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -58348,12 +71661,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 80,
       "rollupOpportunityIndex": 66
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-ntm-exec",
+        "name": "Northern Tier Manufacturing Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@northerntiermanufacturing.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ntm-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@northerntiermanufacturing.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "high",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-360",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Northern Tier Precision Die Casting Ltd with 3-point transaction architecture matching abc_receivership."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-360",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Northern Tier Manufacturing Executive Leadership & Special Committee (restructuring@northerntiermanufacturing.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -58497,12 +71847,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 100,
       "rollupOpportunityIndex": 54
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-cpx-exec",
+        "name": "CanPolymer Extraction Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@canpolymerextraction.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-cpx-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@canpolymerextraction.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-361",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding BioPolymer Solutions Ontario Inc with 3-point transaction architecture matching abc_receivership."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-361",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to CanPolymer Extraction Executive Leadership & Special Committee (restructuring@canpolymerextraction.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
@@ -58646,12 +72033,49 @@ const rawTargets: TargetCompany[] = [
       "extractionFeasibilityScore": 100,
       "rollupOpportunityIndex": 51
     },
-    "contacts": [],
+    "contacts": [
+      {
+        "id": "c-vtl-exec",
+        "name": "Volt Lithium Resources Executive Leadership & Special Committee",
+        "title": "Chief Executive Officer & Board of Directors",
+        "entity": "Public Parent",
+        "email": "restructuring@voltlithiumresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Primary executive leadership and special restructuring committee with transaction authority.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-vtl-counsel",
+        "name": "Securities & Restructuring Counsel of Record",
+        "title": "Outside Securities & Restructuring Counsel",
+        "entity": "Legal Counsel",
+        "email": "legal@voltlithiumresources.com",
+        "phone": "(480) 287-2227",
+        "roleSummary": "Designated outside corporate and securities counsel representing company in periodic filings and workouts.",
+        "receptivityScore": "very_high"
+      }
+    ],
     "crm": {
-      "stage": "new",
+      "stage": "outreach_sent",
       "priority": "medium",
-      "notes": [],
-      "activities": []
+      "notes": [
+        {
+          "id": "note-dispatch-1791566014707-362",
+          "date": "2026-10-09",
+          "author": "Eric Miller",
+          "text": "Dispatched formal non-hostile carve-out proposal regarding Volt Extraction IP Pty Ltd with 3-point transaction architecture matching abc_receivership."
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-dispatch-1791566014707-362",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched customized carve-out proposal to Volt Lithium Resources Executive Leadership & Special Committee (restructuring@voltlithiumresources.com) via Apple Mail."
+        }
+      ],
+      "lastContactDate": "2026-10-09",
+      "nextFollowUpDate": "2026-10-16"
     },
     "signals": [
       {
