@@ -1,51 +1,119 @@
 import { TargetCompany, CrmStage, CrmNote, CrmActivity, PriorityLevel, ExecutiveContact } from "./types";
 import { INITIAL_TARGETS } from "./data/targets";
 
-const STORAGE_KEY = "asset_liberator_targets_v5";
+const OVERLAY_STORAGE_KEY = "asset_liberator_crm_overlay_v1";
+const LEGACY_STORAGE_KEY = "asset_liberator_targets_v5";
 
-export function getStoredTargets(): TargetCompany[] {
+export type CrmTargetOverlay = {
+  contacts: ExecutiveContact[];
+  crm: TargetCompany["crm"];
+};
+
+export type CrmOverlayMap = Record<string, CrmTargetOverlay>;
+
+let memoryOverlay: CrmOverlayMap = {};
+
+export function resetMemoryOverlay(): void {
+  memoryOverlay = {};
+}
+
+/**
+ * Reads CRM overlay from localStorage (or memory in Node environment).
+ * Handles automatic migration from legacy asset_liberator_targets_v5 if present.
+ */
+export function getCrmOverlay(): CrmOverlayMap {
   if (typeof window === "undefined") {
-    return INITIAL_TARGETS;
+    return memoryOverlay;
   }
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_TARGETS));
-      return INITIAL_TARGETS;
-    }
-    const parsed: TargetCompany[] = JSON.parse(raw);
-    if (!Array.isArray(parsed) || parsed.length === 0) {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(INITIAL_TARGETS));
-      return INITIAL_TARGETS;
+    const raw = localStorage.getItem(OVERLAY_STORAGE_KEY);
+    if (raw) {
+      return JSON.parse(raw) as CrmOverlayMap;
     }
 
-    // Merge baseline targets with local user overrides so updates to INITIAL_TARGETS are reflected
-    const merged = INITIAL_TARGETS.map((base) => {
-      const match = parsed.find((p) => p.id === base.id || p.ticker.toUpperCase() === base.ticker.toUpperCase());
-      if (match) {
-        return {
-          ...base,
-          contacts: match.contacts && match.contacts.length > 0 ? match.contacts : base.contacts,
-          crm: match.crm || base.crm,
-        };
+    // Check for legacy storage format to migrate existing user edits
+    const legacyRaw = localStorage.getItem(LEGACY_STORAGE_KEY);
+    if (legacyRaw) {
+      try {
+        const legacyParsed = JSON.parse(legacyRaw);
+        if (Array.isArray(legacyParsed)) {
+          const migrated: CrmOverlayMap = {};
+          for (const item of legacyParsed) {
+            if (item && item.id) {
+              migrated[item.id] = {
+                contacts: item.contacts || [],
+                crm: item.crm,
+              };
+            }
+          }
+          localStorage.setItem(OVERLAY_STORAGE_KEY, JSON.stringify(migrated));
+          localStorage.removeItem(LEGACY_STORAGE_KEY);
+          return migrated;
+        }
+      } catch (e) {
+        console.warn("Failed to migrate legacy CRM storage", e);
       }
-      return base;
-    });
-
-    return merged;
+    }
   } catch (err) {
-    console.error("Failed to load targets from localStorage", err);
-    return INITIAL_TARGETS;
+    console.error("Failed to load CRM overlay from localStorage", err);
+  }
+  return {};
+}
+
+/**
+ * Saves CRM overlay to localStorage (only storing modified contacts & CRM metadata).
+ */
+export function saveCrmOverlay(overlay: CrmOverlayMap): void {
+  if (typeof window === "undefined") {
+    memoryOverlay = overlay;
+    return;
+  }
+  try {
+    localStorage.setItem(OVERLAY_STORAGE_KEY, JSON.stringify(overlay));
+  } catch (err) {
+    console.error("Failed to save CRM overlay to localStorage", err);
   }
 }
 
+/**
+ * Merges CRM overlay onto any array of TargetCompany records.
+ */
+export function applyCrmOverlay(targets: TargetCompany[], overlay?: CrmOverlayMap): TargetCompany[] {
+  const map = overlay || getCrmOverlay();
+  if (!map || Object.keys(map).length === 0) return targets;
+
+  return targets.map((t) => {
+    const entry = map[t.id] || (t.ticker ? map[t.ticker.toUpperCase()] : undefined);
+    if (!entry) return t;
+
+    return {
+      ...t,
+      contacts: entry.contacts !== undefined ? entry.contacts : t.contacts,
+      crm: entry.crm ? { ...t.crm, ...entry.crm } : t.crm,
+    };
+  });
+}
+
+/**
+ * Backwards-compatible getStoredTargets: returns base targets merged with CRM overlay.
+ */
+export function getStoredTargets(baseTargets?: TargetCompany[]): TargetCompany[] {
+  const base = baseTargets || INITIAL_TARGETS;
+  return applyCrmOverlay(base);
+}
+
+/**
+ * Backwards-compatible saveStoredTargets: extracts overlay and stores only overlay.
+ */
 export function saveStoredTargets(targets: TargetCompany[]): void {
-  if (typeof window === "undefined") return;
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(targets));
-  } catch (err) {
-    console.error("Failed to save targets to localStorage", err);
+  const overlay = getCrmOverlay();
+  for (const t of targets) {
+    overlay[t.id] = {
+      contacts: t.contacts,
+      crm: t.crm,
+    };
   }
+  saveCrmOverlay(overlay);
 }
 
 // Background sync to server API
@@ -58,63 +126,83 @@ function syncToServer(payload: any) {
   }).catch((err) => console.warn("CRM background server sync non-blocking error:", err));
 }
 
+function getOrCreateTargetOverlay(targetId: string): CrmTargetOverlay {
+  const overlay = getCrmOverlay();
+  if (overlay[targetId]) return overlay[targetId];
+
+  // Check INITIAL_TARGETS for seed baseline
+  const seed = INITIAL_TARGETS.find(
+    (s) => s.id === targetId || s.ticker.toUpperCase() === targetId.toUpperCase()
+  );
+  if (seed) {
+    return {
+      contacts: [...seed.contacts],
+      crm: { ...seed.crm },
+    };
+  }
+
+  return {
+    contacts: [],
+    crm: {
+      stage: "new",
+      priority: "medium",
+      notes: [],
+      activities: [],
+    },
+  };
+}
+
 export function updateTargetCrmStage(targetId: string, stage: CrmStage, priority?: PriorityLevel): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "filing_alert",
-        summary: `Pipeline stage updated to: ${stage.toUpperCase().replace("_", " ")}`,
-      };
-      return {
-        ...t,
-        crm: {
-          ...t.crm,
-          stage,
-          priority: priority || t.crm.priority,
-          lastContactDate: now,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type: "filing_alert",
+    summary: `Pipeline stage updated to: ${stage.toUpperCase().replace("_", " ")}`,
+  };
 
-  saveStoredTargets(updated);
+  overlay[targetId] = {
+    ...current,
+    crm: {
+      ...current.crm,
+      stage,
+      priority: priority || current.crm.priority,
+      lastContactDate: now,
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
+
+  saveCrmOverlay(overlay);
   syncToServer({ action: "update_stage", targetId, stage, priority });
-  return updated;
+  return getStoredTargets();
 }
 
 export function addTargetCrmNote(targetId: string, noteText: string, author: string = "Deal Desk"): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const note: CrmNote = {
-        id: "note-" + Date.now(),
-        date: now,
-        author,
-        text: noteText,
-      };
-      return {
-        ...t,
-        crm: {
-          ...t.crm,
-          notes: [note, ...t.crm.notes],
-        },
-      };
-    }
-    return t;
-  });
+  const note: CrmNote = {
+    id: "note-" + Date.now(),
+    date: now,
+    author,
+    text: noteText,
+  };
 
-  saveStoredTargets(updated);
+  overlay[targetId] = {
+    ...current,
+    crm: {
+      ...current.crm,
+      notes: [note, ...(current.crm.notes || [])],
+    },
+  };
+
+  saveCrmOverlay(overlay);
   syncToServer({ action: "add_note", targetId, noteText, author });
-  return updated;
+  return getStoredTargets();
 }
 
 export function logTargetActivity(
@@ -122,124 +210,69 @@ export function logTargetActivity(
   type: CrmActivity["type"],
   summary: string
 ): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type,
-        summary,
-      };
-      return {
-        ...t,
-        crm: {
-          ...t.crm,
-          lastContactDate: now,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type,
+    summary,
+  };
 
-  saveStoredTargets(updated);
+  overlay[targetId] = {
+    ...current,
+    crm: {
+      ...current.crm,
+      lastContactDate: now,
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
+
+  saveCrmOverlay(overlay);
   syncToServer({ action: "log_activity", targetId, type, summary });
-  return updated;
+  return getStoredTargets();
 }
 
-/**
- * Log outreach email sent and advance stage to outreach_sent
- */
-export function logOutreachActivity(
-  targetId: string,
-  contactName: string,
-  summary: string
-): TargetCompany[] {
-  const current = getStoredTargets();
-  const now = new Date().toISOString().split("T")[0];
-
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "email",
-        summary,
-      };
-      return {
-        ...t,
-        crm: {
-          ...t.crm,
-          stage: "outreach_sent" as const,
-          lastContactDate: now,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
-
-  saveStoredTargets(updated);
-  syncToServer({ action: "log_outreach", targetId, contactName, summary });
-  return updated;
-}
-
-/**
- * Update an existing executive contact on a target company
- */
 export function updateTargetContact(targetId: string, updatedContact: ExecutiveContact): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const exists = t.contacts.some((c) => c.id === updatedContact.id);
-      let updatedContacts: ExecutiveContact[];
+  const exists = current.contacts.some((c) => c.id === updatedContact.id);
+  const newContacts = exists
+    ? current.contacts.map((c) => (c.id === updatedContact.id ? updatedContact : c))
+    : [updatedContact, ...current.contacts];
 
-      if (exists) {
-        updatedContacts = t.contacts.map((c) => (c.id === updatedContact.id ? updatedContact : c));
-      } else {
-        // Fallback: replace primary contact or prepend
-        updatedContacts = [updatedContact, ...t.contacts.slice(1)];
-      }
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type: "call",
+    summary: `Updated contact: ${updatedContact.name} (${updatedContact.title}) - Phone: ${updatedContact.phone}`,
+  };
 
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "call",
-        summary: `Updated contact dossier: ${updatedContact.name} (${updatedContact.title}) - Phone: ${updatedContact.phone}`,
-      };
+  overlay[targetId] = {
+    contacts: newContacts,
+    crm: {
+      ...current.crm,
+      lastContactDate: now,
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
 
-      return {
-        ...t,
-        contacts: updatedContacts,
-        crm: {
-          ...t.crm,
-          lastContactDate: now,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
-
-  saveStoredTargets(updated);
+  saveCrmOverlay(overlay);
   syncToServer({ action: "update_contact", targetId, contact: updatedContact });
-  return updated;
+  return getStoredTargets();
 }
 
-/**
- * Add a new executive contact to a target company
- */
 export function addTargetContact(
   targetId: string,
   newContact: Omit<ExecutiveContact, "id">,
   setAsPrimary: boolean = false
 ): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
   const contactWithId: ExecutiveContact = {
@@ -247,114 +280,89 @@ export function addTargetContact(
     id: "contact-" + Date.now(),
   };
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const updatedContacts = setAsPrimary
-        ? [contactWithId, ...t.contacts]
-        : [...t.contacts, contactWithId];
+  const updatedContacts = setAsPrimary
+    ? [contactWithId, ...current.contacts]
+    : [...current.contacts, contactWithId];
 
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "call",
-        summary: `Added new executive contact: ${contactWithId.name} (${contactWithId.title}) - Phone: ${contactWithId.phone}`,
-      };
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type: "call",
+    summary: `Added new executive contact: ${contactWithId.name} (${contactWithId.title}) - Phone: ${contactWithId.phone}`,
+  };
 
-      return {
-        ...t,
-        contacts: updatedContacts,
-        crm: {
-          ...t.crm,
-          lastContactDate: now,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
+  overlay[targetId] = {
+    contacts: updatedContacts,
+    crm: {
+      ...current.crm,
+      lastContactDate: now,
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
 
-  saveStoredTargets(updated);
+  saveCrmOverlay(overlay);
   syncToServer({ action: "add_contact", targetId, contact: newContact, setAsPrimary });
-  return updated;
+  return getStoredTargets();
 }
 
-/**
- * Set a specific contact as the primary contact (moved to position 0)
- */
 export function setPrimaryContact(targetId: string, contactId: string): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const contact = t.contacts.find((c) => c.id === contactId);
-      if (!contact) return t;
+  const contact = current.contacts.find((c) => c.id === contactId);
+  if (!contact) return getStoredTargets();
 
-      const remaining = t.contacts.filter((c) => c.id !== contactId);
-      const updatedContacts = [contact, ...remaining];
+  const remaining = current.contacts.filter((c) => c.id !== contactId);
+  const updatedContacts = [contact, ...remaining];
 
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "filing_alert",
-        summary: `Promoted ${contact.name} (${contact.title}) to Primary Decision Maker`,
-      };
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type: "filing_alert",
+    summary: `Promoted ${contact.name} (${contact.title}) to Primary Decision Maker`,
+  };
 
-      return {
-        ...t,
-        contacts: updatedContacts,
-        crm: {
-          ...t.crm,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
+  overlay[targetId] = {
+    contacts: updatedContacts,
+    crm: {
+      ...current.crm,
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
 
-  saveStoredTargets(updated);
+  saveCrmOverlay(overlay);
   syncToServer({ action: "set_primary_contact", targetId, contactId });
-  return updated;
+  return getStoredTargets();
 }
 
-/**
- * Delete a contact from a target company
- */
 export function deleteTargetContact(targetId: string, contactId: string): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const targetContact = t.contacts.find((c) => c.id === contactId);
-      const updatedContacts = t.contacts.filter((c) => c.id !== contactId);
+  const targetContact = current.contacts.find((c) => c.id === contactId);
+  const updatedContacts = current.contacts.filter((c) => c.id !== contactId);
 
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "filing_alert",
-        summary: `Removed outdated contact: ${targetContact?.name || contactId}`,
-      };
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type: "filing_alert",
+    summary: `Removed outdated contact: ${targetContact?.name || contactId}`,
+  };
 
-      return {
-        ...t,
-        contacts: updatedContacts,
-        crm: {
-          ...t.crm,
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
+  overlay[targetId] = {
+    contacts: updatedContacts,
+    crm: {
+      ...current.crm,
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
 
-  saveStoredTargets(updated);
-  return updated;
+  saveCrmOverlay(overlay);
+  return getStoredTargets();
 }
 
-/**
- * Log a structured call with outcome, notes, and optional follow-up
- */
 export function logCallActivity(
   targetId: string,
   callDetails: {
@@ -365,47 +373,43 @@ export function logCallActivity(
     suggestedStage?: CrmStage;
   }
 ): TargetCompany[] {
-  const current = getStoredTargets();
+  const overlay = getCrmOverlay();
+  const current = getOrCreateTargetOverlay(targetId);
   const now = new Date().toISOString().split("T")[0];
 
-  const updated = current.map((t) => {
-    if (t.id === targetId || t.ticker.toUpperCase() === targetId.toUpperCase()) {
-      const activitySummary = `[CALL LOGGED] Spoke with ${callDetails.contactName} | Outcome: ${callDetails.outcome} | Notes: ${callDetails.notes}${
-        callDetails.nextFollowUpDate ? ` | Next follow-up: ${callDetails.nextFollowUpDate}` : ""
-      }`;
+  const activitySummary = `[CALL LOGGED] Spoke with ${callDetails.contactName} | Outcome: ${callDetails.outcome} | Notes: ${callDetails.notes}${
+    callDetails.nextFollowUpDate ? ` | Next follow-up: ${callDetails.nextFollowUpDate}` : ""
+  }`;
 
-      const activity: CrmActivity = {
-        id: "act-" + Date.now(),
-        date: now,
-        type: "call",
-        summary: activitySummary,
-      };
+  const activity: CrmActivity = {
+    id: "act-" + Date.now(),
+    date: now,
+    type: "call",
+    summary: activitySummary,
+  };
 
-      const note: CrmNote = {
-        id: "note-" + Date.now(),
-        date: now,
-        author: "Call Log",
-        text: `${callDetails.contactName} (${callDetails.outcome}): ${callDetails.notes}`,
-      };
+  const note: CrmNote = {
+    id: "note-" + Date.now(),
+    date: now,
+    author: "Call Log",
+    text: `${callDetails.contactName} (${callDetails.outcome}): ${callDetails.notes}`,
+  };
 
-      return {
-        ...t,
-        crm: {
-          ...t.crm,
-          stage: callDetails.suggestedStage || t.crm.stage,
-          lastContactDate: now,
-          nextFollowUpDate: callDetails.nextFollowUpDate || t.crm.nextFollowUpDate,
-          notes: [note, ...t.crm.notes],
-          activities: [activity, ...t.crm.activities],
-        },
-      };
-    }
-    return t;
-  });
+  overlay[targetId] = {
+    ...current,
+    crm: {
+      ...current.crm,
+      stage: callDetails.suggestedStage || current.crm.stage,
+      lastContactDate: now,
+      nextFollowUpDate: callDetails.nextFollowUpDate || current.crm.nextFollowUpDate,
+      notes: [note, ...(current.crm.notes || [])],
+      activities: [activity, ...(current.crm.activities || [])],
+    },
+  };
 
-  saveStoredTargets(updated);
+  saveCrmOverlay(overlay);
   syncToServer({ action: "log_call", targetId, callDetails });
-  return updated;
+  return getStoredTargets();
 }
 
 export interface GlobalSearchResult {
@@ -420,9 +424,6 @@ export interface GlobalSearchResult {
   }>;
 }
 
-/**
- * Search across all people (contacts), companies, tickers, and subsidiaries
- */
 export function searchTargetsAndContacts(query: string, targets: TargetCompany[]): GlobalSearchResult {
   const cleanQ = query.trim().toLowerCase();
   if (!cleanQ) return { contacts: [], companies: [] };
