@@ -52,6 +52,7 @@ function AssetLiberatorMain() {
   const initialTier = (initialTierParam === "commercial" || initialTierParam === "pre_revenue_ip") 
     ? initialTierParam 
     : "all";
+  const initialVertical = (searchParams.get("vertical") as any) || "all";
 
   const [activeTab, setActiveTab] = useState<NavTabType>("screener");
   const [activeDrawerTarget, setActiveDrawerTarget] = useState<TargetCompany | null>(null);
@@ -79,6 +80,7 @@ function AssetLiberatorMain() {
     exchange: "all",
     filingStatus: "all",
     revenueTier: initialTier,
+    vertical: initialVertical,
     sortBy: "roi",
   });
 
@@ -88,8 +90,8 @@ function AssetLiberatorMain() {
     setLocalTargets(data);
   }, []);
 
-  // Fetch targets via API
-  const { data: apiData, isLoading, refetch } = useQuery({
+  // Fetch targets via API (refreshes every time opened / focused)
+  const { data: apiData, isLoading, isFetching, refetch } = useQuery({
     queryKey: ["targets", filters],
     queryFn: async () => {
       const params = new URLSearchParams();
@@ -103,13 +105,43 @@ function AssetLiberatorMain() {
       if (filters.vertical && filters.vertical !== "all") params.set("vertical", filters.vertical);
       if (filters.leadTime && filters.leadTime !== "all") params.set("leadTime", filters.leadTime);
       if (filters.sortBy) params.set("sortBy", filters.sortBy);
+      params.set("_t", Date.now().toString());
 
-      const res = await fetch(`/api/targets?${params.toString()}`);
+      const res = await fetch(`/api/targets?${params.toString()}`, {
+        cache: "no-store",
+        headers: {
+          "Cache-Control": "no-cache",
+          "Pragma": "no-cache",
+        },
+      });
       if (!res.ok) throw new Error("Failed to fetch targets");
       const json = await res.json();
       return json;
     },
+    staleTime: 0,
+    gcTime: 0,
+    refetchOnMount: "always",
+    refetchOnWindowFocus: "always",
+    refetchOnReconnect: "always",
   });
+
+  // Re-fetch automatically when window/tab is focused or opened
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        refetch();
+      }
+    };
+    const handleFocus = () => {
+      refetch();
+    };
+    window.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("focus", handleFocus);
+    return () => {
+      window.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("focus", handleFocus);
+    };
+  }, [refetch]);
 
   // Sync API response into local state when fresh server targets arrive
   useEffect(() => {
@@ -135,12 +167,46 @@ function AssetLiberatorMain() {
 
   // Displayed targets are directly derived from localTargets
   const displayedTargets: TargetCompany[] = useMemo(() => {
-    const baseList: TargetCompany[] = localTargets.length > 0 ? localTargets : (apiData?.targets || []);
+    let list: TargetCompany[] = localTargets.length > 0 ? localTargets : (apiData?.targets || []);
+
+    // Foreign stock & vertical filtering
+    if (filters.vertical && filters.vertical !== "all") {
+      list = list.filter((t: TargetCompany) => {
+        if (filters.vertical === "cross_border_canada") {
+          return (
+            t.vertical === "cross_border_canada" ||
+            ["TSX", "TSXV", "CSE", "NEO"].includes(t.exchange) ||
+            t.jurisdiction === "Canada" ||
+            t.id.startsWith("ca-")
+          );
+        }
+        if (filters.vertical === "cross_border_australia") {
+          return (
+            t.vertical === "cross_border_australia" ||
+            t.exchange === "ASX" ||
+            t.jurisdiction === "Australia" ||
+            t.id.startsWith("au-")
+          );
+        }
+        if (filters.vertical === "all_foreign") {
+          return (
+            t.vertical === "cross_border_canada" ||
+            t.vertical === "cross_border_australia" ||
+            ["TSX", "TSXV", "CSE", "NEO", "ASX"].includes(t.exchange) ||
+            t.jurisdiction === "Canada" ||
+            t.jurisdiction === "Australia" ||
+            t.id.startsWith("ca-") ||
+            t.id.startsWith("au-")
+          );
+        }
+        return t.vertical === filters.vertical;
+      });
+    }
 
     if (filters.query) {
       const q = filters.query.toLowerCase().trim();
       const digits = q.replace(/[^0-9]/g, "");
-      return baseList.filter((t: TargetCompany) =>
+      return list.filter((t: TargetCompany) =>
         t.ticker.toLowerCase().includes(q) ||
         t.name.toLowerCase().includes(q) ||
         t.asset.subsidiaryName.toLowerCase().includes(q) ||
@@ -154,8 +220,8 @@ function AssetLiberatorMain() {
       );
     }
 
-    return baseList;
-  }, [localTargets, apiData, filters.query]);
+    return list;
+  }, [localTargets, apiData, filters.query, filters.vertical]);
 
   // Aggregated Stats
   const stats = useMemo(() => {
@@ -312,8 +378,10 @@ function AssetLiberatorMain() {
               filters={filters}
               onFilterChange={setFilters}
               resultCount={displayedTargets.length}
-              allTotal={apiData?.meta?.allTotal || (apiData?.meta?.total ?? 18)}
+              allTotal={apiData?.meta?.allTotal || (apiData?.meta?.total ?? localTargets.length)}
               tierCounts={apiData?.meta?.tierCounts || apiData?.meta?.tiers}
+              onRefresh={() => refetch()}
+              isRefreshing={isFetching}
             />
 
             {/* Target Cards Grid */}

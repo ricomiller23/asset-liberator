@@ -41,7 +41,36 @@ export async function GET(req: NextRequest) {
   }
 
   if (vertical && vertical !== "all") {
-    results = results.filter((t) => t.vertical === vertical);
+    if (vertical === "cross_border_canada") {
+      results = results.filter(
+        (t) =>
+          t.vertical === "cross_border_canada" ||
+          ["TSX", "TSXV", "CSE", "NEO"].includes(t.exchange) ||
+          t.jurisdiction === "Canada" ||
+          t.id.startsWith("ca-")
+      );
+    } else if (vertical === "cross_border_australia") {
+      results = results.filter(
+        (t) =>
+          t.vertical === "cross_border_australia" ||
+          t.exchange === "ASX" ||
+          t.jurisdiction === "Australia" ||
+          t.id.startsWith("au-")
+      );
+    } else if (vertical === "all_foreign") {
+      results = results.filter(
+        (t) =>
+          t.vertical === "cross_border_canada" ||
+          t.vertical === "cross_border_australia" ||
+          ["TSX", "TSXV", "CSE", "NEO", "ASX"].includes(t.exchange) ||
+          t.jurisdiction === "Canada" ||
+          t.jurisdiction === "Australia" ||
+          t.id.startsWith("ca-") ||
+          t.id.startsWith("au-")
+      );
+    } else {
+      results = results.filter((t) => t.vertical === vertical);
+    }
   }
 
   if (leadTime === "inside_90d") {

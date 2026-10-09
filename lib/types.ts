@@ -9,7 +9,7 @@ export type CrmStage = "new" | "outreach_sent" | "in_dialogue" | "nda_signed" | 
 export type PriorityLevel = "critical" | "high" | "medium" | "low";
 
 export type TargetTier = "verified" | "screened" | "radar" | "disqualified";
-export type TargetVertical = "b2b_software" | "specialty_manufacturing" | "solar_energy" | "pre_revenue_ip" | "cross_border_canada" | "cross_border_australia" | "unthemed";
+export type TargetVertical = "b2b_software" | "specialty_manufacturing" | "solar_energy" | "pre_revenue_ip" | "cross_border_canada" | "cross_border_australia" | "all_foreign" | "unthemed";
 
 export interface GateAssessment {
   passed: boolean;

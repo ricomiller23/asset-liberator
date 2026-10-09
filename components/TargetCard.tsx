@@ -60,6 +60,8 @@ export const TargetCard: React.FC<TargetCardProps> = ({
     if (exchange === "OTCID_BASIC") return "bg-purple-500/10 text-purple-400 border-purple-500/20";
     if (exchange === "OTCQB") return "bg-cyan-500/10 text-cyan-400 border-cyan-500/20";
     if (exchange === "OTCQX") return "bg-emerald-500/10 text-emerald-400 border-emerald-500/20";
+    if (exchange === "TSX" || exchange === "TSXV" || exchange === "CSE" || exchange === "NEO") return "bg-red-500/15 text-red-300 border-red-500/30";
+    if (exchange === "ASX") return "bg-amber-500/15 text-amber-300 border-amber-500/30";
     return "bg-blue-500/10 text-blue-400 border-blue-500/20";
   };
 
@@ -92,10 +94,14 @@ export const TargetCard: React.FC<TargetCardProps> = ({
                 {target.tier === "disqualified" ? "Excluded Current Filer" : `${target.tier.toUpperCase()} TIER`}
               </span>
               <span className={`font-mono text-[9px] sm:text-[10px] px-2 py-0.5 rounded-md border font-semibold ${getExchangeBadge(target.exchange)}`}>
-                {target.exchange}
+                {["TSX", "TSXV", "CSE", "NEO"].includes(target.exchange)
+                  ? `🇨🇦 ${target.exchange}`
+                  : target.exchange === "ASX"
+                  ? `🇦🇺 ASX`
+                  : target.exchange}
               </span>
               <span className="text-[10px] text-stone-500 font-mono">
-                CIK:{target.cik}
+                {target.cik ? `CIK:${target.cik}` : `ID:${target.id}`}
               </span>
             </div>
             

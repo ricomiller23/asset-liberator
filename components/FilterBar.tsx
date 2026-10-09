@@ -13,6 +13,8 @@ interface FilterBarProps {
     radar: number;
     disqualified: number;
   };
+  onRefresh?: () => void;
+  isRefreshing?: boolean;
 }
 
 export const FilterBar: React.FC<FilterBarProps> = ({
@@ -21,6 +23,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   resultCount,
   allTotal,
   tierCounts,
+  onRefresh,
+  isRefreshing,
 }) => {
   const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onFilterChange({ ...filters, query: e.target.value });
@@ -89,11 +93,14 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           </div>
 
           <button
-            onClick={handleReset}
-            className="rounded-xl border border-stone-800 bg-stone-950 p-1.5 sm:p-2 text-stone-400 hover:text-white transition shrink-0"
-            title="Reset Filters"
+            onClick={() => {
+              if (onRefresh) onRefresh();
+              else handleReset();
+            }}
+            className="rounded-xl border border-stone-800 bg-stone-950 p-1.5 sm:p-2 text-stone-400 hover:text-white transition shrink-0 cursor-pointer"
+            title="Refresh universe & live catalyst clocks"
           >
-            <RefreshCcw className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+            <RefreshCcw className={`h-3.5 w-3.5 sm:h-4 sm:w-4 ${isRefreshing ? "animate-spin text-emerald-400" : ""}`} />
           </button>
         </div>
       </div>
@@ -159,6 +166,9 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           { id: "specialty_manufacturing", label: "Specialty Industrial Manufacturing" },
           { id: "solar_energy", label: "Solar & Energy Transition" },
           { id: "pre_revenue_ip", label: "Pre-Revenue IP (Separate Product)" },
+          { id: "cross_border_canada", label: "🇨🇦 Canada (TSX/TSXV/CSE)" },
+          { id: "cross_border_australia", label: "🇦🇺 Australia (ASX)" },
+          { id: "all_foreign", label: "🌐 All Foreign Stocks" },
         ].map((item) => {
           const isSelected = (filters.vertical || "all") === item.id;
           return (
