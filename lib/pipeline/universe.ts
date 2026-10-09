@@ -13,24 +13,21 @@ export function mergeSeedAndIngestedTargets(
   seeds: TargetCompany[],
   ingested: TargetCompany[]
 ): TargetCompany[] {
-  const byCik = new Map<string, TargetCompany>();
+  const byKey = new Map<string, TargetCompany>();
 
   // 1. Seed records take priority
   for (const s of seeds) {
     const norm = normalizeCik(s.cik);
-    byCik.set(norm, { ...s });
+    const key = norm ? `cik-${norm}` : s.id;
+    byKey.set(key, { ...s });
   }
 
   // 2. Ingested records added or attached
   for (const ing of ingested) {
     const norm = normalizeCik(ing.cik);
-    if (!norm) {
-      // Non-SEC records without CIK (e.g. Canadian ca-tsx-*)
-      byCik.set(ing.id, { ...ing });
-      continue;
-    }
+    const key = norm ? `cik-${norm}` : ing.id;
 
-    const existingSeed = byCik.get(norm);
+    const existingSeed = byKey.get(key);
     if (existingSeed) {
       // Seed wins, but append ingested triggers/signals
       const mergedTriggers = Array.from(
@@ -39,7 +36,7 @@ export function mergeSeedAndIngestedTargets(
       const mergedSignals = Array.from(
         new Set([...(existingSeed.signals || []), ...(ing.signals || [])])
       );
-      byCik.set(norm, {
+      byKey.set(key, {
         ...existingSeed,
         vehicleDistress: {
           ...existingSeed.vehicleDistress,
@@ -48,11 +45,11 @@ export function mergeSeedAndIngestedTargets(
         signals: mergedSignals,
       });
     } else {
-      byCik.set(norm, { ...ing });
+      byKey.set(key, { ...ing });
     }
   }
 
-  return [...byCik.values()];
+  return [...byKey.values()];
 }
 
 /**
@@ -67,11 +64,13 @@ export function buildUniverse(
 
   for (const s of seeds) {
     const c = seedToCandidate(s);
-    byCik.set(c.cik, c);
+    const key = c.cik || c.id;
+    byCik.set(key, c);
   }
 
   for (const ing of store.candidates) {
-    const seed = byCik.get(ing.cik);
+    const key = ing.cik || ing.id;
+    const seed = byCik.get(key);
     if (seed) {
       byCik.set(ing.cik, {
         ...seed,

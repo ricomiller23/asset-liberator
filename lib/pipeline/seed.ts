@@ -10,8 +10,9 @@ import type { Candidate, CandidateClass, ControlStructure, Signal, SignalCode } 
  * so those are surfaced as dataQualityFlags rather than silently trusted.
  */
 
-export function normalizeCik(cik: string): string {
-  return String(cik).replace(/^0+/, "") || "0";
+export function normalizeCik(cik?: string | null): string {
+  if (!cik) return "";
+  return String(cik).trim().replace(/^0+/, "");
 }
 
 function triggerHas(t: TargetCompany, re: RegExp): boolean {
