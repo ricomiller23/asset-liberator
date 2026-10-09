@@ -60,7 +60,7 @@ export function canSendEmail(to: string): GuardCheckResult {
       if (emails.includes(email)) {
         return { allowed: false, reason: "PERMANENTLY SUPPRESSED: " + email + " is on global opt-out list." };
       }
-      if (domains.includes(domain)) {
+      if (domains.some((d: string) => domain === d || domain.endsWith("." + d))) {
         return { allowed: false, reason: "PERMANENTLY SUPPRESSED DOMAIN: @" + domain + " has requested global firm-wide stop." };
       }
     }

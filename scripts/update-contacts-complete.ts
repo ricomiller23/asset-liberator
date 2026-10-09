@@ -114,11 +114,11 @@ const ENRICHED_DATA: Record<string, { contacts: ExecutiveContact[]; note: CrmNot
         receptivityScore: "moderate"
       },
       {
-        id: "c-opti-whitley",
-        name: "Samuel E. Whitley, Esq.",
-        title: "Securities Counsel (Whitley LLP Attorneys at Law)",
+        id: "c-opti-puzzo",
+        name: "Thomas E. Puzzo, Esq.",
+        title: "Securities Counsel (Law Offices of Thomas E. Puzzo, PLLC)",
         entity: "Legal Counsel",
-        email: "swhitley@whitleyllp.com",
+        email: "tpuzzo@puzzolaw.com",
         phone: "(281) 206-0433",
         address: "24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494",
         roleSummary: "Securities attorney providing legal opinions and SEC regulatory compliance.",
@@ -129,7 +129,7 @@ const ENRICHED_DATA: Record<string, { contacts: ExecutiveContact[]; note: CrmNot
       id: "note-opti-legal-2026",
       date: "2026-10-06",
       author: "Legal & Deal Desk",
-      text: "Added outside securities counsel Samuel E. Whitley, Esq. at Whitley LLP ((281) 206-0433, Katy TX) and added current CEO Gregg Boehmer alongside founder Roger Pawson ((760) 444-5566)."
+      text: "Added outside securities counsel Thomas E. Puzzo, Esq. at Law Offices of Thomas E. Puzzo, PLLC ((281) 206-0433, Katy TX) and added current CEO Gregg Boehmer alongside founder Roger Pawson ((760) 444-5566)."
     }
   },
 
@@ -421,11 +421,11 @@ const ENRICHED_DATA: Record<string, { contacts: ExecutiveContact[]; note: CrmNot
         receptivityScore: "high"
       },
       {
-        id: "c-nwbo-gibsondunn",
-        name: "Gibson, Dunn & Crutcher LLP (Securities Desk)",
+        id: "c-nwbo-lw",
+        name: "Latham & Watkins LLP (Securities Desk)",
         title: "Corporate & Securities Counsel",
         entity: "Legal Counsel",
-        email: "firm@gibsondunn.com",
+        email: "richard.trobman@lw.com",
         phone: "(202) 955-8500",
         address: "1050 Connecticut Avenue NW, Washington, DC 20036",
         roleSummary: "Primary corporate and regulatory counsel advising the board of directors on SEC filings and shareholder meetings.",
@@ -447,7 +447,7 @@ const ENRICHED_DATA: Record<string, { contacts: ExecutiveContact[]; note: CrmNot
       id: "note-nwbo-legal-2026",
       date: "2026-10-06",
       author: "Legal & Deal Desk",
-      text: "Added outside corporate counsel Gibson, Dunn & Crutcher LLP ((202) 955-8500, Washington DC) and lead litigation partner Daniel Sommers, Esq. at Cohen Milstein ((202) 408-4600). Direct headquarters line: (240) 497-9024."
+      text: "Added outside corporate counsel Latham & Watkins LLP ((202) 955-8500, Washington DC) and lead litigation partner Daniel Sommers, Esq. at Cohen Milstein ((202) 408-4600). Direct headquarters line: (240) 497-9024."
     }
   },
 

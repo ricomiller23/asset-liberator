@@ -227,6 +227,10 @@ describe("CRM Pipeline State Management Suite", () => {
     expect(whitleyRes2.allowed).toBe(false);
     expect(whitleyRes2.reason).toContain("SUPPRESSED");
 
+    const whitleySubdomainRes = canSendEmail("counsel@securities.whitley-llp.com");
+    expect(whitleySubdomainRes.allowed).toBe(false);
+    expect(whitleySubdomainRes.reason).toContain("SUPPRESSED DOMAIN");
+
     const whitleyDomainRes = canSendEmail("partner@whitleylawgroup.com");
     expect(whitleyDomainRes.allowed).toBe(false);
     expect(whitleyDomainRes.reason).toContain("SUPPRESSED DOMAIN");

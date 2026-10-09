@@ -189,17 +189,17 @@ Direct: (480) 287-2227
 ricomiller@icloud.com`
   },
 
-  // 7. OPTI - Outside Securities Counsel Samuel E. Whitley at whitleylawgroup.com
+  // 7. OPTI - Outside Securities Counsel Thomas E. Puzzo at puzzolaw.com
   {
     ticker: 'OPTI',
     company: 'Optec International, Inc.',
-    to: 'swhitley@whitleylawgroup.com',
-    recipientName: 'Samuel E. Whitley, Esq.',
-    title: 'Securities Counsel (Whitley Law Group)',
+    to: 'tpuzzo@puzzolaw.com',
+    recipientName: 'Thomas E. Puzzo, Esq.',
+    title: 'Securities Counsel (Law Offices of Thomas E. Puzzo, PLLC)',
     subject: 'CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International — Operating Carve-Out & Noteholder Settlement Proposal',
-    body: `Dear Mr. Whitley,
+    body: `Dear Mr. Puzzo,
 
-I am reaching out to you in your capacity as designated outside securities counsel representing Optec International, Inc. (CIK: 0001557340) at Whitley Law Group.
+I am reaching out to you in your capacity as designated outside securities counsel representing Optec International, Inc. (CIK: 0001557340) at Law Offices of Thomas E. Puzzo, PLLC.
 
 Our investment group specializes in structuring consensual corporate workouts, convertible note payoffs, and asset-level carve-outs for OTC-quoted companies. We have prepared an institutional proposal for Optec's Board of Directors aimed at settling legacy debt liabilities and monetizing the WeShield asset portfolio.
 
@@ -312,7 +312,7 @@ let appendMd = `\n## Follow-Up Re-Dispatch (Bounce Resolution & Creative Channel
 | **4** | **RWAX** | TAP Real Estate Tech | **Gayle Coleman, Esq.** | In-House Legal Counsel | \`gcoleman@taprealestate.com\` | 🟢 **SENT** | Corrected domain from \`.io\` to active Google Workspace domain |
 | **5** | **QPRC** | Quest Patent Research | **Peter Fabricant, Esq.** | Patent Litigation Counsel | \`pfabricant@frlip.com\` | 🟢 **SENT** | Rebranded firm domain to \`frlip.com\` |
 | **6** | **QPRC** | Quest Patent Research | **Alfred R. Fabricant, Esq.** | Founding Trial Partner | \`afabricant@frlip.com\` | 🟢 **SENT** | Added founding trial partner at \`frlip.com\` |
-| **7** | **OPTI** | Optec International | **Samuel E. Whitley, Esq.** | Securities Counsel | \`swhitley@whitleylawgroup.com\` | 🟢 **SENT** | Corrected firm domain to active \`whitleylawgroup.com\` |
+| **7** | **OPTI** | Optec International | **Thomas E. Puzzo, Esq.** | Securities Counsel | \`tpuzzo@puzzolaw.com\` | 🟢 **SENT** | Corrected firm domain to active \`puzzolaw.com\` |
 | **8** | **PBIO** | Pressure BioSciences | **Joseph Lucosky, Esq.** | Managing Partner & Lead SEC Counsel | \`jlucosky@lucbro.com\` | 🟢 **SENT** | Routed to firm founder & lead partner at Lucosky Brookman |
 `;
 

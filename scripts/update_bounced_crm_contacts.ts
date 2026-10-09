@@ -90,16 +90,16 @@ const targetUpdates: Record<string, {
   },
   "OPTI": {
     contactReplacements: {
-      "c-opti-whitley": {
-        title: "Outside Securities Counsel (Whitley Law Group)",
-        email: "swhitley@whitleylawgroup.com"
+      "c-opti-puzzo": {
+        title: "Outside Securities Counsel (Law Offices of Thomas E. Puzzo, PLLC)",
+        email: "tpuzzo@puzzolaw.com"
       }
     },
     crmNote: {
       id: "note-opti-bounce-res-2026-10-07",
       date: "2026-10-07",
       author: "Special Situations Desk",
-      text: "Resolved bounce: Dispatched carve-out and noteholder settlement proposal to outside securities counsel Samuel E. Whitley at verified firm domain swhitley@whitleylawgroup.com."
+      text: "Resolved bounce: Dispatched carve-out and noteholder settlement proposal to outside securities counsel Thomas E. Puzzo at verified firm domain tpuzzo@puzzolaw.com."
     }
   },
   "PBIO": {

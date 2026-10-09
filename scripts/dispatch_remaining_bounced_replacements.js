@@ -56,17 +56,17 @@ Direct: (480) 287-2227
 ricomiller@icloud.com`
   },
 
-  // 2. OPTI - Outside Securities Counsel Samuel E. Whitley at whitleylawgroup.com
+  // 2. OPTI - Outside Securities Counsel Thomas E. Puzzo at puzzolaw.com
   {
     ticker: 'OPTI',
     company: 'Optec International, Inc.',
-    to: 'swhitley@whitleylawgroup.com',
-    recipientName: 'Samuel E. Whitley, Esq.',
-    title: 'Outside Securities Counsel (Whitley Law Group)',
+    to: 'tpuzzo@puzzolaw.com',
+    recipientName: 'Thomas E. Puzzo, Esq.',
+    title: 'Outside Securities Counsel (Law Offices of Thomas E. Puzzo, PLLC)',
     subject: 'CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International — Operating Carve-Out & Noteholder Settlement Proposal',
-    body: `Dear Mr. Whitley,
+    body: `Dear Mr. Puzzo,
 
-I am reaching out to you in your capacity as designated outside securities counsel representing Optec International, Inc. (CIK: 0001557340) at Whitley Law Group.
+I am reaching out to you in your capacity as designated outside securities counsel representing Optec International, Inc. (CIK: 0001557340) at Law Offices of Thomas E. Puzzo, PLLC.
 
 Our investment group specializes in structuring consensual corporate workouts, convertible note payoffs, and asset-level carve-outs for OTC-quoted companies. We have prepared an institutional proposal for Optec's Board of Directors aimed at settling legacy debt liabilities and monetizing the WeShield asset portfolio.
 
@@ -254,7 +254,7 @@ let appendMd = `\n## Second Follow-Up Re-Dispatch (Final Replacement Contacts Di
 | # | Ticker | Company | Recipient | Title & Entity | Email | Status | Resolution Detail |
 | :-: | :-: | :--- | :--- | :--- | :--- | :-: | :--- |
 | **1** | **QPRC** | Quest Patent Research | **Alfred R. Fabricant, Esq.** | Founding Trial Partner | \`afabricant@frlip.com\` | 🟢 **SENT** | Fabricant Rubino Lambrianakos LLP firm domain |
-| **2** | **OPTI** | Optec International | **Samuel E. Whitley, Esq.** | Outside Securities Counsel | \`swhitley@whitleylawgroup.com\` | 🟢 **SENT** | Whitley Law Group domain |
+| **2** | **OPTI** | Optec International | **Thomas E. Puzzo, Esq.** | Outside Securities Counsel | \`tpuzzo@puzzolaw.com\` | 🟢 **SENT** | Law Offices of Thomas E. Puzzo, PLLC domain |
 | **3** | **PBIO** | Pressure BioSciences | **Joseph Lucosky, Esq.** | Managing Partner & Lead SEC Counsel | \`jlucosky@lucbro.com\` | 🟢 **SENT** | Lucosky Brookman LLP managing partner |
 | **4** | **PBIO** | Pressure BioSciences | **Seth Brookman, Esq.** | Founding Partner & Head of Banking/Finance | \`sbrookman@lucbro.com\` | 🟢 **SENT** | Lucosky Brookman LLP finance partner |
 | **5** | **HCMC** | Healthier Choices Management | **Jeffrey Holman** | Chief Executive Officer & Chairman | \`jholman@hcmc1.com\` | 🟢 **SENT** | Corporate OTC domain \`hcmc1.com\` |

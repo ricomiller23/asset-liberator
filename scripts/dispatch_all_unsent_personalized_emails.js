@@ -235,11 +235,11 @@ ricomiller@icloud.com`
   {
     ticker: 'OPTI',
     company: 'Optec International, Inc.',
-    to: 'swhitley@whitleyllp.com',
-    recipientName: 'Samuel E. Whitley, Esq.',
-    title: 'Securities Counsel (Whitley LLP Attorneys at Law)',
+    to: 'tpuzzo@puzzolaw.com',
+    recipientName: 'Thomas E. Puzzo, Esq.',
+    title: 'Securities Counsel (Law Offices of Thomas E. Puzzo, PLLC)',
     subject: 'CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International — Operating Carve-Out & Noteholder Settlement Proposal',
-    body: `Dear Mr. Whitley,
+    body: `Dear Mr. Puzzo,
 
 I am reaching out to you in your capacity as designated outside securities counsel representing Optec International, Inc. (CIK: 0001557340).
 
