@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { INITIAL_TARGETS } from "@/lib/data/targets";
+import { withLiveClock } from "@/lib/pipeline/clock";
 
 export async function GET(
   req: NextRequest,
@@ -12,5 +13,5 @@ export async function GET(
     return NextResponse.json({ error: "Target company not found" }, { status: 404 });
   }
 
-  return NextResponse.json({ target });
+  return NextResponse.json({ target: withLiveClock(target) });
 }

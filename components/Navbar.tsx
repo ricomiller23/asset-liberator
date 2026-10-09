@@ -1,7 +1,7 @@
 import React from "react";
-import { ShieldAlert, Database, Layers, Users, Download, Search, Command, BarChart3, Radio, Landmark } from "lucide-react";
+import { ShieldAlert, Database, Layers, Users, Download, Search, Command, BarChart3, Radio, Landmark, Compass } from "lucide-react";
 
-export type NavTabType = "screener" | "events" | "lenders" | "crm";
+export type NavTabType = "screener" | "discovery" | "events" | "lenders" | "crm";
 
 interface NavbarProps {
   activeTab: NavTabType;
@@ -113,6 +113,18 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <Layers className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
               <span className="text-[11px] sm:text-xs">Screener</span>
+            </button>
+
+            <button
+              onClick={() => onTabChange("discovery")}
+              className={`flex items-center space-x-1 sm:space-x-1.5 rounded-lg px-2 py-1.5 sm:px-2.5 sm:py-1.5 font-medium transition ${
+                activeTab === "discovery"
+                  ? "bg-stone-800 text-white shadow-xs font-semibold"
+                  : "text-stone-400 hover:text-stone-200"
+              }`}
+            >
+              <Compass className="h-3.5 w-3.5 text-cyan-400 shrink-0" />
+              <span className="text-[11px] sm:text-xs">Discovery</span>
             </button>
 
             <button

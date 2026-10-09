@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerTargets } from "@/lib/serverStore";
 import { TargetCompany } from "@/lib/types";
+import { withLiveClock } from "@/lib/pipeline/clock";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +24,8 @@ export async function GET(req: NextRequest) {
   const crmStage = searchParams.get("crmStage");
   const sortBy = searchParams.get("sortBy") || "roi";
 
-  const allTargets = getServerTargets();
+  const now = new Date();
+  const allTargets = getServerTargets().map((t) => withLiveClock(t, now));
   let results: TargetCompany[] = [...allTargets];
 
   // Default behavior: unless specifically requesting 'disqualified' or 'all', hide disqualified filers from active screener

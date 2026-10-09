@@ -1,8 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
-import { INITIAL_TARGETS } from "@/lib/data/targets";
+import { INITIAL_TARGETS as SEED_TARGETS } from "@/lib/data/targets";
+import { withLiveClock } from "@/lib/pipeline/clock";
 import Papa from "papaparse";
 
 export async function GET(req: NextRequest) {
+  const INITIAL_TARGETS = SEED_TARGETS.map((t) => withLiveClock(t));
   const { searchParams } = new URL(req.url);
   const format = searchParams.get("format") || "csv";
 

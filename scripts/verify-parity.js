@@ -16,8 +16,11 @@ if (!jsonMatch) {
 
 const targets = JSON.parse(jsonMatch[1]);
 
-if (targets.length !== 18) {
-  console.error(`FATAL [prebuild]: Expected 18 targets, found ${targets.length}`);
+// Seed set is a floor, not a ceiling: new candidates arrive via the ingestion pipeline
+// (data/candidates.json), so the seed list only has to keep the original records.
+const SEED_FLOOR = 18;
+if (targets.length < SEED_FLOOR) {
+  console.error(`FATAL [prebuild]: Seed records were dropped: expected at least ${SEED_FLOOR}, found ${targets.length}`);
   process.exit(1);
 }
 

@@ -19,6 +19,7 @@ import {
 import { Navbar } from "@/components/Navbar";
 import { EventFeedView } from "@/components/EventFeedView";
 import { LenderIndexView } from "@/components/LenderIndexView";
+import { DiscoveryView } from "@/components/DiscoveryView";
 import { NavTabType } from "@/components/Navbar";
 
 import { FilterBar } from "@/components/FilterBar";
@@ -357,6 +358,8 @@ function AssetLiberatorMain() {
               </div>
             )}
           </div>
+        ) : activeTab === "discovery" ? (
+          <DiscoveryView />
         ) : activeTab === "events" ? (
           <EventFeedView
             onSelectTarget={(ticker) => {
