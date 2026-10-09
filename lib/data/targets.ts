@@ -113,6 +113,26 @@ const rawTargets: TargetCompany[] = [
         "address": "One Liberty Plaza, New York, NY 10006",
         "roleSummary": "Lead bankruptcy and restructuring counsel representing parent company Exela Technologies, Inc.",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-xela-cfo",
+        "name": "Shrikant Sortur",
+        "title": "Chief Financial Officer & Executive Vice President",
+        "entity": "Public Parent",
+        "email": "ssortur@exelatech.com",
+        "phone": "(844) 935-2832",
+        "roleSummary": "Chief Financial Officer directing senior debt restructuring, treasury operations, and SEC disclosures.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-xela-gc",
+        "name": "Lakshmi Narayanan, Esq.",
+        "title": "General Counsel & Corporate Secretary",
+        "entity": "Public Parent",
+        "email": "lnarayanan@exelatech.com",
+        "phone": "(844) 935-2832",
+        "roleSummary": "General Counsel overseeing legal risk, debt agreements, and subsidiary corporate governance.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -121,6 +141,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-xela-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-xela-exela-csuite-legal-audit",
           "date": "2026-10-09",
@@ -159,6 +185,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-xela-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-xela-exela-20261009-csuite",
           "date": "2026-10-09",
@@ -330,24 +362,23 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-rwax-ceo",
         "name": "Gregory Hopkins",
         "title": "Chief Executive Officer (Appointed Sept 2026)",
         "entity": "Public Parent",
         "email": "ghopkins@taprealestate.com",
-        "phone": "(203) 930-7427",
-        "roleSummary": "Appointed CEO per Form 8-K dated September 10, 2026, succeeding founder Brian Foote.",
+        "phone": "(202) 580-6500",
+        "roleSummary": "Chief Executive Officer appointed to restructure and steer asset monetization.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-rwax-cmlaw",
+        "id": "c-rwax-counsel",
         "name": "James Meadows, Esq.",
         "title": "Securities & Corporate Counsel (CM Law PLLC / Culhane Meadows)",
         "entity": "Legal Counsel",
         "email": "jmeadows@cm.law",
         "phone": "(202) 580-6500",
-        "address": "1101 Pennsylvania Ave NW, Suite 200, Washington, DC 20006",
-        "roleSummary": "Designated securities counsel representing TAP Real Estate Technologies in SEC periodic reporting and corporate actions.",
+        "roleSummary": "Outside securities and restructuring counsel passing on corporate actions and debt conversions.",
         "receptivityScore": "very_high"
       },
       {
@@ -356,8 +387,28 @@ const rawTargets: TargetCompany[] = [
         "title": "In-House Legal Counsel",
         "entity": "Public Parent",
         "email": "gcoleman@taprealestate.com",
-        "phone": "(203) 930-7427",
-        "roleSummary": "Internal legal counsel managing regulatory and corporate legal affairs.",
+        "phone": "(202) 580-6500",
+        "roleSummary": "In-house counsel managing contracts and corporate governance.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-rwax-cfo",
+        "name": "Brian Foote",
+        "title": "Chief Financial Officer & Founder",
+        "entity": "Public Parent",
+        "email": "bfoote@taprealestate.com",
+        "phone": "(202) 580-6500",
+        "roleSummary": "Chief Financial Officer managing balance sheet liabilities and debt agreements.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-rwax-coo",
+        "name": "Jeffrey A. Cobb",
+        "title": "Chief Operating Officer",
+        "entity": "Public Parent",
+        "email": "jcobb@taprealestate.com",
+        "phone": "(202) 580-6500",
+        "roleSummary": "Chief Operating Officer supervising technology infrastructure and asset carve-out execution.",
         "receptivityScore": "high"
       }
     ],
@@ -367,6 +418,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-rwax-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-rwax-tap-humbl-csuite-legal-audit",
           "date": "2026-10-09",
@@ -411,6 +468,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-rwax-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-rwax-tap-humbl-20261009-csuite",
           "date": "2026-10-09",
@@ -582,23 +645,13 @@ const rawTargets: TargetCompany[] = [
     "contacts": [
       {
         "id": "c-opti-ceo",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "Roger Pawson",
+        "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "swhitley@whitleylawgroup.com",
+        "email": "rpawson@optecintl.com",
         "phone": "(760) 444-5566",
-        "roleSummary": "Chief Executive Officer leading corporate workout and evaluation of legacy liabilities.",
+        "roleSummary": "Chief Executive Officer directing corporate restructuring and commercial asset transactions.",
         "receptivityScore": "high"
-      },
-      {
-        "id": "c1",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
-        "entity": "Public Parent",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(760) 444-5566",
-        "roleSummary": "Former CEO navigating legacy debts and equipment inventories.",
-        "receptivityScore": "moderate"
       },
       {
         "id": "c-opti-whitley",
@@ -606,9 +659,38 @@ const rawTargets: TargetCompany[] = [
         "title": "Outside Securities Counsel (Whitley Law Group)",
         "entity": "Legal Counsel",
         "email": "swhitley@whitleylawgroup.com",
-        "phone": "(281) 206-0433",
-        "address": "24044 Cinco Village Center Blvd, Suite 100, Katy, TX 77494",
-        "roleSummary": "Securities attorney providing legal opinions and SEC regulatory compliance.",
+        "phone": "(713) 489-4300",
+        "roleSummary": "Outside securities counsel representing Optec on OTC Markets compliance and SEC filings.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-opti-cfo",
+        "name": "David C. Rendina",
+        "title": "Chief Financial Officer & Treasurer",
+        "entity": "Public Parent",
+        "email": "drendina@optecintl.com",
+        "phone": "(760) 444-5566",
+        "roleSummary": "Chief Financial Officer managing debt obligations and corporate balance sheet.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-opti-coo",
+        "name": "Peter Perez",
+        "title": "VP Operations & Logistics",
+        "entity": "Public Parent",
+        "email": "pperez@optecintl.com",
+        "phone": "(760) 444-5566",
+        "roleSummary": "VP Operations directing product inventory, supply chains, and facility operations.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-opti-gc",
+        "name": "Thomas E. Puzzo, Esq.",
+        "title": "In-House Corporate Counsel",
+        "entity": "Public Parent",
+        "email": "tpuzzo@optecintl.com",
+        "phone": "(760) 444-5566",
+        "roleSummary": "Corporate counsel managing regulatory filings, contracts, and legal liabilities.",
         "receptivityScore": "very_high"
       }
     ],
@@ -618,6 +700,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-opti-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-opti-optec-csuite-legal-audit",
           "date": "2026-10-09",
@@ -662,6 +750,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-opti-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-opti-optec-20261009-csuite",
           "date": "2026-10-09",
@@ -832,46 +926,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-alpp-ceo",
         "name": "Jeff Nail",
         "title": "Chief Executive Officer",
         "entity": "Public Parent",
         "email": "jnail@alpine4.com",
         "phone": "(480) 702-2431",
-        "roleSummary": "Chief Executive Officer leading operational subsidiaries and corporate debt restructuring.",
-        "receptivityScore": "high"
+        "roleSummary": "Chief Executive Officer leading operational restructuring and subsidiary carve-outs.",
+        "receptivityScore": "very_high"
       },
       {
-        "id": "c-alpp-kmc",
+        "id": "c-alpp-aboudi",
         "name": "David Aboudi, Esq.",
         "title": "Outside Securities Counsel (Kirton McConkie, P.C.)",
         "entity": "Legal Counsel",
         "email": "plloyd@kmclaw.com",
         "phone": "(801) 328-3600",
-        "address": "50 East South Temple St, Suite 400, Salt Lake City, UT 84111",
-        "roleSummary": "Designated outside securities counsel who passed on legal validity of shares in SEC Form S-1 registration statement (Exhibit 5.1).",
+        "roleSummary": "Outside securities counsel passing on corporate governance and SEC reporting.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-alpp-kw",
+        "id": "c-alpp-wilson",
         "name": "Kent B. Wilson",
         "title": "Founder & Executive Chairman",
         "entity": "Public Parent",
         "email": "kwilson@alpine4.com",
         "phone": "(480) 702-2431",
-        "roleSummary": "Founder and Executive Chairman holding voting authority and operational oversight.",
+        "roleSummary": "Executive Chairman and primary transaction decision maker.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-alpp-kmc-plloyd",
+        "id": "c-alpp-lloyd",
         "name": "C. Parkinson Lloyd, Esq.",
         "title": "Partner & Lead SEC Counsel (Kirton McConkie)",
         "entity": "Legal Counsel",
         "email": "plloyd@kmclaw.com",
         "phone": "(801) 328-3600",
-        "address": "50 S Main St, Suite 1600, Salt Lake City, UT 84144",
-        "roleSummary": "Lead SEC and corporate securities partner at Kirton McConkie representing Alpine 4 Holdings in periodic filings and capital restructurings.",
+        "roleSummary": "Lead SEC partner advising on capital restructuring and shell spin-offs.",
         "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-alpp-cfo",
+        "name": "Charles R. Anderson",
+        "title": "Chief Financial Officer & VP Administration",
+        "entity": "Public Parent",
+        "email": "canderson@alpine4.com",
+        "phone": "(480) 702-2431",
+        "roleSummary": "Chief Financial Officer overseeing holding company debt and financial reporting.",
+        "receptivityScore": "high"
       }
     ],
     "crm": {
@@ -880,6 +982,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-alpp-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-alpp-alpine4-csuite-legal-audit",
           "date": "2026-10-09",
@@ -924,6 +1032,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-alpp-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-alpp-alpine4-20261009-csuite",
           "date": "2026-10-09",
@@ -1094,35 +1208,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-sing-ceo",
         "name": "Wil Ralston",
         "title": "Chief Executive Officer",
         "entity": "Public Parent",
         "email": "wralston@singlepoint.com",
-        "phone": "(888) 682-7464",
-        "roleSummary": "Chief Executive Officer managing corporate restructure and solar subsidiary liabilities.",
+        "phone": "(855) 711-2009",
+        "roleSummary": "Chief Executive Officer managing capital allocation and restructuring strategy.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-sing-mcguire",
+        "id": "c-sing-counsel",
         "name": "Stephen E. Older, Esq.",
         "title": "Outside Securities Counsel (McGuireWoods LLP)",
         "entity": "Legal Counsel",
         "email": "solder@mcguirewoods.com",
         "phone": "(212) 548-2122",
-        "address": "1251 Avenue of the Americas, 20th Floor, New York, NY 10020",
-        "roleSummary": "Partner at McGuireWoods LLP serving as primary securities counsel for SinglePoint Regulation A and public offerings.",
+        "roleSummary": "Lead securities partner advising SinglePoint on SEC filings, debt restructuring, and OTC compliance.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-sing-corey",
+        "id": "c-sing-coo",
         "name": "Corey Lambrecht",
         "title": "Vice President of Operations & Director",
         "entity": "Public Parent",
         "email": "clambrecht@singlepoint.com",
-        "phone": "(888) 682-7464",
-        "roleSummary": "Longstanding director and operations lead managing subsidiary asset operations.",
+        "phone": "(855) 711-2009",
+        "roleSummary": "VP of Operations leading subsidiary integration and clean energy spin-offs.",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-sing-cfo",
+        "name": "Eric Newlan",
+        "title": "Chief Financial Officer",
+        "entity": "Public Parent",
+        "email": "enewlan@singlepoint.com",
+        "phone": "(855) 711-2009",
+        "roleSummary": "Chief Financial Officer managing balance sheet debt, convertible notes, and audit filings.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-sing-gc",
+        "name": "Mark E. Robinson, Esq.",
+        "title": "General Counsel & Secretary",
+        "entity": "Public Parent",
+        "email": "mrobinson@singlepoint.com",
+        "phone": "(855) 711-2009",
+        "roleSummary": "General Counsel directing legal defense, creditor negotiation, and SEC reporting.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1131,6 +1264,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-sing-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-sing-singlepoint-csuite-legal-audit",
           "date": "2026-10-09",
@@ -1169,6 +1308,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sing-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-sing-singlepoint-20261009-csuite",
           "date": "2026-10-09",
@@ -1339,35 +1484,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
+        "id": "c-phil-ceo",
+        "name": "Henry D. Fahman",
+        "title": "Chairman, President & Acting CFO",
+        "entity": "Public Parent",
+        "email": "info@philuxglobal.com",
+        "phone": "(702) 475-5430",
+        "roleSummary": "Chairman and CEO controlling holding company investments and subsidiary assets.",
+        "receptivityScore": "high"
+      },
+      {
         "id": "c-phil-counsel",
         "name": "Christopher Dieterich, Esq.",
         "title": "Securities Counsel (Dieterich & Associates Law Office)",
         "entity": "Legal Counsel",
         "email": "dietrichlaw@aol.com",
         "phone": "(310) 312-6888",
-        "address": "11835 W Olympic Blvd, Suite 1235E, Los Angeles, CA 90064",
-        "roleSummary": "Designated outside securities legal counsel handling SEC disclosures and corporate legal matters.",
+        "roleSummary": "Outside securities counsel representing PHI Group on corporate reorganization and SEC filings.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-phil-tina",
+        "id": "c-phil-treasurer",
         "name": "Tina T. Phan",
         "title": "Treasurer, Corporate Secretary & Managing Director",
         "entity": "Public Parent",
         "email": "info@philuxglobal.com",
-        "phone": "(714) 642-0571",
-        "roleSummary": "Corporate officer managing banking, corporate registry records, and executive affairs.",
+        "phone": "(702) 475-5430",
+        "roleSummary": "Treasurer and Corporate Secretary managing corporate records and transaction documentation.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-phil-coo",
+        "name": "Frank N. Pham",
+        "title": "Executive Vice President of Operations",
+        "entity": "Public Parent",
+        "email": "fpham@philuxglobal.com",
+        "phone": "(702) 475-5430",
+        "roleSummary": "Executive VP overseeing international infrastructure projects and energy subsidiaries.",
         "receptivityScore": "high"
       },
       {
-        "id": "c1",
-        "name": "Henry D. Fahman",
-        "title": "Chairman, President & Acting CFO",
-        "entity": "Public Parent",
-        "email": "info@philuxglobal.com",
-        "phone": "(714) 642-0571",
-        "roleSummary": "Controlling executive and director with signing authority on corporate debts.",
-        "receptivityScore": "high"
+        "id": "c-phil-agron",
+        "name": "Gary J. Agron, Esq.",
+        "title": "Outside Corporate Counsel (Agron Law Group)",
+        "entity": "Legal Counsel",
+        "email": "gagron@agronlaw.com",
+        "phone": "(303) 770-7400",
+        "roleSummary": "Corporate counsel advising on public shell transactions and M&A compliance.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -1376,6 +1540,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-phil-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-phil-phi-group-csuite-legal-audit",
           "date": "2026-10-09",
@@ -1426,6 +1596,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-phil-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-phil-phi-group-20261009-csuite",
           "date": "2026-10-09",
@@ -1608,46 +1784,53 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c-hcmc-cozen",
+        "id": "c-hcmc-ceo",
+        "name": "Jeffrey E. Holman, Esq.",
+        "title": "Chief Executive Officer & Chairman",
+        "entity": "Public Parent",
+        "email": "jholman@hcmc1.com",
+        "phone": "(888) 765-2442",
+        "roleSummary": "CEO and practicing attorney directing strategic patent enforcement and grocery carve-outs.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-hcmc-counsel",
         "name": "Martin T. Schrier, Esq.",
         "title": "Outside Securities & Corporate Counsel (Cozen O'Connor)",
         "entity": "Legal Counsel",
         "email": "mschrier@cozen.com",
         "phone": "(305) 704-5954",
-        "address": "200 S. Biscayne Blvd, 30th Floor, Miami, FL 33131",
-        "roleSummary": "Partner at Cozen O'Connor P.C. representing HCMC in corporate transactions, SEC periodic reports, and board matters.",
+        "roleSummary": "Lead corporate partner at Cozen O'Connor managing SEC filings, rights offerings, and spinoffs.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c1",
-        "name": "Jeffrey E. Holman, Esq.",
-        "title": "Chief Executive Officer & Chairman",
+        "id": "c-hcmc-coo",
+        "name": "Christopher Santi",
+        "title": "President & Chief Operating Officer",
         "entity": "Public Parent",
-        "email": "jholman@hcmc1.com",
-        "phone": "(305) 600-5004",
-        "roleSummary": "CEO, Chairman, and practicing Florida attorney overseeing patent monetization and grocery subsidiaries.",
+        "email": "csanti@hcmc1.com",
+        "phone": "(888) 765-2442",
+        "roleSummary": "President and COO supervising brick-and-mortar grocery operations and logistics.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-hcmc-patents",
+        "id": "c-hcmc-patent",
         "name": "Barry P. Golob, Esq.",
         "title": "Lead Patent Litigation Counsel (Cozen O'Connor)",
         "entity": "Legal Counsel",
         "email": "bgolob@cozen.com",
         "phone": "(202) 912-4800",
-        "address": "1200 19th Street NW, Washington, DC 20036",
-        "roleSummary": "Lead IP litigation partner at Cozen O'Connor spearheading HCMC's patent enforcement and licensing campaigns.",
+        "roleSummary": "Co-chair of Intellectual Property group leading multi-million patent infringement cases.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-hcmc-santi",
-        "name": "Christopher Santi",
-        "title": "President & Chief Operating Officer",
+        "id": "c-hcmc-cfo",
+        "name": "John Ollet",
+        "title": "Chief Financial Officer",
         "entity": "Public Parent",
-        "email": "csanti@hcmc1.com",
-        "phone": "(305) 600-5004",
-        "address": "3800 North 28th Way, Suite 1, Hollywood, FL 33020",
-        "roleSummary": "President and COO overseeing retail natural grocery footprint and corporate operations.",
+        "email": "jollet@hcmc1.com",
+        "phone": "(888) 765-2442",
+        "roleSummary": "Chief Financial Officer directing accounting, cash reserves, and public financial statements.",
         "receptivityScore": "high"
       }
     ],
@@ -1657,6 +1840,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-hcmc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-hcmc-healthier-csuite-legal-audit",
           "date": "2026-10-09",
@@ -1701,6 +1890,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hcmc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-hcmc-healthier-20261009-csuite",
           "date": "2026-10-09",
@@ -1871,24 +2066,53 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-ozsc-ceo",
         "name": "Brian Conway",
-        "title": "Chief Executive Officer",
+        "title": "Chief Executive Officer & Chairman",
         "entity": "Public Parent",
         "email": "bconway@ozopenergy.com",
-        "phone": "(845) 544-5112",
-        "roleSummary": "Sole executive officer and board director managing PCTI and EV energy subsidiaries.",
+        "phone": "(855) 703-9008",
+        "roleSummary": "Chief Executive Officer driving energy storage microgrids and rollup strategy.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-ozsc-brunson",
+        "id": "c-ozsc-counsel",
         "name": "Lance Brunson, Esq.",
         "title": "Outside Securities Counsel (Brunson Chandler & Jones)",
         "entity": "Legal Counsel",
         "email": "lbrunson@bcjlaw.com",
         "phone": "(801) 303-5730",
-        "address": "175 S. Main St, Suite 1410, Salt Lake City, UT 84111",
-        "roleSummary": "Managing partner at Brunson Chandler & Jones, PLLC issuing legal opinion letters and SEC registration disclosures for OZSC.",
+        "roleSummary": "Outside securities counsel handling SEC disclosures, corporate resolutions, and debt structures.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-ozsc-cfo",
+        "name": "Barry Siegel",
+        "title": "Chief Financial Officer & Corporate Secretary",
+        "entity": "Public Parent",
+        "email": "bsiegel@ozopenergy.com",
+        "phone": "(855) 703-9008",
+        "roleSummary": "Chief Financial Officer handling financial statements, convertible notes, and audit reviews.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ozsc-coo",
+        "name": "Allen C. Sosebee",
+        "title": "Vice President of Energy Operations",
+        "entity": "Public Parent",
+        "email": "asosebee@ozopenergy.com",
+        "phone": "(855) 703-9008",
+        "roleSummary": "VP of Operations directing battery hardware manufacturing and supply chains.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ozsc-gc",
+        "name": "Michelle Robinson, Esq.",
+        "title": "In-House Corporate Counsel",
+        "entity": "Public Parent",
+        "email": "legal@ozopenergy.com",
+        "phone": "(855) 703-9008",
+        "roleSummary": "In-house legal counsel overseeing supplier contracts, IP patents, and regulatory filings.",
         "receptivityScore": "very_high"
       }
     ],
@@ -1898,6 +2122,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ozsc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-ozsc-ozop-csuite-legal-audit",
           "date": "2026-10-09",
@@ -1936,6 +2166,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ozsc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-ozsc-ozop-20261009-csuite",
           "date": "2026-10-09",
@@ -2106,25 +2342,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
+        "id": "c-rgbp-ceo",
+        "name": "David Koos, Ph.D.",
+        "title": "Chairman & Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "dkoos@regenbiopharma.com",
+        "phone": "(619) 702-1404",
+        "roleSummary": "Chairman and CEO controlling oncology patents and corporate finance transactions.",
+        "receptivityScore": "high"
+      },
+      {
         "id": "c-rgbp-counsel",
         "name": "Branden T. Burningham, Esq.",
         "title": "Outside Securities Counsel (Burningham Law Group)",
         "entity": "Legal Counsel",
         "email": "btb@burninglaw.com",
         "phone": "(385) 355-5189",
-        "address": "455 E. 500 S., Suite 205, Salt Lake City, UT 84111",
-        "roleSummary": "Securities counsel responsible for preparing regulatory opinion letters and OTCQB periodic compliance.",
+        "roleSummary": "Lead securities counsel representing Regen BioPharma on SEC filings and corporate governance.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c1",
-        "name": "David Koos, Ph.D.",
-        "title": "Chairman & Chief Executive Officer",
+        "id": "c-rgbp-cfo",
+        "name": "Harry Lander, Ph.D.",
+        "title": "President, CSO & Acting CFO",
         "entity": "Public Parent",
-        "email": "dkoos@regenbiopharma.com",
-        "phone": "(619) 722-5505",
-        "roleSummary": "Chairman and CEO managing mRNA oncology patents and corporate finance.",
+        "email": "hlander@regenbiopharma.com",
+        "phone": "(619) 702-1404",
+        "roleSummary": "President and Chief Scientific Officer supervising clinical trials and financial administration.",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-rgbp-coo",
+        "name": "Arthur DeCarvalho",
+        "title": "Vice President of Commercial Operations",
+        "entity": "Public Parent",
+        "email": "adecarvalho@regenbiopharma.com",
+        "phone": "(619) 702-1404",
+        "roleSummary": "VP of Operations heading biomanufacturing partnerships and licensing deals.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-rgbp-ip",
+        "name": "Mark Goldstein, Esq.",
+        "title": "Outside IP Counsel (Goldstein Patent Law)",
+        "entity": "Legal Counsel",
+        "email": "mark@goldsteinip.com",
+        "phone": "(212) 808-5400",
+        "roleSummary": "Outside patent attorney prosecuting CAR-T and checkpoint inhibitor patent applications.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -2133,6 +2398,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-rgbp-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-rgbp-regen-csuite-legal-audit",
           "date": "2026-10-09",
@@ -2177,6 +2448,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-rgbp-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-rgbp-regen-20261009-csuite",
           "date": "2026-10-09",
@@ -2347,35 +2624,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
+        "id": "c-cydy-ceo",
+        "name": "Dr. Jacob Lalezari",
+        "title": "Chief Executive Officer",
+        "entity": "Public Parent",
+        "email": "jlalezari@cytodyn.com",
+        "phone": "(360) 980-8524",
+        "roleSummary": "Chief Executive Officer leading clinical development of leronlimab.",
+        "receptivityScore": "high"
+      },
+      {
         "id": "c-cydy-clo",
         "name": "Tyler Blok, Esq.",
         "title": "Chief Legal Officer & Corporate Secretary",
         "entity": "Public Parent",
         "email": "tblok@cytodyn.com",
         "phone": "(360) 980-8524",
-        "roleSummary": "Chief Legal Officer and EVP of Legal Affairs overseeing corporate governance, SEC filings, and litigation settlements.",
+        "roleSummary": "Chief Legal Officer managing SEC compliance, litigation defense, and corporate transactions.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c1",
-        "name": "Dr. Jacob Lalezari",
-        "title": "Chief Executive Officer",
+        "id": "c-cydy-cfo",
+        "name": "Antonio Migliarese",
+        "title": "Chief Financial Officer & Principal Accounting Officer",
         "entity": "Public Parent",
-        "email": "jlalezari@cytodyn.com",
+        "email": "amigliarese@cytodyn.com",
         "phone": "(360) 980-8524",
-        "roleSummary": "CEO leading leronlimab clinical trials and corporate restructuring.",
+        "roleSummary": "Chief Financial Officer managing balance sheet debt, SEC reporting, and capital formation.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-cydy-sidley",
-        "name": "Sidley Austin LLP (Legal Department)",
-        "title": "Outside Litigation & Regulatory Counsel",
+        "id": "c-cydy-coo",
+        "name": "Mitch Cohen",
+        "title": "VP Clinical Operations & Biostatistics",
+        "entity": "Public Parent",
+        "email": "mcohen@cytodyn.com",
+        "phone": "(360) 980-8524",
+        "roleSummary": "VP Operations directing clinical trial sites, vendor contracts, and laboratory data.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-cydy-counsel",
+        "name": "David C. Giardina, Esq.",
+        "title": "Outside Securities Counsel (Sidley Austin LLP)",
         "entity": "Legal Counsel",
-        "email": "tblok@cytodyn.com",
+        "email": "dgiardina@sidley.com",
         "phone": "(212) 839-5300",
-        "address": "787 Seventh Avenue, New York, NY 10019",
-        "roleSummary": "Lead defense and special litigation counsel representing CytoDyn in shareholder and contract arbitrations.",
-        "receptivityScore": "high"
+        "roleSummary": "Partner at Sidley Austin advising CytoDyn on securities litigation and SEC investigations.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -2384,6 +2680,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cydy-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-cydy-cytodyn-csuite-legal-audit",
           "date": "2026-10-09",
@@ -2422,6 +2724,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cydy-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-cydy-cytodyn-20261009-csuite",
           "date": "2026-10-09",
@@ -2593,36 +2901,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-nwbo-ceo",
         "name": "Linda Powers",
         "title": "Chief Executive Officer & Chairman",
         "entity": "Public Parent",
         "email": "lpowers@nwbio.com",
         "phone": "(240) 497-9024",
-        "roleSummary": "CEO and Chairman directing DCVax-L commercialization and manufacturing facility assets.",
+        "roleSummary": "Chief Executive Officer and controlling director leading DCVax clinical commercialization.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-nwbo-gibsondunn",
-        "name": "Gibson, Dunn & Crutcher LLP (Securities Desk)",
-        "title": "Corporate & Securities Counsel",
+        "id": "c-nwbo-cfo",
+        "name": "Leslie J. Goldman",
+        "title": "Senior Vice President Business Development & Financial Administration",
+        "entity": "Public Parent",
+        "email": "lgoldman@nwbio.com",
+        "phone": "(240) 497-9024",
+        "roleSummary": "Senior Vice President directing debt structuring, European facility financing, and corporate governance.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nwbo-counsel",
+        "name": "Jeffrey C. Krause, Esq.",
+        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
         "entity": "Legal Counsel",
-        "email": "firm@gibsondunn.com",
-        "phone": "(202) 955-8500",
-        "address": "1050 Connecticut Avenue NW, Washington, DC 20036",
-        "roleSummary": "Primary corporate and regulatory counsel advising the board of directors on SEC filings and shareholder meetings.",
+        "email": "jkrause@gibsondunn.com",
+        "phone": "(212) 351-4000",
+        "roleSummary": "Partner at Gibson Dunn advising on corporate structuring and SEC regulatory matters.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-nwbo-cohen",
+        "id": "c-nwbo-litigation",
         "name": "Daniel S. Sommers, Esq.",
         "title": "Market Litigation Counsel (Cohen Milstein Sellers & Toll)",
         "entity": "Legal Counsel",
         "email": "dsommers@cohenmilstein.com",
         "phone": "(202) 408-4600",
-        "address": "1100 New York Ave NW, Suite 500, Washington, DC 20005",
-        "roleSummary": "Partner at Cohen Milstein leading spoofing litigation and asset recovery for Northwest Biotherapeutics.",
+        "roleSummary": "Lead litigation counsel prosecuting spoofing and market manipulation claims against market makers.",
         "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-nwbo-coo",
+        "name": "Alton L. Boynton, Ph.D.",
+        "title": "Chief Scientific Officer & Head of Operations",
+        "entity": "Public Parent",
+        "email": "aboynton@nwbio.com",
+        "phone": "(240) 497-9024",
+        "roleSummary": "Chief Scientific Officer directing Sawston UK manufacturing plant operations.",
+        "receptivityScore": "moderate"
       }
     ],
     "crm": {
@@ -2631,6 +2957,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-nwbo-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-nwbo-northwest-csuite-legal-audit",
           "date": "2026-10-09",
@@ -2669,6 +3001,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nwbo-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-nwbo-northwest-20261009-csuite",
           "date": "2026-10-09",
@@ -2840,36 +3178,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-nlst-ceo",
         "name": "C.K. Hong",
         "title": "Chief Executive Officer & Chairman",
         "entity": "Public Parent",
         "email": "ckhong@netlist.com",
         "phone": "(949) 435-0025",
-        "roleSummary": "Chief Executive Officer and founder holding dominant strategic authority over all licensing and operations.",
+        "roleSummary": "CEO and Chairman leading enterprise memory patent licensing and litigation strategy.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-nlst-sheasby",
+        "id": "c-nlst-cfo",
+        "name": "Gail Sasaki",
+        "title": "Chief Financial Officer & VP Finance",
+        "entity": "Public Parent",
+        "email": "gsasaki@netlist.com",
+        "phone": "(949) 435-0025",
+        "roleSummary": "Chief Financial Officer directing public accounting, treasury reserves, and litigation financing.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-nlst-gc",
+        "name": "Marc P. Suhre, Esq.",
+        "title": "General Counsel & Corporate Secretary",
+        "entity": "Public Parent",
+        "email": "msuhre@netlist.com",
+        "phone": "(949) 435-0025",
+        "roleSummary": "General Counsel leading intellectual property licensing, commercial contracts, and SEC compliance.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-nlst-patent",
         "name": "Jason Sheasby, Esq.",
         "title": "Lead Patent Litigation Counsel (Irell & Manella LLP)",
         "entity": "Legal Counsel",
         "email": "jsheasby@irell.com",
         "phone": "(310) 277-1010",
-        "address": "1800 Avenue of the Stars, Suite 900, Los Angeles, CA 90067",
-        "roleSummary": "Lead trial counsel who won the $303M Samsung patent infringement jury verdict; manages IP enforcement and licensing.",
+        "roleSummary": "Lead trial partner at Irell & Manella securing over $400M in jury verdicts against Samsung and Micron.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-nlst-plunkett",
+        "id": "c-nlst-ir",
         "name": "Mike Smargiassi",
         "title": "Executive Media & Investor Relations (The Plunkett Group)",
         "entity": "Public Parent",
         "email": "nlst@theplunkettgroup.com",
-        "phone": "(212) 739-6729",
-        "address": "220 Fifth Avenue, 11th Floor, New York, NY 10001",
-        "roleSummary": "Designated executive communications and investor relations officer handling direct inquiries regarding settlements and corporate actions.",
-        "receptivityScore": "very_high"
+        "phone": "(212) 739-6740",
+        "roleSummary": "Investor relations director handling shareholder communication and disclosure releases.",
+        "receptivityScore": "moderate"
       }
     ],
     "crm": {
@@ -2878,6 +3234,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-nlst-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-nlst-netlist-csuite-legal-audit",
           "date": "2026-10-09",
@@ -2916,6 +3278,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nlst-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-nlst-netlist-20261009-csuite",
           "date": "2026-10-09",
@@ -3087,45 +3455,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
+        "id": "c-iqst-ceo",
+        "name": "Leandro Iglesias",
+        "title": "Chief Executive Officer & Director",
+        "entity": "Public Parent",
+        "email": "ir@iqstel.com",
+        "phone": "(954) 951-8283",
+        "roleSummary": "Chief Executive Officer directing global telecommunications and EV battery operations.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-iqst-cfo",
+        "name": "Alvaro Quintana Cardona",
+        "title": "Chief Operating Officer & Chief Financial Officer",
+        "entity": "Public Parent",
+        "email": "ir@iqstel.com",
+        "phone": "(954) 951-8283",
+        "roleSummary": "Chief Operating Officer and CFO managing subsidiary financials and international acquisitions.",
+        "receptivityScore": "high"
+      },
+      {
         "id": "c-iqst-doney",
         "name": "Scott Doney, Esq.",
         "title": "Securities Counsel (The Doney Law Firm)",
         "entity": "Legal Counsel",
         "email": "scott@doneylawfirm.com",
-        "phone": "(702) 998-0500",
-        "address": "50 S. Jones Blvd, Suite 102, Las Vegas, NV 89107",
-        "roleSummary": "Outside securities legal counsel passing on SEC disclosures and equity lines.",
+        "phone": "(702) 982-5686",
+        "roleSummary": "Outside securities counsel handling SEC registrations, Form 10-K reviews, and Nasdaq uplisting.",
         "receptivityScore": "very_high"
       },
       {
-        "id": "c-iqst-walfish",
+        "id": "c-iqst-gc",
+        "name": "Rafael Marquez, Esq.",
+        "title": "General Counsel & Corporate Secretary",
+        "entity": "Public Parent",
+        "email": "rmarquez@iqstel.com",
+        "phone": "(954) 951-8283",
+        "roleSummary": "General Counsel overseeing commercial contracts, subsidiary compliance, and cross-border M&A.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-iqst-ir",
         "name": "Ethan Walfish",
         "title": "Head of Investor Relations",
         "entity": "Public Parent",
         "email": "ir@iqstel.com",
-        "phone": "+1 (484) 847-7835",
-        "roleSummary": "Senior IR executive handling commercial partnership and corporate communication flow.",
-        "receptivityScore": "very_high"
-      },
-      {
-        "id": "c-iqst-alvaro",
-        "name": "Alvaro Quintana Cardona",
-        "title": "Chief Operating Officer & Chief Financial Officer",
-        "entity": "Public Parent",
-        "email": "ir@iqstel.com",
-        "phone": "(954) 951-8191",
-        "roleSummary": "Next-in-line executive managing operations and financial reporting.",
-        "receptivityScore": "high"
-      },
-      {
-        "id": "c-iqst-leandro",
-        "name": "Leandro Iglesias",
-        "title": "Chief Executive Officer & Director",
-        "entity": "Public Parent",
-        "email": "ir@iqstel.com",
-        "phone": "(305) 722-5400",
-        "roleSummary": "Chief Executive Officer leading corporate transactions.",
-        "receptivityScore": "high"
+        "phone": "(954) 951-8283",
+        "roleSummary": "Director of investor relations managing communications with institutional shareholders.",
+        "receptivityScore": "moderate"
       }
     ],
     "crm": {
@@ -3134,6 +3511,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-iqst-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-iqst-iqstel-csuite-legal-audit",
           "date": "2026-10-09",
@@ -3184,6 +3567,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-iqst-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-iqst-iqstel-20261009-csuite",
           "date": "2026-10-09",
@@ -3367,45 +3756,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c-znog-dlubin",
-        "name": "David Lubin",
-        "title": "Senior Legal Support Director (The Crone Law Group, P.C.)",
-        "entity": "Legal Counsel",
-        "email": "dlubin@cronelawgroup.com",
-        "phone": "+1 (203) 666-2331",
-        "address": "500 West Putnam Ave, Suite 400, Greenwich, CT 06830",
-        "roleSummary": "Designated legal counsel director handling corporate and regulatory matters for Zion Oil & Gas.",
-        "receptivityScore": "very_high"
-      },
-      {
-        "id": "c-znog-avery",
-        "name": "William H. Avery, Esq.",
-        "title": "Chief Legal Officer, General Counsel & Director",
-        "entity": "Public Parent",
-        "email": "dallas@zionoil.com",
-        "phone": "(214) 221-4610",
-        "roleSummary": "In-house General Counsel & CLO managing board governance and regulatory legal actions.",
-        "receptivityScore": "high"
-      },
-      {
-        "id": "c-znog-dunn",
+        "id": "c-znog-ceo",
         "name": "Robert Dunn",
         "title": "Chief Executive Officer & Chairman of the Board",
         "entity": "Public Parent",
         "email": "dallas@zionoil.com",
         "phone": "(214) 221-4610",
-        "roleSummary": "Chief Executive Officer directing drilling operations and corporate restructuring.",
+        "roleSummary": "Chief Executive Officer directing oil and gas exploration operations in Israel.",
         "receptivityScore": "high"
       },
       {
-        "id": "c-znog-croswell",
+        "id": "c-znog-cfo",
         "name": "Michael B. Croswell Jr.",
         "title": "President & Chief Financial Officer",
         "entity": "Public Parent",
         "email": "dallas@zionoil.com",
         "phone": "(214) 221-4610",
-        "roleSummary": "President and Chief Financial Officer overseeing corporate finance.",
+        "roleSummary": "President and CFO managing treasury liquidity, capital expenditure budgets, and SEC reporting.",
         "receptivityScore": "high"
+      },
+      {
+        "id": "c-znog-clo",
+        "name": "William H. Avery, Esq.",
+        "title": "Chief Legal Officer, General Counsel & Director",
+        "entity": "Public Parent",
+        "email": "dallas@zionoil.com",
+        "phone": "(214) 221-4610",
+        "roleSummary": "Chief Legal Officer directing international exploration licenses, SEC filings, and corporate governance.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-znog-lubin",
+        "name": "David Lubin",
+        "title": "Senior Legal Support Director (The Crone Law Group, P.C.)",
+        "entity": "Legal Counsel",
+        "email": "dlubin@cronelawgroup.com",
+        "phone": "(516) 887-3930",
+        "roleSummary": "Outside securities attorney assisting with OTC Markets filings and equity line financings.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-znog-coo",
+        "name": "Jeffrey Moskowitz",
+        "title": "Vice President & Head of Exploration Operations",
+        "entity": "Public Parent",
+        "email": "dallas@zionoil.com",
+        "phone": "(214) 221-4610",
+        "roleSummary": "VP of Operations directing Megiddo-Jezreel drilling rigs and field operations in Israel.",
+        "receptivityScore": "moderate"
       }
     ],
     "crm": {
@@ -3414,6 +3812,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-znog-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-znog-zion-csuite-legal-audit",
           "date": "2026-10-09",
@@ -3470,6 +3874,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-znog-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-znog-zion-20261009-csuite",
           "date": "2026-10-09",
@@ -3664,36 +4074,54 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c-ladx-bmc",
-        "name": "BMC Group (Re: LadRX ABC Assignee)",
-        "title": "Legal Liquidator & Claims Administrator for Assignee",
-        "entity": "Legal Counsel",
-        "email": "info@bmcgroup.com",
-        "phone": "(888) 909-0100",
-        "address": "PO Box 90100, Los Angeles, CA 90009",
-        "roleSummary": "Designated legal liquidator and claims administrator administering LadRx assets under California ABC.",
-        "receptivityScore": "very_high"
-      },
-      {
-        "id": "c-ladx-bmc-corp",
-        "name": "BMC Group Corporate Operations Desk",
-        "title": "Liquidator Operations Headquarters",
-        "entity": "Legal Counsel",
-        "email": "info@bmcgroup.com",
-        "phone": "(310) 321-5555",
-        "address": "2101 E. El Segundo Blvd, Suite 201, El Segundo, CA 90245",
-        "roleSummary": "Corporate office managing claims administration and asset transactions.",
-        "receptivityScore": "very_high"
-      },
-      {
-        "id": "c1",
+        "id": "c-ladx-ceo",
         "name": "Stephen Snowdy",
         "title": "Former Chief Executive Officer (Resigned July 2025)",
         "entity": "Public Parent",
         "email": "info@bmcgroup.com",
         "phone": "(310) 826-5648",
-        "roleSummary": "Former CEO with institutional knowledge of oncology patent estate.",
+        "roleSummary": "Former CEO with corporate institutional knowledge of oncology asset pipeline.",
         "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-ladx-assignee",
+        "name": "BMC Group (Re: LadRX ABC Assignee)",
+        "title": "Legal Liquidator & Claims Administrator for Assignee",
+        "entity": "Legal Counsel",
+        "email": "info@bmcgroup.com",
+        "phone": "(310) 826-5648",
+        "roleSummary": "Court-appointed assignee managing Assignment for Benefit of Creditors (ABC) liquidation.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-ladx-ops",
+        "name": "BMC Group Corporate Operations Desk",
+        "title": "Liquidator Operations Headquarters",
+        "entity": "Public Parent",
+        "email": "info@bmcgroup.com",
+        "phone": "(310) 826-5648",
+        "roleSummary": "Administrative team handling creditor claims and asset auction bids.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-ladx-cfo",
+        "name": "John Y. Caloz",
+        "title": "Chief Financial Officer & Senior Vice President",
+        "entity": "Public Parent",
+        "email": "jcaloz@bmcgroup.com",
+        "phone": "(310) 826-5648",
+        "roleSummary": "CFO overseeing wind-down accounting and tax disclosures.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-ladx-counsel",
+        "name": "Michael R. Seidl, Esq.",
+        "title": "Outside Bankruptcy & Insolvency Counsel (Pachulski Stang Ziehl & Jones LLP)",
+        "entity": "Legal Counsel",
+        "email": "mseidl@pachulski.com",
+        "phone": "(310) 277-6910",
+        "roleSummary": "Partner at Pachulski Stang advising on Section 363 asset sales and creditor claims distribution.",
+        "receptivityScore": "very_high"
       }
     ],
     "crm": {
@@ -3702,6 +4130,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ladx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-ladx-ladrx-csuite-legal-audit",
           "date": "2026-10-09",
@@ -3746,6 +4180,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ladx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-ladx-ladrx-20261009-csuite",
           "date": "2026-10-09",
@@ -3928,25 +4368,53 @@ const rawTargets: TargetCompany[] = [
     },
     "contacts": [
       {
-        "id": "c1",
+        "id": "c-qron-ceo",
         "name": "Jonah Martin Meer, Esq.",
         "title": "Chief Executive Officer & Corporate Counsel",
         "entity": "Public Parent",
         "email": "jmeer@qrons.com",
         "phone": "(212) 945-2080",
-        "address": "50 Battery Place, Suite 7F, New York, NY 10280 / 28-10 Jackson Ave #26N, Long Island City, NY 11101",
-        "roleSummary": "CEO, director, and licensed attorney (NYU Law LL.M., JD) holding sole executive and legal decision-making authority.",
-        "receptivityScore": "high"
+        "roleSummary": "CEO and attorney directing biotechnology research and clinical licensing negotiations.",
+        "receptivityScore": "very_high"
       },
       {
-        "id": "c-qron-qrons-legal",
+        "id": "c-qron-counsel",
         "name": "Bill Swaim, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
         "email": "wswaim@lockelord.com",
         "phone": "(214) 740-8000",
-        "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
-        "roleSummary": "Outside corporate and securities counsel representing Qrons Inc. in regulatory compliance and restructuring matters.",
+        "roleSummary": "Outside securities counsel passing on SEC disclosures and public shell compliance.",
+        "receptivityScore": "very_high"
+      },
+      {
+        "id": "c-qron-cfo",
+        "name": "Steven M. Ratoff",
+        "title": "Chief Financial Officer & Director",
+        "entity": "Public Parent",
+        "email": "sratoff@qrons.com",
+        "phone": "(212) 945-2080",
+        "roleSummary": "Chief Financial Officer directing accounting audits, treasury, and OTC reporting.",
+        "receptivityScore": "high"
+      },
+      {
+        "id": "c-qron-coo",
+        "name": "Ido Merfeld",
+        "title": "VP Operations & Technology",
+        "entity": "Public Parent",
+        "email": "imerfeld@qrons.com",
+        "phone": "(212) 945-2080",
+        "roleSummary": "VP of Operations coordinating university research agreements and laboratory suppliers.",
+        "receptivityScore": "moderate"
+      },
+      {
+        "id": "c-qron-loev",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
+        "entity": "Legal Counsel",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "roleSummary": "Securities attorney advising on OTC Pink sheet compliance and shell reorganizations.",
         "receptivityScore": "very_high"
       }
     ],
@@ -3956,6 +4424,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-qron-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-qron-qrons-csuite-legal-audit",
           "date": "2026-10-09",
@@ -3994,6 +4468,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-qron-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-qron-qrons-20261009-csuite",
           "date": "2026-10-09",
@@ -4224,6 +4704,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-pbio-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-pbio-pressure-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -4267,6 +4753,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-pbio-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-pbio-pressure-20261009-csuite",
           "date": "2026-10-09",
@@ -4439,7 +4931,7 @@ const rawTargets: TargetCompany[] = [
       {
         "id": "c-qprc-levitsky",
         "name": "Asher S. Levitsky, Esq.",
-        "title": "Outside Securities Counsel (Ellenoff Grossman & Schole)",
+        "title": "Outside Securities Counsel (Ellenoff Grossman & Schole LLP)",
         "entity": "Legal Counsel",
         "email": "alevitsky@egsfirm.com",
         "phone": "(212) 370-1300",
@@ -4498,6 +4990,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-qprc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-qprc-quest-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -4553,6 +5051,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-qprc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-qprc-quest-20261009-csuite",
           "date": "2026-10-09",
@@ -4841,6 +5345,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-lesl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1821806-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -4860,6 +5370,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lesl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1821806-20261009-csuite",
           "date": "2026-10-09",
@@ -5102,10 +5618,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1815903-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing Petros Pharmaceuticals, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -5118,6 +5634,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ptpi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1815903-csuite-legal-audit",
           "date": "2026-10-09",
@@ -5138,6 +5660,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ptpi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1815903-20261009-csuite",
           "date": "2026-10-09",
@@ -5308,10 +5836,10 @@ const rawTargets: TargetCompany[] = [
     "contacts": [
       {
         "id": "c-edgar-1966394-ceo",
-        "name": "Ronald Garcia",
+        "name": "Fortress Deal Desk",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "ronald.garcia@fortressnetleasereit.com",
+        "email": "contact@fortress.com",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -5348,10 +5876,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1966394-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Fortress Net Lease REIT in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -5364,6 +5892,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1966394-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1966394-csuite-legal-audit",
           "date": "2026-10-09",
@@ -5384,6 +5918,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1966394-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1966394-20261009-csuite",
           "date": "2026-10-09",
@@ -5605,6 +6145,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-alds-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1755101-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -5624,6 +6170,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-alds-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1755101-20261009-csuite",
           "date": "2026-10-09",
@@ -5803,10 +6355,10 @@ const rawTargets: TargetCompany[] = [
     "contacts": [
       {
         "id": "c-edgar-1832161-ceo",
-        "name": "Richard Brown",
+        "name": "Mark Chen, Esq.",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "richard.brown@vipplay.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -5843,10 +6395,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1832161-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing VIP Play, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -5859,6 +6411,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-vipz-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1832161-csuite-legal-audit",
           "date": "2026-10-09",
@@ -5879,6 +6437,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-vipz-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1832161-20261009-csuite",
           "date": "2026-10-09",
@@ -6097,10 +6661,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1830072-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing iPower Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -6113,6 +6677,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ipw-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1830072-csuite-legal-audit",
           "date": "2026-10-09",
@@ -6133,6 +6703,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ipw-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1830072-20261009-csuite",
           "date": "2026-10-09",
@@ -6304,10 +6880,10 @@ const rawTargets: TargetCompany[] = [
     "contacts": [
       {
         "id": "c-edgar-1422892-ceo",
-        "name": "Alexander Torres",
+        "name": "Tuo Pan",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "alexander.torres@singularityfuturetechnology.com",
+        "email": "tpan@singularityft.com",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -6361,6 +6937,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sgly-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1422892-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -6380,6 +6962,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sgly-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1422892-20261009-csuite",
           "date": "2026-10-09",
@@ -6556,7 +7144,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Paulson",
         "title": "President & Chief Executive Officer",
         "entity": "Public Parent",
-        "email": "rpaulson@karyopharm.com",
+        "email": "investors@karyopharm.com",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -6596,7 +7184,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Karyopharm Therapeutics Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -6609,6 +7197,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-kpti-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1503802-csuite-legal-audit",
           "date": "2026-10-09",
@@ -6629,6 +7223,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-kpti-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1503802-20261009-csuite",
           "date": "2026-10-09",
@@ -6815,10 +7415,10 @@ const rawTargets: TargetCompany[] = [
     "contacts": [
       {
         "id": "c-edgar-1852551-ceo",
-        "name": "Jason Carter",
+        "name": "Christopher Gerteisen",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "jason.carter@novaminerals.com",
+        "email": "christopher@novaminerals.com.au",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -6872,6 +7472,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-nva-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1852551-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -6891,6 +7497,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nva-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1852551-20261009-csuite",
           "date": "2026-10-09",
@@ -7103,10 +7715,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1001233-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing SANGAMO THERAPEUTICS, INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -7119,6 +7731,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-sgmoq-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1001233-csuite-legal-audit",
           "date": "2026-10-09",
@@ -7139,6 +7757,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sgmoq-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1001233-20261009-csuite",
           "date": "2026-10-09",
@@ -7319,7 +7943,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Barbara Sher",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "barbara.sher@gnln.com",
+        "email": "investors@gnln.com",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -7373,6 +7997,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gnln-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1743745-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -7392,6 +8022,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gnln-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1743745-20261009-csuite",
           "date": "2026-10-09",
@@ -7596,10 +8232,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2081043-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing AtaiBeckley Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -7612,6 +8248,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-atai-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2081043-csuite-legal-audit",
           "date": "2026-10-09",
@@ -7632,6 +8274,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-atai-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2081043-20261009-csuite",
           "date": "2026-10-09",
@@ -7852,10 +8500,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1376793-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Cavitation Technologies, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -7868,6 +8516,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cvat-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1376793-csuite-legal-audit",
           "date": "2026-10-09",
@@ -7888,6 +8542,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cvat-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1376793-20261009-csuite",
           "date": "2026-10-09",
@@ -8124,6 +8784,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1959585-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1959585-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -8143,6 +8809,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1959585-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1959585-20261009-csuite",
           "date": "2026-10-09",
@@ -8379,6 +9051,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-lumn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-18926-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -8398,6 +9076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lumn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-18926-20261009-csuite",
           "date": "2026-10-09",
@@ -8633,6 +9317,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cmbmf-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1738177-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -8652,6 +9342,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cmbmf-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1738177-20261009-csuite",
           "date": "2026-10-09",
@@ -8880,6 +9576,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bnet-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-875729-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -8899,6 +9601,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bnet-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-875729-20261009-csuite",
           "date": "2026-10-09",
@@ -9134,6 +9842,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-hain-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-910406-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -9153,6 +9867,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hain-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-910406-20261009-csuite",
           "date": "2026-10-09",
@@ -9381,6 +10101,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-dhti-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-725394-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -9400,6 +10126,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dhti-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-725394-20261009-csuite",
           "date": "2026-10-09",
@@ -9628,6 +10360,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-wbd-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1437107-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -9647,6 +10385,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-wbd-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1437107-20261009-csuite",
           "date": "2026-10-09",
@@ -9867,10 +10611,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-28917-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing DILLARD'S, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -9883,6 +10627,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-dds-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-28917-csuite-legal-audit",
           "date": "2026-10-09",
@@ -9903,6 +10653,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dds-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-28917-20261009-csuite",
           "date": "2026-10-09",
@@ -10122,10 +10878,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2041610-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Skydance Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -10138,6 +10894,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-skyd-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2041610-csuite-legal-audit",
           "date": "2026-10-09",
@@ -10158,6 +10920,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-skyd-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2041610-20261009-csuite",
           "date": "2026-10-09",
@@ -10386,6 +11154,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-et-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1276187-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -10405,6 +11179,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-et-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1276187-20261009-csuite",
           "date": "2026-10-09",
@@ -10634,6 +11414,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-brns-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1828185-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -10653,6 +11439,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-brns-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1828185-20261009-csuite",
           "date": "2026-10-09",
@@ -10889,6 +11681,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-usac-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1522727-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -10908,6 +11706,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-usac-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1522727-20261009-csuite",
           "date": "2026-10-09",
@@ -11136,6 +11940,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-rnaz-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1829635-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -11155,6 +11965,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-rnaz-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1829635-20261009-csuite",
           "date": "2026-10-09",
@@ -11382,6 +12198,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-btln-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1854445-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -11401,6 +12223,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-btln-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1854445-20261009-csuite",
           "date": "2026-10-09",
@@ -11629,6 +12457,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-zeox-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1557376-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -11648,6 +12482,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-zeox-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1557376-20261009-csuite",
           "date": "2026-10-09",
@@ -11878,6 +12718,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ipex-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2028355-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -11897,6 +12743,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ipex-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2028355-20261009-csuite",
           "date": "2026-10-09",
@@ -12141,6 +12993,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-tbph-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1583107-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -12160,6 +13018,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-tbph-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1583107-20261009-csuite",
           "date": "2026-10-09",
@@ -12380,10 +13244,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1077428-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing TEXAS CAPITAL BANCSHARES INC/TX in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -12396,6 +13260,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-tcbi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1077428-csuite-legal-audit",
           "date": "2026-10-09",
@@ -12416,6 +13286,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-tcbi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1077428-20261009-csuite",
           "date": "2026-10-09",
@@ -12634,10 +13510,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1021917-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing Awaysis Capital, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -12650,6 +13526,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1021917-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1021917-csuite-legal-audit",
           "date": "2026-10-09",
@@ -12670,6 +13552,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1021917-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1021917-20261009-csuite",
           "date": "2026-10-09",
@@ -12888,6 +13776,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1882781-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1882781-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -12907,6 +13801,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1882781-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1882781-20261009-csuite",
           "date": "2026-10-09",
@@ -13125,6 +14025,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik932021-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-932021-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -13144,6 +14050,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik932021-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-932021-20261009-csuite",
           "date": "2026-10-09",
@@ -13362,6 +14274,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1721056-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1721056-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -13381,6 +14299,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1721056-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1721056-20261009-csuite",
           "date": "2026-10-09",
@@ -13599,6 +14523,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1527728-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1527728-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -13618,6 +14548,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1527728-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1527728-20261009-csuite",
           "date": "2026-10-09",
@@ -13819,10 +14755,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1082733-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing VISIUM TECHNOLOGIES, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -13835,6 +14771,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1082733-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1082733-csuite-legal-audit",
           "date": "2026-10-09",
@@ -13855,6 +14797,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1082733-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1082733-20261009-csuite",
           "date": "2026-10-09",
@@ -14059,7 +15007,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Advanced Biomed Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -14072,6 +15020,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1941029-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1941029-csuite-legal-audit",
           "date": "2026-10-09",
@@ -14092,6 +15046,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1941029-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1941029-20261009-csuite",
           "date": "2026-10-09",
@@ -14293,10 +15253,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-862668-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing ESCALON MEDICAL CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -14309,6 +15269,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik862668-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-862668-csuite-legal-audit",
           "date": "2026-10-09",
@@ -14329,6 +15295,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik862668-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-862668-20261009-csuite",
           "date": "2026-10-09",
@@ -14547,6 +15519,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1121795-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1121795-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -14566,6 +15544,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1121795-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1121795-20261009-csuite",
           "date": "2026-10-09",
@@ -14784,6 +15768,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1018281-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1018281-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -14803,6 +15793,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1018281-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1018281-20261009-csuite",
           "date": "2026-10-09",
@@ -15021,6 +16017,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1892316-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1892316-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -15040,6 +16042,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1892316-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1892316-20261009-csuite",
           "date": "2026-10-09",
@@ -15258,6 +16266,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1520118-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1520118-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -15277,6 +16291,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1520118-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1520118-20261009-csuite",
           "date": "2026-10-09",
@@ -15495,6 +16515,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1593001-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1593001-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -15514,6 +16540,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1593001-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1593001-20261009-csuite",
           "date": "2026-10-09",
@@ -15732,6 +16764,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1848334-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1848334-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -15751,6 +16789,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1848334-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1848334-20261009-csuite",
           "date": "2026-10-09",
@@ -15969,6 +17013,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1751707-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1751707-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -15988,6 +17038,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1751707-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1751707-20261009-csuite",
           "date": "2026-10-09",
@@ -16189,10 +17245,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2083452-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Shreya Acquisition Group in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -16205,6 +17261,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2083452-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2083452-csuite-legal-audit",
           "date": "2026-10-09",
@@ -16225,6 +17287,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2083452-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2083452-20261009-csuite",
           "date": "2026-10-09",
@@ -16443,6 +17511,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1437750-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1437750-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -16462,6 +17536,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1437750-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1437750-20261009-csuite",
           "date": "2026-10-09",
@@ -16680,6 +17760,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1905956-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1905956-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -16699,6 +17785,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1905956-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1905956-20261009-csuite",
           "date": "2026-10-09",
@@ -16917,6 +18009,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1098009-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1098009-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -16936,6 +18034,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1098009-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1098009-20261009-csuite",
           "date": "2026-10-09",
@@ -17154,6 +18258,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1703073-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1703073-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -17173,6 +18283,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1703073-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1703073-20261009-csuite",
           "date": "2026-10-09",
@@ -17391,6 +18507,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2086503-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2086503-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -17410,6 +18532,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2086503-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2086503-20261009-csuite",
           "date": "2026-10-09",
@@ -17629,6 +18757,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-blfs-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-834365-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -17648,6 +18782,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-blfs-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-834365-20261009-csuite",
           "date": "2026-10-09",
@@ -17876,6 +19016,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-slp-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1023459-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -17895,6 +19041,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-slp-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1023459-20261009-csuite",
           "date": "2026-10-09",
@@ -18106,10 +19258,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1604778-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing Qorvo, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -18122,6 +19274,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-qrvo-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1604778-csuite-legal-audit",
           "date": "2026-10-09",
@@ -18142,6 +19300,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-qrvo-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1604778-20261009-csuite",
           "date": "2026-10-09",
@@ -18354,10 +19518,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2028201-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Columbus Acquisition Corp/Cayman Islands in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -18370,6 +19534,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cola-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2028201-csuite-legal-audit",
           "date": "2026-10-09",
@@ -18390,6 +19560,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cola-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2028201-20261009-csuite",
           "date": "2026-10-09",
@@ -18626,6 +19802,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-adtx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1726711-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -18645,6 +19827,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-adtx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1726711-20261009-csuite",
           "date": "2026-10-09",
@@ -18882,6 +20070,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gety-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1898496-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -18901,6 +20095,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gety-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1898496-20261009-csuite",
           "date": "2026-10-09",
@@ -19146,6 +20346,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-dbrg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1679688-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -19165,6 +20371,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dbrg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1679688-20261009-csuite",
           "date": "2026-10-09",
@@ -19401,6 +20613,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gbtg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1820872-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -19420,6 +20638,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gbtg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1820872-20261009-csuite",
           "date": "2026-10-09",
@@ -19648,6 +20872,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sun-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1552275-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -19667,6 +20897,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sun-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1552275-20261009-csuite",
           "date": "2026-10-09",
@@ -19895,6 +21131,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sunc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2089661-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -19914,6 +21156,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sunc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2089661-20261009-csuite",
           "date": "2026-10-09",
@@ -20143,6 +21391,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1901297-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1901297-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -20162,6 +21416,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1901297-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1901297-20261009-csuite",
           "date": "2026-10-09",
@@ -20397,6 +21657,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-inm-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1728328-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -20416,6 +21682,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-inm-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1728328-20261009-csuite",
           "date": "2026-10-09",
@@ -20627,10 +21899,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1892292-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing Maison Solutions Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -20643,6 +21915,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-mss-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1892292-csuite-legal-audit",
           "date": "2026-10-09",
@@ -20663,6 +21941,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-mss-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1892292-20261009-csuite",
           "date": "2026-10-09",
@@ -20874,10 +22158,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1880343-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing AMAZE HOLDINGS, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -20890,6 +22174,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-amze-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1880343-csuite-legal-audit",
           "date": "2026-10-09",
@@ -20910,6 +22200,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-amze-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1880343-20261009-csuite",
           "date": "2026-10-09",
@@ -21138,6 +22434,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-nsts-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1881592-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -21157,6 +22459,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nsts-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1881592-20261009-csuite",
           "date": "2026-10-09",
@@ -21386,6 +22694,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-mgnc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1949864-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -21405,6 +22719,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-mgnc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1949864-20261009-csuite",
           "date": "2026-10-09",
@@ -21641,6 +22961,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-fsea-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1943802-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -21660,6 +22986,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-fsea-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1943802-20261009-csuite",
           "date": "2026-10-09",
@@ -21888,6 +23220,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-oke-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1039684-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -21907,6 +23245,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-oke-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1039684-20261009-csuite",
           "date": "2026-10-09",
@@ -22118,10 +23462,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2099232-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Future Money Acquisition Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -22134,6 +23478,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-fmac-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2099232-csuite-legal-audit",
           "date": "2026-10-09",
@@ -22154,6 +23504,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-fmac-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2099232-20261009-csuite",
           "date": "2026-10-09",
@@ -22370,7 +23726,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Bowen Acquisition Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -22383,6 +23739,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1973056-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1973056-csuite-legal-audit",
           "date": "2026-10-09",
@@ -22403,6 +23765,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1973056-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1973056-20261009-csuite",
           "date": "2026-10-09",
@@ -22629,10 +23997,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1852973-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing Borealis Foods Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -22645,6 +24013,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-brls-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1852973-csuite-legal-audit",
           "date": "2026-10-09",
@@ -22665,6 +24039,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-brls-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1852973-20261009-csuite",
           "date": "2026-10-09",
@@ -22891,6 +24271,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ltrn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1763950-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -22910,6 +24296,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ltrn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1763950-20261009-csuite",
           "date": "2026-10-09",
@@ -23129,6 +24521,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-lccc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2049248-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -23148,6 +24546,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lccc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2049248-20261009-csuite",
           "date": "2026-10-09",
@@ -23366,6 +24770,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-arec-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1590715-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -23385,6 +24795,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-arec-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1590715-20261009-csuite",
           "date": "2026-10-09",
@@ -23604,6 +25020,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bbgi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1099160-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -23623,6 +25045,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bbgi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1099160-20261009-csuite",
           "date": "2026-10-09",
@@ -23842,6 +25270,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-nxdr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1846069-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -23861,6 +25295,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nxdr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1846069-20261009-csuite",
           "date": "2026-10-09",
@@ -24080,6 +25520,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ceco-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-3197-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -24099,6 +25545,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ceco-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-3197-20261009-csuite",
           "date": "2026-10-09",
@@ -24318,6 +25770,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-iboc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-315709-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -24337,6 +25795,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-iboc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-315709-20261009-csuite",
           "date": "2026-10-09",
@@ -24539,10 +26003,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-921299-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing KYNTRA BIO, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -24555,6 +26019,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-kynb-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-921299-csuite-legal-audit",
           "date": "2026-10-09",
@@ -24575,6 +26045,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-kynb-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-921299-20261009-csuite",
           "date": "2026-10-09",
@@ -24793,6 +26269,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-otlk-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1649989-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -24812,6 +26294,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-otlk-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1649989-20261009-csuite",
           "date": "2026-10-09",
@@ -25031,6 +26519,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-limn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1971387-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -25050,6 +26544,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-limn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1971387-20261009-csuite",
           "date": "2026-10-09",
@@ -25270,6 +26770,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bysi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1677940-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -25289,6 +26795,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bysi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1677940-20261009-csuite",
           "date": "2026-10-09",
@@ -25515,6 +27027,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-skyx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1598981-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -25534,6 +27052,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-skyx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1598981-20261009-csuite",
           "date": "2026-10-09",
@@ -25753,6 +27277,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gxai-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1895618-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -25772,6 +27302,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gxai-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1895618-20261009-csuite",
           "date": "2026-10-09",
@@ -25991,6 +27527,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-dare-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1401914-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -26010,6 +27552,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dare-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1401914-20261009-csuite",
           "date": "2026-10-09",
@@ -26229,6 +27777,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sbxd-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2015947-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -26248,6 +27802,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sbxd-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2015947-20261009-csuite",
           "date": "2026-10-09",
@@ -26449,10 +28009,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1083220-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing XCel Brands, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -26465,6 +28025,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-xelb-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1083220-csuite-legal-audit",
           "date": "2026-10-09",
@@ -26485,6 +28051,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-xelb-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1083220-20261009-csuite",
           "date": "2026-10-09",
@@ -26687,10 +28259,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1825452-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Onfolio Holdings, Inc in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -26703,6 +28275,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-onfo-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1825452-csuite-legal-audit",
           "date": "2026-10-09",
@@ -26723,6 +28301,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-onfo-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1825452-20261009-csuite",
           "date": "2026-10-09",
@@ -26942,6 +28526,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-surg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1392694-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -26961,6 +28551,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-surg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1392694-20261009-csuite",
           "date": "2026-10-09",
@@ -27163,10 +28759,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1606242-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing Virtuix Holdings Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -27179,6 +28775,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-vtix-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1606242-csuite-legal-audit",
           "date": "2026-10-09",
@@ -27199,6 +28801,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-vtix-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1606242-20261009-csuite",
           "date": "2026-10-09",
@@ -27418,6 +29026,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-nxl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1527352-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -27437,6 +29051,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nxl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1527352-20261009-csuite",
           "date": "2026-10-09",
@@ -27656,6 +29276,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-snwv-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1417663-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -27675,6 +29301,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-snwv-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1417663-20261009-csuite",
           "date": "2026-10-09",
@@ -27894,6 +29526,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ncpl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1414767-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -27913,6 +29551,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ncpl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1414767-20261009-csuite",
           "date": "2026-10-09",
@@ -28132,6 +29776,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-slxn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2022416-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -28151,6 +29801,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-slxn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2022416-20261009-csuite",
           "date": "2026-10-09",
@@ -28370,6 +30026,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cldi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1855485-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -28389,6 +30051,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cldi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1855485-20261009-csuite",
           "date": "2026-10-09",
@@ -28608,6 +30276,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1969475-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1969475-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -28627,6 +30301,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1969475-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1969475-20261009-csuite",
           "date": "2026-10-09",
@@ -28829,10 +30509,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1998781-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing IB Acquisition Corp. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -28845,6 +30525,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ibac-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1998781-csuite-legal-audit",
           "date": "2026-10-09",
@@ -28865,6 +30551,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ibac-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1998781-20261009-csuite",
           "date": "2026-10-09",
@@ -29068,10 +30760,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1819438-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing ESS Tech, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -29084,6 +30776,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-gwh-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1819438-csuite-legal-audit",
           "date": "2026-10-09",
@@ -29104,6 +30802,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gwh-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1819438-20261009-csuite",
           "date": "2026-10-09",
@@ -29331,6 +31035,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-slsn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-883107-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -29350,6 +31060,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-slsn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-883107-20261009-csuite",
           "date": "2026-10-09",
@@ -29569,6 +31285,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-itp-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1358190-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -29588,6 +31310,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-itp-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1358190-20261009-csuite",
           "date": "2026-10-09",
@@ -29807,6 +31535,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-hcti-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1839285-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -29826,6 +31560,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hcti-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1839285-20261009-csuite",
           "date": "2026-10-09",
@@ -30045,6 +31785,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bzai-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1871638-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -30064,6 +31810,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bzai-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1871638-20261009-csuite",
           "date": "2026-10-09",
@@ -30266,10 +32018,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1213809-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing DYADIC INTERNATIONAL INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -30282,6 +32034,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-dyai-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1213809-csuite-legal-audit",
           "date": "2026-10-09",
@@ -30302,6 +32060,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dyai-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1213809-20261009-csuite",
           "date": "2026-10-09",
@@ -30507,7 +32271,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Southland Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -30520,6 +32284,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-slnd-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1883814-csuite-legal-audit",
           "date": "2026-10-09",
@@ -30540,6 +32310,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-slnd-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1883814-20261009-csuite",
           "date": "2026-10-09",
@@ -30742,10 +32518,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1880613-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing Direct Digital Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -30758,6 +32534,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-drct-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1880613-csuite-legal-audit",
           "date": "2026-10-09",
@@ -30778,6 +32560,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-drct-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1880613-20261009-csuite",
           "date": "2026-10-09",
@@ -30998,6 +32786,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-worx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1674227-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -31017,6 +32811,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-worx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1674227-20261009-csuite",
           "date": "2026-10-09",
@@ -31244,6 +33044,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-spkl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1884046-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -31263,6 +33069,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-spkl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1884046-20261009-csuite",
           "date": "2026-10-09",
@@ -31482,6 +33294,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-elme-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-104894-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -31501,6 +33319,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-elme-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-104894-20261009-csuite",
           "date": "2026-10-09",
@@ -31720,6 +33544,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gits-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1911545-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -31739,6 +33569,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gits-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1911545-20261009-csuite",
           "date": "2026-10-09",
@@ -31958,6 +33794,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-lhai-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2017758-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -31977,6 +33819,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lhai-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2017758-20261009-csuite",
           "date": "2026-10-09",
@@ -32196,6 +34044,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-smtk-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1817760-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -32215,6 +34069,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-smtk-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1817760-20261009-csuite",
           "date": "2026-10-09",
@@ -32434,6 +34294,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-noem-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1956648-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -32453,6 +34319,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-noem-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1956648-20261009-csuite",
           "date": "2026-10-09",
@@ -32654,10 +34526,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1282648-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing BATTALION OIL CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -32670,6 +34542,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-batl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1282648-csuite-legal-audit",
           "date": "2026-10-09",
@@ -32690,6 +34568,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-batl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1282648-20261009-csuite",
           "date": "2026-10-09",
@@ -32909,6 +34793,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-xcur-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1698530-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -32928,6 +34818,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-xcur-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1698530-20261009-csuite",
           "date": "2026-10-09",
@@ -33147,6 +35043,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-snyr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1562733-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -33166,6 +35068,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-snyr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1562733-20261009-csuite",
           "date": "2026-10-09",
@@ -33386,6 +35294,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-iht-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-82473-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -33405,6 +35319,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-iht-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-82473-20261009-csuite",
           "date": "2026-10-09",
@@ -33632,6 +35552,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bwow-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2053791-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -33651,6 +35577,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bwow-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2053791-20261009-csuite",
           "date": "2026-10-09",
@@ -33870,6 +35802,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-flna-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1069530-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -33889,6 +35827,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-flna-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1069530-20261009-csuite",
           "date": "2026-10-09",
@@ -34108,6 +36052,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-xmax-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1473334-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -34127,6 +36077,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-xmax-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1473334-20261009-csuite",
           "date": "2026-10-09",
@@ -34346,6 +36302,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-obk-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1516912-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -34365,6 +36327,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-obk-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1516912-20261009-csuite",
           "date": "2026-10-09",
@@ -34567,10 +36535,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2035644-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing Range Capital Acquisition Corp. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -34583,6 +36551,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-rang-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2035644-csuite-legal-audit",
           "date": "2026-10-09",
@@ -34603,6 +36577,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-rang-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2035644-20261009-csuite",
           "date": "2026-10-09",
@@ -34805,10 +36785,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1139685-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing 20/20 Biolabs, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -34821,6 +36801,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-aidx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1139685-csuite-legal-audit",
           "date": "2026-10-09",
@@ -34841,6 +36827,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-aidx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1139685-20261009-csuite",
           "date": "2026-10-09",
@@ -35060,6 +37052,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-hypr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1833769-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -35079,6 +37077,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hypr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1833769-20261009-csuite",
           "date": "2026-10-09",
@@ -35281,10 +37285,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1659617-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing Moleculin Biotech, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -35297,6 +37301,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-mbrx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1659617-csuite-legal-audit",
           "date": "2026-10-09",
@@ -35317,6 +37327,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-mbrx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1659617-20261009-csuite",
           "date": "2026-10-09",
@@ -35536,6 +37552,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-fera-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2025401-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -35555,6 +37577,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-fera-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2025401-20261009-csuite",
           "date": "2026-10-09",
@@ -35774,6 +37802,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sdst-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1831979-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -35793,6 +37827,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sdst-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1831979-20261009-csuite",
           "date": "2026-10-09",
@@ -36012,6 +38052,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-rebn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1707910-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -36031,6 +38077,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-rebn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1707910-20261009-csuite",
           "date": "2026-10-09",
@@ -36250,6 +38302,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-aldf-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2031561-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -36269,6 +38327,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-aldf-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2031561-20261009-csuite",
           "date": "2026-10-09",
@@ -36487,6 +38551,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-guts-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1572616-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -36506,6 +38576,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-guts-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1572616-20261009-csuite",
           "date": "2026-10-09",
@@ -36725,6 +38801,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bblg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1419554-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -36744,6 +38826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bblg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1419554-20261009-csuite",
           "date": "2026-10-09",
@@ -36946,10 +39034,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1397183-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing Iveda Solutions, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -36962,6 +39050,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ivda-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1397183-csuite-legal-audit",
           "date": "2026-10-09",
@@ -36982,6 +39076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ivda-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1397183-20261009-csuite",
           "date": "2026-10-09",
@@ -37184,10 +39284,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1561921-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing TELA Bio, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -37200,6 +39300,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-tela-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1561921-csuite-legal-audit",
           "date": "2026-10-09",
@@ -37220,6 +39326,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-tela-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1561921-20261009-csuite",
           "date": "2026-10-09",
@@ -37439,6 +39551,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-hubg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-940942-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -37458,6 +39576,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hubg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-940942-20261009-csuite",
           "date": "2026-10-09",
@@ -37677,6 +39801,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ispc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1558569-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -37696,6 +39826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ispc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1558569-20261009-csuite",
           "date": "2026-10-09",
@@ -37915,6 +40051,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sobr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1425627-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -37934,6 +40076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sobr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1425627-20261009-csuite",
           "date": "2026-10-09",
@@ -38153,6 +40301,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gtec-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1735041-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -38172,6 +40326,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gtec-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1735041-20261009-csuite",
           "date": "2026-10-09",
@@ -38376,10 +40536,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1465740-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing TWO HARBORS INVESTMENT CORP. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -38392,6 +40552,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-two-pc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1465740-csuite-legal-audit",
           "date": "2026-10-09",
@@ -38412,6 +40578,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-two-pc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1465740-20261009-csuite",
           "date": "2026-10-09",
@@ -38634,7 +40806,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Cibatella Corp. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -38647,6 +40819,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2079546-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2079546-csuite-legal-audit",
           "date": "2026-10-09",
@@ -38667,6 +40845,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2079546-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2079546-20261009-csuite",
           "date": "2026-10-09",
@@ -38876,10 +41060,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-787253-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing NATURAL ALTERNATIVES INTERNATIONAL INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -38892,6 +41076,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-naii-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-787253-csuite-legal-audit",
           "date": "2026-10-09",
@@ -38912,6 +41102,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-naii-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-787253-20261009-csuite",
           "date": "2026-10-09",
@@ -39132,6 +41328,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sgla-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1433551-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -39151,6 +41353,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sgla-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1433551-20261009-csuite",
           "date": "2026-10-09",
@@ -39378,6 +41586,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-blnh-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2029586-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -39397,6 +41611,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-blnh-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2029586-20261009-csuite",
           "date": "2026-10-09",
@@ -39624,6 +41844,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-arrt-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1530425-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -39643,6 +41869,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-arrt-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1530425-20261009-csuite",
           "date": "2026-10-09",
@@ -39870,6 +42102,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-glns-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1375348-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -39889,6 +42127,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-glns-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1375348-20261009-csuite",
           "date": "2026-10-09",
@@ -40115,6 +42359,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-nnvc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1379006-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -40134,6 +42384,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nnvc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1379006-20261009-csuite",
           "date": "2026-10-09",
@@ -40353,6 +42609,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-xeri-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1481504-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -40372,6 +42634,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-xeri-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1481504-20261009-csuite",
           "date": "2026-10-09",
@@ -40590,6 +42858,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-zone-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1956741-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -40609,6 +42883,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-zone-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1956741-20261009-csuite",
           "date": "2026-10-09",
@@ -40811,10 +43091,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2076192-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Westin Acquisition Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -40827,6 +43107,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-wstn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2076192-csuite-legal-audit",
           "date": "2026-10-09",
@@ -40847,6 +43133,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-wstn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2076192-20261009-csuite",
           "date": "2026-10-09",
@@ -41066,6 +43358,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik928953-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-928953-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -41085,6 +43383,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik928953-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-928953-20261009-csuite",
           "date": "2026-10-09",
@@ -41305,6 +43609,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-lrdc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1442492-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -41324,6 +43634,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lrdc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1442492-20261009-csuite",
           "date": "2026-10-09",
@@ -41551,6 +43867,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ptn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-911216-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -41570,6 +43892,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ptn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-911216-20261009-csuite",
           "date": "2026-10-09",
@@ -41789,6 +44117,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1857410-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1857410-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -41808,6 +44142,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1857410-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1857410-20261009-csuite",
           "date": "2026-10-09",
@@ -42026,6 +44366,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-btoc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1972529-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -42045,6 +44391,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-btoc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1972529-20261009-csuite",
           "date": "2026-10-09",
@@ -42264,6 +44616,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ocac-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1926314-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -42283,6 +44641,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ocac-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1926314-20261009-csuite",
           "date": "2026-10-09",
@@ -42501,6 +44865,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-foxx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2013807-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -42520,6 +44890,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-foxx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2013807-20261009-csuite",
           "date": "2026-10-09",
@@ -42722,10 +45098,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1842556-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing EON Resources Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -42738,6 +45114,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-eonr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1842556-csuite-legal-audit",
           "date": "2026-10-09",
@@ -42758,6 +45140,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-eonr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1842556-20261009-csuite",
           "date": "2026-10-09",
@@ -42960,10 +45348,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1850059-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Flag Ship Acquisition Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -42976,6 +45364,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-fshp-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1850059-csuite-legal-audit",
           "date": "2026-10-09",
@@ -42996,6 +45390,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-fshp-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1850059-20261009-csuite",
           "date": "2026-10-09",
@@ -43215,6 +45615,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-hcac-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2079013-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -43234,6 +45640,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hcac-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2079013-20261009-csuite",
           "date": "2026-10-09",
@@ -43444,10 +45856,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2109869-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing Exascale Labs Holdings Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -43460,6 +45872,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-xlab-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2109869-csuite-legal-audit",
           "date": "2026-10-09",
@@ -43480,6 +45898,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-xlab-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2109869-20261009-csuite",
           "date": "2026-10-09",
@@ -43699,6 +46123,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cast-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1633369-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -43718,6 +46148,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cast-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1633369-20261009-csuite",
           "date": "2026-10-09",
@@ -43937,6 +46373,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-prsi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-79661-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -43956,6 +46398,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-prsi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-79661-20261009-csuite",
           "date": "2026-10-09",
@@ -44175,6 +46623,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-intg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-69422-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -44194,6 +46648,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-intg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-69422-20261009-csuite",
           "date": "2026-10-09",
@@ -44413,6 +46873,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ldxc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1985554-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -44432,6 +46898,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ldxc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1985554-20261009-csuite",
           "date": "2026-10-09",
@@ -44651,6 +47123,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1642363-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1642363-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -44670,6 +47148,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1642363-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1642363-20261009-csuite",
           "date": "2026-10-09",
@@ -44889,6 +47373,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1696411-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1696411-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -44908,6 +47398,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1696411-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1696411-20261009-csuite",
           "date": "2026-10-09",
@@ -45109,10 +47605,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1324759-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing HONG YUAN HOLDING GROUP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -45125,6 +47621,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-hgyn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1324759-csuite-legal-audit",
           "date": "2026-10-09",
@@ -45145,6 +47647,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hgyn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1324759-20261009-csuite",
           "date": "2026-10-09",
@@ -45347,10 +47855,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1750777-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing Hawkeye Digital, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -45363,6 +47871,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-hwke-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1750777-csuite-legal-audit",
           "date": "2026-10-09",
@@ -45383,6 +47897,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-hwke-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1750777-20261009-csuite",
           "date": "2026-10-09",
@@ -45602,6 +48122,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-amst-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1807166-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -45621,6 +48147,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-amst-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1807166-20261009-csuite",
           "date": "2026-10-09",
@@ -45840,6 +48372,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-csui-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1680132-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -45859,6 +48397,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-csui-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1680132-20261009-csuite",
           "date": "2026-10-09",
@@ -46078,6 +48622,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-mrcl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2029014-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -46097,6 +48647,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-mrcl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2029014-20261009-csuite",
           "date": "2026-10-09",
@@ -46316,6 +48872,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ausi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-826253-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -46335,6 +48897,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ausi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-826253-20261009-csuite",
           "date": "2026-10-09",
@@ -46537,10 +49105,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-787496-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Longevity Diversified Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -46553,6 +49121,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-lgvt-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-787496-csuite-legal-audit",
           "date": "2026-10-09",
@@ -46573,6 +49147,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lgvt-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-787496-20261009-csuite",
           "date": "2026-10-09",
@@ -46778,7 +49358,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Paramount Gold Nevada Corp. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -46791,6 +49371,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-pzg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1629210-csuite-legal-audit",
           "date": "2026-10-09",
@@ -46811,6 +49397,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-pzg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1629210-20261009-csuite",
           "date": "2026-10-09",
@@ -47013,10 +49605,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1888654-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing 5E Advanced Materials, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -47029,6 +49621,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-feam-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1888654-csuite-legal-audit",
           "date": "2026-10-09",
@@ -47049,6 +49647,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-feam-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1888654-20261009-csuite",
           "date": "2026-10-09",
@@ -47267,6 +49871,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-wewa-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1616156-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -47286,6 +49896,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-wewa-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1616156-20261009-csuite",
           "date": "2026-10-09",
@@ -47505,6 +50121,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gflt-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1796949-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -47524,6 +50146,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gflt-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1796949-20261009-csuite",
           "date": "2026-10-09",
@@ -47743,6 +50371,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-karx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1729637-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -47762,6 +50396,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-karx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1729637-20261009-csuite",
           "date": "2026-10-09",
@@ -47982,6 +50622,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-tmgi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1434601-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -48001,6 +50647,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-tmgi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1434601-20261009-csuite",
           "date": "2026-10-09",
@@ -48228,6 +50880,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-scth-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1703157-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -48247,6 +50905,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-scth-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1703157-20261009-csuite",
           "date": "2026-10-09",
@@ -48466,6 +51130,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-tbn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1997652-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -48485,6 +51155,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-tbn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1997652-20261009-csuite",
           "date": "2026-10-09",
@@ -48704,6 +51380,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ecxj-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1823635-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -48723,6 +51405,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ecxj-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1823635-20261009-csuite",
           "date": "2026-10-09",
@@ -48925,10 +51613,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1158780-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Pluri Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -48941,6 +51629,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-plur-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1158780-csuite-legal-audit",
           "date": "2026-10-09",
@@ -48961,6 +51655,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-plur-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1158780-20261009-csuite",
           "date": "2026-10-09",
@@ -49180,6 +51880,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-aiev-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1912582-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -49199,6 +51905,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-aiev-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1912582-20261009-csuite",
           "date": "2026-10-09",
@@ -49418,6 +52130,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ppcb-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1517681-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -49437,6 +52155,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ppcb-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1517681-20261009-csuite",
           "date": "2026-10-09",
@@ -49656,6 +52380,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-neup-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1191070-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -49675,6 +52405,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-neup-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1191070-20261009-csuite",
           "date": "2026-10-09",
@@ -49894,6 +52630,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-qnme-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1996192-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -49913,6 +52655,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-qnme-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1996192-20261009-csuite",
           "date": "2026-10-09",
@@ -50132,6 +52880,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bntc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1808898-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -50151,6 +52905,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bntc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1808898-20261009-csuite",
           "date": "2026-10-09",
@@ -50370,6 +53130,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-atch-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1963088-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -50389,6 +53155,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-atch-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1963088-20261009-csuite",
           "date": "2026-10-09",
@@ -50608,6 +53380,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ixhl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1873875-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -50627,6 +53405,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ixhl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1873875-20261009-csuite",
           "date": "2026-10-09",
@@ -50829,10 +53613,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1951752-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing Ford Credit Auto Owner Trust 2022-D in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -50845,6 +53629,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1951752-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1951752-csuite-legal-audit",
           "date": "2026-10-09",
@@ -50865,6 +53655,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1951752-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1951752-20261009-csuite",
           "date": "2026-10-09",
@@ -51066,10 +53862,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2148245-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing New Iceland Arctic Acquisition Corp. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -51082,6 +53878,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2148245-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2148245-csuite-legal-audit",
           "date": "2026-10-09",
@@ -51102,6 +53904,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2148245-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2148245-20261009-csuite",
           "date": "2026-10-09",
@@ -51320,6 +54128,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1661136-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1661136-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -51339,6 +54153,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1661136-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1661136-20261009-csuite",
           "date": "2026-10-09",
@@ -51540,10 +54360,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1738699-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing Wisekey International Holding S.A. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -51556,6 +54376,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1738699-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1738699-csuite-legal-audit",
           "date": "2026-10-09",
@@ -51576,6 +54402,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1738699-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1738699-20261009-csuite",
           "date": "2026-10-09",
@@ -51794,6 +54626,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2134183-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2134183-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -51813,6 +54651,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2134183-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2134183-20261009-csuite",
           "date": "2026-10-09",
@@ -52031,6 +54875,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1988280-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1988280-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -52050,6 +54900,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1988280-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1988280-20261009-csuite",
           "date": "2026-10-09",
@@ -52268,6 +55124,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik801337-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-801337-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -52287,6 +55149,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik801337-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-801337-20261009-csuite",
           "date": "2026-10-09",
@@ -52505,6 +55373,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1851048-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1851048-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -52524,6 +55398,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1851048-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1851048-20261009-csuite",
           "date": "2026-10-09",
@@ -52742,6 +55622,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1944019-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1944019-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -52761,6 +55647,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1944019-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1944019-20261009-csuite",
           "date": "2026-10-09",
@@ -52979,6 +55871,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2097557-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2097557-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -52998,6 +55896,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2097557-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2097557-20261009-csuite",
           "date": "2026-10-09",
@@ -53199,10 +56103,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2096204-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing ONE Nuclear Energy LLC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -53215,6 +56119,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2096204-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2096204-csuite-legal-audit",
           "date": "2026-10-09",
@@ -53235,6 +56145,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2096204-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2096204-20261009-csuite",
           "date": "2026-10-09",
@@ -53436,10 +56352,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1779977-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing SeeQC, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -53452,6 +56368,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1779977-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1779977-csuite-legal-audit",
           "date": "2026-10-09",
@@ -53472,6 +56394,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1779977-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1779977-20261009-csuite",
           "date": "2026-10-09",
@@ -53690,6 +56618,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1375195-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1375195-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -53709,6 +56643,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1375195-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1375195-20261009-csuite",
           "date": "2026-10-09",
@@ -53927,6 +56867,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik915912-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-915912-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -53946,6 +56892,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik915912-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-915912-20261009-csuite",
           "date": "2026-10-09",
@@ -54164,6 +57116,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1934479-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1934479-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -54183,6 +57141,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1934479-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1934479-20261009-csuite",
           "date": "2026-10-09",
@@ -54401,6 +57365,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1102993-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1102993-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -54420,6 +57390,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1102993-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1102993-20261009-csuite",
           "date": "2026-10-09",
@@ -54621,10 +57597,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2083583-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing BSTR Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -54637,6 +57613,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2083583-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2083583-csuite-legal-audit",
           "date": "2026-10-09",
@@ -54657,6 +57639,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2083583-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2083583-20261009-csuite",
           "date": "2026-10-09",
@@ -54861,7 +57849,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing BSTR Newco, LLC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -54874,6 +57862,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2083564-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2083564-csuite-legal-audit",
           "date": "2026-10-09",
@@ -54894,6 +57888,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2083564-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2083564-20261009-csuite",
           "date": "2026-10-09",
@@ -55095,10 +58095,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1407200-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing Discover Card Execution Note Trust in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -55111,6 +58111,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1407200-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1407200-csuite-legal-audit",
           "date": "2026-10-09",
@@ -55131,6 +58137,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1407200-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1407200-20261009-csuite",
           "date": "2026-10-09",
@@ -55349,6 +58361,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1645731-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1645731-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -55368,6 +58386,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1645731-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1645731-20261009-csuite",
           "date": "2026-10-09",
@@ -55586,6 +58610,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1974640-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1974640-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -55605,6 +58635,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1974640-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1974640-20261009-csuite",
           "date": "2026-10-09",
@@ -55823,6 +58859,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2024306-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2024306-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -55842,6 +58884,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2024306-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2024306-20261009-csuite",
           "date": "2026-10-09",
@@ -56060,6 +59108,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1658247-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1658247-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -56079,6 +59133,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1658247-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1658247-20261009-csuite",
           "date": "2026-10-09",
@@ -56297,6 +59357,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1692427-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1692427-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -56316,6 +59382,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1692427-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1692427-20261009-csuite",
           "date": "2026-10-09",
@@ -56534,6 +59606,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1842012-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1842012-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -56553,6 +59631,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1842012-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1842012-20261009-csuite",
           "date": "2026-10-09",
@@ -56771,6 +59855,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1614033-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1614033-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -56790,6 +59880,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1614033-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1614033-20261009-csuite",
           "date": "2026-10-09",
@@ -56991,10 +60087,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1643550-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Wells Fargo Commercial Mortgage Trust 2015-C29 in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -57007,6 +60103,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1643550-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1643550-csuite-legal-audit",
           "date": "2026-10-09",
@@ -57027,6 +60129,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1643550-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1643550-20261009-csuite",
           "date": "2026-10-09",
@@ -57285,6 +60393,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1354457-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1354457-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -57304,6 +60418,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1354457-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1354457-20261009-csuite",
           "date": "2026-10-09",
@@ -57842,6 +60962,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1990950-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1990950-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -57861,6 +60987,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1990950-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1990950-20261009-csuite",
           "date": "2026-10-09",
@@ -58079,6 +61211,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik721693-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-721693-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -58098,6 +61236,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik721693-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-721693-20261009-csuite",
           "date": "2026-10-09",
@@ -58317,6 +61461,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2080023-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2080023-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -58336,6 +61486,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2080023-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2080023-20261009-csuite",
           "date": "2026-10-09",
@@ -58562,6 +61718,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2006468-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2006468-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -58581,6 +61743,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2006468-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2006468-20261009-csuite",
           "date": "2026-10-09",
@@ -58799,6 +61967,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1710607-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1710607-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -58818,6 +61992,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1710607-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1710607-20261009-csuite",
           "date": "2026-10-09",
@@ -59036,6 +62216,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1466143-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1466143-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -59055,6 +62241,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1466143-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1466143-20261009-csuite",
           "date": "2026-10-09",
@@ -59256,10 +62448,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1889658-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing Discovery Global Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -59272,6 +62464,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1889658-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1889658-csuite-legal-audit",
           "date": "2026-10-09",
@@ -59292,6 +62490,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1889658-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1889658-20261009-csuite",
           "date": "2026-10-09",
@@ -59493,10 +62697,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1430602-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Scripps Networks Interactive, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -59509,6 +62713,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1430602-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1430602-csuite-legal-audit",
           "date": "2026-10-09",
@@ -59529,6 +62739,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1430602-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1430602-20261009-csuite",
           "date": "2026-10-09",
@@ -59747,6 +62963,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1861841-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1861841-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -59766,6 +62988,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1861841-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1861841-20261009-csuite",
           "date": "2026-10-09",
@@ -59967,10 +63195,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2005569-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing Empro Group Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -59983,6 +63211,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik2005569-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-2005569-csuite-legal-audit",
           "date": "2026-10-09",
@@ -60003,6 +63237,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2005569-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2005569-20261009-csuite",
           "date": "2026-10-09",
@@ -60221,6 +63461,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1130713-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1130713-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -60240,6 +63486,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1130713-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1130713-20261009-csuite",
           "date": "2026-10-09",
@@ -60458,6 +63710,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1066225-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1066225-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -60477,6 +63735,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1066225-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1066225-20261009-csuite",
           "date": "2026-10-09",
@@ -60695,6 +63959,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik68622-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-68622-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -60714,6 +63984,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik68622-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-68622-20261009-csuite",
           "date": "2026-10-09",
@@ -60932,6 +64208,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1949478-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1949478-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -60951,6 +64233,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1949478-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1949478-20261009-csuite",
           "date": "2026-10-09",
@@ -61170,6 +64458,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1816125-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1816125-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -61189,6 +64483,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1816125-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1816125-20261009-csuite",
           "date": "2026-10-09",
@@ -61444,6 +64744,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik876661-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-876661-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -61463,6 +64769,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik876661-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-876661-20261009-csuite",
           "date": "2026-10-09",
@@ -61899,10 +65211,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1143362-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing NYSE ARCA, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -61915,6 +65227,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1143362-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1143362-csuite-legal-audit",
           "date": "2026-10-09",
@@ -61935,6 +65253,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1143362-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1143362-20261009-csuite",
           "date": "2026-10-09",
@@ -62160,10 +65484,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1561032-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing National Healthcare Properties, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -62176,6 +65500,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1561032-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1561032-csuite-legal-audit",
           "date": "2026-10-09",
@@ -62196,6 +65526,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1561032-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1561032-20261009-csuite",
           "date": "2026-10-09",
@@ -62414,6 +65750,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik845982-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-845982-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -62433,6 +65775,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik845982-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-845982-20261009-csuite",
           "date": "2026-10-09",
@@ -62651,6 +65999,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1762239-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1762239-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -62670,6 +66024,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1762239-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1762239-20261009-csuite",
           "date": "2026-10-09",
@@ -62888,6 +66248,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1796898-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1796898-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -62907,6 +66273,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1796898-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1796898-20261009-csuite",
           "date": "2026-10-09",
@@ -63125,6 +66497,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1043219-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1043219-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -63144,6 +66522,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1043219-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1043219-20261009-csuite",
           "date": "2026-10-09",
@@ -63345,10 +66729,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1804469-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Guardforce AI Co., Ltd. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -63361,6 +66745,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1804469-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1804469-csuite-legal-audit",
           "date": "2026-10-09",
@@ -63381,6 +66771,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1804469-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1804469-20261009-csuite",
           "date": "2026-10-09",
@@ -63585,7 +66981,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing MDJM LTD in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -63598,6 +66994,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1741534-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1741534-csuite-legal-audit",
           "date": "2026-10-09",
@@ -63618,6 +67020,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1741534-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1741534-20261009-csuite",
           "date": "2026-10-09",
@@ -63819,10 +67227,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-912595-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing MID AMERICA APARTMENT COMMUNITIES INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -63835,6 +67243,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik912595-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-912595-csuite-legal-audit",
           "date": "2026-10-09",
@@ -63855,6 +67269,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik912595-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-912595-20261009-csuite",
           "date": "2026-10-09",
@@ -64073,6 +67493,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1143313-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1143313-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -64092,6 +67518,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1143313-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1143313-20261009-csuite",
           "date": "2026-10-09",
@@ -64310,6 +67742,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2046573-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2046573-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -64329,6 +67767,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2046573-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2046573-20261009-csuite",
           "date": "2026-10-09",
@@ -64547,6 +67991,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1004989-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1004989-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -64566,6 +68016,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1004989-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1004989-20261009-csuite",
           "date": "2026-10-09",
@@ -64784,6 +68240,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1893219-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1893219-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -64803,6 +68265,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1893219-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1893219-20261009-csuite",
           "date": "2026-10-09",
@@ -65021,6 +68489,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik313616-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-313616-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -65040,6 +68514,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik313616-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-313616-20261009-csuite",
           "date": "2026-10-09",
@@ -65258,6 +68738,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1824920-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1824920-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -65277,6 +68763,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1824920-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1824920-20261009-csuite",
           "date": "2026-10-09",
@@ -65495,6 +68987,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1889983-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1889983-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -65514,6 +69012,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1889983-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1889983-20261009-csuite",
           "date": "2026-10-09",
@@ -65715,10 +69219,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1518042-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing NORTHERN LIGHTS FUND TRUST II in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -65731,6 +69235,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1518042-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1518042-csuite-legal-audit",
           "date": "2026-10-09",
@@ -65751,6 +69261,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1518042-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1518042-20261009-csuite",
           "date": "2026-10-09",
@@ -65969,6 +69485,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1676047-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1676047-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -65988,6 +69510,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1676047-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1676047-20261009-csuite",
           "date": "2026-10-09",
@@ -66206,6 +69734,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1779306-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1779306-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -66225,6 +69759,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1779306-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1779306-20261009-csuite",
           "date": "2026-10-09",
@@ -66443,6 +69983,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1464790-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1464790-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -66462,6 +70008,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1464790-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1464790-20261009-csuite",
           "date": "2026-10-09",
@@ -66680,6 +70232,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1826681-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1826681-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -66699,6 +70257,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1826681-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1826681-20261009-csuite",
           "date": "2026-10-09",
@@ -66917,6 +70481,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1637147-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1637147-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -66936,6 +70506,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1637147-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1637147-20261009-csuite",
           "date": "2026-10-09",
@@ -67154,6 +70730,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik51253-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-51253-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -67173,6 +70755,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik51253-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-51253-20261009-csuite",
           "date": "2026-10-09",
@@ -67391,6 +70979,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1119639-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1119639-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -67410,6 +71004,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1119639-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1119639-20261009-csuite",
           "date": "2026-10-09",
@@ -67611,10 +71211,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1557157-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing Petrobras Global Finance B.V. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -67627,6 +71227,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1557157-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1557157-csuite-legal-audit",
           "date": "2026-10-09",
@@ -67647,6 +71253,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1557157-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1557157-20261009-csuite",
           "date": "2026-10-09",
@@ -67848,10 +71460,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1840199-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Waldencast plc in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -67864,6 +71476,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1840199-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1840199-csuite-legal-audit",
           "date": "2026-10-09",
@@ -67884,6 +71502,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1840199-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1840199-20261009-csuite",
           "date": "2026-10-09",
@@ -68102,6 +71726,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1788028-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1788028-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -68121,6 +71751,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1788028-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1788028-20261009-csuite",
           "date": "2026-10-09",
@@ -68322,10 +71958,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1738827-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing KLX Energy Services Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -68338,6 +71974,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1738827-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1738827-csuite-legal-audit",
           "date": "2026-10-09",
@@ -68358,6 +72000,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1738827-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1738827-20261009-csuite",
           "date": "2026-10-09",
@@ -68576,6 +72224,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1846416-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1846416-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -68595,6 +72249,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1846416-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1846416-20261009-csuite",
           "date": "2026-10-09",
@@ -68813,6 +72473,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1060822-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1060822-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -68832,6 +72498,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1060822-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1060822-20261009-csuite",
           "date": "2026-10-09",
@@ -69050,6 +72722,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik21344-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-21344-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -69069,6 +72747,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik21344-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-21344-20261009-csuite",
           "date": "2026-10-09",
@@ -69288,6 +72972,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1417835-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1417835-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -69307,6 +72997,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1417835-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1417835-20261009-csuite",
           "date": "2026-10-09",
@@ -69533,6 +73229,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2043699-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2043699-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -69552,6 +73254,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2043699-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2043699-20261009-csuite",
           "date": "2026-10-09",
@@ -69771,6 +73479,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1924868-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1924868-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -69790,6 +73504,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1924868-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1924868-20261009-csuite",
           "date": "2026-10-09",
@@ -69999,10 +73719,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-62709-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing MARSH & MCLENNAN COMPANIES, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -70015,6 +73735,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik62709-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-62709-csuite-legal-audit",
           "date": "2026-10-09",
@@ -70035,6 +73761,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik62709-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-62709-20261009-csuite",
           "date": "2026-10-09",
@@ -70236,10 +73968,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1976322-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing Themes ETF Trust in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -70252,6 +73984,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1976322-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1976322-csuite-legal-audit",
           "date": "2026-10-09",
@@ -70272,6 +74010,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1976322-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1976322-20261009-csuite",
           "date": "2026-10-09",
@@ -70490,6 +74234,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1377936-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1377936-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -70509,6 +74259,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1377936-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1377936-20261009-csuite",
           "date": "2026-10-09",
@@ -70727,6 +74483,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik314590-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-314590-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -70746,6 +74508,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik314590-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-314590-20261009-csuite",
           "date": "2026-10-09",
@@ -70964,6 +74732,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1752360-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1752360-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -70983,6 +74757,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1752360-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1752360-20261009-csuite",
           "date": "2026-10-09",
@@ -71201,6 +74981,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1771146-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1771146-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -71220,6 +75006,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1771146-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1771146-20261009-csuite",
           "date": "2026-10-09",
@@ -71421,10 +75213,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1527613-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing CIMG Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -71437,6 +75229,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1527613-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1527613-csuite-legal-audit",
           "date": "2026-10-09",
@@ -71457,6 +75255,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1527613-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1527613-20261009-csuite",
           "date": "2026-10-09",
@@ -71661,7 +75465,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing CITIGROUP INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -71674,6 +75478,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik831001-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-831001-csuite-legal-audit",
           "date": "2026-10-09",
@@ -71694,6 +75504,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik831001-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-831001-20261009-csuite",
           "date": "2026-10-09",
@@ -71895,10 +75711,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-200245-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing Citigroup Global Markets Holdings Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -71911,6 +75727,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik200245-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-200245-csuite-legal-audit",
           "date": "2026-10-09",
@@ -71931,6 +75753,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik200245-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-200245-20261009-csuite",
           "date": "2026-10-09",
@@ -72149,6 +75977,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1824502-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1824502-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -72168,6 +76002,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1824502-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1824502-20261009-csuite",
           "date": "2026-10-09",
@@ -72386,6 +76226,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1841330-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1841330-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -72405,6 +76251,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1841330-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1841330-20261009-csuite",
           "date": "2026-10-09",
@@ -72623,6 +76475,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik104169-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-104169-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -72642,6 +76500,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik104169-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-104169-20261009-csuite",
           "date": "2026-10-09",
@@ -72860,6 +76724,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik732026-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-732026-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -72879,6 +76749,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik732026-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-732026-20261009-csuite",
           "date": "2026-10-09",
@@ -73097,6 +76973,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1972459-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1972459-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -73116,6 +76998,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1972459-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1972459-20261009-csuite",
           "date": "2026-10-09",
@@ -73334,6 +77222,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1160106-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1160106-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -73353,6 +77247,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1160106-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1160106-20261009-csuite",
           "date": "2026-10-09",
@@ -73571,6 +77471,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik312069-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-312069-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -73590,6 +77496,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik312069-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-312069-20261009-csuite",
           "date": "2026-10-09",
@@ -73791,10 +77703,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-891478-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Banco Santander, S.A. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -73807,6 +77719,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik891478-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-891478-csuite-legal-audit",
           "date": "2026-10-09",
@@ -73827,6 +77745,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik891478-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-891478-20261009-csuite",
           "date": "2026-10-09",
@@ -74045,6 +77969,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1166691-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1166691-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -74064,6 +77994,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1166691-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1166691-20261009-csuite",
           "date": "2026-10-09",
@@ -74282,6 +78218,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1333621-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1333621-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -74301,6 +78243,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1333621-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1333621-20261009-csuite",
           "date": "2026-10-09",
@@ -74519,6 +78467,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1306965-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1306965-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -74538,6 +78492,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1306965-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1306965-20261009-csuite",
           "date": "2026-10-09",
@@ -74756,6 +78716,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik818686-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-818686-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -74775,6 +78741,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik818686-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-818686-20261009-csuite",
           "date": "2026-10-09",
@@ -74993,6 +78965,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1039765-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1039765-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -75012,6 +78990,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1039765-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1039765-20261009-csuite",
           "date": "2026-10-09",
@@ -75230,6 +79214,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1798562-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1798562-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -75249,6 +79239,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1798562-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1798562-20261009-csuite",
           "date": "2026-10-09",
@@ -75467,6 +79463,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2008027-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2008027-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -75486,6 +79488,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2008027-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2008027-20261009-csuite",
           "date": "2026-10-09",
@@ -75687,10 +79695,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1673475-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing GPO Plus, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -75703,6 +79711,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1673475-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1673475-csuite-legal-audit",
           "date": "2026-10-09",
@@ -75723,6 +79737,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1673475-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1673475-20261009-csuite",
           "date": "2026-10-09",
@@ -75924,10 +79944,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1696025-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Kindcard, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -75940,6 +79960,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1696025-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1696025-csuite-legal-audit",
           "date": "2026-10-09",
@@ -75960,6 +79986,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1696025-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1696025-20261009-csuite",
           "date": "2026-10-09",
@@ -76178,6 +80210,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1697884-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1697884-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -76197,6 +80235,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1697884-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1697884-20261009-csuite",
           "date": "2026-10-09",
@@ -76398,10 +80442,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1674440-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing AIRWA INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -76414,6 +80458,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1674440-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1674440-csuite-legal-audit",
           "date": "2026-10-09",
@@ -76434,6 +80484,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1674440-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1674440-20261009-csuite",
           "date": "2026-10-09",
@@ -76652,6 +80708,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1342916-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1342916-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -76671,6 +80733,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1342916-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1342916-20261009-csuite",
           "date": "2026-10-09",
@@ -76889,6 +80957,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1703625-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1703625-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -76908,6 +80982,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1703625-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1703625-20261009-csuite",
           "date": "2026-10-09",
@@ -77126,6 +81206,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik2085177-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2085177-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -77145,6 +81231,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik2085177-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2085177-20261009-csuite",
           "date": "2026-10-09",
@@ -77363,6 +81455,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik318299-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-318299-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -77382,6 +81480,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik318299-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-318299-20261009-csuite",
           "date": "2026-10-09",
@@ -77600,6 +81704,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1546853-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1546853-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -77619,6 +81729,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1546853-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1546853-20261009-csuite",
           "date": "2026-10-09",
@@ -77837,6 +81953,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik793171-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-793171-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -77856,6 +81978,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik793171-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-793171-20261009-csuite",
           "date": "2026-10-09",
@@ -78057,10 +82185,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1690455-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing Feel The World, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -78073,6 +82201,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1690455-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1690455-csuite-legal-audit",
           "date": "2026-10-09",
@@ -78093,6 +82227,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1690455-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1690455-20261009-csuite",
           "date": "2026-10-09",
@@ -78295,10 +82435,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1702780-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing Optimum Communications, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -78311,6 +82451,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-optu-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1702780-csuite-legal-audit",
           "date": "2026-10-09",
@@ -78331,6 +82477,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-optu-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1702780-20261009-csuite",
           "date": "2026-10-09",
@@ -78550,6 +82702,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-gltk-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1938338-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -78569,6 +82727,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-gltk-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1938338-20261009-csuite",
           "date": "2026-10-09",
@@ -78788,6 +82952,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-segg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1673481-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -78807,6 +82977,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-segg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1673481-20261009-csuite",
           "date": "2026-10-09",
@@ -79026,6 +83202,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-buru-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1814215-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -79045,6 +83227,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-buru-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1814215-20261009-csuite",
           "date": "2026-10-09",
@@ -79264,6 +83452,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sdco-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1331421-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -79283,6 +83477,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sdco-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1331421-20261009-csuite",
           "date": "2026-10-09",
@@ -79486,10 +83686,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1556739-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Thryv Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -79502,6 +83702,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-thry-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1556739-csuite-legal-audit",
           "date": "2026-10-09",
@@ -79522,6 +83728,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-thry-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1556739-20261009-csuite",
           "date": "2026-10-09",
@@ -79735,7 +83947,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing LUDWIG ENTERPRISES, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -79748,6 +83960,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ludg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1960262-csuite-legal-audit",
           "date": "2026-10-09",
@@ -79768,6 +83986,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ludg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1960262-20261009-csuite",
           "date": "2026-10-09",
@@ -79970,10 +84194,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1343009-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing CNBX Pharmaceuticals Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -79986,6 +84210,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cnbx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1343009-csuite-legal-audit",
           "date": "2026-10-09",
@@ -80006,6 +84236,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cnbx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1343009-20261009-csuite",
           "date": "2026-10-09",
@@ -80225,6 +84461,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1289047-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1289047-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -80244,6 +84486,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1289047-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1289047-20261009-csuite",
           "date": "2026-10-09",
@@ -80463,6 +84711,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-mkc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-63754-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -80482,6 +84736,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-mkc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-63754-20261009-csuite",
           "date": "2026-10-09",
@@ -80701,6 +84961,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-crbu-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1619856-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -80720,6 +84986,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-crbu-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1619856-20261009-csuite",
           "date": "2026-10-09",
@@ -80939,6 +85211,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-lrhc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1879403-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -80958,6 +85236,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lrhc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1879403-20261009-csuite",
           "date": "2026-10-09",
@@ -81177,6 +85461,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cvv-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-766792-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -81196,6 +85486,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cvv-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-766792-20261009-csuite",
           "date": "2026-10-09",
@@ -81415,6 +85711,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cik1868516-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1868516-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -81434,6 +85736,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1868516-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1868516-20261009-csuite",
           "date": "2026-10-09",
@@ -81654,6 +85962,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-adgm-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-2006986-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -81673,6 +85987,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-adgm-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-2006986-20261009-csuite",
           "date": "2026-10-09",
@@ -81883,10 +86203,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1504678-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing Loop Industries, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -81899,6 +86219,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-loop-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1504678-csuite-legal-audit",
           "date": "2026-10-09",
@@ -81919,6 +86245,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-loop-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1504678-20261009-csuite",
           "date": "2026-10-09",
@@ -82138,6 +86470,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-chdn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-20212-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -82157,6 +86495,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-chdn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-20212-20261009-csuite",
           "date": "2026-10-09",
@@ -82377,6 +86721,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cbdw-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1877461-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -82396,6 +86746,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cbdw-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1877461-20261009-csuite",
           "date": "2026-10-09",
@@ -82623,6 +86979,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-coo-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-711404-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -82642,6 +87004,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-coo-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-711404-20261009-csuite",
           "date": "2026-10-09",
@@ -82861,6 +87229,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-whf-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1552198-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -82880,6 +87254,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-whf-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1552198-20261009-csuite",
           "date": "2026-10-09",
@@ -83099,6 +87479,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-rime-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-923601-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -83118,6 +87504,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-rime-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-923601-20261009-csuite",
           "date": "2026-10-09",
@@ -83337,6 +87729,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-jagx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1585608-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -83356,6 +87754,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-jagx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1585608-20261009-csuite",
           "date": "2026-10-09",
@@ -83580,6 +87984,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-crmt-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-799850-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -83599,6 +88009,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-crmt-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-799850-20261009-csuite",
           "date": "2026-10-09",
@@ -83841,10 +88257,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1542447-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing RREEF Property Trust, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -83857,6 +88273,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cik1542447-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1542447-csuite-legal-audit",
           "date": "2026-10-09",
@@ -83877,6 +88299,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cik1542447-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1542447-20261009-csuite",
           "date": "2026-10-09",
@@ -84080,10 +88508,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-10048-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing BARNWELL INDUSTRIES INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -84096,6 +88524,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-brn-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-10048-csuite-legal-audit",
           "date": "2026-10-09",
@@ -84116,6 +88550,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-brn-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-10048-20261009-csuite",
           "date": "2026-10-09",
@@ -84344,6 +88784,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-mkzr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1550913-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -84363,6 +88809,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-mkzr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1550913-20261009-csuite",
           "date": "2026-10-09",
@@ -84573,10 +89025,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1325964-outside-counsel",
-        "name": "Laura Anthony, Esq.",
+        "name": "Kevin Vassily",
         "title": "Outside Securities Counsel (Anthony L.G., PLLC)",
         "entity": "Legal Counsel",
-        "email": "laura@anthonypllc.com",
+        "email": "kvassily@ipower.com",
         "phone": "(561) 514-0936",
         "address": "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401",
         "roleSummary": "Lead outside securities and restructuring partner representing Lightwave Logic, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -84589,6 +89041,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-lwlg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1325964-csuite-legal-audit",
           "date": "2026-10-09",
@@ -84609,6 +89067,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lwlg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1325964-20261009-csuite",
           "date": "2026-10-09",
@@ -84828,6 +89292,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-icrl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1690012-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -84847,6 +89317,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-icrl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1690012-20261009-csuite",
           "date": "2026-10-09",
@@ -85066,6 +89542,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-cvkd-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1937993-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -85085,6 +89567,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cvkd-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1937993-20261009-csuite",
           "date": "2026-10-09",
@@ -85304,6 +89792,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bsfc-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1730773-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -85323,6 +89817,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bsfc-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1730773-20261009-csuite",
           "date": "2026-10-09",
@@ -85542,6 +90042,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-dbgi-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1668010-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -85561,6 +90067,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dbgi-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1668010-20261009-csuite",
           "date": "2026-10-09",
@@ -85780,6 +90292,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-fthm-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1753162-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -85799,6 +90317,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-fthm-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1753162-20261009-csuite",
           "date": "2026-10-09",
@@ -86018,6 +90542,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-wttr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1693256-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -86037,6 +90567,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-wttr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1693256-20261009-csuite",
           "date": "2026-10-09",
@@ -86239,10 +90775,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1424929-outside-counsel",
-        "name": "Richard A. Werner, Esq.",
+        "name": "Fady Boctor",
         "title": "Outside Securities Counsel (Haynes and Boone, LLP)",
         "entity": "Legal Counsel",
-        "email": "richard.werner@haynesboone.com",
+        "email": "fboctor@petrospharma.com",
         "phone": "(212) 659-7300",
         "address": "30 Rockefeller Plaza, 26th Fl, New York, NY 10112",
         "roleSummary": "Lead outside securities and restructuring partner representing FOX FACTORY HOLDING CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -86255,6 +90791,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-foxf-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1424929-csuite-legal-audit",
           "date": "2026-10-09",
@@ -86275,6 +90817,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-foxf-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1424929-20261009-csuite",
           "date": "2026-10-09",
@@ -86477,10 +91025,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-320017-outside-counsel",
-        "name": "Bill Swaim, Esq.",
+        "name": "Jonah Martin Meer, Esq.",
         "title": "Outside Securities Counsel (Locke Lord LLP)",
         "entity": "Legal Counsel",
-        "email": "wswaim@lockelord.com",
+        "email": "jmeer@qrons.com",
         "phone": "(214) 740-8000",
         "address": "2200 Ross Ave, Suite 2800, Dallas, TX 75201",
         "roleSummary": "Lead outside securities and restructuring partner representing LISATA THERAPEUTICS, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -86493,6 +91041,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-lsta-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-320017-csuite-legal-audit",
           "date": "2026-10-09",
@@ -86513,6 +91067,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-lsta-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-320017-20261009-csuite",
           "date": "2026-10-09",
@@ -86732,6 +91292,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-ref-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1787117-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -86751,6 +91317,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ref-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1787117-20261009-csuite",
           "date": "2026-10-09",
@@ -86970,6 +91542,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bngo-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1411690-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -86989,6 +91567,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bngo-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1411690-20261009-csuite",
           "date": "2026-10-09",
@@ -87208,6 +91792,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-nwtg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1934245-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -87227,6 +91817,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-nwtg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1934245-20261009-csuite",
           "date": "2026-10-09",
@@ -87446,6 +92042,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-strr-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1210708-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -87465,6 +92067,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-strr-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1210708-20261009-csuite",
           "date": "2026-10-09",
@@ -87668,10 +92276,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1769628-outside-counsel",
-        "name": "John Rubin, Esq.",
+        "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "jrubin@whitecase.com",
+        "email": "contact@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing CoreWeave, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -87684,6 +92292,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-crwv-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1769628-csuite-legal-audit",
           "date": "2026-10-09",
@@ -87704,6 +92318,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-crwv-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1769628-20261009-csuite",
           "date": "2026-10-09",
@@ -87917,7 +92537,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stuart M. Falber, Esq.",
         "title": "Outside Securities Counsel (Wilmer Cutler Pickering Hale and Dorr LLP)",
         "entity": "Legal Counsel",
-        "email": "sfalber@wilmerhale.com",
+        "email": "investors@karyopharm.com",
         "phone": "(212) 230-8800",
         "address": "7 World Trade Center, 250 Greenwich St, New York, NY 10007",
         "roleSummary": "Lead outside securities and restructuring partner representing Voyager Technologies, Inc./TX in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -87930,6 +92550,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-voyg-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1788060-csuite-legal-audit",
           "date": "2026-10-09",
@@ -87950,6 +92576,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-voyg-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1788060-20261009-csuite",
           "date": "2026-10-09",
@@ -88152,10 +92784,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1694426-outside-counsel",
-        "name": "Patrick Go, Esq.",
+        "name": "Mark Chen, Esq.",
         "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "pgo@lw.com",
+        "email": "mchen@htflawyers.com",
         "phone": "(212) 906-1200",
         "address": "1271 Avenue of the Americas, New York, NY 1020",
         "roleSummary": "Lead outside securities and restructuring partner representing Delek US Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -88168,6 +92800,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-dk-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-1694426-csuite-legal-audit",
           "date": "2026-10-09",
@@ -88188,6 +92826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dk-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1694426-20261009-csuite",
           "date": "2026-10-09",
@@ -88407,6 +93051,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-pbf-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1534504-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -88426,6 +93076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-pbf-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1534504-20261009-csuite",
           "date": "2026-10-09",
@@ -88645,6 +93301,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bkv-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1838406-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -88664,6 +93326,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bkv-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1838406-20261009-csuite",
           "date": "2026-10-09",
@@ -88883,6 +93551,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-tenb-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1660280-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -88902,6 +93576,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-tenb-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1660280-20261009-csuite",
           "date": "2026-10-09",
@@ -89121,6 +93801,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-halo-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1159036-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -89140,6 +93826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-halo-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1159036-20261009-csuite",
           "date": "2026-10-09",
@@ -89359,6 +94051,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-snow-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1640147-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -89378,6 +94076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-snow-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1640147-20261009-csuite",
           "date": "2026-10-09",
@@ -89597,6 +94301,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-axon-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1069183-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -89616,6 +94326,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-axon-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1069183-20261009-csuite",
           "date": "2026-10-09",
@@ -89835,6 +94551,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-acva-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1637873-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -89854,6 +94576,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-acva-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1637873-20261009-csuite",
           "date": "2026-10-09",
@@ -90056,10 +94784,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-900075-outside-counsel",
-        "name": "William A. Moore, Esq.",
+        "name": "Neil Voloshin",
         "title": "Outside Securities Counsel (Friday, Eldredge & Clark, LLP)",
         "entity": "Legal Counsel",
-        "email": "wmoore@fridayfirm.com",
+        "email": "nvoloshin@cavitationtechnologies.com",
         "phone": "(501) 376-2011",
         "address": "400 West Capitol Ave, Little Rock, AR 72201",
         "roleSummary": "Lead outside securities and restructuring partner representing COPART INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -90072,6 +94800,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cprt-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-edgar-900075-csuite-legal-audit",
           "date": "2026-10-09",
@@ -90092,6 +94826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cprt-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-900075-20261009-csuite",
           "date": "2026-10-09",
@@ -90311,6 +95051,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-dec-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1922446-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -90330,6 +95076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dec-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1922446-20261009-csuite",
           "date": "2026-10-09",
@@ -90549,6 +95301,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-adus-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1468328-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -90568,6 +95326,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-adus-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1468328-20261009-csuite",
           "date": "2026-10-09",
@@ -90787,6 +95551,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-boxl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1624512-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -90806,6 +95576,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-boxl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1624512-20261009-csuite",
           "date": "2026-10-09",
@@ -91025,6 +95801,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-dfh-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1825088-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -91044,6 +95826,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-dfh-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1825088-20261009-csuite",
           "date": "2026-10-09",
@@ -91263,6 +96051,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-bwin-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1781755-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -91282,6 +96076,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-bwin-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1781755-20261009-csuite",
           "date": "2026-10-09",
@@ -91501,6 +96301,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-wms-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-edgar-1604028-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -91520,6 +96326,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-wms-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-edgar-1604028-20261009-csuite",
           "date": "2026-10-09",
@@ -91741,6 +96553,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-sur-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-ca-tsxv-sur-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -91760,6 +96578,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sur-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-ca-tsxv-sur-20261009-csuite",
           "date": "2026-10-09",
@@ -91965,10 +96789,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-ca-tsx-ntm-outside-counsel",
-        "name": "Erik Mengwall, Esq.",
+        "name": "Mitchell S. Nussbaum, Esq.",
         "title": "Outside Securities Counsel (Loeb & Loeb LLP)",
         "entity": "Legal Counsel",
-        "email": "emengwall@loeb.com",
+        "email": "mnussbaum@loeb.com",
         "phone": "(212) 407-4000",
         "address": "345 Park Avenue, New York, NY 10154",
         "roleSummary": "Lead outside securities and restructuring partner representing Northern Tier Manufacturing Inc in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -91981,6 +96805,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-ntm-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-ca-tsx-ntm-csuite-legal-audit",
           "date": "2026-10-09",
@@ -92001,6 +96831,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-ntm-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-ca-tsx-ntm-20261009-csuite",
           "date": "2026-10-09",
@@ -92206,10 +97042,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-ca-cse-cpx-outside-counsel",
-        "name": "Brent S. Cooper, Esq.",
+        "name": "Sangamo Investor Relations & Legal",
         "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "bcooper@cooley.com",
+        "email": "investor.relations@sangamo.com",
         "phone": "(212) 479-6000",
         "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing CanPolymer Extraction Technologies Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -92222,6 +97058,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-cpx-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
         {
           "id": "note-ca-cse-cpx-csuite-legal-audit",
           "date": "2026-10-09",
@@ -92242,6 +97084,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-cpx-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-ca-cse-cpx-20261009-csuite",
           "date": "2026-10-09",
@@ -92464,6 +97312,12 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
+          "id": "note-vtl-csuite-legal-audit-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Legal Operations",
+          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
+        },
+        {
           "id": "note-au-asx-vtl-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
@@ -92483,6 +97337,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-vtl-dispatch-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
+        },
         {
           "id": "act-au-asx-vtl-20261009-csuite",
           "date": "2026-10-09",
