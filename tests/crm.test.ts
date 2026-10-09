@@ -1,4 +1,5 @@
 import { describe, it, expect, beforeEach } from "vitest";
+import { canSendEmail } from "../lib/dispatchGuard";
 import { 
   getStoredTargets, 
   updateTargetCrmStage, 
@@ -176,5 +177,20 @@ describe("CRM Pipeline State Management Suite", () => {
     // Check ALPP Kirton McConkie
     const alpp = targets.find((t) => t.ticker === "ALPP");
     expect(alpp?.contacts.some((c) => c.name.includes("David Aboudi") && c.phone === "(801) 328-3600")).toBe(true);
+  });
+  it("enforces strict dispatch guard blocking suppressed domains and deduplication", () => {
+    // 1. McGuireWoods domain and specific email MUST be rejected
+    const mwRes = canSendEmail("solder@mcguirewoods.com");
+    expect(mwRes.allowed).toBe(false);
+    expect(mwRes.reason).toContain("SUPPRESSED");
+
+    const mwAnyRes = canSendEmail("another_partner@mcguirewoods.com");
+    expect(mwAnyRes.allowed).toBe(false);
+    expect(mwAnyRes.reason).toContain("SUPPRESSED DOMAIN");
+
+    // 2. Already emailed recipient MUST be blocked by deduplication guard
+    const dedupRes = canSendEmail("pchadha@exelatech.com");
+    expect(dedupRes.allowed).toBe(false);
+    expect(dedupRes.reason).toContain("DEDUPLICATION");
   });
 });

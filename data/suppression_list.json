@@ -1,0 +1,21 @@
+{
+  "updatedAt": "2026-10-09T19:58:04.622Z",
+  "description": "Global permanent suppression and opt-out registry. Hard block enforced at runtime before any email transmission.",
+  "suppressedEmails": [
+    "solder@mcguirewoods.com",
+    "dfoley@mcguirewoods.com"
+  ],
+  "suppressedDomains": [
+    "mcguirewoods.com"
+  ],
+  "optOutLog": [
+    {
+      "email": "solder@mcguirewoods.com",
+      "domain": "mcguirewoods.com",
+      "recipient": "Stephen E. Older, Esq. (McGuireWoods LLP)",
+      "ticker": "SING",
+      "requestDate": "2026-10-09T12:44:00-07:00",
+      "reason": "Opt-out / stop request received (Fourth email today alert). Permanent firm-wide suppression enforced."
+    }
+  ]
+}

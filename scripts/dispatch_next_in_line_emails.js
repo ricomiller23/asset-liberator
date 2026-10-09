@@ -1,3 +1,32 @@
+
+// GLOBAL DISPATCH GUARD: HARD SUPPRESSION & DEDUPLICATION CHECK
+function checkDispatchGuard(to) {
+  const email = (to || "").trim().toLowerCase();
+  const domain = email.includes("@") ? email.split("@")[1] : "";
+  try {
+    const suppPath = path.resolve(process.cwd(), "data/suppression_list.json");
+    if (fs.existsSync(suppPath)) {
+      const supp = JSON.parse(fs.readFileSync(suppPath, "utf8"));
+      if ((supp.suppressedEmails || []).map(e => e.toLowerCase()).includes(email)) {
+        return { allowed: false, reason: "GLOBAL_SUPPRESSION_LIST_MATCH: " + email };
+      }
+      if ((supp.suppressedDomains || []).map(d => d.toLowerCase()).includes(domain)) {
+        return { allowed: false, reason: "GLOBAL_SUPPRESSED_DOMAIN: @" + domain };
+      }
+    }
+    const regPath = path.resolve(process.cwd(), "data/dispatched_recipients_registry.json");
+    if (fs.existsSync(regPath)) {
+      const reg = JSON.parse(fs.readFileSync(regPath, "utf8"));
+      if (reg.recipients && reg.recipients[email]) {
+        return { allowed: false, reason: "DEDUPLICATION_BLOCK_ALREADY_SENT: " + email };
+      }
+    }
+  } catch (e) {
+    console.error("Guard error:", e.message);
+  }
+  return { allowed: true };
+}
+
 const { spawnSync } = require('child_process');
 
 const emails = [

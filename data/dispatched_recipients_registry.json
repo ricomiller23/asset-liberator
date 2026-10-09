@@ -1,0 +1,2948 @@
+{
+  "updatedAt": "2026-10-09T19:58:04.619Z",
+  "description": "Permanent audit log of every email address that has been transmitted to via Apple Mail. Consulted by dispatchGuard to prevent duplicate sends.",
+  "totalUniqueRecipients": 306,
+  "recipients": {
+    "ricomiller@gmail.com": {
+      "email": "ricomiller@gmail.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 95,
+      "subjects": [
+        "Regional Filings Outreach Confirmation — 2026-10-09 [0 Dispatched]",
+        "Regional Filings Outreach Confirmation — 2026-10-08 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-10-08",
+        "Filings Outreach Report — Thursday, October 8, 2026 [3 sent]",
+        "Block Trade Solution for Your Restricted Stock / ENI SPA Position",
+        "Block Trade Solution for Your Restricted Stock / GENMAB A/S Position",
+        "Block Trade Solution for Your Restricted Stock / Copper Property CTL Pass Through Trust Position",
+        "Daily Executive Market & Outreach Briefing — 2026-10-07",
+        "Filings Outreach Report — Wednesday, October 7, 2026 [3 sent]",
+        "Block Trade Solution for Your Restricted Stock / Life360, Inc. Position",
+        "Block Trade Solution for Your Restricted Stock / CTT PHARMACEUTICAL HOLDINGS, INC. Position",
+        "Block Trade Solution for Your Restricted Stock / ING GROEP NV Position",
+        "Regional Filings Outreach Confirmation — 2026-10-07 [0 Dispatched]",
+        "Fwd: Your order is on its way (316670946001021064)",
+        "Block Trade Solution for Your Restricted Stock / Wallbox N.V. Position",
+        "Block Trade Solution for Your Restricted Stock / Purebase Corp Position",
+        "Block Trade Solution for Your Restricted Stock / Sentinel Holdings Ltd. Position",
+        "Block Trade Solution for Your Restricted Stock / Israel Acquisitions Corp Position",
+        "Regional Filings Outreach Confirmation — 2026-10-04 [0 Dispatched]",
+        "Regional Filings Outreach Confirmation — 2026-10-03 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-10-03",
+        "Filings Outreach Report — Saturday, October 3, 2026 [3 sent]",
+        "Block Trade Solution for Your Restricted Stock / Rise Gold Corp. Position",
+        "Block Trade Solution for Your Restricted Stock / Greenbriar Sustainable Living Inc. Position",
+        "Block Trade Solution for Your Restricted Stock / Global AI, Inc. Position",
+        "Regional Filings Outreach Confirmation — 2026-10-02 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-10-02",
+        "Filings Outreach Report — Friday, October 2, 2026 [1 sent]",
+        "Block Trade Solution for Your Restricted Stock / AMERICA MOVIL SAB DE CV/ Position",
+        "RE: Delivery Hero SE (DHER.DE / WKN: A2E4K4) - Strategic Equity Line & Growth Capital Proposal",
+        "RE: Lilium N.V. / Lilium SE (LILM.F / WKN: A3CYXP) - Strategic Equity Line & Growth Capital Proposal",
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - ITM Power plc (ITM.L / SEDOL: B0130H4)",
+        "Regional Filings Outreach Confirmation — 2026-10-01 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-10-01",
+        "Filings Outreach Report — Thursday, October 1, 2026 [1 sent]",
+        "Block Trade Solution for Your Restricted Stock / ENBRIDGE INC Position",
+        "Regional Filings Outreach Confirmation — 2026-09-30 [13 Dispatched]",
+        "RE: SFC Energy AG (F3C.DE / WKN: 756857) - Strategic Equity Line & Growth Capital Proposal",
+        "RE: SMA Solar Technology AG (S92.DE / WKN: A0DJ6J) - Strategic Equity Line & Growth Capital Proposal",
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - ASOS plc (ASC.L / SEDOL: 3092723)",
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - Superdry plc (SDRY.L / SEDOL: B60BD27)",
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - boohoo group plc (BOO.L / SEDOL: BG6L729)",
+        "RE: Hazer Group Limited (HAZ.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry",
+        "RE: Andromeda Metals Limited (ADN.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry",
+        "RE: LCL Resources Limited (LCL.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry",
+        "RE: BrainChip Holdings Ltd (BRN.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry",
+        "RE: Liontown Resources Limited (LTR.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry",
+        "Daily Executive Market & Outreach Briefing — 2026-09-30",
+        "Filings Outreach Report — Wednesday, September 30, 2026 [0 sent]",
+        "Regional Filings Outreach Confirmation — 2026-09-30 [0 Dispatched]",
+        "Regional Filings Outreach Confirmation — 2026-09-29 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-09-29",
+        "Filings Outreach Report — Tuesday, September 29, 2026 [0 sent]",
+        "Regional Filings Outreach Confirmation — 2026-09-28 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-09-28",
+        "Filings Outreach Report — Monday, September 28, 2026 [0 sent]",
+        "Regional Filings Outreach Confirmation — 2026-09-27 [0 Dispatched]",
+        "Daily Executive Market & Outreach Briefing — 2026-09-27",
+        "Filings Outreach Report — Sunday, September 27, 2026 [0 sent]",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-09)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-08)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-07)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-06)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-05)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-04)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-03)",
+        "📈 SEC EDGAR Daily Scans Report — 200 Filings (2026-10-02)"
+      ]
+    },
+    "rigby_investor@eni.com": {
+      "email": "rigby_investor@eni.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / ENI SPA Position"
+      ]
+    },
+    "acn@genmab.com": {
+      "email": "acn@genmab.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / GENMAB A/S Position"
+      ]
+    },
+    "jcummins@hilcoglobal.com": {
+      "email": "jcummins@hilcoglobal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Copper Property CTL Pass Through Trust Position"
+      ]
+    },
+    "jmasojada@life360.com": {
+      "email": "jmasojada@life360.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Life360, Inc. Position"
+      ]
+    },
+    "rkhouri@cttpharmaceuticals.com": {
+      "email": "rkhouri@cttpharmaceuticals.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / CTT PHARMACEUTICAL HOLDINGS, INC. Position"
+      ]
+    },
+    "sjoerd.miltenburg@ing.com": {
+      "email": "sjoerd.miltenburg@ing.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / ING GROEP NV Position"
+      ]
+    },
+    "jackson.morris@rule144solution.com": {
+      "email": "jackson.morris@rule144solution.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Waste Energy Corp. (WAST) — 221 Cap / Rule 144 Block Liquidity & Capital Solution (Attn: Jackson L. Morris, Esq.)"
+      ]
+    },
+    "ricomiller@icloud.com": {
+      "email": "ricomiller@icloud.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 12,
+      "subjects": [
+        "Fwd: Your order is on its way (316670946001021064)",
+        "Fwd: Notification！Your Package Is Out for Delivery",
+        "CONFIDENTIAL: Outreach Test Verification",
+        "[TEST 2/2] Delay Test",
+        "[TEST 1/2] Delay Test",
+        "[TEST] Asset Liberator Outreach Queue Verification",
+        "[VERIFICATION] Both Attachments Test",
+        "[TEST VERIFICATION] Byond Facility Credit Teaser",
+        "E Lincoln Dr 6",
+        "[Internal Verification] Mail Dispatch Test",
+        "Piped Test Delivery",
+        "Test Script Delivery"
+      ]
+    },
+    "matt.tractenberg@wallbox.com": {
+      "email": "matt.tractenberg@wallbox.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Wallbox N.V. Position"
+      ]
+    },
+    "scott.dockter@purebase.com": {
+      "email": "scott.dockter@purebase.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Purebase Corp Position"
+      ]
+    },
+    "kyle@sentinelholdingsltd.net": {
+      "email": "kyle@sentinelholdingsltd.net",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Sentinel Holdings Ltd. Position"
+      ]
+    },
+    "tkies@allianceadvisors.com": {
+      "email": "tkies@allianceadvisors.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Israel Acquisitions Corp Position"
+      ]
+    },
+    "jmullin@risegoldcorp.com": {
+      "email": "jmullin@risegoldcorp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Rise Gold Corp. Position"
+      ]
+    },
+    "william.conroy@nabors.com": {
+      "email": "william.conroy@nabors.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Greenbriar Sustainable Living Inc. Position",
+        "Block Trade Solution for Your Restricted Stock / ENBRIDGE INC Position"
+      ]
+    },
+    "darko.horvat@global.ai": {
+      "email": "darko.horvat@global.ai",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / Global AI, Inc. Position"
+      ]
+    },
+    "sdemarsilis@movadogroup.com": {
+      "email": "sdemarsilis@movadogroup.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Block Trade Solution for Your Restricted Stock / AMERICA MOVIL SAB DE CV/ Position"
+      ]
+    },
+    "tony.ottaviano@ltresources.com.au": {
+      "email": "tony.ottaviano@ltresources.com.au",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Fwd: Liontown Resources Limited (LTR.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry",
+        "RE: Liontown Resources Limited (LTR.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry"
+      ]
+    },
+    "niklas.oestberg@deliveryhero.com": {
+      "email": "niklas.oestberg@deliveryhero.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "RE: Delivery Hero SE (DHER.DE / WKN: A2E4K4) - Strategic Equity Line & Growth Capital Proposal"
+      ]
+    },
+    "klaus.roewe@lilium.com": {
+      "email": "klaus.roewe@lilium.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "RE: Lilium N.V. / Lilium SE (LILM.F / WKN: A3CYXP) - Strategic Equity Line & Growth Capital Proposal"
+      ]
+    },
+    "dennis.schulz@itm-power.com": {
+      "email": "dennis.schulz@itm-power.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - ITM Power plc (ITM.L / SEDOL: B0130H4)"
+      ]
+    },
+    "peter.podesser@sfc.com": {
+      "email": "peter.podesser@sfc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "RE: SFC Energy AG (F3C.DE / WKN: 756857) - Strategic Equity Line & Growth Capital Proposal"
+      ]
+    },
+    "juergen.reinert@sma.de": {
+      "email": "juergen.reinert@sma.de",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "RE: SMA Solar Technology AG (S92.DE / WKN: A0DJ6J) - Strategic Equity Line & Growth Capital Proposal"
+      ]
+    },
+    "jose.calamonte@asos.com": {
+      "email": "jose.calamonte@asos.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - ASOS plc (ASC.L / SEDOL: 3092723)"
+      ]
+    },
+    "julian.dunkerton@superdry.com": {
+      "email": "julian.dunkerton@superdry.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - Superdry plc (SDRY.L / SEDOL: B60BD27)"
+      ]
+    },
+    "mahmud.kamani@boohoo.com": {
+      "email": "mahmud.kamani@boohoo.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Strategic Capital & Standby Facility Mandate - boohoo group plc (BOO.L / SEDOL: BG6L729)"
+      ]
+    },
+    "glenn.corrie@hazergroup.com.au": {
+      "email": "glenn.corrie@hazergroup.com.au",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "RE: Hazer Group Limited (HAZ.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry"
+      ]
+    },
+    "bob.katsiouleris@andromet.com.au": {
+      "email": "bob.katsiouleris@andromet.com.au",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "RE: Andromeda Metals Limited (ADN.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry"
+      ]
+    },
+    "jason.stirbinskis@lclresources.com": {
+      "email": "jason.stirbinskis@lclresources.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "RE: LCL Resources Limited (LCL.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry"
+      ]
+    },
+    "sean.hehir@brainchip.com": {
+      "email": "sean.hehir@brainchip.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "RE: BrainChip Holdings Ltd (BRN.AX) - Standby Convertible Facility & Placement Cornerstone Inquiry"
+      ]
+    },
+    "nessrenmohameed222@gmail.com": {
+      "email": "nessrenmohameed222@gmail.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Re: Bill (654502164) update: Preparing for shipment"
+      ]
+    },
+    "solder@mcguirewoods.com": {
+      "email": "solder@mcguirewoods.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "APOLOGY Re: CONFIDENTIAL / FOR TRANSMISSION TO BOARD: SinglePoint Inc. (SING) — Section 363 / Carve-Out Restructuring Framework (Attn: Stephen E. Older, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: SinglePoint Inc. (SING) — Section 363 / Carve-Out Restructuring Framework (Attn: Stephen E. Older, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: SinglePoint Inc. — Solar Operating Asset Carve-Out & Debt Restructuring Proposal"
+      ]
+    },
+    "dgiardina@sidley.com": {
+      "email": "dgiardina@sidley.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: CytoDyn Inc. (CYDY) — Section 363 / Carve-Out Restructuring Framework (Attn: David C. Giardina, Esq.)"
+      ]
+    },
+    "mcohen@cytodyn.com": {
+      "email": "mcohen@cytodyn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: CytoDyn Inc. (CYDY) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Leronlimab (PRO 140) Monoclonal Antibody Asset Pool)"
+      ]
+    },
+    "amigliarese@cytodyn.com": {
+      "email": "amigliarese@cytodyn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: CytoDyn Inc. (CYDY) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Leronlimab (PRO 140) Monoclonal Antibody Asset Pool)"
+      ]
+    },
+    "tblok@cytodyn.com": {
+      "email": "tblok@cytodyn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: CytoDyn Inc. (CYDY) — Section 363 / Carve-Out Restructuring Framework (Attn: Tyler Blok, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: CytoDyn Inc. (CYDY) — Section 363 / Carve-Out Restructuring Framework (Attn: Sidley Austin LLP (Legal Department))",
+        "CONFIDENTIAL: CytoDyn Inc. (CYDY) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Leronlimab (PRO 140) Monoclonal Antibody Asset Pool)",
+        "CONFIDENTIAL: CytoDyn Inc. — Senior Note Restructuring & Clinical Asset Carve-Out Proposal (Attn: Tyler Blok, Esq.)"
+      ]
+    },
+    "jlalezari@cytodyn.com": {
+      "email": "jlalezari@cytodyn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: CytoDyn Inc. (CYDY) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Leronlimab (PRO 140) Monoclonal Antibody Asset Pool)",
+        "CONFIDENTIAL: CytoDyn Inc. (CYDY) — Stalking Horse Carve-Out & Debt Restructuring Solution for Leronlimab (PRO 140) Monoclonal Antibody Asset Pool",
+        "CONFIDENTIAL: CytoDyn Inc. — Non-Dilutive Clinical Asset Financing & Senior Debt Carve-Out Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Leronlimab (PRO 140) Monoclonal Antibody Asset Pool"
+      ]
+    },
+    "mark@goldsteinip.com": {
+      "email": "mark@goldsteinip.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Regen BioPharma, Inc. (RGBP) — Section 363 / Carve-Out Restructuring Framework (Attn: Mark Goldstein, Esq.)"
+      ]
+    },
+    "adecarvalho@regenbiopharma.com": {
+      "email": "adecarvalho@regenbiopharma.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Regen BioPharma, Inc. (RGBP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Kalgene Immuno-Oncology & Stem Cell LLC)"
+      ]
+    },
+    "hlander@regenbiopharma.com": {
+      "email": "hlander@regenbiopharma.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Regen BioPharma, Inc. (RGBP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Kalgene Immuno-Oncology & Stem Cell LLC)"
+      ]
+    },
+    "btb@burninglaw.com": {
+      "email": "btb@burninglaw.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Regen BioPharma, Inc. (RGBP) — Section 363 / Carve-Out Restructuring Framework (Attn: Branden T. Burningham, Esq.)",
+        "CONFIDENTIAL: Regen BioPharma, Inc. (RGBP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Kalgene Immuno-Oncology & Stem Cell LLC)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Regen BioPharma — Oncology Patent Estate Monetization & Restructuring Proposal"
+      ]
+    },
+    "dkoos@regenbiopharma.com": {
+      "email": "dkoos@regenbiopharma.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Regen BioPharma, Inc. (RGBP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Kalgene Immuno-Oncology & Stem Cell LLC)",
+        "CONFIDENTIAL: Regen BioPharma, Inc. (RGBP) — Stalking Horse Carve-Out & Debt Restructuring Solution for Kalgene Immuno-Oncology & Stem Cell LLC",
+        "CONFIDENTIAL: Regen BioPharma — mRNA Oncology Patent Carve-Out & Development Capital Facility",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Kalgene Immuno-Oncology & Stem Cell LLC"
+      ]
+    },
+    "legal@ozopenergy.com": {
+      "email": "legal@ozopenergy.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Ozop Energy Solutions, Inc. (OZSC) — Section 363 / Carve-Out Restructuring Framework (Attn: Michelle Robinson, Esq.)"
+      ]
+    },
+    "asosebee@ozopenergy.com": {
+      "email": "asosebee@ozopenergy.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Ozop Energy Solutions, Inc. (OZSC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ozop EV Power Grid Infrastructure LLC)"
+      ]
+    },
+    "bsiegel@ozopenergy.com": {
+      "email": "bsiegel@ozopenergy.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Ozop Energy Solutions, Inc. (OZSC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ozop EV Power Grid Infrastructure LLC)"
+      ]
+    },
+    "lbrunson@bcjlaw.com": {
+      "email": "lbrunson@bcjlaw.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Ozop Energy Solutions, Inc. (OZSC) — Section 363 / Carve-Out Restructuring Framework (Attn: Lance Brunson, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Ozop Energy Solutions — PCTI Carve-Out & Noteholder Restructuring Proposal"
+      ]
+    },
+    "bconway@ozopenergy.com": {
+      "email": "bconway@ozopenergy.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL: Ozop Energy Solutions, Inc. (OZSC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ozop EV Power Grid Infrastructure LLC)",
+        "CONFIDENTIAL: Ozop Energy Solutions, Inc. (OZSC) — Stalking Horse Carve-Out & Debt Restructuring Solution for Ozop EV Power Grid Infrastructure LLC",
+        "CONFIDENTIAL: Ozop Energy Solutions — PCTI Operating Asset Carve-Out & Senior Debt Settlement Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Ozop EV Power Grid Infrastructure LLC"
+      ]
+    },
+    "jollet@hcmc1.com": {
+      "email": "jollet@hcmc1.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Healthier Choices Management Corp. (HCMC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ada's Natural Market & Wellness Centers LLC)"
+      ]
+    },
+    "bgolob@cozen.com": {
+      "email": "bgolob@cozen.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Healthier Choices Management Corp. (HCMC) — Section 363 / Carve-Out Restructuring Framework (Attn: Barry P. Golob, Esq.)",
+        "CONFIDENTIAL: HCMC — Litigation Capital & IP Carve-Out Coordination"
+      ]
+    },
+    "csanti@hcmc1.com": {
+      "email": "csanti@hcmc1.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Healthier Choices Management Corp. (HCMC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ada's Natural Market & Wellness Centers LLC)",
+        "CONFIDENTIAL: HCMC Operating Carve-Out — Non-Dilutive Capital & Retail Division Optimization"
+      ]
+    },
+    "mschrier@cozen.com": {
+      "email": "mschrier@cozen.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Healthier Choices Management Corp. (HCMC) — Section 363 / Carve-Out Restructuring Framework (Attn: Martin T. Schrier, Esq.)",
+        "CONFIDENTIAL: Healthier Choices Management Corp. (HCMC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ada's Natural Market & Wellness Centers LLC)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Healthier Choices Management — Grocery Subsidiary Carve-Out & IP Monetization Solution"
+      ]
+    },
+    "jholman@hcmc1.com": {
+      "email": "jholman@hcmc1.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL: Healthier Choices Management Corp. (HCMC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ada's Natural Market & Wellness Centers LLC)",
+        "CONFIDENTIAL: Healthier Choices Management Corp. (HCMC) — Stalking Horse Carve-Out & Debt Restructuring Solution for Ada's Natural Market & Wellness Centers LLC",
+        "CONFIDENTIAL: Healthier Choices Management — Grocery Subsidiary Carve-Out & IP Pure-Play Capital Solution"
+      ]
+    },
+    "gagron@agronlaw.com": {
+      "email": "gagron@agronlaw.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: PHI Group Inc. (PHIL) — Section 363 / Carve-Out Restructuring Framework (Attn: Gary J. Agron, Esq.)"
+      ]
+    },
+    "fpham@philuxglobal.com": {
+      "email": "fpham@philuxglobal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: PHI Group Inc. (PHIL) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (American Pacific Resources & Energy LLC)"
+      ]
+    },
+    "info@philuxglobal.com": {
+      "email": "info@philuxglobal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL: PHI Group Inc. (PHIL) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (American Pacific Resources & Energy LLC)",
+        "CONFIDENTIAL: Strategic Asset Carve-Out & Senior Debt Settlement — Philux Global Group (American Pacific Resources)"
+      ]
+    },
+    "dietrichlaw@aol.com": {
+      "email": "dietrichlaw@aol.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: PHI Group Inc. (PHIL) — Section 363 / Carve-Out Restructuring Framework (Attn: Christopher Dieterich, Esq.)",
+        "CONFIDENTIAL: PHI Group Inc. (PHIL) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (American Pacific Resources & Energy LLC)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Philux Global Group — American Pacific Resources Asset Carve-Out & Debt Settlement"
+      ]
+    },
+    "mrobinson@singlepoint.com": {
+      "email": "mrobinson@singlepoint.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: SinglePoint Inc. (SING) — Section 363 / Carve-Out Restructuring Framework (Attn: Mark E. Robinson, Esq.)"
+      ]
+    },
+    "enewlan@singlepoint.com": {
+      "email": "enewlan@singlepoint.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: SinglePoint Inc. (SING) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (The Boston Solar Company LLC)"
+      ]
+    },
+    "clambrecht@singlepoint.com": {
+      "email": "clambrecht@singlepoint.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: SinglePoint Inc. (SING) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (The Boston Solar Company LLC)",
+        "CONFIDENTIAL: SinglePoint Inc. — Operational Asset Realization & Working Capital Solution"
+      ]
+    },
+    "wralston@singlepoint.com": {
+      "email": "wralston@singlepoint.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL: SinglePoint Inc. (SING) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (The Boston Solar Company LLC)",
+        "CONFIDENTIAL: SinglePoint Inc. (SING) — Stalking Horse Carve-Out & Debt Restructuring Solution for The Boston Solar Company LLC",
+        "CONFIDENTIAL: SinglePoint Inc. — Boston Solar Asset Carve-Out & Corporate Debt Settlement Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out The Boston Solar Company LLC"
+      ]
+    },
+    "canderson@alpine4.com": {
+      "email": "canderson@alpine4.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Alpine 4 Holdings, Inc. (ALPP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Vayu Aerospace & Quality Circuit Assembly LLC)"
+      ]
+    },
+    "plloyd@kmclaw.com": {
+      "email": "plloyd@kmclaw.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Alpine 4 Holdings, Inc. (ALPP) — Section 363 / Carve-Out Restructuring Framework (Attn: C. Parkinson Lloyd, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Alpine 4 Holdings, Inc. (ALPP) — Section 363 / Carve-Out Restructuring Framework (Attn: David Aboudi, Esq.)",
+        "CONFIDENTIAL: Alpine 4 Holdings — Subsidiary Carve-Out & Senior Debt Restructuring (Attn: Park Lloyd, Esq.)"
+      ]
+    },
+    "kwilson@alpine4.com": {
+      "email": "kwilson@alpine4.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL: Alpine 4 Holdings, Inc. (ALPP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Vayu Aerospace & Quality Circuit Assembly LLC)",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Alpine 4 / Vayu Aerospace & Quality Circuit Assembly LLC"
+      ]
+    },
+    "jnail@alpine4.com": {
+      "email": "jnail@alpine4.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Alpine 4 Holdings, Inc. (ALPP) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Vayu Aerospace & Quality Circuit Assembly LLC)",
+        "CONFIDENTIAL: Alpine 4 Holdings, Inc. (ALPP) — Stalking Horse Carve-Out & Debt Restructuring Solution for Vayu Aerospace & Quality Circuit Assembly LLC"
+      ]
+    },
+    "tpuzzo@optecintl.com": {
+      "email": "tpuzzo@optecintl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International, Inc. (OPTI) — Section 363 / Carve-Out Restructuring Framework (Attn: Thomas E. Puzzo, Esq.)"
+      ]
+    },
+    "pperez@optecintl.com": {
+      "email": "pperez@optecintl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Optec International, Inc. (OPTI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Optec Fuel & UV-C Technologies LLC)"
+      ]
+    },
+    "drendina@optecintl.com": {
+      "email": "drendina@optecintl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Optec International, Inc. (OPTI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Optec Fuel & UV-C Technologies LLC)"
+      ]
+    },
+    "swhitley@whitleylawgroup.com": {
+      "email": "swhitley@whitleylawgroup.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International, Inc. (OPTI) — Section 363 / Carve-Out Restructuring Framework (Attn: Samuel E. Whitley, Esq.)",
+        "CONFIDENTIAL: Optec International, Inc. (OPTI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Optec Fuel & UV-C Technologies LLC)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International — Operating Carve-Out & Noteholder Settlement Proposal"
+      ]
+    },
+    "rpawson@optecintl.com": {
+      "email": "rpawson@optecintl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Optec International, Inc. (OPTI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Optec Fuel & UV-C Technologies LLC)",
+        "CONFIDENTIAL: Optec International, Inc. (OPTI) — Stalking Horse Carve-Out & Debt Restructuring Solution for Optec Fuel & UV-C Technologies LLC",
+        "CONFIDENTIAL: Optec International — Corporate Restructuring & Creditor Resolution Solution",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Optec Fuel & UV-C Technologies LLC"
+      ]
+    },
+    "jcobb@taprealestate.com": {
+      "email": "jcobb@taprealestate.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.) (RWAX) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (HUMBL Mobile Payments & Ticketing LLC)"
+      ]
+    },
+    "bfoote@taprealestate.com": {
+      "email": "bfoote@taprealestate.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.) (RWAX) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (HUMBL Mobile Payments & Ticketing LLC)"
+      ]
+    },
+    "gcoleman@taprealestate.com": {
+      "email": "gcoleman@taprealestate.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.) (RWAX) — Section 363 / Carve-Out Restructuring Framework (Attn: Gayle Coleman, Esq.)",
+        "CONFIDENTIAL: TAP Real Estate Technologies — Legal & Debt Workout Structure"
+      ]
+    },
+    "jmeadows@cm.law": {
+      "email": "jmeadows@cm.law",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.) (RWAX) — Section 363 / Carve-Out Restructuring Framework (Attn: James Meadows, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO MANAGEMENT: TAP Real Estate Technologies — Corporate Carve-Out & Debt Compromise Framework"
+      ]
+    },
+    "ghopkins@taprealestate.com": {
+      "email": "ghopkins@taprealestate.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.) (RWAX) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (HUMBL Mobile Payments & Ticketing LLC)",
+        "CONFIDENTIAL: TAP Real Estate Technologies, Inc. (f/k/a HUMBL, Inc.) (RWAX) — Stalking Horse Carve-Out & Debt Restructuring Solution for HUMBL Mobile Payments & Ticketing LLC",
+        "CONFIDENTIAL: Strategic Capital & Debt Restructuring Proposal — TAP Real Estate Technologies"
+      ]
+    },
+    "lnarayanan@exelatech.com": {
+      "email": "lnarayanan@exelatech.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Exela Technologies, Inc. (XELA) — Section 363 / Carve-Out Restructuring Framework (Attn: Lakshmi Narayanan, Esq.)"
+      ]
+    },
+    "ssortur@exelatech.com": {
+      "email": "ssortur@exelatech.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Exela Technologies, Inc. (XELA) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (SourceHOV Healthcare & Financial Automation LLC)"
+      ]
+    },
+    "soneal@cgsh.com": {
+      "email": "soneal@cgsh.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Exela Technologies, Inc. (XELA) — Section 363 / Carve-Out Restructuring Framework (Attn: Sean A. O'Neal, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Lumen Technologies, Inc. (LUMN) — Section 363 / Carve-Out Restructuring Framework (Attn: Sean A. O'Neal, Esq.)",
+        "CONFIDENTIAL: Exela Technologies Restructuring — Consensual SourceHOV Operating Carve-Out & Creditor Solution"
+      ]
+    },
+    "emengwall@loeb.com": {
+      "email": "emengwall@loeb.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Exela Technologies, Inc. (XELA) — Section 363 / Carve-Out Restructuring Framework (Attn: Erik Mengwall, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Exela Technologies — SourceHOV Healthcare Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "pchadha@exelatech.com": {
+      "email": "pchadha@exelatech.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Exela Technologies, Inc. (XELA) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (SourceHOV Healthcare & Financial Automation LLC)",
+        "2nd Email today to you Par: Confidential: Proposal to Relieve Parent Overhead & Carve Out SourceHOV Healthcare & Financial Automation LLC",
+        "Par, Eric Miller here looking to see possible fit for new public vehicle"
+      ]
+    },
+    "kate.johnson@lumen.com": {
+      "email": "kate.johnson@lumen.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Lumen Technologies, Inc. (LUMN) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (LUMEN TECHNOLOGIES, INC.)"
+      ]
+    },
+    "shenkerj@sullcrom.com": {
+      "email": "shenkerj@sullcrom.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Protopia Global Holdings Inc. (CIK1959585) — Section 363 / Carve-Out Restructuring Framework (Attn: Joseph C. Shenker, Esq.)"
+      ]
+    },
+    "charles.martinez@protopiaglobal.com": {
+      "email": "charles.martinez@protopiaglobal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Protopia Global Holdings Inc. (CIK1959585) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Operating Business Unit)"
+      ]
+    },
+    "wmoore@fridayfirm.com": {
+      "email": "wmoore@fridayfirm.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Cavitation Technologies, Inc. (CVAT) — Section 363 / Carve-Out Restructuring Framework (Attn: William A. Moore, Esq.)"
+      ]
+    },
+    "frank.baker@cavitation.com": {
+      "email": "frank.baker@cavitation.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Cavitation Technologies, Inc. (CVAT) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Operating Business Unit)"
+      ]
+    },
+    "bcooper@cooley.com": {
+      "email": "bcooper@cooley.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: AtaiBeckley Inc. (ATAI) — Section 363 / Carve-Out Restructuring Framework (Attn: Brent S. Cooper, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: SANGAMO THERAPEUTICS, INC (SGMOQ) — Section 363 / Carve-Out Restructuring Framework (Attn: Brent S. Cooper, Esq.)"
+      ]
+    },
+    "florian@atai.life": {
+      "email": "florian@atai.life",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: AtaiBeckley Inc. (ATAI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (atai Life Sciences US, Inc.)"
+      ]
+    },
+    "gsimon@foley.com": {
+      "email": "gsimon@foley.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Greenlane Holdings, Inc. (GNLN) — Section 363 / Carve-Out Restructuring Framework (Attn: Gardner F. Simon, Esq.)"
+      ]
+    },
+    "barbara.sher@gnln.com": {
+      "email": "barbara.sher@gnln.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Greenlane Holdings, Inc. (GNLN) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Logistics B.V.)"
+      ]
+    },
+    "smacrae@sangamo.com": {
+      "email": "smacrae@sangamo.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: SANGAMO THERAPEUTICS, INC (SGMOQ) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Operating Business Unit)"
+      ]
+    },
+    "afabricant@fabricantllp.com": {
+      "email": "afabricant@fabricantllp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Nova Minerals Corp (NVA) — Section 363 / Carve-Out Restructuring Framework (Attn: Alfred R. Fabricant, Esq.)"
+      ]
+    },
+    "jason.carter@novaminerals.com": {
+      "email": "jason.carter@novaminerals.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Nova Minerals Corp (NVA) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Pty Ltd, an Australian corporation)"
+      ]
+    },
+    "sfalber@wilmerhale.com": {
+      "email": "sfalber@wilmerhale.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Karyopharm Therapeutics Inc. (KPTI) — Section 363 / Carve-Out Restructuring Framework (Attn: Stuart M. Falber, Esq.)"
+      ]
+    },
+    "rpaulson@karyopharm.com": {
+      "email": "rpaulson@karyopharm.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Karyopharm Therapeutics Inc. (KPTI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Karyopharm Europe GmbH)"
+      ]
+    },
+    "jconrad@wbd-us.com": {
+      "email": "jconrad@wbd-us.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Singularity Future Technology Ltd. (SGLY) — Section 363 / Carve-Out Restructuring Framework (Attn: Jeffrey Conrad, Esq.)"
+      ]
+    },
+    "alexander.torres@singularityfuturetechnology.com": {
+      "email": "alexander.torres@singularityfuturetechnology.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Singularity Future Technology Ltd. (SGLY) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Sino-Global Shipping New York Inc.)"
+      ]
+    },
+    "laura@anthonypllc.com": {
+      "email": "laura@anthonypllc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: iPower Inc. (IPW) — Section 363 / Carve-Out Restructuring Framework (Attn: Laura Anthony, Esq.)"
+      ]
+    },
+    "ltan@ipower.com": {
+      "email": "ltan@ipower.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: iPower Inc. (IPW) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Company)"
+      ]
+    },
+    "pgo@lw.com": {
+      "email": "pgo@lw.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: VIP Play, Inc. (VIPZ) — Section 363 / Carve-Out Restructuring Framework (Attn: Patrick Go, Esq.)"
+      ]
+    },
+    "richard.brown@vipplay.com": {
+      "email": "richard.brown@vipplay.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: VIP Play, Inc. (VIPZ) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (OF VIP PLAY, INC.)"
+      ]
+    },
+    "jlucosky@lucoskybrookman.com": {
+      "email": "jlucosky@lucoskybrookman.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: APPlife Digital Solutions Inc (ALDS) — Section 363 / Carve-Out Restructuring Framework (Attn: Joseph Lucosky, Esq.)"
+      ]
+    },
+    "mscott@applifedigital.com": {
+      "email": "mscott@applifedigital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: APPlife Digital Solutions Inc (ALDS) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Sugar Auto Parts, Inc.)",
+        "CONFIDENTIAL: APPlife Digital Solutions Inc (ALDS) — Stalking Horse Carve-Out & Debt Restructuring Solution for Sugar Auto Parts, Inc."
+      ]
+    },
+    "jrubin@whitecase.com": {
+      "email": "jrubin@whitecase.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Fortress Net Lease REIT (CIK1966394) — Section 363 / Carve-Out Restructuring Framework (Attn: John Rubin, Esq.)"
+      ]
+    },
+    "ronald.garcia@fortressnetleasereit.com": {
+      "email": "ronald.garcia@fortressnetleasereit.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Fortress Net Lease REIT (CIK1966394) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (FNLR GP LLC)"
+      ]
+    },
+    "richard.werner@haynesboone.com": {
+      "email": "richard.werner@haynesboone.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Petros Pharmaceuticals, Inc. (PTPI) — Section 363 / Carve-Out Restructuring Framework (Attn: Richard A. Werner, Esq.)"
+      ]
+    },
+    "fboctor@petrospharma.com": {
+      "email": "fboctor@petrospharma.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Petros Pharmaceuticals, Inc. (PTPI) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Company)",
+        "CONFIDENTIAL: Petros Pharmaceuticals, Inc. (PTPI) — Stalking Horse Carve-Out & Debt Restructuring Solution for Company"
+      ]
+    },
+    "jkrause@gibsondunn.com": {
+      "email": "jkrause@gibsondunn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Leslie's, Inc. (LESL) — Section 363 / Carve-Out Restructuring Framework (Attn: Jeffrey C. Krause, Esq.)"
+      ]
+    },
+    "jmcdonell@leslies.com": {
+      "email": "jmcdonell@leslies.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Leslie's, Inc. (LESL) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Leslie&#x2019;s Poolmart, Inc.)"
+      ]
+    },
+    "alevitsky@egsfirm.com": {
+      "email": "alevitsky@egsfirm.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Quest Patent Research Corporation (QPRC) — Section 363 / Carve-Out Restructuring Framework (Attn: Asher S. Levitsky, Esq.)",
+        "CONFIDENTIAL: Quest Patent Research Corporation (QPRC) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Quest IP Monetization & Semiconductor Portfolios LLC)"
+      ]
+    },
+    "joleary@lucoskybrookman.com": {
+      "email": "joleary@lucoskybrookman.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences, Inc. (PBIO) — Section 363 / Carve-Out Restructuring Framework (Attn: John O'Leary, Esq.)",
+        "CONFIDENTIAL: Pressure BioSciences, Inc. (PBIO) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Ultra Shear Technology (UST) Hardware & IP LLC)"
+      ]
+    },
+    "wswaim@lockelord.com": {
+      "email": "wswaim@lockelord.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Qrons Inc. (QRON) — Section 363 / Carve-Out Restructuring Framework (Attn: Bill Swaim, Esq.)"
+      ]
+    },
+    "jmeer@qrons.com": {
+      "email": "jmeer@qrons.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Qrons Inc. (QRON) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (QSight Neuro-Regenerative 3D Technologies LLC)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Qrons Inc. (QRON) — Section 363 / Carve-Out Restructuring Framework (Attn: Jonah Martin Meer, Esq.)",
+        "CONFIDENTIAL: Qrons Inc. — Aonys Platform Carve-Out & Clean Shell Rollup Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out QSight Neuro-Regenerative 3D Technologies LLC"
+      ]
+    },
+    "info@bmcgroup.com": {
+      "email": "info@bmcgroup.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "CONFIDENTIAL: LadRx Corporation (f/k/a CytRx Corporation) (LADX) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Aldoxorubicin & LADR Oncology Therapeutics LLC)",
+        "CONFIDENTIAL: LadRx Corporation (f/k/a CytRx Corporation) (LADX) — Stalking Horse Carve-Out & Debt Restructuring Solution for Aldoxorubicin & LADR Oncology Therapeutics LLC",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: LadRx Corporation (f/k/a CytRx Corporation) (LADX) — Section 363 / Carve-Out Restructuring Framework (Attn: BMC Group Corporate Operations Desk)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: LadRx Corporation (f/k/a CytRx Corporation) (LADX) — Section 363 / Carve-Out Restructuring Framework (Attn: BMC Group (Re: LadRX ABC Assignee))",
+        "FORMAL ACQUISITION INQUIRY: LadRX ABC — Aldoxorubicin & LADR Oncology Asset Purchase (Ref: LadRX ABC)"
+      ]
+    },
+    "dlubin@cronelawgroup.com": {
+      "email": "dlubin@cronelawgroup.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Zion Oil & Gas, Inc. (ZNOG) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Zion Drilling Rig 9 & Meged 5 Exploration Assets LLC)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Zion Oil & Gas, Inc. (ZNOG) — Section 363 / Carve-Out Restructuring Framework (Attn: David Lubin)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Zion Oil & Gas — Rig 9 & Meged Exploration Asset Carve-Out Proposal (Attn: David Lubin)"
+      ]
+    },
+    "scott@doneylawfirm.com": {
+      "email": "scott@doneylawfirm.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: iQSTEL Inc (IQST) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Etelix Wholesale Carrier & Global Telecom LLC)",
+        "Re: CONFIDENTIAL: iQSTEL Inc (IQST) — Stalking Horse Carve-Out & Debt Restructuring Solution for Etelix Wholesale Carrier & Global Telecom LLC",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: iQSTEL Inc (IQST) — Section 363 / Carve-Out Restructuring Framework (Attn: Scott Doney, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: iQSTEL Inc. — Etelix Wholesale Carrier Division Carve-Out Proposal"
+      ]
+    },
+    "ckhong@netlist.com": {
+      "email": "ckhong@netlist.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Netlist, Inc. (NLST) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Netlist Enterprise Memory & CXL Technologies LLC)",
+        "CONFIDENTIAL: Netlist, Inc. (NLST) — Stalking Horse Carve-Out & Debt Restructuring Solution for Netlist Enterprise Memory & CXL Technologies LLC",
+        "CONFIDENTIAL: Netlist, Inc. — Product Division Carve-Out & IP Monetization Pure-Play Optimization",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Netlist Enterprise Memory & CXL Technologies LLC"
+      ]
+    },
+    "lpowers@nwbio.com": {
+      "email": "lpowers@nwbio.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL: Northwest Biotherapeutics, Inc. (NWBO) — Dedicated Carve-Out Capital & Subsidiary Recapitalization Proposal (Sawston Advanced Cell Therapy Facility (UK) Ltd)",
+        "CONFIDENTIAL: Northwest Biotherapeutics, Inc. (NWBO) — Stalking Horse Carve-Out & Debt Restructuring Solution for Sawston Advanced Cell Therapy Facility (UK) Ltd",
+        "CONFIDENTIAL: Northwest Biotherapeutics — Sawston Manufacturing Carve-Out & Facility Recapitalization Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Sawston Advanced Cell Therapy Facility (UK) Ltd"
+      ]
+    },
+    "ceo@iqstel.com": {
+      "email": "ceo@iqstel.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Re: CONFIDENTIAL: iQSTEL Inc (IQST) — Stalking Horse Carve-Out & Debt Restructuring Solution for Etelix Wholesale Carrier & Global Telecom LLC"
+      ]
+    },
+    "ir@iqstel.com": {
+      "email": "ir@iqstel.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "Re: CONFIDENTIAL: iQSTEL Inc (IQST) — Stalking Horse Carve-Out & Debt Restructuring Solution for Etelix Wholesale Carrier & Global Telecom LLC",
+        "CONFIDENTIAL: iQSTEL Inc (IQST) — Stalking Horse Carve-Out & Debt Restructuring Solution for Etelix Wholesale Carrier & Global Telecom LLC",
+        "CONFIDENTIAL: Etelix Wholesale Carrier Division Carve-Out & Equity Multiple Optimization — iQSTEL Inc."
+      ]
+    },
+    "swhitley@whitley-llp.com": {
+      "email": "swhitley@whitley-llp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Specialitys Re: CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International, Inc. (OPTI) — Section 363 / Carve-Out Restructuring Framework (Attn: Samuel E. Whitley, Esq.)"
+      ]
+    },
+    "management@vipplay.com": {
+      "email": "management@vipplay.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: VIP Play, Inc. (VIPZ) — Stalking Horse Carve-Out & Debt Restructuring Solution for OF VIP PLAY, INC."
+      ]
+    },
+    "jlucosky@lucbro.com": {
+      "email": "jlucosky@lucbro.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: APPlife Digital Solutions Inc (ALDS) — Section 363 / Carve-Out Restructuring Framework (Attn: Joseph Lucosky, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences, Inc. (PBIO) — Section 363 / Carve-Out Restructuring Framework (Attn: Joseph Lucosky, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences — UltraShear Commercial Carve-Out & Debt Compromise (Attn: Joseph Lucosky, Esq.)"
+      ]
+    },
+    "legal@applifedigital.com": {
+      "email": "legal@applifedigital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: APPlife Digital Solutions Inc (ALDS) — Section 363 / Carve-Out Restructuring Framework (Attn: Corporate Legal Department)"
+      ]
+    },
+    "hgoldstein@skadden.com": {
+      "email": "hgoldstein@skadden.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Fortress Net Lease REIT (CIK1966394) — Section 363 / Carve-Out Restructuring Framework (Attn: Howard Goldstein, Esq.)"
+      ]
+    },
+    "legal@fortress.com": {
+      "email": "legal@fortress.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Fortress Net Lease REIT (CIK1966394) — Section 363 / Carve-Out Restructuring Framework (Attn: Legal Department)"
+      ]
+    },
+    "investors@fortressnetlease.com": {
+      "email": "investors@fortressnetlease.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Fortress Net Lease REIT (CIK1966394) — Stalking Horse Carve-Out & Debt Restructuring Solution for FNLR GP LLC"
+      ]
+    },
+    "rick.werner@haynesboone.com": {
+      "email": "rick.werner@haynesboone.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Petros Pharmaceuticals, Inc. (PTPI) — Section 363 / Carve-Out Restructuring Framework (Attn: Richard A. Werner, Esq.)"
+      ]
+    },
+    "legal@petrospharma.com": {
+      "email": "legal@petrospharma.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Petros Pharmaceuticals, Inc. (PTPI) — Section 363 / Carve-Out Restructuring Framework (Attn: Legal Department)"
+      ]
+    },
+    "barry@egsllp.com": {
+      "email": "barry@egsllp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Leslie's, Inc. (LESL) — Section 363 / Carve-Out Restructuring Framework (Attn: Barry I. Grossman, Esq.)"
+      ]
+    },
+    "legal@leslies.com": {
+      "email": "legal@leslies.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Leslie's, Inc. (LESL) — Section 363 / Carve-Out Restructuring Framework (Attn: Leslie's. In-House Legal Counsel)"
+      ]
+    },
+    "ceo@leslies.com": {
+      "email": "ceo@leslies.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Leslie's, Inc. (LESL) — Stalking Horse Carve-Out & Debt Restructuring Solution for Leslie&#x2019;s Poolmart, Inc."
+      ]
+    },
+    "afabricant@frlip.com": {
+      "email": "afabricant@frlip.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Quest Patent Research Corporation (QPRC) — Section 363 / Carve-Out Restructuring Framework (Attn: Alfred R. Fabricant, Esq.)",
+        "CONFIDENTIAL: Quest Patent Research — Senior Note Compromise & Litigation Capital Facility"
+      ]
+    },
+    "jscahill@qprc.com": {
+      "email": "jscahill@qprc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Quest Patent Research Corporation (QPRC) — Stalking Horse Carve-Out & Debt Restructuring Solution for Quest IP Monetization & Semiconductor Portfolios LLC",
+        "CONFIDENTIAL: IP Monetization Portfolio Carve-Out & Senior Debt Rollup — Quest Patent Research Corp."
+      ]
+    },
+    "pfabricant@frlip.com": {
+      "email": "pfabricant@frlip.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Quest Patent Research Corporation (QPRC) — Section 363 / Carve-Out Restructuring Framework (Attn: Peter Fabricant, Esq.)",
+        "CONFIDENTIAL: Quest Patent Research — Senior Note Compromise & Litigation Capital Facility"
+      ]
+    },
+    "alevitsky@egsllp.com": {
+      "email": "alevitsky@egsllp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Quest Patent Research Corporation (QPRC) — Section 363 / Carve-Out Restructuring Framework (Attn: Asher S. Levitsky, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Quest Patent Research — Patent Monetization Carve-Out & Senior Debt Settlement"
+      ]
+    },
+    "sbrookman@lucbro.com": {
+      "email": "sbrookman@lucbro.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences, Inc. (PBIO) — Section 363 / Carve-Out Restructuring Framework (Attn: Seth Brookman, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences — UltraShear Commercial Carve-Out & Secured Debt Settlement (Attn: Seth Brookman, Esq.)"
+      ]
+    },
+    "rschumacher@pressurebiosciences.com": {
+      "email": "rschumacher@pressurebiosciences.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences, Inc. (PBIO) — Section 363 / Carve-Out Restructuring Framework (Attn: Kevin A. Pollack, Esq.)",
+        "CONFIDENTIAL: Pressure BioSciences, Inc. (PBIO) — Stalking Horse Carve-Out & Debt Restructuring Solution for Ultra Shear Technology (UST) Hardware & IP LLC",
+        "CONFIDENTIAL: Pressure BioSciences — UltraShear Commercial Carve-Out & Senior Debt Settlement Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Ultra Shear Technology (UST) Hardware & IP LLC"
+      ]
+    },
+    "joleary@lucbro.com": {
+      "email": "joleary@lucbro.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences, Inc. (PBIO) — Section 363 / Carve-Out Restructuring Framework (Attn: John O'Leary, Esq.)",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Pressure BioSciences — UltraShear Technology Commercial Carve-Out & Debt Compromise"
+      ]
+    },
+    "bill@lockelord.com": {
+      "email": "bill@lockelord.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Qrons Inc. (QRON) — Section 363 / Carve-Out Restructuring Framework (Attn: Bill Swaim, Esq.)"
+      ]
+    },
+    "dallas@zionoil.com": {
+      "email": "dallas@zionoil.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "CONFIDENTIAL: Zion Oil & Gas, Inc. (ZNOG) — Stalking Horse Carve-Out & Debt Restructuring Solution for Zion Drilling Rig 9 & Meged 5 Exploration Assets LLC",
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Zion Oil & Gas, Inc. (ZNOG) — Section 363 / Carve-Out Restructuring Framework (Attn: William H. Avery, Esq.)",
+        "CONFIDENTIAL: Specialized Drilling Rig 9 & Meged Exploration Carve-Out Proposal — Zion Oil & Gas"
+      ]
+    },
+    "jsheasby@irell.com": {
+      "email": "jsheasby@irell.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Netlist, Inc. (NLST) — Section 363 / Carve-Out Restructuring Framework (Attn: Jason Sheasby, Esq.)",
+        "CONFIDENTIAL: Netlist, Inc. — Strategic Corporate Structure & IP Monetization Alignment (Attn: Jason Sheasby, Esq.)"
+      ]
+    },
+    "dsommers@cohenmilstein.com": {
+      "email": "dsommers@cohenmilstein.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Northwest Biotherapeutics, Inc. (NWBO) — Section 363 / Carve-Out Restructuring Framework (Attn: Daniel S. Sommers, Esq.)",
+        "CONFIDENTIAL: Northwest Biotherapeutics — Asset Realization & Recovery Coordination"
+      ]
+    },
+    "firm@gibsondunn.com": {
+      "email": "firm@gibsondunn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Northwest Biotherapeutics, Inc. (NWBO) — Section 363 / Carve-Out Restructuring Framework (Attn: Gibson, Dunn & Crutcher LLP (Securities Desk))"
+      ]
+    },
+    "info@sidley.com": {
+      "email": "info@sidley.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: CytoDyn Inc. (CYDY) — Section 363 / Carve-Out Restructuring Framework (Attn: Sidley Austin LLP (Legal Department))"
+      ]
+    },
+    "daboudi@kmclaw.com": {
+      "email": "daboudi@kmclaw.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Alpine 4 Holdings, Inc. (ALPP) — Section 363 / Carve-Out Restructuring Framework (Attn: David Aboudi, Esq.)",
+        "CONFIDENTIAL: Alpine 4 Holdings — Subsidiary Carve-Out & Senior Debt Restructuring (Attn: David Aboudi, Esq.)"
+      ]
+    },
+    "gboehmer@optecintl.com": {
+      "email": "gboehmer@optecintl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Optec International, Inc. (OPTI) — Stalking Horse Carve-Out & Debt Restructuring Solution for Optec Fuel & UV-C Technologies LLC",
+        "CONFIDENTIAL: Optec International — WeShield Asset Realization & Balance Sheet Cleanup Proposal"
+      ]
+    },
+    "restructuring@sunolp.com": {
+      "email": "restructuring@sunolp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Sunoco LP (SUN) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@globalbusinesstravel.com": {
+      "email": "restructuring@globalbusinesstravel.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Global Business Travel Group, Inc. (GBTG) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@digitalbridge.com": {
+      "email": "restructuring@digitalbridge.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: DigitalBridge Group, Inc. (DBRG) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@gettyimages.com": {
+      "email": "restructuring@gettyimages.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Getty Images Holdings, Inc. (GETY) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@aditxt.com": {
+      "email": "restructuring@aditxt.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Aditxt, Inc. (ADTX) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@columbusacquisitioncaymanislands.com": {
+      "email": "restructuring@columbusacquisitioncaymanislands.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Columbus Acquisition Corp/Cayman Islands (COLA) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@qorvo.com": {
+      "email": "restructuring@qorvo.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Qorvo, Inc. (QRVO) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@simulationsplus.com": {
+      "email": "restructuring@simulationsplus.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Simulations Plus, Inc. (SLP) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@biolifesolutions.com": {
+      "email": "restructuring@biolifesolutions.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: BIOLIFE SOLUTIONS INC (BLFS) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@yanchuang.com": {
+      "email": "restructuring@yanchuang.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: YAN CHUANG GROUP INC. (CIK2086503) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@vivic.com": {
+      "email": "restructuring@vivic.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: VIVIC CORP. (CIK1703073) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@americagreathealth.com": {
+      "email": "restructuring@americagreathealth.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: America Great Health (CIK1098009) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@treasureglobal.com": {
+      "email": "restructuring@treasureglobal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: TREASURE GLOBAL INC (CIK1905956) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@trexacquisition.com": {
+      "email": "restructuring@trexacquisition.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: T-REX Acquisition Corp. (CIK1437750) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@shreyaacquisition.com": {
+      "email": "restructuring@shreyaacquisition.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Shreya Acquisition Group (CIK2083452) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@ozvision.com": {
+      "email": "restructuring@ozvision.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: OZ VISION INC. (CIK1751707) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@okminresources.com": {
+      "email": "restructuring@okminresources.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: OKMIN RESOURCES, INC. (CIK1848334) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@nightfood.com": {
+      "email": "restructuring@nightfood.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: NightFood Holdings, Inc. (CIK1593001) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@medwellai.com": {
+      "email": "restructuring@medwellai.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: MedWellAI, Inc. (CIK1520118) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@longduoduo.com": {
+      "email": "restructuring@longduoduo.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Longduoduo Co Ltd (CIK1892316) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@integral.com": {
+      "email": "restructuring@integral.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: INTEGRAL TECHNOLOGIES INC (CIK1018281) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@ghstworld.com": {
+      "email": "restructuring@ghstworld.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: GHST World Inc. (CIK1121795) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@escalonmedical.com": {
+      "email": "restructuring@escalonmedical.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: ESCALON MEDICAL CORP (CIK862668) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@advancedbiomed.com": {
+      "email": "restructuring@advancedbiomed.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Advanced Biomed Inc. (CIK1941029) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@visium.com": {
+      "email": "restructuring@visium.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: VISIUM TECHNOLOGIES, INC. (CIK1082733) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@lunaibioworks.com": {
+      "email": "restructuring@lunaibioworks.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Lunai Bioworks Inc. (CIK1527728) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@hoopsscoutingusa.com": {
+      "email": "restructuring@hoopsscoutingusa.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: HOOPS SCOUTING USA (CIK1721056) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@global.com": {
+      "email": "restructuring@global.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: GLOBAL TECHNOLOGIES LTD (CIK932021) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@c2blockchain.com": {
+      "email": "restructuring@c2blockchain.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: C2 Blockchain, Inc. (CIK1882781) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@awaysiscapital.com": {
+      "email": "restructuring@awaysiscapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Awaysis Capital, Inc. (CIK1021917) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@texascapitalbancsharestx.com": {
+      "email": "restructuring@texascapitalbancsharestx.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: TEXAS CAPITAL BANCSHARES INC/TX (TCBI) — Percentage of Voting Securities Owned by Texas Capital Bancshares, Inc. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@theravancebiopharma.com": {
+      "email": "restructuring@theravancebiopharma.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Theravance Biopharma, Inc. (TBPH) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@inflectionpointacquisitionv.com": {
+      "email": "restructuring@inflectionpointacquisitionv.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Inflection Point Acquisition Corp. V (IPEX) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@zeoscientifix.com": {
+      "email": "restructuring@zeoscientifix.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Zeo ScientifiX, Inc. (ZEOX) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@brightlineinteractivenv.com": {
+      "email": "restructuring@brightlineinteractivenv.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Brightline Interactive, Inc./NV (BTLN) — BLI, LLC Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@transcode.com": {
+      "email": "restructuring@transcode.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Transcode Therapeutics, Inc. (RNAZ) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@usacompressionpartnerslp.com": {
+      "email": "restructuring@usacompressionpartnerslp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: USA Compression Partners, LP (USAC) — USA Compression Finance Corp., a Delaware corporation Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@barinthusbio.com": {
+      "email": "restructuring@barinthusbio.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Barinthus Biotherapeutics plc. (BRNS) — Vaccitech Oncology Limited Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@energytransferlp.com": {
+      "email": "restructuring@energytransferlp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Energy Transfer LP (ET) — 5555 San Felipe LLC Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@skydance.com": {
+      "email": "restructuring@skydance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Skydance Corp (SKYD) — 0553394 B.C. Ltd. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@dillards.com": {
+      "email": "restructuring@dillards.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: DILLARD'S, INC. (DDS) — Condev Nevada, Inc. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@warnerbrosdiscovery.com": {
+      "email": "restructuring@warnerbrosdiscovery.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Warner Bros. Discovery, Inc. (WBD) — &#34;Zilpzalp&#34; Verm&#246;gensverwaltung GmbH Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@dalradatechnology.com": {
+      "email": "restructuring@dalradatechnology.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Dalrada Technology Group, Inc. (DHTI) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@haincelestial.com": {
+      "email": "restructuring@haincelestial.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: HAIN CELESTIAL GROUP INC (HAIN) — Acirca, Inc. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@bionenvironmental.com": {
+      "email": "restructuring@bionenvironmental.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: BION ENVIRONMENTAL TECHNOLOGIES INC (BNET) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@cambiumnetworks.com": {
+      "email": "restructuring@cambiumnetworks.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Cambium Networks Corp (CMBMF) — Section 363 Stalking Horse & Operating Business Unit Carve-Out Solution"
+      ]
+    },
+    "restructuring@lumen.com": {
+      "email": "restructuring@lumen.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Lumen Technologies, Inc. (LUMN) — LUMEN TECHNOLOGIES, INC. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@protopiaglobal.com": {
+      "email": "restructuring@protopiaglobal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Protopia Global Holdings Inc. (CIK1959585) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@cavitation.com": {
+      "email": "restructuring@cavitation.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Cavitation Technologies, Inc. (CVAT) — Operating Business Unit Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@ataibeckley.com": {
+      "email": "restructuring@ataibeckley.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: AtaiBeckley Inc. (ATAI) — atai Life Sciences US, Inc. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@greenlane.com": {
+      "email": "restructuring@greenlane.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Greenlane Holdings, Inc. (GNLN) — Section 363 Stalking Horse & Logistics B.V. Carve-Out Solution"
+      ]
+    },
+    "restructuring@sangamo.com": {
+      "email": "restructuring@sangamo.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: SANGAMO THERAPEUTICS, INC (SGMOQ) — Section 363 Stalking Horse & Operating Business Unit Carve-Out Solution"
+      ]
+    },
+    "restructuring@novaminerals.com": {
+      "email": "restructuring@novaminerals.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Nova Minerals Corp (NVA) — Pty Ltd, an Australian corporation Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@karyopharm.com": {
+      "email": "restructuring@karyopharm.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Karyopharm Therapeutics Inc. (KPTI) — Karyopharm Europe GmbH Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@singularityfuturetechnology.com": {
+      "email": "restructuring@singularityfuturetechnology.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Singularity Future Technology Ltd. (SGLY) — Sino-Global Shipping New York Inc. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@ipower.com": {
+      "email": "restructuring@ipower.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: iPower Inc. (IPW) — Company Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@vipplay.com": {
+      "email": "restructuring@vipplay.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: VIP Play, Inc. (VIPZ) — OF VIP PLAY, INC. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@applifedigitalsolutions.com": {
+      "email": "restructuring@applifedigitalsolutions.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: APPlife Digital Solutions Inc (ALDS) — Sugar Auto Parts, Inc. Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@fortressnetleasereit.com": {
+      "email": "restructuring@fortressnetleasereit.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Fortress Net Lease REIT (CIK1966394) — FNLR GP LLC Asset Carve-Out & Balance Sheet Optimization"
+      ]
+    },
+    "restructuring@petros.com": {
+      "email": "restructuring@petros.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Petros Pharmaceuticals, Inc. (PTPI) — Section 363 Stalking Horse & Company Carve-Out Solution"
+      ]
+    },
+    "restructuring@leslies.com": {
+      "email": "restructuring@leslies.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: Leslie's, Inc. (LESL) — Section 363 Stalking Horse & Leslie&#x2019;s Poolmart, Inc. Carve-Out Solution"
+      ]
+    },
+    "russ.krajec@blueironip.com": {
+      "email": "russ.krajec@blueironip.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "Re: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)",
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "doc@onli.ai": {
+      "email": "doc@onli.ai",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Fwd: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)",
+        "EXAMPLEFwd: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mariah@theonlicorporation.com": {
+      "email": "mariah@theonlicorporation.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Fwd: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "doc@onli.one": {
+      "email": "doc@onli.one",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Fwd: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)",
+        "EXAMPLEFwd: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jrmun@msn.com": {
+      "email": "jrmun@msn.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Irvine housing app",
+        "Here are the builds and what I search for each day"
+      ]
+    },
+    "drees@vincentrees.com": {
+      "email": "drees@vincentrees.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Re: TWSI"
+      ]
+    },
+    "robin@frei-dentistry.com": {
+      "email": "robin@frei-dentistry.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Re: Dental Appointment"
+      ]
+    },
+    "david.sabow@us.hsbc.com": {
+      "email": "david.sabow@us.hsbc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "Re: EXTERNAL: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)",
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mbalkin@horizontechfinance.com": {
+      "email": "mbalkin@horizontechfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Re: CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)",
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "craig.packer@blueowl.com": {
+      "email": "craig.packer@blueowl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "erik.bissonnette@blueowl.com": {
+      "email": "erik.bissonnette@blueowl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "skuo@htgc.com": {
+      "email": "skuo@htgc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mmorrissette@northatlanticcapital.com": {
+      "email": "mmorrissette@northatlanticcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "irtslx@sixthstreet.com": {
+      "email": "irtslx@sixthstreet.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "bstanley@sixthstreet.com": {
+      "email": "bstanley@sixthstreet.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "info@sixthstreet.com": {
+      "email": "info@sixthstreet.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "creditir@aresmgmt.com": {
+      "email": "creditir@aresmgmt.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "techcredit@blueowl.com": {
+      "email": "techcredit@blueowl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "rpomeroy@horizontechfinance.com": {
+      "email": "rpomeroy@horizontechfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "rkundich@trinitycap.com": {
+      "email": "rkundich@trinitycap.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "kbrown@trinitycap.com": {
+      "email": "kbrown@trinitycap.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "cfaloppa@htgc.com": {
+      "email": "cfaloppa@htgc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "russ@blueironip.com": {
+      "email": "russ@blueironip.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "ipsolutions@aon.com": {
+      "email": "ipsolutions@aon.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "brian.hinman@aon.com": {
+      "email": "brian.hinman@aon.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "privatewealth@fortress.com": {
+      "email": "privatewealth@fortress.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "info@ipcg.com": {
+      "email": "info@ipcg.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "scott.peters@bancofcal.com": {
+      "email": "scott.peters@bancofcal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "katherine.andersen@us.hsbc.com": {
+      "email": "katherine.andersen@us.hsbc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mmorris@northatlanticcapital.com": {
+      "email": "mmorris@northatlanticcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "totte@whiteoaksf.com": {
+      "email": "totte@whiteoaksf.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "gcashman@golubcapital.com": {
+      "email": "gcashman@golubcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mhorvath@sixthstreet.com": {
+      "email": "mhorvath@sixthstreet.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "maffolter@aresmgmt.com": {
+      "email": "maffolter@aresmgmt.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "dtrolio@horizontechfinance.com": {
+      "email": "dtrolio@horizontechfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "amy.olah@cibc.com": {
+      "email": "amy.olah@cibc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "dwanek@westerntech.com": {
+      "email": "dwanek@westerntech.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jbrown@westernalliancebank.com": {
+      "email": "jbrown@westernalliancebank.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "ggreifeld@runwaygrowth.com": {
+      "email": "ggreifeld@runwaygrowth.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "noah@vistaragrowth.com": {
+      "email": "noah@vistaragrowth.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "kharbour@oxfordfinance.com": {
+      "email": "kharbour@oxfordfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "kmcgowan@montagepartners.com": {
+      "email": "kmcgowan@montagepartners.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "smeyer@htgc.com": {
+      "email": "smeyer@htgc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "ssrivastava@triplepointcapital.com": {
+      "email": "ssrivastava@triplepointcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "rkundich@trincapinvestment.com": {
+      "email": "rkundich@trincapinvestment.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jobrien@fortress.com": {
+      "email": "jobrien@fortress.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "info@sorynipcap.com": {
+      "email": "info@sorynipcap.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mlederman@westernalliancebank.com": {
+      "email": "mlederman@westernalliancebank.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "rhernandez@comerica.com": {
+      "email": "rhernandez@comerica.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "randy@vistaragrowth.com": {
+      "email": "randy@vistaragrowth.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mark.hughes@bancofcal.com": {
+      "email": "mark.hughes@bancofcal.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "rwolfman@montagepartners.com": {
+      "email": "rwolfman@montagepartners.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "dcoit@northatlanticcapital.com": {
+      "email": "dcoit@northatlanticcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "ahakkak@whiteoaksf.com": {
+      "email": "ahakkak@whiteoaksf.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "lgolub@golubcapital.com": {
+      "email": "lgolub@golubcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jpeck@sixthstreet.com": {
+      "email": "jpeck@sixthstreet.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "kdeveer@aresmgmt.com": {
+      "email": "kdeveer@aresmgmt.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "lukas.spiss@blueowl.com": {
+      "email": "lukas.spiss@blueowl.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "paul.mckinlay@cibc.com": {
+      "email": "paul.mckinlay@cibc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "gsimon@comerica.com": {
+      "email": "gsimon@comerica.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mcadieux@svb.com": {
+      "email": "mcadieux@svb.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "aszafranski@oxfordfinance.com": {
+      "email": "aszafranski@oxfordfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "dspreng@runwaygrowth.com": {
+      "email": "dspreng@runwaygrowth.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jlabe@triplepointcapital.com": {
+      "email": "jlabe@triplepointcapital.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mwerdegar@westerntech.com": {
+      "email": "mwerdegar@westerntech.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "info@horizontechfinance.com": {
+      "email": "info@horizontechfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "kbrown@trincapinvestment.com": {
+      "email": "kbrown@trincapinvestment.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "intellectualproperty@aon.com": {
+      "email": "intellectualproperty@aon.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "sbluestein@htgc.com": {
+      "email": "sbluestein@htgc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jcronin@ipcg.com": {
+      "email": "jcronin@ipcg.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "mgulliford@sorynipcap.com": {
+      "email": "mgulliford@sorynipcap.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "ezur@fortress.com": {
+      "email": "ezur@fortress.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "jbastable@montagepartners.com": {
+      "email": "jbastable@montagepartners.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "paul.fuellemann@cibc.com": {
+      "email": "paul.fuellemann@cibc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "pszekely@comerica.com": {
+      "email": "pszekely@comerica.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "kwitmer@oxfordfinance.com": {
+      "email": "kwitmer@oxfordfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "gmichaud@horizontechfinance.com": {
+      "email": "gmichaud@horizontechfinance.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "lewis.lee@aon.com": {
+      "email": "lewis.lee@aon.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL // $30M Senior Secured Credit Facility — OnliBitcoin Granted U.S. Patent Estate (6.5%–8.8% LTV // $340–460M Valuation)"
+      ]
+    },
+    "noreply@post.applecard.apple": {
+      "email": "noreply@post.applecard.apple",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Re: How did it go with Apple Card support?"
+      ]
+    },
+    "stevemillslaw@gmail.com": {
+      "email": "stevemillslaw@gmail.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "LIEN please read as it reflects AZ did you find that document",
+        "Is it too late to have you put a lien on the cars today"
+      ]
+    },
+    "support@addiesdivewatches.com": {
+      "email": "support@addiesdivewatches.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 4,
+      "subjects": [
+        "Re: PLEASE HELP Fwd: order 8214532750200207 problem",
+        "order 8214532750200207 problem",
+        "PLEASE HELP Fwd: order 8214532750200207 problem"
+      ]
+    },
+    "denvertrad@aol.com": {
+      "email": "denvertrad@aol.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "Fwd: Pool Closure and Temporary Parking Space Restrictions",
+        "Fwd: Please secure your appointment on Sat, Oct 31 at 10:00 AM by paying a deposit",
+        "Fwd: About Those Boots You Wanted…"
+      ]
+    },
+    "todd@frontfourmanagement.com": {
+      "email": "todd@frontfourmanagement.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 5,
+      "subjects": [
+        "Fwd: CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Healthier Choices Management — Grocery Subsidiary Carve-Out & IP Monetization Solution",
+        "Fwd: CONFIDENTIAL / FOR TRANSMISSION TO BOARD: SinglePoint Inc. — Solar Operating Asset Carve-Out & Debt Restructuring Proposal",
+        "READ THIS:Fwd: CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Healthier Choices Management — Grocery Subsidiary Carve-Out & IP Monetization Solution",
+        "Link"
+      ]
+    },
+    "pfabricant@fabricantllp.com": {
+      "email": "pfabricant@fabricantllp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Quest Patent Research — Litigation Finance & Monetization Escrow Coordination"
+      ]
+    },
+    "bburningham@burninghamlawgroup.com": {
+      "email": "bburningham@burninghamlawgroup.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Regen BioPharma — Oncology Patent Estate Monetization & Restructuring Proposal"
+      ]
+    },
+    "jholman@healthiercmc.com": {
+      "email": "jholman@healthiercmc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL: HCMC — Retail Grocery Subsidiary Carve-Out & IP Pure-Play Unlocking Proposal",
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Ada's Natural Market & Wellness Centers LLC"
+      ]
+    },
+    "swhitley@whitleyllp.com": {
+      "email": "swhitley@whitleyllp.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Optec International — Operating Carve-Out & Noteholder Settlement Proposal"
+      ]
+    },
+    "gcoleman@taptechnologies.io": {
+      "email": "gcoleman@taptechnologies.io",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: TAP Real Estate Technologies — Legal & Debt Workout Structure"
+      ]
+    },
+    "ghopkins@taptechnologies.io": {
+      "email": "ghopkins@taptechnologies.io",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "CONFIDENTIAL: Strategic Capital & Debt Restructuring Proposal — TAP Real Estate Technologies"
+      ]
+    },
+    "daboudi@cronelawgroup.com": {
+      "email": "daboudi@cronelawgroup.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "CONFIDENTIAL / FOR TRANSMISSION TO BOARD: Zion Oil & Gas — Rig 9 & Meged Exploration Asset Carve-Out Proposal (Attn: David Aboudi, Esq.)"
+      ]
+    },
+    "jharris@qprc.com": {
+      "email": "jharris@qprc.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Quest IP Monetization & Semiconductor Portfolios LLC"
+      ]
+    },
+    "ssnowdy@cytrx.com": {
+      "email": "ssnowdy@cytrx.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Aldoxorubicin & LADR Oncology Therapeutics LLC"
+      ]
+    },
+    "rnettles@zionoil.com": {
+      "email": "rnettles@zionoil.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Zion Drilling Rig 9 & Meged 5 Exploration Assets LLC"
+      ]
+    },
+    "liglesias@iqstel.com": {
+      "email": "liglesias@iqstel.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Etelix Wholesale Carrier & Global Telecom LLC"
+      ]
+    },
+    "bfoote@humblpay.com": {
+      "email": "bfoote@humblpay.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out HUMBL Mobile Payments & Ticketing LLC"
+      ]
+    },
+    "jhail@alpine4.com": {
+      "email": "jhail@alpine4.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Confidential: Proposal to Relieve Parent Overhead & Carve Out Alpine 4 / Vayu Aerospace & Quality Circuit Assembly LLC"
+      ]
+    },
+    "mchester@mdclawyers.com": {
+      "email": "mchester@mdclawyers.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 3,
+      "subjects": [
+        "Fwd: Japanese Sword Catalogue 47",
+        "Antiquities Initial breakdown",
+        "Re: New Matter"
+      ]
+    },
+    "turnerjj899@yahoo.com": {
+      "email": "turnerjj899@yahoo.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Interesting always on unsolicited offers oh home in Maryland",
+        "Claudia Watch this on the largest We Buy Ugly Houses franchises going to prison for 15 years"
+      ]
+    },
+    "az05ab.outreach@mail.house.gov": {
+      "email": "az05ab.outreach@mail.house.gov",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 1,
+      "subjects": [
+        "Re: Newsletter: The Biggs Idea"
+      ]
+    },
+    "info@previewfreemovies.com": {
+      "email": "info@previewfreemovies.com",
+      "firstSent": "2026-10-09",
+      "lastSent": "2026-10-09",
+      "count": 2,
+      "subjects": [
+        "Re: REMINDER: A Hundred Percent focus group is coming up!"
+      ]
+    }
+  }
+}

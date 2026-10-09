@@ -1220,11 +1220,11 @@ const rawTargets: TargetCompany[] = [
       {
         "id": "c-sing-counsel",
         "name": "Stephen E. Older, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "title": "Outside Securities Counsel (McGuireWoods LLP) [PERMANENT OPT-OUT / DO NOT CONTACT]",
         "entity": "Legal Counsel",
         "email": "solder@mcguirewoods.com",
         "phone": "(212) 548-2122",
-        "roleSummary": "Lead securities partner advising SinglePoint on SEC filings, debt restructuring, and OTC compliance.",
+        "roleSummary": "CRITICAL: Opt-out / stop request received 2026-10-09. Recipient and firm mcguirewoods.com globally suppressed. ZERO OUTREACH PERMITTED.",
         "receptivityScore": "very_high"
       },
       {
@@ -1264,6 +1264,12 @@ const rawTargets: TargetCompany[] = [
       "lastContactDate": "2026-10-09",
       "nextFollowUpDate": "2026-10-14",
       "notes": [
+        {
+          "id": "note-sing-mcguirewoods-opt-out-20261009",
+          "date": "2026-10-09",
+          "author": "Eric Miller (Compliance & Legal Operations)",
+          "text": "CRITICAL DO NOT CONTACT / OPT-OUT ENFORCED: Stephen E. Older, Esq. and McGuireWoods LLP requested stop on Oct 9, 2026. Permanent firm-wide suppression active on mcguirewoods.com across all systems. Zero outbound communications permitted."
+        },
         {
           "id": "note-sing-csuite-legal-audit-20261009",
           "date": "2026-10-09",
@@ -1308,6 +1314,12 @@ const rawTargets: TargetCompany[] = [
         }
       ],
       "activities": [
+        {
+          "id": "act-sing-opt-out-20261009",
+          "date": "2026-10-09",
+          "type": "email",
+          "summary": "OPT-OUT RECORDED: Recipient Stephen E. Older (McGuireWoods) requested stop. Global suppression list updated and hard blocked."
+        },
         {
           "id": "act-sing-dispatch-20261009",
           "date": "2026-10-09",
@@ -14257,12 +14269,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1721056-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing HOOPS SCOUTING USA in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -22944,12 +22956,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1943802-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing First Seacoast Bancorp, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -31518,12 +31530,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1839285-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing Healthcare Triangle, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -40034,12 +40046,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1425627-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing SOBR Safe, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -48605,12 +48617,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-2029014-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing Mercalot Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -57099,12 +57111,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1934479-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing CarMax Auto Owner Trust 2022-3 in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -66231,12 +66243,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1796898-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing Maxeon Solar Technologies, Ltd. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -74715,12 +74727,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1752360-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing Sasol Financing USA LLC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -83185,12 +83197,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1814215-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing Nuburu, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -91775,12 +91787,12 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1934245-outside-counsel",
-        "name": "Douglas M. Foley, Esq.",
-        "title": "Outside Securities Counsel (McGuireWoods LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "dfoley@mcguirewoods.com",
-        "phone": "(212) 548-2100",
-        "address": "1251 Avenue of the Americas, New York, NY 10020",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
         "roleSummary": "Lead outside securities and restructuring partner representing Newton Golf Company, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
