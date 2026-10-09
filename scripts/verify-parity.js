@@ -1,6 +1,7 @@
 /**
  * Automated Prebuild Parity & Thesis Verification Guard
  * Enforces thesis gates, sourced provenance, ZNOG/NLST corrections, and score discrimination.
+ * Asserts all 18 seed tickers are retained.
  */
 
 const fs = require('fs');
@@ -16,9 +17,14 @@ if (!jsonMatch) {
 
 const targets = JSON.parse(jsonMatch[1]);
 
-if (targets.length !== 18) {
-  console.error(`FATAL [prebuild]: Expected 18 targets, found ${targets.length}`);
-  process.exit(1);
+// 18 Seed Tickers that must always be present
+const SEED_TICKERS = ["XELA","RWAX","OPTI","ALPP","SING","PHIL","HCMC","OZSC","RGBP","CYDY","NWBO","NLST","IQST","ZNOG","LADX","QRON","PBIO","QPRC"];
+
+for (const st of SEED_TICKERS) {
+  if (!targets.some(t => t.ticker === st)) {
+    console.error(`FATAL [prebuild]: Seed ticker ${st} was dropped from targets`);
+    process.exit(1);
+  }
 }
 
 // 1. Dual filing availability & Sourced Provenance (No analyst_estimate)
@@ -113,6 +119,7 @@ if (spread < 50) {
 }
 
 console.log(`✓ [prebuild]: Thesis, Gates & Recalibrated Parity assertions passed.`);
+console.log(`  - All ${SEED_TICKERS.length} seed tickers verified present.`);
 console.log(`  - Targets: ${targets.length}`);
 console.log(`  - Score Spread: Min ${minRoi} to Max ${maxRoi} (Spread: ${spread} pts)`);
 console.log(`  - Disqualified Current Filers: ${currentFilerTickers.join(', ')}`);

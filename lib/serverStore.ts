@@ -2,34 +2,84 @@ import fs from "fs";
 import path from "path";
 import { TargetCompany, CrmStage, PriorityLevel, ExecutiveContact, CrmActivity, CrmNote } from "./types";
 import { INITIAL_TARGETS } from "./data/targets";
+import { mergeSeedAndIngestedTargets } from "./pipeline/universe";
+import { withLiveClock } from "./pipeline/clock";
 
 const TMP_FILE = "/tmp/asset_liberator_targets_store.json";
+const INGESTED_DATA_PATH = path.resolve(process.cwd(), "data/ingested-targets.json");
 
 // Global in-memory cache across serverless warm invocations
 declare global {
   var __asset_liberator_targets: TargetCompany[] | undefined;
 }
 
+/**
+ * Loads ingested records from data/ingested-targets.json statically from server code only.
+ */
+function loadIngestedTargets(): TargetCompany[] {
+  try {
+    if (fs.existsSync(INGESTED_DATA_PATH)) {
+      const raw = fs.readFileSync(INGESTED_DATA_PATH, "utf-8");
+      const parsed = JSON.parse(raw);
+      if (parsed && Array.isArray(parsed.targets)) {
+        return parsed.targets as TargetCompany[];
+      }
+    }
+  } catch (err) {
+    console.warn("Failed to load data/ingested-targets.json, using seed-only targets:", err);
+  }
+  return [];
+}
+
+/**
+ * Returns seeds plus ingested records.
+ * Dedupe by CIK with leading zeros stripped. The seed wins, but append the
+ * ingested signals to the seed's vehicleDistress.secTriggers.
+ */
 export function getServerTargets(): TargetCompany[] {
+  const now = new Date();
+
+  // If in-memory cache is present and has targets, return with live clocks
   if (globalThis.__asset_liberator_targets && Array.isArray(globalThis.__asset_liberator_targets) && globalThis.__asset_liberator_targets.length > 0) {
-    return globalThis.__asset_liberator_targets;
+    return globalThis.__asset_liberator_targets.map((t) => withLiveClock(t, now));
   }
 
+  // Check /tmp cache for any server mutations
+  let tmpTargets: TargetCompany[] | null = null;
   try {
     if (fs.existsSync(TMP_FILE)) {
       const raw = fs.readFileSync(TMP_FILE, "utf-8");
       const parsed = JSON.parse(raw);
       if (Array.isArray(parsed) && parsed.length > 0) {
-        globalThis.__asset_liberator_targets = parsed;
-        return parsed;
+        tmpTargets = parsed;
       }
     }
   } catch (err) {
-    console.error("Failed to read server store file, falling back to INITIAL_TARGETS", err);
+    console.warn("Failed to read server store file:", err);
   }
 
-  globalThis.__asset_liberator_targets = [...INITIAL_TARGETS];
-  return globalThis.__asset_liberator_targets;
+  const ingested = loadIngestedTargets();
+  const mergedBase = mergeSeedAndIngestedTargets(INITIAL_TARGETS, ingested);
+
+  if (tmpTargets && tmpTargets.length > 0) {
+    // Overlay server modifications
+    const updated = mergedBase.map((base) => {
+      const match = tmpTargets!.find((p) => p.id === base.id || (p.ticker && p.ticker.toUpperCase() === base.ticker.toUpperCase()));
+      if (match) {
+        return {
+          ...base,
+          contacts: match.contacts && match.contacts.length > 0 ? match.contacts : base.contacts,
+          crm: match.crm || base.crm,
+        };
+      }
+      return base;
+    });
+    globalThis.__asset_liberator_targets = updated;
+    return updated.map((t) => withLiveClock(t, now));
+  }
+
+  globalThis.__asset_liberator_targets = mergedBase;
+  return mergedBase.map((t) => withLiveClock(t, now));
 }
 
 export function saveServerTargets(targets: TargetCompany[]): void {
@@ -53,7 +103,6 @@ export function updateServerTargetContact(targetId: string, updatedContact: Exec
       if (exists) {
         newContacts = t.contacts.map((c) => (c.id === updatedContact.id ? updatedContact : c));
       } else {
-        // If updating a contact that had a generated ID or was primary
         newContacts = [updatedContact, ...t.contacts.slice(1)];
       }
 

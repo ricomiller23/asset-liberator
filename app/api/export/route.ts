@@ -1,16 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
-import { INITIAL_TARGETS } from "@/lib/data/targets";
+import { getServerTargets } from "@/lib/serverStore";
+import { withLiveClock } from "@/lib/pipeline/clock";
 import Papa from "papaparse";
 
+export const dynamic = "force-dynamic";
+
 export async function GET(req: NextRequest) {
+  const now = new Date();
+  const allTargets = getServerTargets().map((t) => withLiveClock(t, now));
   const { searchParams } = new URL(req.url);
   const format = searchParams.get("format") || "csv";
 
   if (format === "json") {
-    return NextResponse.json(INITIAL_TARGETS);
+    return NextResponse.json(allTargets);
   }
 
-  const flattened = INITIAL_TARGETS.map((t) => ({
+  const flattened = allTargets.map((t) => ({
     Ticker: t.ticker,
     Company_Name: t.name,
     Tier: t.tier,

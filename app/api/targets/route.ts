@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerTargets } from "@/lib/serverStore";
 import { TargetCompany } from "@/lib/types";
+import { withLiveClock } from "@/lib/pipeline/clock";
 
 export const dynamic = "force-dynamic";
 
@@ -23,14 +24,19 @@ export async function GET(req: NextRequest) {
   const crmStage = searchParams.get("crmStage");
   const sortBy = searchParams.get("sortBy") || "roi";
 
-  const allTargets = getServerTargets();
+  const limitParam = searchParams.get("limit");
+  const offsetParam = searchParams.get("offset");
+  const limit = limitParam ? Math.max(1, parseInt(limitParam, 10)) : undefined;
+  const offset = offsetParam ? Math.max(0, parseInt(offsetParam, 10)) : 0;
+
+  const now = new Date();
+  const allTargets = getServerTargets().map((t) => withLiveClock(t, now));
   let results: TargetCompany[] = [...allTargets];
 
   // Default behavior: unless specifically requesting 'disqualified' or 'all', hide disqualified filers from active screener
   if (tier && tier !== "all") {
     results = results.filter((t) => t.tier === tier);
   } else if (!tier) {
-    // By default, exclude disqualified current filers from core screener unless filter is set to all
     results = results.filter((t) => t.tier !== "disqualified");
   }
 
@@ -115,24 +121,35 @@ export async function GET(req: NextRequest) {
     return 0;
   });
 
+  const totalFilteredCount = results.length;
+  const paginatedResults = limit !== undefined ? results.slice(offset, offset + limit) : results;
+
   // Calculate aggregates
   const totalSubsidiaryRevenue = results.reduce((acc, t) => acc + t.asset.annualRevenue, 0);
   const totalSeniorDebt = results.reduce((acc, t) => acc + t.extractionFeasibility.seniorSecuredDebtAmount, 0);
   const totalToxicDebtExtinguished = results.reduce((acc, t) => acc + t.vehicleDistress.toxicDebtBalance, 0);
   const totalContacts = results.reduce((acc, t) => acc + t.contacts.length, 0);
 
-  // Funnel Gate statistics across all targets
+  // Funnel Gate statistics across all targets in universe
   const allVerifiedCount = allTargets.filter((t) => t.tier === "verified").length;
   const allScreenedCount = allTargets.filter((t) => t.tier === "screened").length;
   const allRadarCount = allTargets.filter((t) => t.tier === "radar").length;
   const allDisqualifiedCount = allTargets.filter((t) => t.tier === "disqualified").length;
 
   return NextResponse.json({
-    targets: results,
+    targets: paginatedResults,
     meta: {
-      total: results.length,
+      total: totalFilteredCount,
       allTotal: allTargets.length,
+      offset,
+      limit,
       tiers: {
+        verified: allVerifiedCount,
+        screened: allScreenedCount,
+        radar: allRadarCount,
+        disqualified: allDisqualifiedCount,
+      },
+      tierCounts: {
         verified: allVerifiedCount,
         screened: allScreenedCount,
         radar: allRadarCount,
