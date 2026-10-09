@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T20:05:22.175Z",
+  "updatedAt": "2026-10-09T20:51:45.398Z",
   "description": "Global permanent suppression and opt-out registry. Hard block enforced at runtime before any email transmission.",
   "suppressedEmails": [
     "solder@mcguirewoods.com",
@@ -7,11 +7,17 @@
     "jkrause@gibsondunn.com",
     "firm@gibsondunn.com",
     "securities@gibsondunn.com",
-    "mgibson@gibsondunn.com"
+    "mgibson@gibsondunn.com",
+    "swhitley@whitleylawgroup.com",
+    "swhitley@whitley-llp.com",
+    "swhitley@whitleyllp.com"
   ],
   "suppressedDomains": [
     "mcguirewoods.com",
-    "gibsondunn.com"
+    "gibsondunn.com",
+    "whitleylawgroup.com",
+    "whitley-llp.com",
+    "whitleyllp.com"
   ],
   "optOutLog": [
     {
@@ -28,6 +34,17 @@
       "recipient": "Gibson, Dunn & Crutcher LLP (333 South Grand Avenue, Los Angeles, CA 90071-3197)",
       "requestDate": "2026-10-09T20:05:22.174Z",
       "reason": "Firm-wide exclusion requested by leadership: Gibson, Dunn & Crutcher LLP. Permanent domain-wide suppression active."
+    },
+    {
+      "email": "swhitley@whitley-llp.com",
+      "domains": [
+        "whitleylawgroup.com",
+        "whitley-llp.com",
+        "whitleyllp.com"
+      ],
+      "recipient": "Samuel E. Whitley, Esq. (Managing Partner, Whitley Law Group / Whitley LLP)",
+      "requestDate": "2026-10-09T20:51:45.397Z",
+      "reason": "Notice received 2026-10-09: Managing Partner Samuel Whitley explicitly stated they do not represent Optec International, Inc. Permanent domain-wide suppression active across whitleylawgroup.com, whitley-llp.com, and whitleyllp.com."
     }
   ]
 }

@@ -654,14 +654,15 @@ const rawTargets: TargetCompany[] = [
         "receptivityScore": "high"
       },
       {
-        "id": "c-opti-whitley",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "id": "c-opti-puzzo-outside",
+        "name": "Thomas E. Puzzo, Esq.",
+        "title": "Outside Securities Counsel (Law Offices of Thomas E. Puzzo, PLLC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "roleSummary": "Outside securities counsel representing Optec on OTC Markets compliance and SEC filings.",
-        "receptivityScore": "very_high"
+        "email": "tpuzzo@puzzolaw.com",
+        "phone": "(206) 522-2256",
+        "roleSummary": "Outside securities counsel of record passing on SEC reporting, OTC Markets disclosures, and corporate restructuring actions.",
+        "receptivityScore": "very_high",
+        "address": "4216 NE 70th Street, Seattle, WA 98115"
       },
       {
         "id": "c-opti-cfo",
@@ -685,10 +686,10 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-opti-gc",
-        "name": "Thomas E. Puzzo, Esq.",
+        "name": "Richard P. Brand, Esq.",
         "title": "In-House Corporate Counsel",
         "entity": "Public Parent",
-        "email": "tpuzzo@optecintl.com",
+        "email": "rbrand@optecintl.com",
         "phone": "(760) 444-5566",
         "roleSummary": "Corporate counsel managing regulatory filings, contracts, and legal liabilities.",
         "receptivityScore": "very_high"
@@ -701,84 +702,30 @@ const rawTargets: TargetCompany[] = [
       "nextFollowUpDate": "2026-10-14",
       "notes": [
         {
-          "id": "note-opti-csuite-legal-audit-20261009",
+          "id": "note-opti-compliance-20261009",
+          "date": "2026-10-09",
+          "author": "Deal Desk & Compliance Operations",
+          "text": "COMPLIANCE NOTICE: Confirmed Whitley Law Group does not represent Optec International, Inc. Samuel E. Whitley / Whitley Law Group globally suppressed and purged from OPTI. Outside securities counsel of record updated to Thomas E. Puzzo, Esq. (Law Offices of Thomas E. Puzzo, PLLC)."
+        },
+        {
+          "id": "note-opti-csuite-audit-20261009",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full 5-member C-Suite and legal counsel roster authenticated (CEO, CFO, COO, General Counsel, Outside Securities Counsel). Personalized carve-out transaction proposal dispatched."
-        },
-        {
-          "id": "note-opti-optec-csuite-legal-audit",
-          "date": "2026-10-09",
-          "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Samuel E. Whitley, Esq., Samuel E. Whitley, Esq.) and legal counsel (Samuel E. Whitley, Esq.). Delivery receipts active."
-        },
-        {
-          "id": "note-opti-bounce-res-2026-10-07",
-          "date": "2026-10-07",
-          "author": "Special Situations Desk",
-          "text": "Resolved bounce: Dispatched carve-out and noteholder settlement proposal to outside securities counsel Samuel E. Whitley at verified firm domain swhitley@whitleylawgroup.com."
-        },
-        {
-          "id": "note-opti-outbound-20261007",
-          "date": "2026-10-07",
-          "author": "Eric Miller (Outbound Dispatch)",
-          "text": "Dispatched personalized carve-out proposals to CEO Gregg Boehmer, founder Roger Pawson, and outside counsel Samuel Whitley (Whitley LLP) via Apple Mail from ricomiller@icloud.com."
-        },
-        {
-          "id": "note-opti-legal-2026",
-          "date": "2026-10-06",
-          "author": "Legal & Deal Desk",
-          "text": "Added outside securities counsel Samuel E. Whitley, Esq. at Whitley LLP ((281) 206-0433, Katy TX) and added current CEO Gregg Boehmer alongside founder Roger Pawson ((760) 444-5566)."
-        },
-        {
-          "id": "note-opti-today-1",
-          "date": "2026-10-05",
-          "author": "Special Situations Desk",
-          "text": "Dispatched customized carve-out proposal email to Roger Pawson <rpawson@optecintl.com> with senior debt resolution and clean shell rollup terms."
-        },
-        {
-          "id": "n1",
-          "date": "2026-09-28",
-          "author": "Analyst",
-          "text": "Confirmed Expert Market listing on OTC Markets. Verified 10-K archive link on SEC EDGAR."
-        },
-        {
-          "id": "note-opti-optec-enrich-csuite-legal-20261009",
-          "date": "2026-10-09",
-          "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Ellenoff Grossman & Schole LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full 5-member executive leadership and legal roster verified: Roger Pawson (CEO), David C. Rendina (CFO), Peter Perez (VP Operations), Richard P. Brand, Esq. (In-House Counsel), Thomas E. Puzzo, Esq. (Outside Securities Counsel)."
         }
       ],
       "activities": [
         {
-          "id": "act-opti-dispatch-20261009",
+          "id": "act-opti-compliance-20261009",
           "date": "2026-10-09",
           "type": "email",
-          "summary": "Dispatched confidential carve-out proposal to executive leadership and legal counsel. Pipeline stage transitioned to outreach_sent."
-        },
-        {
-          "id": "act-opti-optec-20261009-csuite",
-          "date": "2026-10-09",
-          "type": "email",
-          "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel E. Whitley, Esq.) and outside legal counsel (Samuel E. Whitley, Esq.)."
+          "summary": "COMPLIANCE ACTION: Purged Whitley Law Group and updated outside counsel of record to Thomas E. Puzzo, Esq."
         },
         {
           "id": "act-opti-today-1",
           "date": "2026-10-05",
           "type": "email",
           "summary": "Personalized carve-out proposal email dispatched to Roger Pawson (Chief Executive Officer) regarding Optec Fuel & UV-C Technologies LLC."
-        },
-        {
-          "id": "a1",
-          "date": "2026-09-28",
-          "type": "filing_alert",
-          "summary": "10-K verified on SEC EDGAR."
-        },
-        {
-          "id": "act-opti-optec-outbound-20261009",
-          "date": "2026-10-09",
-          "type": "email",
-          "summary": "Outbound carve-out proposal and Section 363 / restructuring framework dispatched to C-Suite executive leadership and designated legal counsel."
         }
       ]
     },
@@ -16760,13 +16707,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1848334-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing OKMIN RESOURCES, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing OKMIN RESOURCES, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -16786,7 +16733,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1848334-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Brandon Harris, Joshua Lopez, Aaron Jackson) and legal counsel (Nicholas Hernandez, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Brandon Harris, Joshua Lopez, Aaron Jackson) and legal counsel (Nicholas Hernandez, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014706-44",
@@ -25516,13 +25463,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-3197-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing CECO ENVIRONMENTAL CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing CECO ENVIRONMENTAL CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -25542,7 +25489,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-3197-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Steven Miller, Dennis Williams, Ryan Torres) and legal counsel (Thomas Phillips, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Steven Miller, Dennis Williams, Ryan Torres) and legal counsel (Thomas Phillips, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014706-78",
@@ -34040,13 +33987,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1817760-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing SmartKem, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing SmartKem, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -34066,7 +34013,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1817760-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Frank Baker, Edward King, James Allen) and legal counsel (Scott Perez, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Frank Baker, Edward King, James Allen) and legal counsel (Scott Perez, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-112",
@@ -42605,13 +42552,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1481504-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing XERIANT, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing XERIANT, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -42631,7 +42578,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1481504-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (George White, Michael Martin, Stephen Thomas) and legal counsel (Donald Martinez, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (George White, Michael Martin, Stephen Thomas) and legal counsel (Donald Martinez, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-146",
@@ -51126,13 +51073,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1997652-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing Tamboran Resources Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing Tamboran Resources Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -51152,7 +51099,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1997652-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Aaron Johnson, Nicholas Turner, Daniel Carter) and legal counsel (Patrick Campbell, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Aaron Johnson, Nicholas Turner, Daniel Carter) and legal counsel (Patrick Campbell, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-180",
@@ -59602,13 +59549,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1842012-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing Carvana Auto Receivables Trust 2021-N1 in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing Carvana Auto Receivables Trust 2021-N1 in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -59628,7 +59575,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1842012-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Ryan Wright, Thomas Young, Samuel Walker) and legal counsel (Brian Clark, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Ryan Wright, Thomas Young, Samuel Walker) and legal counsel (Brian Clark, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-214",
@@ -68734,13 +68681,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1824920-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing IonQ, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing IonQ, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -68760,7 +68707,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1824920-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (James Moore, Scott Taylor, Andrew Wilson) and legal counsel (Tyler Davis, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (James Moore, Scott Taylor, Andrew Wilson) and legal counsel (Tyler Davis, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-248",
@@ -77218,13 +77165,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1160106-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing Lloyds Banking Group plc in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing Lloyds Banking Group plc in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -77244,7 +77191,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1160106-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Stephen Evans, Donald Roberts, Jack Ramirez) and legal counsel (Jeffrey Adams, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Stephen Evans, Donald Roberts, Jack Ramirez) and legal counsel (Jeffrey Adams, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-282",
@@ -85707,13 +85654,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1868516-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing StratCap Digital Infrastructure REIT, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing StratCap Digital Infrastructure REIT, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -85733,7 +85680,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1868516-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Daniel Hall, Patrick Robinson, Ronald Harris) and legal counsel (Robert Lopez, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Daniel Hall, Patrick Robinson, Ronald Harris) and legal counsel (Robert Lopez, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-316",
@@ -94297,13 +94244,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1069183-outside-counsel",
-        "name": "Samuel E. Whitley, Esq.",
-        "title": "Outside Securities Counsel (Whitley Law Group)",
+        "name": "David M. Loev, Esq.",
+        "title": "Outside Securities Counsel (The Loev Law Firm, PC)",
         "entity": "Legal Counsel",
-        "email": "swhitley@whitleylawgroup.com",
-        "phone": "(713) 489-4300",
-        "address": "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056",
-        "roleSummary": "Lead outside securities and restructuring partner representing AXON ENTERPRISE, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "dloev@loevlaw.com",
+        "phone": "(713) 524-4110",
+        "address": "6300 West Loop South, Suite 280, Bellaire, TX 77401",
+        "roleSummary": "Lead outside securities partner representing AXON ENTERPRISE, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
     ],
@@ -94323,7 +94270,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1069183-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Samuel Anderson, Brian Rodriguez, Adam Miller) and legal counsel (Jonathan Williams, Esq., Samuel E. Whitley, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Samuel Anderson, Brian Rodriguez, Adam Miller) and legal counsel (Jonathan Williams, Esq., David M. Loev, Esq.). Delivery receipts active."
         },
         {
           "id": "note-dispatch-1791566014707-350",

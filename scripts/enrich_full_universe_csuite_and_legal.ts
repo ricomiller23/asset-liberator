@@ -33,8 +33,7 @@ const LAW_FIRM_ROSTER = [
   { firm: "Blank Rome LLP", partner: "Rick Kraus, Esq.", email: "rkraus@blankrome.com", domain: "blankrome.com", address: "1271 Avenue of the Americas, New York, NY 10020", phone: "(212) 885-5000" },
   { firm: "Fabricant LLP", partner: "Alfred R. Fabricant, Esq.", email: "afabricant@fabricantllp.com", domain: "fabricantllp.com", address: "411 Theodore Fremd Ave, Suite 206S, Rye, NY 10580", phone: "(212) 257-5797" },
   { firm: "The Loev Law Firm, PC", partner: "David M. Loev, Esq.", email: "dloev@loevlaw.com", domain: "loevlaw.com", address: "6300 West Loop South, Suite 280, Bellaire, TX 77401", phone: "(713) 524-4110" },
-  { firm: "Whitley Law Group", partner: "Samuel E. Whitley, Esq.", email: "swhitley@whitleylawgroup.com", domain: "whitleylawgroup.com", address: "2700 Post Oak Blvd, Suite 1700, Houston, TX 77056", phone: "(713) 489-4300" },
-  { firm: "McDonald Law PLLC", partner: "Brian McDonald, Esq.", email: "bmcdonald@mcdonaldlaw.com", domain: "mcdonaldlaw.com", address: "100 Wilshire Blvd, Suite 700, Santa Monica, CA 90401", phone: "(310) 907-5500" },
+    { firm: "McDonald Law PLLC", partner: "Brian McDonald, Esq.", email: "bmcdonald@mcdonaldlaw.com", domain: "mcdonaldlaw.com", address: "100 Wilshire Blvd, Suite 700, Santa Monica, CA 90401", phone: "(310) 907-5500" },
   { firm: "Friday, Eldredge & Clark, LLP", partner: "William A. Moore, Esq.", email: "wmoore@fridayfirm.com", domain: "fridayfirm.com", address: "400 West Capitol Ave, Little Rock, AR 72201", phone: "(501) 376-2011" },
   { firm: "Sullivan & Cromwell LLP", partner: "Joseph C. Shenker, Esq.", email: "shenkerj@sullcrom.com", domain: "sullcrom.com", address: "125 Broad Street, New York, NY 10004", phone: "(212) 558-4000" },
   { firm: "Debevoise & Plimpton LLP", partner: "M. Natasha Labovitz, Esq.", email: "nlabovitz@debevoise.com", domain: "debevoise.com", address: "66 Hudson Blvd, New York, NY 10001", phone: "(212) 909-6000" },
@@ -387,9 +386,9 @@ async function main() {
         if (email === "daboudi@kmclaw.com") email = "plloyd@kmclaw.com";
         if (email === "jnail@alpine4.com") { email = "kwilson@alpine4.com"; name = "Kent B. Wilson"; }
         if (email === "gboehmer@optecintl.com" || email === "rpawson@optecintl.com") {
-          email = "swhitley@whitleylawgroup.com";
-          name = "Samuel E. Whitley, Esq.";
-          title = "Outside Securities Counsel (Whitley Law Group)";
+          email = "dloev@loevlaw.com";
+          name = "David M. Loev, Esq.";
+          title = "Outside Securities Counsel (The Loev Law Firm, PC)";
         }
 
         return { ...c, name, title, email };
@@ -687,7 +686,7 @@ All 65 historical bounces detected from Apple Mail's delivery failure notificati
 - **Kirton McConkie, P.C.:** Directed to lead securities partner C. Parkinson Lloyd, Esq. (\`plloyd@kmclaw.com\`).
 - **Skadden, Arps:** Corrected format to \`howard.goldstein@skadden.com\`.
 - **Locke Lord LLP:** Corrected format to \`wswaim@lockelord.com\`.
-- **Corporate Executive Mailboxes:** Direct executive addresses verified for Alpine 4 (Kent B. Wilson), Optec (Samuel E. Whitley, Esq.), BioLife Solutions (Roderick de Greef), Getty Images (Craig Peters), Escalon Medical (Richard J. DePiano), NightFood Holdings (Sean Folkson), Petros Pharmaceuticals (Fady Boctor), and AtaiBeckley (Florian Brand).
+- **Corporate Executive Mailboxes:** Direct executive addresses verified for Alpine 4 (Kent B. Wilson), Optec (David M. Loev, Esq.), BioLife Solutions (Roderick de Greef), Getty Images (Craig Peters), Escalon Medical (Richard J. DePiano), NightFood Holdings (Sean Folkson), Petros Pharmaceuticals (Fady Boctor), and AtaiBeckley (Florian Brand).
 
 ---
 

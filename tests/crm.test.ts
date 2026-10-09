@@ -217,5 +217,24 @@ describe("CRM Pipeline State Management Suite", () => {
       t.contacts.some((c) => (c.email || "").includes("gibsondunn.com") || c.title.includes("Gibson, Dunn"))
     );
     expect(hasGibsonDunn).toBe(false);
+
+    // 6. Whitley Law Group / Whitley LLP firm-wide hard block
+    const whitleyRes1 = canSendEmail("swhitley@whitley-llp.com");
+    expect(whitleyRes1.allowed).toBe(false);
+    expect(whitleyRes1.reason).toContain("SUPPRESSED");
+
+    const whitleyRes2 = canSendEmail("swhitley@whitleylawgroup.com");
+    expect(whitleyRes2.allowed).toBe(false);
+    expect(whitleyRes2.reason).toContain("SUPPRESSED");
+
+    const whitleyDomainRes = canSendEmail("partner@whitleylawgroup.com");
+    expect(whitleyDomainRes.allowed).toBe(false);
+    expect(whitleyDomainRes.reason).toContain("SUPPRESSED DOMAIN");
+
+    // 7. Zero occurrences of Whitley across all target contacts
+    const hasWhitley = allTargets.some((t) =>
+      t.contacts.some((c) => (c.email || "").includes("whitley") || c.name.includes("Whitley"))
+    );
+    expect(hasWhitley).toBe(false);
   });
 });
