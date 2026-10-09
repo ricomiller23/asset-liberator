@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-09T20:51:45.398Z",
+  "updatedAt": "2026-10-09T21:03:00.000Z",
   "description": "Global permanent suppression and opt-out registry. Hard block enforced at runtime before any email transmission.",
   "suppressedEmails": [
     "solder@mcguirewoods.com",
@@ -45,6 +45,14 @@
       "recipient": "Samuel E. Whitley, Esq. (Managing Partner, Whitley Law Group / Whitley LLP)",
       "requestDate": "2026-10-09T20:51:45.397Z",
       "reason": "Notice received 2026-10-09: Managing Partner Samuel Whitley explicitly stated they do not represent Optec International, Inc. Permanent domain-wide suppression active across whitleylawgroup.com, whitley-llp.com, and whitleyllp.com."
+    },
+    {
+      "email": "jkrause@gibsondunn.com",
+      "domain": "gibsondunn.com",
+      "recipient": "Jeffrey C. Krause, Partner (Gibson, Dunn & Crutcher LLP, 333 South Grand Avenue, Los Angeles, CA 90071-3197, +1 213.229.7995)",
+      "ticker": "LESL",
+      "requestDate": "2026-10-09T13:51:07-07:00",
+      "reason": "Direct cease-and-desist (\"NO MORE SPAM\") received following LESL outreach. Enforced permanent firm-wide suppression and zero-contact embargo across gibsondunn.com."
     }
   ]
 }
