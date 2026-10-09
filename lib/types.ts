@@ -1,5 +1,6 @@
+import type { Signal } from "./pipeline/types";
 export type RevenueTier = "all" | "commercial" | "pre_revenue_ip";
-export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQX" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "OTCID_BASIC" | "EXPERT_MARKET" | "TSXV";
+export type ExchangeType = "NASDAQ" | "NYSE_AMERICAN" | "OTCQX" | "OTCQB" | "PINK_CURRENT" | "PINK_LIMITED" | "OTCID_BASIC" | "EXPERT_MARKET" | "TSXV" | "TSX" | "CSE" | "NEO" | "ASX";
 export type FilingStatus = "current" | "delinquent_10k" | "delinquent_10q" | "suspended_15c211";
 export type AuditorStatus = "active" | "resigned_item401" | "unpaid" | "adverse_opinion";
 export type CommercialReadiness = "revenue_generating" | "commercial_contracts" | "fda_cleared" | "patented_tech" | "pre_clinical_r_and_d";
@@ -8,7 +9,7 @@ export type CrmStage = "new" | "outreach_sent" | "in_dialogue" | "nda_signed" | 
 export type PriorityLevel = "critical" | "high" | "medium" | "low";
 
 export type TargetTier = "verified" | "screened" | "radar" | "disqualified";
-export type TargetVertical = "b2b_software" | "specialty_manufacturing" | "solar_energy" | "pre_revenue_ip" | "cross_border_canada" | "unthemed";
+export type TargetVertical = "b2b_software" | "specialty_manufacturing" | "solar_energy" | "pre_revenue_ip" | "cross_border_canada" | "cross_border_australia" | "unthemed";
 
 export interface GateAssessment {
   passed: boolean;
@@ -37,7 +38,7 @@ export interface ThreeHardGates {
 }
 
 export interface ForcingEvent {
-  type: "loan_maturity" | "forbearance_expiry" | "nasdaq_deficiency_180d" | "nt_deadline" | "ch11_363_bid_deadline" | "ccaa_stay_expiry";
+  type: "loan_maturity" | "forbearance_expiry" | "nasdaq_deficiency_180d" | "nt_deadline" | "ch11_363_bid_deadline" | "ccaa_stay_expiry" | "ccaa_sisp_bid_deadline";
   description: string;
   deadlineDate: string;
   daysRemaining: number;
@@ -222,6 +223,13 @@ export interface TargetCompany {
     lastContactDate?: string;
     nextFollowUpDate?: string;
   };
+
+  // Optional extended pipeline fields
+  signals?: Signal[];
+  dataQualityFlags?: string[];
+  jurisdiction?: string;
+  source?: string;
+  foreignId?: string;
 }
 
 export interface SearchFilters {
