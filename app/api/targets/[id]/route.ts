@@ -7,7 +7,7 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params;
-  const target = INITIAL_TARGETS.find((t) => t.id === id);
+  const target = INITIAL_TARGETS.find((t) => t.id === id || t.ticker.toLowerCase() === id.toLowerCase());
 
   if (!target) {
     return NextResponse.json({ error: "Target company not found" }, { status: 404 });
