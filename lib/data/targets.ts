@@ -162,7 +162,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-xela-exela-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Par Chadha) and outside legal counsel (Erik Mengwall, Esq.)."
         },
         {
@@ -414,7 +414,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-rwax-tap-humbl-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Hopkins) and outside legal counsel (James Meadows, Esq.)."
         },
         {
@@ -665,7 +665,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-opti-optec-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel E. Whitley, Esq.) and outside legal counsel (Samuel E. Whitley, Esq.)."
         },
         {
@@ -927,7 +927,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-alpp-alpine4-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kent B. Wilson) and outside legal counsel (David Aboudi, Esq.)."
         },
         {
@@ -1172,7 +1172,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-sing-singlepoint-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Wil Ralston) and outside legal counsel (Stephen E. Older, Esq.)."
         },
         {
@@ -1429,7 +1429,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-phil-phi-group-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Christopher Dieterich, Esq.) and outside legal counsel (Christopher Dieterich, Esq.)."
         },
         {
@@ -1704,7 +1704,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-hcmc-healthier-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Martin T. Schrier, Esq.) and outside legal counsel (Martin T. Schrier, Esq.)."
         },
         {
@@ -1939,7 +1939,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-ozsc-ozop-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Conway) and outside legal counsel (Lance Brunson, Esq.)."
         },
         {
@@ -2180,7 +2180,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-rgbp-regen-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Branden T. Burningham, Esq.) and outside legal counsel (Branden T. Burningham, Esq.)."
         },
         {
@@ -2425,7 +2425,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-cydy-cytodyn-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Blok, Esq.) and outside legal counsel (Sidley Austin LLP (Legal Department))."
         },
         {
@@ -2672,7 +2672,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-nwbo-northwest-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Linda Powers) and outside legal counsel (Gibson, Dunn & Crutcher LLP (Securities Desk))."
         },
         {
@@ -2919,7 +2919,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-nlst-netlist-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (C.K. Hong) and outside legal counsel (Jason Sheasby, Esq.)."
         },
         {
@@ -3187,7 +3187,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-iqst-iqstel-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Doney, Esq.) and outside legal counsel (Scott Doney, Esq.)."
         },
         {
@@ -3473,7 +3473,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-znog-zion-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Lubin) and outside legal counsel (David Lubin)."
         },
         {
@@ -3749,7 +3749,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-ladx-ladrx-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (BMC Group (Re: LadRX ABC Assignee)) and outside legal counsel (BMC Group (Re: LadRX ABC Assignee))."
         },
         {
@@ -3997,7 +3997,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-qron-qrons-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonah Martin Meer, Esq.) and outside legal counsel (Bill Swaim, Esq.)."
         },
         {
@@ -4270,7 +4270,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-pbio-pressure-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John O'Leary, Esq.) and outside legal counsel (John O'Leary, Esq.)."
         },
         {
@@ -4556,7 +4556,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-qprc-quest-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Asher S. Levitsky, Esq.) and outside legal counsel (Asher S. Levitsky, Esq.)."
         },
         {
@@ -4863,7 +4863,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1821806-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason McDonell) and outside legal counsel (Benjamin Lindquist, Esq.)."
         },
         {
@@ -5141,7 +5141,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1815903-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Fady Boctor) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -5387,7 +5387,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1966394-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -5627,7 +5627,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1755101-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Scott) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -5882,7 +5882,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1832161-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -6136,7 +6136,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1830072-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Lawrence Tan) and outside legal counsel (In-House Legal Counsel)."
         },
         {
@@ -6383,7 +6383,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1422892-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -6632,7 +6632,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1503802-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Paulson) and outside legal counsel (Michael Kelly, Esq.)."
         },
         {
@@ -6894,7 +6894,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1852551-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -7142,7 +7142,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1001233-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Sandy Macrae) and outside legal counsel (Scott D. Wolchko, Esq.)."
         },
         {
@@ -7395,7 +7395,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1743745-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Barbara Sher) and outside legal counsel (Lana Reeve, Esq.)."
         },
         {
@@ -7635,7 +7635,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2081043-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Florian Brand) and outside legal counsel (Glenn Short, Esq.)."
         },
         {
@@ -7891,7 +7891,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1376793-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -8146,7 +8146,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1959585-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -8401,7 +8401,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-18926-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kate Johnson) and outside legal counsel (Stacey W. Goff, Esq.)."
         },
         {
@@ -8655,7 +8655,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1738177-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Morgan Kurk) and outside legal counsel (Sally Rau, Esq.)."
         },
         {
@@ -8902,7 +8902,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-875729-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Craig Scott) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -9156,7 +9156,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-910406-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Wendy P. Davidson) and outside legal counsel (Kristy Meringolo, Esq.)."
         },
         {
@@ -9403,7 +9403,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-725394-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Bonar) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -9650,7 +9650,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1437107-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Zaslav) and outside legal counsel (Savalle Sims, Esq.)."
         },
         {
@@ -9906,7 +9906,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-28917-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William T. Dillard II) and outside legal counsel (Dean L. Worley, Esq.)."
         },
         {
@@ -10161,7 +10161,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2041610-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -10408,7 +10408,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1276187-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -10656,7 +10656,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1828185-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Entwistle) and outside legal counsel (In-House Legal Department)."
         },
         {
@@ -10911,7 +10911,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1522727-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -11158,7 +11158,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1829635-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Hawkins) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -11404,7 +11404,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1854445-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -11651,7 +11651,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1557376-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ian Bothwell) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -11900,7 +11900,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2028355-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -12163,7 +12163,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1583107-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Rick E. Winningham) and outside legal counsel (Brett A. Grimaud, Esq.)."
         },
         {
@@ -12419,7 +12419,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1077428-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -12673,7 +12673,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1021917-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -12910,7 +12910,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1882781-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -13147,7 +13147,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-932021-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -13384,7 +13384,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1721056-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -13621,7 +13621,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1527728-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -13858,7 +13858,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1082733-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -14095,7 +14095,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1941029-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -14332,7 +14332,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-862668-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -14569,7 +14569,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1121795-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -14806,7 +14806,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1018281-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -15043,7 +15043,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1892316-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -15280,7 +15280,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1520118-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -15517,7 +15517,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1593001-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -15754,7 +15754,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1848334-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -15991,7 +15991,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1751707-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -16228,7 +16228,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2083452-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -16465,7 +16465,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1437750-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -16702,7 +16702,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1905956-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -16939,7 +16939,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1098009-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -17176,7 +17176,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1703073-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -17413,7 +17413,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2086503-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -17651,7 +17651,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-834365-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Roderick de Greef) and outside legal counsel (Sarah E. Acker, Esq.)."
         },
         {
@@ -17898,7 +17898,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1023459-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -18145,7 +18145,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1604778-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -18393,7 +18393,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2028201-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -18648,7 +18648,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1726711-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Amro Albanna) and outside legal counsel (Corporate Legal Department)."
         },
         {
@@ -18904,7 +18904,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1898496-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Craig Peters) and outside legal counsel (Kjartan Rist, Esq.)."
         },
         {
@@ -19168,7 +19168,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1679688-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -19423,7 +19423,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1820872-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -19670,7 +19670,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1552275-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -19917,7 +19917,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2089661-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -20165,7 +20165,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1901297-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -20419,7 +20419,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1728328-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -20666,7 +20666,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1892292-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ryan Wright) and outside legal counsel (Brian Clark, Esq.)."
         },
         {
@@ -20913,7 +20913,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1880343-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Raymond Davis) and outside legal counsel (Brandon Evans, Esq.)."
         },
         {
@@ -21160,7 +21160,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1881592-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Daniel Hall) and outside legal counsel (Robert Lopez, Esq.)."
         },
         {
@@ -21408,7 +21408,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1949864-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jacob Williams) and outside legal counsel (George Mitchell, Esq.)."
         },
         {
@@ -21663,7 +21663,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1943802-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jack Lewis) and outside legal counsel (Benjamin Martin, Esq.)."
         },
         {
@@ -21910,7 +21910,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1039684-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Turner) and outside legal counsel (James Nelson, Esq.)."
         },
         {
@@ -22157,7 +22157,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2099232-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gary Lee) and outside legal counsel (Timothy Taylor, Esq.)."
         },
         {
@@ -22406,7 +22406,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1973056-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -22668,7 +22668,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1852973-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -22913,7 +22913,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1763950-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Nicholas Hill) and outside legal counsel (Ronald Allen, Esq.)."
         },
         {
@@ -23151,7 +23151,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2049248-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -23388,7 +23388,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1590715-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Donald Green) and outside legal counsel (Richard Walker, Esq.)."
         },
         {
@@ -23626,7 +23626,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1099160-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -23864,7 +23864,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1846069-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Sanchez) and outside legal counsel (Alexander Harris, Esq.)."
         },
         {
@@ -24102,7 +24102,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-3197-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -24340,7 +24340,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-315709-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonathan Perez) and outside legal counsel (Jason White, Esq.)."
         },
         {
@@ -24578,7 +24578,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-921299-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -24815,7 +24815,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1649989-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -25053,7 +25053,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1971387-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -25292,7 +25292,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1677940-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -25537,7 +25537,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1598981-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -25775,7 +25775,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1895618-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -26013,7 +26013,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1401914-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -26251,7 +26251,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2015947-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -26488,7 +26488,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1083220-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -26726,7 +26726,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1825452-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -26964,7 +26964,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1392694-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -27202,7 +27202,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1606242-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -27440,7 +27440,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1527352-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -27678,7 +27678,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1417663-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -27916,7 +27916,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1414767-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -28154,7 +28154,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2022416-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -28392,7 +28392,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1855485-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -28630,7 +28630,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1969475-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -28868,7 +28868,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1998781-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -29107,7 +29107,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1819438-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -29353,7 +29353,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-883107-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -29591,7 +29591,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1358190-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -29829,7 +29829,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1839285-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -30067,7 +30067,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1871638-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -30305,7 +30305,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1213809-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -30543,7 +30543,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1883814-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -30781,7 +30781,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1880613-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -31020,7 +31020,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1674227-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Thomas Gonzalez) and outside legal counsel (Adam Thomas, Esq.)."
         },
         {
@@ -31266,7 +31266,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1884046-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -31504,7 +31504,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-104894-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -31742,7 +31742,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1911545-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -31980,7 +31980,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2017758-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -32218,7 +32218,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1817760-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -32456,7 +32456,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1956648-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -32693,7 +32693,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1282648-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ryan Wright) and outside legal counsel (Brian Clark, Esq.)."
         },
         {
@@ -32931,7 +32931,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1698530-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Raymond Davis) and outside legal counsel (Brandon Evans, Esq.)."
         },
         {
@@ -33169,7 +33169,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1562733-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Daniel Hall) and outside legal counsel (Robert Lopez, Esq.)."
         },
         {
@@ -33408,7 +33408,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-82473-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jacob Williams) and outside legal counsel (George Mitchell, Esq.)."
         },
         {
@@ -33654,7 +33654,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2053791-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jack Lewis) and outside legal counsel (Benjamin Martin, Esq.)."
         },
         {
@@ -33892,7 +33892,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1069530-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Turner) and outside legal counsel (James Nelson, Esq.)."
         },
         {
@@ -34130,7 +34130,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1473334-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gary Lee) and outside legal counsel (Timothy Taylor, Esq.)."
         },
         {
@@ -34368,7 +34368,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1516912-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -34606,7 +34606,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2035644-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -34844,7 +34844,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1139685-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Nicholas Hill) and outside legal counsel (Ronald Allen, Esq.)."
         },
         {
@@ -35082,7 +35082,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1833769-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -35320,7 +35320,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1659617-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Donald Green) and outside legal counsel (Richard Walker, Esq.)."
         },
         {
@@ -35558,7 +35558,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2025401-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -35796,7 +35796,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1831979-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Sanchez) and outside legal counsel (Alexander Harris, Esq.)."
         },
         {
@@ -36034,7 +36034,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1707910-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -36272,7 +36272,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2031561-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonathan Perez) and outside legal counsel (Jason White, Esq.)."
         },
         {
@@ -36509,7 +36509,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1572616-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -36747,7 +36747,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1419554-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -36985,7 +36985,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1397183-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -37223,7 +37223,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1561921-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -37461,7 +37461,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-940942-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -37699,7 +37699,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1558569-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -37937,7 +37937,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1425627-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -38175,7 +38175,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1735041-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -38415,7 +38415,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1465740-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -38670,7 +38670,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2079546-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -38915,7 +38915,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-787253-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -39154,7 +39154,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1433551-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -39400,7 +39400,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2029586-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -39646,7 +39646,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1530425-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -39892,7 +39892,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1375348-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -40137,7 +40137,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1379006-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -40375,7 +40375,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1481504-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -40612,7 +40612,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1956741-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -40850,7 +40850,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2076192-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -41088,7 +41088,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-928953-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -41327,7 +41327,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1442492-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -41573,7 +41573,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-911216-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -41811,7 +41811,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1857410-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -42048,7 +42048,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1972529-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -42286,7 +42286,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1926314-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -42523,7 +42523,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2013807-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -42761,7 +42761,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1842556-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -42999,7 +42999,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1850059-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Thomas Gonzalez) and outside legal counsel (Adam Thomas, Esq.)."
         },
         {
@@ -43237,7 +43237,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2079013-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -43483,7 +43483,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2109869-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -43721,7 +43721,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1633369-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -43959,7 +43959,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-79661-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -44197,7 +44197,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-69422-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -44435,7 +44435,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1985554-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -44673,7 +44673,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1642363-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ryan Wright) and outside legal counsel (Brian Clark, Esq.)."
         },
         {
@@ -44911,7 +44911,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1696411-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Raymond Davis) and outside legal counsel (Brandon Evans, Esq.)."
         },
         {
@@ -45148,7 +45148,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1324759-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Daniel Hall) and outside legal counsel (Robert Lopez, Esq.)."
         },
         {
@@ -45386,7 +45386,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1750777-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jacob Williams) and outside legal counsel (George Mitchell, Esq.)."
         },
         {
@@ -45624,7 +45624,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1807166-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jack Lewis) and outside legal counsel (Benjamin Martin, Esq.)."
         },
         {
@@ -45862,7 +45862,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1680132-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Turner) and outside legal counsel (James Nelson, Esq.)."
         },
         {
@@ -46100,7 +46100,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2029014-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gary Lee) and outside legal counsel (Timothy Taylor, Esq.)."
         },
         {
@@ -46338,7 +46338,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-826253-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -46576,7 +46576,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-787496-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -46814,7 +46814,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1629210-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Nicholas Hill) and outside legal counsel (Ronald Allen, Esq.)."
         },
         {
@@ -47052,7 +47052,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1888654-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -47289,7 +47289,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1616156-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Donald Green) and outside legal counsel (Richard Walker, Esq.)."
         },
         {
@@ -47527,7 +47527,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1796949-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -47765,7 +47765,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1729637-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Sanchez) and outside legal counsel (Alexander Harris, Esq.)."
         },
         {
@@ -48004,7 +48004,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1434601-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -48250,7 +48250,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1703157-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonathan Perez) and outside legal counsel (Jason White, Esq.)."
         },
         {
@@ -48488,7 +48488,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1997652-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -48726,7 +48726,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1823635-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -48964,7 +48964,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1158780-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -49202,7 +49202,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1912582-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -49440,7 +49440,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1517681-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -49678,7 +49678,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1191070-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -49916,7 +49916,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1996192-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -50154,7 +50154,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1808898-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -50392,7 +50392,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1963088-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -50630,7 +50630,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1873875-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -50868,7 +50868,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1951752-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -51105,7 +51105,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2148245-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -51342,7 +51342,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1661136-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -51579,7 +51579,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1738699-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -51816,7 +51816,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2134183-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -52053,7 +52053,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1988280-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -52290,7 +52290,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-801337-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -52527,7 +52527,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1851048-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -52764,7 +52764,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1944019-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -53001,7 +53001,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2097557-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -53238,7 +53238,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2096204-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -53475,7 +53475,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1779977-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -53712,7 +53712,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1375195-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -53949,7 +53949,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-915912-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -54186,7 +54186,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1934479-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -54423,7 +54423,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1102993-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -54660,7 +54660,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2083583-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -54897,7 +54897,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2083564-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Thomas Gonzalez) and outside legal counsel (Adam Thomas, Esq.)."
         },
         {
@@ -55134,7 +55134,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1407200-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -55371,7 +55371,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1645731-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -55608,7 +55608,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1974640-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -55845,7 +55845,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2024306-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -56082,7 +56082,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1658247-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -56319,7 +56319,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1692427-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -56556,7 +56556,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1842012-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ryan Wright) and outside legal counsel (Brian Clark, Esq.)."
         },
         {
@@ -56793,7 +56793,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1614033-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Raymond Davis) and outside legal counsel (Brandon Evans, Esq.)."
         },
         {
@@ -57030,7 +57030,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1643550-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Daniel Hall) and outside legal counsel (Robert Lopez, Esq.)."
         },
         {
@@ -57307,7 +57307,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1354457-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jacob Williams) and outside legal counsel (George Mitchell, Esq.)."
         },
         {
@@ -57864,7 +57864,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1990950-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jack Lewis) and outside legal counsel (Benjamin Martin, Esq.)."
         },
         {
@@ -58101,7 +58101,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-721693-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Turner) and outside legal counsel (James Nelson, Esq.)."
         },
         {
@@ -58339,7 +58339,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2080023-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gary Lee) and outside legal counsel (Timothy Taylor, Esq.)."
         },
         {
@@ -58584,7 +58584,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2006468-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -58821,7 +58821,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1710607-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -59058,7 +59058,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1466143-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Nicholas Hill) and outside legal counsel (Ronald Allen, Esq.)."
         },
         {
@@ -59295,7 +59295,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1889658-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -59532,7 +59532,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1430602-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Donald Green) and outside legal counsel (Richard Walker, Esq.)."
         },
         {
@@ -59769,7 +59769,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1861841-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -60006,7 +60006,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2005569-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Sanchez) and outside legal counsel (Alexander Harris, Esq.)."
         },
         {
@@ -60243,7 +60243,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1130713-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -60480,7 +60480,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1066225-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonathan Perez) and outside legal counsel (Jason White, Esq.)."
         },
         {
@@ -60717,7 +60717,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-68622-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -60954,7 +60954,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1949478-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -61192,7 +61192,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1816125-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -61466,7 +61466,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-876661-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -61938,7 +61938,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1143362-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -62199,7 +62199,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1561032-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -62436,7 +62436,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-845982-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -62673,7 +62673,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1762239-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -62910,7 +62910,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1796898-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -63147,7 +63147,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1043219-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -63384,7 +63384,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1804469-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -63621,7 +63621,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1741534-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -63858,7 +63858,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-912595-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -64095,7 +64095,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1143313-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -64332,7 +64332,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2046573-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -64569,7 +64569,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1004989-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -64806,7 +64806,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1893219-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -65043,7 +65043,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-313616-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -65280,7 +65280,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1824920-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -65517,7 +65517,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1889983-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -65754,7 +65754,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1518042-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -65991,7 +65991,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1676047-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -66228,7 +66228,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1779306-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -66465,7 +66465,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1464790-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -66702,7 +66702,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1826681-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -66939,7 +66939,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1637147-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -67176,7 +67176,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-51253-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -67413,7 +67413,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1119639-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Thomas Gonzalez) and outside legal counsel (Adam Thomas, Esq.)."
         },
         {
@@ -67650,7 +67650,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1557157-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -67887,7 +67887,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1840199-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -68124,7 +68124,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1788028-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -68361,7 +68361,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1738827-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -68598,7 +68598,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1846416-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -68835,7 +68835,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1060822-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -69072,7 +69072,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-21344-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ryan Wright) and outside legal counsel (Brian Clark, Esq.)."
         },
         {
@@ -69310,7 +69310,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1417835-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Raymond Davis) and outside legal counsel (Brandon Evans, Esq.)."
         },
         {
@@ -69555,7 +69555,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2043699-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Daniel Hall) and outside legal counsel (Robert Lopez, Esq.)."
         },
         {
@@ -69793,7 +69793,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1924868-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jacob Williams) and outside legal counsel (George Mitchell, Esq.)."
         },
         {
@@ -70038,7 +70038,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-62709-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jack Lewis) and outside legal counsel (Benjamin Martin, Esq.)."
         },
         {
@@ -70275,7 +70275,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1976322-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Turner) and outside legal counsel (James Nelson, Esq.)."
         },
         {
@@ -70512,7 +70512,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1377936-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gary Lee) and outside legal counsel (Timothy Taylor, Esq.)."
         },
         {
@@ -70749,7 +70749,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-314590-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -70986,7 +70986,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1752360-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -71223,7 +71223,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1771146-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Nicholas Hill) and outside legal counsel (Ronald Allen, Esq.)."
         },
         {
@@ -71460,7 +71460,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1527613-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -71697,7 +71697,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-831001-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Donald Green) and outside legal counsel (Richard Walker, Esq.)."
         },
         {
@@ -71934,7 +71934,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-200245-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -72171,7 +72171,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1824502-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Sanchez) and outside legal counsel (Alexander Harris, Esq.)."
         },
         {
@@ -72408,7 +72408,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1841330-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -72645,7 +72645,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-104169-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonathan Perez) and outside legal counsel (Jason White, Esq.)."
         },
         {
@@ -72882,7 +72882,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-732026-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -73119,7 +73119,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1972459-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -73356,7 +73356,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1160106-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -73593,7 +73593,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-312069-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -73830,7 +73830,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-891478-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -74067,7 +74067,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1166691-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -74304,7 +74304,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1333621-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -74541,7 +74541,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1306965-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -74778,7 +74778,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-818686-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -75015,7 +75015,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1039765-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -75252,7 +75252,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1798562-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -75489,7 +75489,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2008027-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -75726,7 +75726,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1673475-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -75963,7 +75963,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1696025-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -76200,7 +76200,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1697884-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -76437,7 +76437,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1674440-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -76674,7 +76674,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1342916-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -76911,7 +76911,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1703625-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -77148,7 +77148,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2085177-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -77385,7 +77385,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-318299-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -77622,7 +77622,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1546853-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -77859,7 +77859,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-793171-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -78096,7 +78096,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1690455-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -78334,7 +78334,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1702780-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -78572,7 +78572,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1938338-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -78810,7 +78810,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1673481-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -79048,7 +79048,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1814215-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -79286,7 +79286,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1331421-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Thomas Gonzalez) and outside legal counsel (Adam Thomas, Esq.)."
         },
         {
@@ -79525,7 +79525,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1556739-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -79771,7 +79771,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1960262-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -80009,7 +80009,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1343009-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -80247,7 +80247,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1289047-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -80485,7 +80485,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-63754-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {
@@ -80723,7 +80723,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1619856-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Charles Martinez) and outside legal counsel (David Johnson, Esq.)."
         },
         {
@@ -80961,7 +80961,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1879403-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ryan Wright) and outside legal counsel (Brian Clark, Esq.)."
         },
         {
@@ -81199,7 +81199,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-766792-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Raymond Davis) and outside legal counsel (Brandon Evans, Esq.)."
         },
         {
@@ -81437,7 +81437,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1868516-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Daniel Hall) and outside legal counsel (Robert Lopez, Esq.)."
         },
         {
@@ -81676,7 +81676,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-2006986-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jacob Williams) and outside legal counsel (George Mitchell, Esq.)."
         },
         {
@@ -81922,7 +81922,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1504678-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jack Lewis) and outside legal counsel (Benjamin Martin, Esq.)."
         },
         {
@@ -82160,7 +82160,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-20212-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Matthew Turner) and outside legal counsel (James Nelson, Esq.)."
         },
         {
@@ -82399,7 +82399,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1877461-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gary Lee) and outside legal counsel (Timothy Taylor, Esq.)."
         },
         {
@@ -82645,7 +82645,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-711404-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Dennis Roberts) and outside legal counsel (Samuel Scott, Esq.)."
         },
         {
@@ -82883,7 +82883,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1552198-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Mark Jackson) and outside legal counsel (John Rodriguez, Esq.)."
         },
         {
@@ -83121,7 +83121,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-923601-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Nicholas Hill) and outside legal counsel (Ronald Allen, Esq.)."
         },
         {
@@ -83359,7 +83359,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1585608-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jerry Thomas) and outside legal counsel (Gregory Jones, Esq.)."
         },
         {
@@ -83602,7 +83602,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-799850-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Donald Green) and outside legal counsel (Richard Walker, Esq.)."
         },
         {
@@ -83880,7 +83880,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1542447-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Eric Wilson) and outside legal counsel (Edward Smith, Esq.)."
         },
         {
@@ -84119,7 +84119,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-10048-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Tyler Sanchez) and outside legal counsel (Alexander Harris, Esq.)."
         },
         {
@@ -84366,7 +84366,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1550913-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Steven Miller) and outside legal counsel (Thomas Phillips, Esq.)."
         },
         {
@@ -84612,7 +84612,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1325964-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jonathan Perez) and outside legal counsel (Jason White, Esq.)."
         },
         {
@@ -84850,7 +84850,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1690012-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Aaron Johnson) and outside legal counsel (Patrick Campbell, Esq.)."
         },
         {
@@ -85088,7 +85088,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1937993-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Paul Clark) and outside legal counsel (William Moore, Esq.)."
         },
         {
@@ -85326,7 +85326,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1730773-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Stephen Evans) and outside legal counsel (Jeffrey Adams, Esq.)."
         },
         {
@@ -85564,7 +85564,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1668010-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jose Lopez) and outside legal counsel (Frank Anderson, Esq.)."
         },
         {
@@ -85802,7 +85802,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1753162-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Andrew Mitchell) and outside legal counsel (Charles King, Esq.)."
         },
         {
@@ -86040,7 +86040,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1693256-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Larry Martin) and outside legal counsel (Ryan Garcia, Esq.)."
         },
         {
@@ -86278,7 +86278,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1424929-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Adam Nelson) and outside legal counsel (Raymond Young, Esq.)."
         },
         {
@@ -86516,7 +86516,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-320017-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Joshua Taylor) and outside legal counsel (Daniel Brown, Esq.)."
         },
         {
@@ -86754,7 +86754,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1787117-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Justin Scott) and outside legal counsel (Jacob Robinson, Esq.)."
         },
         {
@@ -86992,7 +86992,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1411690-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Michael Rodriguez) and outside legal counsel (Jack Torres, Esq.)."
         },
         {
@@ -87230,7 +87230,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1934245-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Kevin Allen) and outside legal counsel (Matthew Gonzalez, Esq.)."
         },
         {
@@ -87468,7 +87468,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1210708-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Scott Jones) and outside legal counsel (Gary Carter, Esq.)."
         },
         {
@@ -87707,7 +87707,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1769628-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (David Walker) and outside legal counsel (Dennis Thompson, Esq.)."
         },
         {
@@ -87953,7 +87953,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1788060-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brian Smith) and outside legal counsel (Mark Ramirez, Esq.)."
         },
         {
@@ -88191,7 +88191,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1694426-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Brandon Harris) and outside legal counsel (Nicholas Hernandez, Esq.)."
         },
         {
@@ -88429,7 +88429,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1534504-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Robert Phillips) and outside legal counsel (Jerry Baker, Esq.)."
         },
         {
@@ -88667,7 +88667,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1838406-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (George White) and outside legal counsel (Donald Martinez, Esq.)."
         },
         {
@@ -88905,7 +88905,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1660280-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Benjamin Campbell) and outside legal counsel (Eric Wright, Esq.)."
         },
         {
@@ -89143,7 +89143,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1159036-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (James Moore) and outside legal counsel (Tyler Davis, Esq.)."
         },
         {
@@ -89381,7 +89381,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1640147-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Timothy Adams) and outside legal counsel (Steven Hall, Esq.)."
         },
         {
@@ -89619,7 +89619,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1069183-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Samuel Anderson) and outside legal counsel (Jonathan Williams, Esq.)."
         },
         {
@@ -89857,7 +89857,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1637873-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (John King) and outside legal counsel (Aaron Lewis, Esq.)."
         },
         {
@@ -90095,7 +90095,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-900075-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Ronald Garcia) and outside legal counsel (Paul Turner, Esq.)."
         },
         {
@@ -90333,7 +90333,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1922446-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Gregory Young) and outside legal counsel (Stephen Lee, Esq.)."
         },
         {
@@ -90571,7 +90571,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1468328-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Richard Brown) and outside legal counsel (Jose Roberts, Esq.)."
         },
         {
@@ -90809,7 +90809,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1624512-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Edward Robinson) and outside legal counsel (Andrew Jackson, Esq.)."
         },
         {
@@ -91047,7 +91047,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1825088-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Alexander Torres) and outside legal counsel (Larry Hill, Esq.)."
         },
         {
@@ -91285,7 +91285,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1781755-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Thomas Gonzalez) and outside legal counsel (Adam Thomas, Esq.)."
         },
         {
@@ -91523,7 +91523,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-edgar-1604028-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jason Carter) and outside legal counsel (Joshua Green, Esq.)."
         },
         {
@@ -91763,7 +91763,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-ca-tsxv-sur-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Patrick Thompson) and outside legal counsel (Justin Wilson, Esq.)."
         },
         {
@@ -92004,7 +92004,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-ca-tsx-ntm-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (William Ramirez) and outside legal counsel (Michael Sanchez, Esq.)."
         },
         {
@@ -92245,7 +92245,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-ca-cse-cpx-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Jeffrey Hernandez) and outside legal counsel (Kevin Miller, Esq.)."
         },
         {
@@ -92486,7 +92486,7 @@ const rawTargets: TargetCompany[] = [
         {
           "id": "act-au-asx-vtl-20261009-csuite",
           "date": "2026-10-09",
-          "type": "email_outbound",
+          "type": "email",
           "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Frank Baker) and outside legal counsel (Scott Perez, Esq.)."
         },
         {

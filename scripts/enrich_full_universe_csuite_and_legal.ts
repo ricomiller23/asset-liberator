@@ -520,11 +520,11 @@ async function main() {
     const notes: CrmNote[] = [...(crm.notes || [])];
 
     // Add activity if none exists for today
-    if (!activities.some((a) => a.date === "2026-10-09" && a.type === "email_outbound")) {
+    if (!activities.some((a) => a.date === "2026-10-09" && a.type === "email")) {
       activities.unshift({
         id: `act-${t.id}-20261009-csuite`,
         date: "2026-10-09",
-        type: "email_outbound",
+        type: "email",
         summary: `Dispatched confidential carve-out proposal to Chief Executive Officer (${contacts[0]?.name}) and outside legal counsel (${contacts.find(c => c.entity === 'Legal Counsel')?.name}).`
       });
     }
