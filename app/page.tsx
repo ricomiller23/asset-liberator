@@ -55,6 +55,7 @@ function AssetLiberatorMain() {
 
   const [activeTab, setActiveTab] = useState<NavTabType>("screener");
   const [activeDrawerTarget, setActiveDrawerTarget] = useState<TargetCompany | null>(null);
+  const [visibleCount, setVisibleCount] = useState<number>(24);
   const [activePlaybookTarget, setActivePlaybookTarget] = useState<TargetCompany | null>(null);
   const [activeOutreachTarget, setActiveOutreachTarget] = useState<TargetCompany | null>(null);
   
@@ -311,7 +312,8 @@ function AssetLiberatorMain() {
               filters={filters}
               onFilterChange={setFilters}
               resultCount={displayedTargets.length}
-              tierCounts={apiData?.meta?.tiers}
+              allTotal={apiData?.meta?.allTotal || (apiData?.meta?.total ?? 18)}
+              tierCounts={apiData?.meta?.tierCounts || apiData?.meta?.tiers}
             />
 
             {/* Target Cards Grid */}
@@ -342,18 +344,34 @@ function AssetLiberatorMain() {
                 </div>
               </div>
             ) : (
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                {displayedTargets.map((target) => (
-                  <TargetCard
-                    key={target.id}
-                    target={target}
-                    onOpenDrawer={(t) => setActiveDrawerTarget(t)}
-                    onOpenPlaybook={(t) => setActivePlaybookTarget(t)}
-                    onOpenOutreach={(t) => setActiveOutreachTarget(t)}
-                    onOpenEditContact={handleOpenEditContact}
-                    onOpenLogCall={handleOpenLogCall}
-                  />
-                ))}
+              <div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                  {displayedTargets.slice(0, visibleCount).map((target) => (
+                    <TargetCard
+                      key={target.id}
+                      target={target}
+                      onOpenDrawer={(t) => setActiveDrawerTarget(t)}
+                      onOpenPlaybook={(t) => setActivePlaybookTarget(t)}
+                      onOpenOutreach={(t) => setActiveOutreachTarget(t)}
+                      onOpenEditContact={handleOpenEditContact}
+                      onOpenLogCall={handleOpenLogCall}
+                    />
+                  ))}
+                </div>
+
+                {visibleCount < displayedTargets.length && (
+                  <div className="mt-8 flex justify-center pb-8">
+                    <button
+                      onClick={() => setVisibleCount((prev) => prev + 24)}
+                      className="flex items-center space-x-2 rounded-xl border border-stone-800 bg-stone-900 px-6 py-2.5 text-xs font-semibold text-stone-200 hover:bg-stone-850 hover:border-stone-700 transition shadow-sm cursor-pointer"
+                    >
+                      <span>Load more</span>
+                      <span className="text-[11px] font-mono text-stone-400">
+                        ({displayedTargets.length - visibleCount} remaining)
+                      </span>
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>

@@ -6,6 +6,7 @@ interface FilterBarProps {
   filters: SearchFilters;
   onFilterChange: (filters: SearchFilters) => void;
   resultCount: number;
+  allTotal?: number;
   tierCounts?: {
     verified: number;
     screened: number;
@@ -18,6 +19,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   filters,
   onFilterChange,
   resultCount,
+  allTotal,
   tierCounts,
 }) => {
   const handleQueryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -103,11 +105,26 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           FUNNEL TIERS:
         </span>
         {[
-          { id: "all", label: "All Qualified (14)" },
-          { id: "verified", label: `Tier 1 Sourced (${tierCounts?.verified ?? 3} of 18) • Passed 3 Gates` },
-          { id: "screened", label: `Tier 2 Screened (${tierCounts?.screened ?? 5} of 18) • Mismatch Sourced` },
-          { id: "radar", label: `Tier 3 Radar (${tierCounts?.radar ?? 6} of 18) • Catalysts >90d` },
-          { id: "disqualified", label: `Excluded Filers (${tierCounts?.disqualified ?? 4} of 18) • NLST/NWBO/CYDY` },
+          {
+            id: "all",
+            label: `All Qualified (${(tierCounts?.verified ?? 0) + (tierCounts?.screened ?? 0) + (tierCounts?.radar ?? 0)})`,
+          },
+          {
+            id: "verified",
+            label: `Tier 1 Sourced (${tierCounts?.verified ?? 0}${allTotal ? ` of ${allTotal}` : ""}) • Passed 3 Gates`,
+          },
+          {
+            id: "screened",
+            label: `Tier 2 Screened (${tierCounts?.screened ?? 0}${allTotal ? ` of ${allTotal}` : ""}) • Mismatch Sourced`,
+          },
+          {
+            id: "radar",
+            label: `Tier 3 Radar (${tierCounts?.radar ?? 0}${allTotal ? ` of ${allTotal}` : ""}) • Catalysts >90d`,
+          },
+          {
+            id: "disqualified",
+            label: `Excluded Filers (${tierCounts?.disqualified ?? 0}${allTotal ? ` of ${allTotal}` : ""}) • Disqualified`,
+          },
         ].map((item) => {
           const isSelected = (filters.tier || "all") === item.id;
           return (
