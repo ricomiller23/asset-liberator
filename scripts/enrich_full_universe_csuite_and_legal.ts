@@ -16,8 +16,7 @@ const LAW_FIRM_ROSTER = [
   { firm: "Anthony L.G., PLLC", partner: "Laura Anthony, Esq.", email: "laura@anthonypllc.com", domain: "anthonypllc.com", address: "625 N Flagler Dr, Suite 600, West Palm Beach, FL 33401", phone: "(561) 514-0936" },
   { firm: "Cleary Gottlieb Steen & Hamilton LLP", partner: "Sean A. O'Neal, Esq.", email: "soneal@cgsh.com", domain: "cgsh.com", address: "One Liberty Plaza, New York, NY 10006", phone: "(212) 225-2000" },
   { firm: "Kirkland & Ellis LLP", partner: "Edward O. Sassower, Esq.", email: "esassower@kirkland.com", domain: "kirkland.com", address: "601 Lexington Avenue, New York, NY 10022", phone: "(212) 446-4800" },
-  { firm: "Gibson, Dunn & Crutcher LLP", partner: "Jeffrey C. Krause, Esq.", email: "jkrause@gibsondunn.com", domain: "gibsondunn.com", address: "200 Park Avenue, New York, NY 10166", phone: "(212) 351-4000" },
-  { firm: "Skadden, Arps, Slate, Meagher & Flom LLP", partner: "Howard Goldstein, Esq.", email: "howard.goldstein@skadden.com", domain: "skadden.com", address: "One Manhattan West, New York, NY 10001", phone: "(212) 735-3000" },
+    { firm: "Skadden, Arps, Slate, Meagher & Flom LLP", partner: "Howard Goldstein, Esq.", email: "howard.goldstein@skadden.com", domain: "skadden.com", address: "One Manhattan West, New York, NY 10001", phone: "(212) 735-3000" },
   { firm: "Winston & Strawn LLP", partner: "Matthew A. Cohen, Esq.", email: "mcohen@winston.com", domain: "winston.com", address: "35 W Wacker Dr, Chicago, IL 60601", phone: "(312) 558-5600" },
   { firm: "DLA Piper LLP", partner: "Joshua Cohen, Esq.", email: "jcohen@dlapiper.com", domain: "dlapiper.com", address: "1251 Avenue of the Americas, New York, NY 10020", phone: "(212) 335-4500" },
   { firm: "Haynes and Boone, LLP", partner: "Richard A. Werner, Esq.", email: "richard.werner@haynesboone.com", domain: "haynesboone.com", address: "30 Rockefeller Plaza, 26th Fl, New York, NY 10112", phone: "(212) 659-7300" },
@@ -55,7 +54,7 @@ const SPECIFIC_TARGET_LEADERSHIP: Record<string, {
     cfo: { name: "Jeff White", title: "Chief Financial Officer & Treasurer", email: "jwhite@leslies.com" },
     coo: { name: "Scott Johnson", title: "Executive Vice President of Operations", email: "sjohnson@leslies.com" },
     gc: { name: "Benjamin Lindquist, Esq.", title: "Senior Vice President, General Counsel & Secretary", email: "blindquist@leslies.com" },
-    outside: { name: "Jeffrey C. Krause, Esq.", firm: "Gibson, Dunn & Crutcher LLP", email: "jkrause@gibsondunn.com", address: "200 Park Avenue, New York, NY 10166", phone: "(212) 351-4000" }
+    outside: { name: "Edward O. Sassower, Esq.", firm: "Kirkland & Ellis LLP", email: "esassower@kirkland.com", address: "601 Lexington Avenue, New York, NY 10022", phone: "(212) 446-4800" }
   },
   "WBD": {
     ceo: { name: "David Zaslav", title: "President & Chief Executive Officer", email: "david.zaslav@wbd.com" },
@@ -698,7 +697,7 @@ Every company in the Asset Liberator universe now features an authenticated 5-pe
 2. **Chief Financial Officer (CFO):** Named executive managing debt obligations and treasury liquidity.
 3. **Chief Operating Officer (COO):** Operating officer managing subsidiary business units and supply contracts.
 4. **General Counsel (In-House):** Dedicated legal counsel advising on fiduciary duties and disclosure filings.
-5. **Outside Securities & Restructuring Counsel:** Lead named partner at top national restructuring law firms (Gibson Dunn, Skadden, Cleary Gottlieb, Cooley, Lucosky Brookman, Ellenoff Grossman, Sichenzia Ross, Hunter Taubman, Winston & Strawn, etc.).
+5. **Outside Securities & Restructuring Counsel:** Lead named partner at top national restructuring law firms (Skadden, Cleary Gottlieb, Cooley, Lucosky Brookman, Ellenoff Grossman, Sichenzia Ross, Hunter Taubman, Winston & Strawn, etc.).
 
 ---
 

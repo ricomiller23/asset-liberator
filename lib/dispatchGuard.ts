@@ -6,11 +6,50 @@ export interface GuardCheckResult {
   reason?: string;
 }
 
-export function canSendEmail(to: string): GuardCheckResult {
-  const email = to.trim().toLowerCase();
-  const domain = email.includes("@") ? email.split("@")[1] : "";
+const BANNED_GENERIC_PREFIXES = new Set([
+  "info",
+  "contact",
+  "restructuring",
+  "support",
+  "legal",
+  "sales",
+  "admin",
+  "ir",
+  "investor",
+  "investors",
+  "investorrelations",
+  "management",
+  "corp",
+  "corporate",
+  "team",
+  "help",
+  "billing",
+  "press",
+  "media",
+  "firm",
+  "office",
+  "general",
+  "inquiries",
+  "hello"
+]);
 
-  // 1. Check Suppression List
+export function canSendEmail(to: string): GuardCheckResult {
+  const email = (to || "").trim().toLowerCase();
+  if (!email || !email.includes("@")) {
+    return { allowed: false, reason: "INVALID_EMAIL_FORMAT" };
+  }
+
+  const [prefix, domain] = email.split("@");
+
+  // 1. Strict Generic Email Prohibition
+  if (BANNED_GENERIC_PREFIXES.has(prefix)) {
+    return {
+      allowed: false,
+      reason: "GENERIC_EMAIL_PROHIBITED: Outbound transmission to generic mailbox " + prefix + "@ is strictly forbidden by policy. Must be a direct, named executive or counsel address."
+    };
+  }
+
+  // 2. Check Suppression List (Gibson Dunn, McGuireWoods, etc.)
   try {
     const suppPath = path.resolve(process.cwd(), "data/suppression_list.json");
     if (fs.existsSync(suppPath)) {
@@ -19,17 +58,17 @@ export function canSendEmail(to: string): GuardCheckResult {
       const domains = (suppData.suppressedDomains || []).map((d: string) => d.toLowerCase());
 
       if (emails.includes(email)) {
-        return { allowed: false, reason: `PERMANENTLY SUPPRESSED: ${email} is on global opt-out list.` };
+        return { allowed: false, reason: "PERMANENTLY SUPPRESSED: " + email + " is on global opt-out list." };
       }
       if (domains.includes(domain)) {
-        return { allowed: false, reason: `PERMANENTLY SUPPRESSED DOMAIN: @${domain} has requested global firm-wide stop.` };
+        return { allowed: false, reason: "PERMANENTLY SUPPRESSED DOMAIN: @" + domain + " has requested global firm-wide stop." };
       }
     }
   } catch (err) {
     console.error("Error reading suppression_list.json:", err);
   }
 
-  // 2. Check Dispatched Registry (Deduplication)
+  // 3. Check Dispatched Registry (Deduplication)
   try {
     const regPath = path.resolve(process.cwd(), "data/dispatched_recipients_registry.json");
     if (fs.existsSync(regPath)) {
@@ -38,7 +77,7 @@ export function canSendEmail(to: string): GuardCheckResult {
         const record = regData.recipients[email];
         return {
           allowed: false,
-          reason: `DEDUPLICATION BLOCK: ${email} already received ${record.count} email(s) on ${record.lastSent}. Duplicate transmission forbidden.`
+          reason: "DEDUPLICATION BLOCK: " + email + " already received " + record.count + " email(s) on " + record.lastSent + ". Duplicate transmission forbidden."
         };
       }
     }
@@ -50,7 +89,7 @@ export function canSendEmail(to: string): GuardCheckResult {
 }
 
 export function registerSentEmail(to: string, subject: string, ticker?: string): void {
-  const email = to.trim().toLowerCase();
+  const email = (to || "").trim().toLowerCase();
   try {
     const regPath = path.resolve(process.cwd(), "data/dispatched_recipients_registry.json");
     let regData: any = { updatedAt: new Date().toISOString(), recipients: {} };

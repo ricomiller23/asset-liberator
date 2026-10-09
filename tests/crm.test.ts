@@ -192,5 +192,30 @@ describe("CRM Pipeline State Management Suite", () => {
     const dedupRes = canSendEmail("pchadha@exelatech.com");
     expect(dedupRes.allowed).toBe(false);
     expect(dedupRes.reason).toContain("DEDUPLICATION");
+
+    // 3. Gibson Dunn firm-wide hard block
+    const gdRes = canSendEmail("jkrause@gibsondunn.com");
+    expect(gdRes.allowed).toBe(false);
+    expect(gdRes.reason).toContain("SUPPRESSED");
+
+    const gdDomainRes = canSendEmail("partner@gibsondunn.com");
+    expect(gdDomainRes.allowed).toBe(false);
+    expect(gdDomainRes.reason).toContain("SUPPRESSED DOMAIN");
+
+    // 4. Strict generic email prohibition
+    const genericInfo = canSendEmail("info@competitor.com");
+    expect(genericInfo.allowed).toBe(false);
+    expect(genericInfo.reason).toContain("GENERIC_EMAIL_PROHIBITED");
+
+    const genericRestruct = canSendEmail("restructuring@competitor.com");
+    expect(genericRestruct.allowed).toBe(false);
+    expect(genericRestruct.reason).toContain("GENERIC_EMAIL_PROHIBITED");
+
+    // 5. Zero occurrences of Gibson Dunn across all targets
+    const allTargets = getStoredTargets();
+    const hasGibsonDunn = allTargets.some((t) =>
+      t.contacts.some((c) => (c.email || "").includes("gibsondunn.com") || c.title.includes("Gibson, Dunn"))
+    );
+    expect(hasGibsonDunn).toBe(false);
   });
 });

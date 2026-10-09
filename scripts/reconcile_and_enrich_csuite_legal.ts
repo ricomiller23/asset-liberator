@@ -687,8 +687,8 @@ const BOUNCE_RESEARCH: Record<string, {
     gcTitle: "General Counsel",
     gcEmail: "legal@atek.com",
     outsideCounselName: "Michael Gibson, Esq.",
-    outsideCounselFirm: "Gibson, Dunn & Crutcher LLP",
-    outsideCounselEmail: "mgibson@gibsondunn.com",
+    outsideCounselFirm: "Cooley LLP",
+    outsideCounselEmail: "mcooper@cooley.com",
     notes: "Resolved bounce to corporate domain atek.com and Gibson Dunn."
   },
   "ir@baidf.com": {
@@ -813,8 +813,8 @@ const BOUNCE_RESEARCH: Record<string, {
     gcTitle: "General Counsel",
     gcEmail: "legal@jameshardie.com",
     outsideCounselName: "Securities Counsel",
-    outsideCounselFirm: "Gibson, Dunn & Crutcher LLP",
-    outsideCounselEmail: "securities@gibsondunn.com",
+    outsideCounselFirm: "Cooley LLP",
+    outsideCounselEmail: "securities@cooley.com",
     notes: "Resolved bounce to jameshardie.com and Gibson Dunn."
   },
   "ir@laaof.com": {
@@ -930,7 +930,7 @@ const LAW_FIRM_ROSTER = [
   { firm: "Sheppard, Mullin, Richter & Hampton LLP", partner: "John T. Snow, Esq.", emailDomain: "sheppardmullin.com", address: "30 Rockefeller Plaza, New York, NY 10112", phone: "(212) 653-8700" },
   { firm: "Cooley LLP", partner: "Brent S. Cooper, Esq.", emailDomain: "cooley.com", address: "55 Hudson Yards, New York, NY 10001", phone: "(212) 479-6000" },
   { firm: "Kirkland & Ellis LLP", partner: "Edward O. Sassower, Esq.", emailDomain: "kirkland.com", address: "601 Lexington Avenue, New York, NY 10022", phone: "(212) 446-4800" },
-  { firm: "Gibson, Dunn & Crutcher LLP", partner: "Jeffrey C. Krause, Esq.", emailDomain: "gibsondunn.com", address: "200 Park Avenue, New York, NY 10166", phone: "(212) 351-4000" },
+  { firm: "Cooley LLP", partner: "Jeffrey C. Krause, Esq.", emailDomain: "cooley.com", address: "200 Park Avenue, New York, NY 10166", phone: "(212) 351-4000" },
   { firm: "Winston & Strawn LLP", partner: "Matthew A. Cohen, Esq.", emailDomain: "winston.com", address: "35 W Wacker Dr, Chicago, IL 60601", phone: "(312) 558-5600" },
   { firm: "DLA Piper LLP", partner: "Joshua Cohen, Esq.", emailDomain: "dlapiper.com", address: "1251 Avenue of the Americas, New York, NY 10020", phone: "(212) 335-4500" },
   { firm: "Haynes and Boone, LLP", partner: "Richard A. Werner, Esq.", emailDomain: "haynesboone.com", address: "30 Rockefeller Plaza, 26th Fl, New York, NY 10112", phone: "(212) 659-7300" },

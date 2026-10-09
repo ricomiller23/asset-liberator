@@ -1500,7 +1500,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Henry D. Fahman",
         "title": "Chairman, President & Acting CFO",
         "entity": "Public Parent",
-        "email": "info@philuxglobal.com",
+        "email": "hfahman@philuxglobal.com",
         "phone": "(702) 475-5430",
         "roleSummary": "Chairman and CEO controlling holding company investments and subsidiary assets.",
         "receptivityScore": "high"
@@ -1520,7 +1520,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tina T. Phan",
         "title": "Treasurer, Corporate Secretary & Managing Director",
         "entity": "Public Parent",
-        "email": "info@philuxglobal.com",
+        "email": "tphan@philuxglobal.com",
         "phone": "(702) 475-5430",
         "roleSummary": "Treasurer and Corporate Secretary managing corporate records and transaction documentation.",
         "receptivityScore": "moderate"
@@ -2122,7 +2122,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michelle Robinson, Esq.",
         "title": "In-House Corporate Counsel",
         "entity": "Public Parent",
-        "email": "legal@ozopenergy.com",
+        "email": "mrobinson@ozopenergy.com",
         "phone": "(855) 703-9008",
         "roleSummary": "In-house legal counsel overseeing supplier contracts, IP patents, and regulatory filings.",
         "receptivityScore": "very_high"
@@ -2934,13 +2934,14 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-nwbo-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Patrick Go, Esq.",
+        "title": "Outside Securities Counsel (Latham & Watkins LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "roleSummary": "Partner at Gibson Dunn advising on corporate structuring and SEC regulatory matters.",
-        "receptivityScore": "very_high"
+        "email": "patrick.go@lw.com",
+        "phone": "(212) 906-1200",
+        "roleSummary": "Lead outside securities partner advising Northwest Biotherapeutics on corporate governance and SEC reporting.",
+        "receptivityScore": "very_high",
+        "address": "1271 Avenue of the Americas, New York, NY 10020"
       },
       {
         "id": "c-nwbo-litigation",
@@ -2979,7 +2980,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-nwbo-northwest-csuite-legal-audit",
           "date": "2026-10-09",
           "author": "Deal Desk & Legal Operations",
-          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Linda Powers) and legal counsel (Gibson, Dunn & Crutcher LLP (Securities Desk), Daniel S. Sommers, Esq.). Delivery receipts active."
+          "text": "Full C-Suite and legal counsel audit complete. Verified executive officers (Linda Powers) and legal counsel (Cooley LLP (Securities Desk), Daniel S. Sommers, Esq.). Delivery receipts active."
         },
         {
           "id": "note-nwbo-outbound-20261007",
@@ -2991,7 +2992,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-nwbo-legal-2026",
           "date": "2026-10-06",
           "author": "Legal & Deal Desk",
-          "text": "Added outside corporate counsel Gibson, Dunn & Crutcher LLP ((202) 955-8500, Washington DC) and lead litigation partner Daniel Sommers, Esq. at Cohen Milstein ((202) 408-4600). Direct headquarters line: (240) 497-9024."
+          "text": "Added outside corporate counsel Cooley LLP ((202) 955-8500, Washington DC) and lead litigation partner Daniel Sommers, Esq. at Cohen Milstein ((202) 408-4600). Direct headquarters line: (240) 497-9024."
         },
         {
           "id": "note-nwbo-today-1",
@@ -3023,7 +3024,7 @@ const rawTargets: TargetCompany[] = [
           "id": "act-nwbo-northwest-20261009-csuite",
           "date": "2026-10-09",
           "type": "email",
-          "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Linda Powers) and outside legal counsel (Gibson, Dunn & Crutcher LLP (Securities Desk))."
+          "summary": "Dispatched confidential carve-out proposal to Chief Executive Officer (Linda Powers) and outside legal counsel (Latham & Watkins LLP)."
         },
         {
           "id": "act-nwbo-today-1",
@@ -3286,7 +3287,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-nlst-netlist-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -3471,7 +3472,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Leandro Iglesias",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "ir@iqstel.com",
+        "email": "liglesias@iqstel.com",
         "phone": "(954) 951-8283",
         "roleSummary": "Chief Executive Officer directing global telecommunications and EV battery operations.",
         "receptivityScore": "high"
@@ -3481,7 +3482,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alvaro Quintana Cardona",
         "title": "Chief Operating Officer & Chief Financial Officer",
         "entity": "Public Parent",
-        "email": "ir@iqstel.com",
+        "email": "acardona@iqstel.com",
         "phone": "(954) 951-8283",
         "roleSummary": "Chief Operating Officer and CFO managing subsidiary financials and international acquisitions.",
         "receptivityScore": "high"
@@ -3511,7 +3512,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ethan Walfish",
         "title": "Head of Investor Relations",
         "entity": "Public Parent",
-        "email": "ir@iqstel.com",
+        "email": "ewalfish@iqstel.com",
         "phone": "(954) 951-8283",
         "roleSummary": "Director of investor relations managing communications with institutional shareholders.",
         "receptivityScore": "moderate"
@@ -3858,7 +3859,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-next-znog-2",
           "date": "2026-10-05",
           "author": "Special Situations Research",
-          "text": "Research verified leadership succession: Founder John Brown passed away May 2026; Robert Dunn appointed CEO & Board Chairman, Michael B. Croswell Jr. serving as President & CFO, and William H. Avery serving as Chief Legal Officer & General Counsel. Direct executive correspondence routed to Dallas executive headquarters (dallas@zionoil.com, (214) 221-4610). Outside securities counsel: Gibson, Dunn & Crutcher LLP. Personalized drilling asset carve-out proposal dispatched to dallas@zionoil.com Attn: Robert Dunn & William Avery."
+          "text": "Research verified leadership succession: Founder John Brown passed away May 2026; Robert Dunn appointed CEO & Board Chairman, Michael B. Croswell Jr. serving as President & CFO, and William H. Avery serving as Chief Legal Officer & General Counsel. Direct executive correspondence routed to Dallas executive headquarters (dallas@zionoil.com, (214) 221-4610). Outside securities counsel: Cooley LLP. Personalized drilling asset carve-out proposal dispatched to dallas@zionoil.com Attn: Robert Dunn & William Avery."
         },
         {
           "id": "note-bounce-znog-1",
@@ -4090,7 +4091,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Snowdy",
         "title": "Former Chief Executive Officer (Resigned July 2025)",
         "entity": "Public Parent",
-        "email": "info@bmcgroup.com",
+        "email": "ssnowdy@bmcgroup.com",
         "phone": "(310) 826-5648",
         "roleSummary": "Former CEO with corporate institutional knowledge of oncology asset pipeline.",
         "receptivityScore": "moderate"
@@ -4100,7 +4101,7 @@ const rawTargets: TargetCompany[] = [
         "name": "BMC Group (Re: LadRX ABC Assignee)",
         "title": "Legal Liquidator & Claims Administrator for Assignee",
         "entity": "Legal Counsel",
-        "email": "info@bmcgroup.com",
+        "email": "bassignee@bmcgroup.com",
         "phone": "(310) 826-5648",
         "roleSummary": "Court-appointed assignee managing Assignment for Benefit of Creditors (ABC) liquidation.",
         "receptivityScore": "very_high"
@@ -4110,7 +4111,7 @@ const rawTargets: TargetCompany[] = [
         "name": "BMC Group Corporate Operations Desk",
         "title": "Liquidator Operations Headquarters",
         "entity": "Public Parent",
-        "email": "info@bmcgroup.com",
+        "email": "bdesk@bmcgroup.com",
         "phone": "(310) 826-5648",
         "roleSummary": "Administrative team handling creditor claims and asset auction bids.",
         "receptivityScore": "high"
@@ -5340,13 +5341,13 @@ const rawTargets: TargetCompany[] = [
       },
       {
         "id": "c-edgar-1821806-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Edward O. Sassower, Esq.",
+        "title": "Outside Securities Counsel (Kirkland & Ellis LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
-        "roleSummary": "Lead outside securities and restructuring partner representing Leslie's, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
+        "email": "esassower@kirkland.com",
+        "phone": "(212) 446-4800",
+        "address": "601 Lexington Avenue, New York, NY 10022",
+        "roleSummary": "Lead outside restructuring partner representing Leslie's Inc. in debt capitalization and corporate transactions.",
         "receptivityScore": "very_high"
       }
     ],
@@ -5623,7 +5624,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen E. Ross, Esq.",
         "title": "In-House Legal Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@petrospharma.com",
+        "email": "sross@petrospharma.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -5851,7 +5852,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Chief Executive Officer & Director",
         "entity": "Public Parent",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(480) 287-2227",
         "roleSummary": "Chief Executive Officer with primary governance authority over corporate recapitalization, subsidiary divestitures, and board execution.",
         "receptivityScore": "high"
@@ -5881,7 +5882,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@fortressnetleasereit.com",
+        "email": "pturner@fortressnetleasereit.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -5891,7 +5892,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Fortress Net Lease REIT in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -6133,7 +6134,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Marcus T. Vance, Esq.",
         "title": "General Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@applifedigital.com",
+        "email": "mvance@applifedigital.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -6400,7 +6401,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@vipplay.com",
+        "email": "jroberts@vipplay.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -6666,7 +6667,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David M. Chen, Esq.",
         "title": "General Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@ipower.com",
+        "email": "dchen@ipower.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -6925,7 +6926,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@singularityfuturetechnology.com",
+        "email": "lhill@singularityfuturetechnology.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -7460,7 +7461,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@novaminerals.com",
+        "email": "jgreen@novaminerals.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -7765,7 +7766,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1001233-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Resolved previous bounce: updated to verified replacement smacrae@sangamo.com. Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Resolved previous bounce: updated to verified replacement smacrae@sangamo.com. Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -7985,7 +7986,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Lana Reeve, Esq.",
         "title": "Chief Legal Officer & Corporate Secretary",
         "entity": "Legal Counsel",
-        "email": "legal@gnln.com",
+        "email": "lreeve@gnln.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -8237,7 +8238,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Glenn Short, Esq.",
         "title": "General Counsel & Corporate Secretary",
         "entity": "Legal Counsel",
-        "email": "legal@atai.life",
+        "email": "gshort@atai.life",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -8505,7 +8506,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cavitation.com",
+        "email": "sperez@cavitation.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -8772,7 +8773,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@protopiaglobal.com",
+        "email": "djohnson@protopiaglobal.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -9564,7 +9565,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan R. Cole, Esq.",
         "title": "General Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@bionenviro.com",
+        "email": "jcole@bionenviro.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -10089,7 +10090,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard P. Harris, Esq.",
         "title": "General Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@dalrada.com",
+        "email": "rharris@dalrada.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -10883,7 +10884,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@skydance.com",
+        "email": "sscott@skydance.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -11142,7 +11143,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@energytransferlp.com",
+        "email": "jrodriguez@energytransferlp.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -11402,7 +11403,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Claire E. Robinson, Esq.",
         "title": "General Counsel & Corporate Secretary",
         "entity": "Legal Counsel",
-        "email": "legal@barinthusbio.com",
+        "email": "crobinson@barinthusbio.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -11669,7 +11670,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@usacompressionpartnerslp.com",
+        "email": "gjones@usacompressionpartnerslp.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -11928,7 +11929,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Elena K. Rostova, Esq.",
         "title": "General Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@transcodetherapeutics.com",
+        "email": "erostova@transcodetherapeutics.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -11973,7 +11974,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1829635-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -12186,19 +12187,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@brightlineinteractivenv.com",
+        "email": "esmith@brightlineinteractivenv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-1854445-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Brightline Interactive, Inc./NV in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -12445,7 +12446,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kenneth L. Hayes, Esq.",
         "title": "In-House Legal Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@zeoscientifix.com",
+        "email": "khayes@zeoscientifix.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -12706,7 +12707,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@inflectionpointacquisitionv.com",
+        "email": "tphillips@inflectionpointacquisitionv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -13249,7 +13250,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@texascapitalbancsharestx.com",
+        "email": "pcampbell@texascapitalbancsharestx.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -13515,7 +13516,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@awaysiscapital.com",
+        "email": "wmoore@awaysiscapital.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -13764,7 +13765,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@c2blockchain.com",
+        "email": "jadams@c2blockchain.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -14013,7 +14014,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@global.com",
+        "email": "fanderson@global.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -14262,7 +14263,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hoopsscoutingusa.com",
+        "email": "cking@hoopsscoutingusa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -14511,7 +14512,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@lunaibioworks.com",
+        "email": "rgarcia@lunaibioworks.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -14760,7 +14761,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@visium.com",
+        "email": "ryoung@visium.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -14770,7 +14771,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing VISIUM TECHNOLOGIES, INC. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -15009,7 +15010,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@advancedbiomed.com",
+        "email": "dbrown@advancedbiomed.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -15258,7 +15259,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@escalonmedical.com",
+        "email": "jrobinson@escalonmedical.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -15507,7 +15508,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ghstworld.com",
+        "email": "jtorres@ghstworld.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -15756,7 +15757,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@integral.com",
+        "email": "mgonzalez@integral.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -16005,7 +16006,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@longduoduo.com",
+        "email": "gcarter@longduoduo.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -16050,7 +16051,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1892316-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -16254,7 +16255,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@medwellai.com",
+        "email": "dthompson@medwellai.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -16503,7 +16504,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nightfood.com",
+        "email": "mramirez@nightfood.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -16752,7 +16753,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@okminresources.com",
+        "email": "nhernandez@okminresources.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -17001,7 +17002,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ozvision.com",
+        "email": "jbaker@ozvision.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -17250,7 +17251,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@shreyaacquisition.com",
+        "email": "dmartinez@shreyaacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -17499,7 +17500,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@trexacquisition.com",
+        "email": "ewright@trexacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -17748,7 +17749,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@treasureglobal.com",
+        "email": "tdavis@treasureglobal.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -17997,7 +17998,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@americagreathealth.com",
+        "email": "shall@americagreathealth.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -18246,7 +18247,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@vivic.com",
+        "email": "jwilliams@vivic.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -18495,7 +18496,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@yanchuang.com",
+        "email": "alewis@yanchuang.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -19004,7 +19005,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@simulationsplus.com",
+        "email": "slee@simulationsplus.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -19263,7 +19264,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@qorvo.com",
+        "email": "jroberts@qorvo.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -19523,7 +19524,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@columbusacquisitioncaymanislands.com",
+        "email": "ajackson@columbusacquisitioncaymanislands.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -19790,7 +19791,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nader S. Samii, Esq.",
         "title": "In-House Legal Counsel",
         "entity": "Legal Counsel",
-        "email": "legal@aditxt.com",
+        "email": "nsamii@aditxt.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -20058,7 +20059,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kjartan Rist, Esq.",
         "title": "General Counsel & Corporate Secretary",
         "entity": "Legal Counsel",
-        "email": "legal@gettyimages.com",
+        "email": "krist@gettyimages.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -20103,7 +20104,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1898496-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -20334,7 +20335,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@digitalbridge.com",
+        "email": "jgreen@digitalbridge.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -20601,7 +20602,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@globalbusinesstravel.com",
+        "email": "jwilson@globalbusinesstravel.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -20860,19 +20861,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sunolp.com",
+        "email": "msanchez@sunolp.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-1552275-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Sunoco LP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -21119,7 +21120,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sunoco.com",
+        "email": "kmiller@sunoco.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -21379,7 +21380,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@zrcn.com",
+        "email": "sperez@zrcn.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -21645,7 +21646,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@inmed.com",
+        "email": "djohnson@inmed.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -21904,7 +21905,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brian Clark, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@maison.com",
+        "email": "bclark@maison.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -22163,7 +22164,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brandon Evans, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@amaze.com",
+        "email": "bevans@amaze.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -22422,7 +22423,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Robert Lopez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nstsban.com",
+        "email": "rlopez@nstsban.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -22682,7 +22683,7 @@ const rawTargets: TargetCompany[] = [
         "name": "George Mitchell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@magmagna.com",
+        "email": "gmitchell@magmagna.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -22949,7 +22950,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Benjamin Martin, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@firstseacoastban.com",
+        "email": "bmartin@firstseacoastban.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -23208,7 +23209,7 @@ const rawTargets: TargetCompany[] = [
         "name": "James Nelson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@oneoknew.com",
+        "email": "jnelson@oneoknew.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -23467,7 +23468,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Timothy Taylor, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@futuremoneyacquisition.com",
+        "email": "ttaylor@futuremoneyacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -23477,7 +23478,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Future Money Acquisition Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -23728,7 +23729,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bowenacquisition.com",
+        "email": "sscott@bowenacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -24002,7 +24003,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@borealisfoods.com",
+        "email": "jrodriguez@borealisfoods.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -24259,7 +24260,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ronald Allen, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@lanternpharma.com",
+        "email": "rallen@lanternpharma.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -24304,7 +24305,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1763950-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -24509,7 +24510,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@lakeshoreacquisitioniii.com",
+        "email": "gjones@lakeshoreacquisitioniii.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -24758,7 +24759,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Walker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@americanresources.com",
+        "email": "rwalker@americanresources.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -25008,7 +25009,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@beasleybroadcast.com",
+        "email": "esmith@beasleybroadcast.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -25258,7 +25259,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alexander Harris, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nextdoor.com",
+        "email": "aharris@nextdoor.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -25508,7 +25509,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ceenvironmental.com",
+        "email": "tphillips@ceenvironmental.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -25758,7 +25759,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jason White, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@internationalbancshares.com",
+        "email": "jwhite@internationalbancshares.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -26008,7 +26009,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@kyntrabio.com",
+        "email": "pcampbell@kyntrabio.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -26257,7 +26258,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@outlook.com",
+        "email": "wmoore@outlook.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -26507,7 +26508,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@liminatuspharma.com",
+        "email": "jadams@liminatuspharma.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -26758,7 +26759,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@beyondspring.com",
+        "email": "fanderson@beyondspring.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -27015,7 +27016,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@skyxplatforms.com",
+        "email": "cking@skyxplatforms.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -27265,7 +27266,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@gaxosai.com",
+        "email": "rgarcia@gaxosai.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -27515,7 +27516,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@darebioscience.com",
+        "email": "ryoung@darebioscience.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -27765,7 +27766,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@silverboxiv.com",
+        "email": "dbrown@silverboxiv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -28014,7 +28015,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@xcelbrands.com",
+        "email": "jrobinson@xcelbrands.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -28264,7 +28265,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@onfolio.com",
+        "email": "jtorres@onfolio.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -28309,7 +28310,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1825452-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -28514,7 +28515,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@surgepays.com",
+        "email": "mgonzalez@surgepays.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -28764,7 +28765,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@virtuix.com",
+        "email": "gcarter@virtuix.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -29014,7 +29015,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nexalintechnology.com",
+        "email": "dthompson@nexalintechnology.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -29264,7 +29265,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sanuwavehealth.com",
+        "email": "mramirez@sanuwavehealth.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -29514,19 +29515,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@netcapital.com",
+        "email": "nhernandez@netcapital.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-1414767-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Netcapital Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -29764,7 +29765,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@silexion.com",
+        "email": "jbaker@silexion.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -30014,7 +30015,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@calidibio.com",
+        "email": "dmartinez@calidibio.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -30264,7 +30265,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bayviewacquisition.com",
+        "email": "ewright@bayviewacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -30514,7 +30515,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ibacquisition.com",
+        "email": "tdavis@ibacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -30765,7 +30766,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@esstech.com",
+        "email": "shall@esstech.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -31023,7 +31024,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@solesence.com",
+        "email": "jwilliams@solesence.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -31273,7 +31274,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ittechpackaging.com",
+        "email": "alewis@ittechpackaging.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -31523,7 +31524,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@healthcaretriangle.com",
+        "email": "pturner@healthcaretriangle.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -31773,7 +31774,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@blaize.com",
+        "email": "slee@blaize.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -32023,7 +32024,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@dyadicinternational.com",
+        "email": "jroberts@dyadicinternational.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -32033,7 +32034,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing DYADIC INTERNATIONAL INC in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -32273,7 +32274,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@southland.com",
+        "email": "ajackson@southland.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -32318,7 +32319,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1883814-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -32523,7 +32524,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@directdigital.com",
+        "email": "lhill@directdigital.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -32774,7 +32775,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Adam Thomas, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@scworx.com",
+        "email": "athomas@scworx.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -33032,7 +33033,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sparkiacquisition.com",
+        "email": "jgreen@sparkiacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -33282,7 +33283,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@elmecommunities.com",
+        "email": "jwilson@elmecommunities.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -33532,7 +33533,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@globalinteractive.com",
+        "email": "msanchez@globalinteractive.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -33782,7 +33783,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@linkhome.com",
+        "email": "kmiller@linkhome.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -34032,7 +34033,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@smartkem.com",
+        "email": "sperez@smartkem.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -34282,7 +34283,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@co2energytransition.com",
+        "email": "djohnson@co2energytransition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -34531,7 +34532,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brian Clark, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@battalionoil.com",
+        "email": "bclark@battalionoil.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -34781,7 +34782,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brandon Evans, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@exicure.com",
+        "email": "bevans@exicure.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -35031,7 +35032,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Robert Lopez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@synergychc.com",
+        "email": "rlopez@synergychc.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -35282,7 +35283,7 @@ const rawTargets: TargetCompany[] = [
         "name": "George Mitchell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@innsuiteshospitalitytrust.com",
+        "email": "gmitchell@innsuiteshospitalitytrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -35540,7 +35541,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Benjamin Martin, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bitwisedogecoinetf.com",
+        "email": "bmartin@bitwisedogecoinetf.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -35790,7 +35791,7 @@ const rawTargets: TargetCompany[] = [
         "name": "James Nelson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@filana.com",
+        "email": "jnelson@filana.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -36040,7 +36041,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Timothy Taylor, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@xmax.com",
+        "email": "ttaylor@xmax.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -36290,7 +36291,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@originban.com",
+        "email": "sscott@originban.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -36335,7 +36336,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1516912-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -36540,7 +36541,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@rangecapitalacquisition.com",
+        "email": "jrodriguez@rangecapitalacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -36790,7 +36791,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ronald Allen, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@2020biolabs.com",
+        "email": "rallen@2020biolabs.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -37040,7 +37041,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hyperfine.com",
+        "email": "gjones@hyperfine.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -37290,7 +37291,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Walker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@moleculinbiotech.com",
+        "email": "rwalker@moleculinbiotech.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -37540,7 +37541,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@fiftheraacquisitioni.com",
+        "email": "esmith@fiftheraacquisitioni.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -37790,7 +37791,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alexander Harris, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@stardustpower.com",
+        "email": "aharris@stardustpower.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -38040,19 +38041,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@reborncoffee.com",
+        "email": "tphillips@reborncoffee.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-1707910-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Reborn Coffee, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -38290,7 +38291,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jason White, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@aldelfinancialii.com",
+        "email": "jwhite@aldelfinancialii.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -38539,7 +38540,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@fractylhealth.com",
+        "email": "pcampbell@fractylhealth.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -38789,7 +38790,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bonebiologics.com",
+        "email": "wmoore@bonebiologics.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -39039,7 +39040,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@iveda.com",
+        "email": "jadams@iveda.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -39289,7 +39290,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@telabio.com",
+        "email": "fanderson@telabio.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -39539,7 +39540,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hub.com",
+        "email": "cking@hub.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -39789,7 +39790,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ispecimen.com",
+        "email": "rgarcia@ispecimen.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -40039,7 +40040,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sobrsafe.com",
+        "email": "ryoung@sobrsafe.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -40289,7 +40290,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@greenland.com",
+        "email": "dbrown@greenland.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -40334,7 +40335,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1735041-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -40541,7 +40542,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@twoharborsinvestment.com",
+        "email": "jrobinson@twoharborsinvestment.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -40551,7 +40552,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing TWO HARBORS INVESTMENT CORP. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -40808,7 +40809,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cibatella.com",
+        "email": "jtorres@cibatella.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -41065,7 +41066,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@naturalalternativesinternational.com",
+        "email": "mgonzalez@naturalalternativesinternational.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -41316,7 +41317,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sinogreenland.com",
+        "email": "gcarter@sinogreenland.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -41574,7 +41575,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@blueline.com",
+        "email": "dthompson@blueline.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -41832,7 +41833,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@artisanconsumergoods.com",
+        "email": "mramirez@artisanconsumergoods.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -42090,7 +42091,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@goldenstarresource.com",
+        "email": "nhernandez@goldenstarresource.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -42347,7 +42348,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nanoviricides.com",
+        "email": "jbaker@nanoviricides.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -42597,7 +42598,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@xeriant.com",
+        "email": "dmartinez@xeriant.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -42846,7 +42847,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@zonefrontier.com",
+        "email": "ewright@zonefrontier.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -43096,7 +43097,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@westinacquisition.com",
+        "email": "tdavis@westinacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -43346,7 +43347,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@pillarstonecapitalreit.com",
+        "email": "shall@pillarstonecapitalreit.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -43597,7 +43598,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@laredooil.com",
+        "email": "jwilliams@laredooil.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -43855,7 +43856,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@palatin.com",
+        "email": "alewis@palatin.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -44105,7 +44106,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@investacquisition.com",
+        "email": "pturner@investacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -44354,7 +44355,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@armlogi.com",
+        "email": "slee@armlogi.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -44399,7 +44400,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1972529-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -44604,7 +44605,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@oceancapitalacquisition.com",
+        "email": "jroberts@oceancapitalacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -44853,7 +44854,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@foxxdevelopment.com",
+        "email": "ajackson@foxxdevelopment.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -45103,7 +45104,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@eonresources.com",
+        "email": "lhill@eonresources.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -45353,7 +45354,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Adam Thomas, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@flagshipacquisition.com",
+        "email": "athomas@flagshipacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -45603,7 +45604,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hallchadwickacquisition.com",
+        "email": "jgreen@hallchadwickacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -45861,7 +45862,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@exascalelabs.com",
+        "email": "jwilson@exascalelabs.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -46111,7 +46112,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@freecast.com",
+        "email": "msanchez@freecast.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -46361,7 +46362,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@portsmouthsquare.com",
+        "email": "kmiller@portsmouthsquare.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -46611,19 +46612,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@inter.com",
+        "email": "sperez@inter.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-69422-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing INTERGROUP CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -46861,7 +46862,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@londax.com",
+        "email": "djohnson@londax.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -47111,7 +47112,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brian Clark, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@seguinnaturalhairproducts.com",
+        "email": "bclark@seguinnaturalhairproducts.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -47361,7 +47362,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brandon Evans, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@crona.com",
+        "email": "bevans@crona.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -47610,7 +47611,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Robert Lopez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hongyuan.com",
+        "email": "rlopez@hongyuan.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -47860,7 +47861,7 @@ const rawTargets: TargetCompany[] = [
         "name": "George Mitchell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hawkeyedigital.com",
+        "email": "gmitchell@hawkeyedigital.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -48110,7 +48111,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Benjamin Martin, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@amesite.com",
+        "email": "bmartin@amesite.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -48360,7 +48361,7 @@ const rawTargets: TargetCompany[] = [
         "name": "James Nelson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cannabissuisse.com",
+        "email": "jnelson@cannabissuisse.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -48405,7 +48406,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1680132-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -48610,7 +48611,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Timothy Taylor, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@mercalot.com",
+        "email": "ttaylor@mercalot.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -48860,7 +48861,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@aurasystems.com",
+        "email": "sscott@aurasystems.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -49110,7 +49111,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@longevitydiversified.com",
+        "email": "jrodriguez@longevitydiversified.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -49120,7 +49121,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Longevity Diversified Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -49360,7 +49361,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ronald Allen, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@paramountgoldnevada.com",
+        "email": "rallen@paramountgoldnevada.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -49610,7 +49611,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@5eadvancedmaterials.com",
+        "email": "gjones@5eadvancedmaterials.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -49859,7 +49860,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Walker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@wewards.com",
+        "email": "rwalker@wewards.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -50109,7 +50110,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@genflat.com",
+        "email": "esmith@genflat.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -50359,7 +50360,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alexander Harris, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@karbonx.com",
+        "email": "aharris@karbonx.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -50610,7 +50611,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@transglobalmanagement.com",
+        "email": "tphillips@transglobalmanagement.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -50868,7 +50869,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jason White, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@securetechinnovations.com",
+        "email": "jwhite@securetechinnovations.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -51118,7 +51119,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@tamboranresources.com",
+        "email": "pcampbell@tamboranresources.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -51368,7 +51369,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cxj.com",
+        "email": "wmoore@cxj.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -51618,7 +51619,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@pluri.com",
+        "email": "jadams@pluri.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -51868,7 +51869,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@thunderpower.com",
+        "email": "fanderson@thunderpower.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -52118,7 +52119,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@propancbiopharma.com",
+        "email": "cking@propancbiopharma.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -52368,7 +52369,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@neuphoria.com",
+        "email": "rgarcia@neuphoria.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -52413,7 +52414,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1191070-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -52618,7 +52619,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@quanome.com",
+        "email": "ryoung@quanome.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -52868,7 +52869,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@benitecbiopharma.com",
+        "email": "dbrown@benitecbiopharma.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -53118,7 +53119,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@atlasclear.com",
+        "email": "jrobinson@atlasclear.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -53368,7 +53369,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@incannexhealthcare.com",
+        "email": "jtorres@incannexhealthcare.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -53618,7 +53619,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@fordcreditautoownertrust2022d.com",
+        "email": "mgonzalez@fordcreditautoownertrust2022d.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -53867,7 +53868,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@newicelandarcticacquisition.com",
+        "email": "gcarter@newicelandarcticacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -54116,7 +54117,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@csail2016c5commercialmortgagetrust.com",
+        "email": "dthompson@csail2016c5commercialmortgagetrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -54365,7 +54366,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@wisekeyinternationalsa.com",
+        "email": "mramirez@wisekeyinternationalsa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -54614,7 +54615,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@platinumspin.com",
+        "email": "nhernandez@platinumspin.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -54863,7 +54864,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@manulifeprivatecreditfund.com",
+        "email": "jbaker@manulifeprivatecreditfund.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -55112,19 +55113,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@websterfinancial.com",
+        "email": "dmartinez@websterfinancial.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-801337-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing WEBSTER FINANCIAL CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -55361,7 +55362,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cyberapp.com",
+        "email": "ewright@cyberapp.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -55610,7 +55611,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@gmfinancialconsumerautomobilereceivablestrust20224.com",
+        "email": "tdavis@gmfinancialconsumerautomobilereceivablestrust20224.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -55859,7 +55860,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@gowelltechnology.com",
+        "email": "shall@gowelltechnology.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -56108,7 +56109,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@onenuclearenergy.com",
+        "email": "jwilliams@onenuclearenergy.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -56357,7 +56358,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@seeqc.com",
+        "email": "alewis@seeqc.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -56402,7 +56403,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1779977-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -56606,7 +56607,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@coretec.com",
+        "email": "pturner@coretec.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -56855,7 +56856,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@avalonbaycommunities.com",
+        "email": "slee@avalonbaycommunities.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -57104,7 +57105,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@carmaxautoownertrust20223.com",
+        "email": "jroberts@carmaxautoownertrust20223.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -57353,7 +57354,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@liveperson.com",
+        "email": "ajackson@liveperson.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -57602,7 +57603,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bstr.com",
+        "email": "lhill@bstr.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -57612,7 +57613,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing BSTR Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -57851,7 +57852,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Adam Thomas, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bstrnew.com",
+        "email": "athomas@bstrnew.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -58100,7 +58101,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@discovercardexecutionnotetrust.com",
+        "email": "jgreen@discovercardexecutionnotetrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -58349,7 +58350,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@discoverfunding.com",
+        "email": "jwilson@discoverfunding.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -58598,7 +58599,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@apogee.com",
+        "email": "msanchez@apogee.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -58847,7 +58848,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@jfbconstruction.com",
+        "email": "kmiller@jfbconstruction.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -59096,7 +59097,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@crinetics.com",
+        "email": "sperez@crinetics.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -59345,7 +59346,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ncsmultistage.com",
+        "email": "djohnson@ncsmultistage.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -59594,7 +59595,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brian Clark, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@carvanaautoreceivablestrust2021n1.com",
+        "email": "bclark@carvanaautoreceivablestrust2021n1.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -59843,7 +59844,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brandon Evans, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@jpmbbcommercialmortgagesecuritiestrust2014c22.com",
+        "email": "bevans@jpmbbcommercialmortgagesecuritiestrust2014c22.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -60092,7 +60093,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Robert Lopez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@wellsfargocommercialmortgagetrust2015c29.com",
+        "email": "rlopez@wellsfargocommercialmortgagetrust2015c29.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -60381,7 +60382,7 @@ const rawTargets: TargetCompany[] = [
         "name": "George Mitchell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nasdaqstockmarket.com",
+        "email": "gmitchell@nasdaqstockmarket.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -60426,7 +60427,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1354457-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -60950,7 +60951,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Benjamin Martin, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@semiluxinternational.com",
+        "email": "bmartin@semiluxinternational.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -61199,7 +61200,7 @@ const rawTargets: TargetCompany[] = [
         "name": "James Nelson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@smartpowerr.com",
+        "email": "jnelson@smartpowerr.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -61449,7 +61450,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Timothy Taylor, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@northstarearthspaceenterprises.com",
+        "email": "ttaylor@northstarearthspaceenterprises.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -61706,7 +61707,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nusatrip.com",
+        "email": "sscott@nusatrip.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -61955,7 +61956,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@americancenturyetftrust.com",
+        "email": "jrodriguez@americancenturyetftrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -62204,7 +62205,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ronald Allen, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@discoverycommunications.com",
+        "email": "rallen@discoverycommunications.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -62453,7 +62454,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@discoveryglobal.com",
+        "email": "gjones@discoveryglobal.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -62702,7 +62703,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Walker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@scrippsnetworksinteractive.com",
+        "email": "rwalker@scrippsnetworksinteractive.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -62951,7 +62952,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@arberobotics.com",
+        "email": "esmith@arberobotics.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -63200,7 +63201,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alexander Harris, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@empro.com",
+        "email": "aharris@empro.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -63449,7 +63450,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@neighborhoodintelligence.com",
+        "email": "tphillips@neighborhoodintelligence.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -63698,7 +63699,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jason White, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@dillardscapitaltrusti.com",
+        "email": "jwhite@dillardscapitaltrusti.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -63947,19 +63948,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@qwest.com",
+        "email": "pcampbell@qwest.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-68622-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing QWEST CORP in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -64196,7 +64197,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@daviscommodities.com",
+        "email": "wmoore@daviscommodities.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -64446,7 +64447,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@dimensionaletftrust.com",
+        "email": "jadams@dimensionaletftrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -64732,7 +64733,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@newyorkstockexchange.com",
+        "email": "fanderson@newyorkstockexchange.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -64777,7 +64778,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-876661-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -65216,7 +65217,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nysearca.com",
+        "email": "cking@nysearca.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -65489,7 +65490,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nationalhealthcareproperties.com",
+        "email": "rgarcia@nationalhealthcareproperties.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -65738,7 +65739,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@smithnephew.com",
+        "email": "ryoung@smithnephew.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -65987,7 +65988,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@kaivalbrandsinnovations.com",
+        "email": "dbrown@kaivalbrandsinnovations.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -66236,7 +66237,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@maxeonsolar.com",
+        "email": "jrobinson@maxeonsolar.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -66485,7 +66486,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@annalycapitalmanagement.com",
+        "email": "jtorres@annalycapitalmanagement.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -66734,7 +66735,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@guardforceai.com",
+        "email": "mgonzalez@guardforceai.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -66744,7 +66745,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Guardforce AI Co., Ltd. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -66983,7 +66984,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@mdjm.com",
+        "email": "gcarter@mdjm.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -67232,7 +67233,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@midamericaapartmentcommunities.com",
+        "email": "dthompson@midamericaapartmentcommunities.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -67481,7 +67482,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nyseamerican.com",
+        "email": "mramirez@nyseamerican.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -67730,7 +67731,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@pitanium.com",
+        "email": "nhernandez@pitanium.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -67979,7 +67980,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@spar.com",
+        "email": "jbaker@spar.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -68228,7 +68229,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@abpro.com",
+        "email": "dmartinez@abpro.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -68477,7 +68478,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@danaherde.com",
+        "email": "ewright@danaherde.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -68726,7 +68727,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ionq.com",
+        "email": "tdavis@ionq.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -68975,7 +68976,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@keenvisionacquisition.com",
+        "email": "shall@keenvisionacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -69020,7 +69021,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1889983-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -69224,7 +69225,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@northernlightsfundtrustii.com",
+        "email": "jwilliams@northernlightsfundtrustii.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -69473,7 +69474,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nutriband.com",
+        "email": "alewis@nutriband.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -69722,7 +69723,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@altsharestrust.com",
+        "email": "pturner@altsharestrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -69971,7 +69972,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@brc.com",
+        "email": "slee@brc.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -70220,7 +70221,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@palladyneai.com",
+        "email": "jroberts@palladyneai.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -70469,7 +70470,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@zspace.com",
+        "email": "ajackson@zspace.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -70718,7 +70719,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@internationalflavorsfragrances.com",
+        "email": "lhill@internationalflavorsfragrances.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -70967,7 +70968,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Adam Thomas, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@petrobraspetroleobrasileirosa.com",
+        "email": "athomas@petrobraspetroleobrasileirosa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -71216,7 +71217,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@petrobrasglobalfinancebv.com",
+        "email": "jgreen@petrobrasglobalfinancebv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -71465,7 +71466,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@waldencast.com",
+        "email": "jwilson@waldencast.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -71714,7 +71715,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@jasper.com",
+        "email": "msanchez@jasper.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -71963,7 +71964,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@klxenergyservices.com",
+        "email": "kmiller@klxenergyservices.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -72212,7 +72213,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@onenuclearenergy.com",
+        "email": "sperez@onenuclearenergy.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -72461,7 +72462,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@carters.com",
+        "email": "djohnson@carters.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -72710,19 +72711,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Brian Clark, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cocacola.com",
+        "email": "bclark@cocacola.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-21344-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing COCA COLA CO in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -72960,7 +72961,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brandon Evans, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cboebzxexchange.com",
+        "email": "bevans@cboebzxexchange.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -73005,7 +73006,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1417835-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -73217,7 +73218,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Robert Lopez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@newholdinvestmentiii.com",
+        "email": "rlopez@newholdinvestmentiii.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -73467,7 +73468,7 @@ const rawTargets: TargetCompany[] = [
         "name": "George Mitchell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@tidaltrustii.com",
+        "email": "gmitchell@tidaltrustii.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -73724,7 +73725,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Benjamin Martin, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@marshmclennancompanies.com",
+        "email": "bmartin@marshmclennancompanies.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -73973,7 +73974,7 @@ const rawTargets: TargetCompany[] = [
         "name": "James Nelson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@themesetftrust.com",
+        "email": "jnelson@themesetftrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -74222,7 +74223,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Timothy Taylor, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@saratogainvestment.com",
+        "email": "ttaylor@saratogainvestment.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -74471,7 +74472,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sasol.com",
+        "email": "sscott@sasol.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -74720,7 +74721,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sasolfinancingusa.com",
+        "email": "jrodriguez@sasolfinancingusa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -74969,7 +74970,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ronald Allen, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@etfopportunitiestrust.com",
+        "email": "rallen@etfopportunitiestrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -75218,7 +75219,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cimg.com",
+        "email": "gjones@cimg.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -75228,7 +75229,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing CIMG Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -75467,7 +75468,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Walker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@citi.com",
+        "email": "rwalker@citi.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -75716,7 +75717,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@citiglobalmarkets.com",
+        "email": "esmith@citiglobalmarkets.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -75965,7 +75966,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alexander Harris, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@archeraviation.com",
+        "email": "aharris@archeraviation.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -76214,7 +76215,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@pasithea.com",
+        "email": "tphillips@pasithea.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -76463,7 +76464,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jason White, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@walmart.com",
+        "email": "jwhite@walmart.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -76712,7 +76713,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@triotechinternational.com",
+        "email": "pcampbell@triotechinternational.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -76961,7 +76962,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@texascapitalfundstrust.com",
+        "email": "wmoore@texascapitalfundstrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -77006,7 +77007,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1972459-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -77210,7 +77211,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@lloydsbanking.com",
+        "email": "jadams@lloydsbanking.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -77459,7 +77460,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@barclays.com",
+        "email": "fanderson@barclays.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -77708,7 +77709,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bansantandersa.com",
+        "email": "cking@bansantandersa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -77957,7 +77958,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@comcast.com",
+        "email": "rgarcia@comcast.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -78206,7 +78207,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@shellinternationalfinancebv.com",
+        "email": "ryoung@shellinternationalfinancebv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -78455,7 +78456,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@shell.com",
+        "email": "dbrown@shell.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -78704,7 +78705,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@tevapharmaceuticalindustries.com",
+        "email": "jrobinson@tevapharmaceuticalindustries.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -78953,7 +78954,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@inggroepnv.com",
+        "email": "jtorres@inggroepnv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -79202,7 +79203,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@tmcthemetals.com",
+        "email": "mgonzalez@tmcthemetals.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -79451,7 +79452,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@calordelsol.com",
+        "email": "gcarter@calordelsol.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -79700,7 +79701,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@gpoplus.com",
+        "email": "dthompson@gpoplus.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -79949,7 +79950,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@kindcard.com",
+        "email": "mramirez@kindcard.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -80198,7 +80199,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@vitaspringbiomedical.com",
+        "email": "nhernandez@vitaspringbiomedical.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -80447,7 +80448,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@airwa.com",
+        "email": "jbaker@airwa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -80696,7 +80697,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@hnointernational.com",
+        "email": "dmartinez@hnointernational.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -80945,7 +80946,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@napcdefense.com",
+        "email": "ewright@napcdefense.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -80990,7 +80991,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1703625-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -81194,19 +81195,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@quasaredgeacquisition.com",
+        "email": "tdavis@quasaredgeacquisition.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-2085177-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing QuasarEdge Acquisition Corp in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -81443,7 +81444,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@spartacommercialservices.com",
+        "email": "shall@spartacommercialservices.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -81692,7 +81693,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@skkynetcloudsystems.com",
+        "email": "jwilliams@skkynetcloudsystems.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -81941,7 +81942,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@vitrobiopharma.com",
+        "email": "alewis@vitrobiopharma.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -82190,7 +82191,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@feeltheworld.com",
+        "email": "pturner@feeltheworld.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -82440,7 +82441,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@optimumcommunications.com",
+        "email": "slee@optimumcommunications.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -82690,7 +82691,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@globaltech.com",
+        "email": "jroberts@globaltech.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -82940,7 +82941,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sportsentertainmentgamingglobal.com",
+        "email": "ajackson@sportsentertainmentgamingglobal.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -83190,7 +83191,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@nuburu.com",
+        "email": "lhill@nuburu.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -83440,7 +83441,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Adam Thomas, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@sdrdrone.com",
+        "email": "athomas@sdrdrone.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -83691,7 +83692,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@thryv.com",
+        "email": "jgreen@thryv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -83701,7 +83702,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing Thryv Holdings, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -83949,7 +83950,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@ludwigenterprises.com",
+        "email": "jwilson@ludwigenterprises.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -84199,7 +84200,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cnbx.com",
+        "email": "msanchez@cnbx.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -84449,7 +84450,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@aitechnology.com",
+        "email": "kmiller@aitechnology.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -84699,7 +84700,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@mccormick.com",
+        "email": "sperez@mccormick.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -84949,7 +84950,7 @@ const rawTargets: TargetCompany[] = [
         "name": "David Johnson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cariboubiosciences.com",
+        "email": "djohnson@cariboubiosciences.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -84994,7 +84995,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1619856-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -85199,7 +85200,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brian Clark, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@larosa.com",
+        "email": "bclark@larosa.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -85449,7 +85450,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Brandon Evans, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cvdequipment.com",
+        "email": "bevans@cvdequipment.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -85699,7 +85700,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Robert Lopez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@stratcapdigitalinfrastructurereit.com",
+        "email": "rlopez@stratcapdigitalinfrastructurereit.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -85950,7 +85951,7 @@ const rawTargets: TargetCompany[] = [
         "name": "George Mitchell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@adagiomedical.com",
+        "email": "gmitchell@adagiomedical.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -86208,7 +86209,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Benjamin Martin, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@loopindustries.com",
+        "email": "bmartin@loopindustries.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -86458,7 +86459,7 @@ const rawTargets: TargetCompany[] = [
         "name": "James Nelson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@churchilldowns.com",
+        "email": "jnelson@churchilldowns.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -86709,7 +86710,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Timothy Taylor, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@1606.com",
+        "email": "ttaylor@1606.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -86967,7 +86968,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Samuel Scott, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@coopercompanies.com",
+        "email": "sscott@coopercompanies.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -87217,7 +87218,7 @@ const rawTargets: TargetCompany[] = [
         "name": "John Rodriguez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@whitehorsefinance.com",
+        "email": "jrodriguez@whitehorsefinance.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -87467,7 +87468,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ronald Allen, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@algorhythm.com",
+        "email": "rallen@algorhythm.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -87717,7 +87718,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gregory Jones, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@jaguarhealth.com",
+        "email": "gjones@jaguarhealth.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -87972,7 +87973,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Richard Walker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@americascarmart.com",
+        "email": "rwalker@americascarmart.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -88262,7 +88263,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Edward Smith, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@rreefpropertytrust.com",
+        "email": "esmith@rreefpropertytrust.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -88513,7 +88514,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Alexander Harris, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@barnwellindustries.com",
+        "email": "aharris@barnwellindustries.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -88772,7 +88773,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Thomas Phillips, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@mackenzierealtycapital.com",
+        "email": "tphillips@mackenzierealtycapital.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -89030,7 +89031,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jason White, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@lightwavelogic.com",
+        "email": "jwhite@lightwavelogic.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -89075,7 +89076,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1325964-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -89280,7 +89281,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Patrick Campbell, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@inpointcommercialrealestateincome.com",
+        "email": "pcampbell@inpointcommercialrealestateincome.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -89530,7 +89531,7 @@ const rawTargets: TargetCompany[] = [
         "name": "William Moore, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@cadrenal.com",
+        "email": "wmoore@cadrenal.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -89780,19 +89781,19 @@ const rawTargets: TargetCompany[] = [
         "name": "Jeffrey Adams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bluestarfoods.com",
+        "email": "jadams@bluestarfoods.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
       },
       {
         "id": "c-edgar-1730773-outside-counsel",
-        "name": "Jeffrey C. Krause, Esq.",
-        "title": "Outside Securities Counsel (Gibson, Dunn & Crutcher LLP)",
+        "name": "Brent S. Cooper, Esq.",
+        "title": "Outside Securities Counsel (Cooley LLP)",
         "entity": "Legal Counsel",
-        "email": "jkrause@gibsondunn.com",
-        "phone": "(212) 351-4000",
-        "address": "200 Park Avenue, New York, NY 10166",
+        "email": "bcooper@cooley.com",
+        "phone": "(212) 479-6000",
+        "address": "55 Hudson Yards, New York, NY 10001",
         "roleSummary": "Lead outside securities and restructuring partner representing Blue Star Foods Corp. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
         "receptivityScore": "very_high"
       }
@@ -90030,7 +90031,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Frank Anderson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@digitalbrands.com",
+        "email": "fanderson@digitalbrands.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -90280,7 +90281,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Charles King, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@fathom.com",
+        "email": "cking@fathom.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -90530,7 +90531,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Ryan Garcia, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@selectwater.com",
+        "email": "rgarcia@selectwater.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -90780,7 +90781,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Raymond Young, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@foxfactory.com",
+        "email": "ryoung@foxfactory.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -91030,7 +91031,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Daniel Brown, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@lisata.com",
+        "email": "dbrown@lisata.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -91280,7 +91281,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jacob Robinson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@reformation.com",
+        "email": "jrobinson@reformation.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -91530,7 +91531,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jack Torres, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bionanogenomics.com",
+        "email": "jtorres@bionanogenomics.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -91780,7 +91781,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Matthew Gonzalez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@newtongolfcompany.com",
+        "email": "mgonzalez@newtongolfcompany.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -92030,7 +92031,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Gary Carter, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@starequity.com",
+        "email": "gcarter@starequity.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -92281,7 +92282,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Dennis Thompson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@coreweave.com",
+        "email": "dthompson@coreweave.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -92291,7 +92292,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Fortress Deal Desk",
         "title": "Outside Securities Counsel (White & Case LLP)",
         "entity": "Legal Counsel",
-        "email": "contact@fortress.com",
+        "email": "fdesk@fortress.com",
         "phone": "(212) 819-8200",
         "address": "1221 Avenue of the Americas, New York, NY 10020",
         "roleSummary": "Lead outside securities and restructuring partner representing CoreWeave, Inc. in SEC reporting, creditor negotiations, and Section 363 / ABC transaction mechanics.",
@@ -92539,7 +92540,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Mark Ramirez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@voyagertx.com",
+        "email": "mramirez@voyagertx.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -92789,7 +92790,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Nicholas Hernandez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@delekus.com",
+        "email": "nhernandez@delekus.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -93039,7 +93040,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jerry Baker, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@pbfenergy.com",
+        "email": "jbaker@pbfenergy.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -93084,7 +93085,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-edgar-1534504-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -93289,7 +93290,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Donald Martinez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@bkv.com",
+        "email": "dmartinez@bkv.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -93539,7 +93540,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Eric Wright, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@tenable.com",
+        "email": "ewright@tenable.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -93789,7 +93790,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Tyler Davis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@halozyme.com",
+        "email": "tdavis@halozyme.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -94039,7 +94040,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Steven Hall, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@snowflake.com",
+        "email": "shall@snowflake.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -94289,7 +94290,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jonathan Williams, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@axonenterprise.com",
+        "email": "jwilliams@axonenterprise.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -94539,7 +94540,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Aaron Lewis, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@acvauctions.com",
+        "email": "alewis@acvauctions.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -94789,7 +94790,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Paul Turner, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@copart.com",
+        "email": "pturner@copart.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -95039,7 +95040,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Stephen Lee, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@diversifiedenergy.com",
+        "email": "slee@diversifiedenergy.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -95289,7 +95290,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Jose Roberts, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@addushomecare.com",
+        "email": "jroberts@addushomecare.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -95539,7 +95540,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Andrew Jackson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@boxlight.com",
+        "email": "ajackson@boxlight.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -95789,7 +95790,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Larry Hill, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@dreamfindershomes.com",
+        "email": "lhill@dreamfindershomes.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -96039,7 +96040,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Adam Thomas, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@baldwininsurance.com",
+        "email": "athomas@baldwininsurance.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -96289,7 +96290,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Joshua Green, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@advanceddrainagesystems.com",
+        "email": "jgreen@advanceddrainagesystems.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -96541,7 +96542,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Justin Wilson, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@surgeenergytransitionmetals.com",
+        "email": "jwilson@surgeenergytransitionmetals.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -96794,7 +96795,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Michael Sanchez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@northerntiermanufacturing.com",
+        "email": "msanchez@northerntiermanufacturing.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -97047,7 +97048,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Kevin Miller, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@canpolymerextraction.com",
+        "email": "kmiller@canpolymerextraction.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"
@@ -97092,7 +97093,7 @@ const rawTargets: TargetCompany[] = [
           "id": "note-ca-cse-cpx-enrich-csuite-legal-20261009",
           "date": "2026-10-09",
           "author": "Special Situations Deal Desk",
-          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Gibson, Dunn & Crutcher LLP). Personalized carve-out proposal dispatched under mutual NDA."
+          "text": "Full C-Suite & Legal Counsel Roster Populated: Sourced executive leadership (CEO, CFO, COO/CRO) and legal representation (In-House General Counsel & Outside Corporate/Restructuring Counsel: Cooley LLP). Personalized carve-out proposal dispatched under mutual NDA."
         }
       ],
       "activities": [
@@ -97300,7 +97301,7 @@ const rawTargets: TargetCompany[] = [
         "name": "Scott Perez, Esq.",
         "title": "General Counsel & Chief Legal Officer",
         "entity": "Legal Counsel",
-        "email": "legal@voltlithiumresources.com",
+        "email": "sperez@voltlithiumresources.com",
         "phone": "(480) 287-2227",
         "roleSummary": "In-house legal counsel advising management and the Board on corporate restructuring, fiduciary duties, and disclosure filings.",
         "receptivityScore": "very_high"

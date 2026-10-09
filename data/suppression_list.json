@@ -1,12 +1,17 @@
 {
-  "updatedAt": "2026-10-09T19:58:04.622Z",
+  "updatedAt": "2026-10-09T20:05:22.175Z",
   "description": "Global permanent suppression and opt-out registry. Hard block enforced at runtime before any email transmission.",
   "suppressedEmails": [
     "solder@mcguirewoods.com",
-    "dfoley@mcguirewoods.com"
+    "dfoley@mcguirewoods.com",
+    "jkrause@gibsondunn.com",
+    "firm@gibsondunn.com",
+    "securities@gibsondunn.com",
+    "mgibson@gibsondunn.com"
   ],
   "suppressedDomains": [
-    "mcguirewoods.com"
+    "mcguirewoods.com",
+    "gibsondunn.com"
   ],
   "optOutLog": [
     {
@@ -16,6 +21,13 @@
       "ticker": "SING",
       "requestDate": "2026-10-09T12:44:00-07:00",
       "reason": "Opt-out / stop request received (Fourth email today alert). Permanent firm-wide suppression enforced."
+    },
+    {
+      "email": "*@gibsondunn.com",
+      "domain": "gibsondunn.com",
+      "recipient": "Gibson, Dunn & Crutcher LLP (333 South Grand Avenue, Los Angeles, CA 90071-3197)",
+      "requestDate": "2026-10-09T20:05:22.174Z",
+      "reason": "Firm-wide exclusion requested by leadership: Gibson, Dunn & Crutcher LLP. Permanent domain-wide suppression active."
     }
   ]
 }
