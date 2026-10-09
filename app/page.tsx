@@ -56,7 +56,7 @@ function AssetLiberatorMain() {
 
   const [activeTab, setActiveTab] = useState<NavTabType>("screener");
   const [activeDrawerTarget, setActiveDrawerTarget] = useState<TargetCompany | null>(null);
-  const [visibleCount, setVisibleCount] = useState<number>(24);
+  const [visibleCount, setVisibleCount] = useState<number>(500);
   const [activePlaybookTarget, setActivePlaybookTarget] = useState<TargetCompany | null>(null);
   const [activeOutreachTarget, setActiveOutreachTarget] = useState<TargetCompany | null>(null);
   

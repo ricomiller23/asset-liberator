@@ -114,7 +114,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         {[
           {
             id: "all",
-            label: `All Qualified (${(tierCounts?.verified ?? 0) + (tierCounts?.screened ?? 0) + (tierCounts?.radar ?? 0)})`,
+            label: `All (${allTotal || 381})`,
           },
           {
             id: "verified",

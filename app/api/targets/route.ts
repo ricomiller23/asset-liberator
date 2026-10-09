@@ -33,11 +33,9 @@ export async function GET(req: NextRequest) {
   const allTargets = getServerTargets().map((t) => withLiveClock(t, now));
   let results: TargetCompany[] = [...allTargets];
 
-  // Default behavior: unless specifically requesting 'disqualified' or 'all', hide disqualified filers from active screener
+  // Tier filtering: if specific tier requested, filter to it; otherwise return all 381 companies
   if (tier && tier !== "all") {
     results = results.filter((t) => t.tier === tier);
-  } else if (!tier) {
-    results = results.filter((t) => t.tier !== "disqualified");
   }
 
   if (vertical && vertical !== "all") {
