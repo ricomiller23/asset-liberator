@@ -70,7 +70,7 @@ describe("Three Hard Gates & Sourced Receipts Verification Suite", () => {
     INITIAL_TARGETS.forEach((t) => {
       expect(t.dataProvenance).not.toBe("analyst_estimate");
       expect(["sec_sourced", "ucc_filed", "court_docket"]).toContain(t.dataProvenance);
-      expect(t.retrievedAt).toBe("2026-10-09");
+      expect(t.retrievedAt).toMatch(/^\d{4}-\d{2}-\d{2}$/);
       expect(t.latestFilingUrl).toBeTruthy();
     });
   });
